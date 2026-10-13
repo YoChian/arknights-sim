@@ -1,0 +1,151 @@
+[
+  {
+    "source": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+    "source_sha256": "147ca081a0e8891628af15a63c5dfc559411229069c22a99e854b412ec2d5195",
+    "selection": {
+      "type": "Torappu.StateMachine",
+      "method": "SwitchState",
+      "address": "0x1826483d0",
+      "metadata_method_index": 33275,
+      "owner": "Torappu.StateMachine",
+      "type_definition_index": 5601,
+      "reason": "Character generic state adapter ultimately uses this base switch/tick/start and queue-draining closure"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\skill\\round3\\33275_Torappu_StateMachine_SwitchState.c",
+    "record": {
+      "address": "0x1826483d0",
+      "token": "0x60081fc",
+      "metadata_method_index": 33275,
+      "display_name": "Torappu.StateMachine.SwitchState",
+      "ranges": [
+        {
+          "start": "0x1826483d0",
+          "end": "0x1826483da",
+          "leaf_boundary": "straight-line RET/tail JMP or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "1e58fab8566e9a0fdf770cf12693059bfa537277841ab32157b777989d8d3879",
+          "source_file_offset": 40138704
+        }
+      ],
+      "range_provenance": "Bounded leaf candidate ending at straight-line RET/tail JMP or decoded INT3 padding; separate from PE unwind-derived coverage"
+    }
+  },
+  {
+    "source": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+    "source_sha256": "147ca081a0e8891628af15a63c5dfc559411229069c22a99e854b412ec2d5195",
+    "selection": {
+      "type": "Torappu.StateMachine",
+      "method": "_SwitchStateInternal",
+      "address": "0x182648540",
+      "metadata_method_index": 33284,
+      "owner": "Torappu.StateMachine",
+      "type_definition_index": 5601,
+      "reason": "Character generic state adapter ultimately uses this base switch/tick/start and queue-draining closure"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\skill\\round3\\33284_Torappu_StateMachine__SwitchStateInternal.c",
+    "record": {
+      "address": "0x182648540",
+      "token": "0x6008205",
+      "metadata_method_index": 33284,
+      "display_name": "Torappu.StateMachine._SwitchStateInternal",
+      "ranges": [
+        {
+          "start": "0x182648540",
+          "end": "0x18264894f",
+          "unwind_rva": "0x81b69ec",
+          "chained": false,
+          "source_sha256": "83401f76306dbc210f0f4a2dbf8aa89f4895a3443566fbdc8753af43743eb0a8",
+          "source_file_offset": 40139072
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span"
+    }
+  },
+  {
+    "source": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+    "source_sha256": "147ca081a0e8891628af15a63c5dfc559411229069c22a99e854b412ec2d5195",
+    "selection": {
+      "type": "Torappu.StateMachine",
+      "method": "_CheckValidState",
+      "address": "0x182648440",
+      "metadata_method_index": 33286,
+      "owner": "Torappu.StateMachine",
+      "type_definition_index": 5601,
+      "reason": "Character generic state adapter ultimately uses this base switch/tick/start and queue-draining closure"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\skill\\round3\\33286_Torappu_StateMachine__CheckValidState.c",
+    "record": {
+      "address": "0x182648440",
+      "token": "0x6008207",
+      "metadata_method_index": 33286,
+      "display_name": "Torappu.StateMachine._CheckValidState",
+      "ranges": [
+        {
+          "start": "0x182648440",
+          "end": "0x1826484a2",
+          "unwind_rva": "0x7f63a3c",
+          "chained": false,
+          "source_sha256": "b6625d61391933329c331b3e538056c9e1500c53744c9c9bb06da597199c37a1",
+          "source_file_offset": 40138816
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span"
+    }
+  },
+  {
+    "source": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+    "source_sha256": "147ca081a0e8891628af15a63c5dfc559411229069c22a99e854b412ec2d5195",
+    "selection": {
+      "type": "ObservedSkillCallTarget",
+      "method": "StateSwitchScopeDisposal",
+      "address": "0x18262d450",
+      "raw_call_target": true,
+      "source": "SkillState.OnTick/_DoStartSkill/finish callback exact direct call targets; owner declaration unasserted until body/metadata is resolved"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\skill\\round3\\None_ObservedSkillCallTarget_StateSwitchScopeDisposal.c",
+    "record": {
+      "address": "0x18262d450",
+      "token": "call_target",
+      "metadata_method_index": null,
+      "display_name": "ObservedSkillCallTarget.StateSwitchScopeDisposal",
+      "ranges": [
+        {
+          "start": "0x18262d450",
+          "end": "0x18262d4e2",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "bf4acfd12619118052b91b78826f4d002141a633e9aaea79ed5d4f010d51c121",
+          "source_file_offset": 40028240
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span"
+    }
+  },
+  {
+    "source": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+    "source_sha256": "147ca081a0e8891628af15a63c5dfc559411229069c22a99e854b412ec2d5195",
+    "selection": {
+      "type": "ObservedSkillCallTarget",
+      "method": "ObservedStateSwitchAdapter",
+      "address": "0x182648530",
+      "raw_call_target": true,
+      "source": "SkillState.OnTick/_DoStartSkill/finish callback exact direct call targets; owner declaration unasserted until body/metadata is resolved"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\skill\\round3\\None_ObservedSkillCallTarget_ObservedStateSwitchAdapter.c",
+    "record": {
+      "address": "0x182648530",
+      "token": "call_target",
+      "metadata_method_index": null,
+      "display_name": "ObservedSkillCallTarget.ObservedStateSwitchAdapter",
+      "ranges": [
+        {
+          "start": "0x182648530",
+          "end": "0x182648539",
+          "leaf_boundary": "straight-line RET/tail JMP or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "6b603835e74345053f40e79d5e4c11119007faaedbc932b174e240a7f70f1559",
+          "source_file_offset": 40139056
+        }
+      ],
+      "range_provenance": "Bounded leaf candidate ending at straight-line RET/tail JMP or decoded INT3 padding; separate from PE unwind-derived coverage"
+    }
+  }
+]

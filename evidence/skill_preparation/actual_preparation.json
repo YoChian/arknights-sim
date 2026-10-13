@@ -1,0 +1,107 @@
+{
+  "skill_id": "sktok_ore",
+  "range_id": "x-1",
+  "pre_delay_raw": 2576980480,
+  "duration_raw": 4294967296,
+  "cooldown_raw": 4294967296,
+  "sp_cost": 7,
+  "init_sp": 0,
+  "sp_increment_raw": 4294967296,
+  "sp_recovery_per_second_raw": 4294967296,
+  "blackboard": {
+    "value": 500.0,
+    "duration": 0.0
+  },
+  "provenance": {
+    "kind": "bounded static native preparation; no target execution",
+    "resource_inputs": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\skill_preparation\\resource_inputs.json",
+    "resource_inputs_sha256": "28a7a63a3b02398e5d902f8cc25add8dffebfeb5c0ad804ce2b6c47af685ae2e",
+    "sources": [
+      {
+        "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\skill_tableafb859.json",
+        "bytes": 10973218,
+        "sha256": "979d036bbca77514c39c60efd76b961d9f04fa681a7dd0bf3c208112062cf3af"
+      },
+      {
+        "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\character_table9fc534.json",
+        "bytes": 14985208,
+        "sha256": "68f19ec5c72acf291b59fdf861461822aa5f6be8d668711febd6f803eb096c57"
+      },
+      {
+        "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\altar_context.json",
+        "bytes": 11156,
+        "sha256": "6e2d697789cc1f3f97673a817b99206d183f253acd00224eff7546036857dae8"
+      },
+      {
+        "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\rule_prefab_subtrees.json",
+        "bytes": 515651,
+        "sha256": "2f7912e5564e6f8608163f38f31071cf3a913f2fbc437c9725860ed77c6e532a"
+      }
+    ],
+    "components": [
+      {
+        "class_name": "Torappu.Battle.Abilities.AnimatedActionToTargetAbility",
+        "path_id": 5041462664297346832,
+        "script_path_id": 2165892974539515790,
+        "serialized_sha256": "9cd9f01af8b9fe3d734b3c9aa72adf4bc93f23a0100a731e0ce36d1798c76ef9"
+      },
+      {
+        "class_name": "Torappu.Battle.CastSkill",
+        "path_id": 4692236642745808656,
+        "script_path_id": 6851783972288338031,
+        "serialized_sha256": "5c9bd6b3555ab02cb5cc142b2cdc2984dfcb69f8eaba804471ee3cd34721a53d"
+      },
+      {
+        "class_name": "Torappu.Battle.Trap",
+        "path_id": 8450006637979622515,
+        "script_path_id": 7298368132990067154,
+        "serialized_sha256": "e34290cc16250b88e919ecde1767ef177fb13fd6175577f31fe4b09ce77f66f0"
+      },
+      {
+        "class_name": "Torappu.Battle.TrapMode",
+        "path_id": -6537671094772769677,
+        "script_path_id": -4460612017216576867,
+        "serialized_sha256": "d44a2e36fe816b00986f675ca16c3e2c24e12a2e372add3e6a42e7c13eb10bc1"
+      },
+      {
+        "class_name": "Torappu.Battle.MeshAnimator",
+        "path_id": -2953578928378356621,
+        "script_path_id": -6490301617952843582,
+        "serialized_sha256": "1f9b56fcc669bbadd4b791100aa146d1378eaffbd032edf399149067a33f4585"
+      }
+    ],
+    "native_chain": [
+      "DataConvertUtil.GetSkillData(1827433b0)",
+      "SkillDB.TryGetSkill/_TryGetSkill(18210a200/18210a350)",
+      "SkillDataBundle.TryGetSkill(182529ce0)",
+      "Character._AssignData/_PreprocessSkill(180a33dd0/180a37070)",
+      "SkillData.InitIfNot(18252a520)",
+      "Character._AssignSkill(180a344b0)",
+      "BasicSkill.AssignData(1809582e0)",
+      "Ability.SetData/DoSetData(1805d6bc0/1805d5540)",
+      "Ability.Attach/DoAttach(1805d4ae0/1805d4f00)",
+      "AbstractAnimatedAbility.DoAttach(180eff930)",
+      "AbilityStandard.OnAttached(1805d07a0)",
+      "DoUpdatePlaybackSpeed/Abstract.UpdatePlaybackSpeed(1805cff60/180f00820)",
+      "get_cooldown(180f01050)/GetDuration(180effbe0)"
+    ],
+    "table_duration_float32": 0.0,
+    "actual_time_mode": "SPECIFIED=2",
+    "initial_anim_scale_float32": 1.0,
+    "animation_lookup": "empty key absent from Idle/Born/Die dictionary",
+    "basic_skill_behaviour_count": 0,
+    "ability_behaviour_count": 1,
+    "ability_behaviour": "UberEffectEmitter inherits Behaviour.UpdatePlaybackSpeed(1805db9c0): out=1, return=false; no override",
+    "range_radius_float32": -1.0,
+    "blackboard_duration_origin": "SkillData.InitIfNot assigns duration=0; SPECIFIED mode does not read _cooldownKey",
+    "availability": "initial cooldown timer ready under default Reset; owner/event/abnormal state still external"
+  },
+  "remaining_external_context": [
+    "Resource declarations are installed in the default mode; animation dictionary initialized from this prefab; no animation override.",
+    "Native default methods with null hotfix slots, no extra blackboard/delta, potential/skin/global preparation modifiers.",
+    "Owner exists and attachment/registration completed; no full Unity Init or loading process executed by this component.",
+    "Owner validity, abnormal/dying/skill flags, event modifiers and skill admission remain explicit scene inputs.",
+    "UberEffectEmitter's inherited timing override is recovered; visual initialization/effect emission is not executed.",
+    "Deterministic shared coroutine branch, frame clock, physics target order and damage/lifecycle context remain separately declared."
+  ]
+}

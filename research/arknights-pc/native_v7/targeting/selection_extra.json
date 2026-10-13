@@ -1,0 +1,20 @@
+[
+  {
+    "type": "UnresolvedCall",
+    "method": "WeightedTarget_Entity_CompareTo_from_PriorityQueue_Add",
+    "address": "0x1855279c0",
+    "metadata_method_index": null,
+    "token": null,
+    "raw_call_target": true,
+    "reason": "v7 round2 PriorityQueue<WeightedTarget<Entity>>.Add body (source bound slot18896e940 exact method26036) calls this with incoming and existing WeightedTarget structs and RGCTX at+70. WeightedTarget metadata74744 CompareTo slot4 is candidate identity; runtime generic sharing must be traced, do not name by first alias. Core ordering/gap/prior/UID closure."
+  },
+  {
+    "type": "UnresolvedCall",
+    "method": "WeightedTarget_Entity_inner_ctor_from_ctor",
+    "address": "0x185528bb0",
+    "metadata_method_index": null,
+    "token": null,
+    "raw_call_target": true,
+    "reason": "v7 round2 caller185528950 invokes this with FP weight, Entity, fourth explicit0 and methodInfo fromclass RGCTX+c0. Need actual priorWeight/volume defaults; open metadata fields cannot prove concrete offsets."
+  }
+]

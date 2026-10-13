@@ -1,0 +1,22 @@
+{
+  "scope": "Ordinary selected NPC post-Reset receipt / no suppression, trigger, durable, derived, anti or resistance paths; explicit override/attribute/pool/owner/audio boundaries",
+  "snapshot": "Live mutations immediate; one snapshot refreshed only on depth0 entry; nested iterators share it; separate forward/backward LIFO iterator pools",
+  "priority": "Descending event priority, FIFO equals",
+  "registration": "list + UID map before optional active Start0; started flag after actions; enable after Start",
+  "owner_born": "12 only, never Start0",
+  "owner_post_born": "35 only, not separate AfterBorn method",
+  "fixed_phase": "StateMachine.Tick before BuffContainer.Tick in Entity.OnTick",
+  "finish": "OwnerFinish has no finished/enabled filter; mark separate from actually finished; FinishBuffsById no-stack alwaysMarkFinish(true)",
+  "clear": "first pass finish + deferred pool; second unfinished fallback immediate pool; then clear live/maps",
+  "damage": "Container no cancelled/amount/type/bypass filter; Buff filters actions10 only; packet pass-through restricted reviewed non-Modifier action nodes",
+  "verification": {
+    "tests": 32,
+    "independent_csharp_vectors": 192,
+    "all_passed": true
+  },
+  "runtime_limits": [
+    "Static client evidence, not actual hotfix or live runtime observation",
+    "No client execution or network",
+    "External prepared initializer/override/attribute/pool/mode/tween/audio providers remain material boundaries"
+  ]
+}

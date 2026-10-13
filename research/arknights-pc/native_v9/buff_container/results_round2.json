@@ -1,0 +1,664 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "analysis_mode": "explicit selected PE function ranges; default whole-image analysis disabled",
+  "symbol_provenance": "Local metadata/native pointer-table candidate names; each entry corroborated by exact PE unwind start. Static analysis, no game execution.",
+  "functions": [
+    {
+      "name": "Torappu_DoubleBufferedList_1_BackwardEnumerator__ctor_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.BackwardEnumerator..ctor",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1.BackwardEnumerator",
+      "address": "0x18558e680",
+      "end_address": "0x18558e719",
+      "ranges": [
+        {
+          "start": "0x18558e680",
+          "end": "0x18558e719",
+          "unwind_rva": "0x7f63a50",
+          "chained": false,
+          "source_sha256": "1583fa36c2d04175261d5b297476617e62a380006b82db097cd3a56f29a53095",
+          "source_file_offset": 89709184
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 89709184,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x18558e680",
+          "bytes": 154,
+          "imported_sha256": "1583fa36c2d04175261d5b297476617e62a380006b82db097cd3a56f29a53095",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 41,
+      "direct_calls": [
+        {
+          "source": "18558e6a2",
+          "target": "0x18050cf60",
+          "candidate_name": "BattleTimer_EventOnEntryClick_0x6000062"
+        },
+        {
+          "source": "18558e6c7",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "18558e6d4",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "18558e6e7",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18558e714",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Possible PIC construction at 0x00018558e6e7: Changing call to branch */\r\n/* WARNING: Removing unreachable block (ram,0x00018558e6ec) */\r\n\r\nulonglong Torappu_DoubleBufferedList_1_BackwardEnumerator__ctor_call_target\r\n                    (longlong param_1,longlong param_2,undefined8 param_3,longlong param_4)\r\n\r\n{\r\n  ulonglong *puVar1;\r\n  ulonglong uVar2;\r\n  code *pcVar3;\r\n  longlong lVar4;\r\n  ulonglong uVar5;\r\n  uint uVar6;\r\n  bool bVar7;\r\n  \r\n  func_0x00018050cf60(param_1,0);\r\n  if (param_2 == 0) {\r\n    FUN_18048c0b0();\r\n    pcVar3 = (code *)swi(3);\r\n    uVar5 = (*pcVar3)();\r\n    return uVar5;\r\n  }\r\n  lVar4 = *(longlong *)(*(longlong *)(*(longlong *)(param_4 + 0x20) + 0xc0) + 0x18);\r\n  if ((*(byte *)(lVar4 + 0x136) & 1) == 0) {\r\n    lVar4 = FUN_1804463f0(lVar4);\r\n  }\r\n  uVar5 = FUN_180005310(0,lVar4,param_2);\r\n  *(int *)(param_1 + 0x18) = (int)uVar5;\r\n  *(longlong *)(param_1 + 0x10) = param_2;\r\n  if (iRam0000000188cccdd8 != 0) {\r\n    uVar6 = (uint)(param_1 + 0x10U >> 0xc);\r\n    puVar1 = (ulonglong *)((ulonglong)((uVar6 & 0x1fffff) >> 6) * 8 + 0x188d15560);\r\n    do {\r\n      uVar2 = *puVar1;\r\n      LOCK();\r\n      uVar5 = *puVar1;\r\n      bVar7 = uVar2 == uVar5;\r\n      if (bVar7) {\r\n        *puVar1 = uVar2 | 1L << (uVar6 & 0x3f);\r\n        uVar5 = uVar2;\r\n      }\r\n      UNLOCK();\r\n    } while (!bVar7);\r\n  }\r\n  return uVar5;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_BackwardEnumerator_Dispose_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.BackwardEnumerator.Dispose",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1.BackwardEnumerator",
+      "address": "0x18558e3f0",
+      "end_address": "0x18558e4bd",
+      "ranges": [
+        {
+          "start": "0x18558e3f0",
+          "end": "0x18558e45d",
+          "unwind_rva": "0x7f6510c",
+          "chained": false,
+          "source_sha256": "fd6aeccb862e9425afc1ef28cfe52b3cc0c27d95c82a8689b6bee43411c4a85d",
+          "source_file_offset": 89708528
+        },
+        {
+          "start": "0x18558e45e",
+          "end": "0x18558e4ac",
+          "unwind_rva": "0x83e2628",
+          "chained": true,
+          "source_sha256": "24aad2b21fba3690310032d5dd27857689f8e7873a50b1ab2f3583feb3827b7c",
+          "source_file_offset": 89708638
+        },
+        {
+          "start": "0x18558e4ad",
+          "end": "0x18558e4b7",
+          "unwind_rva": "0x83e263c",
+          "chained": true,
+          "source_sha256": "7b621aeee727a734a4b5db938934795acfb76e2edd49165530a760bac9d9d13f",
+          "source_file_offset": 89708717
+        },
+        {
+          "start": "0x18558e4b8",
+          "end": "0x18558e4bd",
+          "unwind_rva": "0x83e264c",
+          "chained": true,
+          "source_sha256": "e30faf7ce7231f0ecb12d0bf8e10717deae47a8f989b2524713d50b6c011dc5b",
+          "source_file_offset": 89708728
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 89708528,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x18558e3f0",
+          "bytes": 110,
+          "imported_sha256": "fd6aeccb862e9425afc1ef28cfe52b3cc0c27d95c82a8689b6bee43411c4a85d",
+          "match": true
+        },
+        {
+          "start": "0x18558e45e",
+          "bytes": 79,
+          "imported_sha256": "24aad2b21fba3690310032d5dd27857689f8e7873a50b1ab2f3583feb3827b7c",
+          "match": true
+        },
+        {
+          "start": "0x18558e4ad",
+          "bytes": 11,
+          "imported_sha256": "7b621aeee727a734a4b5db938934795acfb76e2edd49165530a760bac9d9d13f",
+          "match": true
+        },
+        {
+          "start": "0x18558e4b8",
+          "bytes": 6,
+          "imported_sha256": "e30faf7ce7231f0ecb12d0bf8e10717deae47a8f989b2524713d50b6c011dc5b",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 51,
+      "direct_calls": [
+        {
+          "source": "18558e410",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18558e41c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18558e43e",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18558e44c",
+          "target": "0x1866dd600",
+          "candidate_name": "UnityEngine_DLog_LogError_0x6000031"
+        },
+        {
+          "source": "18558e4b8",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_DoubleBufferedList_1_BackwardEnumerator_Dispose_call_target\r\n               (longlong param_1,longlong param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  \r\n  if (DAT_188cbc9b1 == '\\0') {\r\n    FUN_18048bf00(&DAT_18892ea20);\r\n    FUN_18048bf00(&DAT_188919880);\r\n    DAT_188cbc9b1 = '\\x01';\r\n  }\r\n  if (*(char *)(param_1 + 0x1c) != '\\0') {\r\n    if (*(int *)(_DAT_18892ea20 + 0xe0) == 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    UnityEngine_DLog_LogError_0x6000031(_DAT_188919880,0);\r\n  }\r\n  if ((*(longlong *)(param_1 + 0x20) != 0) && (*(char *)(param_1 + 0x1c) == '\\0')) {\r\n    lVar1 = *(longlong *)(param_1 + 0x20);\r\n    *(undefined1 *)(param_1 + 0x1c) = 1;\r\n    if (lVar1 == 0) {\r\n      FUN_18048c0b0();\r\n      pcVar2 = (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x30) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x30))();\r\n    }\r\n    (**(code **)(lVar1 + 0x18))(*(undefined8 *)(lVar1 + 0x40),param_1,*(undefined8 *)(lVar1 + 0x28))\r\n    ;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_BackwardEnumerator_MoveNext_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.BackwardEnumerator.MoveNext",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1.BackwardEnumerator",
+      "address": "0x18558e590",
+      "end_address": "0x18558e59d",
+      "ranges": [
+        {
+          "start": "0x18558e590",
+          "end": "0x18558e59d",
+          "leaf_boundary": "straight-line RET/tail JMP or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "2c727d9fc7f1f1c416755e0f8b270df3095f1b20a828ce45e46901602ee59422",
+          "source_file_offset": 89708944
+        }
+      ],
+      "range_provenance": "Bounded leaf candidate ending at straight-line RET/tail JMP or decoded INT3 padding; separate from PE unwind-derived coverage",
+      "file_offset": 89708944,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x18558e590",
+          "bytes": 14,
+          "imported_sha256": "2c727d9fc7f1f1c416755e0f8b270df3095f1b20a828ce45e46901602ee59422",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 6,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nuint Torappu_DoubleBufferedList_1_BackwardEnumerator_MoveNext_call_target(longlong param_1)\r\n\r\n{\r\n  uint uVar1;\r\n  \r\n  uVar1 = *(int *)(param_1 + 0x18) - 1;\r\n  *(uint *)(param_1 + 0x18) = uVar1;\r\n  return uVar1 >> 0x1f ^ 1;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_BackwardEnumerator_Reset_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.BackwardEnumerator.Reset",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1.BackwardEnumerator",
+      "address": "0x18558e5a0",
+      "end_address": "0x18558e617",
+      "ranges": [
+        {
+          "start": "0x18558e5a0",
+          "end": "0x18558e617",
+          "unwind_rva": "0x7f63a7c",
+          "chained": false,
+          "source_sha256": "75923e42224f1eb681d5ebc171ef581148878df256f882ccb23f6a12aa7ae6be",
+          "source_file_offset": 89708960
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 89708960,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x18558e5a0",
+          "bytes": 120,
+          "imported_sha256": "75923e42224f1eb681d5ebc171ef581148878df256f882ccb23f6a12aa7ae6be",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 33,
+      "direct_calls": [
+        {
+          "source": "18558e5d9",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "18558e5e6",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "18558e5f9",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18558e612",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid Torappu_DoubleBufferedList_1_BackwardEnumerator_Reset_call_target\r\n               (longlong param_1,undefined8 param_2,longlong param_3)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  undefined4 uVar3;\r\n  longlong lVar4;\r\n  \r\n  lVar1 = *(longlong *)(param_1 + 0x10);\r\n  if (lVar1 != 0) {\r\n    lVar4 = *(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x18);\r\n    if ((*(byte *)(lVar4 + 0x136) & 1) == 0) {\r\n      lVar4 = FUN_1804463f0(lVar4);\r\n    }\r\n    uVar3 = FUN_180005310(0,lVar4,lVar1);\r\n    *(undefined4 *)(param_1 + 0x18) = uVar3;\r\n    *(undefined8 *)(param_1 + 0x10) = param_2;\r\n    func_0x00018048b9e0(param_1 + 0x10,param_2);\r\n    *(undefined1 *)(param_1 + 0x1c) = 0;\r\n    return;\r\n  }\r\n  FUN_18048c0b0();\r\n  pcVar2 = (code *)swi(3);\r\n  (*pcVar2)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1__BackwardEnumeratorOnDispose_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1._BackwardEnumeratorOnDispose",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1",
+      "address": "0x185a18a90",
+      "end_address": "0x185a18c02",
+      "ranges": [
+        {
+          "start": "0x185a18a90",
+          "end": "0x185a18c02",
+          "unwind_rva": "0x7f63a50",
+          "chained": false,
+          "source_sha256": "68b05c7554f829e33f4ce8be7d7712017e215ff027237b9d1dd6e983c3134721",
+          "source_file_offset": 94469776
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 94469776,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x185a18a90",
+          "bytes": 371,
+          "imported_sha256": "68b05c7554f829e33f4ce8be7d7712017e215ff027237b9d1dd6e983c3134721",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 87,
+      "direct_calls": [
+        {
+          "source": "185a18ac7",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a18b32",
+          "target": "0x185367f40",
+          "candidate_name": null
+        },
+        {
+          "source": "185a18b41",
+          "target": "0x1830626c0",
+          "candidate_name": "XLua_DelegateBridge_InvokeSessionStart_0x6003c9d"
+        },
+        {
+          "source": "185a18b82",
+          "target": "0x1844c6730",
+          "candidate_name": null
+        },
+        {
+          "source": "185a18bcc",
+          "target": "0x1844c6730",
+          "candidate_name": null
+        },
+        {
+          "source": "185a18bd9",
+          "target": "0x183062770",
+          "candidate_name": "XLua_DelegateBridge_Invoke_0x6003c9e"
+        },
+        {
+          "source": "185a18be3",
+          "target": "0x183062640",
+          "candidate_name": "XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f"
+        },
+        {
+          "source": "185a18bfd",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid Torappu_DoubleBufferedList_1__BackwardEnumeratorOnDispose_call_target\r\n               (longlong param_1,undefined8 param_2,longlong param_3)\r\n\r\n{\r\n  code *pcVar1;\r\n  longlong lVar2;\r\n  \r\n  lVar2 = **(longlong **)(*(longlong *)(param_3 + 0x20) + 0xc0);\r\n  if ((*(byte *)(lVar2 + 0x136) & 1) == 0) {\r\n    lVar2 = FUN_1804463f0(lVar2);\r\n  }\r\n  lVar2 = *(longlong *)(*(longlong *)(lVar2 + 0xb8) + 0x68);\r\n  if (lVar2 == 0) {\r\n    *(short *)(param_1 + 0x20) = *(short *)(param_1 + 0x20) + -1;\r\n    lVar2 = *(longlong *)(param_1 + 0x30);\r\n    if (lVar2 == 0) {\r\n      FUN_18048c0b0();\r\n      pcVar1 = (code *)swi(3);\r\n      (*pcVar1)();\r\n      return;\r\n    }\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x128) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x128))();\r\n    }\r\n    FUN_185367f40(lVar2,param_2,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x128));\r\n  }\r\n  else {\r\n    XLua_DelegateBridge_InvokeSessionStart_0x6003c9d(lVar2,0);\r\n    if (*(longlong *)(*(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 8) + 0x20)\r\n        == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 8))();\r\n    }\r\n    FUN_1844c6730(lVar2,param_1,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 8));\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x120) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x120))();\r\n    }\r\n    FUN_1844c6730(lVar2,param_2,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x120));\r\n    XLua_DelegateBridge_Invoke_0x6003c9e(lVar2,0,0);\r\n    XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f(lVar2,0);\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1__ForwardEnumeratorOnDispose_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1._ForwardEnumeratorOnDispose",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1",
+      "address": "0x185a18c10",
+      "end_address": "0x185a18d82",
+      "ranges": [
+        {
+          "start": "0x185a18c10",
+          "end": "0x185a18d82",
+          "unwind_rva": "0x7f63a50",
+          "chained": false,
+          "source_sha256": "5e237c2a9773e3a3e1005d84ef146d5916c6d8cf732f8a99f19d059cc2876fbc",
+          "source_file_offset": 94470160
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 94470160,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x185a18c10",
+          "bytes": 371,
+          "imported_sha256": "5e237c2a9773e3a3e1005d84ef146d5916c6d8cf732f8a99f19d059cc2876fbc",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 87,
+      "direct_calls": [
+        {
+          "source": "185a18c47",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a18cb2",
+          "target": "0x185367f40",
+          "candidate_name": null
+        },
+        {
+          "source": "185a18cc1",
+          "target": "0x1830626c0",
+          "candidate_name": "XLua_DelegateBridge_InvokeSessionStart_0x6003c9d"
+        },
+        {
+          "source": "185a18d02",
+          "target": "0x1844c6730",
+          "candidate_name": null
+        },
+        {
+          "source": "185a18d4c",
+          "target": "0x1844c6730",
+          "candidate_name": null
+        },
+        {
+          "source": "185a18d59",
+          "target": "0x183062770",
+          "candidate_name": "XLua_DelegateBridge_Invoke_0x6003c9e"
+        },
+        {
+          "source": "185a18d63",
+          "target": "0x183062640",
+          "candidate_name": "XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f"
+        },
+        {
+          "source": "185a18d7d",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid Torappu_DoubleBufferedList_1__ForwardEnumeratorOnDispose_call_target\r\n               (longlong param_1,undefined8 param_2,longlong param_3)\r\n\r\n{\r\n  code *pcVar1;\r\n  longlong lVar2;\r\n  \r\n  lVar2 = **(longlong **)(*(longlong *)(param_3 + 0x20) + 0xc0);\r\n  if ((*(byte *)(lVar2 + 0x136) & 1) == 0) {\r\n    lVar2 = FUN_1804463f0(lVar2);\r\n  }\r\n  lVar2 = *(longlong *)(*(longlong *)(lVar2 + 0xb8) + 0x60);\r\n  if (lVar2 == 0) {\r\n    *(short *)(param_1 + 0x20) = *(short *)(param_1 + 0x20) + -1;\r\n    lVar2 = *(longlong *)(param_1 + 0x28);\r\n    if (lVar2 == 0) {\r\n      FUN_18048c0b0();\r\n      pcVar1 = (code *)swi(3);\r\n      (*pcVar1)();\r\n      return;\r\n    }\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x118) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x118))();\r\n    }\r\n    FUN_185367f40(lVar2,param_2,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x118));\r\n  }\r\n  else {\r\n    XLua_DelegateBridge_InvokeSessionStart_0x6003c9d(lVar2,0);\r\n    if (*(longlong *)(*(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 8) + 0x20)\r\n        == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 8))();\r\n    }\r\n    FUN_1844c6730(lVar2,param_1,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 8));\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x110) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x110))();\r\n    }\r\n    FUN_1844c6730(lVar2,param_2,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x110));\r\n    XLua_DelegateBridge_Invoke_0x6003c9e(lVar2,0,0);\r\n    XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f(lVar2,0);\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_ForwardEnumerator__ctor_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.ForwardEnumerator..ctor",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1.ForwardEnumerator",
+      "address": "0x184916ca0",
+      "end_address": "0x184916cf8",
+      "ranges": [
+        {
+          "start": "0x184916ca0",
+          "end": "0x184916cf8",
+          "unwind_rva": "0x7f63a7c",
+          "chained": false,
+          "source_sha256": "166997b067705463c4b15f35768cac1a29da61ef8ee01847fa3a0dcdfebb67c4",
+          "source_file_offset": 76636320
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 76636320,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x184916ca0",
+          "bytes": 89,
+          "imported_sha256": "166997b067705463c4b15f35768cac1a29da61ef8ee01847fa3a0dcdfebb67c4",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 23,
+      "direct_calls": [
+        {
+          "source": "184916cba",
+          "target": "0x18050cf60",
+          "candidate_name": "BattleTimer_EventOnEntryClick_0x6000062"
+        },
+        {
+          "source": "184916cd1",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Possible PIC construction at 0x000184916cd1: Changing call to branch */\r\n/* WARNING: Removing unreachable block (ram,0x000184916cd6) */\r\n\r\nulonglong Torappu_DoubleBufferedList_1_ForwardEnumerator__ctor_call_target\r\n                    (longlong param_1,undefined8 param_2)\r\n\r\n{\r\n  ulonglong *puVar1;\r\n  ulonglong uVar2;\r\n  ulonglong uVar3;\r\n  uint uVar4;\r\n  bool bVar5;\r\n  \r\n  uVar3 = func_0x00018050cf60(param_1,0);\r\n  *(undefined4 *)(param_1 + 0x18) = 0xffffffff;\r\n  *(undefined8 *)(param_1 + 0x10) = param_2;\r\n  if (iRam0000000188cccdd8 != 0) {\r\n    uVar4 = (uint)(param_1 + 0x10U >> 0xc);\r\n    puVar1 = (ulonglong *)((ulonglong)((uVar4 & 0x1fffff) >> 6) * 8 + 0x188d15560);\r\n    do {\r\n      uVar2 = *puVar1;\r\n      LOCK();\r\n      uVar3 = *puVar1;\r\n      bVar5 = uVar2 == uVar3;\r\n      if (bVar5) {\r\n        *puVar1 = uVar2 | 1L << (uVar4 & 0x3f);\r\n        uVar3 = uVar2;\r\n      }\r\n      UNLOCK();\r\n    } while (!bVar5);\r\n  }\r\n  return uVar3;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_ForwardEnumerator_Dispose_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.ForwardEnumerator.Dispose",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1.ForwardEnumerator",
+      "address": "0x184916960",
+      "end_address": "0x184916a2d",
+      "ranges": [
+        {
+          "start": "0x184916960",
+          "end": "0x1849169cd",
+          "unwind_rva": "0x7f6510c",
+          "chained": false,
+          "source_sha256": "aaa88bf29b49f04ddea11a73049140c0225d2c41442b3d2ffc02243db515ab33",
+          "source_file_offset": 76635488
+        },
+        {
+          "start": "0x1849169ce",
+          "end": "0x184916a1c",
+          "unwind_rva": "0x8383688",
+          "chained": true,
+          "source_sha256": "24aad2b21fba3690310032d5dd27857689f8e7873a50b1ab2f3583feb3827b7c",
+          "source_file_offset": 76635598
+        },
+        {
+          "start": "0x184916a1d",
+          "end": "0x184916a27",
+          "unwind_rva": "0x838369c",
+          "chained": true,
+          "source_sha256": "7b621aeee727a734a4b5db938934795acfb76e2edd49165530a760bac9d9d13f",
+          "source_file_offset": 76635677
+        },
+        {
+          "start": "0x184916a28",
+          "end": "0x184916a2d",
+          "unwind_rva": "0x83836ac",
+          "chained": true,
+          "source_sha256": "f0313a54dbdb685db1d6765e514c54d5472226df49d71c6cf69b425cc9aad60a",
+          "source_file_offset": 76635688
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 76635488,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x184916960",
+          "bytes": 110,
+          "imported_sha256": "aaa88bf29b49f04ddea11a73049140c0225d2c41442b3d2ffc02243db515ab33",
+          "match": true
+        },
+        {
+          "start": "0x1849169ce",
+          "bytes": 79,
+          "imported_sha256": "24aad2b21fba3690310032d5dd27857689f8e7873a50b1ab2f3583feb3827b7c",
+          "match": true
+        },
+        {
+          "start": "0x184916a1d",
+          "bytes": 11,
+          "imported_sha256": "7b621aeee727a734a4b5db938934795acfb76e2edd49165530a760bac9d9d13f",
+          "match": true
+        },
+        {
+          "start": "0x184916a28",
+          "bytes": 6,
+          "imported_sha256": "f0313a54dbdb685db1d6765e514c54d5472226df49d71c6cf69b425cc9aad60a",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 51,
+      "direct_calls": [
+        {
+          "source": "184916980",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18491698c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1849169ae",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1849169bc",
+          "target": "0x1866dd600",
+          "candidate_name": "UnityEngine_DLog_LogError_0x6000031"
+        },
+        {
+          "source": "184916a28",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_DoubleBufferedList_1_ForwardEnumerator_Dispose_call_target\r\n               (longlong param_1,longlong param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  \r\n  if (DAT_188cba68d == '\\0') {\r\n    FUN_18048bf00(&DAT_18892ea20);\r\n    FUN_18048bf00(&DAT_188879328);\r\n    DAT_188cba68d = '\\x01';\r\n  }\r\n  if (*(char *)(param_1 + 0x1c) != '\\0') {\r\n    if (*(int *)(_DAT_18892ea20 + 0xe0) == 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    UnityEngine_DLog_LogError_0x6000031(_DAT_188879328,0);\r\n  }\r\n  if ((*(longlong *)(param_1 + 0x20) != 0) && (*(char *)(param_1 + 0x1c) == '\\0')) {\r\n    lVar1 = *(longlong *)(param_1 + 0x20);\r\n    *(undefined1 *)(param_1 + 0x1c) = 1;\r\n    if (lVar1 == 0) {\r\n      FUN_18048c0b0();\r\n      pcVar2 = (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x30) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x30))();\r\n    }\r\n    (**(code **)(lVar1 + 0x18))(*(undefined8 *)(lVar1 + 0x40),param_1,*(undefined8 *)(lVar1 + 0x28))\r\n    ;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_ForwardEnumerator_MoveNext_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.ForwardEnumerator.MoveNext",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1.ForwardEnumerator",
+      "address": "0x184916b00",
+      "end_address": "0x184916b5d",
+      "ranges": [
+        {
+          "start": "0x184916b00",
+          "end": "0x184916b5d",
+          "unwind_rva": "0x7f63a3c",
+          "chained": false,
+          "source_sha256": "df9baac94e9f2fcc8cb58c6ff8ddaffa9c7f51d0373ec1d2064b4bd782579b86",
+          "source_file_offset": 76635904
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 76635904,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x184916b00",
+          "bytes": 94,
+          "imported_sha256": "df9baac94e9f2fcc8cb58c6ff8ddaffa9c7f51d0373ec1d2064b4bd782579b86",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 28,
+      "direct_calls": [
+        {
+          "source": "184916b36",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "184916b43",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "184916b58",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nbool Torappu_DoubleBufferedList_1_ForwardEnumerator_MoveNext_call_target\r\n               (longlong param_1,longlong param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  undefined1 uVar3;\r\n  int iVar4;\r\n  longlong lVar5;\r\n  int iVar6;\r\n  \r\n  lVar1 = *(longlong *)(param_1 + 0x10);\r\n  iVar6 = *(int *)(param_1 + 0x18) + 1;\r\n  *(int *)(param_1 + 0x18) = iVar6;\r\n  if (lVar1 != 0) {\r\n    lVar5 = *(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x18);\r\n    if ((*(byte *)(lVar5 + 0x136) & 1) == 0) {\r\n      lVar5 = FUN_1804463f0(lVar5);\r\n    }\r\n    iVar4 = FUN_180005310(0,lVar5,lVar1);\r\n    return iVar6 < iVar4;\r\n  }\r\n  FUN_18048c0b0();\r\n  pcVar2 = (code *)swi(3);\r\n  uVar3 = (*pcVar2)();\r\n  return (bool)uVar3;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_ForwardEnumerator_Reset_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.ForwardEnumerator.Reset",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1.ForwardEnumerator",
+      "address": "0x184916b60",
+      "end_address": "0x184916b86",
+      "ranges": [
+        {
+          "start": "0x184916b60",
+          "end": "0x184916b86",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "35436b6a81e01563a7f95d3c344f4607807c8fce6fe091f9cf7560c99311c994",
+          "source_file_offset": 76636000
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 76636000,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x184916b60",
+          "bytes": 39,
+          "imported_sha256": "35436b6a81e01563a7f95d3c344f4607807c8fce6fe091f9cf7560c99311c994",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 11,
+      "direct_calls": [
+        {
+          "source": "184916b78",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid Torappu_DoubleBufferedList_1_ForwardEnumerator_Reset_call_target\r\n               (longlong param_1,undefined8 param_2)\r\n\r\n{\r\n  *(undefined4 *)(param_1 + 0x18) = 0xffffffff;\r\n  *(undefined8 *)(param_1 + 0x10) = param_2;\r\n  func_0x00018048b9e0(param_1 + 0x10);\r\n  *(undefined1 *)(param_1 + 0x1c) = 0;\r\n  return;\r\n}\r\n\r\n"
+    }
+  ]
+}

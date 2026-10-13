@@ -1,0 +1,111 @@
+{
+  "scope": "native WAIT/float geometry/default WALK path components and independent C# translation checks",
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "client_runtime_compared": false,
+  "hotfix_runtime_compared": false,
+  "autonomous_route_ready": false,
+  "battle_ready": false,
+  "sse_assumption": "masked exceptions; nearest-even binary32 arithmetic; finite local coordinates",
+  "reference_scope": "source-owned independent reconstructed C#, not a native/client oracle",
+  "counts": {
+    "geometry_cases": 60,
+    "geometry_assertions": 480,
+    "path_cases": 29,
+    "path_node_snapshots": 1080,
+    "raycasts": 348,
+    "realmap_conditional_routes_compiled": 28
+  },
+  "native_reports": [
+    {
+      "path": "native_v4/movement/results_round2.json",
+      "complete_entries": 47,
+      "all_imported_ranges_match": true
+    },
+    {
+      "path": "native_v4/creation/results_round2.json",
+      "complete_entries": 50,
+      "all_imported_ranges_match": true
+    },
+    {
+      "path": "native_v4/attributes/results_round3.json",
+      "complete_entries": 24,
+      "all_imported_ranges_match": true
+    }
+  ],
+  "overload_correction": {
+    "0x180ad3e60": "VisualObject.SetPosition(GridPosition), old initial Vector2 label was wrong",
+    "0x180ad3dc0": "VisualObject.SetPosition(Vector2), actual Enemy call target",
+    "0x1808b6530": "CalculateTotalForce nonvirtual",
+    "virtual_slot_7": "_CalculateSteeringForce",
+    "virtual_slot_8": "CalculateIsHanging"
+  },
+  "files": [
+    {
+      "path": "MovementReference.cs",
+      "sha256": "87ca4f95e158c6307eeaed1a3e35f32299b139b1f1e2b03d07514e4a59eedea9"
+    },
+    {
+      "path": "reference_input.json",
+      "sha256": "9968dcd421504fdc9e3ab9ee4cdaad971e8b96b0c9a467a8e12c2ecb2f6cf919"
+    },
+    {
+      "path": "reference_vectors.json",
+      "sha256": "a5e8268e57cbbe93017696d3ef5f669f983bdcfeb7462e6716ab0b9968348689"
+    },
+    {
+      "path": "static_tile_fixture.json",
+      "sha256": "1cb4fb8202815d87f6648493f88f1c8b758d3f2fd1bf61b2d0d88622cd50e88a"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\results_round2.json",
+      "sha256": "1f2aa48b823bb06c0498d77a299891894733ce7eb34813f91f20916f3f3dd87a"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\creation\\results_round2.json",
+      "sha256": "2807705584b735564614b33368e68a58daebfae723c9f26739a10a7fff6bbce8"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\attributes\\results_round3.json",
+      "sha256": "16c8bd5689fe6ba1edcf8616b085fdcc45306bf962f3e67b9d8ddc5eefc2afed"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\raw_float_helpers.json",
+      "sha256": "0879887449c56de23e98e4903646abecf932e7e83a010bfbf9c447c869893580"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\raw_float_followups.json",
+      "sha256": "e0356a2205c7758ff559e94726c5f4174ecec9393f4fe438b893b05f4959b65e"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\raw_geometry_followups2.json",
+      "sha256": "f6bf5c17ec18c580a0289790161e507d464e25fdc482c0ef4d67336c1ace198d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\float_literal_constants.json",
+      "sha256": "c1f9234230693c6eceb329ccb3cf6dc5510528a2503dcf482ce161f7aaa263e6"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\native_fields.json",
+      "sha256": "5330f43cbccaff59dc271d56193a65da0e0a4add612b924e478c4be7dcb1afd0"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\shared_consts.json",
+      "sha256": "98dc26635c3c165598f52b9b92b1cba95c826fe3912bdce5889549717c0acb6c"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\attribute_meta.json",
+      "sha256": "3793ae257cea2619b8c397bf594336dabdd900e1d02a02596a54899008f7d0db"
+    },
+    {
+      "path": "path_inventory.json",
+      "sha256": "5cfcaf2335d0b4022cd8d96e669da3d09c231f93457a967ee2b21e880abde6c5"
+    }
+  ],
+  "limits": [
+    "no autonomous movement/leak/lifecycle completion claimed",
+    "cached Tile.Init state, device rewrite and dynamic obstacle context unresolved",
+    "controller forces, tick/position assignment and mode gates are not integrated",
+    "Python fail-closed excludes nonfinite coordinates, int32 overflow, unavailable/destroyed Unity objects",
+    "reference C# checks independent arithmetic and path translation, not fixture correctness or runtime RNG order"
+  ]
+}

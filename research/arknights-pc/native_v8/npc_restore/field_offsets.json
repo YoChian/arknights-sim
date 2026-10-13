@@ -1,0 +1,3866 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "types": [
+    {
+      "definition_index": 1624,
+      "name": "Torappu.GridPosition",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139774144,
+        "record_va": "0x186fe4c78",
+        "record_file_offset": 117322872,
+        "bytes16": "18000000080000007800000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 8,
+        "static_size": 120,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "row",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115721580,
+          "type": "Int32"
+        },
+        {
+          "name": "col",
+          "offset_hex": "0x14",
+          "offset_record_file_offset": 115721584,
+          "type": "Int32"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 5601,
+      "name": "Torappu.StateMachine",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139805960,
+        "record_va": "0x186ffe618",
+        "record_file_offset": 117427736,
+        "bytes16": "58000000ffffffff0000000000000000",
+        "instance_with_header": 88,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "onStarted",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115871376,
+          "type": "System.Action`1<Int32>"
+        },
+        {
+          "name": "onStateChanged",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 115871380,
+          "type": "System.Action`2<Int32,Int32>"
+        },
+        {
+          "name": "onTerminated",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 115871384,
+          "type": "System.Action`1<Int32>"
+        },
+        {
+          "name": "m_switchLocked",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 115871388,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_defaultStateId",
+          "offset_hex": "0x2c",
+          "offset_record_file_offset": 115871392,
+          "type": "Int32"
+        },
+        {
+          "name": "m_states",
+          "offset_hex": "0x30",
+          "offset_record_file_offset": 115871396,
+          "type": "System.Collections.Generic.Dictionary`2<Int32,Torappu.StateMachine.IStateNode>"
+        },
+        {
+          "name": "m_pendingQueue",
+          "offset_hex": "0x38",
+          "offset_record_file_offset": 115871400,
+          "type": "System.Collections.Generic.Queue`1<System.Collections.Generic.KeyValuePair`2<Int32,Boolean>>"
+        },
+        {
+          "name": "m_blackboard",
+          "offset_hex": "0x40",
+          "offset_record_file_offset": 115871404,
+          "type": "Torappu.StateMachine.IBlackboard"
+        },
+        {
+          "name": "<currentStateId>k__BackingField",
+          "offset_hex": "0x48",
+          "offset_record_file_offset": 115871408,
+          "type": "Int32"
+        },
+        {
+          "name": "<currentState>k__BackingField",
+          "offset_hex": "0x50",
+          "offset_record_file_offset": 115871412,
+          "type": "Torappu.StateMachine.IStateNode"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 5604,
+      "name": "Torappu.HierachyStateMachine`3.StateNode",
+      "value_type": false,
+      "generic_container_index": 177,
+      "sizes": {
+        "pointer_record_file_offset": 139805984,
+        "record_va": "0x186ffe668",
+        "record_file_offset": 117427816,
+        "bytes16": "00000000000000000000000000000000",
+        "instance_with_header": 0,
+        "native_size_raw": 0,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "m_stateMachine",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 115871420,
+          "type": "Torappu.HierachyStateMachine`3<VAR#223,VAR#224,VAR#225>"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 5608,
+      "name": "Torappu.HierachyStateMachine`3",
+      "value_type": false,
+      "generic_container_index": 181,
+      "sizes": {
+        "pointer_record_file_offset": 139806016,
+        "record_va": "0x186ffe6b8",
+        "record_file_offset": 117427896,
+        "bytes16": "00000000000000000000000000000000",
+        "instance_with_header": 0,
+        "native_size_raw": 0,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.StateMachine",
+      "base_definition_indices": [
+        5601
+      ],
+      "instance": [
+        {
+          "name": "<data>k__BackingField",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 115871504,
+          "type": "VAR#239"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "onStarted",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "System.Action`1<Int32>",
+          "offset_record_file_offset": 115871376
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "onStateChanged",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "System.Action`2<Int32,Int32>",
+          "offset_record_file_offset": 115871380
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "onTerminated",
+          "offset": 32,
+          "offset_hex": "0x20",
+          "type": "System.Action`1<Int32>",
+          "offset_record_file_offset": 115871384
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "m_switchLocked",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Boolean",
+          "offset_record_file_offset": 115871388
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "m_defaultStateId",
+          "offset": 44,
+          "offset_hex": "0x2c",
+          "type": "Int32",
+          "offset_record_file_offset": 115871392
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "m_states",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "System.Collections.Generic.Dictionary`2<Int32,Torappu.StateMachine.IStateNode>",
+          "offset_record_file_offset": 115871396
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "m_pendingQueue",
+          "offset": 56,
+          "offset_hex": "0x38",
+          "type": "System.Collections.Generic.Queue`1<System.Collections.Generic.KeyValuePair`2<Int32,Boolean>>",
+          "offset_record_file_offset": 115871400
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "m_blackboard",
+          "offset": 64,
+          "offset_hex": "0x40",
+          "type": "Torappu.StateMachine.IBlackboard",
+          "offset_record_file_offset": 115871404
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "<currentStateId>k__BackingField",
+          "offset": 72,
+          "offset_hex": "0x48",
+          "type": "Int32",
+          "offset_record_file_offset": 115871408
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "<currentState>k__BackingField",
+          "offset": 80,
+          "offset_hex": "0x50",
+          "type": "Torappu.StateMachine.IStateNode",
+          "offset_record_file_offset": 115871412
+        }
+      ]
+    },
+    {
+      "definition_index": 10083,
+      "name": "Torappu.Battle.BObject",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139841816,
+        "record_va": "0x186ff3a78",
+        "record_file_offset": 117383800,
+        "bytes16": "38000000ffffffff0400000000000000",
+        "instance_with_header": 56,
+        "native_size_raw": 4294967295,
+        "static_size": 4,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.Battle.VisualObject",
+      "base_definition_indices": [
+        11467,
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "<instanceUid>k__BackingField",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116606684,
+          "type": "UInt32"
+        },
+        {
+          "name": "<side>k__BackingField",
+          "offset_hex": "0x1c",
+          "offset_record_file_offset": 116606688,
+          "type": "Torappu.Battle.SideType"
+        },
+        {
+          "name": "<playerSide>k__BackingField",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 116606692,
+          "type": "Torappu.PlayerSide"
+        },
+        {
+          "name": "<inited>k__BackingField",
+          "offset_hex": "0x24",
+          "offset_record_file_offset": 116606696,
+          "type": "Boolean"
+        },
+        {
+          "name": "<borned>k__BackingField",
+          "offset_hex": "0x25",
+          "offset_record_file_offset": 116606700,
+          "type": "Boolean"
+        },
+        {
+          "name": "<isDisappeared>k__BackingField",
+          "offset_hex": "0x26",
+          "offset_record_file_offset": 116606704,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_prdCounter",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 116606708,
+          "type": "Int32"
+        },
+        {
+          "name": "m_prdSubEntities",
+          "offset_hex": "0x30",
+          "offset_record_file_offset": 116606712,
+          "type": "System.Collections.Generic.List`1<Torappu.RandomExtensions.IPRDRandomEntity>"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 10201,
+      "name": "Torappu.Battle.Entity",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139842760,
+        "record_va": "0x186ff4bb8",
+        "record_file_offset": 117388216,
+        "bytes16": "98010000ffffffff480b000000000000",
+        "instance_with_header": 408,
+        "native_size_raw": 4294967295,
+        "static_size": 2888,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.Battle.BObject",
+      "base_definition_indices": [
+        10083,
+        11467,
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "m_stateMachine",
+          "offset_hex": "0x38",
+          "offset_record_file_offset": 116529892,
+          "type": "Torappu.StateMachine"
+        },
+        {
+          "name": "m_hp",
+          "offset_hex": "0x40",
+          "offset_record_file_offset": 116529896,
+          "type": "Torappu.FP"
+        },
+        {
+          "name": "m_es",
+          "offset_hex": "0x48",
+          "offset_record_file_offset": 116529900,
+          "type": "Torappu.FP"
+        },
+        {
+          "name": "m_sp",
+          "offset_hex": "0x50",
+          "offset_record_file_offset": 116529904,
+          "type": "Torappu.ObscuredFP"
+        },
+        {
+          "name": "m_respawnCnt",
+          "offset_hex": "0x78",
+          "offset_record_file_offset": 116529908,
+          "type": "Int32"
+        },
+        {
+          "name": "m_epArray",
+          "offset_hex": "0x80",
+          "offset_record_file_offset": 116529912,
+          "type": "Torappu.FP[]"
+        },
+        {
+          "name": "m_isLocated",
+          "offset_hex": "0x88",
+          "offset_record_file_offset": 116529916,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_startIniting",
+          "offset_hex": "0x89",
+          "offset_record_file_offset": 116529920,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_isDialogTarget",
+          "offset_hex": "0x8a",
+          "offset_record_file_offset": 116529924,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_faceTo",
+          "offset_hex": "0x8c",
+          "offset_record_file_offset": 116529928,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "m_changeableMotionMode",
+          "offset_hex": "0x94",
+          "offset_record_file_offset": 116529932,
+          "type": "Torappu.MotionMode"
+        },
+        {
+          "name": "m_nextAbnormalPresentSeq",
+          "offset_hex": "0x98",
+          "offset_record_file_offset": 116529936,
+          "type": "Int64"
+        },
+        {
+          "name": "m_groundBoundPresentSeq",
+          "offset_hex": "0xa0",
+          "offset_record_file_offset": 116529940,
+          "type": "Int64"
+        },
+        {
+          "name": "m_levitatePresentSeq",
+          "offset_hex": "0xa8",
+          "offset_record_file_offset": 116529944,
+          "type": "Int64"
+        },
+        {
+          "name": "m_attributes",
+          "offset_hex": "0xb0",
+          "offset_record_file_offset": 116529948,
+          "type": "Torappu.Battle.Attributes"
+        },
+        {
+          "name": "m_eventPool",
+          "offset_hex": "0xb8",
+          "offset_record_file_offset": 116529952,
+          "type": "Torappu.EventPool`1<Torappu.Battle.Entity.Event>"
+        },
+        {
+          "name": "m_hpRecoverTimer",
+          "offset_hex": "0xc0",
+          "offset_record_file_offset": 116529956,
+          "type": "Torappu.PrecisePeriodicTimer"
+        },
+        {
+          "name": "m_holdEffects",
+          "offset_hex": "0xc8",
+          "offset_record_file_offset": 116529960,
+          "type": "System.Collections.Generic.HashSet`1<Torappu.ObjectPtr`1<Torappu.Battle.Effects.Effect>>"
+        },
+        {
+          "name": "m_colorModifiers",
+          "offset_hex": "0xd0",
+          "offset_record_file_offset": 116529964,
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Effects.ColorModifier>"
+        },
+        {
+          "name": "m_epRecoverTimer",
+          "offset_hex": "0xd8",
+          "offset_record_file_offset": 116529968,
+          "type": "Torappu.PrecisePeriodicTimer"
+        },
+        {
+          "name": "m_abilities",
+          "offset_hex": "0xe0",
+          "offset_record_file_offset": 116529972,
+          "type": "Torappu.ListSet`1<Torappu.Battle.Ability>"
+        },
+        {
+          "name": "m_abilitiesDirtyFlag",
+          "offset_hex": "0xe8",
+          "offset_record_file_offset": 116529976,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_isSuicide",
+          "offset_hex": "0xe9",
+          "offset_record_file_offset": 116529980,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_direction",
+          "offset_hex": "0xec",
+          "offset_record_file_offset": 116529984,
+          "type": "Torappu.SharedConsts.Direction"
+        },
+        {
+          "name": "m_cachedAbilities",
+          "offset_hex": "0xf0",
+          "offset_record_file_offset": 116529988,
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Ability>"
+        },
+        {
+          "name": "m_spController",
+          "offset_hex": "0xf8",
+          "offset_record_file_offset": 116529992,
+          "type": "Torappu.Battle.Entity.SpController"
+        },
+        {
+          "name": "m_epController",
+          "offset_hex": "0x100",
+          "offset_record_file_offset": 116529996,
+          "type": "Torappu.Battle.Entity.EPController"
+        },
+        {
+          "name": "m_shieldController",
+          "offset_hex": "0x108",
+          "offset_record_file_offset": 116530000,
+          "type": "Torappu.Battle.Entity.ShieldUIController"
+        },
+        {
+          "name": "m_buffEffects",
+          "offset_hex": "0x110",
+          "offset_record_file_offset": 116530004,
+          "type": "System.Collections.Generic.Dictionary`2<String,Torappu.Battle.Entity.BuffEffectHolder>"
+        },
+        {
+          "name": "m_abilityAttachments",
+          "offset_hex": "0x118",
+          "offset_record_file_offset": 116530008,
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.IAbilityAttachment>[]"
+        },
+        {
+          "name": "m_footMountPoint",
+          "offset_hex": "0x120",
+          "offset_record_file_offset": 116530012,
+          "type": "Torappu.Battle.MountPoint"
+        },
+        {
+          "name": "m_hitMountPoint",
+          "offset_hex": "0x128",
+          "offset_record_file_offset": 116530016,
+          "type": "Torappu.Battle.MountPoint"
+        },
+        {
+          "name": "m_muzzleMountPoint",
+          "offset_hex": "0x130",
+          "offset_record_file_offset": 116530020,
+          "type": "Torappu.Battle.MountPoint"
+        },
+        {
+          "name": "m_headMountPoint",
+          "offset_hex": "0x138",
+          "offset_record_file_offset": 116530024,
+          "type": "Torappu.Battle.MountPoint"
+        },
+        {
+          "name": "m_uiMountPoint",
+          "offset_hex": "0x140",
+          "offset_record_file_offset": 116530028,
+          "type": "Torappu.Battle.MountPoint"
+        },
+        {
+          "name": "<id>k__BackingField",
+          "offset_hex": "0x148",
+          "offset_record_file_offset": 116530036,
+          "type": "String"
+        },
+        {
+          "name": "<tmplId>k__BackingField",
+          "offset_hex": "0x150",
+          "offset_record_file_offset": 116530040,
+          "type": "String"
+        },
+        {
+          "name": "<finishReason>k__BackingField",
+          "offset_hex": "0x158",
+          "offset_record_file_offset": 116530044,
+          "type": "Torappu.Battle.Entity.FinishReason"
+        },
+        {
+          "name": "<pathMotionMode>k__BackingField",
+          "offset_hex": "0x15c",
+          "offset_record_file_offset": 116530048,
+          "type": "Torappu.MotionMode"
+        },
+        {
+          "name": "<originTile>k__BackingField",
+          "offset_hex": "0x160",
+          "offset_record_file_offset": 116530052,
+          "type": "Torappu.Battle.Tile"
+        },
+        {
+          "name": "<buffContainer>k__BackingField",
+          "offset_hex": "0x168",
+          "offset_record_file_offset": 116530056,
+          "type": "Torappu.Battle.Buff.BuffContainer"
+        },
+        {
+          "name": "<mapLayer>k__BackingField",
+          "offset_hex": "0x170",
+          "offset_record_file_offset": 116530060,
+          "type": "Torappu.MapLayer"
+        },
+        {
+          "name": "<shouldRenderFlag>k__BackingField",
+          "offset_hex": "0x174",
+          "offset_record_file_offset": 116530064,
+          "type": "Boolean"
+        },
+        {
+          "name": "<maxSp>k__BackingField",
+          "offset_hex": "0x178",
+          "offset_record_file_offset": 116530068,
+          "type": "Int32"
+        },
+        {
+          "name": "<minusHp>k__BackingField",
+          "offset_hex": "0x180",
+          "offset_record_file_offset": 116530072,
+          "type": "Torappu.FP"
+        },
+        {
+          "name": "<maxMinusHpRatio>k__BackingField",
+          "offset_hex": "0x188",
+          "offset_record_file_offset": 116530076,
+          "type": "Torappu.FP"
+        },
+        {
+          "name": "m_hitRangeManager",
+          "offset_hex": "0x190",
+          "offset_record_file_offset": 116530080,
+          "type": "Torappu.Battle.Entity.HitRangeManager"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<instanceUid>k__BackingField",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "UInt32",
+          "offset_record_file_offset": 116606684
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<side>k__BackingField",
+          "offset": 28,
+          "offset_hex": "0x1c",
+          "type": "Torappu.Battle.SideType",
+          "offset_record_file_offset": 116606688
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<playerSide>k__BackingField",
+          "offset": 32,
+          "offset_hex": "0x20",
+          "type": "Torappu.PlayerSide",
+          "offset_record_file_offset": 116606692
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<inited>k__BackingField",
+          "offset": 36,
+          "offset_hex": "0x24",
+          "type": "Boolean",
+          "offset_record_file_offset": 116606696
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<borned>k__BackingField",
+          "offset": 37,
+          "offset_hex": "0x25",
+          "type": "Boolean",
+          "offset_record_file_offset": 116606700
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<isDisappeared>k__BackingField",
+          "offset": 38,
+          "offset_hex": "0x26",
+          "type": "Boolean",
+          "offset_record_file_offset": 116606704
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "m_prdCounter",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Int32",
+          "offset_record_file_offset": 116606708
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "m_prdSubEntities",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "System.Collections.Generic.List`1<Torappu.RandomExtensions.IPRDRandomEntity>",
+          "offset_record_file_offset": 116606712
+        }
+      ]
+    },
+    {
+      "definition_index": 10657,
+      "name": "Torappu.Battle.BasicCursor",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139846408,
+        "record_va": "0x186ff8578",
+        "record_file_offset": 117403000,
+        "bytes16": "60000000ffffffffb800000000000000",
+        "instance_with_header": 96,
+        "native_size_raw": 4294967295,
+        "static_size": 184,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "m_route",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116577552,
+          "type": "Torappu.Battle.Route"
+        },
+        {
+          "name": "m_cursor",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116577556,
+          "type": "Int32"
+        },
+        {
+          "name": "m_cachedDirection",
+          "offset_hex": "0x1c",
+          "offset_record_file_offset": 116577560,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "m_checkpoints",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 116577564,
+          "type": "Torappu.Battle.BasicCursor.Checkpoint[]"
+        },
+        {
+          "name": "m_obj",
+          "offset_hex": "0x30",
+          "offset_record_file_offset": 116577568,
+          "type": "Torappu.Battle.BObject"
+        },
+        {
+          "name": "<ignoreAllButMoveCp>k__BackingField",
+          "offset_hex": "0x38",
+          "offset_record_file_offset": 116577572,
+          "type": "Boolean"
+        },
+        {
+          "name": "<visitEveryTileCenter>k__BackingField",
+          "offset_hex": "0x39",
+          "offset_record_file_offset": 116577576,
+          "type": "Boolean"
+        },
+        {
+          "name": "<visitEveryNodeCenter>k__BackingField",
+          "offset_hex": "0x3a",
+          "offset_record_file_offset": 116577580,
+          "type": "Boolean"
+        },
+        {
+          "name": "<snapshot>k__BackingField",
+          "offset_hex": "0x40",
+          "offset_record_file_offset": 116577584,
+          "type": "Torappu.Battle.Scheduler.SchedulerSnapshot"
+        },
+        {
+          "name": "<visitEveryNodeStably>k__BackingField",
+          "offset_hex": "0x58",
+          "offset_record_file_offset": 116577588,
+          "type": "Boolean"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 10658,
+      "name": "Torappu.Battle.DirectionCursor",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139846416,
+        "record_va": "0x186ff8588",
+        "record_file_offset": 117403016,
+        "bytes16": "80000000ffffffff0001000000000000",
+        "instance_with_header": 128,
+        "native_size_raw": 4294967295,
+        "static_size": 256,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.Battle.BasicCursor",
+      "base_definition_indices": [
+        10657
+      ],
+      "instance": [
+        {
+          "name": "m_visitedMap",
+          "offset_hex": "0x60",
+          "offset_record_file_offset": 116578512,
+          "type": "Boolean[,]"
+        },
+        {
+          "name": "m_offset",
+          "offset_hex": "0x68",
+          "offset_record_file_offset": 116578516,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "m_nextGrid",
+          "offset_hex": "0x70",
+          "offset_record_file_offset": 116578520,
+          "type": "Torappu.GridPosition"
+        },
+        {
+          "name": "m_alwaysCheckCurrentPoint",
+          "offset_hex": "0x78",
+          "offset_record_file_offset": 116578524,
+          "type": "Boolean"
+        },
+        {
+          "name": "<totalDist>k__BackingField",
+          "offset_hex": "0x7c",
+          "offset_record_file_offset": 116578528,
+          "type": "Single"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "Torappu.Battle.BasicCursor",
+          "name": "m_route",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "Torappu.Battle.Route",
+          "offset_record_file_offset": 116577552
+        },
+        {
+          "owner": "Torappu.Battle.BasicCursor",
+          "name": "m_cursor",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "Int32",
+          "offset_record_file_offset": 116577556
+        },
+        {
+          "owner": "Torappu.Battle.BasicCursor",
+          "name": "m_cachedDirection",
+          "offset": 28,
+          "offset_hex": "0x1c",
+          "type": "UnityEngine.Vector2",
+          "offset_record_file_offset": 116577560
+        },
+        {
+          "owner": "Torappu.Battle.BasicCursor",
+          "name": "m_checkpoints",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Torappu.Battle.BasicCursor.Checkpoint[]",
+          "offset_record_file_offset": 116577564
+        },
+        {
+          "owner": "Torappu.Battle.BasicCursor",
+          "name": "m_obj",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "Torappu.Battle.BObject",
+          "offset_record_file_offset": 116577568
+        },
+        {
+          "owner": "Torappu.Battle.BasicCursor",
+          "name": "<ignoreAllButMoveCp>k__BackingField",
+          "offset": 56,
+          "offset_hex": "0x38",
+          "type": "Boolean",
+          "offset_record_file_offset": 116577572
+        },
+        {
+          "owner": "Torappu.Battle.BasicCursor",
+          "name": "<visitEveryTileCenter>k__BackingField",
+          "offset": 57,
+          "offset_hex": "0x39",
+          "type": "Boolean",
+          "offset_record_file_offset": 116577576
+        },
+        {
+          "owner": "Torappu.Battle.BasicCursor",
+          "name": "<visitEveryNodeCenter>k__BackingField",
+          "offset": 58,
+          "offset_hex": "0x3a",
+          "type": "Boolean",
+          "offset_record_file_offset": 116577580
+        },
+        {
+          "owner": "Torappu.Battle.BasicCursor",
+          "name": "<snapshot>k__BackingField",
+          "offset": 64,
+          "offset_hex": "0x40",
+          "type": "Torappu.Battle.Scheduler.SchedulerSnapshot",
+          "offset_record_file_offset": 116577584
+        },
+        {
+          "owner": "Torappu.Battle.BasicCursor",
+          "name": "<visitEveryNodeStably>k__BackingField",
+          "offset": 88,
+          "offset_hex": "0x58",
+          "type": "Boolean",
+          "offset_record_file_offset": 116577588
+        }
+      ]
+    },
+    {
+      "definition_index": 10670,
+      "name": "Torappu.Battle.Route",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139846512,
+        "record_va": "0x186ff8738",
+        "record_file_offset": 117403448,
+        "bytes16": "38000000ffffffff0800000000000000",
+        "instance_with_header": 56,
+        "native_size_raw": 4294967295,
+        "static_size": 8,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "m_map",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116581804,
+          "type": "Torappu.Battle.Map"
+        },
+        {
+          "name": "m_data",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116581808,
+          "type": "Torappu.RouteData"
+        },
+        {
+          "name": "m_pathFinder",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 116581812,
+          "type": "Torappu.Battle.IPathFinding"
+        },
+        {
+          "name": "m_targetNextMap",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 116581816,
+          "type": "Torappu.Battle.Route.Node[,]"
+        },
+        {
+          "name": "m_checkpointsNextMap",
+          "offset_hex": "0x30",
+          "offset_record_file_offset": 116581820,
+          "type": "Torappu.Battle.Route.Node[,][]"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 11348,
+      "name": "Torappu.Battle.Enemy.BodyDirectionPolicy",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139851936,
+        "record_va": "0x18701ba68",
+        "record_file_offset": 117547624,
+        "bytes16": "14000000040000000000000000000000",
+        "instance_with_header": 20,
+        "native_size_raw": 4,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.Enum",
+      "base_definition_indices": [
+        41113,
+        41194
+      ],
+      "instance": [
+        {
+          "name": "value__",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116555960,
+          "type": "Int32"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 11352,
+      "name": "Torappu.Battle.Enemy.States.EnemyStateMachine",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139851968,
+        "record_va": "0x18701baf8",
+        "record_file_offset": 117547768,
+        "bytes16": "60000000ffffffff1000000000000000",
+        "instance_with_header": 96,
+        "native_size_raw": 4294967295,
+        "static_size": 16,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.HierachyStateMachine`3<Torappu.Battle.Enemy.States.State,Torappu.Battle.Enemy,Torappu.Battle.Enemy.States.Blackboard>",
+      "base_definition_indices": [
+        5608,
+        5601
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "onStarted",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "System.Action`1<Int32>",
+          "offset_record_file_offset": 115871376
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "onStateChanged",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "System.Action`2<Int32,Int32>",
+          "offset_record_file_offset": 115871380
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "onTerminated",
+          "offset": 32,
+          "offset_hex": "0x20",
+          "type": "System.Action`1<Int32>",
+          "offset_record_file_offset": 115871384
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "m_switchLocked",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Boolean",
+          "offset_record_file_offset": 115871388
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "m_defaultStateId",
+          "offset": 44,
+          "offset_hex": "0x2c",
+          "type": "Int32",
+          "offset_record_file_offset": 115871392
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "m_states",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "System.Collections.Generic.Dictionary`2<Int32,Torappu.StateMachine.IStateNode>",
+          "offset_record_file_offset": 115871396
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "m_pendingQueue",
+          "offset": 56,
+          "offset_hex": "0x38",
+          "type": "System.Collections.Generic.Queue`1<System.Collections.Generic.KeyValuePair`2<Int32,Boolean>>",
+          "offset_record_file_offset": 115871400
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "m_blackboard",
+          "offset": 64,
+          "offset_hex": "0x40",
+          "type": "Torappu.StateMachine.IBlackboard",
+          "offset_record_file_offset": 115871404
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "<currentStateId>k__BackingField",
+          "offset": 72,
+          "offset_hex": "0x48",
+          "type": "Int32",
+          "offset_record_file_offset": 115871408
+        },
+        {
+          "owner": "Torappu.StateMachine",
+          "name": "<currentState>k__BackingField",
+          "offset": 80,
+          "offset_hex": "0x50",
+          "type": "Torappu.StateMachine.IStateNode",
+          "offset_record_file_offset": 115871412
+        },
+        {
+          "owner": "Torappu.HierachyStateMachine`3",
+          "name": "<data>k__BackingField",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "VAR#239",
+          "offset_record_file_offset": 115871504
+        }
+      ]
+    },
+    {
+      "definition_index": 11353,
+      "name": "Torappu.Battle.Enemy.States.BasicState",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139851976,
+        "record_va": "0x18701bb18",
+        "record_file_offset": 117547800,
+        "bytes16": "18000000ffffffff0800000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 4294967295,
+        "static_size": 8,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.HierachyStateMachine`3.StateNode<Torappu.Battle.Enemy.States.State,Torappu.Battle.Enemy,Torappu.Battle.Enemy.States.Blackboard>",
+      "base_definition_indices": [
+        5604
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "Torappu.HierachyStateMachine`3.StateNode",
+          "name": "m_stateMachine",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "Torappu.HierachyStateMachine`3<VAR#223,VAR#224,VAR#225>",
+          "offset_record_file_offset": 115871420
+        }
+      ]
+    },
+    {
+      "definition_index": 11373,
+      "name": "Torappu.Battle.Enemy.States.DisappearState.<>c__DisplayClass21_0",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139852136,
+        "record_va": "0x18701bd88",
+        "record_file_offset": 117548424,
+        "bytes16": "28000000ffffffff0000000000000000",
+        "instance_with_header": 40,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "baseColor",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116561272,
+          "type": "UnityEngine.Color"
+        },
+        {
+          "name": "<>4__this",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 116561276,
+          "type": "Torappu.Battle.Enemy.States.DisappearState"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 11374,
+      "name": "Torappu.Battle.Enemy.States.DisappearState.<>c",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139852144,
+        "record_va": "0x18701bd98",
+        "record_file_offset": 117548440,
+        "bytes16": "10000000ffffffff2800000000000000",
+        "instance_with_header": 16,
+        "native_size_raw": 4294967295,
+        "static_size": 40,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 11375,
+      "name": "Torappu.Battle.Enemy.States.DisappearState.<_DoDisappear>d__21",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139852152,
+        "record_va": "0x18701bdb8",
+        "record_file_offset": 117548472,
+        "bytes16": "28000000ffffffff0000000000000000",
+        "instance_with_header": 40,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "<>1__state",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116561536,
+          "type": "Int32"
+        },
+        {
+          "name": "<>2__current",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116561540,
+          "type": "Object"
+        },
+        {
+          "name": "<>4__this",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 116561544,
+          "type": "Torappu.Battle.Enemy.States.DisappearState"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 11376,
+      "name": "Torappu.Battle.Enemy.States.DisappearState.<>c__DisplayClass22_0",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139852160,
+        "record_va": "0x18701bdd8",
+        "record_file_offset": 117548504,
+        "bytes16": "28000000ffffffff0000000000000000",
+        "instance_with_header": 40,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "baseColor",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116561880,
+          "type": "UnityEngine.Color"
+        },
+        {
+          "name": "<>4__this",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 116561884,
+          "type": "Torappu.Battle.Enemy.States.DisappearState"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 11377,
+      "name": "Torappu.Battle.Enemy.States.DisappearState",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139852168,
+        "record_va": "0x18701bdf8",
+        "record_file_offset": 117548536,
+        "bytes16": "38000000ffffffff7000000000000000",
+        "instance_with_header": 56,
+        "native_size_raw": 4294967295,
+        "static_size": 112,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.Battle.Enemy.States.BasicState",
+      "base_definition_indices": [
+        11353,
+        5604
+      ],
+      "instance": [
+        {
+          "name": "m_coroutine",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116561928,
+          "type": "Torappu.Battle.CoroutineId"
+        },
+        {
+          "name": "m_originalColliderEnable",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 116561932,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_disappearTween",
+          "offset_hex": "0x30",
+          "offset_record_file_offset": 116561936,
+          "type": "DG.Tweening.Tween"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "Torappu.HierachyStateMachine`3.StateNode",
+          "name": "m_stateMachine",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "Torappu.HierachyStateMachine`3<VAR#223,VAR#224,VAR#225>",
+          "offset_record_file_offset": 115871420
+        }
+      ]
+    },
+    {
+      "definition_index": 11393,
+      "name": "Torappu.Battle.Enemy",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139852296,
+        "record_va": "0x18701bfd8",
+        "record_file_offset": 117549016,
+        "bytes16": "80050000ffffffff2009000000000000",
+        "instance_with_header": 1408,
+        "native_size_raw": 4294967295,
+        "static_size": 2336,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.Battle.Unit",
+      "base_definition_indices": [
+        11457,
+        10201,
+        10083,
+        11467,
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "m_lastMoveDirVec",
+          "offset_hex": "0x2c0",
+          "offset_record_file_offset": 116567504,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "_sideTypeIndex",
+          "offset_hex": "0x2c8",
+          "offset_record_file_offset": 116567516,
+          "type": "Torappu.Battle.SideTypeIndex"
+        },
+        {
+          "name": "_locateRange",
+          "offset_hex": "0x2d0",
+          "offset_record_file_offset": 116567520,
+          "type": "Torappu.Battle.Range"
+        },
+        {
+          "name": "_disableRenderLocateRange",
+          "offset_hex": "0x2d8",
+          "offset_record_file_offset": 116567524,
+          "type": "Boolean"
+        },
+        {
+          "name": "_isFixedRotation",
+          "offset_hex": "0x2d9",
+          "offset_record_file_offset": 116567528,
+          "type": "Boolean"
+        },
+        {
+          "name": "_bodyDirectionPolicy",
+          "offset_hex": "0x2dc",
+          "offset_record_file_offset": 116567532,
+          "type": "Torappu.Battle.Enemy.BodyDirectionPolicy"
+        },
+        {
+          "name": "_useMoveDirAsFaceDir",
+          "offset_hex": "0x2e0",
+          "offset_record_file_offset": 116567536,
+          "type": "Boolean"
+        },
+        {
+          "name": "_scaleMoveBySpeed",
+          "offset_hex": "0x2e1",
+          "offset_record_file_offset": 116567540,
+          "type": "Boolean"
+        },
+        {
+          "name": "_scaleMoveAnimationRange",
+          "offset_hex": "0x2e4",
+          "offset_record_file_offset": 116567544,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "_showSpAsBulletMode",
+          "offset_hex": "0x2ec",
+          "offset_record_file_offset": 116567548,
+          "type": "Boolean"
+        },
+        {
+          "name": "_hideBulletSpModes",
+          "offset_hex": "0x2f0",
+          "offset_record_file_offset": 116567552,
+          "type": "System.Collections.Generic.List`1<Int32>"
+        },
+        {
+          "name": "_alwaysShowHp",
+          "offset_hex": "0x2f8",
+          "offset_record_file_offset": 116567556,
+          "type": "Boolean"
+        },
+        {
+          "name": "_alwaysHideHp",
+          "offset_hex": "0x2f9",
+          "offset_record_file_offset": 116567560,
+          "type": "Boolean"
+        },
+        {
+          "name": "_keepMoveAnimScale",
+          "offset_hex": "0x2fa",
+          "offset_record_file_offset": 116567564,
+          "type": "Boolean"
+        },
+        {
+          "name": "_useSpecificDeadAnim",
+          "offset_hex": "0x2fb",
+          "offset_record_file_offset": 116567568,
+          "type": "Boolean"
+        },
+        {
+          "name": "_useSpecificReachExitAnim",
+          "offset_hex": "0x2fc",
+          "offset_record_file_offset": 116567572,
+          "type": "Boolean"
+        },
+        {
+          "name": "_disableBornTweenColor",
+          "offset_hex": "0x2fd",
+          "offset_record_file_offset": 116567576,
+          "type": "Boolean"
+        },
+        {
+          "name": "_height",
+          "offset_hex": "0x300",
+          "offset_record_file_offset": 116567580,
+          "type": "Single"
+        },
+        {
+          "name": "_groundBoundHeightZOffset",
+          "offset_hex": "0x304",
+          "offset_record_file_offset": 116567584,
+          "type": "Single"
+        },
+        {
+          "name": "_useSpineLikeHeightUpdate",
+          "offset_hex": "0x308",
+          "offset_record_file_offset": 116567588,
+          "type": "Boolean"
+        },
+        {
+          "name": "_spineLikeHeightUpdateRatio",
+          "offset_hex": "0x30c",
+          "offset_record_file_offset": 116567592,
+          "type": "Single"
+        },
+        {
+          "name": "_delayToBorn",
+          "offset_hex": "0x310",
+          "offset_record_file_offset": 116567596,
+          "type": "Single"
+        },
+        {
+          "name": "_onlyDelayToBornOnTileStart",
+          "offset_hex": "0x314",
+          "offset_record_file_offset": 116567600,
+          "type": "Boolean"
+        },
+        {
+          "name": "_startEffect",
+          "offset_hex": "0x318",
+          "offset_record_file_offset": 116567604,
+          "type": "String"
+        },
+        {
+          "name": "_deadEffect",
+          "offset_hex": "0x320",
+          "offset_record_file_offset": 116567608,
+          "type": "String"
+        },
+        {
+          "name": "_blockVolume",
+          "offset_hex": "0x328",
+          "offset_record_file_offset": 116567612,
+          "type": "Int32"
+        },
+        {
+          "name": "_specialBlockCondition",
+          "offset_hex": "0x330",
+          "offset_record_file_offset": 116567616,
+          "type": "Torappu.Battle.Enemy.SpecialBlockCondition"
+        },
+        {
+          "name": "_dontSetEnemyFaceByCursorWhenBorn",
+          "offset_hex": "0x338",
+          "offset_record_file_offset": 116567620,
+          "type": "Boolean"
+        },
+        {
+          "name": "_idleWhenBorn",
+          "offset_hex": "0x339",
+          "offset_record_file_offset": 116567624,
+          "type": "Boolean"
+        },
+        {
+          "name": "_canNotExit",
+          "offset_hex": "0x33a",
+          "offset_record_file_offset": 116567628,
+          "type": "Boolean"
+        },
+        {
+          "name": "_hideShadowOnReset",
+          "offset_hex": "0x33b",
+          "offset_record_file_offset": 116567632,
+          "type": "Boolean"
+        },
+        {
+          "name": "_allowFalldownWhenReborn",
+          "offset_hex": "0x33c",
+          "offset_record_file_offset": 116567636,
+          "type": "Boolean"
+        },
+        {
+          "name": "_alwaysCheckCurrentPoint",
+          "offset_hex": "0x33d",
+          "offset_record_file_offset": 116567640,
+          "type": "Boolean"
+        },
+        {
+          "name": "_ignoreBlockMode",
+          "offset_hex": "0x33e",
+          "offset_record_file_offset": 116567644,
+          "type": "Boolean"
+        },
+        {
+          "name": "_specificBlockMask",
+          "offset_hex": "0x340",
+          "offset_record_file_offset": 116567648,
+          "type": "Torappu.Battle.SideType"
+        },
+        {
+          "name": "m_defaultModeIndex",
+          "offset_hex": "0x344",
+          "offset_record_file_offset": 116567652,
+          "type": "Int32"
+        },
+        {
+          "name": "m_totalMoveDist",
+          "offset_hex": "0x348",
+          "offset_record_file_offset": 116567656,
+          "type": "Single"
+        },
+        {
+          "name": "m_blinkHideUIFlag",
+          "offset_hex": "0x34c",
+          "offset_record_file_offset": 116567660,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_fogHideUIFlag",
+          "offset_hex": "0x34d",
+          "offset_record_file_offset": 116567664,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_forceHideUIFlag",
+          "offset_hex": "0x34e",
+          "offset_record_file_offset": 116567668,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_showSpUIFlag",
+          "offset_hex": "0x34f",
+          "offset_record_file_offset": 116567672,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_alwaysShowHpFlag",
+          "offset_hex": "0x350",
+          "offset_record_file_offset": 116567676,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_currentTile",
+          "offset_hex": "0x358",
+          "offset_record_file_offset": 116567680,
+          "type": "Torappu.Battle.Tile"
+        },
+        {
+          "name": "m_oldTile",
+          "offset_hex": "0x360",
+          "offset_record_file_offset": 116567684,
+          "type": "Torappu.Battle.Tile"
+        },
+        {
+          "name": "m_cursor",
+          "offset_hex": "0x368",
+          "offset_record_file_offset": 116567688,
+          "type": "Torappu.Battle.DirectionCursor"
+        },
+        {
+          "name": "m_cachedRoute",
+          "offset_hex": "0x370",
+          "offset_record_file_offset": 116567692,
+          "type": "Torappu.Battle.Route"
+        },
+        {
+          "name": "m_cachedCursorIndex",
+          "offset_hex": "0x378",
+          "offset_record_file_offset": 116567696,
+          "type": "Int32"
+        },
+        {
+          "name": "m_traceTargetAbility",
+          "offset_hex": "0x380",
+          "offset_record_file_offset": 116567700,
+          "type": "Torappu.Battle.Abilities.BaseTraceTargetAbility"
+        },
+        {
+          "name": "m_traceTargetCursor",
+          "offset_hex": "0x388",
+          "offset_record_file_offset": 116567704,
+          "type": "Torappu.Battle.TracePositionCursor"
+        },
+        {
+          "name": "m_moveController",
+          "offset_hex": "0x390",
+          "offset_record_file_offset": 116567708,
+          "type": "Torappu.Battle.MoveController"
+        },
+        {
+          "name": "m_blocker",
+          "offset_hex": "0x398",
+          "offset_record_file_offset": 116567712,
+          "type": "Torappu.ObjectPtr`1<Torappu.Battle.Entity>"
+        },
+        {
+          "name": "m_updatePosTicker",
+          "offset_hex": "0x3a8",
+          "offset_record_file_offset": 116567716,
+          "type": "Torappu.PeriodicTicker"
+        },
+        {
+          "name": "m_heightCtrl",
+          "offset_hex": "0x3b0",
+          "offset_record_file_offset": 116567720,
+          "type": "Torappu.Battle.Enemy.HeightController"
+        },
+        {
+          "name": "m_spineAnimator",
+          "offset_hex": "0x3b8",
+          "offset_record_file_offset": 116567724,
+          "type": "Torappu.Battle.SpineAnimator"
+        },
+        {
+          "name": "m_changealeSpecialBlockCondition",
+          "offset_hex": "0x3c0",
+          "offset_record_file_offset": 116567728,
+          "type": "Torappu.Battle.Enemy.SpecialBlockCondition"
+        },
+        {
+          "name": "m_disableAppearTweenColor",
+          "offset_hex": "0x3c8",
+          "offset_record_file_offset": 116567732,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_heightSpineLikeControlTransform",
+          "offset_hex": "0x3d0",
+          "offset_record_file_offset": 116567736,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "m_fearController",
+          "offset_hex": "0x3d8",
+          "offset_record_file_offset": 116567740,
+          "type": "Torappu.Battle.Enemy.FearController"
+        },
+        {
+          "name": "m_attractController",
+          "offset_hex": "0x3e0",
+          "offset_record_file_offset": 116567744,
+          "type": "Torappu.Battle.Enemy.AttractController"
+        },
+        {
+          "name": "m_groundBoundController",
+          "offset_hex": "0x3e8",
+          "offset_record_file_offset": 116567748,
+          "type": "Torappu.Battle.GroundBoundController"
+        },
+        {
+          "name": "m_blockTween",
+          "offset_hex": "0x3f0",
+          "offset_record_file_offset": 116567752,
+          "type": "Torappu.ITweenHandler"
+        },
+        {
+          "name": "m_tweenToRecycle",
+          "offset_hex": "0x3f8",
+          "offset_record_file_offset": 116567756,
+          "type": "DG.Tweening.Tween"
+        },
+        {
+          "name": "m_blockPosition",
+          "offset_hex": "0x400",
+          "offset_record_file_offset": 116567760,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "m_contDirAfterEnd",
+          "offset_hex": "0x408",
+          "offset_record_file_offset": 116567764,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "m_posInLastFrame",
+          "offset_hex": "0x410",
+          "offset_record_file_offset": 116567768,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "m_canNotExit",
+          "offset_hex": "0x418",
+          "offset_record_file_offset": 116567772,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_nonTriggerCollider",
+          "offset_hex": "0x420",
+          "offset_record_file_offset": 116567776,
+          "type": "UnityEngine.Collider2D"
+        },
+        {
+          "name": "m_mainTriggerCollider",
+          "offset_hex": "0x428",
+          "offset_record_file_offset": 116567780,
+          "type": "UnityEngine.Collider2D"
+        },
+        {
+          "name": "m_mainTriggerColliderRadius",
+          "offset_hex": "0x430",
+          "offset_record_file_offset": 116567784,
+          "type": "Torappu.FP"
+        },
+        {
+          "name": "m_pullSources",
+          "offset_hex": "0x438",
+          "offset_record_file_offset": 116567788,
+          "type": "Torappu.ListSet`1<Torappu.ObjectPtr`1<Torappu.Battle.BObject>>"
+        },
+        {
+          "name": "m_disabledPullSources",
+          "offset_hex": "0x440",
+          "offset_record_file_offset": 116567792,
+          "type": "Torappu.ListSet`1<Torappu.ObjectPtr`1<Torappu.Battle.BObject>>"
+        },
+        {
+          "name": "m_managedProjectiles",
+          "offset_hex": "0x448",
+          "offset_record_file_offset": 116567796,
+          "type": "System.Collections.Generic.List`1<Torappu.ObjectPtr`1<Torappu.Battle.Projectile>>"
+        },
+        {
+          "name": "m_allSkills",
+          "offset_hex": "0x450",
+          "offset_record_file_offset": 116567800,
+          "type": "Torappu.Battle.EnemySkill[]"
+        },
+        {
+          "name": "m_rebornData",
+          "offset_hex": "0x458",
+          "offset_record_file_offset": 116567804,
+          "type": "Torappu.Battle.Unit.RebornData"
+        },
+        {
+          "name": "m_isInvalidKilled",
+          "offset_hex": "0x4a0",
+          "offset_record_file_offset": 116567808,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_isOverrideKillCnt",
+          "offset_hex": "0x4a1",
+          "offset_record_file_offset": 116567812,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_overrideKillCnt",
+          "offset_hex": "0x4a4",
+          "offset_record_file_offset": 116567816,
+          "type": "Int32"
+        },
+        {
+          "name": "m_blockVolumeAddition",
+          "offset_hex": "0x4a8",
+          "offset_record_file_offset": 116567820,
+          "type": "Int32"
+        },
+        {
+          "name": "m_disableSwitchFaceByMove",
+          "offset_hex": "0x4ac",
+          "offset_record_file_offset": 116567824,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_createdTime",
+          "offset_hex": "0x4b0",
+          "offset_record_file_offset": 116567828,
+          "type": "Torappu.FP"
+        },
+        {
+          "name": "m_routeEndPosition",
+          "offset_hex": "0x4b8",
+          "offset_record_file_offset": 116567832,
+          "type": "Torappu.GridPosition"
+        },
+        {
+          "name": "m_routeSpawnPosition",
+          "offset_hex": "0x4c0",
+          "offset_record_file_offset": 116567836,
+          "type": "Torappu.GridPosition"
+        },
+        {
+          "name": "m_delayToRecycle",
+          "offset_hex": "0x4c8",
+          "offset_record_file_offset": 116567840,
+          "type": "Single"
+        },
+        {
+          "name": "m_ExtraLogIds",
+          "offset_hex": "0x4d0",
+          "offset_record_file_offset": 116567844,
+          "type": "System.Collections.Generic.List`1<Int32>"
+        },
+        {
+          "name": "m_hostUid",
+          "offset_hex": "0x4d8",
+          "offset_record_file_offset": 116567848,
+          "type": "UInt32"
+        },
+        {
+          "name": "m_skills",
+          "offset_hex": "0x4e0",
+          "offset_record_file_offset": 116567852,
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.EnemySkill>"
+        },
+        {
+          "name": "m_runtimeSnapshotTimer",
+          "offset_hex": "0x4e8",
+          "offset_record_file_offset": 116567856,
+          "type": "Torappu.PeriodicTimer"
+        },
+        {
+          "name": "m_currentSubTiles",
+          "offset_hex": "0x4f0",
+          "offset_record_file_offset": 116567860,
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Tile>"
+        },
+        {
+          "name": "m_attackAbilityCasted",
+          "offset_hex": "0x4f8",
+          "offset_record_file_offset": 116567864,
+          "type": "Torappu.Battle.Ability"
+        },
+        {
+          "name": "m_combatAbilityCasted",
+          "offset_hex": "0x500",
+          "offset_record_file_offset": 116567868,
+          "type": "Torappu.Battle.Ability"
+        },
+        {
+          "name": "m_combatNextEscapeTime",
+          "offset_hex": "0x508",
+          "offset_record_file_offset": 116567872,
+          "type": "Torappu.FP"
+        },
+        {
+          "name": "<disableUIHud>k__BackingField",
+          "offset_hex": "0x510",
+          "offset_record_file_offset": 116567876,
+          "type": "Boolean"
+        },
+        {
+          "name": "<lifePointReduce>k__BackingField",
+          "offset_hex": "0x514",
+          "offset_record_file_offset": 116567880,
+          "type": "Int32"
+        },
+        {
+          "name": "<defaultRangeRadius>k__BackingField",
+          "offset_hex": "0x518",
+          "offset_record_file_offset": 116567884,
+          "type": "Single"
+        },
+        {
+          "name": "<data>k__BackingField",
+          "offset_hex": "0x520",
+          "offset_record_file_offset": 116567888,
+          "type": "Torappu.LevelData.EnemyData"
+        },
+        {
+          "name": "<options>k__BackingField",
+          "offset_hex": "0x528",
+          "offset_record_file_offset": 116567892,
+          "type": "Torappu.Battle.Enemy.Options"
+        },
+        {
+          "name": "<rigidbody2D>k__BackingField",
+          "offset_hex": "0x558",
+          "offset_record_file_offset": 116567896,
+          "type": "UnityEngine.Rigidbody2D"
+        },
+        {
+          "name": "<attackWrapper>k__BackingField",
+          "offset_hex": "0x560",
+          "offset_record_file_offset": 116567900,
+          "type": "Torappu.Battle.Enemy.AttackWrapper"
+        },
+        {
+          "name": "<combatWrapper>k__BackingField",
+          "offset_hex": "0x568",
+          "offset_record_file_offset": 116567904,
+          "type": "Torappu.Battle.Enemy.CombatWrapper"
+        },
+        {
+          "name": "m_frictionFactor",
+          "offset_hex": "0x570",
+          "offset_record_file_offset": 116567912,
+          "type": "Single"
+        },
+        {
+          "name": "m_frictionFactorAdditional",
+          "offset_hex": "0x574",
+          "offset_record_file_offset": 116567916,
+          "type": "Single"
+        },
+        {
+          "name": "m_blockManager",
+          "offset_hex": "0x578",
+          "offset_record_file_offset": 116567920,
+          "type": "Torappu.Battle.BlockManager"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<instanceUid>k__BackingField",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "UInt32",
+          "offset_record_file_offset": 116606684
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<side>k__BackingField",
+          "offset": 28,
+          "offset_hex": "0x1c",
+          "type": "Torappu.Battle.SideType",
+          "offset_record_file_offset": 116606688
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<playerSide>k__BackingField",
+          "offset": 32,
+          "offset_hex": "0x20",
+          "type": "Torappu.PlayerSide",
+          "offset_record_file_offset": 116606692
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<inited>k__BackingField",
+          "offset": 36,
+          "offset_hex": "0x24",
+          "type": "Boolean",
+          "offset_record_file_offset": 116606696
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<borned>k__BackingField",
+          "offset": 37,
+          "offset_hex": "0x25",
+          "type": "Boolean",
+          "offset_record_file_offset": 116606700
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<isDisappeared>k__BackingField",
+          "offset": 38,
+          "offset_hex": "0x26",
+          "type": "Boolean",
+          "offset_record_file_offset": 116606704
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "m_prdCounter",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Int32",
+          "offset_record_file_offset": 116606708
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "m_prdSubEntities",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "System.Collections.Generic.List`1<Torappu.RandomExtensions.IPRDRandomEntity>",
+          "offset_record_file_offset": 116606712
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_stateMachine",
+          "offset": 56,
+          "offset_hex": "0x38",
+          "type": "Torappu.StateMachine",
+          "offset_record_file_offset": 116529892
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_hp",
+          "offset": 64,
+          "offset_hex": "0x40",
+          "type": "Torappu.FP",
+          "offset_record_file_offset": 116529896
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_es",
+          "offset": 72,
+          "offset_hex": "0x48",
+          "type": "Torappu.FP",
+          "offset_record_file_offset": 116529900
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_sp",
+          "offset": 80,
+          "offset_hex": "0x50",
+          "type": "Torappu.ObscuredFP",
+          "offset_record_file_offset": 116529904
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_respawnCnt",
+          "offset": 120,
+          "offset_hex": "0x78",
+          "type": "Int32",
+          "offset_record_file_offset": 116529908
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_epArray",
+          "offset": 128,
+          "offset_hex": "0x80",
+          "type": "Torappu.FP[]",
+          "offset_record_file_offset": 116529912
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_isLocated",
+          "offset": 136,
+          "offset_hex": "0x88",
+          "type": "Boolean",
+          "offset_record_file_offset": 116529916
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_startIniting",
+          "offset": 137,
+          "offset_hex": "0x89",
+          "type": "Boolean",
+          "offset_record_file_offset": 116529920
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_isDialogTarget",
+          "offset": 138,
+          "offset_hex": "0x8a",
+          "type": "Boolean",
+          "offset_record_file_offset": 116529924
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_faceTo",
+          "offset": 140,
+          "offset_hex": "0x8c",
+          "type": "UnityEngine.Vector2",
+          "offset_record_file_offset": 116529928
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_changeableMotionMode",
+          "offset": 148,
+          "offset_hex": "0x94",
+          "type": "Torappu.MotionMode",
+          "offset_record_file_offset": 116529932
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_nextAbnormalPresentSeq",
+          "offset": 152,
+          "offset_hex": "0x98",
+          "type": "Int64",
+          "offset_record_file_offset": 116529936
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_groundBoundPresentSeq",
+          "offset": 160,
+          "offset_hex": "0xa0",
+          "type": "Int64",
+          "offset_record_file_offset": 116529940
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_levitatePresentSeq",
+          "offset": 168,
+          "offset_hex": "0xa8",
+          "type": "Int64",
+          "offset_record_file_offset": 116529944
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_attributes",
+          "offset": 176,
+          "offset_hex": "0xb0",
+          "type": "Torappu.Battle.Attributes",
+          "offset_record_file_offset": 116529948
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_eventPool",
+          "offset": 184,
+          "offset_hex": "0xb8",
+          "type": "Torappu.EventPool`1<Torappu.Battle.Entity.Event>",
+          "offset_record_file_offset": 116529952
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_hpRecoverTimer",
+          "offset": 192,
+          "offset_hex": "0xc0",
+          "type": "Torappu.PrecisePeriodicTimer",
+          "offset_record_file_offset": 116529956
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_holdEffects",
+          "offset": 200,
+          "offset_hex": "0xc8",
+          "type": "System.Collections.Generic.HashSet`1<Torappu.ObjectPtr`1<Torappu.Battle.Effects.Effect>>",
+          "offset_record_file_offset": 116529960
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_colorModifiers",
+          "offset": 208,
+          "offset_hex": "0xd0",
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Effects.ColorModifier>",
+          "offset_record_file_offset": 116529964
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_epRecoverTimer",
+          "offset": 216,
+          "offset_hex": "0xd8",
+          "type": "Torappu.PrecisePeriodicTimer",
+          "offset_record_file_offset": 116529968
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_abilities",
+          "offset": 224,
+          "offset_hex": "0xe0",
+          "type": "Torappu.ListSet`1<Torappu.Battle.Ability>",
+          "offset_record_file_offset": 116529972
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_abilitiesDirtyFlag",
+          "offset": 232,
+          "offset_hex": "0xe8",
+          "type": "Boolean",
+          "offset_record_file_offset": 116529976
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_isSuicide",
+          "offset": 233,
+          "offset_hex": "0xe9",
+          "type": "Boolean",
+          "offset_record_file_offset": 116529980
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_direction",
+          "offset": 236,
+          "offset_hex": "0xec",
+          "type": "Torappu.SharedConsts.Direction",
+          "offset_record_file_offset": 116529984
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_cachedAbilities",
+          "offset": 240,
+          "offset_hex": "0xf0",
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Ability>",
+          "offset_record_file_offset": 116529988
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_spController",
+          "offset": 248,
+          "offset_hex": "0xf8",
+          "type": "Torappu.Battle.Entity.SpController",
+          "offset_record_file_offset": 116529992
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_epController",
+          "offset": 256,
+          "offset_hex": "0x100",
+          "type": "Torappu.Battle.Entity.EPController",
+          "offset_record_file_offset": 116529996
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_shieldController",
+          "offset": 264,
+          "offset_hex": "0x108",
+          "type": "Torappu.Battle.Entity.ShieldUIController",
+          "offset_record_file_offset": 116530000
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_buffEffects",
+          "offset": 272,
+          "offset_hex": "0x110",
+          "type": "System.Collections.Generic.Dictionary`2<String,Torappu.Battle.Entity.BuffEffectHolder>",
+          "offset_record_file_offset": 116530004
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_abilityAttachments",
+          "offset": 280,
+          "offset_hex": "0x118",
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.IAbilityAttachment>[]",
+          "offset_record_file_offset": 116530008
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_footMountPoint",
+          "offset": 288,
+          "offset_hex": "0x120",
+          "type": "Torappu.Battle.MountPoint",
+          "offset_record_file_offset": 116530012
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_hitMountPoint",
+          "offset": 296,
+          "offset_hex": "0x128",
+          "type": "Torappu.Battle.MountPoint",
+          "offset_record_file_offset": 116530016
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_muzzleMountPoint",
+          "offset": 304,
+          "offset_hex": "0x130",
+          "type": "Torappu.Battle.MountPoint",
+          "offset_record_file_offset": 116530020
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_headMountPoint",
+          "offset": 312,
+          "offset_hex": "0x138",
+          "type": "Torappu.Battle.MountPoint",
+          "offset_record_file_offset": 116530024
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_uiMountPoint",
+          "offset": 320,
+          "offset_hex": "0x140",
+          "type": "Torappu.Battle.MountPoint",
+          "offset_record_file_offset": 116530028
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<id>k__BackingField",
+          "offset": 328,
+          "offset_hex": "0x148",
+          "type": "String",
+          "offset_record_file_offset": 116530036
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<tmplId>k__BackingField",
+          "offset": 336,
+          "offset_hex": "0x150",
+          "type": "String",
+          "offset_record_file_offset": 116530040
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<finishReason>k__BackingField",
+          "offset": 344,
+          "offset_hex": "0x158",
+          "type": "Torappu.Battle.Entity.FinishReason",
+          "offset_record_file_offset": 116530044
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<pathMotionMode>k__BackingField",
+          "offset": 348,
+          "offset_hex": "0x15c",
+          "type": "Torappu.MotionMode",
+          "offset_record_file_offset": 116530048
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<originTile>k__BackingField",
+          "offset": 352,
+          "offset_hex": "0x160",
+          "type": "Torappu.Battle.Tile",
+          "offset_record_file_offset": 116530052
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<buffContainer>k__BackingField",
+          "offset": 360,
+          "offset_hex": "0x168",
+          "type": "Torappu.Battle.Buff.BuffContainer",
+          "offset_record_file_offset": 116530056
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<mapLayer>k__BackingField",
+          "offset": 368,
+          "offset_hex": "0x170",
+          "type": "Torappu.MapLayer",
+          "offset_record_file_offset": 116530060
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<shouldRenderFlag>k__BackingField",
+          "offset": 372,
+          "offset_hex": "0x174",
+          "type": "Boolean",
+          "offset_record_file_offset": 116530064
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<maxSp>k__BackingField",
+          "offset": 376,
+          "offset_hex": "0x178",
+          "type": "Int32",
+          "offset_record_file_offset": 116530068
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<minusHp>k__BackingField",
+          "offset": 384,
+          "offset_hex": "0x180",
+          "type": "Torappu.FP",
+          "offset_record_file_offset": 116530072
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<maxMinusHpRatio>k__BackingField",
+          "offset": 392,
+          "offset_hex": "0x188",
+          "type": "Torappu.FP",
+          "offset_record_file_offset": 116530076
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_hitRangeManager",
+          "offset": 400,
+          "offset_hex": "0x190",
+          "type": "Torappu.Battle.Entity.HitRangeManager",
+          "offset_record_file_offset": 116530080
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_animator",
+          "offset": 408,
+          "offset_hex": "0x198",
+          "type": "Torappu.Battle.UnitAnimator",
+          "offset_record_file_offset": 116605008
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_modes",
+          "offset": 416,
+          "offset_hex": "0x1a0",
+          "type": "Torappu.Battle.UnitMode[]",
+          "offset_record_file_offset": 116605012
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_commonAbilities",
+          "offset": 424,
+          "offset_hex": "0x1a8",
+          "type": "Torappu.Battle.Ability[]",
+          "offset_record_file_offset": 116605016
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_uiMountPoint",
+          "offset": 432,
+          "offset_hex": "0x1b0",
+          "type": "UnityEngine.Transform",
+          "offset_record_file_offset": 116605020
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_effectTransform",
+          "offset": 440,
+          "offset_hex": "0x1b8",
+          "type": "UnityEngine.Transform",
+          "offset_record_file_offset": 116605024
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_shadow",
+          "offset": 448,
+          "offset_hex": "0x1c0",
+          "type": "Torappu.Battle.ShadowController",
+          "offset_record_file_offset": 116605028
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_defaultBodyColor",
+          "offset": 456,
+          "offset_hex": "0x1c8",
+          "type": "UnityEngine.Color",
+          "offset_record_file_offset": 116605032
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_hideShadowOnRecycle",
+          "offset": 472,
+          "offset_hex": "0x1d8",
+          "type": "Boolean",
+          "offset_record_file_offset": 116605036
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_overrideGraphicBound",
+          "offset": 476,
+          "offset_hex": "0x1dc",
+          "type": "Single",
+          "offset_record_file_offset": 116605040
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_hudPluginReplacePairs",
+          "offset": 480,
+          "offset_hex": "0x1e0",
+          "type": "Torappu.Battle.Unit.StringReplacePair[]",
+          "offset_record_file_offset": 116605044
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_palsyController",
+          "offset": 488,
+          "offset_hex": "0x1e8",
+          "type": "Torappu.Battle.Unit.PalsyController",
+          "offset_record_file_offset": 116605048
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_colliderSprite",
+          "offset": 496,
+          "offset_hex": "0x1f0",
+          "type": "UnityEngine.GameObject",
+          "offset_record_file_offset": 116605052
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "_showDebugName",
+          "offset": 504,
+          "offset_hex": "0x1f8",
+          "type": "Boolean",
+          "offset_record_file_offset": 116605056
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_awaked",
+          "offset": 505,
+          "offset_hex": "0x1f9",
+          "type": "Boolean",
+          "offset_record_file_offset": 116605060
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_currentMode",
+          "offset": 512,
+          "offset_hex": "0x200",
+          "type": "Torappu.Battle.UnitMode",
+          "offset_record_file_offset": 116605064
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_overrideAttack",
+          "offset": 520,
+          "offset_hex": "0x208",
+          "type": "Torappu.Battle.Ability",
+          "offset_record_file_offset": 116605068
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_overrideTrigger",
+          "offset": 528,
+          "offset_hex": "0x210",
+          "type": "Torappu.Battle.TargetTrigger",
+          "offset_record_file_offset": 116605072
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_overrideCombat",
+          "offset": 536,
+          "offset_hex": "0x218",
+          "type": "Torappu.Battle.Ability",
+          "offset_record_file_offset": 116605076
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_defaultBodyColor",
+          "offset": 544,
+          "offset_hex": "0x220",
+          "type": "UnityEngine.Color",
+          "offset_record_file_offset": 116605080
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_mountPoints",
+          "offset": 560,
+          "offset_hex": "0x230",
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.MountPoint>",
+          "offset_record_file_offset": 116605084
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_originGraphicHolderPos",
+          "offset": 568,
+          "offset_hex": "0x238",
+          "type": "UnityEngine.Vector3",
+          "offset_record_file_offset": 116605088
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_appliedGrapicLocalPos",
+          "offset": 580,
+          "offset_hex": "0x244",
+          "type": "System.Nullable`1<UnityEngine.Vector3>",
+          "offset_record_file_offset": 116605092
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_graphicHolderHeightTween",
+          "offset": 600,
+          "offset_hex": "0x258",
+          "type": "Torappu.ITweenHandler",
+          "offset_record_file_offset": 116605096
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_hitColliers",
+          "offset": 608,
+          "offset_hex": "0x260",
+          "type": "UnityEngine.Collider2D[]",
+          "offset_record_file_offset": 116605100
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "<isDummy>k__BackingField",
+          "offset": 616,
+          "offset_hex": "0x268",
+          "type": "Boolean",
+          "offset_record_file_offset": 116605104
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "<talents>k__BackingField",
+          "offset": 624,
+          "offset_hex": "0x270",
+          "type": "Torappu.Battle.BasicTalent[]",
+          "offset_record_file_offset": 116605108
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_rootDynamicAbilities",
+          "offset": 632,
+          "offset_hex": "0x278",
+          "type": "System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<Torappu.Battle.Ability,Torappu.Blackboard>>",
+          "offset_record_file_offset": 116605112
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_spShowedBuff",
+          "offset": 640,
+          "offset_hex": "0x280",
+          "type": "Torappu.ObjectPtr`1<Torappu.Battle.Buff>",
+          "offset_record_file_offset": 116605116
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_isSpShowedBuffCountdown",
+          "offset": 656,
+          "offset_hex": "0x290",
+          "type": "Boolean",
+          "offset_record_file_offset": 116605120
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_advancedShowType",
+          "offset": 660,
+          "offset_hex": "0x294",
+          "type": "Torappu.Battle.AdvancedSpShowBuffType",
+          "offset_record_file_offset": 116605124
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_attackRangeDirty",
+          "offset": 664,
+          "offset_hex": "0x298",
+          "type": "Boolean",
+          "offset_record_file_offset": 116605128
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_attackRangeTiles",
+          "offset": 672,
+          "offset_hex": "0x2a0",
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Tile>",
+          "offset_record_file_offset": 116605132
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_originAttackRangeDirty",
+          "offset": 680,
+          "offset_hex": "0x2a8",
+          "type": "Boolean",
+          "offset_record_file_offset": 116605136
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_originAttackRangeTiles",
+          "offset": 688,
+          "offset_hex": "0x2b0",
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Tile>",
+          "offset_record_file_offset": 116605140
+        },
+        {
+          "owner": "Torappu.Battle.Unit",
+          "name": "m_graphicFollow",
+          "offset": 696,
+          "offset_hex": "0x2b8",
+          "type": "Torappu.Battle.GraphicFollowController",
+          "offset_record_file_offset": 116605144
+        }
+      ]
+    },
+    {
+      "definition_index": 11457,
+      "name": "Torappu.Battle.Unit",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139852808,
+        "record_va": "0x18701c778",
+        "record_file_offset": 117550968,
+        "bytes16": "c0020000ffffffff4805000000000000",
+        "instance_with_header": 704,
+        "native_size_raw": 4294967295,
+        "static_size": 1352,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.Battle.Entity",
+      "base_definition_indices": [
+        10201,
+        10083,
+        11467,
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "_animator",
+          "offset_hex": "0x198",
+          "offset_record_file_offset": 116605008,
+          "type": "Torappu.Battle.UnitAnimator"
+        },
+        {
+          "name": "_modes",
+          "offset_hex": "0x1a0",
+          "offset_record_file_offset": 116605012,
+          "type": "Torappu.Battle.UnitMode[]"
+        },
+        {
+          "name": "_commonAbilities",
+          "offset_hex": "0x1a8",
+          "offset_record_file_offset": 116605016,
+          "type": "Torappu.Battle.Ability[]"
+        },
+        {
+          "name": "_uiMountPoint",
+          "offset_hex": "0x1b0",
+          "offset_record_file_offset": 116605020,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_effectTransform",
+          "offset_hex": "0x1b8",
+          "offset_record_file_offset": 116605024,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_shadow",
+          "offset_hex": "0x1c0",
+          "offset_record_file_offset": 116605028,
+          "type": "Torappu.Battle.ShadowController"
+        },
+        {
+          "name": "_defaultBodyColor",
+          "offset_hex": "0x1c8",
+          "offset_record_file_offset": 116605032,
+          "type": "UnityEngine.Color"
+        },
+        {
+          "name": "_hideShadowOnRecycle",
+          "offset_hex": "0x1d8",
+          "offset_record_file_offset": 116605036,
+          "type": "Boolean"
+        },
+        {
+          "name": "_overrideGraphicBound",
+          "offset_hex": "0x1dc",
+          "offset_record_file_offset": 116605040,
+          "type": "Single"
+        },
+        {
+          "name": "_hudPluginReplacePairs",
+          "offset_hex": "0x1e0",
+          "offset_record_file_offset": 116605044,
+          "type": "Torappu.Battle.Unit.StringReplacePair[]"
+        },
+        {
+          "name": "m_palsyController",
+          "offset_hex": "0x1e8",
+          "offset_record_file_offset": 116605048,
+          "type": "Torappu.Battle.Unit.PalsyController"
+        },
+        {
+          "name": "_colliderSprite",
+          "offset_hex": "0x1f0",
+          "offset_record_file_offset": 116605052,
+          "type": "UnityEngine.GameObject"
+        },
+        {
+          "name": "_showDebugName",
+          "offset_hex": "0x1f8",
+          "offset_record_file_offset": 116605056,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_awaked",
+          "offset_hex": "0x1f9",
+          "offset_record_file_offset": 116605060,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_currentMode",
+          "offset_hex": "0x200",
+          "offset_record_file_offset": 116605064,
+          "type": "Torappu.Battle.UnitMode"
+        },
+        {
+          "name": "m_overrideAttack",
+          "offset_hex": "0x208",
+          "offset_record_file_offset": 116605068,
+          "type": "Torappu.Battle.Ability"
+        },
+        {
+          "name": "m_overrideTrigger",
+          "offset_hex": "0x210",
+          "offset_record_file_offset": 116605072,
+          "type": "Torappu.Battle.TargetTrigger"
+        },
+        {
+          "name": "m_overrideCombat",
+          "offset_hex": "0x218",
+          "offset_record_file_offset": 116605076,
+          "type": "Torappu.Battle.Ability"
+        },
+        {
+          "name": "m_defaultBodyColor",
+          "offset_hex": "0x220",
+          "offset_record_file_offset": 116605080,
+          "type": "UnityEngine.Color"
+        },
+        {
+          "name": "m_mountPoints",
+          "offset_hex": "0x230",
+          "offset_record_file_offset": 116605084,
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.MountPoint>"
+        },
+        {
+          "name": "m_originGraphicHolderPos",
+          "offset_hex": "0x238",
+          "offset_record_file_offset": 116605088,
+          "type": "UnityEngine.Vector3"
+        },
+        {
+          "name": "m_appliedGrapicLocalPos",
+          "offset_hex": "0x244",
+          "offset_record_file_offset": 116605092,
+          "type": "System.Nullable`1<UnityEngine.Vector3>"
+        },
+        {
+          "name": "m_graphicHolderHeightTween",
+          "offset_hex": "0x258",
+          "offset_record_file_offset": 116605096,
+          "type": "Torappu.ITweenHandler"
+        },
+        {
+          "name": "m_hitColliers",
+          "offset_hex": "0x260",
+          "offset_record_file_offset": 116605100,
+          "type": "UnityEngine.Collider2D[]"
+        },
+        {
+          "name": "<isDummy>k__BackingField",
+          "offset_hex": "0x268",
+          "offset_record_file_offset": 116605104,
+          "type": "Boolean"
+        },
+        {
+          "name": "<talents>k__BackingField",
+          "offset_hex": "0x270",
+          "offset_record_file_offset": 116605108,
+          "type": "Torappu.Battle.BasicTalent[]"
+        },
+        {
+          "name": "m_rootDynamicAbilities",
+          "offset_hex": "0x278",
+          "offset_record_file_offset": 116605112,
+          "type": "System.Collections.Generic.List`1<System.Collections.Generic.KeyValuePair`2<Torappu.Battle.Ability,Torappu.Blackboard>>"
+        },
+        {
+          "name": "m_spShowedBuff",
+          "offset_hex": "0x280",
+          "offset_record_file_offset": 116605116,
+          "type": "Torappu.ObjectPtr`1<Torappu.Battle.Buff>"
+        },
+        {
+          "name": "m_isSpShowedBuffCountdown",
+          "offset_hex": "0x290",
+          "offset_record_file_offset": 116605120,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_advancedShowType",
+          "offset_hex": "0x294",
+          "offset_record_file_offset": 116605124,
+          "type": "Torappu.Battle.AdvancedSpShowBuffType"
+        },
+        {
+          "name": "m_attackRangeDirty",
+          "offset_hex": "0x298",
+          "offset_record_file_offset": 116605128,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_attackRangeTiles",
+          "offset_hex": "0x2a0",
+          "offset_record_file_offset": 116605132,
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Tile>"
+        },
+        {
+          "name": "m_originAttackRangeDirty",
+          "offset_hex": "0x2a8",
+          "offset_record_file_offset": 116605136,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_originAttackRangeTiles",
+          "offset_hex": "0x2b0",
+          "offset_record_file_offset": 116605140,
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Tile>"
+        },
+        {
+          "name": "m_graphicFollow",
+          "offset_hex": "0x2b8",
+          "offset_record_file_offset": 116605144,
+          "type": "Torappu.Battle.GraphicFollowController"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<instanceUid>k__BackingField",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "UInt32",
+          "offset_record_file_offset": 116606684
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<side>k__BackingField",
+          "offset": 28,
+          "offset_hex": "0x1c",
+          "type": "Torappu.Battle.SideType",
+          "offset_record_file_offset": 116606688
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<playerSide>k__BackingField",
+          "offset": 32,
+          "offset_hex": "0x20",
+          "type": "Torappu.PlayerSide",
+          "offset_record_file_offset": 116606692
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<inited>k__BackingField",
+          "offset": 36,
+          "offset_hex": "0x24",
+          "type": "Boolean",
+          "offset_record_file_offset": 116606696
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<borned>k__BackingField",
+          "offset": 37,
+          "offset_hex": "0x25",
+          "type": "Boolean",
+          "offset_record_file_offset": 116606700
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "<isDisappeared>k__BackingField",
+          "offset": 38,
+          "offset_hex": "0x26",
+          "type": "Boolean",
+          "offset_record_file_offset": 116606704
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "m_prdCounter",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Int32",
+          "offset_record_file_offset": 116606708
+        },
+        {
+          "owner": "Torappu.Battle.BObject",
+          "name": "m_prdSubEntities",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "System.Collections.Generic.List`1<Torappu.RandomExtensions.IPRDRandomEntity>",
+          "offset_record_file_offset": 116606712
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_stateMachine",
+          "offset": 56,
+          "offset_hex": "0x38",
+          "type": "Torappu.StateMachine",
+          "offset_record_file_offset": 116529892
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_hp",
+          "offset": 64,
+          "offset_hex": "0x40",
+          "type": "Torappu.FP",
+          "offset_record_file_offset": 116529896
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_es",
+          "offset": 72,
+          "offset_hex": "0x48",
+          "type": "Torappu.FP",
+          "offset_record_file_offset": 116529900
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_sp",
+          "offset": 80,
+          "offset_hex": "0x50",
+          "type": "Torappu.ObscuredFP",
+          "offset_record_file_offset": 116529904
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_respawnCnt",
+          "offset": 120,
+          "offset_hex": "0x78",
+          "type": "Int32",
+          "offset_record_file_offset": 116529908
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_epArray",
+          "offset": 128,
+          "offset_hex": "0x80",
+          "type": "Torappu.FP[]",
+          "offset_record_file_offset": 116529912
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_isLocated",
+          "offset": 136,
+          "offset_hex": "0x88",
+          "type": "Boolean",
+          "offset_record_file_offset": 116529916
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_startIniting",
+          "offset": 137,
+          "offset_hex": "0x89",
+          "type": "Boolean",
+          "offset_record_file_offset": 116529920
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_isDialogTarget",
+          "offset": 138,
+          "offset_hex": "0x8a",
+          "type": "Boolean",
+          "offset_record_file_offset": 116529924
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_faceTo",
+          "offset": 140,
+          "offset_hex": "0x8c",
+          "type": "UnityEngine.Vector2",
+          "offset_record_file_offset": 116529928
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_changeableMotionMode",
+          "offset": 148,
+          "offset_hex": "0x94",
+          "type": "Torappu.MotionMode",
+          "offset_record_file_offset": 116529932
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_nextAbnormalPresentSeq",
+          "offset": 152,
+          "offset_hex": "0x98",
+          "type": "Int64",
+          "offset_record_file_offset": 116529936
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_groundBoundPresentSeq",
+          "offset": 160,
+          "offset_hex": "0xa0",
+          "type": "Int64",
+          "offset_record_file_offset": 116529940
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_levitatePresentSeq",
+          "offset": 168,
+          "offset_hex": "0xa8",
+          "type": "Int64",
+          "offset_record_file_offset": 116529944
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_attributes",
+          "offset": 176,
+          "offset_hex": "0xb0",
+          "type": "Torappu.Battle.Attributes",
+          "offset_record_file_offset": 116529948
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_eventPool",
+          "offset": 184,
+          "offset_hex": "0xb8",
+          "type": "Torappu.EventPool`1<Torappu.Battle.Entity.Event>",
+          "offset_record_file_offset": 116529952
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_hpRecoverTimer",
+          "offset": 192,
+          "offset_hex": "0xc0",
+          "type": "Torappu.PrecisePeriodicTimer",
+          "offset_record_file_offset": 116529956
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_holdEffects",
+          "offset": 200,
+          "offset_hex": "0xc8",
+          "type": "System.Collections.Generic.HashSet`1<Torappu.ObjectPtr`1<Torappu.Battle.Effects.Effect>>",
+          "offset_record_file_offset": 116529960
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_colorModifiers",
+          "offset": 208,
+          "offset_hex": "0xd0",
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Effects.ColorModifier>",
+          "offset_record_file_offset": 116529964
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_epRecoverTimer",
+          "offset": 216,
+          "offset_hex": "0xd8",
+          "type": "Torappu.PrecisePeriodicTimer",
+          "offset_record_file_offset": 116529968
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_abilities",
+          "offset": 224,
+          "offset_hex": "0xe0",
+          "type": "Torappu.ListSet`1<Torappu.Battle.Ability>",
+          "offset_record_file_offset": 116529972
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_abilitiesDirtyFlag",
+          "offset": 232,
+          "offset_hex": "0xe8",
+          "type": "Boolean",
+          "offset_record_file_offset": 116529976
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_isSuicide",
+          "offset": 233,
+          "offset_hex": "0xe9",
+          "type": "Boolean",
+          "offset_record_file_offset": 116529980
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_direction",
+          "offset": 236,
+          "offset_hex": "0xec",
+          "type": "Torappu.SharedConsts.Direction",
+          "offset_record_file_offset": 116529984
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_cachedAbilities",
+          "offset": 240,
+          "offset_hex": "0xf0",
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Ability>",
+          "offset_record_file_offset": 116529988
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_spController",
+          "offset": 248,
+          "offset_hex": "0xf8",
+          "type": "Torappu.Battle.Entity.SpController",
+          "offset_record_file_offset": 116529992
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_epController",
+          "offset": 256,
+          "offset_hex": "0x100",
+          "type": "Torappu.Battle.Entity.EPController",
+          "offset_record_file_offset": 116529996
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_shieldController",
+          "offset": 264,
+          "offset_hex": "0x108",
+          "type": "Torappu.Battle.Entity.ShieldUIController",
+          "offset_record_file_offset": 116530000
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_buffEffects",
+          "offset": 272,
+          "offset_hex": "0x110",
+          "type": "System.Collections.Generic.Dictionary`2<String,Torappu.Battle.Entity.BuffEffectHolder>",
+          "offset_record_file_offset": 116530004
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_abilityAttachments",
+          "offset": 280,
+          "offset_hex": "0x118",
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.IAbilityAttachment>[]",
+          "offset_record_file_offset": 116530008
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_footMountPoint",
+          "offset": 288,
+          "offset_hex": "0x120",
+          "type": "Torappu.Battle.MountPoint",
+          "offset_record_file_offset": 116530012
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_hitMountPoint",
+          "offset": 296,
+          "offset_hex": "0x128",
+          "type": "Torappu.Battle.MountPoint",
+          "offset_record_file_offset": 116530016
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_muzzleMountPoint",
+          "offset": 304,
+          "offset_hex": "0x130",
+          "type": "Torappu.Battle.MountPoint",
+          "offset_record_file_offset": 116530020
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_headMountPoint",
+          "offset": 312,
+          "offset_hex": "0x138",
+          "type": "Torappu.Battle.MountPoint",
+          "offset_record_file_offset": 116530024
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_uiMountPoint",
+          "offset": 320,
+          "offset_hex": "0x140",
+          "type": "Torappu.Battle.MountPoint",
+          "offset_record_file_offset": 116530028
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<id>k__BackingField",
+          "offset": 328,
+          "offset_hex": "0x148",
+          "type": "String",
+          "offset_record_file_offset": 116530036
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<tmplId>k__BackingField",
+          "offset": 336,
+          "offset_hex": "0x150",
+          "type": "String",
+          "offset_record_file_offset": 116530040
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<finishReason>k__BackingField",
+          "offset": 344,
+          "offset_hex": "0x158",
+          "type": "Torappu.Battle.Entity.FinishReason",
+          "offset_record_file_offset": 116530044
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<pathMotionMode>k__BackingField",
+          "offset": 348,
+          "offset_hex": "0x15c",
+          "type": "Torappu.MotionMode",
+          "offset_record_file_offset": 116530048
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<originTile>k__BackingField",
+          "offset": 352,
+          "offset_hex": "0x160",
+          "type": "Torappu.Battle.Tile",
+          "offset_record_file_offset": 116530052
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<buffContainer>k__BackingField",
+          "offset": 360,
+          "offset_hex": "0x168",
+          "type": "Torappu.Battle.Buff.BuffContainer",
+          "offset_record_file_offset": 116530056
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<mapLayer>k__BackingField",
+          "offset": 368,
+          "offset_hex": "0x170",
+          "type": "Torappu.MapLayer",
+          "offset_record_file_offset": 116530060
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<shouldRenderFlag>k__BackingField",
+          "offset": 372,
+          "offset_hex": "0x174",
+          "type": "Boolean",
+          "offset_record_file_offset": 116530064
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<maxSp>k__BackingField",
+          "offset": 376,
+          "offset_hex": "0x178",
+          "type": "Int32",
+          "offset_record_file_offset": 116530068
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<minusHp>k__BackingField",
+          "offset": 384,
+          "offset_hex": "0x180",
+          "type": "Torappu.FP",
+          "offset_record_file_offset": 116530072
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "<maxMinusHpRatio>k__BackingField",
+          "offset": 392,
+          "offset_hex": "0x188",
+          "type": "Torappu.FP",
+          "offset_record_file_offset": 116530076
+        },
+        {
+          "owner": "Torappu.Battle.Entity",
+          "name": "m_hitRangeManager",
+          "offset": 400,
+          "offset_hex": "0x190",
+          "type": "Torappu.Battle.Entity.HitRangeManager",
+          "offset_record_file_offset": 116530080
+        }
+      ]
+    },
+    {
+      "definition_index": 11467,
+      "name": "Torappu.Battle.VisualObject",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139852888,
+        "record_va": "0x18701c8c8",
+        "record_file_offset": 117551304,
+        "bytes16": "18000000ffffffff0000000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.MonoBehaviour",
+      "base_definition_indices": [
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 38183,
+      "name": "Torappu.MotionMode",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140066616,
+        "record_va": "0x187076988",
+        "record_file_offset": 117920136,
+        "bytes16": "14000000040000000000000000000000",
+        "instance_with_header": 20,
+        "native_size_raw": 4,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.Enum",
+      "base_definition_indices": [
+        41113,
+        41194
+      ],
+      "instance": [
+        {
+          "name": "value__",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116089776,
+          "type": "Int32"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 38210,
+      "name": "Torappu.SharedConsts.Direction",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140066832,
+        "record_va": "0x187076e38",
+        "record_file_offset": 117921336,
+        "bytes16": "14000000040000000000000000000000",
+        "instance_with_header": 20,
+        "native_size_raw": 4,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.Enum",
+      "base_definition_indices": [
+        41113,
+        41194
+      ],
+      "instance": [
+        {
+          "name": "value__",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116091040,
+          "type": "Int32"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 38267,
+      "name": "Torappu.ObscuredFP",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140067288,
+        "record_va": "0x187077528",
+        "record_file_offset": 117923112,
+        "bytes16": "38000000280000000000000000000000",
+        "instance_with_header": 56,
+        "native_size_raw": 40,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "_serializedValue",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116096036,
+          "type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredLong"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 38268,
+      "name": "Torappu.FP",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140067296,
+        "record_va": "0x187077558",
+        "record_file_offset": 117923160,
+        "bytes16": "1800000008000000f800000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 8,
+        "static_size": 248,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "_serializedValue",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116096048,
+          "type": "Int64"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 40996,
+      "name": "System.Nullable`1",
+      "value_type": true,
+      "generic_container_index": 2025,
+      "sizes": {
+        "pointer_record_file_offset": 140089120,
+        "record_va": "0x187073d48",
+        "record_file_offset": 117908808,
+        "bytes16": "00000000000000000000000000000000",
+        "instance_with_header": 0,
+        "native_size_raw": 0,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "hasValue",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 116217456,
+          "type": "Boolean"
+        },
+        {
+          "name": "value",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 116217460,
+          "type": "VAR#2550"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 41113,
+      "name": "System.Enum",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140090056,
+        "record_va": "0x187074e38",
+        "record_file_offset": 117913144,
+        "bytes16": "10000000010000000800000000000000",
+        "instance_with_header": 16,
+        "native_size_raw": 1,
+        "static_size": 8,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 41194,
+      "name": "System.ValueType",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140090704,
+        "record_va": "0x1870759c8",
+        "record_file_offset": 117916104,
+        "bytes16": "10000000010000000000000000000000",
+        "instance_with_header": 16,
+        "native_size_raw": 1,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 45387,
+      "name": "UnityEngine.Vector3",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124248,
+        "record_va": "0x18709ab88",
+        "record_file_offset": 118068104,
+        "bytes16": "1c0000000c0000007800000000000000",
+        "instance_with_header": 28,
+        "native_size_raw": 12,
+        "static_size": 120,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "x",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116304784,
+          "type": "Single"
+        },
+        {
+          "name": "y",
+          "offset_hex": "0x14",
+          "offset_record_file_offset": 116304788,
+          "type": "Single"
+        },
+        {
+          "name": "z",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116304792,
+          "type": "Single"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 45390,
+      "name": "UnityEngine.Vector2",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124272,
+        "record_va": "0x18709ac28",
+        "record_file_offset": 118068264,
+        "bytes16": "18000000080000004000000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 8,
+        "static_size": 64,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "x",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116305136,
+          "type": "Single"
+        },
+        {
+          "name": "y",
+          "offset_hex": "0x14",
+          "offset_record_file_offset": 116305140,
+          "type": "Single"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 45429,
+      "name": "UnityEngine.Behaviour",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124584,
+        "record_va": "0x18709b078",
+        "record_file_offset": 118069368,
+        "bytes16": "18000000ffffffff0000000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.Component",
+      "base_definition_indices": [
+        45432,
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 45432,
+      "name": "UnityEngine.Component",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124608,
+        "record_va": "0x18709b0d8",
+        "record_file_offset": 118069464,
+        "bytes16": "18000000ffffffff0000000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.Object",
+      "base_definition_indices": [
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 45442,
+      "name": "UnityEngine.MonoBehaviour",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124688,
+        "record_va": "0x18709b298",
+        "record_file_offset": 118069912,
+        "bytes16": "18000000ffffffff0000000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.Behaviour",
+      "base_definition_indices": [
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 45465,
+      "name": "UnityEngine.Object",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124872,
+        "record_va": "0x18709b4f8",
+        "record_file_offset": 118070520,
+        "bytes16": "18000000080000000400000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 8,
+        "static_size": 4,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "m_CachedPtr",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116306776,
+          "type": "IntPtr"
+        }
+      ],
+      "inherited_instance_layout": []
+    }
+  ],
+  "limits": [
+    "Static registration/type/offset/size records; no runtime process or game execution",
+    "Declared generic-definition offsets are not asserted as concrete closed Undefinable<T> ABI",
+    "Object instance offsets include16-byte object header; verified value-type member instructions must corroborate unboxed offsets",
+    "Methods metadata identities/pinned candidate pointers do not themselves prove merge or movement algorithms"
+  ]
+}

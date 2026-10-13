@@ -1,0 +1,91 @@
+{
+  "scope": "static_native_frame_order_and_object_snapshot",
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "client_runtime_compared": false,
+  "BattleController.OnTick": "0x18062c440",
+  "ordered_phases": [
+    "increment fixed frame and FP/Single play clocks",
+    "BattleTweenMgr",
+    "cost/deck bookkeeping",
+    "ObjectManager.OnFixedUpdate",
+    "UI fixed update",
+    "Map.OnFixedUpdate",
+    "level script action/event managers",
+    "anti-cheat fixed checker",
+    "operation queue or replay",
+    "delayed buff-container recycling",
+    "optional explicit Physics2D simulation",
+    "dialog",
+    "optional CoroutineSimulator.SimulateTick",
+    "global buffs",
+    "GlobalEnvSystemController",
+    "ObjectManager.OnLateFixedUpdate"
+  ],
+  "object_manager": {
+    "OnFixedUpdate": "0x1808d5300",
+    "OnLateFixedUpdate": "0x1808d54d0",
+    "object_registry_offset": "0x10",
+    "registry_type": "Torappu.PriorityQueue<BObject>",
+    "temporary_snapshot_offset": "0x18",
+    "predicate": {
+      "address": "0x180663080",
+      "name": "BObject.validAndBorned",
+      "expression": "borned(+0x25) && instanceUid(+0x18) != 0"
+    },
+    "semantics": "Each phase independently gathers validAndBorned objects in registry order before invoking callbacks. No alive recheck within the gathered loop.",
+    "registry_order_inferred_from_spawn_order": false
+  },
+  "global_buff_list": {
+    "BattleController_instance_offset": "0x68",
+    "name": "m_globalBuffs",
+    "is_scheduler_list": false
+  },
+  "TimeManager.Tick": {
+    "address": "0x1866f1350",
+    "semantics": "When ticking is enabled, increment frame, clamp incoming Single delta to maxDelta, accumulate Double total, then tick roots and normal/scaled timer groups.",
+    "live_setter_and_hotfix_paths_validated": false
+  },
+  "limits": [
+    "FixedUpdate dispatches through a game-mode interface; complete mode startup/operation/physics hooks are not assembled.",
+    "PriorityQueue ordering and relative creation of multiple battle coroutines still require explicit scene context.",
+    "The automatic route/lifecycle probe is a single-actor component experiment, not a full scene."
+  ],
+  "files": [
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round1.json",
+      "sha256": "b3dd4e8ee01e31e81e5f3d531b6229d039bb28632346ab3697b45a533162f337"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round2.json",
+      "sha256": "2fd554ee5c514fc8166eee68c3287567aded954dfe0400ffe5c11ff01c3d7505"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round3.json",
+      "sha256": "6050259684552295392a37e9b9be7b0e3db62dc160e248cf6ca793e0bb21480d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\input_round1.json",
+      "sha256": "c84f36e97412085e5fb5d133115b7d89cbea5457fcb5b4adbdc4dc90ba0ca854"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\input_round2.json",
+      "sha256": "f2bbae3cd6d0163aa50eecb6002e50718113ffb9a2d2a44f67c611c594dde447"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\input_round3.json",
+      "sha256": "09838f51492e63d8fb5699d86825c51325f825db085591486b0812ff8ad7f2ad"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\raw_round2.json",
+      "sha256": "a99f7ad8cb413e4ee6e16f7a01e62ce5ef7d71bca7ca21313caaecfff7b10b92"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\native_fields.json",
+      "sha256": "258a3f5c3e63f80bb4b790cd3d8bb5a0bbbc9605a7e26bbb6417904da7db186b"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\export_frame_fields.py",
+      "sha256": "c394cd367f7746db89b34c532106db7dd1eee9d6f23fc1149b5086866e553c24"
+    }
+  ]
+}

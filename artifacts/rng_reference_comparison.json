@@ -1,0 +1,100 @@
+{
+  "healthy": true,
+  "scope": "cross_language_implementation_comparison_not_real_client_oracle",
+  "seed_count": 8,
+  "seeds": [
+    0,
+    1,
+    -1,
+    42,
+    -42,
+    1808733512,
+    -2147483648,
+    2147483647
+  ],
+  "checks": {
+    "next_integer_checks": 1024,
+    "sample_binary64_checks": 128,
+    "next_double_binary64_checks": 128,
+    "bounded_integer_checks": 64,
+    "range_integer_checks": 56,
+    "range_consumption_checks": 8,
+    "system_random_sequence_differences": 8
+  },
+  "evidence_files": [
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\rng\\LegacyRandomReference.cs",
+      "sha256": "3f3daa216291e2b54466094f95706ac7cfa857db53950af7334edc04a2f13627"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\rng\\reference_vectors.json",
+      "sha256": "642f90baf3ed87c29c340eda5c71e9906449fc7a09e14cc61865d61de538bf02"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\rng\\native_report_round3.json",
+      "sha256": "f48a1ac56f11064265e0ebb7dbc12f7815f180e36a00e9d64a53a4febb568a72"
+    }
+  ],
+  "native_evidence": {
+    "kind": "static_native_decompilation",
+    "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+    "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round3.json",
+    "report_sha256": "f48a1ac56f11064265e0ebb7dbc12f7815f180e36a00e9d64a53a4febb568a72",
+    "reference_source_sha256": "3f3daa216291e2b54466094f95706ac7cfa857db53950af7334edc04a2f13627",
+    "reference_vectors_sha256": "642f90baf3ed87c29c340eda5c71e9906449fc7a09e14cc61865d61de538bf02",
+    "seeded_ctor": "0x186505240",
+    "sample": "0x1860e0e90",
+    "next": "0x1860e0e40",
+    "next_max": "0x186505190",
+    "next_min_max": "0x186505090",
+    "next_double_dispatch": "0x185549bb0",
+    "random_factory_seeded": "0x1867323a0",
+    "limits": "Names are analyst candidates matched to metadata/pointers and PE unwind. Factory type 0 selects the LegacyRandom seeded ctor statically; hot-patch/virtual dispatch in a running client and complete battle RNG consumption remain unverified."
+  },
+  "first_value_comparison": [
+    {
+      "seed": 0,
+      "legacy_first": 1976681210,
+      "recorded_system_random_first": 1559595546
+    },
+    {
+      "seed": 1,
+      "legacy_first": 787814235,
+      "recorded_system_random_first": 534011718
+    },
+    {
+      "seed": -1,
+      "legacy_first": 787814235,
+      "recorded_system_random_first": 534011718
+    },
+    {
+      "seed": 42,
+      "legacy_first": 1436392141,
+      "recorded_system_random_first": 1434747710
+    },
+    {
+      "seed": -42,
+      "legacy_first": 1436392141,
+      "recorded_system_random_first": 1434747710
+    },
+    {
+      "seed": 1808733512,
+      "legacy_first": 2003654437,
+      "recorded_system_random_first": 37059296
+    },
+    {
+      "seed": -2147483648,
+      "legacy_first": 787814235,
+      "recorded_system_random_first": 1559595546
+    },
+    {
+      "seed": 2147483647,
+      "legacy_first": 1976681210,
+      "recorded_system_random_first": 1559595546
+    }
+  ],
+  "client_runtime_compared": false,
+  "hot_patch_dispatch_validated": false,
+  "battle_rng_consumption_validated": false,
+  "declaration_env_rng_connected": false
+}

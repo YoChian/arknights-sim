@@ -1,0 +1,160 @@
+[
+  {
+    "type": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+    "method": "get_preDelay",
+    "address": "0x180f014e0",
+    "metadata_method_index": 91777,
+    "owner": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+    "type_definition_index": 13197,
+    "slot": 100
+  },
+  {
+    "type": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+    "method": "get_cooldown",
+    "address": "0x180f01050",
+    "metadata_method_index": 91780,
+    "owner": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+    "type_definition_index": 13197,
+    "slot": 17
+  },
+  {
+    "type": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+    "method": "OnCastStart",
+    "address": "0x180f00580",
+    "metadata_method_index": 91788,
+    "owner": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+    "type_definition_index": 13197,
+    "slot": 52
+  },
+  {
+    "type": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+    "method": "OnCastEnd",
+    "address": "0x180f001f0",
+    "metadata_method_index": 91790,
+    "owner": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+    "type_definition_index": 13197,
+    "slot": 53
+  },
+  {
+    "type": "Torappu.Battle.Abilities.EasyToStartAbility",
+    "method": "get_postDelay",
+    "address": "0x180f0c300",
+    "metadata_method_index": 91845,
+    "owner": "Torappu.Battle.Abilities.EasyToStartAbility",
+    "type_definition_index": 13203,
+    "slot": 101
+  },
+  {
+    "type": "<OnWaitForPostDelay>d__17",
+    "method": "MoveNext",
+    "address": "0x180f0e870",
+    "metadata_method_index": 91874,
+    "owner": "Torappu.Battle.Abilities.EasyToStartAbility.<OnWaitForPostDelay>d__17",
+    "type_definition_index": 13202,
+    "slot": 6
+  },
+  {
+    "type": "Torappu.Battle.BasicSkill",
+    "method": "UpdateSpRecovery",
+    "address": "0x18095e4f0",
+    "metadata_method_index": 72703,
+    "owner": "Torappu.Battle.BasicSkill",
+    "type_definition_index": 10921,
+    "slot": 78
+  },
+  {
+    "type": "Torappu.Battle.Ability",
+    "method": "UpdateCooldownWhenFinish",
+    "address": "0x1805d7220",
+    "metadata_method_index": 63075,
+    "owner": "Torappu.Battle.Ability",
+    "type_definition_index": 9893,
+    "slot": 65535
+  },
+  {
+    "type": "Torappu.PeriodicTimer",
+    "method": "get_isReady",
+    "address": "0x181e04cf0",
+    "metadata_method_index": 25966,
+    "owner": "Torappu.PeriodicTimer",
+    "type_definition_index": 1448,
+    "slot": 4
+  },
+  {
+    "type": "Torappu.PeriodicTimer",
+    "method": "Reset",
+    "address": "0x181e04840",
+    "metadata_method_index": 25972,
+    "owner": "Torappu.PeriodicTimer",
+    "type_definition_index": 1448,
+    "slot": 65535
+  },
+  {
+    "type": "Torappu.PeriodicTimer",
+    "method": "Reset",
+    "address": "0x181e04750",
+    "metadata_method_index": 25973,
+    "owner": "Torappu.PeriodicTimer",
+    "type_definition_index": 1448,
+    "slot": 65535
+  },
+  {
+    "type": "Torappu.PeriodicTimer",
+    "method": "Update",
+    "address": "0x181e04b10",
+    "metadata_method_index": 25979,
+    "owner": "Torappu.PeriodicTimer",
+    "type_definition_index": 1448,
+    "slot": 5
+  },
+  {
+    "type": "Torappu.PeriodicTimer",
+    "method": "Update",
+    "address": "0x181e049e0",
+    "metadata_method_index": 25980,
+    "owner": "Torappu.PeriodicTimer",
+    "type_definition_index": 1448,
+    "slot": 6
+  },
+  {
+    "type": "Torappu.StateMachine",
+    "method": "SwitchState",
+    "address": "0x1826483d0",
+    "metadata_method_index": 33275,
+    "owner": "Torappu.StateMachine",
+    "type_definition_index": 5601,
+    "reason": "Character generic state adapter ultimately uses this base switch/tick/start and queue-draining closure"
+  },
+  {
+    "type": "Torappu.StateMachine",
+    "method": "_SwitchStateInternal",
+    "address": "0x182648540",
+    "metadata_method_index": 33284,
+    "owner": "Torappu.StateMachine",
+    "type_definition_index": 5601,
+    "reason": "Character generic state adapter ultimately uses this base switch/tick/start and queue-draining closure"
+  },
+  {
+    "type": "Torappu.StateMachine",
+    "method": "_CheckValidState",
+    "address": "0x182648440",
+    "metadata_method_index": 33286,
+    "owner": "Torappu.StateMachine",
+    "type_definition_index": 5601,
+    "reason": "Character generic state adapter ultimately uses this base switch/tick/start and queue-draining closure"
+  },
+  {
+    "type": "ObservedSkillCallTarget",
+    "method": "StateSwitchScopeDisposal",
+    "address": "0x18262d450",
+    "raw_call_target": true,
+    "source": "SkillState.OnTick/_DoStartSkill/finish callback exact direct call targets; owner declaration unasserted until body/metadata is resolved"
+  },
+  {
+    "type": "ObservedSkillCallTarget",
+    "method": "ObservedStateSwitchAdapter",
+    "address": "0x182648530",
+    "raw_call_target": true,
+    "source": "SkillState.OnTick/_DoStartSkill/finish callback exact direct call targets; owner declaration unasserted until body/metadata is resolved"
+  }
+]

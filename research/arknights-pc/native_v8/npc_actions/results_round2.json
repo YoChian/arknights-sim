@@ -1,0 +1,791 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "functions": [
+    {
+      "name": "Torappu_Blackboard_Assign_0x600785a",
+      "display_name": "Torappu.Blackboard.Assign",
+      "candidate_map_type": "Torappu.Blackboard",
+      "address": "0x18231e6d0",
+      "end_address": "0x18231e87a",
+      "ranges": [
+        {
+          "start": "0x18231e6d0",
+          "end": "0x18231e87a",
+          "unwind_rva": "0x8181168",
+          "chained": false,
+          "source_sha256": "41523f4fc3bb83a10cc99c37f6b66fd1e2586e0dd9f101fb37e07ae019c5ff7b",
+          "source_file_offset": 36821712
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 36821712,
+      "token": "0x600785a",
+      "metadata_method_index": 30809,
+      "imported_range_checks": [
+        {
+          "start": "0x18231e6d0",
+          "bytes": 427,
+          "imported_sha256": "41523f4fc3bb83a10cc99c37f6b66fd1e2586e0dd9f101fb37e07ae019c5ff7b",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 94,
+      "direct_calls": [
+        {
+          "source": "18231e6fe",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e70a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e716",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e722",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e72e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e774",
+          "target": "0x185dbfc60",
+          "candidate_name": "System_String_ToLower_0x6000343"
+        },
+        {
+          "source": "18231e786",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e79f",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e7c2",
+          "target": "0x184ad2e80",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e7d5",
+          "target": "0x185db2fa0",
+          "candidate_name": "System_String_Compare_0x60002a6"
+        },
+        {
+          "source": "18231e80a",
+          "target": "0x180012b80",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e838",
+          "target": "0x184ad3170",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e84f",
+          "target": "0x18337ddf0",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp34_0x6000a82"
+        },
+        {
+          "source": "18231e875",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_Blackboard_Assign_0x600785a(longlong param_1,longlong param_2,undefined4 param_3)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  int iVar3;\r\n  int iVar4;\r\n  undefined8 uStack_78;\r\n  undefined8 uStack_70;\r\n  undefined8 auStack_68 [2];\r\n  undefined4 uStack_58;\r\n  undefined4 uStack_54;\r\n  undefined4 uStack_50;\r\n  undefined4 uStack_4c;\r\n  undefined8 uStack_48;\r\n  \r\n  if (DAT_188ca4f8c == '\\0') {\r\n    FUN_18048bf00(&DAT_188941920);\r\n    FUN_18048bf00(&DAT_188860eb8);\r\n    FUN_18048bf00(0x188861e28);\r\n    FUN_18048bf00(&DAT_188862058);\r\n    FUN_18048bf00(&DAT_188862290);\r\n    DAT_188ca4f8c = '\\x01';\r\n  }\r\n  uStack_70 = 0;\r\n  auStack_68[0] = 0;\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188941920 + 0xb8) + 0x30);\r\n  if (lVar1 == 0) {\r\n    if (param_2 == 0) {\r\n      FUN_18048c0b0();\r\n      pcVar2 = (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    uStack_78 = System_String_ToLower_0x6000343(param_2,0);\r\n    func_0x00018048b9e0(&uStack_78,uStack_78);\r\n    iVar4 = 0;\r\n    uStack_70 = CONCAT44(uStack_70._4_4_,param_3);\r\n    auStack_68[0] = 0;\r\n    func_0x00018048b9e0(auStack_68,0);\r\n    if (0 < *(int *)(param_1 + 0x18)) {\r\n      do {\r\n        FUN_184ad2e80(&uStack_58,param_1,iVar4,_DAT_188862058);\r\n        iVar3 = func_0x000185db2fa0(CONCAT44(uStack_54,uStack_58),param_2,1,0);\r\n        if (iVar3 == 0) {\r\n          uStack_58 = (undefined4)uStack_78;\r\n          uStack_54 = uStack_78._4_4_;\r\n          uStack_50 = (undefined4)uStack_70;\r\n          uStack_4c = uStack_70._4_4_;\r\n          uStack_48 = auStack_68[0];\r\n          FUN_184ad3170(param_1,iVar4,&uStack_58,_DAT_188862290);\r\n          return;\r\n        }\r\n        iVar4 = iVar4 + 1;\r\n      } while (iVar4 < *(int *)(param_1 + 0x18));\r\n    }\r\n    uStack_58 = (undefined4)uStack_78;\r\n    uStack_54 = uStack_78._4_4_;\r\n    uStack_50 = (undefined4)uStack_70;\r\n    uStack_4c = uStack_70._4_4_;\r\n    uStack_48 = auStack_68[0];\r\n    FUN_180012b80(param_1,&uStack_58,_DAT_188860eb8);\r\n  }\r\n  else {\r\n    XLua_DelegateBridge___Gen_Delegate_Imp34_0x6000a82(lVar1,param_1,param_2,param_3,0);\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Blackboard_Assign_0x600785d",
+      "display_name": "Torappu.Blackboard.Assign",
+      "candidate_map_type": "Torappu.Blackboard",
+      "address": "0x18231e520",
+      "end_address": "0x18231e6c6",
+      "ranges": [
+        {
+          "start": "0x18231e520",
+          "end": "0x18231e6c6",
+          "unwind_rva": "0x81812b4",
+          "chained": false,
+          "source_sha256": "9e925a871aa7aa97626b2ef7912bcc2a78c4b52c91510a0b4a6fece1f78d91e0",
+          "source_file_offset": 36821280
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 36821280,
+      "token": "0x600785d",
+      "metadata_method_index": 30812,
+      "imported_range_checks": [
+        {
+          "start": "0x18231e520",
+          "bytes": 423,
+          "imported_sha256": "9e925a871aa7aa97626b2ef7912bcc2a78c4b52c91510a0b4a6fece1f78d91e0",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 95,
+      "direct_calls": [
+        {
+          "source": "18231e54b",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e557",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e563",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e56f",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e57b",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e5c1",
+          "target": "0x185dbfc60",
+          "candidate_name": "System_String_ToLower_0x6000343"
+        },
+        {
+          "source": "18231e5d3",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e5ed",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e612",
+          "target": "0x184ad2e80",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e625",
+          "target": "0x185db2fa0",
+          "candidate_name": "System_String_Compare_0x60002a6"
+        },
+        {
+          "source": "18231e65a",
+          "target": "0x180012b80",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e688",
+          "target": "0x184ad3170",
+          "candidate_name": null
+        },
+        {
+          "source": "18231e69f",
+          "target": "0x18339deb0",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp36_0x6000a84"
+        },
+        {
+          "source": "18231e6c1",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_Blackboard_Assign_0x600785d(longlong param_1,longlong param_2,undefined8 param_3)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  int iVar3;\r\n  int iVar4;\r\n  undefined8 uStack_68;\r\n  undefined8 uStack_60;\r\n  undefined8 auStack_58 [2];\r\n  undefined4 uStack_48;\r\n  undefined4 uStack_44;\r\n  undefined4 uStack_40;\r\n  undefined4 uStack_3c;\r\n  undefined8 uStack_38;\r\n  \r\n  if (DAT_188ca4f8f == '\\0') {\r\n    FUN_18048bf00(&DAT_188941920);\r\n    FUN_18048bf00(&DAT_188860eb8);\r\n    FUN_18048bf00(0x188861e28);\r\n    FUN_18048bf00(&DAT_188862058);\r\n    FUN_18048bf00(&DAT_188862290);\r\n    DAT_188ca4f8f = '\\x01';\r\n  }\r\n  uStack_60 = 0;\r\n  auStack_58[0] = 0;\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188941920 + 0xb8) + 0x48);\r\n  if (lVar1 == 0) {\r\n    if (param_2 == 0) {\r\n      FUN_18048c0b0();\r\n      pcVar2 = (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    uStack_68 = System_String_ToLower_0x6000343(param_2,0);\r\n    func_0x00018048b9e0(&uStack_68,uStack_68);\r\n    uStack_60 = uStack_60 & 0xffffffff00000000;\r\n    auStack_58[0] = param_3;\r\n    func_0x00018048b9e0(auStack_58,param_3);\r\n    iVar4 = 0;\r\n    if (0 < *(int *)(param_1 + 0x18)) {\r\n      do {\r\n        FUN_184ad2e80(&uStack_48,param_1,iVar4,_DAT_188862058);\r\n        iVar3 = func_0x000185db2fa0(CONCAT44(uStack_44,uStack_48),param_2,1,0);\r\n        if (iVar3 == 0) {\r\n          uStack_48 = (undefined4)uStack_68;\r\n          uStack_44 = uStack_68._4_4_;\r\n          uStack_40 = (undefined4)uStack_60;\r\n          uStack_3c = uStack_60._4_4_;\r\n          uStack_38 = auStack_58[0];\r\n          FUN_184ad3170(param_1,iVar4,&uStack_48,_DAT_188862290);\r\n          return;\r\n        }\r\n        iVar4 = iVar4 + 1;\r\n      } while (iVar4 < *(int *)(param_1 + 0x18));\r\n    }\r\n    uStack_48 = (undefined4)uStack_68;\r\n    uStack_44 = uStack_68._4_4_;\r\n    uStack_40 = (undefined4)uStack_60;\r\n    uStack_3c = uStack_60._4_4_;\r\n    uStack_38 = auStack_58[0];\r\n    FUN_180012b80(param_1,&uStack_48,_DAT_188860eb8);\r\n  }\r\n  else {\r\n    XLua_DelegateBridge___Gen_Delegate_Imp36_0x6000a84(lVar1,param_1,param_2,param_3,0);\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Blackboard_TryGetInt_0x600786b",
+      "display_name": "Torappu.Blackboard.TryGetInt",
+      "candidate_map_type": "Torappu.Blackboard",
+      "address": "0x182320170",
+      "end_address": "0x18232027e",
+      "ranges": [
+        {
+          "start": "0x182320170",
+          "end": "0x1823201fd",
+          "unwind_rva": "0x7f63e90",
+          "chained": false,
+          "source_sha256": "a93a676ed578dbdc38d799fd50b9ddcf5c3b38e49ce7e873f74d2822cec68458",
+          "source_file_offset": 36828528
+        },
+        {
+          "start": "0x1823201fe",
+          "end": "0x182320257",
+          "unwind_rva": "0x8181290",
+          "chained": true,
+          "source_sha256": "181845c5a03b481ac8ceb177327db92f8e76cbbdb26c355c313ab2e22bb5fb3f",
+          "source_file_offset": 36828670
+        },
+        {
+          "start": "0x182320258",
+          "end": "0x18232027e",
+          "unwind_rva": "0x81812a4",
+          "chained": true,
+          "source_sha256": "9a2525ec08cc08cb0f3e5c14bcfb344c28f10cd63401bb2af1678ae18ef25e7e",
+          "source_file_offset": 36828760
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 36828528,
+      "token": "0x600786b",
+      "metadata_method_index": 30826,
+      "imported_range_checks": [
+        {
+          "start": "0x182320170",
+          "bytes": 142,
+          "imported_sha256": "a93a676ed578dbdc38d799fd50b9ddcf5c3b38e49ce7e873f74d2822cec68458",
+          "match": true
+        },
+        {
+          "start": "0x1823201fe",
+          "bytes": 90,
+          "imported_sha256": "181845c5a03b481ac8ceb177327db92f8e76cbbdb26c355c313ab2e22bb5fb3f",
+          "match": true
+        },
+        {
+          "start": "0x182320258",
+          "bytes": 39,
+          "imported_sha256": "9a2525ec08cc08cb0f3e5c14bcfb344c28f10cd63401bb2af1678ae18ef25e7e",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 63,
+      "direct_calls": [
+        {
+          "source": "182320198",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1823201d8",
+          "target": "0x182320780",
+          "candidate_name": "Torappu_Blackboard__TryGetNumber_0x6007880"
+        },
+        {
+          "source": "182320212",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18232022e",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "182320236",
+          "target": "0x1804d3200",
+          "candidate_name": null
+        },
+        {
+          "source": "18232026a",
+          "target": "0x183678a40",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp845_0x6000dad"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined8\r\nTorappu_Blackboard_TryGetInt_0x600786b(undefined8 param_1,undefined8 param_2,int *param_3)\r\n\r\n{\r\n  longlong lVar1;\r\n  float fVar2;\r\n  undefined8 uVar3;\r\n  double dVar4;\r\n  float afStack_28 [8];\r\n  \r\n  if (DAT_188ca4f9d == '\\0') {\r\n    FUN_18048bf00(&DAT_188941920);\r\n    DAT_188ca4f9d = '\\x01';\r\n  }\r\n  afStack_28[0] = 0.0;\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188941920 + 0xb8) + 0xb8);\r\n  if (lVar1 == 0) {\r\n    uVar3 = Torappu_Blackboard__TryGetNumber_0x6007880(param_1,param_2,afStack_28,0);\r\n    fVar2 = afStack_28[0];\r\n    if ((char)uVar3 == '\\0') {\r\n      *param_3 = 0;\r\n      return uVar3;\r\n    }\r\n    if (DAT_188c8f78e == '\\0') {\r\n      FUN_18048bf00(&DAT_1888c37c0);\r\n      DAT_188c8f78e = '\\x01';\r\n    }\r\n    if (*(int *)(_DAT_1888c37c0 + 0xe0) == 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    dVar4 = (double)func_0x0001804d3200((double)fVar2);\r\n    *param_3 = (int)dVar4;\r\n    return CONCAT71((uint7)(uint3)((uint)(int)dVar4 >> 8),1);\r\n  }\r\n  uVar3 = XLua_DelegateBridge___Gen_Delegate_Imp845_0x6000dad(lVar1,param_1,param_2,param_3,0);\r\n  return uVar3;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Blackboard__AssignInternal_0x600785f",
+      "display_name": "Torappu.Blackboard._AssignInternal",
+      "candidate_map_type": "Torappu.Blackboard",
+      "address": "0x182320610",
+      "end_address": "0x182320772",
+      "ranges": [
+        {
+          "start": "0x182320610",
+          "end": "0x182320686",
+          "unwind_rva": "0x7f916ac",
+          "chained": false,
+          "source_sha256": "dfe49ae57a8554ddc8ceaa731efd121b0e0e37b740199a6bc374f2dc39da0736",
+          "source_file_offset": 36829712
+        },
+        {
+          "start": "0x182320687",
+          "end": "0x18232070b",
+          "unwind_rva": "0x8181130",
+          "chained": true,
+          "source_sha256": "530be311a6a52cf00fee5a944a1594fb6af915d211841fac1d38ba9bd5d09481",
+          "source_file_offset": 36829831
+        },
+        {
+          "start": "0x18232070c",
+          "end": "0x182320744",
+          "unwind_rva": "0x8181144",
+          "chained": true,
+          "source_sha256": "b1494867269bae585d32092865b5d0953182ae23f6bd85e1286e587cacab7c94",
+          "source_file_offset": 36829964
+        },
+        {
+          "start": "0x182320745",
+          "end": "0x182320772",
+          "unwind_rva": "0x8181158",
+          "chained": true,
+          "source_sha256": "605ba88f42c597094e1af4c6e4d09f67e8631e77dc7da7bcb1caccf7c16c843f",
+          "source_file_offset": 36830021
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 36829712,
+      "token": "0x600785f",
+      "metadata_method_index": 30814,
+      "imported_range_checks": [
+        {
+          "start": "0x182320610",
+          "bytes": 119,
+          "imported_sha256": "dfe49ae57a8554ddc8ceaa731efd121b0e0e37b740199a6bc374f2dc39da0736",
+          "match": true
+        },
+        {
+          "start": "0x182320687",
+          "bytes": 133,
+          "imported_sha256": "530be311a6a52cf00fee5a944a1594fb6af915d211841fac1d38ba9bd5d09481",
+          "match": true
+        },
+        {
+          "start": "0x18232070c",
+          "bytes": 57,
+          "imported_sha256": "b1494867269bae585d32092865b5d0953182ae23f6bd85e1286e587cacab7c94",
+          "match": true
+        },
+        {
+          "start": "0x182320745",
+          "bytes": 46,
+          "imported_sha256": "605ba88f42c597094e1af4c6e4d09f67e8631e77dc7da7bcb1caccf7c16c843f",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 83,
+      "direct_calls": [
+        {
+          "source": "182320630",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18232063c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "182320648",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "182320654",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "182320660",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1823206b2",
+          "target": "0x184ad2e80",
+          "candidate_name": null
+        },
+        {
+          "source": "1823206c5",
+          "target": "0x185db2fa0",
+          "candidate_name": "System_String_Compare_0x60002a6"
+        },
+        {
+          "source": "1823206f7",
+          "target": "0x180012b80",
+          "candidate_name": null
+        },
+        {
+          "source": "182320730",
+          "target": "0x184ad3170",
+          "candidate_name": null
+        },
+        {
+          "source": "182320763",
+          "target": "0x1836faef0",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp930_0x6000e02"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_Blackboard__AssignInternal_0x600785f(longlong param_1,undefined8 *param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  int iVar2;\r\n  int iVar3;\r\n  undefined4 uStack_48;\r\n  undefined4 uStack_44;\r\n  undefined4 uStack_40;\r\n  undefined4 uStack_3c;\r\n  undefined8 uStack_38;\r\n  \r\n  if (DAT_188ca4f91 == '\\0') {\r\n    FUN_18048bf00(&DAT_188941920);\r\n    FUN_18048bf00(&DAT_188860eb8);\r\n    FUN_18048bf00(0x188861e28);\r\n    FUN_18048bf00(&DAT_188862058);\r\n    FUN_18048bf00(&DAT_188862290);\r\n    DAT_188ca4f91 = '\\x01';\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188941920 + 0xb8) + 0x58);\r\n  if (lVar1 != 0) {\r\n    uStack_48 = *(undefined4 *)param_2;\r\n    uStack_44 = *(undefined4 *)((longlong)param_2 + 4);\r\n    uStack_40 = *(undefined4 *)(param_2 + 1);\r\n    uStack_3c = *(undefined4 *)((longlong)param_2 + 0xc);\r\n    uStack_38 = param_2[2];\r\n    XLua_DelegateBridge___Gen_Delegate_Imp930_0x6000e02(lVar1,param_1,&uStack_48,0);\r\n    return;\r\n  }\r\n  iVar3 = 0;\r\n  if (0 < *(int *)(param_1 + 0x18)) {\r\n    do {\r\n      FUN_184ad2e80(&uStack_48,param_1,iVar3,_DAT_188862058);\r\n      iVar2 = func_0x000185db2fa0(CONCAT44(uStack_44,uStack_48),*param_2,1,0);\r\n      if (iVar2 == 0) {\r\n        uStack_48 = *(undefined4 *)param_2;\r\n        uStack_44 = *(undefined4 *)((longlong)param_2 + 4);\r\n        uStack_40 = *(undefined4 *)(param_2 + 1);\r\n        uStack_3c = *(undefined4 *)((longlong)param_2 + 0xc);\r\n        uStack_38 = param_2[2];\r\n        FUN_184ad3170(param_1,iVar3,&uStack_48,_DAT_188862290);\r\n        return;\r\n      }\r\n      iVar3 = iVar3 + 1;\r\n    } while (iVar3 < *(int *)(param_1 + 0x18));\r\n  }\r\n  uStack_48 = *(undefined4 *)param_2;\r\n  uStack_44 = *(undefined4 *)((longlong)param_2 + 4);\r\n  uStack_40 = *(undefined4 *)(param_2 + 1);\r\n  uStack_3c = *(undefined4 *)((longlong)param_2 + 0xc);\r\n  uStack_38 = param_2[2];\r\n  FUN_180012b80(param_1,&uStack_48,_DAT_188860eb8);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Blackboard__TryGetNumber_0x6007880",
+      "display_name": "Torappu.Blackboard._TryGetNumber",
+      "candidate_map_type": "Torappu.Blackboard",
+      "address": "0x182320780",
+      "end_address": "0x1823208f5",
+      "ranges": [
+        {
+          "start": "0x182320780",
+          "end": "0x1823207fb",
+          "unwind_rva": "0x7f82fc4",
+          "chained": false,
+          "source_sha256": "e6db32c396615de022cb8d29e90356cbbc35f0b9d44fb2d3119f05370406ba2b",
+          "source_file_offset": 36830080
+        },
+        {
+          "start": "0x1823207fc",
+          "end": "0x18232088b",
+          "unwind_rva": "0x81811d8",
+          "chained": true,
+          "source_sha256": "6347803053942d661343bae1d24e27ade856ee719a5b4dc2ffa36d0f726cc35a",
+          "source_file_offset": 36830204
+        },
+        {
+          "start": "0x18232088c",
+          "end": "0x1823208b0",
+          "unwind_rva": "0x81811ec",
+          "chained": true,
+          "source_sha256": "010188dba481934dc0a498393ecfdd7f4cc1cea100a6cf5b9357f1c9c5077348",
+          "source_file_offset": 36830348
+        },
+        {
+          "start": "0x1823208b1",
+          "end": "0x1823208f5",
+          "unwind_rva": "0x8181200",
+          "chained": true,
+          "source_sha256": "dca5fec06f320e18bf1d2c7f956ab0ae202c165af719079c50d16522111b7975",
+          "source_file_offset": 36830385
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 36830080,
+      "token": "0x6007880",
+      "metadata_method_index": 30847,
+      "imported_range_checks": [
+        {
+          "start": "0x182320780",
+          "bytes": 124,
+          "imported_sha256": "e6db32c396615de022cb8d29e90356cbbc35f0b9d44fb2d3119f05370406ba2b",
+          "match": true
+        },
+        {
+          "start": "0x1823207fc",
+          "bytes": 144,
+          "imported_sha256": "6347803053942d661343bae1d24e27ade856ee719a5b4dc2ffa36d0f726cc35a",
+          "match": true
+        },
+        {
+          "start": "0x18232088c",
+          "bytes": 37,
+          "imported_sha256": "010188dba481934dc0a498393ecfdd7f4cc1cea100a6cf5b9357f1c9c5077348",
+          "match": true
+        },
+        {
+          "start": "0x1823208b1",
+          "bytes": 69,
+          "imported_sha256": "dca5fec06f320e18bf1d2c7f956ab0ae202c165af719079c50d16522111b7975",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 90,
+      "direct_calls": [
+        {
+          "source": "1823207a8",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1823207b4",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1823207c0",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1823207ef",
+          "target": "0x185db9d60",
+          "candidate_name": "System_String_IsNullOrEmpty_0x60002e1"
+        },
+        {
+          "source": "182320822",
+          "target": "0x184ad2e80",
+          "candidate_name": null
+        },
+        {
+          "source": "182320835",
+          "target": "0x185db2fa0",
+          "candidate_name": "System_String_Compare_0x60002a6"
+        },
+        {
+          "source": "182320850",
+          "target": "0x184ad2e80",
+          "candidate_name": null
+        },
+        {
+          "source": "18232085c",
+          "target": "0x185db9d60",
+          "candidate_name": "System_String_IsNullOrEmpty_0x60002e1"
+        },
+        {
+          "source": "18232089e",
+          "target": "0x184ad2e80",
+          "candidate_name": null
+        },
+        {
+          "source": "1823208de",
+          "target": "0x1832c9300",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp233_0x6000b49"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined8\r\nTorappu_Blackboard__TryGetNumber_0x6007880(longlong param_1,undefined8 param_2,undefined4 *param_3)\r\n\r\n{\r\n  longlong lVar1;\r\n  char cVar2;\r\n  int iVar3;\r\n  undefined8 uVar4;\r\n  int iVar5;\r\n  undefined8 uStack_38;\r\n  undefined4 uStack_30;\r\n  undefined8 uStack_28;\r\n  \r\n  if (DAT_188ca4fb0 == '\\0') {\r\n    FUN_18048bf00(&DAT_188941920);\r\n    FUN_18048bf00(0x188861e28);\r\n    FUN_18048bf00(&DAT_188862058);\r\n    DAT_188ca4fb0 = '\\x01';\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188941920 + 0xb8) + 0x160);\r\n  if (lVar1 == 0) {\r\n    cVar2 = func_0x000185db9d60(param_2,0);\r\n    if (cVar2 != '\\0') {\r\n      *param_3 = 0;\r\n      return 0;\r\n    }\r\n    iVar5 = 0;\r\n    if (0 < *(int *)(param_1 + 0x18)) {\r\n      do {\r\n        FUN_184ad2e80(&uStack_38,param_1,iVar5,_DAT_188862058);\r\n        iVar3 = func_0x000185db2fa0(uStack_38,param_2,1,0);\r\n        if (iVar3 == 0) {\r\n          FUN_184ad2e80(&uStack_38,param_1,iVar5,_DAT_188862058);\r\n          cVar2 = func_0x000185db9d60(uStack_28,0);\r\n          if (cVar2 != '\\0') {\r\n            FUN_184ad2e80(&uStack_38,param_1,iVar5,_DAT_188862058);\r\n            *param_3 = uStack_30;\r\n            return 1;\r\n          }\r\n        }\r\n        iVar5 = iVar5 + 1;\r\n      } while (iVar5 < *(int *)(param_1 + 0x18));\r\n    }\r\n    *param_3 = 0;\r\n    return 0;\r\n  }\r\n  uVar4 = XLua_DelegateBridge___Gen_Delegate_Imp233_0x6000b49(lVar1,param_1,param_2,param_3,0);\r\n  return uVar4;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Battle_Context__DuplicateAll_0x6010098",
+      "display_name": "Torappu.Battle.Context._DuplicateAll",
+      "candidate_map_type": "Torappu.Battle.Context",
+      "address": "0x1806c60b0",
+      "end_address": "0x1806c68f0",
+      "ranges": [
+        {
+          "start": "0x1806c60b0",
+          "end": "0x1806c68f0",
+          "unwind_rva": "0x7f81260",
+          "chained": false,
+          "source_sha256": "ae932621565819cbabbc4268dcb20a3a89e0908ea64c6bd24d182aec5cd46353",
+          "source_file_offset": 7099568
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 7099568,
+      "token": "0x6010098",
+      "metadata_method_index": 65687,
+      "imported_range_checks": [
+        {
+          "start": "0x1806c60b0",
+          "bytes": 2113,
+          "imported_sha256": "ae932621565819cbabbc4268dcb20a3a89e0908ea64c6bd24d182aec5cd46353",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 491,
+      "direct_calls": [
+        {
+          "source": "1806c60e0",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c60ec",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c60f8",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c6104",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c6110",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c611c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c6128",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c6134",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c614b",
+          "target": "0x180501c30",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c615a",
+          "target": "0x1806c5dd0",
+          "candidate_name": "Torappu_Battle_Context_TakeSnapshot_0x6010095"
+        },
+        {
+          "source": "1806c6291",
+          "target": "0x185733520",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c6336",
+          "target": "0x185733520",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c63db",
+          "target": "0x185733520",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c6480",
+          "target": "0x185367f40",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c6584",
+          "target": "0x185368160",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c6628",
+          "target": "0x185733520",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c66cc",
+          "target": "0x185733520",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c6770",
+          "target": "0x185367f40",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c682e",
+          "target": "0x18536b170",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c68ce",
+          "target": "0x185733520",
+          "candidate_name": null
+        },
+        {
+          "source": "1806c68eb",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined8 * Torappu_Battle_Context__DuplicateAll_0x6010098(undefined8 *param_1,longlong param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  undefined8 uVar3;\r\n  undefined8 uVar4;\r\n  undefined8 uVar5;\r\n  undefined8 uVar6;\r\n  undefined8 *puVar7;\r\n  undefined4 uStack_188;\r\n  undefined4 uStack_184;\r\n  undefined4 uStack_180;\r\n  undefined4 uStack_17c;\r\n  undefined8 uStack_128;\r\n  undefined8 uStack_120;\r\n  undefined4 uStack_118;\r\n  undefined4 uStack_114;\r\n  undefined4 uStack_110;\r\n  undefined4 uStack_10c;\r\n  undefined8 uStack_108;\r\n  undefined8 uStack_f8;\r\n  undefined8 uStack_f0;\r\n  undefined8 uStack_e8;\r\n  undefined8 uStack_e0;\r\n  undefined8 uStack_d8;\r\n  undefined8 uStack_d0;\r\n  undefined8 uStack_c8;\r\n  undefined8 uStack_c0;\r\n  undefined8 uStack_b8;\r\n  undefined8 uStack_b0;\r\n  undefined8 uStack_a8;\r\n  undefined8 uStack_a0;\r\n  undefined8 uStack_98;\r\n  undefined8 uStack_90;\r\n  undefined4 uStack_88;\r\n  undefined4 uStack_84;\r\n  undefined4 uStack_80;\r\n  undefined4 uStack_7c;\r\n  undefined8 uStack_78;\r\n  \r\n  if (DAT_188c905b1 == '\\0') {\r\n    FUN_18048bf00(&DAT_18891f750);\r\n    FUN_18048bf00(&DAT_18891ee50);\r\n    FUN_18048bf00(&DAT_18891d7d8);\r\n    FUN_18048bf00(&DAT_18891e318);\r\n    FUN_18048bf00(&DAT_1889312e8);\r\n    FUN_18048bf00(&DAT_18892ea68);\r\n    FUN_18048bf00(&DAT_188944068);\r\n    FUN_18048bf00(&DAT_188938128);\r\n    DAT_188c905b1 = '\\x01';\r\n  }\r\n  FUN_180501c30(param_1,0,0xf0);\r\n  puVar7 = (undefined8 *)Torappu_Battle_Context_TakeSnapshot_0x6010095(&uStack_f8,param_2,0);\r\n  uVar3 = puVar7[1];\r\n  uVar4 = puVar7[2];\r\n  uVar5 = puVar7[3];\r\n  *param_1 = *puVar7;\r\n  param_1[1] = uVar3;\r\n  uVar3 = puVar7[4];\r\n  uVar6 = puVar7[5];\r\n  param_1[2] = uVar4;\r\n  param_1[3] = uVar5;\r\n  uVar4 = puVar7[6];\r\n  uVar5 = puVar7[7];\r\n  param_1[4] = uVar3;\r\n  param_1[5] = uVar6;\r\n  uVar3 = puVar7[8];\r\n  uVar6 = puVar7[9];\r\n  param_1[6] = uVar4;\r\n  param_1[7] = uVar5;\r\n  uVar4 = puVar7[10];\r\n  uVar5 = puVar7[0xb];\r\n  param_1[8] = uVar3;\r\n  param_1[9] = uVar6;\r\n  uVar3 = puVar7[0xc];\r\n  uVar6 = puVar7[0xd];\r\n  param_1[10] = uVar4;\r\n  param_1[0xb] = uVar5;\r\n  uVar4 = puVar7[0x10];\r\n  uVar5 = puVar7[0x11];\r\n  param_1[0xc] = uVar3;\r\n  param_1[0xd] = uVar6;\r\n  uVar3 = puVar7[0xf];\r\n  param_1[0xe] = puVar7[0xe];\r\n  param_1[0xf] = uVar3;\r\n  uVar3 = puVar7[0x12];\r\n  uVar6 = puVar7[0x13];\r\n  param_1[0x10] = uVar4;\r\n  param_1[0x11] = uVar5;\r\n  uVar4 = puVar7[0x14];\r\n  uVar5 = puVar7[0x15];\r\n  param_1[0x12] = uVar3;\r\n  param_1[0x13] = uVar6;\r\n  uVar3 = puVar7[0x16];\r\n  uVar6 = puVar7[0x17];\r\n  param_1[0x14] = uVar4;\r\n  param_1[0x15] = uVar5;\r\n  uVar4 = puVar7[0x18];\r\n  uVar5 = puVar7[0x19];\r\n  param_1[0x16] = uVar3;\r\n  param_1[0x17] = uVar6;\r\n  uVar3 = puVar7[0x1a];\r\n  uVar6 = puVar7[0x1b];\r\n  param_1[0x18] = uVar4;\r\n  param_1[0x19] = uVar5;\r\n  uVar4 = puVar7[0x1c];\r\n  uVar5 = puVar7[0x1d];\r\n  lVar1 = *(longlong *)(param_2 + 0x10);\r\n  param_1[0x1a] = uVar3;\r\n  param_1[0x1b] = uVar6;\r\n  uVar3 = *puVar7;\r\n  param_1[0x1c] = uVar4;\r\n  param_1[0x1d] = uVar5;\r\n  if (lVar1 != 0) {\r\n    FUN_185733520(lVar1,uVar3,_DAT_18891e318);\r\n    if (*(longlong *)(param_2 + 0x18) != 0) {\r\n      FUN_185733520(*(longlong *)(param_2 + 0x18),param_1[1],_DAT_18891e318);\r\n      if (*(longlong *)(param_2 + 0x20) != 0) {\r\n        FUN_185733520(*(longlong *)(param_2 + 0x20),param_1[2],_DAT_18891d7d8);\r\n        if (*(longlong *)(param_2 + 0x28) != 0) {\r\n          FUN_185367f40(*(longlong *)(param_2 + 0x28),param_1[3],_DAT_18892ea68);\r\n          lVar1 = *(longlong *)(param_2 + 0x30);\r\n          if (lVar1 != 0) {\r\n            uStack_188 = (undefined4)param_1[0x12];\r\n            uStack_184 = (undefined4)((ulonglong)param_1[0x12] >> 0x20);\r\n            uStack_180 = (undefined4)param_1[0x13];\r\n            uStack_17c = (undefined4)((ulonglong)param_1[0x13] >> 0x20);\r\n            uStack_88 = uStack_188;\r\n            uStack_84 = uStack_184;\r\n            uStack_80 = uStack_180;\r\n            uStack_7c = uStack_17c;\r\n            uStack_f8 = param_1[4];\r\n            uStack_f0 = param_1[5];\r\n            uStack_e8 = param_1[6];\r\n            uStack_e0 = param_1[7];\r\n            uStack_d8 = param_1[8];\r\n            uStack_d0 = param_1[9];\r\n            uStack_c8 = param_1[10];\r\n            uStack_c0 = param_1[0xb];\r\n            uStack_b8 = param_1[0xc];\r\n            uStack_b0 = param_1[0xd];\r\n            uStack_a8 = param_1[0xe];\r\n            uStack_a0 = param_1[0xf];\r\n            uStack_98 = param_1[0x10];\r\n            uStack_90 = param_1[0x11];\r\n            uStack_78 = param_1[0x14];\r\n            FUN_185368160(lVar1,&uStack_f8,_DAT_188938128,lVar1,*param_1,param_1[1],param_1[2],\r\n                          param_1[3]);\r\n            if (*(longlong *)(param_2 + 0x38) != 0) {\r\n              FUN_185733520(*(longlong *)(param_2 + 0x38),param_1[0x15],_DAT_18891ee50);\r\n              if (*(longlong *)(param_2 + 0x40) != 0) {\r\n                FUN_185733520(*(longlong *)(param_2 + 0x40),param_1[0x16],_DAT_18891f750);\r\n                if (*(longlong *)(param_2 + 0x50) != 0) {\r\n                  FUN_185367f40(*(longlong *)(param_2 + 0x50),param_1[0x17],_DAT_1889312e8);\r\n                  if (*(longlong *)(param_2 + 0x48) != 0) {\r\n                    uStack_128 = param_1[0x18];\r\n                    uStack_120 = param_1[0x19];\r\n                    uStack_118 = *(undefined4 *)(param_1 + 0x1a);\r\n                    uStack_114 = *(undefined4 *)((longlong)param_1 + 0xd4);\r\n                    uStack_110 = *(undefined4 *)(param_1 + 0x1b);\r\n                    uStack_10c = *(undefined4 *)((longlong)param_1 + 0xdc);\r\n                    uStack_108 = param_1[0x1c];\r\n                    FUN_18536b170(*(longlong *)(param_2 + 0x48),&uStack_128,_DAT_188944068);\r\n                    if (*(longlong *)(param_2 + 0x58) != 0) {\r\n                      FUN_185733520(*(longlong *)(param_2 + 0x58),param_1[0x1d],_DAT_18891d7d8);\r\n                      return param_1;\r\n                    }\r\n                  }\r\n                }\r\n              }\r\n            }\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\n  pcVar2 = (code *)swi(3);\r\n  puVar7 = (undefined8 *)(*pcVar2)();\r\n  return puVar7;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Blackboard_TryGetInternalData_0x600786f",
+      "display_name": "Torappu.Blackboard.TryGetInternalData",
+      "candidate_map_type": "Torappu.Blackboard",
+      "address": "0x182320280",
+      "end_address": "0x1823203a5",
+      "ranges": [
+        {
+          "start": "0x182320280",
+          "end": "0x1823203a5",
+          "unwind_rva": "0x8181678",
+          "chained": false,
+          "source_sha256": "edb78aa154d61e502cba5aacd186aa34a62bef71e8c0cccba40fc8c93a2a33e6",
+          "source_file_offset": 36828800
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 36828800,
+      "token": "0x600786f",
+      "metadata_method_index": 30830,
+      "imported_range_checks": [
+        {
+          "start": "0x182320280",
+          "bytes": 294,
+          "imported_sha256": "edb78aa154d61e502cba5aacd186aa34a62bef71e8c0cccba40fc8c93a2a33e6",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 71,
+      "direct_calls": [
+        {
+          "source": "1823202a8",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1823202b4",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1823202c0",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "182320312",
+          "target": "0x184ad2e80",
+          "candidate_name": null
+        },
+        {
+          "source": "182320325",
+          "target": "0x185db2fa0",
+          "candidate_name": "System_String_Compare_0x60002a6"
+        },
+        {
+          "source": "182320355",
+          "target": "0x184ad2e80",
+          "candidate_name": null
+        },
+        {
+          "source": "182320372",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "182320389",
+          "target": "0x183705c90",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp937_0x6000e09"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined8\r\nTorappu_Blackboard_TryGetInternalData_0x600786f\r\n          (longlong param_1,undefined8 param_2,undefined8 *param_3)\r\n\r\n{\r\n  longlong lVar1;\r\n  int iVar2;\r\n  undefined8 uVar3;\r\n  int iVar4;\r\n  undefined4 uStack_38;\r\n  undefined4 uStack_34;\r\n  undefined4 uStack_30;\r\n  undefined4 uStack_2c;\r\n  undefined8 uStack_28;\r\n  \r\n  if (DAT_188ca4fa0 == '\\0') {\r\n    FUN_18048bf00(&DAT_188941920);\r\n    FUN_18048bf00(0x188861e28);\r\n    FUN_18048bf00(&DAT_188862058);\r\n    DAT_188ca4fa0 = '\\x01';\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188941920 + 0xb8) + 0xd8);\r\n  iVar4 = 0;\r\n  if (lVar1 == 0) {\r\n    if (0 < *(int *)(param_1 + 0x18)) {\r\n      do {\r\n        FUN_184ad2e80(&uStack_38,param_1,iVar4,_DAT_188862058);\r\n        iVar2 = func_0x000185db2fa0(CONCAT44(uStack_34,uStack_38),param_2,1,0);\r\n        if (iVar2 == 0) {\r\n          FUN_184ad2e80(&uStack_38,param_1,iVar4,_DAT_188862058);\r\n          *(undefined4 *)param_3 = uStack_38;\r\n          *(undefined4 *)((longlong)param_3 + 4) = uStack_34;\r\n          *(undefined4 *)(param_3 + 1) = uStack_30;\r\n          *(undefined4 *)((longlong)param_3 + 0xc) = uStack_2c;\r\n          param_3[2] = uStack_28;\r\n          func_0x00018048b9e0(param_3,0);\r\n          return 1;\r\n        }\r\n        iVar4 = iVar4 + 1;\r\n      } while (iVar4 < *(int *)(param_1 + 0x18));\r\n    }\r\n    uVar3 = 0;\r\n    *param_3 = 0;\r\n    param_3[1] = 0;\r\n    param_3[2] = 0;\r\n  }\r\n  else {\r\n    uVar3 = XLua_DelegateBridge___Gen_Delegate_Imp937_0x6000e09(lVar1,param_1,param_2,param_3,0);\r\n  }\r\n  return uVar3;\r\n}\r\n\r\n"
+    }
+  ]
+}

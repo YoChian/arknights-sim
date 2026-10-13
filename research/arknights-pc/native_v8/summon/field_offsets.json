@@ -1,0 +1,329 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "types": [
+    {
+      "definition_index": 1624,
+      "name": "Torappu.GridPosition",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139774144,
+        "record_va": "0x186fe4c78",
+        "record_file_offset": 117322872,
+        "bytes16": "18000000080000007800000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 8,
+        "static_size": 120,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "row",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115721580,
+          "type": "Int32"
+        },
+        {
+          "name": "col",
+          "offset_hex": "0x14",
+          "offset_record_file_offset": 115721584,
+          "type": "Int32"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 4648,
+      "name": "Torappu.RouteData.CheckpointData",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139798336,
+        "record_va": "0x186fe06d8",
+        "record_file_offset": 117305048,
+        "bytes16": "30000000ffffffff0000000000000000",
+        "instance_with_header": 48,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "type",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115828960,
+          "type": "Torappu.CheckpointType"
+        },
+        {
+          "name": "time",
+          "offset_hex": "0x14",
+          "offset_record_file_offset": 115828964,
+          "type": "Single"
+        },
+        {
+          "name": "position",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 115828968,
+          "type": "Torappu.GridPosition"
+        },
+        {
+          "name": "reachOffset",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 115828972,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "randomizeReachOffset",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 115828976,
+          "type": "Boolean"
+        },
+        {
+          "name": "reachDistance",
+          "offset_hex": "0x2c",
+          "offset_record_file_offset": 115828980,
+          "type": "Single"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 4649,
+      "name": "Torappu.RouteData",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139798344,
+        "record_va": "0x186fe06f8",
+        "record_file_offset": 117305080,
+        "bytes16": "48000000ffffffff0000000000000000",
+        "instance_with_header": 72,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "motionMode",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115829128,
+          "type": "Torappu.MotionMode"
+        },
+        {
+          "name": "startPosition",
+          "offset_hex": "0x14",
+          "offset_record_file_offset": 115829132,
+          "type": "Torappu.GridPosition"
+        },
+        {
+          "name": "endPosition",
+          "offset_hex": "0x1c",
+          "offset_record_file_offset": 115829136,
+          "type": "Torappu.GridPosition"
+        },
+        {
+          "name": "spawnRandomRange",
+          "offset_hex": "0x24",
+          "offset_record_file_offset": 115829140,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "spawnOffset",
+          "offset_hex": "0x2c",
+          "offset_record_file_offset": 115829144,
+          "type": "UnityEngine.Vector2"
+        },
+        {
+          "name": "checkpoints",
+          "offset_hex": "0x38",
+          "offset_record_file_offset": 115829148,
+          "type": "Torappu.RouteData.CheckpointData[]"
+        },
+        {
+          "name": "allowDiagonalMove",
+          "offset_hex": "0x40",
+          "offset_record_file_offset": 115829152,
+          "type": "Boolean"
+        },
+        {
+          "name": "visitEveryTileCenter",
+          "offset_hex": "0x41",
+          "offset_record_file_offset": 115829156,
+          "type": "Boolean"
+        },
+        {
+          "name": "visitEveryNodeCenter",
+          "offset_hex": "0x42",
+          "offset_record_file_offset": 115829160,
+          "type": "Boolean"
+        },
+        {
+          "name": "visitEveryCheckPoint",
+          "offset_hex": "0x43",
+          "offset_record_file_offset": 115829164,
+          "type": "Boolean"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 4685,
+      "name": "Torappu.CheckpointType",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139798632,
+        "record_va": "0x186fe0b78",
+        "record_file_offset": 117306232,
+        "bytes16": "14000000040000000000000000000000",
+        "instance_with_header": 20,
+        "native_size_raw": 4,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.Enum",
+      "base_definition_indices": [
+        41113,
+        41194
+      ],
+      "instance": [
+        {
+          "name": "value__",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115833888,
+          "type": "Int32"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 38183,
+      "name": "Torappu.MotionMode",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140066616,
+        "record_va": "0x187076988",
+        "record_file_offset": 117920136,
+        "bytes16": "14000000040000000000000000000000",
+        "instance_with_header": 20,
+        "native_size_raw": 4,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.Enum",
+      "base_definition_indices": [
+        41113,
+        41194
+      ],
+      "instance": [
+        {
+          "name": "value__",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116089776,
+          "type": "Int32"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 41113,
+      "name": "System.Enum",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140090056,
+        "record_va": "0x187074e38",
+        "record_file_offset": 117913144,
+        "bytes16": "10000000010000000800000000000000",
+        "instance_with_header": 16,
+        "native_size_raw": 1,
+        "static_size": 8,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 41194,
+      "name": "System.ValueType",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140090704,
+        "record_va": "0x1870759c8",
+        "record_file_offset": 117916104,
+        "bytes16": "10000000010000000000000000000000",
+        "instance_with_header": 16,
+        "native_size_raw": 1,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 45390,
+      "name": "UnityEngine.Vector2",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124272,
+        "record_va": "0x18709ac28",
+        "record_file_offset": 118068264,
+        "bytes16": "18000000080000004000000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 8,
+        "static_size": 64,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "x",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116305136,
+          "type": "Single"
+        },
+        {
+          "name": "y",
+          "offset_hex": "0x14",
+          "offset_record_file_offset": 116305140,
+          "type": "Single"
+        }
+      ],
+      "inherited_instance_layout": []
+    }
+  ],
+  "limits": [
+    "Static registration/type/offset/size records; no runtime process or game execution",
+    "Declared generic-definition offsets are not asserted as concrete closed Undefinable<T> ABI",
+    "Object instance offsets include16-byte object header; verified value-type member instructions must corroborate unboxed offsets",
+    "Methods metadata identities/pinned candidate pointers do not themselves prove merge or movement algorithms"
+  ]
+}

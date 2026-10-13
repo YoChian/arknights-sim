@@ -1,0 +1,2117 @@
+{
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "enums": [
+    {
+      "name": "Torappu.Battle.DamageType",
+      "definition_index": 9852,
+      "native_type": {
+        "address": "0x188a638c0",
+        "file_offset": 145102528,
+        "raw_bytes12": "7c2600000000000000001180",
+        "data": 9852,
+        "bits": "0x80110000",
+        "attrs": 0,
+        "type_tag": "0x11",
+        "byref": false,
+        "valuetype_bit": true,
+        "definition_index": 9852,
+        "name": "Torappu.Battle.DamageType",
+        "is_value_type": true,
+        "is_enum": true,
+        "type_index": 50538,
+        "pointer_record_file_offset": 130982192
+      },
+      "constants": [
+        {
+          "name": "NONE",
+          "field_index": 67936,
+          "token": "0x4010961",
+          "default": {
+            "value": 0,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21928510,
+            "raw_bytes": "00"
+          }
+        },
+        {
+          "name": "PHYSICAL",
+          "field_index": 67937,
+          "token": "0x4010962",
+          "default": {
+            "value": 1,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21928511,
+            "raw_bytes": "02"
+          }
+        },
+        {
+          "name": "MAGICAL",
+          "field_index": 67938,
+          "token": "0x4010963",
+          "default": {
+            "value": 2,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21928512,
+            "raw_bytes": "04"
+          }
+        },
+        {
+          "name": "PURE",
+          "field_index": 67939,
+          "token": "0x4010964",
+          "default": {
+            "value": 3,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21928513,
+            "raw_bytes": "06"
+          }
+        },
+        {
+          "name": "HEAL",
+          "field_index": 67940,
+          "token": "0x4010965",
+          "default": {
+            "value": 4,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21928514,
+            "raw_bytes": "08"
+          }
+        },
+        {
+          "name": "ELEMENT",
+          "field_index": 67941,
+          "token": "0x4010966",
+          "default": {
+            "value": 5,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21928515,
+            "raw_bytes": "0a"
+          }
+        },
+        {
+          "name": "E_NUM",
+          "field_index": 67942,
+          "token": "0x4010967",
+          "default": {
+            "value": 6,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21928516,
+            "raw_bytes": "0c"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Torappu.Battle.Entity.FinishReason",
+      "definition_index": 10194,
+      "native_type": {
+        "address": "0x188badb30",
+        "file_offset": 146454832,
+        "raw_bytes12": "d22700000000000000001180",
+        "data": 10194,
+        "bits": "0x80110000",
+        "attrs": 0,
+        "type_tag": "0x11",
+        "byref": false,
+        "valuetype_bit": true,
+        "definition_index": 10194,
+        "name": "Torappu.Battle.Entity.FinishReason",
+        "is_value_type": true,
+        "is_enum": true,
+        "type_index": 96150,
+        "pointer_record_file_offset": 131347088
+      },
+      "constants": [
+        {
+          "name": "NONE",
+          "field_index": 73124,
+          "token": "0x4011da5",
+          "default": {
+            "value": 0,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934026,
+            "raw_bytes": "00"
+          }
+        },
+        {
+          "name": "REACH_EXIT",
+          "field_index": 73125,
+          "token": "0x4011da6",
+          "default": {
+            "value": 1,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934027,
+            "raw_bytes": "02"
+          }
+        },
+        {
+          "name": "HP_ZERO",
+          "field_index": 73126,
+          "token": "0x4011da7",
+          "default": {
+            "value": 2,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934028,
+            "raw_bytes": "04"
+          }
+        },
+        {
+          "name": "FALLDOWN",
+          "field_index": 73127,
+          "token": "0x4011da8",
+          "default": {
+            "value": 3,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934029,
+            "raw_bytes": "06"
+          }
+        },
+        {
+          "name": "WITHDRAW",
+          "field_index": 73128,
+          "token": "0x4011da9",
+          "default": {
+            "value": 4,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934030,
+            "raw_bytes": "08"
+          }
+        },
+        {
+          "name": "DEADLIKE_WITHDRAW",
+          "field_index": 73129,
+          "token": "0x4011daa",
+          "default": {
+            "value": 5,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934031,
+            "raw_bytes": "0a"
+          }
+        },
+        {
+          "name": "SILENT_WITHDRAW",
+          "field_index": 73130,
+          "token": "0x4011dab",
+          "default": {
+            "value": 6,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934032,
+            "raw_bytes": "0c"
+          }
+        },
+        {
+          "name": "OTHER",
+          "field_index": 73131,
+          "token": "0x4011dac",
+          "default": {
+            "value": 7,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934033,
+            "raw_bytes": "0e"
+          }
+        },
+        {
+          "name": "HP_ZERO_WITH_NO_SOURCE",
+          "field_index": 73132,
+          "token": "0x4011dad",
+          "default": {
+            "value": 8,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934034,
+            "raw_bytes": "10"
+          }
+        },
+        {
+          "name": "REPLACED",
+          "field_index": 73133,
+          "token": "0x4011dae",
+          "default": {
+            "value": 9,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934035,
+            "raw_bytes": "12"
+          }
+        },
+        {
+          "name": "RESPAWN_SELF",
+          "field_index": 73134,
+          "token": "0x4011daf",
+          "default": {
+            "value": 10,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934036,
+            "raw_bytes": "14"
+          }
+        },
+        {
+          "name": "MOVE_LIKE_RESPAWN_SELF",
+          "field_index": 73135,
+          "token": "0x4011db0",
+          "default": {
+            "value": 11,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934037,
+            "raw_bytes": "16"
+          }
+        },
+        {
+          "name": "MOVE_LIKE_RESPAWN_EXTERNAL",
+          "field_index": 73136,
+          "token": "0x4011db1",
+          "default": {
+            "value": 12,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21934038,
+            "raw_bytes": "18"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Torappu.Battle.Modifier.SharedFlagIndex",
+      "definition_index": 10731,
+      "native_type": {
+        "address": "0x188b606a0",
+        "file_offset": 146138272,
+        "raw_bytes12": "eb2900000000000000001180",
+        "data": 10731,
+        "bits": "0x80110000",
+        "attrs": 0,
+        "type_tag": "0x11",
+        "byref": false,
+        "valuetype_bit": true,
+        "definition_index": 10731,
+        "name": "Torappu.Battle.Modifier.SharedFlagIndex",
+        "is_value_type": true,
+        "is_enum": true,
+        "type_index": 99848,
+        "pointer_record_file_offset": 131376672
+      },
+      "constants": [
+        {
+          "name": "IS_CONTINUOUS",
+          "field_index": 79429,
+          "token": "0x4013646",
+          "default": {
+            "value": 0,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939461,
+            "raw_bytes": "0000"
+          }
+        },
+        {
+          "name": "FORCE_TO_DISPLAY_NUMBER",
+          "field_index": 79430,
+          "token": "0x4013647",
+          "default": {
+            "value": 1,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939463,
+            "raw_bytes": "0100"
+          }
+        },
+        {
+          "name": "FORCE_NOT_TO_DISPLAY_SP",
+          "field_index": 79431,
+          "token": "0x4013648",
+          "default": {
+            "value": 2,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939465,
+            "raw_bytes": "0200"
+          }
+        },
+        {
+          "name": "DAMAGE_IS_UNDEADABLE_THIS_TIME",
+          "field_index": 79432,
+          "token": "0x4013649",
+          "default": {
+            "value": 3,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939467,
+            "raw_bytes": "0300"
+          }
+        },
+        {
+          "name": "DAMAGE_WITHOUT_MODIFY",
+          "field_index": 79433,
+          "token": "0x401364a",
+          "default": {
+            "value": 4,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939469,
+            "raw_bytes": "0400"
+          }
+        },
+        {
+          "name": "IS_ENVIRONMENT_DAMAGE",
+          "field_index": 79434,
+          "token": "0x401364b",
+          "default": {
+            "value": 5,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939471,
+            "raw_bytes": "0500"
+          }
+        },
+        {
+          "name": "FORCE_TO_DISPLAY_NEGATIVE_NUMER",
+          "field_index": 79435,
+          "token": "0x401364c",
+          "default": {
+            "value": 6,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939473,
+            "raw_bytes": "0600"
+          }
+        },
+        {
+          "name": "SKIP_MODIFIER_EVENT",
+          "field_index": 79436,
+          "token": "0x401364d",
+          "default": {
+            "value": 7,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939475,
+            "raw_bytes": "0700"
+          }
+        },
+        {
+          "name": "DAMAGE_CAN_HURT_SLEEPING_ENTITY",
+          "field_index": 79437,
+          "token": "0x401364e",
+          "default": {
+            "value": 8,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939477,
+            "raw_bytes": "0800"
+          }
+        },
+        {
+          "name": "LIFE_POINT_LOSS_BY_REACH_EXIT",
+          "field_index": 79438,
+          "token": "0x401364f",
+          "default": {
+            "value": 9,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939479,
+            "raw_bytes": "0900"
+          }
+        },
+        {
+          "name": "HEAL_CAN_GENERAL_SHIELD",
+          "field_index": 79439,
+          "token": "0x4013650",
+          "default": {
+            "value": 10,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939481,
+            "raw_bytes": "0a00"
+          }
+        },
+        {
+          "name": "FORCE_TO_DISPLAY_CRITICAL_NUMBER",
+          "field_index": 79440,
+          "token": "0x4013651",
+          "default": {
+            "value": 11,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939483,
+            "raw_bytes": "0b00"
+          }
+        },
+        {
+          "name": "ALLOW_ADD_TEMP_LIFE_POINT_FLAG",
+          "field_index": 79441,
+          "token": "0x4013652",
+          "default": {
+            "value": 12,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939485,
+            "raw_bytes": "0c00"
+          }
+        },
+        {
+          "name": "INSTANT_KILL_LIKE_DAMAGE",
+          "field_index": 79442,
+          "token": "0x4013653",
+          "default": {
+            "value": 13,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939487,
+            "raw_bytes": "0d00"
+          }
+        },
+        {
+          "name": "IS_ENVIRONMENT_ELEMENT_DAMAGE",
+          "field_index": 79443,
+          "token": "0x4013654",
+          "default": {
+            "value": 14,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939489,
+            "raw_bytes": "0e00"
+          }
+        },
+        {
+          "name": "SKIP_MODIFIER_CONSIDER_UNHURTABLE",
+          "field_index": 79444,
+          "token": "0x4013655",
+          "default": {
+            "value": 15,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939491,
+            "raw_bytes": "0f00"
+          }
+        },
+        {
+          "name": "IS_NOT_CHANGEABLE_VALUE_MODIFIER",
+          "field_index": 79445,
+          "token": "0x4013656",
+          "default": {
+            "value": 16,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939493,
+            "raw_bytes": "1000"
+          }
+        },
+        {
+          "name": "IS_RETRIGGER_SKILL_USING",
+          "field_index": 79446,
+          "token": "0x4013657",
+          "default": {
+            "value": 17,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939495,
+            "raw_bytes": "1100"
+          }
+        },
+        {
+          "name": "IS_CAST_SKILL_WITH_COST_USING",
+          "field_index": 79447,
+          "token": "0x4013658",
+          "default": {
+            "value": 18,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939497,
+            "raw_bytes": "1200"
+          }
+        },
+        {
+          "name": "APPLY_TO_HAMMER_SUBCLASS_MAIN_TARGET",
+          "field_index": 79448,
+          "token": "0x4013659",
+          "default": {
+            "value": 19,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939499,
+            "raw_bytes": "1300"
+          }
+        },
+        {
+          "name": "APPLY_TO_HAMMER_SUBCLASS_SPLASH_TARGET",
+          "field_index": 79449,
+          "token": "0x401365a",
+          "default": {
+            "value": 20,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939501,
+            "raw_bytes": "1400"
+          }
+        },
+        {
+          "name": "IS_DEPLOY_COST_POST_DELTA",
+          "field_index": 79450,
+          "token": "0x401365b",
+          "default": {
+            "value": 21,
+            "native_type": {
+              "address": "0x188a2ca80",
+              "file_offset": 144877696,
+              "raw_bytes12": "0aa000000000000000000680",
+              "data": 40970,
+              "bits": "0x80060000",
+              "attrs": 0,
+              "type_tag": "0x6",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int16",
+              "type_index": 58995,
+              "pointer_record_file_offset": 131049848
+            },
+            "metadata_file_offset": 21939503,
+            "raw_bytes": "1500"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Torappu.Battle.Modifier.SourceAttackType",
+      "definition_index": 10733,
+      "native_type": {
+        "address": "0x188b60d80",
+        "file_offset": 146140032,
+        "raw_bytes12": "ed2900000000000000001180",
+        "data": 10733,
+        "bits": "0x80110000",
+        "attrs": 0,
+        "type_tag": "0x11",
+        "byref": false,
+        "valuetype_bit": true,
+        "definition_index": 10733,
+        "name": "Torappu.Battle.Modifier.SourceAttackType",
+        "is_value_type": true,
+        "is_enum": true,
+        "type_index": 99851,
+        "pointer_record_file_offset": 131376696
+      },
+      "constants": [
+        {
+          "name": "NONE",
+          "field_index": 79456,
+          "token": "0x4013661",
+          "default": {
+            "value": 0,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939508,
+            "raw_bytes": "00"
+          }
+        },
+        {
+          "name": "NORMAL",
+          "field_index": 79457,
+          "token": "0x4013662",
+          "default": {
+            "value": 1,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939509,
+            "raw_bytes": "02"
+          }
+        },
+        {
+          "name": "SPLASH",
+          "field_index": 79458,
+          "token": "0x4013663",
+          "default": {
+            "value": 2,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939510,
+            "raw_bytes": "04"
+          }
+        },
+        {
+          "name": "BUFF",
+          "field_index": 79459,
+          "token": "0x4013664",
+          "default": {
+            "value": 4,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939511,
+            "raw_bytes": "08"
+          }
+        },
+        {
+          "name": "ADDITION",
+          "field_index": 79460,
+          "token": "0x4013665",
+          "default": {
+            "value": 8,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939512,
+            "raw_bytes": "10"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Torappu.Battle.Modifier.CancelReason",
+      "definition_index": 10735,
+      "native_type": {
+        "address": "0x188b5ef90",
+        "file_offset": 146132368,
+        "raw_bytes12": "ef2900000000000000001180",
+        "data": 10735,
+        "bits": "0x80110000",
+        "attrs": 0,
+        "type_tag": "0x11",
+        "byref": false,
+        "valuetype_bit": true,
+        "definition_index": 10735,
+        "name": "Torappu.Battle.Modifier.CancelReason",
+        "is_value_type": true,
+        "is_enum": true,
+        "type_index": 99838,
+        "pointer_record_file_offset": 131376592
+      },
+      "constants": [
+        {
+          "name": "NONE",
+          "field_index": 79472,
+          "token": "0x4013671",
+          "default": {
+            "value": 0,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939522,
+            "raw_bytes": "00"
+          }
+        },
+        {
+          "name": "UNHURTABLE",
+          "field_index": 79473,
+          "token": "0x4013672",
+          "default": {
+            "value": 1,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939523,
+            "raw_bytes": "02"
+          }
+        },
+        {
+          "name": "MISS",
+          "field_index": 79474,
+          "token": "0x4013673",
+          "default": {
+            "value": 2,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939524,
+            "raw_bytes": "04"
+          }
+        },
+        {
+          "name": "BLOCKED",
+          "field_index": 79475,
+          "token": "0x4013674",
+          "default": {
+            "value": 3,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939525,
+            "raw_bytes": "06"
+          }
+        },
+        {
+          "name": "BLOCKED_WITH_DAMAGE_NUMBER",
+          "field_index": 79476,
+          "token": "0x4013675",
+          "default": {
+            "value": 4,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939526,
+            "raw_bytes": "08"
+          }
+        },
+        {
+          "name": "INTERRUPT",
+          "field_index": 79477,
+          "token": "0x4013676",
+          "default": {
+            "value": 5,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939527,
+            "raw_bytes": "0a"
+          }
+        },
+        {
+          "name": "HIT_FAILED",
+          "field_index": 79478,
+          "token": "0x4013677",
+          "default": {
+            "value": 6,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939528,
+            "raw_bytes": "0c"
+          }
+        },
+        {
+          "name": "MINUS_HEALTH",
+          "field_index": 79479,
+          "token": "0x4013678",
+          "default": {
+            "value": 7,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939529,
+            "raw_bytes": "0e"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Torappu.Battle.Modifier.CancelReasonMask",
+      "definition_index": 10736,
+      "native_type": {
+        "address": "0x188b5f630",
+        "file_offset": 146134064,
+        "raw_bytes12": "f02900000000000000001180",
+        "data": 10736,
+        "bits": "0x80110000",
+        "attrs": 0,
+        "type_tag": "0x11",
+        "byref": false,
+        "valuetype_bit": true,
+        "definition_index": 10736,
+        "name": "Torappu.Battle.Modifier.CancelReasonMask",
+        "is_value_type": true,
+        "is_enum": true,
+        "type_index": 99841,
+        "pointer_record_file_offset": 131376616
+      },
+      "constants": [
+        {
+          "name": "NONE",
+          "field_index": 79481,
+          "token": "0x401367a",
+          "default": {
+            "value": 0,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939530,
+            "raw_bytes": "00"
+          }
+        },
+        {
+          "name": "UNHURTABLE",
+          "field_index": 79482,
+          "token": "0x401367b",
+          "default": {
+            "value": 2,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939531,
+            "raw_bytes": "04"
+          }
+        },
+        {
+          "name": "MISS",
+          "field_index": 79483,
+          "token": "0x401367c",
+          "default": {
+            "value": 4,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939532,
+            "raw_bytes": "08"
+          }
+        },
+        {
+          "name": "BLOCKED",
+          "field_index": 79484,
+          "token": "0x401367d",
+          "default": {
+            "value": 8,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939533,
+            "raw_bytes": "10"
+          }
+        },
+        {
+          "name": "BLOCKED_WITH_DAMAGE_NUMBER",
+          "field_index": 79485,
+          "token": "0x401367e",
+          "default": {
+            "value": 16,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939534,
+            "raw_bytes": "20"
+          }
+        },
+        {
+          "name": "INTERRUPT",
+          "field_index": 79486,
+          "token": "0x401367f",
+          "default": {
+            "value": 32,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939535,
+            "raw_bytes": "40"
+          }
+        },
+        {
+          "name": "HIT_FAILED",
+          "field_index": 79487,
+          "token": "0x4013680",
+          "default": {
+            "value": 64,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939536,
+            "raw_bytes": "8080"
+          }
+        },
+        {
+          "name": "MINUS_HEALTH",
+          "field_index": 79488,
+          "token": "0x4013681",
+          "default": {
+            "value": 128,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21939538,
+            "raw_bytes": "8100"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Torappu.Battle.Enemy.States.State",
+      "definition_index": 11350,
+      "native_type": {
+        "address": "0x188b87b10",
+        "file_offset": 146299152,
+        "raw_bytes12": "562c00000000000000001180",
+        "data": 11350,
+        "bits": "0x80110000",
+        "attrs": 0,
+        "type_tag": "0x11",
+        "byref": false,
+        "valuetype_bit": true,
+        "definition_index": 11350,
+        "name": "Torappu.Battle.Enemy.States.State",
+        "is_value_type": true,
+        "is_enum": true,
+        "type_index": 112703,
+        "pointer_record_file_offset": 131479512
+      },
+      "constants": [
+        {
+          "name": "DEFAULT",
+          "field_index": 86482,
+          "token": "0x40151d3",
+          "default": {
+            "value": 0,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940940,
+            "raw_bytes": "00"
+          }
+        },
+        {
+          "name": "MOVE",
+          "field_index": 86483,
+          "token": "0x40151d4",
+          "default": {
+            "value": 1,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940941,
+            "raw_bytes": "02"
+          }
+        },
+        {
+          "name": "ATTACK",
+          "field_index": 86484,
+          "token": "0x40151d5",
+          "default": {
+            "value": 2,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940942,
+            "raw_bytes": "04"
+          }
+        },
+        {
+          "name": "COMBAT",
+          "field_index": 86485,
+          "token": "0x40151d6",
+          "default": {
+            "value": 3,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940943,
+            "raw_bytes": "06"
+          }
+        },
+        {
+          "name": "STUN",
+          "field_index": 86486,
+          "token": "0x40151d7",
+          "default": {
+            "value": 4,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940944,
+            "raw_bytes": "08"
+          }
+        },
+        {
+          "name": "DEAD",
+          "field_index": 86487,
+          "token": "0x40151d8",
+          "default": {
+            "value": 5,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940945,
+            "raw_bytes": "0a"
+          }
+        },
+        {
+          "name": "BORN",
+          "field_index": 86488,
+          "token": "0x40151d9",
+          "default": {
+            "value": 6,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940946,
+            "raw_bytes": "0c"
+          }
+        },
+        {
+          "name": "REACH_EXIT",
+          "field_index": 86489,
+          "token": "0x40151da",
+          "default": {
+            "value": 7,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940947,
+            "raw_bytes": "0e"
+          }
+        },
+        {
+          "name": "REBORN",
+          "field_index": 86490,
+          "token": "0x40151db",
+          "default": {
+            "value": 8,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940948,
+            "raw_bytes": "10"
+          }
+        },
+        {
+          "name": "UNBALANCE",
+          "field_index": 86491,
+          "token": "0x40151dc",
+          "default": {
+            "value": 9,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940949,
+            "raw_bytes": "12"
+          }
+        },
+        {
+          "name": "FALLDOWN",
+          "field_index": 86492,
+          "token": "0x40151dd",
+          "default": {
+            "value": 10,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940950,
+            "raw_bytes": "14"
+          }
+        },
+        {
+          "name": "DISAPPEAR",
+          "field_index": 86493,
+          "token": "0x40151de",
+          "default": {
+            "value": 11,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940951,
+            "raw_bytes": "16"
+          }
+        },
+        {
+          "name": "BLINK",
+          "field_index": 86494,
+          "token": "0x40151df",
+          "default": {
+            "value": 12,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940952,
+            "raw_bytes": "18"
+          }
+        },
+        {
+          "name": "FROZEN",
+          "field_index": 86495,
+          "token": "0x40151e0",
+          "default": {
+            "value": 13,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940953,
+            "raw_bytes": "1a"
+          }
+        },
+        {
+          "name": "LEVITATE",
+          "field_index": 86496,
+          "token": "0x40151e1",
+          "default": {
+            "value": 14,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940954,
+            "raw_bytes": "1c"
+          }
+        },
+        {
+          "name": "DIALOG",
+          "field_index": 86497,
+          "token": "0x40151e2",
+          "default": {
+            "value": 15,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940955,
+            "raw_bytes": "1e"
+          }
+        },
+        {
+          "name": "PALSY",
+          "field_index": 86498,
+          "token": "0x40151e3",
+          "default": {
+            "value": 16,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940956,
+            "raw_bytes": "20"
+          }
+        },
+        {
+          "name": "TERMINAL",
+          "field_index": 86499,
+          "token": "0x40151e4",
+          "default": {
+            "value": -1,
+            "native_type": {
+              "address": "0x188a25d40",
+              "file_offset": 144849728,
+              "raw_bytes12": "0ba000000000000000000880",
+              "data": 40971,
+              "bits": "0x80080000",
+              "attrs": 0,
+              "type_tag": "0x8",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Int32",
+              "type_index": 59011,
+              "pointer_record_file_offset": 131049976
+            },
+            "metadata_file_offset": 21940957,
+            "raw_bytes": "01"
+          }
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Literal metadata declarations, not live flags or runtime side effects."
+  ],
+  "source_reader": {
+    "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\skill\\enum_constants.json",
+    "sha256": "347a08a076da36e877f1a8f0923bddfa274e9f4c5de83fc90a53e69f3888631b"
+  }
+}

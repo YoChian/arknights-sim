@@ -1,0 +1,41 @@
+{
+  "status": "proposed interfaces; static investigation only; no simulator implementation",
+  "npc_battle_ready": false,
+  "context": {
+    "required": ["explicit supported game mode", "no-hotfix scope", "explicit global modifiers", "explicit initialLife", "identity/UID validity", "initialized active buffs", "native buff priority and mutation policy"],
+    "reject": ["assumed live Rogue no-op modifiers", "default level99 as run initialLife", "unharmful interpreted as disappeared", "silent omission of NPC templates"]
+  },
+  "summon": {
+    "signature": "plan_npc_summon(host_handle, buff_source_handle, blackboard, origin_route_handle, origin_cursor_index, options, shared_coroutine_owner) -> PendingSummon",
+    "zero_delay_minimum_wait_frames": 1,
+    "capture_before_wait": ["host UID", "cached-or-current origin route", "cached-or-current origin cursor index", "buff source", "blackboard clone"],
+    "resume_dependencies": ["allowSummonSpawnEnemy", "factory and registration", "runtime route duplication", "progress assign helper", "gameMode callbacks", "Buff.AddBuffs activation"],
+    "shipped_flags": {"unharmful": true, "dontCountAsFinished": true, "isSummon": true, "alwaysCountAsKilled": false, "managedByScheduler": true, "dontBlockWave": true, "stopSummonIfHostDead": false},
+    "membership": {"wave": false, "final": true},
+    "must_not": ["synchronous zero-delay spawn", "private host-alive coroutine runner", "unclosed general float wait substituted for FP wait", "unproven spawn success"]
+  },
+  "restoration": {
+    "signature": "restore_host_from_npc(host_handle, npc_handle, source_identity_resolver, grid_position_setter, route_reassigner, state_dispatcher) -> action_result",
+    "ordered_operations": ["validate target/source", "reject giant boss", "release blocker", "set host to NPC current GridPosition", "disable current still pull", "assign NPC current route and cursor index", "SetDisappeared(false)", "FinishBuffsById(enemy_shdopl_passive)"],
+    "unclosed": ["source ObjectPtr validity helper", "route changed/progress algorithm", "DisappearState appear transition", "buff removal and reentrancy"],
+    "not_proven": ["restore original spawn coordinate", "same-tick Move after disappeared=false"]
+  },
+  "action_dispatch": {
+    "signature": "run_actions(nodes, source_type, blackboard, context_snapshot, event_dispatch) -> previous_result",
+    "initial_previous_result": true,
+    "check_execute": {"0": "true", "1": "previous_result", "2": "not previous_result", "other": "false"},
+    "failed_check": "return from list before executing node",
+    "node_result": "replace previous_result with Execute return",
+    "ordinary_instant_kill": {"finish_reason": 7, "finish_callbacks_before_return": true, "return_alive_after_finish": false, "next_lock_assignment_executes": false, "next_clear_all_buffs_executes": false},
+    "reentrancy": "Use a nested context snapshot/ChangeGuard and the same live Buff blackboard; do not pre-write lock or coalesce synchronous Finish callbacks. Container order/mutation remains a strict gate."
+  },
+  "life_action": {
+    "signature": "on_npc_owner_killed(buff_handle, bound_blackboard, supported_mode, modify_life_callback) -> action_result",
+    "event": 3,
+    "ordinary_declared_delta_if_bound": -1,
+    "is_sub": false,
+    "is_reach_exit": false,
+    "unclosed": ["Dead/dead prefix and case binding", "active Buff eligibility", "callback ordering and mode/global-modifier consumption"],
+    "must_not": ["trigger on Finish7", "trigger on every reach exit", "assign life-=1 without blackboard/mode proof"]
+  }
+}

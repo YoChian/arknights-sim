@@ -1,0 +1,274 @@
+[
+  {
+    "type": "Torappu.Battle.Buff",
+    "method": "get_isFinishedOrDisabled",
+    "metadata_method_index": 65103,
+    "token": "0x600fe50",
+    "address": "0x18068edb0",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "DoubleBufferedBuffList",
+    "method": "Remove",
+    "metadata_method_index": 65283,
+    "token": "0x600ff04",
+    "address": "0x180690a40",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "DoubleBufferedBuffList",
+    "method": "ClearInvalidElementsIfNotLoop",
+    "metadata_method_index": 65284,
+    "token": "0x600ff05",
+    "address": "0x180690780",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "DoubleBufferedBuffList",
+    "method": "ClearWithWhiteList",
+    "metadata_method_index": 65285,
+    "token": "0x600ff06",
+    "address": "0x1806908b0",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "DoubleBufferedBuffList",
+    "method": ".ctor",
+    "metadata_method_index": 65286,
+    "token": "0x600ff07",
+    "address": "0x180690c10",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "SortedDoubleBufferedBuffList",
+    "method": ".ctor",
+    "metadata_method_index": 65288,
+    "token": "0x600ff09",
+    "address": "0x1806925d0",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "RemoveBuff",
+    "metadata_method_index": 65312,
+    "token": "0x600ff21",
+    "address": "0x18067ad60",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "RemoveBuffs",
+    "metadata_method_index": 65313,
+    "token": "0x600ff22",
+    "address": "0x18067b400",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "RemoveBuffs",
+    "metadata_method_index": 65314,
+    "token": "0x600ff23",
+    "address": "0x18067b160",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "ClearWithWhiteList",
+    "metadata_method_index": 65358,
+    "token": "0x600ff4f",
+    "address": "0x180663e70",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "_CheckBuffsActionValid",
+    "metadata_method_index": 65362,
+    "token": "0x600ff53",
+    "address": "0x18067e3a0",
+    "reason": "Buff membership removal/registration gates and iteration mutation closure"
+  },
+  {
+    "type": "Torappu.DoubleBufferedList`1",
+    "method": "GetEnumerator",
+    "address": "0x185a17960",
+    "metadata_method_index": 25807,
+    "token": "0x60064d0",
+    "raw_call_target": true,
+    "reason": "Actual caller-bound closed generic DoubleBufferedList<ObjectPtr<Buff>> helper; identity in generic_identities.json"
+  },
+  {
+    "type": "Torappu.DoubleBufferedList`1",
+    "method": "GetInversedEnumerator",
+    "address": "0x185a17d40",
+    "metadata_method_index": 25809,
+    "token": "0x60064d2",
+    "raw_call_target": true,
+    "reason": "Actual caller-bound closed generic DoubleBufferedList<ObjectPtr<Buff>> helper; identity in generic_identities.json"
+  },
+  {
+    "type": "Torappu.DoubleBufferedList`1",
+    "method": "Add",
+    "address": "0x185a16f20",
+    "metadata_method_index": 25804,
+    "token": "0x60064cd",
+    "raw_call_target": true,
+    "reason": "Actual caller-bound closed generic DoubleBufferedList<ObjectPtr<Buff>> helper; identity in generic_identities.json"
+  },
+  {
+    "type": "Torappu.DoubleBufferedList`1",
+    "method": "get_isInLoop",
+    "address": "0x185a19b40",
+    "metadata_method_index": 25801,
+    "token": "0x60064ca",
+    "raw_call_target": true,
+    "reason": "Actual caller-bound closed generic DoubleBufferedList<ObjectPtr<Buff>> helper; identity in generic_identities.json"
+  },
+  {
+    "type": "Torappu.Battle.BattleController",
+    "method": "RegisterUnit",
+    "metadata_method_index": 64672,
+    "token": "0x600fca1",
+    "address": "0x18062f110",
+    "virtual_slot": 65535,
+    "parameters": [
+      {
+        "name": "unit",
+        "native_type": "Torappu.Battle.Unit"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "OnInit",
+    "metadata_method_index": 66657,
+    "token": "0x6010462",
+    "address": "0x1806f92b0",
+    "virtual_slot": 30,
+    "parameters": [
+      {
+        "name": "initHeight",
+        "native_type": "Single"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+  },
+  {
+    "type": "Torappu.Battle.BattleFactory",
+    "method": "CreateEnemy",
+    "metadata_method_index": 71615,
+    "token": "0x60117c0",
+    "address": "0x1808e9170",
+    "virtual_slot": 65535,
+    "parameters": [
+      {
+        "name": "enemyKey",
+        "native_type": "String"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "OnInit",
+    "metadata_method_index": 76528,
+    "token": "0x6012af1",
+    "address": "0x180a71010",
+    "virtual_slot": 30,
+    "parameters": [
+      {
+        "name": "initHeight",
+        "native_type": "Single"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+  },
+  {
+    "type": "Torappu.Battle.Unit",
+    "method": "OnPostInit",
+    "metadata_method_index": 77666,
+    "token": "0x6012f63",
+    "address": "0x180acae20",
+    "virtual_slot": 31,
+    "parameters": [],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+  },
+  {
+    "type": "Torappu.Battle.BObject",
+    "method": "OnRecycle",
+    "metadata_method_index": 65035,
+    "token": "0x600fe0c",
+    "address": "0x1806629d0",
+    "reason": "BObject UID invalidation and reset order"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "DontCountAsFinished",
+    "metadata_method_index": 76366,
+    "token": "0x6012a4f",
+    "address": "0x180a6c7f0",
+    "reason": "dontCountAsFinished mutation"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "get_isInvalidKilled",
+    "metadata_method_index": 76370,
+    "token": "0x6012a53",
+    "address": "0x180a7e320",
+    "reason": "invalid kill classification"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "get_isOverrideKillCnt",
+    "metadata_method_index": 76371,
+    "token": "0x6012a54",
+    "address": "0x180a7e470",
+    "reason": "override kill classification"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "get_overrideKillCnt",
+    "metadata_method_index": 76372,
+    "token": "0x6012a55",
+    "address": "0x180a7f850",
+    "reason": "override kill integer getter"
+  },
+  {
+    "type": "DeadState",
+    "method": "OnEnter",
+    "metadata_method_index": 76666,
+    "token": "0x6012b7b",
+    "address": "0x180a8b390",
+    "reason": "Enemy nested DeadState recycle delay update"
+  },
+  {
+    "type": "DeadState",
+    "method": "_PlayAnimation",
+    "metadata_method_index": 76669,
+    "token": "0x6012b7e",
+    "address": "0x180a8b6a0",
+    "reason": "Enemy nested DeadState animation/delay source"
+  },
+  {
+    "type": "Torappu.Battle.Unit",
+    "method": "OnRecycle",
+    "metadata_method_index": 77698,
+    "token": "0x6012f83",
+    "address": "0x180acb160",
+    "reason": "Unit recycle chain before Enemy callback"
+  },
+  {
+    "type": "Torappu.Battle.Unit",
+    "method": "OnTakeDamage",
+    "address": "0x180acbc80",
+    "metadata_method_index": 77693,
+    "token": "0x6012f7e"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "MarkUnharmful",
+    "address": "0x180a6f4d0",
+    "metadata_method_index": 76367,
+    "token": "0x6012a50"
+  }
+]

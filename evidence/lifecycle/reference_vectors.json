@@ -1,0 +1,5079 @@
+{
+  "reference_kind": "source-owned CSharp static reconstruction; no client runtime oracle",
+  "vectors": [
+    {
+      "input": {
+        "id": "life_1_0_-10_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-10_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-10_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-10_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-3_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-3_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-3_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-3_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-1_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-1_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-1_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_-1_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_0_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_0_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_0_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_0_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_1_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 2,
+        "temp": 0,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_1_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 2,
+        "temp": 0,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_1_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_1_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_3_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 4,
+        "temp": 0,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_3_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 4,
+        "temp": 0,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_3_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_3_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_10_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 11,
+        "temp": 0,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_10_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 11,
+        "temp": 0,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_10_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 10,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_0_10_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 10,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-10_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-10_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-10_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-10_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-3_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-3_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-3_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-3_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-1_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-1_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-1_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_-1_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_0_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_0_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_0_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_0_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_1_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 2,
+        "temp": 1,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_1_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 2,
+        "temp": 1,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_1_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_1_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_3_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 4,
+        "temp": 1,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_3_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 4,
+        "temp": 1,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_3_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_3_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_10_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 11,
+        "temp": 1,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_10_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 11,
+        "temp": 1,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_10_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 11,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_1_10_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 11,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-10_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-10_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-10_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-10_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-3_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-3_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-3_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-3_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-1_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-1_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-1_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_-1_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_0_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_0_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_0_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_0_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_1_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 2,
+        "temp": 3,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_1_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 2,
+        "temp": 3,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_1_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_1_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_3_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 4,
+        "temp": 3,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_3_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 4,
+        "temp": 3,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_3_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 6,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_3_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 6,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_10_False_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 11,
+        "temp": 3,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_10_False_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 11,
+        "temp": 3,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_10_True_False",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 13,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_1_3_10_True_True",
+        "mode": "life",
+        "life": 1,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 13,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-10_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-10_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-10_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-10_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-3_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-3_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-3_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-3_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-1_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 2,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-1_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 2,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-1_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 2,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_-1_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 2,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_0_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_0_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_0_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_0_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_1_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 4,
+        "temp": 0,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_1_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 4,
+        "temp": 0,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_1_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_1_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_3_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 6,
+        "temp": 0,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_3_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 6,
+        "temp": 0,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_3_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_3_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_10_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 13,
+        "temp": 0,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_10_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 13,
+        "temp": 0,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_10_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 10,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_0_10_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 10,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-10_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-10_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-10_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-10_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-3_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": -2,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-3_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": -2,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-3_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": -2,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-3_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 1,
+        "temp": 0,
+        "applied_delta": -2,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-1_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-1_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-1_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_-1_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_0_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_0_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_0_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_0_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_1_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 4,
+        "temp": 1,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_1_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 4,
+        "temp": 1,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_1_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_1_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_3_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 6,
+        "temp": 1,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_3_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 6,
+        "temp": 1,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_3_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_3_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_10_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 13,
+        "temp": 1,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_10_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 13,
+        "temp": 1,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_10_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 11,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_1_10_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 11,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-10_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-10_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-10_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-10_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-3_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-3_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-3_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-3_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-1_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-1_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-1_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_-1_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_0_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_0_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_0_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_0_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_1_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 4,
+        "temp": 3,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_1_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 4,
+        "temp": 3,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_1_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_1_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_3_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 6,
+        "temp": 3,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_3_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 6,
+        "temp": 3,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_3_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 6,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_3_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 6,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_10_False_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 13,
+        "temp": 3,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_10_False_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 13,
+        "temp": 3,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_10_True_False",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 3,
+        "temp": 13,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_3_3_10_True_True",
+        "mode": "life",
+        "life": 3,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 3,
+        "temp": 13,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-10_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -9,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-10_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -9,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-10_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -9,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-10_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -9,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-3_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 6,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-3_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 6,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-3_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 6,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-3_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 6,
+        "temp": 0,
+        "applied_delta": -3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-1_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 8,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-1_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 8,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-1_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 8,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_-1_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": -1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 8,
+        "temp": 0,
+        "applied_delta": -1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_0_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_0_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_0_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_0_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 0,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_1_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 10,
+        "temp": 0,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_1_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 10,
+        "temp": 0,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_1_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_1_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_3_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 12,
+        "temp": 0,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_3_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 12,
+        "temp": 0,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_3_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_3_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_10_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 19,
+        "temp": 0,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_10_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 19,
+        "temp": 0,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_10_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 10,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_0_10_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 0,
+        "delta": 10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 10,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-10_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -9,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-10_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -9,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-10_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -9,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-10_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 0,
+        "temp": 0,
+        "applied_delta": -9,
+        "lost": true
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-3_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 7,
+        "temp": 0,
+        "applied_delta": -2,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-3_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 7,
+        "temp": 0,
+        "applied_delta": -2,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-3_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 7,
+        "temp": 0,
+        "applied_delta": -2,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-3_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 7,
+        "temp": 0,
+        "applied_delta": -2,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-1_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-1_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-1_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_-1_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": -1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_0_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_0_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_0_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_0_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 0,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 1,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_1_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 10,
+        "temp": 1,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_1_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 10,
+        "temp": 1,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_1_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_1_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_3_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 12,
+        "temp": 1,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_3_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 12,
+        "temp": 1,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_3_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_3_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_10_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 19,
+        "temp": 1,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_10_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 19,
+        "temp": 1,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_10_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 11,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_1_10_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 1,
+        "delta": 10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 11,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-10_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 2,
+        "temp": 0,
+        "applied_delta": -7,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-10_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 2,
+        "temp": 0,
+        "applied_delta": -7,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-10_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 2,
+        "temp": 0,
+        "applied_delta": -7,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-10_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 2,
+        "temp": 0,
+        "applied_delta": -7,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-3_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-3_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-3_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-3_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 0,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-1_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-1_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-1_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_-1_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": -1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 2,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_0_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_0_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_0_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_0_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 0,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 3,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_1_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 10,
+        "temp": 3,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_1_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 10,
+        "temp": 3,
+        "applied_delta": 1,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_1_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_1_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 1,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 4,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_3_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 12,
+        "temp": 3,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_3_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 12,
+        "temp": 3,
+        "applied_delta": 3,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_3_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 6,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_3_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 3,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 6,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_10_False_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": false,
+        "exit": false
+      },
+      "expected": {
+        "life": 19,
+        "temp": 3,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_10_False_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": false,
+        "exit": true
+      },
+      "expected": {
+        "life": 19,
+        "temp": 3,
+        "applied_delta": 10,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_10_True_False",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": true,
+        "exit": false
+      },
+      "expected": {
+        "life": 9,
+        "temp": 13,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "life_9_3_10_True_True",
+        "mode": "life",
+        "life": 9,
+        "temp": 3,
+        "delta": 10,
+        "to_temp": true,
+        "exit": true
+      },
+      "expected": {
+        "life": 9,
+        "temp": 13,
+        "applied_delta": 0,
+        "lost": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_-1_0",
+        "mode": "alive",
+        "state": -1,
+        "hp_raw": 0
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_-1_42949",
+        "mode": "alive",
+        "state": -1,
+        "hp_raw": 42949
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_-1_42950",
+        "mode": "alive",
+        "state": -1,
+        "hp_raw": 42950
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_-1_42951",
+        "mode": "alive",
+        "state": -1,
+        "hp_raw": 42951
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_-1_4294967296",
+        "mode": "alive",
+        "state": -1,
+        "hp_raw": 4294967296
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_0_0",
+        "mode": "alive",
+        "state": 0,
+        "hp_raw": 0
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_0_42949",
+        "mode": "alive",
+        "state": 0,
+        "hp_raw": 42949
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_0_42950",
+        "mode": "alive",
+        "state": 0,
+        "hp_raw": 42950
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_0_42951",
+        "mode": "alive",
+        "state": 0,
+        "hp_raw": 42951
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_0_4294967296",
+        "mode": "alive",
+        "state": 0,
+        "hp_raw": 4294967296
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_1_0",
+        "mode": "alive",
+        "state": 1,
+        "hp_raw": 0
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_1_42949",
+        "mode": "alive",
+        "state": 1,
+        "hp_raw": 42949
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_1_42950",
+        "mode": "alive",
+        "state": 1,
+        "hp_raw": 42950
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_1_42951",
+        "mode": "alive",
+        "state": 1,
+        "hp_raw": 42951
+      },
+      "expected": {
+        "alive": true
+      }
+    },
+    {
+      "input": {
+        "id": "alive_1_4294967296",
+        "mode": "alive",
+        "state": 1,
+        "hp_raw": 4294967296
+      },
+      "expected": {
+        "alive": true
+      }
+    },
+    {
+      "input": {
+        "id": "alive_6_0",
+        "mode": "alive",
+        "state": 6,
+        "hp_raw": 0
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_6_42949",
+        "mode": "alive",
+        "state": 6,
+        "hp_raw": 42949
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_6_42950",
+        "mode": "alive",
+        "state": 6,
+        "hp_raw": 42950
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_6_42951",
+        "mode": "alive",
+        "state": 6,
+        "hp_raw": 42951
+      },
+      "expected": {
+        "alive": true
+      }
+    },
+    {
+      "input": {
+        "id": "alive_6_4294967296",
+        "mode": "alive",
+        "state": 6,
+        "hp_raw": 4294967296
+      },
+      "expected": {
+        "alive": true
+      }
+    },
+    {
+      "input": {
+        "id": "alive_16_0",
+        "mode": "alive",
+        "state": 16,
+        "hp_raw": 0
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_16_42949",
+        "mode": "alive",
+        "state": 16,
+        "hp_raw": 42949
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_16_42950",
+        "mode": "alive",
+        "state": 16,
+        "hp_raw": 42950
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_16_42951",
+        "mode": "alive",
+        "state": 16,
+        "hp_raw": 42951
+      },
+      "expected": {
+        "alive": true
+      }
+    },
+    {
+      "input": {
+        "id": "alive_16_4294967296",
+        "mode": "alive",
+        "state": 16,
+        "hp_raw": 4294967296
+      },
+      "expected": {
+        "alive": true
+      }
+    },
+    {
+      "input": {
+        "id": "alive_17_0",
+        "mode": "alive",
+        "state": 17,
+        "hp_raw": 0
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_17_42949",
+        "mode": "alive",
+        "state": 17,
+        "hp_raw": 42949
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_17_42950",
+        "mode": "alive",
+        "state": 17,
+        "hp_raw": 42950
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_17_42951",
+        "mode": "alive",
+        "state": 17,
+        "hp_raw": 42951
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "alive_17_4294967296",
+        "mode": "alive",
+        "state": 17,
+        "hp_raw": 4294967296
+      },
+      "expected": {
+        "alive": false
+      }
+    },
+    {
+      "input": {
+        "id": "birth_143165440_282",
+        "mode": "birth",
+        "dt_raw": 143165440,
+        "delay": -0.1
+      },
+      "expected": {
+        "remaining_raw": 0,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_143165440_283",
+        "mode": "birth",
+        "dt_raw": 143165440,
+        "delay": 0
+      },
+      "expected": {
+        "remaining_raw": 0,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_143165440_284",
+        "mode": "birth",
+        "dt_raw": 143165440,
+        "delay": 9.999999747378752e-06
+      },
+      "expected": {
+        "remaining_raw": 0,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_143165440_285",
+        "mode": "birth",
+        "dt_raw": 143165440,
+        "delay": 1.0000000656873453e-05
+      },
+      "expected": {
+        "remaining_raw": 42949,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_143165440_286",
+        "mode": "birth",
+        "dt_raw": 143165440,
+        "delay": 0.005
+      },
+      "expected": {
+        "remaining_raw": 21474836,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_143165440_287",
+        "mode": "birth",
+        "dt_raw": 143165440,
+        "delay": 0.016
+      },
+      "expected": {
+        "remaining_raw": 68719480,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_143165440_288",
+        "mode": "birth",
+        "dt_raw": 143165440,
+        "delay": 0.033
+      },
+      "expected": {
+        "remaining_raw": 141733920,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_143165440_289",
+        "mode": "birth",
+        "dt_raw": 143165440,
+        "delay": 0.05
+      },
+      "expected": {
+        "remaining_raw": 214748368,
+        "frames": 2
+      }
+    },
+    {
+      "input": {
+        "id": "birth_143165440_290",
+        "mode": "birth",
+        "dt_raw": 143165440,
+        "delay": 0.1
+      },
+      "expected": {
+        "remaining_raw": 429496736,
+        "frames": 4
+      }
+    },
+    {
+      "input": {
+        "id": "birth_143165440_291",
+        "mode": "birth",
+        "dt_raw": 143165440,
+        "delay": 2
+      },
+      "expected": {
+        "remaining_raw": 8589934592,
+        "frames": 61
+      }
+    },
+    {
+      "input": {
+        "id": "birth_1073741824_292",
+        "mode": "birth",
+        "dt_raw": 1073741824,
+        "delay": -0.1
+      },
+      "expected": {
+        "remaining_raw": 0,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_1073741824_293",
+        "mode": "birth",
+        "dt_raw": 1073741824,
+        "delay": 0
+      },
+      "expected": {
+        "remaining_raw": 0,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_1073741824_294",
+        "mode": "birth",
+        "dt_raw": 1073741824,
+        "delay": 9.999999747378752e-06
+      },
+      "expected": {
+        "remaining_raw": 0,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_1073741824_295",
+        "mode": "birth",
+        "dt_raw": 1073741824,
+        "delay": 1.0000000656873453e-05
+      },
+      "expected": {
+        "remaining_raw": 42949,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_1073741824_296",
+        "mode": "birth",
+        "dt_raw": 1073741824,
+        "delay": 0.005
+      },
+      "expected": {
+        "remaining_raw": 21474836,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_1073741824_297",
+        "mode": "birth",
+        "dt_raw": 1073741824,
+        "delay": 0.016
+      },
+      "expected": {
+        "remaining_raw": 68719480,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_1073741824_298",
+        "mode": "birth",
+        "dt_raw": 1073741824,
+        "delay": 0.033
+      },
+      "expected": {
+        "remaining_raw": 141733920,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_1073741824_299",
+        "mode": "birth",
+        "dt_raw": 1073741824,
+        "delay": 0.05
+      },
+      "expected": {
+        "remaining_raw": 214748368,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_1073741824_300",
+        "mode": "birth",
+        "dt_raw": 1073741824,
+        "delay": 0.1
+      },
+      "expected": {
+        "remaining_raw": 429496736,
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "birth_1073741824_301",
+        "mode": "birth",
+        "dt_raw": 1073741824,
+        "delay": 2
+      },
+      "expected": {
+        "remaining_raw": 8589934592,
+        "frames": 8
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_143165440_302",
+        "mode": "recycle",
+        "dt_raw": 143165440,
+        "delay": -0.1
+      },
+      "expected": {
+        "frames": 0
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_143165440_303",
+        "mode": "recycle",
+        "dt_raw": 143165440,
+        "delay": 0
+      },
+      "expected": {
+        "frames": 0
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_143165440_304",
+        "mode": "recycle",
+        "dt_raw": 143165440,
+        "delay": 9.999999747378752e-06
+      },
+      "expected": {
+        "frames": 0
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_143165440_305",
+        "mode": "recycle",
+        "dt_raw": 143165440,
+        "delay": 1.0000000656873453e-05
+      },
+      "expected": {
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_143165440_306",
+        "mode": "recycle",
+        "dt_raw": 143165440,
+        "delay": 0.005
+      },
+      "expected": {
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_143165440_307",
+        "mode": "recycle",
+        "dt_raw": 143165440,
+        "delay": 0.016
+      },
+      "expected": {
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_143165440_308",
+        "mode": "recycle",
+        "dt_raw": 143165440,
+        "delay": 0.033
+      },
+      "expected": {
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_143165440_309",
+        "mode": "recycle",
+        "dt_raw": 143165440,
+        "delay": 0.05
+      },
+      "expected": {
+        "frames": 2
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_143165440_310",
+        "mode": "recycle",
+        "dt_raw": 143165440,
+        "delay": 0.1
+      },
+      "expected": {
+        "frames": 3
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_143165440_311",
+        "mode": "recycle",
+        "dt_raw": 143165440,
+        "delay": 2
+      },
+      "expected": {
+        "frames": 60
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_1073741824_312",
+        "mode": "recycle",
+        "dt_raw": 1073741824,
+        "delay": -0.1
+      },
+      "expected": {
+        "frames": 0
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_1073741824_313",
+        "mode": "recycle",
+        "dt_raw": 1073741824,
+        "delay": 0
+      },
+      "expected": {
+        "frames": 0
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_1073741824_314",
+        "mode": "recycle",
+        "dt_raw": 1073741824,
+        "delay": 9.999999747378752e-06
+      },
+      "expected": {
+        "frames": 0
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_1073741824_315",
+        "mode": "recycle",
+        "dt_raw": 1073741824,
+        "delay": 1.0000000656873453e-05
+      },
+      "expected": {
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_1073741824_316",
+        "mode": "recycle",
+        "dt_raw": 1073741824,
+        "delay": 0.005
+      },
+      "expected": {
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_1073741824_317",
+        "mode": "recycle",
+        "dt_raw": 1073741824,
+        "delay": 0.016
+      },
+      "expected": {
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_1073741824_318",
+        "mode": "recycle",
+        "dt_raw": 1073741824,
+        "delay": 0.033
+      },
+      "expected": {
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_1073741824_319",
+        "mode": "recycle",
+        "dt_raw": 1073741824,
+        "delay": 0.05
+      },
+      "expected": {
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_1073741824_320",
+        "mode": "recycle",
+        "dt_raw": 1073741824,
+        "delay": 0.1
+      },
+      "expected": {
+        "frames": 1
+      }
+    },
+    {
+      "input": {
+        "id": "recycle_1073741824_321",
+        "mode": "recycle",
+        "dt_raw": 1073741824,
+        "delay": 2
+      },
+      "expected": {
+        "frames": 8
+      }
+    }
+  ]
+}

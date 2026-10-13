@@ -1,0 +1,268 @@
+{
+  "healthy": true,
+  "tests_run": 468,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "v8_component_evidence": {
+    "healthy": true,
+    "scope": "reviewed_v8_npc_actions_restore_tracked_summon_and_physics_query_contracts",
+    "previous_v7_evidence": {
+      "healthy": true,
+      "scope": "reviewed_v7_static_preparation_targeting_and_component_composition",
+      "previous_v6_evidence": {
+        "healthy": true,
+        "scope": "reviewed_v6_selected_static_components",
+        "file_pins_checked": 323,
+        "native_batches": [
+          {
+            "entries": 119,
+            "ranges": 271
+          },
+          {
+            "entries": 34,
+            "ranges": 67
+          },
+          {
+            "entries": 14,
+            "ranges": 20
+          }
+        ],
+        "native_selected_entries": 167,
+        "native_imported_ranges": 358,
+        "rejected_candidate_entries": 1,
+        "accepted_candidate_entries": 166,
+        "original_native_ranges_checked": 358,
+        "physics_overlap_backend": "explicit_external_snapshot",
+        "client_runtime_compared": false,
+        "battle_ready": false,
+        "autonomous_route_ready": false,
+        "runtime_battle_validated": false
+      },
+      "file_pins_checked": 310,
+      "native_batches": [
+        {
+          "entries": 21,
+          "ranges": 58
+        },
+        {
+          "entries": 38,
+          "ranges": 71
+        },
+        {
+          "entries": 21,
+          "ranges": 48
+        },
+        {
+          "entries": 5,
+          "ranges": 13
+        }
+      ],
+      "native_selected_entries": 85,
+      "native_imported_ranges": 190,
+      "original_native_ranges_checked": 190,
+      "client_runtime_compared": false,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false
+    },
+    "file_pins_checked": 290,
+    "native_batches": [
+      {
+        "entries": 61,
+        "ranges": 117
+      },
+      {
+        "entries": 11,
+        "ranges": 19
+      }
+    ],
+    "native_selected_entries": 72,
+    "native_imported_ranges": 136,
+    "original_native_ranges_checked": 136,
+    "client_runtime_compared": false,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false
+  },
+  "previous_verification": "D:\\Repo\\arknights-sim\\artifacts\\verification_v7.json",
+  "npc_component": {
+    "artifact": "D:\\Repo\\arknights-sim\\artifacts\\npc_component.json",
+    "hidden_before_signal": {
+      "frame": 10,
+      "time_raw": 1431654400,
+      "npc_created": true,
+      "npc_alive": true,
+      "host_disappeared": true,
+      "host_game_active": false,
+      "host_state": 11,
+      "host_grid": [
+        0,
+        1
+      ],
+      "host_route": "host_initial_route",
+      "host_cursor_index": 0,
+      "passive_active": true,
+      "restore_callbacks": 0,
+      "finish_reason": null,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 3,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 1,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false
+    },
+    "damage_signal_snapshot": {
+      "frame": 12,
+      "time_raw": 1717985280,
+      "npc_created": true,
+      "npc_alive": false,
+      "host_disappeared": false,
+      "host_game_active": true,
+      "host_state": 1,
+      "host_grid": [
+        3,
+        5
+      ],
+      "host_route": "npc_runtime_route_11",
+      "host_cursor_index": 4,
+      "passive_active": false,
+      "restore_callbacks": 2,
+      "finish_reason": 7,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 3,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 1,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false
+    },
+    "death_signal_snapshot": {
+      "frame": 12,
+      "time_raw": 1717985280,
+      "npc_created": true,
+      "npc_alive": false,
+      "host_disappeared": false,
+      "host_game_active": true,
+      "host_state": 1,
+      "host_grid": [
+        3,
+        5
+      ],
+      "host_route": "npc_runtime_route_11",
+      "host_cursor_index": 4,
+      "passive_active": false,
+      "restore_callbacks": 1,
+      "finish_reason": 2,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 2,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 1,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false
+    },
+    "external_inputs": {
+      "initialized_entities_and_buffs": true,
+      "buff_dispatch_and_membership": "explicit initialized NPC component fixture; no client runtime",
+      "initial_host_uid": 23,
+      "initialized_npc_uid": 24,
+      "initial_spawned_counter": 10,
+      "tick_dt_raw": 143165440,
+      "delta_play_time_single": 0.03333330154418945,
+      "shared_controller_owner_exists_and_active": true,
+      "clock_anchor": "initialized MOVE host before passive fixture activation",
+      "npc_pose_and_take_damage_or_finish_signals": true,
+      "native_default_no_hotfix": true,
+      "default_noncoop_empty_global_modifiers": true,
+      "initial_life_and_temp_life": [
+        3,
+        0
+      ],
+      "blackboard_culture": "invariant_ascii",
+      "prepared_zero_checkpoint_runtime_routes": true,
+      "stationary_move_provider": true,
+      "fsm_admission_and_move_enter_exit_hooks": "explicit initialized NPC component fixture; no client runtime",
+      "unity_active_hierarchy_matches_self": true,
+      "unity_activation_position_color_and_tween_provider": true,
+      "tween_time_and_easing_simulated": false,
+      "factory_and_birth_registration_implemented": false,
+      "physics_hits_supplied": false,
+      "npc_hp_damage_calculated": false,
+      "entity_finish_mode_pool_and_full_buff_container_implemented": false,
+      "final_membership_pending_native_mode_recycle": true
+    }
+  },
+  "physics_altar": {
+    "artifact": "D:\\Repo\\arknights-sim\\artifacts\\altar_physics_contract.json",
+    "snapshot": {
+      "frame": 4343,
+      "time_raw": 621767505920,
+      "skill_state": 1,
+      "sp_raw": 0,
+      "casting": false,
+      "cast_count": 18,
+      "hp_raw": 0,
+      "alive": false,
+      "finish_reason": 2,
+      "recycled": true,
+      "life": 3,
+      "finish_request": "win",
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false
+    },
+    "queries": 18,
+    "first_query_epoch": {
+      "frame": 210,
+      "phase": "objects_fixed",
+      "transform_revision": 0,
+      "scene_revision": 0,
+      "simulation_mode": 2,
+      "auto_sync_transforms": true,
+      "queries_hit_triggers": true,
+      "hotfixes_absent": true,
+      "source": "explicit stationary altar query fixture; engine settings/bounds/filter/hits supplied, not measured"
+    },
+    "damage_applications": 18,
+    "external_inputs": {
+      "initial_life": 3,
+      "birth_delay": 0,
+      "recycle_delay": 0.6,
+      "target_motion": "stationary external fixture; AI/movement/attacks excluded",
+      "physics": "three explicit overlap snapshots; no collision engine",
+      "scheduler_complete": "one-actor fixture true; original wave scheduler not connected",
+      "scheduler_event_bindings_verified": false,
+      "intervening_controller_modules": [],
+      "skill_and_global_modifiers": "explicit absent; Unity init/owner/mode flags remain fixture",
+      "hit_range_providers": "explicit empty provider registry",
+      "target_attributes": "explicit zero abnormal counts/base immunity mask",
+      "native_field_snapshots": "target side/motion/category/mapLayer and source mapLayer explicit",
+      "created_time": "explicit Enemy.createdTime FP raw0; not inferred from spawn time",
+      "target_disappeared": false,
+      "legacy_damage_field": "v6 unharmful gate represents BObject.isDisappeared+0x26; Enemy.Options.unharmful is separate",
+      "extra_mode": "explicit non-sandbox fixture",
+      "physics_bounds": "three explicitly supplied getter pairs; no prefab world-pose inference",
+      "physics_live_settings": "manual mode2/autoSyncTransforms true/queriesHitTriggers true fixture",
+      "physics_contact_filter": "post-CheckConsistency payload equals initial only as explicit fixture",
+      "physics_query_phase": "instrumented selected-loop callback stage; complete BC modules remain absent",
+      "unity_simulation_and_sync": "not executed; overlap membership is a supplied receipt"
+    }
+  },
+  "scope": "bounded_NPC_actions_summon_restore_and_epoch_bound_external_Unity_query_compositions",
+  "battle_ready": false,
+  "autonomous_route_ready": false,
+  "runtime_battle_validated": false,
+  "reward": null
+}

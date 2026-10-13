@@ -1,0 +1,323 @@
+{
+  "scope": "bounded_NPC_action_event_component",
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "tests": 28,
+  "independent_csharp_vectors": 187,
+  "client_runtime_compared": false,
+  "game_launched": false,
+  "complete_npc_simulator": false,
+  "full_buff_container_implemented": false,
+  "event10_source": "explicit external ON_TAKE_DAMAGE signal",
+  "external_dependencies": [
+    "source/destination entity UID and Unity existence predicates",
+    "initialized Buff membership dispatch",
+    "restoration/state/tween/route callbacks",
+    "shared tracked summon scheduler/factory/mode callbacks",
+    "life/global-modifier/mode callback",
+    "full multi-Buff traversal and deferred mutation remain unsupported",
+    "audio CreateBuff node unsupported"
+  ],
+  "files": [
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\Assembly-CSharp_candidate_method_map.json",
+      "sha256": "bf43dc6b3935b61c2b193ca51ed89477c2fb59d8a315f17124f03baa318b824e"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\pe_inventory.json",
+      "sha256": "a2c3e9457e7e187cedc42481946a7bb91151562d161e4831c112c96f52e35de4"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\Torappu.Common_candidate_method_map.json",
+      "sha256": "e7aa34490e844443955fcaa17d46a6c3bb2e8ceed6fe8927de4ce0691b31cb48"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\damage\\results_round2.json",
+      "sha256": "322df44df318929eec5d92ac1bcbf8b12298c1689c6165d1d221183dfb4c9d95"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\npc\\identity_proofs.json",
+      "sha256": "15a40791712083a01d5198c398cb6b40fa8750dd352f9662ff094ba32a8f0faf"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\npc\\manifest.json",
+      "sha256": "74dcbed105f5adc6536719b83ddc0df7ce8297fe37c86de9e0d4377ed73a29d3"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\npc\\native_fields.json",
+      "sha256": "ce8211e785fe83edc36b3e932ee2b34e114e89ae06a1cd4a77d95f7f3f32cd22"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\npc\\raw_dispatch.json",
+      "sha256": "fd6ae685cf16dec231f3ac5f6ee245cd26046fb92cbcd209d7cba831c42cda05"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\npc\\raw_helpers.json",
+      "sha256": "611c6504fe6ca6cccc7802580da2b9e1f0f57980dd5dac16299156a76db887d5"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\npc\\resource_inputs.json",
+      "sha256": "a631011e5ea1b9332a6c40d5b8f42c128269d04da7a51ca07d711d766c2df144"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\npc\\results_round2.json",
+      "sha256": "0b0884fb907f0827bcd8f029e999f72a13a55048f799b1011b0764fdf64579e5"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\npc\\results_round3.json",
+      "sha256": "c3df6e7153774d8580ec7367728930789630eb4e43cc599eddeceda9882139d5"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\core\\results_round1.json",
+      "sha256": "4d521e39398724781087e4d3c2ea044430ca17c3cc831b03d78624a3c2613861"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\core\\results_round2.json",
+      "sha256": "ce862856a192996a7a7504d744531927dd34e987a69d6a30c8e542c36a5f2ad4"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\audit_summary.json",
+      "sha256": "d3903296a2e20aa8deab6d29f5e9fe5091cbfd302347120656ac54aa78cd4404"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\build_evidence.py",
+      "sha256": "825a1dc8a46e32c85f9c41756fd824703284ef025202fd4bba07057d87f326c0"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\export_results.py",
+      "sha256": "2756a7926d52a072cbea71e3789a328dfe401c8b6934ec7fd83bd2fb535c7018"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\field_offsets.json",
+      "sha256": "9d5aab56edf4b91ae0fab2a52d472b1e7af7068aec3a856a1c7383d32daee4b8"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\freeze.py",
+      "sha256": "5d1f167eb5d9933b1faee341de582eca66427c7bcbc7aa0e59871e706f337a4f"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\make_reference.py",
+      "sha256": "1ac6972988fbf5dd260de18b974b3235bc83ef4a7ebb1c1e56078e6a659326c8"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\native_fields.json",
+      "sha256": "4b7826ff390c7a804e1553e1ffd9a9715f55c05030ba2c343c32bddfb184c33c"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\native_proofs.json",
+      "sha256": "7781d29f1e61b92f6c902e10c50b6fda27864928733ade96b738fc4327a4485a"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\NativeNpcActionsReference.exe",
+      "sha256": "732c3105bc25ecc0abf6dbba2e05399e42b1f68a9aa280756d67fedd1777fb3b"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\prepare.py",
+      "sha256": "8428c91b5da0691a8713db811e72e0af097e95814baf9aeba5add1aa7457862d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\raw_helpers.json",
+      "sha256": "df7dbb753ff8dddd1769766da5911f270b5a3856bfdeb191790a6a013371b2ec"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\raw_helpers.py",
+      "sha256": "354430b025ba4936e97c0e67f6884cad8daddd227cc1afd1f431e362b0061644"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\reference_inputs.json",
+      "sha256": "307902fa622ccf45b3116ddebd0c0eef1351ecbfda1064aaf4cad55e3858b86e"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\REPORT.md",
+      "sha256": "6f4148d072c8e92ae6c22c40e0c88635585afef7a52d93f5d2d91a7ceba9e6d0"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\results_round1.json",
+      "sha256": "f8b6b58f34b49bc5d40a6f1794c828d797c9824cf8b9b5752dd5c45616ebb7cb"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\results_round2.json",
+      "sha256": "3fdbc046ac869b883e817813994a1daba9de7b69cd1d4cbe9d9bb710b545252c"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\ChangeGuard__ctor_0x60100a5.c",
+      "sha256": "f751d717fdc2f9e191f77f32fa0e8ca69e87c3feefec5ac4ffe7fe6ebc913b0f"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\ChangeGuard_Dispose_0x60100ba.c",
+      "sha256": "e256c8725d063369e367b469cdd405e86095d73ffd826d53a52edf006e49f436"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\ChangeGuard_set_buff_0x60100ab.c",
+      "sha256": "92e0be02aa420333cb026ecd7b4cb9425fb8a4a0d8771fdc2c6aeabbc5b10694"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\ChangeGuard_set_source_0x60100a7.c",
+      "sha256": "0e35592fab26cf714e2d58f817a768ec9e7e3e3cc752c1f4998df362c577be37"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\ChangeGuard_set_target_0x60100a9.c",
+      "sha256": "708adf7161c118fefa4d41b80f2e0b7d040a7081670896b63b755e0d58c73b59"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\ObjectPtrUidDispatch_GetUID_call_target_call_target.c",
+      "sha256": "8eb16436a56670a06ae440ed37e26d75844ecbc813077642e8435a265d11b392"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\SortedDoubleBufferedBuffList_Add_0x600ff08.c",
+      "sha256": "c68a33623eec7195d45e4f8c30e8764863482906627b5ef4abc1148b7ec0481d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_Battle_BasicTalent__CreateBlackboard_0x6011e69.c",
+      "sha256": "b978faf93fb2331eb693cfc402ee953b427c9bb0cbeb391743dbe94a4d21aa27"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_Battle_Context_BeginChangeGard_0x6010096.c",
+      "sha256": "25b7b356d5416d896c116d40eeeebf44ce71dcf28e261ae6252376ca7b9ac51d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_Battle_Context_TakeSnapshot_0x6010095.c",
+      "sha256": "ebee752d6e64c04029ba2576ff1e212a0b9096410396ee25fcbb0ea967f51ac0"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_Blackboard__ctor_0x6007854.c",
+      "sha256": "4602d91cdc4280fdf0cfa3041a0ae50a3485e67547f8c39da58d5ce46793b65c"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_Blackboard__ctor_0x6007855.c",
+      "sha256": "20f39ca257fe93e579bb97e13d938b4c84c1185263b3f16067a8527cce9b9658"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_Blackboard__ctor_0x6007856.c",
+      "sha256": "b34731da36a17c54276dfcb272a6ccf421288998fd17f61976276a0b9297f4ab"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_Blackboard_AssignByPrefix_0x600787c.c",
+      "sha256": "365a1f434d0b894e88592832e8e72255178b2ecb2823639cd5332716a09c2d54"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_Blackboard_AssignValueStrByPrefix_0x600787d.c",
+      "sha256": "749fd4d5f1a9c6b6ce31b4b2869fe20485f5b742a4c97d88ae514ab2f22a3426"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_Blackboard_GetFpOrDefault_0x6007872.c",
+      "sha256": "c57a9e85040a93b5cdbc614b2d1a87b093e3f7ef3fd370e96effee5878d18c1b"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_Blackboard_GetIntOrDefault_0x6007874.c",
+      "sha256": "3c1ad3bef55988d0a9d012418add5789b5cb8b46728e6c5713c2df20c22e770b"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round1\\Torappu_MathUtil_GetCompareFuncFP_0x600028c.c",
+      "sha256": "a0f92e5093767de834be98637150e6340d77ce158a07e73c63f7fceb85fce446"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round2\\Torappu_Battle_Context__DuplicateAll_0x6010098.c",
+      "sha256": "765d760789d106035900f49f92dcc203db5ecf53b2b8825458574431781edeac"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round2\\Torappu_Blackboard__AssignInternal_0x600785f.c",
+      "sha256": "add455817165f3828d6aeffa5aca317fbdec98e81fdf9942394475f168ff2f3a"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round2\\Torappu_Blackboard__TryGetNumber_0x6007880.c",
+      "sha256": "1daaaab01f26b9e08fb6dd6b59565cf228d51b88b9764d2b0278077f6b464532"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round2\\Torappu_Blackboard_Assign_0x600785a.c",
+      "sha256": "c27b23240d56be50d064aed0fd9dd361da92a31d3a9db9d2c71e7f091aad4b7f"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round2\\Torappu_Blackboard_Assign_0x600785d.c",
+      "sha256": "22b53c55d1256db2d2c3ddf6a9cbc066c091e86e2422b90c477bc31f37c41884"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round2\\Torappu_Blackboard_TryGetInt_0x600786b.c",
+      "sha256": "47e24f1f303fcf21ebf51ab41ba18ad6380714a159cb1c9b910b8f24215efa5e"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\round2\\Torappu_Blackboard_TryGetInternalData_0x600786f.c",
+      "sha256": "3b5a4fc05014de3c8476148c68f8843be7c769afb5957d4233056933120d1652"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\selection.json",
+      "sha256": "9a0de9f45e5571282e1d2812081963d6feab89a3a10cf0b698c5e1ea1a43ed51"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_actions\\selection_extra.json",
+      "sha256": "0d900d49daeb0513ce48cbe8bfe1ec3b7206c52f66d659f973bb35352628409f"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\npc_restore\\talent_prefix_constants.json",
+      "sha256": "173e6de9b3510d63c362d5fdb0a5892476d29e60676b12e8384ae6a7c7be9409"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\fp.py",
+      "sha256": "1002ff2f8c64cb441c3a88654e413a23eedfd5af61ed8ac187999823aed3462c"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\npc_actions.py",
+      "sha256": "ee175834eb5cbabd1d8449fd4ea94e6c1b25b7666970311f43ed75a41f1c3b83"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\native_report.json",
+      "sha256": "e33f6349ad49e104fa82dc9276679427e5191059830423983d6bb1ca09483752"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\native_types.json",
+      "sha256": "95319901ec246848e5750b00c10f23575a22baabc0f1c3ea9ed4a6b99de99a98"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\audit_summary.json",
+      "sha256": "d3903296a2e20aa8deab6d29f5e9fe5091cbfd302347120656ac54aa78cd4404"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\native_fields.json",
+      "sha256": "4b7826ff390c7a804e1553e1ffd9a9715f55c05030ba2c343c32bddfb184c33c"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\native_proofs.json",
+      "sha256": "7781d29f1e61b92f6c902e10c50b6fda27864928733ade96b738fc4327a4485a"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\NativeNpcActionsReference.cs",
+      "sha256": "d3b5ce6cffedbba7305560b12f0fa0d63e93a4f98936b9664db6b563efe0e479"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\raw_helpers.json",
+      "sha256": "df7dbb753ff8dddd1769766da5911f270b5a3856bfdeb191790a6a013371b2ec"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\reference_comparison.json",
+      "sha256": "32cb202713e20116d3705e96b66485fff9bad836435078d74d15e0fb346f2081"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\reference_vectors.json",
+      "sha256": "0630b15c3a9f6b5ffc59dd31a7d5056f8e15e99b7ba1b854ad8ab4cba55061c3"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\REPORT.md",
+      "sha256": "6f4148d072c8e92ae6c22c40e0c88635585afef7a52d93f5d2d91a7ceba9e6d0"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\resource_inputs.json",
+      "sha256": "a631011e5ea1b9332a6c40d5b8f42c128269d04da7a51ca07d711d766c2df144"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\results_round1.json",
+      "sha256": "f8b6b58f34b49bc5d40a6f1794c828d797c9824cf8b9b5752dd5c45616ebb7cb"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\results_round2.json",
+      "sha256": "3fdbc046ac869b883e817813994a1daba9de7b69cd1d4cbe9d9bb710b545252c"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\npc_actions\\talent_prefix_constants.json",
+      "sha256": "173e6de9b3510d63c362d5fdb0a5892476d29e60676b12e8384ae6a7c7be9409"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\tests\\test_npc_actions.py",
+      "sha256": "aabefb577a14ba7c04da6aa5f92e19c97b91335ff046a17e2a6a6167b58ee94c"
+    }
+  ]
+}

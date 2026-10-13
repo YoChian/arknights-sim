@@ -1,0 +1,89 @@
+{
+  "source_path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\globalgamemanagers",
+  "source_bytes": 798508,
+  "source_sha256": "4b722650a29264488701bb438a8f6e310461f9dc4d14245a25fae0b6c0a64ac4",
+  "parser": {
+    "name": "UnityPy",
+    "version": "1.25.4",
+    "unity_version": "2021.3.39f1",
+    "serialized_file_version": 22,
+    "embedded_type_tree": false,
+    "schema_origin": "Installed UnityPy versioned TPK class5 TimeManager; target has no embedded type tree",
+    "schema_dump": "  TimeManager Base // ByteSize{10}, Index{0},                 Version{1}, TypeFlags{None}, MetaFlag{0}\n    float Fixed Timestep // ByteSize{4}, Index{1},                 Version{1}, TypeFlags{None}, MetaFlag{0}\n    float Maximum Allowed Timestep // ByteSize{4}, Index{2},                 Version{1}, TypeFlags{None}, MetaFlag{0}\n    float m_TimeScale // ByteSize{4}, Index{3},                 Version{1}, TypeFlags{None}, MetaFlag{0}\n    float Maximum Particle Timestep // ByteSize{4}, Index{4},                 Version{1}, TypeFlags{None}, MetaFlag{0}",
+    "parser_evidence": [
+      {
+        "path": "D:\\Repo\\.rea-tools\\arknights-pc\\tools\\python\\UnityPy\\files\\ObjectReader.py",
+        "bytes": 11616,
+        "sha256": "1a9d245498d8979ff0107d17d11c130c50db8ec869ac78cb2df54f897e2ac331"
+      },
+      {
+        "path": "D:\\Repo\\.rea-tools\\arknights-pc\\tools\\python\\UnityPy\\helpers\\Tpk.py",
+        "bytes": 2687,
+        "sha256": "b5ff4a494447dfdf0a1d40059564ab9fc8d2ccce5b76530f525dcbbff1c2c7da"
+      },
+      {
+        "path": "D:\\Repo\\.rea-tools\\arknights-pc\\tools\\python\\UnityPy\\resources\\lzma.tpk",
+        "bytes": 207720,
+        "sha256": "16f1f8b809d1cd3bc3aeebf0cd43ecd3690b326a7a88b2273e57bcd83f5df608"
+      }
+    ]
+  },
+  "object": {
+    "path_id": 8,
+    "class_id": 5,
+    "class_name": "TimeManager",
+    "file_offset": 788712,
+    "bytes": 16,
+    "raw_bytes": "8088083dabaaaa3e0000803f8088083d",
+    "raw_sha256": "8a3dc1ea729ba9bbd3891c5c37694ce21716e8a52d1a65a97bf9ae01626eaf71",
+    "typetree": {
+      "Fixed Timestep": 0.03333330154418945,
+      "Maximum Allowed Timestep": 0.3333333432674408,
+      "m_TimeScale": 1.0,
+      "Maximum Particle Timestep": 0.03333330154418945
+    },
+    "field_raw32": [
+      {
+        "field": "Fixed Timestep",
+        "file_offset": 788712,
+        "bytes": "8088083d",
+        "bits": "0x3d088880",
+        "value": 0.03333330154418945
+      },
+      {
+        "field": "Maximum Allowed Timestep",
+        "file_offset": 788716,
+        "bytes": "abaaaa3e",
+        "bits": "0x3eaaaaab",
+        "value": 0.3333333432674408
+      },
+      {
+        "field": "m_TimeScale",
+        "file_offset": 788720,
+        "bytes": "0000803f",
+        "bits": "0x3f800000",
+        "value": 1.0
+      },
+      {
+        "field": "Maximum Particle Timestep",
+        "file_offset": 788724,
+        "bytes": "8088083d",
+        "bits": "0x3d088880",
+        "value": 0.03333330154418945
+      }
+    ]
+  },
+  "default_if_unity_settings_not_changed_before_GlobalConsts_cctor": {
+    "fixed_delta_time_fp_raw": 143165440,
+    "half_fixed_delta_time_fp_raw": 71582720,
+    "30_ticks_fp_raw": 4294963200,
+    "600_ticks_fp_raw": 85899264000,
+    "first_tick_at_or_after_20_seconds": 601
+  },
+  "limits": [
+    "Serialized project default, not observed runtime UnityEngine.Time.fixedDeltaTime",
+    "TypeTree names come from pinned UnityPy TPK, not a tree embedded in this target; four float fields consume all16 actual bytes and class/version match",
+    "Code setter calls, native icalls, configuration or hotfix can change Time.fixedDeltaTime before or after GlobalConsts initialization",
+    "No game runtime launched or target binary executed"
+  ]
+}

@@ -1,0 +1,722 @@
+{
+  "target": "D:\\Hypergryph Launcher\\games\\Arknights\\GameAssembly.dll",
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "static_only": true,
+  "game_launched": false,
+  "ghidra": [
+    {
+      "file": "results_round2.json",
+      "functions": 18,
+      "imported_ranges": 48,
+      "bytes": 9459,
+      "all_match": true
+    },
+    {
+      "file": "results_round3.json",
+      "functions": 13,
+      "imported_ranges": 21,
+      "bytes": 6691,
+      "all_match": true
+    }
+  ],
+  "raw": [
+    {
+      "file": "raw.json",
+      "functions": 18,
+      "ranges": 48,
+      "bytes": 9459
+    },
+    {
+      "file": "raw_extra.json",
+      "functions": 13,
+      "ranges": 21,
+      "bytes": 6691
+    },
+    {
+      "file": "raw_helpers.json",
+      "functions": 8,
+      "ranges": 12,
+      "bytes": 1939
+    },
+    {
+      "file": "raw_dispatch.json",
+      "functions": 8,
+      "ranges": 12,
+      "bytes": 1345
+    }
+  ],
+  "source_range_checks": [
+    {
+      "collection": "raw.json",
+      "function": "SummonEnemiesFollowMyRouteWithBuff.Execute",
+      "start": "0x1810dcf50",
+      "bytes": 291,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "SummonEnemiesFollowMyRouteWithBuff.Execute",
+      "start": "0x1810dd073",
+      "bytes": 1737,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "SummonEnemiesFollowMyRouteWithBuff.Execute",
+      "start": "0x1810dd73c",
+      "bytes": 23,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "SummonEnemiesFollowMyRouteWithBuff.Execute",
+      "start": "0x1810dd753",
+      "bytes": 179,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "SummonEnemiesFollowMyRouteWithBuff.Execute",
+      "start": "0x1810dd806",
+      "bytes": 29,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "SummonEnemiesFollowMyRouteWithBuff.Execute",
+      "start": "0x1810dd823",
+      "bytes": 6,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "SummonEnemiesFollowMyRouteWithBuff.GatherBuffs",
+      "start": "0x1810dd830",
+      "bytes": 182,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "ForceSetToSourcePosition.Execute",
+      "start": "0x18107c4b0",
+      "bytes": 700,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "SetDisappear.Execute",
+      "start": "0x181172300",
+      "bytes": 349,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FinishBuffsById.Execute",
+      "start": "0x18102a470",
+      "bytes": 121,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FinishBuffsById.Execute",
+      "start": "0x18102a4e9",
+      "bytes": 247,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FinishBuffsById.Execute",
+      "start": "0x18102a5e0",
+      "bytes": 19,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FinishBuffsById.Execute",
+      "start": "0x18102a5f3",
+      "bytes": 192,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FinishBuffsById.Execute",
+      "start": "0x18102a6b3",
+      "bytes": 31,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FinishBuffsById.Execute",
+      "start": "0x18102a6d2",
+      "bytes": 6,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "InstantKill.Execute",
+      "start": "0x181058b90",
+      "bytes": 638,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "ModifyLifePoint.Execute",
+      "start": "0x181040fe0",
+      "bytes": 109,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "ModifyLifePoint.Execute",
+      "start": "0x18104104d",
+      "bytes": 358,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "ModifyLifePoint.Execute",
+      "start": "0x1810411b3",
+      "bytes": 19,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "ModifyLifePoint.Execute",
+      "start": "0x1810411c6",
+      "bytes": 43,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "ModifyLifePoint.Execute",
+      "start": "0x1810411f1",
+      "bytes": 28,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "ModifyLifePoint.Execute",
+      "start": "0x18104120d",
+      "bytes": 6,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "AssignValueToBB.Execute",
+      "start": "0x181015fd0",
+      "bytes": 118,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "AssignValueToBB.Execute",
+      "start": "0x181016046",
+      "bytes": 183,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "AssignValueToBB.Execute",
+      "start": "0x1810160fd",
+      "bytes": 55,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "AssignValueToBB.Execute",
+      "start": "0x181016134",
+      "bytes": 6,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "ClearAllBuffs.Execute",
+      "start": "0x18101d020",
+      "bytes": 366,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FilterByBlackboardValue.Execute",
+      "start": "0x18112d470",
+      "bytes": 121,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FilterByBlackboardValue.Execute",
+      "start": "0x18112d4e9",
+      "bytes": 505,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FilterByBlackboardValue.Execute",
+      "start": "0x18112d6e2",
+      "bytes": 19,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FilterByBlackboardValue.Execute",
+      "start": "0x18112d6f5",
+      "bytes": 4,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FilterByBlackboardValue.Execute",
+      "start": "0x18112d6f9",
+      "bytes": 29,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "FilterByBlackboardValue.Execute",
+      "start": "0x18112d716",
+      "bytes": 6,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.BObject.SetDisappeared",
+      "start": "0x180662be0",
+      "bytes": 143,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Enemy.OnDisappearChanged",
+      "start": "0x180a70650",
+      "bytes": 134,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Enemy.OnDisappearChanged",
+      "start": "0x180a706d6",
+      "bytes": 265,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Enemy.OnDisappearChanged",
+      "start": "0x180a707df",
+      "bytes": 25,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Enemy.OnDisappearChanged",
+      "start": "0x180a707f8",
+      "bytes": 12,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Buff.OnOwnerFinish",
+      "start": "0x180686200",
+      "bytes": 805,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Buff.OnOwnerDying",
+      "start": "0x180686150",
+      "bytes": 167,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Buff.OnTakeDamage",
+      "start": "0x1806873c0",
+      "bytes": 452,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Entity.CheckCanSwitchToDisappearState",
+      "start": "0x1806f0ad0",
+      "bytes": 174,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Entity.OnBeforeDisappearChanged",
+      "start": "0x1806f7a90",
+      "bytes": 122,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Entity.OnBeforeDisappearChanged",
+      "start": "0x1806f7b0a",
+      "bytes": 132,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Entity.OnBeforeDisappearChanged",
+      "start": "0x1806f7b8e",
+      "bytes": 30,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Entity.OnBeforeDisappearChanged",
+      "start": "0x1806f7bac",
+      "bytes": 25,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Entity.OnBeforeDisappearChanged",
+      "start": "0x1806f7bc5",
+      "bytes": 12,
+      "match": true
+    },
+    {
+      "collection": "raw.json",
+      "function": "Torappu.Battle.Entity.OnDisappearChanged",
+      "start": "0x1806f87a0",
+      "bytes": 236,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "<>c__DisplayClass35_0.<Execute>b__0",
+      "start": "0x1810e5d20",
+      "bytes": 80,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.Scheduler.SpawnSummonedEnemyTrackedInGameMode",
+      "start": "0x1809163b0",
+      "bytes": 89,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.Scheduler.SpawnSummonedEnemyTrackedInGameMode",
+      "start": "0x180916409",
+      "bytes": 160,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.Scheduler.SpawnSummonedEnemyTrackedInGameMode",
+      "start": "0x1809164a9",
+      "bytes": 100,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.Scheduler.SpawnSummonedEnemyTrackedInGameMode",
+      "start": "0x18091650d",
+      "bytes": 6,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.Enemy.ReassignRoute",
+      "start": "0x180a738a0",
+      "bytes": 207,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.Entity.FinishWithNoReason",
+      "start": "0x1806f3610",
+      "bytes": 152,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.Entity.Suicide",
+      "start": "0x1806fe110",
+      "bytes": 280,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "BuffContainer.OnOwnerFinish",
+      "start": "0x180675d90",
+      "bytes": 629,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "BuffContainer.Clear",
+      "start": "0x180664a90",
+      "bytes": 1384,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.BasicTalent.AssignData",
+      "start": "0x180972000",
+      "bytes": 144,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.BasicTalent.AssignData",
+      "start": "0x180972090",
+      "bytes": 577,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.BasicTalent.AssignData",
+      "start": "0x1809722d1",
+      "bytes": 138,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.BasicTalent.AssignData",
+      "start": "0x18097235b",
+      "bytes": 299,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.BasicTalent.AssignData",
+      "start": "0x180972486",
+      "bytes": 62,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.BasicTalent.AssignData",
+      "start": "0x1809724c4",
+      "bytes": 6,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.BasicTalent.Attach",
+      "start": "0x1809724d0",
+      "bytes": 194,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.BasicTalent.Awake",
+      "start": "0x1809725a0",
+      "bytes": 127,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.BasicTalent.get_talentKey",
+      "start": "0x180974190",
+      "bytes": 250,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "Torappu.Battle.BasicTalent.DoAttach",
+      "start": "0x1809716c0",
+      "bytes": 111,
+      "match": true
+    },
+    {
+      "collection": "raw_extra.json",
+      "function": "<SpawnSummonedEnemyTrackedInGameMode>d__129.MoveNext",
+      "start": "0x18094fb90",
+      "bytes": 1696,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "Nodes.GetActionTarget",
+      "start": "0x180fceed0",
+      "bytes": 604,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "Enemy.get_originRoute",
+      "start": "0x180a7f790",
+      "bytes": 186,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "Enemy.get_originCursorIndex",
+      "start": "0x180a7f610",
+      "bytes": 247,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "Entity.IfReasonIsDeath",
+      "start": "0x1806f4e80",
+      "bytes": 136,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "AsyncUtil.WaitForFixedSeconds_FP",
+      "start": "0x180647eb0",
+      "bytes": 102,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "WaitForFixedSeconds_FP.MoveNext",
+      "start": "0x1806614a0",
+      "bytes": 93,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "WaitForFixedSeconds_FP.MoveNext",
+      "start": "0x1806614fd",
+      "bytes": 5,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "WaitForFixedSeconds_FP.MoveNext",
+      "start": "0x180661502",
+      "bytes": 115,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "WaitForFixedSeconds_FP.MoveNext",
+      "start": "0x180661575",
+      "bytes": 37,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "WaitForFixedSeconds_FP.MoveNext",
+      "start": "0x18066159a",
+      "bytes": 107,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "Buff.get_source",
+      "start": "0x18068f8b0",
+      "bytes": 133,
+      "match": true
+    },
+    {
+      "collection": "raw_helpers.json",
+      "function": "Buff.get_owner",
+      "start": "0x18068f400",
+      "bytes": 174,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "ActionUtil.RunActions",
+      "start": "0x181190690",
+      "bytes": 175,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "ActionUtil.RunActions",
+      "start": "0x18119073f",
+      "bytes": 350,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "ActionUtil.RunActions",
+      "start": "0x18119089d",
+      "bytes": 6,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "ActionUtil.RunActions",
+      "start": "0x1811908a3",
+      "bytes": 60,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "ActionUtil.RunActions",
+      "start": "0x1811908df",
+      "bytes": 6,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "ActionUtil.CheckExecute",
+      "start": "0x18118fb90",
+      "bytes": 197,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "ActionNode.get_executeCondition",
+      "start": "0x180fcc600",
+      "bytes": 86,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "AssignValueToBB.get_allowedSource",
+      "start": "0x1810161a0",
+      "bytes": 86,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "ClearAllBuffs.get_allowedSource",
+      "start": "0x18101d250",
+      "bytes": 86,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "IfNot.get_executeCondition",
+      "start": "0x181146450",
+      "bytes": 87,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "IfNot.Execute",
+      "start": "0x181146300",
+      "bytes": 136,
+      "match": true
+    },
+    {
+      "collection": "raw_dispatch.json",
+      "function": "ObjectPtr_Entity.Get_value_generic_candidate",
+      "start": "0x185159d80",
+      "bytes": 70,
+      "match": true
+    }
+  ],
+  "all_raw_ranges_and_instruction_bytes_match_original": true,
+  "old_frozen_manifests": [
+    {
+      "manifest": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\manifest.json",
+      "sha256": "94160b611419e548ad9da82acd1cc38e460ffc818dbc95999d343a46a0b0f8ee",
+      "files_verified": 12,
+      "unchanged": true
+    },
+    {
+      "manifest": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\damage\\manifest.json",
+      "sha256": "27f1245833612e4a17f3714e6844e5715ca49706ea3c0c4123adc58b166ca66f",
+      "files_verified": 101,
+      "unchanged": true
+    }
+  ],
+  "field_types": 42,
+  "field_records": 2013,
+  "runtime_compared": false,
+  "npc_component_implemented": false,
+  "npc_battle_ready": false
+}

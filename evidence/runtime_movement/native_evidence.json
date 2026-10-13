@@ -1,0 +1,464 @@
+{
+  "manifest_version": 1,
+  "scope": "conditional cached-tile/default WALK physical tick, native Single stages, FP WAIT and independent C# translation checks",
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "runtime_battle_validated": false,
+  "client_runtime_compared": false,
+  "hotfix_runtime_compared": false,
+  "runtime_movement_component_available": true,
+  "autonomous_route_ready": false,
+  "full_scene_autonomous_ready": false,
+  "battle_ready": false,
+  "reference_scope": "independent reconstructed source-owned C# arithmetic/controller comparison; not a native/client oracle",
+  "arithmetic_scope": "finite Single local x/y, individual SSE-like binary32 stages; Double ties-even decimal assignment; signed Q32.32 WAIT; masked exceptions/nearest-even assumptions",
+  "counts": {
+    "component_tests": 21,
+    "reference_tests": 3,
+    "rounding_cases": 320,
+    "avoidance_cases": 80,
+    "controller_cases": 80,
+    "controller_frames": 2400,
+    "new_movement_selected_entries": 36,
+    "raw_helper_functions": 11,
+    "raw_helper_components": 17,
+    "rounding_literal_reads": 10,
+    "real_enemy_prefab_flags": 10
+  },
+  "native_reports": [
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\results_round2.json",
+      "complete_entries": 47,
+      "all_imported_ranges_match": true,
+      "movement_owned_entries": 0,
+      "movement_owned_metadata_indices": [],
+      "interpretation": "Shared report totals include other investigators; movement-owned entries count only new selections."
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\creation\\results_round1.json",
+      "complete_entries": 16,
+      "all_imported_ranges_match": true,
+      "movement_owned_entries": 0,
+      "movement_owned_metadata_indices": [],
+      "interpretation": "Shared report totals include other investigators; movement-owned entries count only new selections."
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\creation\\results_round2.json",
+      "complete_entries": 50,
+      "all_imported_ranges_match": true,
+      "movement_owned_entries": 0,
+      "movement_owned_metadata_indices": [],
+      "interpretation": "Shared report totals include other investigators; movement-owned entries count only new selections."
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\attributes\\results_round3.json",
+      "complete_entries": 24,
+      "all_imported_ranges_match": true,
+      "movement_owned_entries": 0,
+      "movement_owned_metadata_indices": [],
+      "interpretation": "Shared report totals include other investigators; movement-owned entries count only new selections."
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round1.json",
+      "complete_entries": 107,
+      "all_imported_ranges_match": true,
+      "movement_owned_entries": 24,
+      "movement_owned_metadata_indices": [
+        25960,
+        25961,
+        25962,
+        25963,
+        64441,
+        66413,
+        66492,
+        70183,
+        70219,
+        70270,
+        70688,
+        70729,
+        70734,
+        70736,
+        70737,
+        70739,
+        70740,
+        71064,
+        71065,
+        76397,
+        76398,
+        76531,
+        77519,
+        77885
+      ],
+      "interpretation": "Shared report totals include other investigators; movement-owned entries count only new selections."
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round2.json",
+      "complete_entries": 69,
+      "all_imported_ranges_match": true,
+      "movement_owned_entries": 9,
+      "movement_owned_metadata_indices": [
+        70014,
+        70580,
+        70582,
+        70679,
+        76656,
+        76658,
+        76660,
+        77463,
+        77699
+      ],
+      "interpretation": "Shared report totals include other investigators; movement-owned entries count only new selections."
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round3.json",
+      "complete_entries": 24,
+      "all_imported_ranges_match": true,
+      "movement_owned_entries": 3,
+      "movement_owned_metadata_indices": [
+        62950,
+        70662,
+        70705
+      ],
+      "interpretation": "Shared report totals include other investigators; movement-owned entries count only new selections."
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\results_round1.json",
+      "complete_entries": 33,
+      "all_imported_ranges_match": true,
+      "movement_owned_entries": 0,
+      "movement_owned_metadata_indices": [],
+      "interpretation": "Shared report totals include other investigators; movement-owned entries count only new selections."
+    }
+  ],
+  "anchors": [
+    {
+      "method": "Tile.Init",
+      "metadata_index": 70688,
+      "address": "0x1808bf100",
+      "evidence": "native_v5/core/results_round1.json"
+    },
+    {
+      "method": "Tile.TryUpdateOptions",
+      "metadata_index": 70734,
+      "address": "0x1808c3820",
+      "evidence": "native_v5/core/results_round1.json"
+    },
+    {
+      "method": "Token.OnSwitchMode",
+      "metadata_index": 77463,
+      "address": "0x180ab5b40",
+      "evidence": "native_v5/core/results_round2.json"
+    },
+    {
+      "method": "Enemy.OnTick",
+      "metadata_index": 76531,
+      "address": "0x180a72340",
+      "evidence": "native_v5/core/results_round1.json"
+    },
+    {
+      "method": "MoveState.OnTick",
+      "metadata_index": 76658,
+      "address": "0x180a977d0",
+      "evidence": "native_v5/core/results_round2.json"
+    },
+    {
+      "method": "EnemyStateMachine.OnTick",
+      "metadata_index": 76640,
+      "address": "0x180a908b0",
+      "evidence": "native_v5/lifecycle/results_round1.json"
+    },
+    {
+      "method": "BasicCursor..ctor",
+      "metadata_index": 70158,
+      "address": "0x180876c80",
+      "evidence": "native_v4/movement/results_round2.json"
+    },
+    {
+      "method": "Enemy._MoveByCursor",
+      "metadata_index": 76491,
+      "address": "0x180a78fc0",
+      "evidence": "native_v4/movement/results_round2.json"
+    },
+    {
+      "method": "DirectionCursor.PredictReached",
+      "metadata_index": 70273,
+      "address": "0x180896590",
+      "evidence": "native_v4/creation/results_round2.json"
+    },
+    {
+      "method": "MoveController._CalculateObstacleAvoidForce",
+      "metadata_index": 71060,
+      "address": "0x1808b6af0",
+      "evidence": "native_v4/creation/results_round2.json"
+    },
+    {
+      "method": "BattleOptions..cctor",
+      "metadata_index": 62950,
+      "address": "0x1805da9c0",
+      "evidence": "native_v5/core/results_round3.json"
+    },
+    {
+      "method": "Integer Abs call target",
+      "metadata_index": null,
+      "address": "0x1807b31e0",
+      "evidence": "native_v5/movement/raw_raw_helpers.json"
+    },
+    {
+      "method": "Math.Round finite nearest-even helper",
+      "metadata_index": null,
+      "address": "0x18000cec0",
+      "evidence": "native_v5/movement/raw_raw_helpers.json"
+    }
+  ],
+  "corrections": {
+    "integer_helper": "0x1807b31e0 is unchecked Abs, not tentative Sign",
+    "steering_flag": "BattleOptions+bd, not DynamicConfig; cctor false is not live runtime verification",
+    "tile_advanced_mask": "TileData+28, constructor default1, not +24 playerSide and not omitted JSON zero",
+    "position_overload": "0x180ad3e60 is GridPosition77879; Vector2 is0x180ad3dc0/77880",
+    "transform_getter": "0x186b74fb0 is get_localPosition283263, not world get_position",
+    "deterministic_consts_annotation": "Pinned JSON evidence_link is historical; correct actual owner/file is System.Math.cctor0x185ebb460 in movement/raw_raw_helpers.json",
+    "double_blob_slot": "0x1888a2778, not tentative0x1888a2780",
+    "ticker_leaf_end": "0x181e04381 exact, excludes earlier padding capture to0x181e04390"
+  },
+  "limits": [
+    "Full real-map cached state, device acceptance/callback timing, dynamic occupancy and route rebuilding require their owners.",
+    "Processed TileData/goto masks/native Tile class and accepted rewrite outcome are explicit; raw prefab or raw-map declarations cannot replace cached map state.",
+    "Animation-derived foot offset, live deterministic/steering and each enemy alwaysCheck flag are mandatory inputs; no universal context is invented.",
+    "The caller owns pre-tick FSM dispatch, Unit statuses, targeting, alive gate, mode exit permission and terminal/recycle/scheduler callbacks.",
+    "Conveyors, outside-map go-back, non-default FSM/target/abnormal branches, body separation and force modifiers are excluded or fail closed.",
+    "This component accepts resolved spawn position and speed; it does not claim battle RNG dispatch/state/consumption ordering or initial creation equivalence.",
+    "Independent C# validates translation consistency, not live native/client behavior or all inputs/contexts."
+  ],
+  "files": [
+    {
+      "path": "RuntimeMovementReference.cs",
+      "sha256": "26c950ef341d010226db63e9a9329eec3a968efde2a16fcefa726779d84e15d7",
+      "role": "independent C# translated reference or fixture/pin verification source; no native execution"
+    },
+    {
+      "path": "RuntimeMovementReference.exe",
+      "sha256": "6c4d02928f2387d2299c7a290934629420cfbc6406693164ca8e0b612893ba94",
+      "role": "independent C# translated reference or fixture/pin verification source; no native execution"
+    },
+    {
+      "path": "prepare_reference_input.py",
+      "sha256": "e97a0e4d8b4447402c8546e3964a89b2f793eab3b01d05be1ae43a70ce07bff1",
+      "role": "independent C# translated reference or fixture/pin verification source; no native execution"
+    },
+    {
+      "path": "reference_input.json",
+      "sha256": "c2bd79026845fe780064cacc7e63f8d8bbedcd5b8a4d569eb7374b37af41d8a4",
+      "role": "independent C# translated reference or fixture/pin verification source; no native execution"
+    },
+    {
+      "path": "reference_vectors.json",
+      "sha256": "e5f38edbcd9b3d0d23e825f57bfe61188e7cb0550961069b8341ed45e4d7cde7",
+      "role": "independent C# translated reference or fixture/pin verification source; no native execution"
+    },
+    {
+      "path": "verify_evidence.py",
+      "sha256": "072bb6156efb0818f8c8ff65250f0224b94f0724a53a9ff28e24c9b766db380a",
+      "role": "independent C# translated reference or fixture/pin verification source; no native execution"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\runtime_movement.py",
+      "sha256": "9db7eec9118207956bd716b5d714fea3188490b12bfd356bf863c681e7d7f2b9",
+      "role": "new component or behavioral/reference regression"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\tests\\test_runtime_movement.py",
+      "sha256": "3240319b5eeeb7996b6b3bc9aa287bd52ca7dd11dd385a9e7330dd9bae10aca6",
+      "role": "new component or behavioral/reference regression"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\tests\\test_runtime_movement_reference.py",
+      "sha256": "6238e2a9e972b44b0b01f2ab0ca0af7f124a1c34675ee478fd8b80c00dc332ee",
+      "role": "new component or behavioral/reference regression"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\movement.py",
+      "sha256": "c98fe7d0de2ebe8586fad934fd8ac2ceed805604cb510db0f16cb3ba1400f72b",
+      "role": "stable previous-stage native component dependency"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\fp.py",
+      "sha256": "1002ff2f8c64cb441c3a88654e413a23eedfd5af61ed8ac187999823aed3462c",
+      "role": "stable previous-stage native component dependency"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\movement\\native_evidence.json",
+      "sha256": "b5a6378d851e02cf49fcf17e25b8ca883430c8e32c3dccb9f1b91b863b883f78",
+      "role": "stable previous-stage native component dependency"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\results_round2.json",
+      "sha256": "1f2aa48b823bb06c0498d77a299891894733ce7eb34813f91f20916f3f3dd87a",
+      "role": "exact consolidated native pseudocode, PE CHAININFO and imported source-byte checks"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\creation\\results_round1.json",
+      "sha256": "ae6a495ede9bbcea43fbf4f013a8eed1f3ffd850e1c844b1f3aaf1f9e62fd3b0",
+      "role": "exact consolidated native pseudocode, PE CHAININFO and imported source-byte checks"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\creation\\results_round2.json",
+      "sha256": "2807705584b735564614b33368e68a58daebfae723c9f26739a10a7fff6bbce8",
+      "role": "exact consolidated native pseudocode, PE CHAININFO and imported source-byte checks"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\attributes\\results_round3.json",
+      "sha256": "16c8bd5689fe6ba1edcf8616b085fdcc45306bf962f3e67b9d8ddc5eefc2afed",
+      "role": "exact consolidated native pseudocode, PE CHAININFO and imported source-byte checks"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round1.json",
+      "sha256": "b3dd4e8ee01e31e81e5f3d531b6229d039bb28632346ab3697b45a533162f337",
+      "role": "exact consolidated native pseudocode, PE CHAININFO and imported source-byte checks"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round2.json",
+      "sha256": "2fd554ee5c514fc8166eee68c3287567aded954dfe0400ffe5c11ff01c3d7505",
+      "role": "exact consolidated native pseudocode, PE CHAININFO and imported source-byte checks"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round3.json",
+      "sha256": "6050259684552295392a37e9b9be7b0e3db62dc160e248cf6ca793e0bb21480d",
+      "role": "exact consolidated native pseudocode, PE CHAININFO and imported source-byte checks"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\results_round1.json",
+      "sha256": "e385ab0f0574b73749c723d1caf8468a608a36dc65a694977a454c28a08d4a1a",
+      "role": "exact consolidated native pseudocode, PE CHAININFO and imported source-byte checks"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\raw_float_helpers.json",
+      "sha256": "0879887449c56de23e98e4903646abecf932e7e83a010bfbf9c447c869893580",
+      "role": "stable previous-stage float/path/default/field evidence"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\raw_float_followups.json",
+      "sha256": "e0356a2205c7758ff559e94726c5f4174ecec9393f4fe438b893b05f4959b65e",
+      "role": "stable previous-stage float/path/default/field evidence"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\raw_geometry_followups2.json",
+      "sha256": "f6bf5c17ec18c580a0289790161e507d464e25fdc482c0ef4d67336c1ace198d",
+      "role": "stable previous-stage float/path/default/field evidence"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\movement\\float_literal_constants.json",
+      "sha256": "c1f9234230693c6eceb329ccb3cf6dc5510528a2503dcf482ce161f7aaa263e6",
+      "role": "stable previous-stage float/path/default/field evidence"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\native_fields.json",
+      "sha256": "5330f43cbccaff59dc271d56193a65da0e0a4add612b924e478c4be7dcb1afd0",
+      "role": "stable previous-stage float/path/default/field evidence"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\shared_consts.json",
+      "sha256": "98dc26635c3c165598f52b9b92b1cba95c826fe3912bdce5889549717c0acb6c",
+      "role": "stable previous-stage float/path/default/field evidence"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\attribute_meta.json",
+      "sha256": "3793ae257cea2619b8c397bf594336dabdd900e1d02a02596a54899008f7d0db",
+      "role": "stable previous-stage float/path/default/field evidence"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\movement\\selection.json",
+      "sha256": "3e8370e2421fdf8230da0a107d8519264b5eb34f6e0b5030dd3510e51131dcd2",
+      "role": "metadata-specific selections or retained raw helper/literal evidence and capture scripts"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\movement\\selection_extra.json",
+      "sha256": "cc85f9511c837050551dd24acb4ce65059c3f89ada3659f99b94b79566162de8",
+      "role": "metadata-specific selections or retained raw helper/literal evidence and capture scripts"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\movement\\selection_round3.json",
+      "sha256": "bd02093bdcba75fee72dc7ced44af3be68bc96b543ed72cbeed5f5b41acadcbb",
+      "role": "metadata-specific selections or retained raw helper/literal evidence and capture scripts"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\movement\\prepare_selection.py",
+      "sha256": "c11d96978e8d0f8a8be58526adf69523d2069b4d0d1130082e22a72c792c718b",
+      "role": "metadata-specific selections or retained raw helper/literal evidence and capture scripts"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\movement\\prepare_raw_helpers.py",
+      "sha256": "d0b0a73fa16ad635827dc83e1807f60dd34570141d140e74171ddb9f1a85b46f",
+      "role": "metadata-specific selections or retained raw helper/literal evidence and capture scripts"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\movement\\input_raw_helpers.json",
+      "sha256": "5171ef5dd007b640eb3b03e538cf7718852edc53a0b127dd24e5fa84aff9a2ee",
+      "role": "metadata-specific selections or retained raw helper/literal evidence and capture scripts"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\movement\\raw_disassemble.py",
+      "sha256": "d682fdb9bcf85d2f56fe83ec1e11cd4dd27b2e3b8b3c413c0c67174007b6a586",
+      "role": "metadata-specific selections or retained raw helper/literal evidence and capture scripts"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\movement\\raw_raw_helpers.json",
+      "sha256": "0276f30557f8447542750bfc2fa2d9628a17ce4b7426864edc00c22be6059b75",
+      "role": "metadata-specific selections or retained raw helper/literal evidence and capture scripts"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\movement\\capture_rounding_literals.py",
+      "sha256": "25458f7551447469471b6a79a2091156502d16291da86c925421a1092419163f",
+      "role": "metadata-specific selections or retained raw helper/literal evidence and capture scripts"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\movement\\rounding_literals.json",
+      "sha256": "1d827dd713a5f691f2b62c8eba9ad6af4c69aaa3f0408d76da331967ceb4c011",
+      "role": "metadata-specific selections or retained raw helper/literal evidence and capture scripts"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\methods.csv",
+      "sha256": "d030b013c53a36ce89f68d2c0eb07d3abf0afccc25cee9e7ddcb99eb2f37ad65",
+      "role": "exact method/slot and Unity local-position overload identities"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\UnityEngine.CoreModule_candidate_method_map.json",
+      "sha256": "3b53d49bfac7ca89223baa31a3af93a564db1e2fcfa2e450724e1162ab08df50",
+      "role": "exact method/slot and Unity local-position overload identities"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\deterministic_consts.json",
+      "sha256": "fd9a562531606c30477b4e24e2ff4f490904775bbc393b14612dabc36e85010e",
+      "role": "stable source-owned resource/field/default evidence; actual resource inputs are not runtime dispatch validation"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\move_controller_inputs.json",
+      "sha256": "269d4cbf7b34b9b5c5082b924e659ed1f2c7f858054a4b3157c4cbe16a7ef3e4",
+      "role": "stable source-owned resource/field/default evidence; actual resource inputs are not runtime dispatch validation"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\scene_prefab_inputs.json",
+      "sha256": "07ac4ec7d95d0a04a576b7eb1b6b1a5d5ed54d519baefbef98147ac912107789",
+      "role": "stable source-owned resource/field/default evidence; actual resource inputs are not runtime dispatch validation"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\altar_context.json",
+      "sha256": "6e2d697789cc1f3f97673a817b99206d183f253acd00224eff7546036857dae8",
+      "role": "stable source-owned resource/field/default evidence; actual resource inputs are not runtime dispatch validation"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\enemy_movement_flags.json",
+      "sha256": "44c252d88d2eb640147871037cd842f9ab66043041bc5de7c7df2cb901241e4f",
+      "role": "stable source-owned resource/field/default evidence; actual resource inputs are not runtime dispatch validation"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\devices\\native_fields.json",
+      "sha256": "99db94730430f5d1576c4a4ad66556408ffdd95258989955367bdf92c6b60476",
+      "role": "stable source-owned resource/field/default evidence; actual resource inputs are not runtime dispatch validation"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\devices\\raw_helpers.json",
+      "sha256": "35788fedac541c10dd7574cd79ad8c5dd757bd90ae6446cfa8349bf77b864d85",
+      "role": "stable source-owned resource/field/default evidence; actual resource inputs are not runtime dispatch validation"
+    }
+  ]
+}

@@ -1,0 +1,6902 @@
+{
+  "scope": "source_prepared_altar_with_native_ALL_and_external_physics",
+  "inputs": {
+    "skill_level": {
+      "name": "脉冲波",
+      "rangeId": "x-1",
+      "description": "向四周喷发脉冲波，对周围所有我方与敌方单位造成<@ba.vup>{value}</>真实伤害。并使特殊敌人获得强化。",
+      "skillType": "AUTO",
+      "durationType": "NONE",
+      "spData": {
+        "spType": "INCREASE_WITH_TIME",
+        "maxChargeTime": 1,
+        "spCost": 7,
+        "initSp": 0,
+        "increment": 1.0
+      },
+      "prefabId": "sktok_ore",
+      "duration": 0.0,
+      "blackboard": [
+        {
+          "key": "value",
+          "value": 500.0
+        }
+      ]
+    },
+    "range_id": "x-1",
+    "range_source": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\range_table.json",
+    "range_boxes": [
+      {
+        "minimum": [
+          -0.5,
+          -2.5
+        ],
+        "size": [
+          1.0,
+          5.0
+        ],
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "minimum": [
+          -1.5,
+          -1.5
+        ],
+        "size": [
+          3.0,
+          3.0
+        ],
+        "center": [
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "minimum": [
+          -2.5,
+          -0.5
+        ],
+        "size": [
+          5.0,
+          1.0
+        ],
+        "center": [
+          0.0,
+          0.0
+        ]
+      }
+    ],
+    "collider_count": 3,
+    "enemy_attribute_origin": "EnemyDB+level reference; explicit empty global modifiers",
+    "scope": "declarations and pre-global enemy HP; range boxes are not Physics2D hit decisions",
+    "max_hp_raw": 38654705664000,
+    "damage_value_raw": 2147483648000
+  },
+  "external_inputs": {
+    "initial_life": 3,
+    "birth_delay": 0,
+    "recycle_delay": 0.6,
+    "target_motion": "stationary external fixture; AI/movement/attacks excluded",
+    "physics": "three explicit overlap snapshots; no collision engine",
+    "scheduler_complete": "one-actor fixture true; original wave scheduler not connected",
+    "scheduler_event_bindings_verified": false,
+    "intervening_controller_modules": [],
+    "skill_and_global_modifiers": "explicit absent; Unity init/owner/mode flags remain fixture",
+    "hit_range_providers": "explicit empty provider registry",
+    "target_attributes": "explicit zero abnormal counts/base immunity mask",
+    "native_field_snapshots": "target side/motion/category/mapLayer and source mapLayer explicit",
+    "created_time": "explicit Enemy.createdTime FP raw0; not inferred from spawn time",
+    "target_disappeared": false,
+    "legacy_damage_field": "v6 unharmful gate represents BObject.isDisappeared+0x26; Enemy.Options.unharmful is separate",
+    "extra_mode": "explicit non-sandbox fixture"
+  },
+  "snapshot": {
+    "frame": 4343,
+    "time_raw": 621767505920,
+    "skill_state": 1,
+    "sp_raw": 0,
+    "casting": false,
+    "cast_count": 18,
+    "hp_raw": 0,
+    "alive": false,
+    "finish_reason": 2,
+    "recycled": true,
+    "life": 3,
+    "finish_request": "win",
+    "reward": null,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false
+  },
+  "skill_events": [
+    {
+      "frame": 0,
+      "time_raw": 0,
+      "kind": "state_enter",
+      "state": 7,
+      "previous": -1
+    },
+    {
+      "frame": 0,
+      "time_raw": 0,
+      "kind": "state_switch_queued",
+      "state": 1
+    },
+    {
+      "frame": 0,
+      "time_raw": 0,
+      "kind": "state_changed",
+      "state": 7,
+      "previous": -1
+    },
+    {
+      "frame": 0,
+      "time_raw": 0,
+      "kind": "born_exit",
+      "skip_attack_until_next_frame": true
+    },
+    {
+      "frame": 0,
+      "time_raw": 0,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 7
+    },
+    {
+      "frame": 0,
+      "time_raw": 0,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 7
+    },
+    {
+      "frame": 30,
+      "time_raw": 4294963200,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 60,
+      "time_raw": 8589926400,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 90,
+      "time_raw": 12884889600,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 120,
+      "time_raw": 17179852800,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 150,
+      "time_raw": 21474816000,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 180,
+      "time_raw": 25769779200,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "skill_start",
+      "cast": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "cast_succeeded",
+      "cast": 1
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 210,
+      "time_raw": 30064742400,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 227,
+      "time_raw": 32498554880,
+      "kind": "spell",
+      "cast": 1,
+      "target_count": 1
+    },
+    {
+      "frame": 227,
+      "time_raw": 32498554880,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 240,
+      "time_raw": 34359705600,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 240,
+      "time_raw": 34359705600,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 240,
+      "time_raw": 34359705600,
+      "kind": "skill_end",
+      "cast": 1
+    },
+    {
+      "frame": 240,
+      "time_raw": 34359705600,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 240,
+      "time_raw": 34359705600,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 240,
+      "time_raw": 34359705600,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 241,
+      "time_raw": 34502871040,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 271,
+      "time_raw": 38797834240,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 301,
+      "time_raw": 43092797440,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 331,
+      "time_raw": 47387760640,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 362,
+      "time_raw": 51825889280,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 392,
+      "time_raw": 56120852480,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 422,
+      "time_raw": 60415815680,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "skill_start",
+      "cast": 2,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "cast_succeeded",
+      "cast": 2
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 452,
+      "time_raw": 64710778880,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 469,
+      "time_raw": 67144591360,
+      "kind": "spell",
+      "cast": 2,
+      "target_count": 1
+    },
+    {
+      "frame": 469,
+      "time_raw": 67144591360,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 482,
+      "time_raw": 69005742080,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 482,
+      "time_raw": 69005742080,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 482,
+      "time_raw": 69005742080,
+      "kind": "skill_end",
+      "cast": 2
+    },
+    {
+      "frame": 482,
+      "time_raw": 69005742080,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 482,
+      "time_raw": 69005742080,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 482,
+      "time_raw": 69005742080,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 483,
+      "time_raw": 69148907520,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 513,
+      "time_raw": 73443870720,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 543,
+      "time_raw": 77738833920,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 573,
+      "time_raw": 82033797120,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 603,
+      "time_raw": 86328760320,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 633,
+      "time_raw": 90623723520,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 663,
+      "time_raw": 94918686720,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "skill_start",
+      "cast": 3,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "cast_succeeded",
+      "cast": 3
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 693,
+      "time_raw": 99213649920,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 710,
+      "time_raw": 101647462400,
+      "kind": "spell",
+      "cast": 3,
+      "target_count": 1
+    },
+    {
+      "frame": 710,
+      "time_raw": 101647462400,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 723,
+      "time_raw": 103508613120,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 723,
+      "time_raw": 103508613120,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 723,
+      "time_raw": 103508613120,
+      "kind": "skill_end",
+      "cast": 3
+    },
+    {
+      "frame": 723,
+      "time_raw": 103508613120,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 723,
+      "time_raw": 103508613120,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 723,
+      "time_raw": 103508613120,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 724,
+      "time_raw": 103651778560,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 754,
+      "time_raw": 107946741760,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 784,
+      "time_raw": 112241704960,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 814,
+      "time_raw": 116536668160,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 844,
+      "time_raw": 120831631360,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 874,
+      "time_raw": 125126594560,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 904,
+      "time_raw": 129421557760,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "skill_start",
+      "cast": 4,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "cast_succeeded",
+      "cast": 4
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 934,
+      "time_raw": 133716520960,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 951,
+      "time_raw": 136150333440,
+      "kind": "spell",
+      "cast": 4,
+      "target_count": 1
+    },
+    {
+      "frame": 951,
+      "time_raw": 136150333440,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 964,
+      "time_raw": 138011484160,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 964,
+      "time_raw": 138011484160,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 964,
+      "time_raw": 138011484160,
+      "kind": "skill_end",
+      "cast": 4
+    },
+    {
+      "frame": 964,
+      "time_raw": 138011484160,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 964,
+      "time_raw": 138011484160,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 964,
+      "time_raw": 138011484160,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 965,
+      "time_raw": 138154649600,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 995,
+      "time_raw": 142449612800,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 1025,
+      "time_raw": 146744576000,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 1055,
+      "time_raw": 151039539200,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 1085,
+      "time_raw": 155334502400,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 1115,
+      "time_raw": 159629465600,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 1145,
+      "time_raw": 163924428800,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "skill_start",
+      "cast": 5,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "cast_succeeded",
+      "cast": 5
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 1175,
+      "time_raw": 168219392000,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "kind": "spell",
+      "cast": 5,
+      "target_count": 1
+    },
+    {
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 1205,
+      "time_raw": 172514355200,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 1205,
+      "time_raw": 172514355200,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 1205,
+      "time_raw": 172514355200,
+      "kind": "skill_end",
+      "cast": 5
+    },
+    {
+      "frame": 1205,
+      "time_raw": 172514355200,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 1205,
+      "time_raw": 172514355200,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 1205,
+      "time_raw": 172514355200,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 1206,
+      "time_raw": 172657520640,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 1236,
+      "time_raw": 176952483840,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 1266,
+      "time_raw": 181247447040,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 1296,
+      "time_raw": 185542410240,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 1326,
+      "time_raw": 189837373440,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 1356,
+      "time_raw": 194132336640,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 1386,
+      "time_raw": 198427299840,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "skill_start",
+      "cast": 6,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "cast_succeeded",
+      "cast": 6
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 1416,
+      "time_raw": 202722263040,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "kind": "spell",
+      "cast": 6,
+      "target_count": 1
+    },
+    {
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 1446,
+      "time_raw": 207017226240,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 1446,
+      "time_raw": 207017226240,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 1446,
+      "time_raw": 207017226240,
+      "kind": "skill_end",
+      "cast": 6
+    },
+    {
+      "frame": 1446,
+      "time_raw": 207017226240,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 1446,
+      "time_raw": 207017226240,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 1446,
+      "time_raw": 207017226240,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 1447,
+      "time_raw": 207160391680,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 1477,
+      "time_raw": 211455354880,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 1507,
+      "time_raw": 215750318080,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 1537,
+      "time_raw": 220045281280,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 1567,
+      "time_raw": 224340244480,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 1597,
+      "time_raw": 228635207680,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 1627,
+      "time_raw": 232930170880,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "skill_start",
+      "cast": 7,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "cast_succeeded",
+      "cast": 7
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 1657,
+      "time_raw": 237225134080,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "kind": "spell",
+      "cast": 7,
+      "target_count": 1
+    },
+    {
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 1687,
+      "time_raw": 241520097280,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 1687,
+      "time_raw": 241520097280,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 1687,
+      "time_raw": 241520097280,
+      "kind": "skill_end",
+      "cast": 7
+    },
+    {
+      "frame": 1687,
+      "time_raw": 241520097280,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 1687,
+      "time_raw": 241520097280,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 1687,
+      "time_raw": 241520097280,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 1688,
+      "time_raw": 241663262720,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 1718,
+      "time_raw": 245958225920,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 1748,
+      "time_raw": 250253189120,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 1778,
+      "time_raw": 254548152320,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 1808,
+      "time_raw": 258843115520,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 1838,
+      "time_raw": 263138078720,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 1868,
+      "time_raw": 267433041920,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "skill_start",
+      "cast": 8,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "cast_succeeded",
+      "cast": 8
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 1898,
+      "time_raw": 271728005120,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "kind": "spell",
+      "cast": 8,
+      "target_count": 1
+    },
+    {
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 1928,
+      "time_raw": 276022968320,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 1928,
+      "time_raw": 276022968320,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 1928,
+      "time_raw": 276022968320,
+      "kind": "skill_end",
+      "cast": 8
+    },
+    {
+      "frame": 1928,
+      "time_raw": 276022968320,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 1928,
+      "time_raw": 276022968320,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 1928,
+      "time_raw": 276022968320,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 1929,
+      "time_raw": 276166133760,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 1959,
+      "time_raw": 280461096960,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 1989,
+      "time_raw": 284756060160,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 2019,
+      "time_raw": 289051023360,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 2049,
+      "time_raw": 293345986560,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 2079,
+      "time_raw": 297640949760,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 2109,
+      "time_raw": 301935912960,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "skill_start",
+      "cast": 9,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "cast_succeeded",
+      "cast": 9
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 2139,
+      "time_raw": 306230876160,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "kind": "spell",
+      "cast": 9,
+      "target_count": 1
+    },
+    {
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 2169,
+      "time_raw": 310525839360,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 2169,
+      "time_raw": 310525839360,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 2169,
+      "time_raw": 310525839360,
+      "kind": "skill_end",
+      "cast": 9
+    },
+    {
+      "frame": 2169,
+      "time_raw": 310525839360,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 2169,
+      "time_raw": 310525839360,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 2169,
+      "time_raw": 310525839360,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 2170,
+      "time_raw": 310669004800,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 2200,
+      "time_raw": 314963968000,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 2230,
+      "time_raw": 319258931200,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 2260,
+      "time_raw": 323553894400,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 2290,
+      "time_raw": 327848857600,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 2320,
+      "time_raw": 332143820800,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 2350,
+      "time_raw": 336438784000,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "skill_start",
+      "cast": 10,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "cast_succeeded",
+      "cast": 10
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 2380,
+      "time_raw": 340733747200,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "kind": "spell",
+      "cast": 10,
+      "target_count": 1
+    },
+    {
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 2410,
+      "time_raw": 345028710400,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 2410,
+      "time_raw": 345028710400,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 2410,
+      "time_raw": 345028710400,
+      "kind": "skill_end",
+      "cast": 10
+    },
+    {
+      "frame": 2410,
+      "time_raw": 345028710400,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 2410,
+      "time_raw": 345028710400,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 2410,
+      "time_raw": 345028710400,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 2411,
+      "time_raw": 345171875840,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 2441,
+      "time_raw": 349466839040,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 2471,
+      "time_raw": 353761802240,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 2501,
+      "time_raw": 358056765440,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 2531,
+      "time_raw": 362351728640,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 2561,
+      "time_raw": 366646691840,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 2591,
+      "time_raw": 370941655040,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "skill_start",
+      "cast": 11,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "cast_succeeded",
+      "cast": 11
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 2621,
+      "time_raw": 375236618240,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "kind": "spell",
+      "cast": 11,
+      "target_count": 1
+    },
+    {
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 2651,
+      "time_raw": 379531581440,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 2651,
+      "time_raw": 379531581440,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 2651,
+      "time_raw": 379531581440,
+      "kind": "skill_end",
+      "cast": 11
+    },
+    {
+      "frame": 2651,
+      "time_raw": 379531581440,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 2651,
+      "time_raw": 379531581440,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 2651,
+      "time_raw": 379531581440,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 2652,
+      "time_raw": 379674746880,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 2682,
+      "time_raw": 383969710080,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 2712,
+      "time_raw": 388264673280,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 2742,
+      "time_raw": 392559636480,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 2772,
+      "time_raw": 396854599680,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 2802,
+      "time_raw": 401149562880,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 2832,
+      "time_raw": 405444526080,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "skill_start",
+      "cast": 12,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "cast_succeeded",
+      "cast": 12
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 2862,
+      "time_raw": 409739489280,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "kind": "spell",
+      "cast": 12,
+      "target_count": 1
+    },
+    {
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 2892,
+      "time_raw": 414034452480,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 2892,
+      "time_raw": 414034452480,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 2892,
+      "time_raw": 414034452480,
+      "kind": "skill_end",
+      "cast": 12
+    },
+    {
+      "frame": 2892,
+      "time_raw": 414034452480,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 2892,
+      "time_raw": 414034452480,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 2892,
+      "time_raw": 414034452480,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 2893,
+      "time_raw": 414177617920,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 2923,
+      "time_raw": 418472581120,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 2953,
+      "time_raw": 422767544320,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 2983,
+      "time_raw": 427062507520,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 3013,
+      "time_raw": 431357470720,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 3043,
+      "time_raw": 435652433920,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 3073,
+      "time_raw": 439947397120,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "skill_start",
+      "cast": 13,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "cast_succeeded",
+      "cast": 13
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 3103,
+      "time_raw": 444242360320,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "kind": "spell",
+      "cast": 13,
+      "target_count": 1
+    },
+    {
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 3133,
+      "time_raw": 448537323520,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 3133,
+      "time_raw": 448537323520,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 3133,
+      "time_raw": 448537323520,
+      "kind": "skill_end",
+      "cast": 13
+    },
+    {
+      "frame": 3133,
+      "time_raw": 448537323520,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 3133,
+      "time_raw": 448537323520,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 3133,
+      "time_raw": 448537323520,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 3134,
+      "time_raw": 448680488960,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 3164,
+      "time_raw": 452975452160,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 3194,
+      "time_raw": 457270415360,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 3224,
+      "time_raw": 461565378560,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 3254,
+      "time_raw": 465860341760,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 3284,
+      "time_raw": 470155304960,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 3314,
+      "time_raw": 474450268160,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "skill_start",
+      "cast": 14,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "cast_succeeded",
+      "cast": 14
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 3344,
+      "time_raw": 478745231360,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "kind": "spell",
+      "cast": 14,
+      "target_count": 1
+    },
+    {
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 3374,
+      "time_raw": 483040194560,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 3374,
+      "time_raw": 483040194560,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 3374,
+      "time_raw": 483040194560,
+      "kind": "skill_end",
+      "cast": 14
+    },
+    {
+      "frame": 3374,
+      "time_raw": 483040194560,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 3374,
+      "time_raw": 483040194560,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 3374,
+      "time_raw": 483040194560,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 3375,
+      "time_raw": 483183360000,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 3405,
+      "time_raw": 487478323200,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 3435,
+      "time_raw": 491773286400,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 3465,
+      "time_raw": 496068249600,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 3495,
+      "time_raw": 500363212800,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 3525,
+      "time_raw": 504658176000,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 3555,
+      "time_raw": 508953139200,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "skill_start",
+      "cast": 15,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "cast_succeeded",
+      "cast": 15
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 3585,
+      "time_raw": 513248102400,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "kind": "spell",
+      "cast": 15,
+      "target_count": 1
+    },
+    {
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 3615,
+      "time_raw": 517543065600,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 3615,
+      "time_raw": 517543065600,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 3615,
+      "time_raw": 517543065600,
+      "kind": "skill_end",
+      "cast": 15
+    },
+    {
+      "frame": 3615,
+      "time_raw": 517543065600,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 3615,
+      "time_raw": 517543065600,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 3615,
+      "time_raw": 517543065600,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 3616,
+      "time_raw": 517686231040,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 3646,
+      "time_raw": 521981194240,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 3676,
+      "time_raw": 526276157440,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 3706,
+      "time_raw": 530571120640,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 3736,
+      "time_raw": 534866083840,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 3766,
+      "time_raw": 539161047040,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 3796,
+      "time_raw": 543456010240,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "skill_start",
+      "cast": 16,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "cast_succeeded",
+      "cast": 16
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 3826,
+      "time_raw": 547750973440,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "kind": "spell",
+      "cast": 16,
+      "target_count": 1
+    },
+    {
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 3856,
+      "time_raw": 552045936640,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 3856,
+      "time_raw": 552045936640,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 3856,
+      "time_raw": 552045936640,
+      "kind": "skill_end",
+      "cast": 16
+    },
+    {
+      "frame": 3856,
+      "time_raw": 552045936640,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 3856,
+      "time_raw": 552045936640,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 3856,
+      "time_raw": 552045936640,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 3857,
+      "time_raw": 552189102080,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 3887,
+      "time_raw": 556484065280,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 3917,
+      "time_raw": 560779028480,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 3947,
+      "time_raw": 565073991680,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 3977,
+      "time_raw": 569368954880,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 4007,
+      "time_raw": 573663918080,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 4037,
+      "time_raw": 577958881280,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "skill_start",
+      "cast": 17,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "cast_succeeded",
+      "cast": 17
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 4067,
+      "time_raw": 582253844480,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "kind": "spell",
+      "cast": 17,
+      "target_count": 1
+    },
+    {
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 4097,
+      "time_raw": 586548807680,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 4097,
+      "time_raw": 586548807680,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 4097,
+      "time_raw": 586548807680,
+      "kind": "skill_end",
+      "cast": 17
+    },
+    {
+      "frame": 4097,
+      "time_raw": 586548807680,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 4097,
+      "time_raw": 586548807680,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 4097,
+      "time_raw": 586548807680,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 4098,
+      "time_raw": 586691973120,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 4128,
+      "time_raw": 590986936320,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 4294967296
+    },
+    {
+      "frame": 4158,
+      "time_raw": 595281899520,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 8589934592
+    },
+    {
+      "frame": 4188,
+      "time_raw": 599576862720,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 12884901888
+    },
+    {
+      "frame": 4218,
+      "time_raw": 603871825920,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 17179869184
+    },
+    {
+      "frame": 4248,
+      "time_raw": 608166789120,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 21474836480
+    },
+    {
+      "frame": 4278,
+      "time_raw": 612461752320,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 25769803776
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "sp_recovered",
+      "count": 1,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "auto_admitted"
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "state_enter",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "before_skill"
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "target_snapshot",
+      "count": 1
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "skill_start",
+      "cast": 18,
+      "sp_raw": 30064771072
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "pre_delay_begin",
+      "delay_raw": 2576980480
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "sp_consumed",
+      "cost": 7,
+      "sp_raw": 0
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "sp_recovery_modifier",
+      "registered": true,
+      "abnormal_flag_mask": 2
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "cast_succeeded",
+      "cast": 18
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "skill_state_cooldown_reset",
+      "remaining_raw": 4294967296
+    },
+    {
+      "frame": 4308,
+      "time_raw": 616756715520,
+      "kind": "state_changed",
+      "state": 4,
+      "previous": 1
+    },
+    {
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "kind": "spell",
+      "cast": 18,
+      "target_count": 1
+    },
+    {
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "kind": "post_delay_begin",
+      "delay_raw": 1861154816
+    },
+    {
+      "frame": 4338,
+      "time_raw": 621051678720,
+      "kind": "ability_cleanup"
+    },
+    {
+      "frame": 4338,
+      "time_raw": 621051678720,
+      "kind": "half_frame_cooldown_reset"
+    },
+    {
+      "frame": 4338,
+      "time_raw": 621051678720,
+      "kind": "skill_end",
+      "cast": 18
+    },
+    {
+      "frame": 4338,
+      "time_raw": 621051678720,
+      "kind": "after_skill",
+      "failed": false
+    },
+    {
+      "frame": 4338,
+      "time_raw": 621051678720,
+      "kind": "state_enter",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 4338,
+      "time_raw": 621051678720,
+      "kind": "state_changed",
+      "state": 1,
+      "previous": 4
+    },
+    {
+      "frame": 4339,
+      "time_raw": 621194844160,
+      "kind": "sp_recovery_modifier",
+      "registered": false,
+      "abnormal_flag_mask": 2
+    }
+  ],
+  "target_selections": [
+    {
+      "frame": 210,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 452,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 693,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 934,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 1175,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 1416,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 1657,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 1898,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 2139,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 2380,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 2621,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 2862,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 3103,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 3344,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 3585,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 3826,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 4067,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    },
+    {
+      "frame": 4308,
+      "hit_uids": [
+        2
+      ],
+      "collector_uids": [
+        2
+      ],
+      "decisions": [
+        {
+          "collider_index": 0,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "admitted"
+        },
+        {
+          "collider_index": 1,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        },
+        {
+          "collider_index": 2,
+          "hit_index": 0,
+          "uid": 2,
+          "reason": "duplicate_admitted_uid"
+        }
+      ],
+      "ALL_decisions": [
+        {
+          "uid": 2,
+          "reason": "queued",
+          "weight_raw": 0,
+          "prior_weight_raw": 0
+        }
+      ],
+      "capped_at_128": false,
+      "source_side": 2,
+      "absolute_target_side_mask": 7,
+      "query_layer_mask": 268436992,
+      "source_purpose_mask": 0,
+      "context_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; mapLayer0/non-sandbox/empty exclusions fixture",
+      "query_source": "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; query mask derived from reviewed side/layer declarations",
+      "runtime_sources": [
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit Enemy.createdTime raw0 field fixture",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit zero abnormal count/base-mask state",
+        "one source-prepared altar/one stationary laxe; explicit empty run modifiers; no live game; explicit empty provider dictionary"
+      ],
+      "scope": "ordinary native altar admission/ALL weighted queue with external Physics2D and explicit runtime state",
+      "physics_overlap_generated": false,
+      "native_all_order_generated": true,
+      "native_masks_derived": true,
+      "runtime_battle_validated": false,
+      "battle_ready": false,
+      "remaining_gaps": [
+        "Unity collider/world transform/Physics2D query membership and order",
+        "live hotfix/static override/engine state",
+        "dynamic buff/provider registration and mutable callbacks",
+        "sandbox extra-mode weights"
+      ]
+    }
+  ],
+  "damage_results": [
+    {
+      "frame": 227,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 38654705664000,
+      "hp_after_raw": 36507222016000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 469,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 36507222016000,
+      "hp_after_raw": 34359738368000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 710,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 34359738368000,
+      "hp_after_raw": 32212254720000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 951,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 32212254720000,
+      "hp_after_raw": 30064771072000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 1192,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 30064771072000,
+      "hp_after_raw": 27917287424000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 1433,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 27917287424000,
+      "hp_after_raw": 25769803776000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 1674,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 25769803776000,
+      "hp_after_raw": 23622320128000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 1915,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 23622320128000,
+      "hp_after_raw": 21474836480000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 2156,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 21474836480000,
+      "hp_after_raw": 19327352832000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 2397,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 19327352832000,
+      "hp_after_raw": 17179869184000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 2638,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 17179869184000,
+      "hp_after_raw": 15032385536000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 2879,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 15032385536000,
+      "hp_after_raw": 12884901888000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 3120,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 12884901888000,
+      "hp_after_raw": 10737418240000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 3361,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 10737418240000,
+      "hp_after_raw": 8589934592000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 3602,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 8589934592000,
+      "hp_after_raw": 6442450944000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 3843,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 6442450944000,
+      "hp_after_raw": 4294967296000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 4084,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 4294967296000,
+      "hp_after_raw": 2147483648000,
+      "killed": false,
+      "finish_reason": 0
+    },
+    {
+      "frame": 4325,
+      "applied": true,
+      "cancel_reason": 0,
+      "calculated_raw": 2147483648000,
+      "applied_delta_raw": -2147483648000,
+      "hp_before_raw": 2147483648000,
+      "hp_after_raw": 0,
+      "killed": true,
+      "finish_reason": 2
+    }
+  ],
+  "buff_events": [
+    {
+      "frame": 227,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 469,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 710,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 951,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 1192,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 1433,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 1674,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 1915,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 2156,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 2397,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 2638,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 2879,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 3120,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 3361,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 3602,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 3843,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 4084,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    },
+    {
+      "frame": 4325,
+      "template": "ore_s",
+      "marked_finished_before_damage": true,
+      "ore_listener_present": false,
+      "mode_action": "no_op_in_reviewed_laxe_context"
+    }
+  ],
+  "lifecycle_events": [
+    {
+      "kind": "enemy_born",
+      "frame": 0,
+      "time_raw": 0,
+      "id": "laxe#1",
+      "enemy_key": "enemy_1034_laxe",
+      "state_id": 6,
+      "born_remaining_raw": 0,
+      "hp_raw": 38654705664000,
+      "alive": true,
+      "tracked": true,
+      "wave_block": true
+    },
+    {
+      "kind": "enemy_birth_complete",
+      "frame": 1,
+      "time_raw": 143165440,
+      "id": "laxe#1",
+      "state_id": 1,
+      "born_remaining_raw": -143165440
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "laxe#1",
+      "hp_before_raw": 38654705664000,
+      "hp_raw": 36507222016000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 227,
+      "time_raw": 32498554880,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "laxe#1",
+      "hp_before_raw": 36507222016000,
+      "hp_raw": 34359738368000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 469,
+      "time_raw": 67144591360,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "laxe#1",
+      "hp_before_raw": 34359738368000,
+      "hp_raw": 32212254720000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 710,
+      "time_raw": 101647462400,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "laxe#1",
+      "hp_before_raw": 32212254720000,
+      "hp_raw": 30064771072000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 951,
+      "time_raw": 136150333440,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "laxe#1",
+      "hp_before_raw": 30064771072000,
+      "hp_raw": 27917287424000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1192,
+      "time_raw": 170653204480,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "laxe#1",
+      "hp_before_raw": 27917287424000,
+      "hp_raw": 25769803776000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1433,
+      "time_raw": 205156075520,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "laxe#1",
+      "hp_before_raw": 25769803776000,
+      "hp_raw": 23622320128000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1674,
+      "time_raw": 239658946560,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "laxe#1",
+      "hp_before_raw": 23622320128000,
+      "hp_raw": 21474836480000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 1915,
+      "time_raw": 274161817600,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "laxe#1",
+      "hp_before_raw": 21474836480000,
+      "hp_raw": 19327352832000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2156,
+      "time_raw": 308664688640,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "laxe#1",
+      "hp_before_raw": 19327352832000,
+      "hp_raw": 17179869184000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2397,
+      "time_raw": 343167559680,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "laxe#1",
+      "hp_before_raw": 17179869184000,
+      "hp_raw": 15032385536000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2638,
+      "time_raw": 377670430720,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "laxe#1",
+      "hp_before_raw": 15032385536000,
+      "hp_raw": 12884901888000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 2879,
+      "time_raw": 412173301760,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "laxe#1",
+      "hp_before_raw": 12884901888000,
+      "hp_raw": 10737418240000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3120,
+      "time_raw": 446676172800,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "laxe#1",
+      "hp_before_raw": 10737418240000,
+      "hp_raw": 8589934592000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3361,
+      "time_raw": 481179043840,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "laxe#1",
+      "hp_before_raw": 8589934592000,
+      "hp_raw": 6442450944000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3602,
+      "time_raw": 515681914880,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "laxe#1",
+      "hp_before_raw": 6442450944000,
+      "hp_raw": 4294967296000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 3843,
+      "time_raw": 550184785920,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "laxe#1",
+      "hp_before_raw": 4294967296000,
+      "hp_raw": 2147483648000
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4084,
+      "time_raw": 584687656960,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "callback": "OnBeingCalculateDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_finished_transients_ignored",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "templates": [
+        "ore_s"
+      ],
+      "native_gate": "Buff.isFinishedOrDisabled_true"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "callback": "OnBeforeApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 8,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "altar#1",
+      "callback": "OnOutputModifier",
+      "event_domain": "entity",
+      "event_id": 11,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "altar#1",
+      "callback": "OnOutputDamage",
+      "event_domain": "entity",
+      "event_id": 14,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "callback": "OnApplyingModifier",
+      "event_domain": "entity",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "callback": "OnTakeDamage",
+      "event_domain": "entity",
+      "event_id": 12,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "altar#1",
+      "callback": "OnBeforeTargetApplyModifier",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "callback": "OnBeforeTrySetHpZero",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_hp_written",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "hp_before_raw": 2147483648000,
+      "hp_raw": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "callback": "OnOwnerBeforeDead",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_dead_state",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "state_id": 5,
+      "visual_backend": "excluded",
+      "recycle_delay_changed": false
+    },
+    {
+      "kind": "enemy_finished",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "finish_reason": 2,
+      "state_id": -1,
+      "source": "altar#1"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "altar#1",
+      "callback": "OnTargetKilled",
+      "event_domain": "buff",
+      "event_id": 9,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_killed",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "source": "altar#1",
+      "event_domain": "entity",
+      "event_id": 1
+    },
+    {
+      "kind": "enemy_wave_released",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "final_membership_retained": true
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "callback": "Enemy.OnFinish.LevelEvent",
+      "event_domain": "level",
+      "event_id": 3,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_recycle_scheduled",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "delay_single": 0.6000000238418579,
+      "scheduler": "shared_coroutine_simulator"
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "laxe#1",
+      "callback": "OnAppliedModifier",
+      "event_domain": "entity",
+      "event_id": 10,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "damage_hook",
+      "frame": 4325,
+      "time_raw": 619190528000,
+      "id": "altar#1",
+      "callback": "OnAfterOutputDamage",
+      "event_domain": null,
+      "event_id": null,
+      "rule_actions_executed": 0
+    },
+    {
+      "kind": "enemy_recycled",
+      "frame": 4343,
+      "time_raw": 621767505920,
+      "id": "laxe#1",
+      "finish_reason": 2,
+      "wave_membership_changed": false
+    },
+    {
+      "kind": "battle_finish_requested",
+      "frame": 4343,
+      "time_raw": 621767505920,
+      "outcome": "win",
+      "source": "Scheduler._CheckFinalNotFinish/default_mode",
+      "scope": "logical_default_mode_request_before_Unity_outro"
+    }
+  ],
+  "battle_ready": false,
+  "autonomous_route_ready": false,
+  "runtime_battle_validated": false,
+  "preparation": {
+    "skill_id": "sktok_ore",
+    "range_id": "x-1",
+    "pre_delay_raw": 2576980480,
+    "duration_raw": 4294967296,
+    "cooldown_raw": 4294967296,
+    "sp_cost": 7,
+    "init_sp": 0,
+    "sp_increment_raw": 4294967296,
+    "sp_recovery_per_second_raw": 4294967296,
+    "blackboard": {
+      "value": 500.0,
+      "duration": 0.0
+    },
+    "provenance": {
+      "kind": "bounded static native preparation; no target execution",
+      "resource_inputs": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\skill_preparation\\resource_inputs.json",
+      "resource_inputs_sha256": "28a7a63a3b02398e5d902f8cc25add8dffebfeb5c0ad804ce2b6c47af685ae2e",
+      "sources": [
+        {
+          "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\skill_tableafb859.json",
+          "bytes": 10973218,
+          "sha256": "979d036bbca77514c39c60efd76b961d9f04fa681a7dd0bf3c208112062cf3af"
+        },
+        {
+          "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\character_table9fc534.json",
+          "bytes": 14985208,
+          "sha256": "68f19ec5c72acf291b59fdf861461822aa5f6be8d668711febd6f803eb096c57"
+        },
+        {
+          "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\altar_context.json",
+          "bytes": 11156,
+          "sha256": "6e2d697789cc1f3f97673a817b99206d183f253acd00224eff7546036857dae8"
+        },
+        {
+          "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\rule_prefab_subtrees.json",
+          "bytes": 515651,
+          "sha256": "2f7912e5564e6f8608163f38f31071cf3a913f2fbc437c9725860ed77c6e532a"
+        }
+      ],
+      "components": [
+        {
+          "class_name": "Torappu.Battle.Abilities.AnimatedActionToTargetAbility",
+          "path_id": 5041462664297346832,
+          "script_path_id": 2165892974539515790,
+          "serialized_sha256": "9cd9f01af8b9fe3d734b3c9aa72adf4bc93f23a0100a731e0ce36d1798c76ef9"
+        },
+        {
+          "class_name": "Torappu.Battle.CastSkill",
+          "path_id": 4692236642745808656,
+          "script_path_id": 6851783972288338031,
+          "serialized_sha256": "5c9bd6b3555ab02cb5cc142b2cdc2984dfcb69f8eaba804471ee3cd34721a53d"
+        },
+        {
+          "class_name": "Torappu.Battle.Trap",
+          "path_id": 8450006637979622515,
+          "script_path_id": 7298368132990067154,
+          "serialized_sha256": "e34290cc16250b88e919ecde1767ef177fb13fd6175577f31fe4b09ce77f66f0"
+        },
+        {
+          "class_name": "Torappu.Battle.TrapMode",
+          "path_id": -6537671094772769677,
+          "script_path_id": -4460612017216576867,
+          "serialized_sha256": "d44a2e36fe816b00986f675ca16c3e2c24e12a2e372add3e6a42e7c13eb10bc1"
+        },
+        {
+          "class_name": "Torappu.Battle.MeshAnimator",
+          "path_id": -2953578928378356621,
+          "script_path_id": -6490301617952843582,
+          "serialized_sha256": "1f9b56fcc669bbadd4b791100aa146d1378eaffbd032edf399149067a33f4585"
+        }
+      ],
+      "native_chain": [
+        "DataConvertUtil.GetSkillData(1827433b0)",
+        "SkillDB.TryGetSkill/_TryGetSkill(18210a200/18210a350)",
+        "SkillDataBundle.TryGetSkill(182529ce0)",
+        "Character._AssignData/_PreprocessSkill(180a33dd0/180a37070)",
+        "SkillData.InitIfNot(18252a520)",
+        "Character._AssignSkill(180a344b0)",
+        "BasicSkill.AssignData(1809582e0)",
+        "Ability.SetData/DoSetData(1805d6bc0/1805d5540)",
+        "Ability.Attach/DoAttach(1805d4ae0/1805d4f00)",
+        "AbstractAnimatedAbility.DoAttach(180eff930)",
+        "AbilityStandard.OnAttached(1805d07a0)",
+        "DoUpdatePlaybackSpeed/Abstract.UpdatePlaybackSpeed(1805cff60/180f00820)",
+        "get_cooldown(180f01050)/GetDuration(180effbe0)"
+      ],
+      "table_duration_float32": 0.0,
+      "actual_time_mode": "SPECIFIED=2",
+      "initial_anim_scale_float32": 1.0,
+      "animation_lookup": "empty key absent from Idle/Born/Die dictionary",
+      "basic_skill_behaviour_count": 0,
+      "ability_behaviour_count": 1,
+      "ability_behaviour": "UberEffectEmitter inherits Behaviour.UpdatePlaybackSpeed(1805db9c0): out=1, return=false; no override",
+      "range_radius_float32": -1.0,
+      "blackboard_duration_origin": "SkillData.InitIfNot assigns duration=0; SPECIFIED mode does not read _cooldownKey",
+      "availability": "initial cooldown timer ready under default Reset; owner/event/abnormal state still external"
+    },
+    "remaining_external_context": [
+      "Resource declarations are installed in the default mode; animation dictionary initialized from this prefab; no animation override.",
+      "Native default methods with null hotfix slots, no extra blackboard/delta, potential/skin/global preparation modifiers.",
+      "Owner exists and attachment/registration completed; no full Unity Init or loading process executed by this component.",
+      "Owner validity, abnormal/dying/skill flags, event modifiers and skill admission remain explicit scene inputs.",
+      "UberEffectEmitter's inherited timing override is recovered; visual initialization/effect emission is not executed.",
+      "Deterministic shared coroutine branch, frame clock, physics target order and damage/lifecycle context remain separately declared."
+    ],
+    "unity_initialization_executed": false
+  },
+  "selection_inputs": {
+    "source_side": 2,
+    "absolute_target_side_mask": 7,
+    "query_layer_mask": 268436992,
+    "source_purpose_mask": 0,
+    "side_source": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\skill_preparation\\resource_inputs.json: trap_011_ore Trap._sideType",
+    "ALL_backend": "native weighted priority queue reconstruction",
+    "HitRange_backend": "native manager with explicitly empty provider registry",
+    "physics_backend": "external ordered overlap snapshots"
+  }
+}

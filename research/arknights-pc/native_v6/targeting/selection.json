@@ -1,0 +1,274 @@
+[
+  {
+    "type": "Torappu.Battle.AutoLoadBoxRange",
+    "method": "FetchColliders",
+    "address": "0x1809a5170",
+    "metadata_method_index": 73930,
+    "token": "0x60120cb",
+    "reason": "AutoLoad fetch selects real rangeId"
+  },
+  {
+    "type": "Torappu.Battle.AutoLoadBoxRange",
+    "method": "InitCollidersIfNot",
+    "address": "0x1809a5430",
+    "metadata_method_index": 73931,
+    "token": "0x60120cc",
+    "reason": "AutoLoad lazy initialization branch"
+  },
+  {
+    "type": "Torappu.Battle.AutoLoadBoxRange",
+    "method": "FetchCollidersByRangeId",
+    "address": "0x1809a4d60",
+    "metadata_method_index": 73932,
+    "token": "0x60120cd",
+    "reason": "RangeData boxes to actual collider geometry"
+  },
+  {
+    "type": "Torappu.Battle.AutoLoadBoxRange",
+    "method": "InitColliderIfNotByRangeId",
+    "address": "0x1809a5230",
+    "metadata_method_index": 73933,
+    "token": "0x60120ce",
+    "reason": "Collider lazy rebuild by rangeId"
+  },
+  {
+    "type": "Torappu.Battle.PhysicsRange",
+    "method": "OnInit",
+    "address": "0x1809b7180",
+    "metadata_method_index": 74134,
+    "token": "0x6012197",
+    "reason": "PhysicsRange OnInit allocation/default collider cache"
+  },
+  {
+    "type": "Torappu.Battle.PhysicsRange",
+    "method": "UpdateColliders",
+    "address": "0x1809b7550",
+    "metadata_method_index": 74136,
+    "token": "0x6012199",
+    "reason": "Collider cache composition/order"
+  },
+  {
+    "type": "Torappu.Battle.PhysicsRange",
+    "method": "UpdateExtend",
+    "address": "0x1809b7700",
+    "metadata_method_index": 74137,
+    "token": "0x601219a",
+    "reason": "Collider extension arithmetic"
+  },
+  {
+    "type": "Torappu.Battle.PhysicsRange",
+    "method": "DoFindTargets_DISPOSE",
+    "address": "0x1809b6a30",
+    "metadata_method_index": 74138,
+    "token": "0x601219b",
+    "reason": "Actual continuous-range deterministic discovery branch"
+  },
+  {
+    "type": "Torappu.Battle.PhysicsRange",
+    "method": "CheckTargetIn",
+    "address": "0x1809b66b0",
+    "metadata_method_index": 74140,
+    "token": "0x601219d",
+    "reason": "Actual target inclusion geometry dispatch"
+  },
+  {
+    "type": "Torappu.Battle.PhysicsRange",
+    "method": "CheckTargetInOriginRange",
+    "address": "0x1809b6330",
+    "metadata_method_index": 74141,
+    "token": "0x601219e",
+    "reason": "Origin geometry inclusion"
+  },
+  {
+    "type": "Torappu.Battle.PhysicsRange",
+    "method": "UpdateRangeByOptions",
+    "address": "0x1809b7a60",
+    "metadata_method_index": 74144,
+    "token": "0x60121a1",
+    "reason": "PhysicsRange runtime options update"
+  },
+  {
+    "type": "Torappu.Battle.Box2dPhysicsUtil",
+    "method": "FindTargets_DISPOSE",
+    "address": "0x1809a5850",
+    "metadata_method_index": 73944,
+    "token": "0x60120d9",
+    "reason": "Box2d target enumeration and dedup/order"
+  },
+  {
+    "type": "Torappu.Battle.Box2dPhysicsUtil",
+    "method": "_OverlapCollider",
+    "address": "0x1809a6560",
+    "metadata_method_index": 73947,
+    "token": "0x60120dc",
+    "reason": "Overlap collector/query branch"
+  },
+  {
+    "type": "Torappu.Battle.Box2dPhysicsUtil",
+    "method": "CheckOverlap",
+    "address": "0x1809a55f0",
+    "metadata_method_index": 73948,
+    "token": "0x60120dd",
+    "reason": "Native CheckOverlap geometry"
+  },
+  {
+    "type": "Torappu.Battle.AdvancedSelector",
+    "method": "Reset",
+    "address": "0x1809c3820",
+    "metadata_method_index": 74235,
+    "token": "0x60121fc",
+    "reason": "AdvancedSelector reset and exclusion context"
+  },
+  {
+    "type": "Torappu.Battle.AdvancedSelector",
+    "method": "OnPostFilter",
+    "address": "0x1809c34f0",
+    "metadata_method_index": 74238,
+    "token": "0x60121ff",
+    "reason": "Actual prefab post-filter/cap/order"
+  },
+  {
+    "type": "Torappu.Battle.AdvancedSelector",
+    "method": "Awake",
+    "address": "0x1809c3330",
+    "metadata_method_index": 74240,
+    "token": "0x6012201",
+    "reason": "Selector binding/default options setup"
+  },
+  {
+    "type": "Torappu.Battle.RangeSelector",
+    "method": "Reset",
+    "address": "0x1809e9200",
+    "metadata_method_index": 74891,
+    "token": "0x601248c",
+    "reason": "Source side/motion/options and real Range.Reset setup"
+  },
+  {
+    "type": "Torappu.Battle.RangeSelector",
+    "method": "Awake",
+    "address": "0x1809e8c00",
+    "metadata_method_index": 74900,
+    "token": "0x6012495",
+    "reason": "Selector range component binding"
+  },
+  {
+    "type": "Torappu.Battle.TargetOptions",
+    "method": "Init",
+    "address": "0x1809fa4d0",
+    "metadata_method_index": 75068,
+    "token": "0x601253d",
+    "reason": "TargetOptions relative target-side mask initialization"
+  },
+  {
+    "type": "Torappu.Battle.TargetOptions",
+    "method": "_TryGetSourceMotionMode",
+    "address": "0x1809fa900",
+    "metadata_method_index": 75075,
+    "token": "0x6012544",
+    "reason": "SourceSnapshot motion identity/value fallback"
+  },
+  {
+    "type": "Torappu.Battle.TargetSelector",
+    "method": "Reset",
+    "address": "0x1809fbff0",
+    "metadata_method_index": 75091,
+    "token": "0x6012554",
+    "reason": "TargetSelector binding/validator state"
+  },
+  {
+    "type": "Torappu.Battle.TargetSelector",
+    "method": "VerifyTarget",
+    "address": "0x1809fc650",
+    "metadata_method_index": 75099,
+    "token": "0x601255c",
+    "reason": "Candidate-list verification in place"
+  },
+  {
+    "type": "Torappu.Battle.TargetSelector",
+    "method": "VerifyTarget",
+    "address": "0x1809fc5b0",
+    "metadata_method_index": 75100,
+    "token": "0x601255d",
+    "reason": "Single candidate selector verification"
+  },
+  {
+    "type": "Torappu.Battle.BattleUtil",
+    "method": "VerifyTarget",
+    "address": "0x180ae2b70",
+    "metadata_method_index": 78233,
+    "token": "0x601319a",
+    "reason": "Motion/category/base validity admission"
+  },
+  {
+    "type": "Torappu.Battle.BattleUtil",
+    "method": "VerifyTargetWithPlayerSide",
+    "address": "0x180ae2a70",
+    "metadata_method_index": 78234,
+    "token": "0x601319b",
+    "reason": "Player-side target admission branch"
+  },
+  {
+    "type": "Torappu.RangeData",
+    "method": "_TryFindBoundingBox",
+    "address": "0x182427070",
+    "metadata_method_index": 31686,
+    "token": "0x6007bc7",
+    "reason": "Native RangeData partition rectangle construction"
+  },
+  {
+    "type": "Torappu.ObscuredRect",
+    "method": ".ctor",
+    "address": "0x18241e2f0",
+    "metadata_method_index": 31698,
+    "token": "0x6007bd3",
+    "reason": "Bounding rect origin/size storage"
+  },
+  {
+    "type": "Torappu.ObscuredRect",
+    "method": "get_center",
+    "address": "0x18241e4d0",
+    "metadata_method_index": 31692,
+    "token": "0x6007bcd",
+    "reason": "Bounding rect center arithmetic"
+  },
+  {
+    "type": "Torappu.ObscuredRect",
+    "method": "get_size",
+    "address": "0x18241e610",
+    "metadata_method_index": 31693,
+    "token": "0x6007bce",
+    "reason": "Bounding rect size arithmetic"
+  },
+  {
+    "type": "Torappu.Battle.Range",
+    "method": "Reset",
+    "address": "0x1809b9d20",
+    "metadata_method_index": 74173,
+    "token": "0x60121be",
+    "reason": "Range.Reset init/options/extend call order"
+  },
+  {
+    "type": "Torappu.Battle.Range",
+    "method": "get_ability",
+    "address": "0x1809ba080",
+    "metadata_method_index": 74172,
+    "token": "0x60121bd",
+    "reason": "Range ability ownership lookup"
+  },
+  {
+    "type": "Torappu.Battle.FilterUtil",
+    "method": "Filter",
+    "address": "0x1809d8270",
+    "metadata_method_index": 74633,
+    "token": "0x601238a",
+    "reason": "Actual ALL post-filter dispatch"
+  },
+  {
+    "type": "Torappu.Battle.FilterUtil",
+    "method": "_Filter_All",
+    "address": "0x1809da080",
+    "metadata_method_index": 74639,
+    "token": "0x6012390",
+    "reason": "ALL filter preserves/dedup/limit behavior"
+  }
+]

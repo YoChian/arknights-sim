@@ -1,0 +1,284 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "birth_enter_single_gt": {
+    "function": {
+      "selection": {
+        "name": "MathUtil.GT Single",
+        "basis": "Exact BornState.OnEnter call; previous Float static epsilon evidence"
+      },
+      "address": "0x1866e4c50",
+      "bounds": "Reviewed straight-line metadata/caller leaf ending at first RET; no branch/padding heuristic",
+      "ranges": [
+        {
+          "start": "0x1866e4c50",
+          "end_exclusive": "0x1866e4c5f",
+          "unwind_rva": null,
+          "chain_parent_start": null,
+          "source_file_offset": 107888720,
+          "source_sha256": "f207a9be76177c7b531685806efb036ed8ad042129436e210e350851556dfad4",
+          "instructions": [
+            {
+              "address": "0x1866e4c50",
+              "bytes": "f30f580d30b17500",
+              "mnemonic": "addss",
+              "operands": "xmm1, dword ptr [rip + 0x75b130]"
+            },
+            {
+              "address": "0x1866e4c58",
+              "bytes": "0f2fc1",
+              "mnemonic": "comiss",
+              "operands": "xmm0, xmm1"
+            },
+            {
+              "address": "0x1866e4c5b",
+              "bytes": "0f97c0",
+              "mnemonic": "seta",
+              "operands": "al"
+            },
+            {
+              "address": "0x1866e4c5e",
+              "bytes": "c3",
+              "mnemonic": "ret",
+              "operands": ""
+            }
+          ]
+        }
+      ]
+    },
+    "operation": "COMISS(a, binary32(b+epsilon)); SETA",
+    "epsilon": {
+      "address": "0x186e3fd88",
+      "source_file_offset": 115598728,
+      "raw_bytes": "acc52737",
+      "value": 9.999999747378752e-06,
+      "source_sha256": "e6540c5b3269d9a6e3646dd482c2a7fe6b58e101e80007556892bb770099a68c"
+    }
+  },
+  "birth_tick_fp_le": {
+    "function": {
+      "selection": {
+        "name": "FP.op_LessThanOrEqual",
+        "basis": "Exact BornState.OnTick call and fixedpoint metadata folded pointer record"
+      },
+      "address": "0x185ed91e0",
+      "bounds": "Reviewed straight-line metadata/caller leaf ending at first RET; no branch/padding heuristic",
+      "ranges": [
+        {
+          "start": "0x185ed91e0",
+          "end_exclusive": "0x185ed91e7",
+          "unwind_rva": null,
+          "chain_parent_start": null,
+          "source_file_offset": 99452384,
+          "source_sha256": "c01d341cb124825c13852da9ca4dbea1dc649534718b51166c5936630ead969f",
+          "instructions": [
+            {
+              "address": "0x185ed91e0",
+              "bytes": "483bca",
+              "mnemonic": "cmp",
+              "operands": "rcx, rdx"
+            },
+            {
+              "address": "0x185ed91e3",
+              "bytes": "0f9ec0",
+              "mnemonic": "setle",
+              "operands": "al"
+            },
+            {
+              "address": "0x185ed91e6",
+              "bytes": "c3",
+              "mnemonic": "ret",
+              "operands": ""
+            }
+          ]
+        }
+      ]
+    },
+    "operation": "signed Int64 comparison: remaining <= FP.from_int32(0), no EN5 epsilon"
+  },
+  "selected_fields": {
+    "Torappu.Battle.BObject": [
+      {
+        "name": "<instanceUid>k__BackingField",
+        "offset": 24,
+        "offset_hex": "0x18",
+        "native_type": {
+          "address": "0x188b26d60",
+          "file_offset": 145902432,
+          "raw_bytes12": "57a000000000000001000980",
+          "data": 41047,
+          "bits": "0x80090001",
+          "attrs": 1,
+          "type_tag": "0x9",
+          "byref": false,
+          "valuetype_bit": true,
+          "name": "UInt32",
+          "type_index": 81643,
+          "pointer_record_file_offset": 131231032
+        }
+      },
+      {
+        "name": "<inited>k__BackingField",
+        "offset": 36,
+        "offset_hex": "0x24",
+        "native_type": {
+          "address": "0x1889e3820",
+          "file_offset": 144578080,
+          "raw_bytes12": "cb9f00000000000001000280",
+          "data": 40907,
+          "bits": "0x80020001",
+          "attrs": 1,
+          "type_tag": "0x2",
+          "byref": false,
+          "valuetype_bit": true,
+          "name": "Boolean",
+          "type_index": 44790,
+          "pointer_record_file_offset": 130936208
+        }
+      },
+      {
+        "name": "<borned>k__BackingField",
+        "offset": 37,
+        "offset_hex": "0x25",
+        "native_type": {
+          "address": "0x1889e3820",
+          "file_offset": 144578080,
+          "raw_bytes12": "cb9f00000000000001000280",
+          "data": 40907,
+          "bits": "0x80020001",
+          "attrs": 1,
+          "type_tag": "0x2",
+          "byref": false,
+          "valuetype_bit": true,
+          "name": "Boolean",
+          "type_index": 44790,
+          "pointer_record_file_offset": 130936208
+        }
+      },
+      {
+        "name": "<isDisappeared>k__BackingField",
+        "offset": 38,
+        "offset_hex": "0x26",
+        "native_type": {
+          "address": "0x1889e3820",
+          "file_offset": 144578080,
+          "raw_bytes12": "cb9f00000000000001000280",
+          "data": 40907,
+          "bits": "0x80020001",
+          "attrs": 1,
+          "type_tag": "0x2",
+          "byref": false,
+          "valuetype_bit": true,
+          "name": "Boolean",
+          "type_index": 44790,
+          "pointer_record_file_offset": 130936208
+        }
+      }
+    ],
+    "Torappu.Battle.Enemy": [
+      {
+        "name": "_delayToBorn",
+        "offset": 784,
+        "offset_hex": "0x310",
+        "native_type": {
+          "address": "0x188ad8b10",
+          "file_offset": 145582352,
+          "raw_bytes12": "39a000000000000001000c80",
+          "data": 41017,
+          "bits": "0x800c0001",
+          "attrs": 1,
+          "type_tag": "0xc",
+          "byref": false,
+          "valuetype_bit": true,
+          "name": "Single",
+          "type_index": 75037,
+          "pointer_record_file_offset": 131178184
+        }
+      },
+      {
+        "name": "_onlyDelayToBornOnTileStart",
+        "offset": 788,
+        "offset_hex": "0x314",
+        "native_type": {
+          "address": "0x1889e3820",
+          "file_offset": 144578080,
+          "raw_bytes12": "cb9f00000000000001000280",
+          "data": 40907,
+          "bits": "0x80020001",
+          "attrs": 1,
+          "type_tag": "0x2",
+          "byref": false,
+          "valuetype_bit": true,
+          "name": "Boolean",
+          "type_index": 44790,
+          "pointer_record_file_offset": 130936208
+        }
+      },
+      {
+        "name": "_idleWhenBorn",
+        "offset": 825,
+        "offset_hex": "0x339",
+        "native_type": {
+          "address": "0x1889e3820",
+          "file_offset": 144578080,
+          "raw_bytes12": "cb9f00000000000001000280",
+          "data": 40907,
+          "bits": "0x80020001",
+          "attrs": 1,
+          "type_tag": "0x2",
+          "byref": false,
+          "valuetype_bit": true,
+          "name": "Boolean",
+          "type_index": 44790,
+          "pointer_record_file_offset": 130936208
+        }
+      },
+      {
+        "name": "_alwaysCheckCurrentPoint",
+        "offset": 829,
+        "offset_hex": "0x33d",
+        "native_type": {
+          "address": "0x1889e3820",
+          "file_offset": 144578080,
+          "raw_bytes12": "cb9f00000000000001000280",
+          "data": 40907,
+          "bits": "0x80020001",
+          "attrs": 1,
+          "type_tag": "0x2",
+          "byref": false,
+          "valuetype_bit": true,
+          "name": "Boolean",
+          "type_index": 44790,
+          "pointer_record_file_offset": 130936208
+        }
+      }
+    ],
+    "Torappu.Battle.BasicTalent": [
+      {
+        "name": "_overwriteTalentKey",
+        "offset": 24,
+        "offset_hex": "0x18",
+        "native_type": {
+          "address": "0x188af0330",
+          "file_offset": 145678640,
+          "raw_bytes12": "a39f00000000000001000e00",
+          "data": 40867,
+          "bits": "0xe0001",
+          "attrs": 1,
+          "type_tag": "0xe",
+          "byref": false,
+          "valuetype_bit": false,
+          "name": "String",
+          "type_index": 77201,
+          "pointer_record_file_offset": 131195496
+        }
+      }
+    ]
+  },
+  "notes": [
+    "BObject +0x24 is inited, +0x25 borned, +0x26 isDisappeared.",
+    "Enemy.Options.unharmful is a separate value-struct Boolean; MarkUnharmful does not change disappearance or HP.",
+    "Enemy delay getter default flagfalse reads Single+0x310 only under explicit null hotfix slots.",
+    "BasicTalent.get_talentKey virtual slot19 is the exact Enemy._AssignTalent 0x13 dispatch; no Talent override."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "layer_initializer_va": "0x1805e15a0",
+  "layer_string_records": [
+    {
+      "slot_va": "0x188821d30",
+      "slot_file_offset": 142736176,
+      "raw8": "6b2100a000000000",
+      "kind": 5,
+      "index": 4277,
+      "value": "ALLY",
+      "string_literal_record_file_offset": 34488,
+      "record_raw8": "0400000040df0600",
+      "string_data_file_offset": 749504,
+      "string_raw": "414c4c59"
+    },
+    {
+      "slot_va": "0x188931568",
+      "slot_file_offset": 143848296,
+      "raw8": "ed4500a000000000",
+      "kind": 5,
+      "index": 8950,
+      "value": "ENEMY",
+      "string_literal_record_file_offset": 71872,
+      "record_raw8": "05000000ce310900",
+      "string_data_file_offset": 901710,
+      "string_raw": "454e454d59"
+    },
+    {
+      "slot_va": "0x1888d2b10",
+      "slot_file_offset": 143460624,
+      "raw8": "556b00a000000000",
+      "kind": 5,
+      "index": 13738,
+      "value": "NEUTRAL",
+      "string_literal_record_file_offset": 110176,
+      "record_raw8": "0700000054450b00",
+      "string_data_file_offset": 1037780,
+      "string_raw": "4e45555452414c"
+    }
+  ],
+  "tag_manager_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\skill_preparation\\tag_manager_inputs.json",
+  "tag_manager_sha256": "93f85c8e6acd5ec8c9c405272d088aa997d8c5607be8a2f6e51e1990b27c18d1",
+  "layer_indices": {
+    "ALLY": 10,
+    "ENEMY": 9,
+    "NEUTRAL": 28
+  },
+  "layer_masks": {
+    "ALLY": 1024,
+    "ENEMY": 512,
+    "NEUTRAL": 268435456
+  },
+  "side_same_masks": [
+    1,
+    2,
+    4
+  ],
+  "side_opposite_masks": [
+    2,
+    5,
+    2
+  ],
+  "side_cctor_va": "0x180b06970",
+  "side_raw_note": "OPPOSITE_SIDES store is at180b06b6a; decompiler erroneously marked tail PIC branch unreachable.",
+  "side_match_helper_va": "0x186727990",
+  "side_match_rule": "(1 << slot) == sourceSide; no bit-membership test. Same falls back to sourceSide and opposite to 0 for composite sides.",
+  "ALL_delegate": {
+    "slot_va": "0x1889053a8",
+    "slot_file_offset": 143667624,
+    "raw8": "1f47026000000000",
+    "kind": 3,
+    "index": 74639,
+    "metadata_method_index": 74639,
+    "declaring_type": "Torappu.Battle.FilterUtil",
+    "method_name": "_Filter_All",
+    "token": "0x6012390"
+  },
+  "default_small_enough_gap_raw": 4294967,
+  "small_gap_origin": "FP.EN3 initialized by native One/1000 division, FilterUtil copies static+68",
+  "big_enough_gap_int": 1000000,
+  "big_gap_origin": "WeightedTarget canonical cctor185528350 stores0xf4240 atstatic+8",
+  "fp_equality_epsilon_raw": 42950,
+  "epsilon_origin": "MathUtil.cctor1866e6e50 copiesFP.EN5/static+78 toMathUtil static0",
+  "source_purpose_mask": 0,
+  "purpose_origin": "TargetSelector.get_sourcePurposeMask1809fc980 normalnohotfixreturn0, independentofAbilityStandard purpose",
+  "ability_can_select_camouflage": false,
+  "scope": "Serialized/native static initial values, not proof of live hotfix/NameToLayer/global overrides"
+}

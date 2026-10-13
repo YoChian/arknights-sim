@@ -1,0 +1,1222 @@
+{
+  "hidden_before_signal": {
+    "frame": 10,
+    "time_raw": 1431654400,
+    "npc_created": true,
+    "npc_alive": true,
+    "host_disappeared": true,
+    "host_game_active": false,
+    "host_state": 11,
+    "host_grid": [
+      0,
+      1
+    ],
+    "host_route": "host_initial_route",
+    "host_cursor_index": 0,
+    "passive_active": true,
+    "restore_callbacks": 0,
+    "finish_reason": null,
+    "clear_callbacks": 0,
+    "lock": 0.0,
+    "life": 3,
+    "temp_life": 0,
+    "wave_members": 0,
+    "final_members": 1,
+    "reward": null,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false
+  },
+  "after_damage_signal": {
+    "frame": 10,
+    "time_raw": 1431654400,
+    "npc_created": true,
+    "npc_alive": false,
+    "host_disappeared": false,
+    "host_game_active": false,
+    "host_state": 11,
+    "host_grid": [
+      3,
+      5
+    ],
+    "host_route": "npc_runtime_route_11",
+    "host_cursor_index": 4,
+    "passive_active": false,
+    "restore_callbacks": 2,
+    "finish_reason": 7,
+    "clear_callbacks": 0,
+    "lock": 0.0,
+    "life": 3,
+    "temp_life": 0,
+    "wave_members": 0,
+    "final_members": 1,
+    "reward": null,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false
+  },
+  "damage_signal_fixture": {
+    "scope": "controlled_npc_actions_summon_disappear_restore_with_external_signals",
+    "snapshot": {
+      "frame": 12,
+      "time_raw": 1717985280,
+      "npc_created": true,
+      "npc_alive": false,
+      "host_disappeared": false,
+      "host_game_active": true,
+      "host_state": 1,
+      "host_grid": [
+        3,
+        5
+      ],
+      "host_route": "npc_runtime_route_11",
+      "host_cursor_index": 4,
+      "passive_active": false,
+      "restore_callbacks": 2,
+      "finish_reason": 7,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 3,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 1,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false
+    },
+    "events": [
+      {
+        "frame": 0,
+        "event": "mode_before_provider"
+      },
+      {
+        "frame": 0,
+        "event": "before_disappear_provider",
+        "value": true
+      },
+      {
+        "frame": 0,
+        "event": "external_transition_and_move_hooks",
+        "old": 1,
+        "new": 11,
+        "admitted": true
+      },
+      {
+        "frame": 0,
+        "event": "modifier_provider",
+        "added": true
+      },
+      {
+        "frame": 0,
+        "event": "tween_ticket_provider",
+        "token": "host_shdopl/disappear/0",
+        "segments": [
+          [
+            "rgb",
+            0.0,
+            0.15000000596046448
+          ],
+          [
+            "alpha",
+            0.0,
+            0.15000000596046448
+          ]
+        ]
+      },
+      {
+        "frame": 0,
+        "event": "disappear_changed_provider",
+        "value": true
+      },
+      {
+        "frame": 1,
+        "event": "prepared_route_provider",
+        "spawned_count": 11
+      },
+      {
+        "frame": 1,
+        "event": "initialized_factory_provider",
+        "enemy_key": "enemy_3001_upeopl",
+        "options": {
+          "unharmful": true,
+          "always_count_as_killed": false,
+          "dont_count_as_finished": true,
+          "is_summon": true,
+          "spawned_count": 11,
+          "disable_born_tween_color": false,
+          "hidden_group_key": null,
+          "action_extra_meta": null,
+          "action_data": null,
+          "no_log_in_enemy_stats_when_finished": false
+        }
+      },
+      {
+        "frame": 1,
+        "event": "prepared_progress_provider",
+        "progress": 0
+      },
+      {
+        "frame": 1,
+        "event": "unity_position_provider",
+        "position": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 1,
+        "event": "npc_face_provider"
+      },
+      {
+        "frame": 1,
+        "event": "additional_initialized_buff_provider",
+        "template": "enemy_shdopl_finish"
+      },
+      {
+        "frame": 1,
+        "event": "mode_spawned_provider"
+      },
+      {
+        "frame": 1,
+        "event": "mode_after_provider"
+      },
+      {
+        "frame": 9,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 9,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 9,
+        "event": "tween_completion_provider",
+        "token": "host_shdopl/disappear/0"
+      },
+      {
+        "frame": 9,
+        "event": "unity_set_active_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "external_npc_pose",
+        "grid": [
+          3,
+          5
+        ],
+        "cursor_index": 4
+      },
+      {
+        "frame": 10,
+        "event": "external_on_take_damage10",
+        "hp_damage_calculated": false
+      },
+      {
+        "frame": 10,
+        "event": "unity_grid_position_provider",
+        "grid": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "event": "restore_callback",
+        "result": true
+      },
+      {
+        "frame": 10,
+        "event": "before_disappear_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "face_provider"
+      },
+      {
+        "frame": 10,
+        "event": "disappear_changed_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "finish_passive_provider"
+      },
+      {
+        "frame": 10,
+        "event": "synchronous_finish7_provider"
+      },
+      {
+        "frame": 10,
+        "event": "unity_grid_position_provider",
+        "grid": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "event": "restore_callback",
+        "result": true
+      },
+      {
+        "frame": 10,
+        "event": "finish_passive_provider"
+      },
+      {
+        "frame": 11,
+        "event": "modifier_provider",
+        "added": false
+      },
+      {
+        "frame": 11,
+        "event": "unity_set_active_provider",
+        "value": true
+      },
+      {
+        "frame": 11,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 11,
+        "event": "tween_ticket_provider",
+        "token": "host_shdopl/appear/1",
+        "segments": [
+          [
+            "alpha",
+            1.0,
+            0.15000000596046448
+          ],
+          [
+            "rgb",
+            1.0,
+            0.15000000596046448
+          ]
+        ]
+      },
+      {
+        "frame": 11,
+        "event": "external_transition_and_move_hooks",
+        "old": 11,
+        "new": 1,
+        "admitted": true
+      },
+      {
+        "frame": 12,
+        "event": "stationary_move_provider"
+      }
+    ],
+    "action_trace": [
+      [
+        "event",
+        "passive_buff",
+        0,
+        1
+      ],
+      [
+        "return",
+        "passive_buff",
+        0,
+        true,
+        null
+      ],
+      [
+        "event",
+        "finish_buff",
+        10,
+        1
+      ],
+      [
+        "event",
+        "finish_buff",
+        4,
+        3
+      ],
+      [
+        "return",
+        "finish_buff",
+        4,
+        true,
+        null
+      ],
+      [
+        "return",
+        "finish_buff",
+        10,
+        false,
+        "AssignValueToBB"
+      ]
+    ],
+    "summon_events": [
+      {
+        "frame": 0,
+        "event": "capture",
+        "host_uid": 23,
+        "origin_cursor_index": 0
+      },
+      {
+        "frame": 1,
+        "event": "counter_and_options",
+        "spawned_count": 11
+      },
+      {
+        "frame": 1,
+        "event": "tracked",
+        "summoned_uid": 24,
+        "host_uid": 23,
+        "wave_member": false,
+        "final_member": true
+      },
+      {
+        "frame": 1,
+        "event": "spawned",
+        "summoned_uid": 24
+      },
+      {
+        "frame": 1,
+        "event": "mode_after"
+      }
+    ],
+    "restore_events": [
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "before_disappear",
+        "value": true
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "modifier_add"
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "tween_start",
+        "tween_kind": "disappear",
+        "token": "host_shdopl/disappear/0"
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "disappear_enter",
+        "coroutine_handle": 2
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "disappear_changed",
+        "value": true
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "tween_kill",
+        "token": "host_shdopl/disappear/0",
+        "complete": true
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_active",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "restore_position",
+        "grid_position": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "disable_current_still_pull",
+        "count": 0
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "route_reassigned",
+        "route": "npc_runtime_route_11",
+        "progress": 4
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "before_disappear",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "face_from_cursor"
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "disappear_changed",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "restore_position",
+        "grid_position": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "disable_current_still_pull",
+        "count": 0
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "route_reassigned",
+        "route": "npc_runtime_route_11",
+        "progress": 4
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "setter_no_change"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "switch_default_requested",
+        "requested": 0,
+        "resolved": 1
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "coroutine_stop_invalidate"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "modifier_remove"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "set_active",
+        "value": true
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "tween_start",
+        "tween_kind": "appear",
+        "token": "host_shdopl/appear/1"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "disappear_exit"
+      },
+      {
+        "frame": 12,
+        "time_raw": 1717985280,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      }
+    ],
+    "signal_results": [
+      {
+        "event": 10,
+        "result": false,
+        "executed": [
+          "ForceSetToSourcePosition",
+          "SetDisappear",
+          "FinishBuffsById",
+          "InstantKill"
+        ],
+        "stopped_before": "AssignValueToBB"
+      }
+    ],
+    "life_events": [],
+    "external_inputs": {
+      "initialized_entities_and_buffs": true,
+      "buff_dispatch_and_membership": "explicit initialized NPC component fixture; no client runtime",
+      "initial_host_uid": 23,
+      "initialized_npc_uid": 24,
+      "initial_spawned_counter": 10,
+      "tick_dt_raw": 143165440,
+      "delta_play_time_single": 0.03333330154418945,
+      "shared_controller_owner_exists_and_active": true,
+      "clock_anchor": "initialized MOVE host before passive fixture activation",
+      "npc_pose_and_take_damage_or_finish_signals": true,
+      "native_default_no_hotfix": true,
+      "default_noncoop_empty_global_modifiers": true,
+      "initial_life_and_temp_life": [
+        3,
+        0
+      ],
+      "blackboard_culture": "invariant_ascii",
+      "prepared_zero_checkpoint_runtime_routes": true,
+      "stationary_move_provider": true,
+      "fsm_admission_and_move_enter_exit_hooks": "explicit initialized NPC component fixture; no client runtime",
+      "unity_active_hierarchy_matches_self": true,
+      "unity_activation_position_color_and_tween_provider": true,
+      "tween_time_and_easing_simulated": false,
+      "factory_and_birth_registration_implemented": false,
+      "physics_hits_supplied": false,
+      "npc_hp_damage_calculated": false,
+      "entity_finish_mode_pool_and_full_buff_container_implemented": false,
+      "final_membership_pending_native_mode_recycle": true
+    },
+    "client_runtime_compared": false,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false,
+    "reward": null
+  },
+  "death_signal_fixture": {
+    "scope": "controlled_npc_actions_summon_disappear_restore_with_external_signals",
+    "snapshot": {
+      "frame": 12,
+      "time_raw": 1717985280,
+      "npc_created": true,
+      "npc_alive": false,
+      "host_disappeared": false,
+      "host_game_active": true,
+      "host_state": 1,
+      "host_grid": [
+        3,
+        5
+      ],
+      "host_route": "npc_runtime_route_11",
+      "host_cursor_index": 4,
+      "passive_active": false,
+      "restore_callbacks": 1,
+      "finish_reason": 2,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 2,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 1,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false
+    },
+    "events": [
+      {
+        "frame": 0,
+        "event": "mode_before_provider"
+      },
+      {
+        "frame": 0,
+        "event": "before_disappear_provider",
+        "value": true
+      },
+      {
+        "frame": 0,
+        "event": "external_transition_and_move_hooks",
+        "old": 1,
+        "new": 11,
+        "admitted": true
+      },
+      {
+        "frame": 0,
+        "event": "modifier_provider",
+        "added": true
+      },
+      {
+        "frame": 0,
+        "event": "tween_ticket_provider",
+        "token": "host_shdopl/disappear/0",
+        "segments": [
+          [
+            "rgb",
+            0.0,
+            0.15000000596046448
+          ],
+          [
+            "alpha",
+            0.0,
+            0.15000000596046448
+          ]
+        ]
+      },
+      {
+        "frame": 0,
+        "event": "disappear_changed_provider",
+        "value": true
+      },
+      {
+        "frame": 1,
+        "event": "prepared_route_provider",
+        "spawned_count": 11
+      },
+      {
+        "frame": 1,
+        "event": "initialized_factory_provider",
+        "enemy_key": "enemy_3001_upeopl",
+        "options": {
+          "unharmful": true,
+          "always_count_as_killed": false,
+          "dont_count_as_finished": true,
+          "is_summon": true,
+          "spawned_count": 11,
+          "disable_born_tween_color": false,
+          "hidden_group_key": null,
+          "action_extra_meta": null,
+          "action_data": null,
+          "no_log_in_enemy_stats_when_finished": false
+        }
+      },
+      {
+        "frame": 1,
+        "event": "prepared_progress_provider",
+        "progress": 0
+      },
+      {
+        "frame": 1,
+        "event": "unity_position_provider",
+        "position": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 1,
+        "event": "npc_face_provider"
+      },
+      {
+        "frame": 1,
+        "event": "additional_initialized_buff_provider",
+        "template": "enemy_shdopl_finish"
+      },
+      {
+        "frame": 1,
+        "event": "mode_spawned_provider"
+      },
+      {
+        "frame": 1,
+        "event": "mode_after_provider"
+      },
+      {
+        "frame": 9,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 9,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 9,
+        "event": "tween_completion_provider",
+        "token": "host_shdopl/disappear/0"
+      },
+      {
+        "frame": 9,
+        "event": "unity_set_active_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "external_npc_pose",
+        "grid": [
+          3,
+          5
+        ],
+        "cursor_index": 4
+      },
+      {
+        "frame": 10,
+        "event": "external_finish_reason2",
+        "hp_damage_calculated": false
+      },
+      {
+        "frame": 10,
+        "event": "modify_life_provider",
+        "delta": -1,
+        "life": 2
+      },
+      {
+        "frame": 10,
+        "event": "unity_grid_position_provider",
+        "grid": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "event": "restore_callback",
+        "result": true
+      },
+      {
+        "frame": 10,
+        "event": "before_disappear_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "face_provider"
+      },
+      {
+        "frame": 10,
+        "event": "disappear_changed_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "finish_passive_provider"
+      },
+      {
+        "frame": 11,
+        "event": "modifier_provider",
+        "added": false
+      },
+      {
+        "frame": 11,
+        "event": "unity_set_active_provider",
+        "value": true
+      },
+      {
+        "frame": 11,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 11,
+        "event": "tween_ticket_provider",
+        "token": "host_shdopl/appear/1",
+        "segments": [
+          [
+            "alpha",
+            1.0,
+            0.15000000596046448
+          ],
+          [
+            "rgb",
+            1.0,
+            0.15000000596046448
+          ]
+        ]
+      },
+      {
+        "frame": 11,
+        "event": "external_transition_and_move_hooks",
+        "old": 11,
+        "new": 1,
+        "admitted": true
+      },
+      {
+        "frame": 12,
+        "event": "stationary_move_provider"
+      }
+    ],
+    "action_trace": [
+      [
+        "event",
+        "passive_buff",
+        0,
+        1
+      ],
+      [
+        "return",
+        "passive_buff",
+        0,
+        true,
+        null
+      ],
+      [
+        "event",
+        "dead_buff",
+        3,
+        2
+      ],
+      [
+        "return",
+        "dead_buff",
+        3,
+        true,
+        null
+      ],
+      [
+        "event",
+        "finish_buff",
+        4,
+        2
+      ],
+      [
+        "return",
+        "finish_buff",
+        4,
+        true,
+        null
+      ]
+    ],
+    "summon_events": [
+      {
+        "frame": 0,
+        "event": "capture",
+        "host_uid": 23,
+        "origin_cursor_index": 0
+      },
+      {
+        "frame": 1,
+        "event": "counter_and_options",
+        "spawned_count": 11
+      },
+      {
+        "frame": 1,
+        "event": "tracked",
+        "summoned_uid": 24,
+        "host_uid": 23,
+        "wave_member": false,
+        "final_member": true
+      },
+      {
+        "frame": 1,
+        "event": "spawned",
+        "summoned_uid": 24
+      },
+      {
+        "frame": 1,
+        "event": "mode_after"
+      }
+    ],
+    "restore_events": [
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "before_disappear",
+        "value": true
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "modifier_add"
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "tween_start",
+        "tween_kind": "disappear",
+        "token": "host_shdopl/disappear/0"
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "disappear_enter",
+        "coroutine_handle": 2
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "disappear_changed",
+        "value": true
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "tween_kill",
+        "token": "host_shdopl/disappear/0",
+        "complete": true
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_active",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "restore_position",
+        "grid_position": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "disable_current_still_pull",
+        "count": 0
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "route_reassigned",
+        "route": "npc_runtime_route_11",
+        "progress": 4
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "before_disappear",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "face_from_cursor"
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "disappear_changed",
+        "value": false
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "switch_default_requested",
+        "requested": 0,
+        "resolved": 1
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "coroutine_stop_invalidate"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "modifier_remove"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "set_active",
+        "value": true
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "tween_start",
+        "tween_kind": "appear",
+        "token": "host_shdopl/appear/1"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "disappear_exit"
+      },
+      {
+        "frame": 12,
+        "time_raw": 1717985280,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      }
+    ],
+    "signal_results": [],
+    "life_events": [
+      {
+        "kind": "life_modified",
+        "frame": 10,
+        "time_raw": 1431654400,
+        "source": "Dead/value explicit NPC event provider",
+        "requested_delta": -1,
+        "applied_delta": -1,
+        "applied_delta_fp_raw": -4294967296,
+        "life_before": 3,
+        "life": 2,
+        "temp_life_before": 0,
+        "temp_life": 0,
+        "is_reach_exit": false,
+        "event_id": 34
+      }
+    ],
+    "external_inputs": {
+      "initialized_entities_and_buffs": true,
+      "buff_dispatch_and_membership": "explicit initialized NPC component fixture; no client runtime",
+      "initial_host_uid": 23,
+      "initialized_npc_uid": 24,
+      "initial_spawned_counter": 10,
+      "tick_dt_raw": 143165440,
+      "delta_play_time_single": 0.03333330154418945,
+      "shared_controller_owner_exists_and_active": true,
+      "clock_anchor": "initialized MOVE host before passive fixture activation",
+      "npc_pose_and_take_damage_or_finish_signals": true,
+      "native_default_no_hotfix": true,
+      "default_noncoop_empty_global_modifiers": true,
+      "initial_life_and_temp_life": [
+        3,
+        0
+      ],
+      "blackboard_culture": "invariant_ascii",
+      "prepared_zero_checkpoint_runtime_routes": true,
+      "stationary_move_provider": true,
+      "fsm_admission_and_move_enter_exit_hooks": "explicit initialized NPC component fixture; no client runtime",
+      "unity_active_hierarchy_matches_self": true,
+      "unity_activation_position_color_and_tween_provider": true,
+      "tween_time_and_easing_simulated": false,
+      "factory_and_birth_registration_implemented": false,
+      "physics_hits_supplied": false,
+      "npc_hp_damage_calculated": false,
+      "entity_finish_mode_pool_and_full_buff_container_implemented": false,
+      "final_membership_pending_native_mode_recycle": true
+    },
+    "client_runtime_compared": false,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false,
+    "reward": null
+  }
+}

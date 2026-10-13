@@ -1,0 +1,124 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "slots": [
+    {
+      "role": "MonoBehaviour recycle coroutine allocation",
+      "va": "0x188903e78",
+      "file_offset": 143662200,
+      "raw_bytes8": "9723032000000000",
+      "encoded": "0x20032397",
+      "native_type_index": 102859,
+      "resolved_type": {
+        "address": "0x188ac30b0",
+        "file_offset": 145493680,
+        "raw_bytes12": "282700000000000000001200",
+        "data": 10024,
+        "bits": "0x120000",
+        "attrs": 0,
+        "type_tag": "0x12",
+        "byref": false,
+        "valuetype_bit": false,
+        "definition_index": 10024,
+        "name": "Torappu.Battle.PoolManagerExtensions.<_RecycleAsync>d__3",
+        "is_value_type": false,
+        "is_enum": false,
+        "type_index": 102859,
+        "pointer_record_file_offset": 131400760
+      }
+    },
+    {
+      "role": "IReusable interface cast",
+      "va": "0x188808330",
+      "file_offset": 142631216,
+      "raw_bytes8": "c3c4012000000000",
+      "encoded": "0x2001c4c3",
+      "native_type_index": 57953,
+      "resolved_type": {
+        "address": "0x1889bedd0",
+        "file_offset": 144427984,
+        "raw_bytes12": "731600000000000000001200",
+        "data": 5747,
+        "bits": "0x120000",
+        "attrs": 0,
+        "type_tag": "0x12",
+        "byref": false,
+        "valuetype_bit": false,
+        "definition_index": 5747,
+        "name": "Torappu.ObjectPool.IReusable",
+        "is_value_type": false,
+        "is_enum": false,
+        "type_index": 57953,
+        "pointer_record_file_offset": 131041512
+      }
+    }
+  ],
+  "type_definitions": [
+    {
+      "definition_index": 10024,
+      "name": "Torappu.Battle.PoolManagerExtensions.<_RecycleAsync>d__3",
+      "metadata_record_file_offset": 38992816,
+      "methods": [
+        {
+          "metadata_method_index": 64259,
+          "name": ".ctor",
+          "token": "0x600fb04",
+          "virtual_slot": 65535
+        },
+        {
+          "metadata_method_index": 64260,
+          "name": "System.IDisposable.Dispose",
+          "token": "0x600fb05",
+          "virtual_slot": 5
+        },
+        {
+          "metadata_method_index": 64261,
+          "name": "MoveNext",
+          "token": "0x600fb06",
+          "virtual_slot": 6
+        },
+        {
+          "metadata_method_index": 64262,
+          "name": "System.Collections.Generic.IEnumerator<System.Object>.get_Current",
+          "token": "0x600fb07",
+          "virtual_slot": 4
+        },
+        {
+          "metadata_method_index": 64263,
+          "name": "System.Collections.IEnumerator.Reset",
+          "token": "0x600fb08",
+          "virtual_slot": 8
+        },
+        {
+          "metadata_method_index": 64264,
+          "name": "System.Collections.IEnumerator.get_Current",
+          "token": "0x600fb09",
+          "virtual_slot": 7
+        }
+      ]
+    },
+    {
+      "definition_index": 5747,
+      "name": "Torappu.ObjectPool.IReusable",
+      "metadata_record_file_offset": 38599332,
+      "methods": [
+        {
+          "metadata_method_index": 34567,
+          "name": "OnAllocate",
+          "token": "0x6008708",
+          "virtual_slot": 0
+        },
+        {
+          "metadata_method_index": 34568,
+          "name": "OnRecycle",
+          "token": "0x6008709",
+          "virtual_slot": 1
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Immutable pre-initialization encoded usage values only; no target initializer executed.",
+    "Native allocation/cast instructions are separately recorded in raw_extra and raw_helpers."
+  ]
+}

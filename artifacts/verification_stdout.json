@@ -1,0 +1,147 @@
+{
+  "healthy": true,
+  "tests_run": 71,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "source_hashes_verified": true,
+  "svg_xml_valid": true,
+  "main_declarations_replayed": 38,
+  "walk_routes_probed": 28,
+  "cardinal_reachable_routes": 28,
+  "raw_matrix_view_reachable_routes": 15,
+  "coordinate_mapping_native_verified": true,
+  "coordinate_evidence_addresses": [
+    "0x18241d270",
+    "0x18241d1e0",
+    "0x18241d300",
+    "0x18241d330"
+  ],
+  "fixed_point_reference": {
+    "scope": "independent_CSharp_native_translation_not_client_oracle",
+    "native_functions": 45,
+    "pair_cases": 7073,
+    "unary_cases": 81,
+    "float32_cases": 93,
+    "double_cases": 92,
+    "file_sha256": {
+      "FPReference.cs": "ec50d0338883c6a4eb690d6da1fa7bedcc2b5cc58eaa5c10a12058014f126ec6",
+      "reference_vectors.json": "60740a42b6f3db355107009d57da0c4f4bbe40c65eb048f0fa200cb56fa97bfe",
+      "native_report.json": "e33f6349ad49e104fa82dc9276679427e5191059830423983d6bb1ca09483752",
+      "native_disassembly.json": "503d12953eecbe58e4696abce8878d8d641658db5615814928d9093f408e5b2d",
+      "native_types.json": "95319901ec246848e5750b00c10f23575a22baabc0f1c3ea9ed4a6b99de99a98",
+      "metadata_declarations.json": "9f0ce8d5f88bfe40961b6426caf5bd76f1787e230c28ca754de1ab23a42920c4"
+    },
+    "client_runtime_compared": false
+  },
+  "sort_reference": {
+    "healthy": true,
+    "scope": "independent C# reconstruction reference; not game oracle",
+    "case_count": 152,
+    "identity_checks": 5616,
+    "single_compare_to_checks": 81,
+    "host_list_sort_different_cases": 56,
+    "vector_sha256": "3788877f048fc8cf06df84429885d3ffc760601891385cd4bcc0b3bce1c8626d",
+    "client_runtime_compared": false
+  },
+  "timeline_coroutine_reference": {
+    "scope": "independent C# IEnumerator translation of static native paths; not game runtime",
+    "validated_by_full_test_suite": true,
+    "coroutine_cases": 106,
+    "coroutine_tick_states": 803,
+    "coroutine_events": 340,
+    "binary32_waits": 155,
+    "kernel_cases": 6,
+    "kernel_tick_states": 1827,
+    "kernel_events": 71,
+    "files_sha256": {
+      "TimelineReference.cs": "45a18746d122f825a30c64effff20b86b70d90a3512c1c1c846e2256db4200c0",
+      "reference_input.json": "9efe2c16f1940a232c3a04a39ea4c2666feb52f276546192afd60c95c8f80e24",
+      "reference_vectors.json": "23a59a0b04445d306fd76300b2bd536a4294f3f4675c7a6e374f467a9861811b",
+      "native_evidence.json": "d7489ea915597e63be2aee50b7fb105cec310cefb6613eb211ed3a2ca92d5d10"
+    },
+    "prepared_queues_sort_independently_compared": false,
+    "client_runtime_compared": false
+  },
+  "timeline_evidence": {
+    "healthy": true,
+    "scope": "hash_pinned_static_native_and_serialized_clock_evidence",
+    "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+    "files_checked": 11,
+    "ledger_sha256": "aa62dcbade5f788026e1fbfec0486802ad8811eecd4ee5fae984ef9f21a9195b",
+    "client_runtime_compared": false,
+    "live_fixed_delta_validated": false
+  },
+  "conditional_timeline_examples": {
+    "normal": {
+      "mode": "NORMAL",
+      "frames": 1200,
+      "time_raw": 171798528000,
+      "phase": "wave_gate",
+      "spawn_requests": 15,
+      "preview_requests": 2,
+      "alive_tracked": 15,
+      "clock_origin": "serialized_TimeManager_initial_value",
+      "input_source": "review_fixture_explicit_zero_extra_delay_successful_counted_creation_not_merged_client_attributes",
+      "battle_ready": false,
+      "live_fixed_delta_validated": false,
+      "synthetic_kills_performed": false
+    },
+    "four_star": {
+      "mode": "FOUR_STAR",
+      "frames": 1200,
+      "time_raw": 171798528000,
+      "phase": "wave_gate",
+      "spawn_requests": 14,
+      "preview_requests": 0,
+      "alive_tracked": 14,
+      "clock_origin": "serialized_TimeManager_initial_value",
+      "input_source": "review_fixture_explicit_zero_extra_delay_successful_counted_creation_not_merged_client_attributes",
+      "battle_ready": false,
+      "live_fixed_delta_validated": false,
+      "synthetic_kills_performed": false
+    }
+  },
+  "independent_preprocessor": {
+    "scope": "independent_static_rogue_preprocessor_with_explicit_order_and_retain_inputs",
+    "group_selections": {
+      "t1": 0,
+      "t2": 5,
+      "c1": 4
+    },
+    "group_order": [
+      "t1",
+      "t2",
+      "c1"
+    ],
+    "preserve_mode": true,
+    "mimic_count": 0,
+    "gold_count": 0,
+    "selected_mimic_groups": [],
+    "selected_gold_groups": [],
+    "next_double_calls": 3,
+    "input_source": "independent_seed42_explicit_order_and_zero_retain_fixture",
+    "topic_id": "rogue_6",
+    "client_run_seed_validated": false,
+    "client_rng_consumption_validated": false,
+    "client_runtime_compared": false,
+    "battle_ready": false
+  },
+  "runtime_battle_validated": false,
+  "scope": "structure_topology_static_rng_fp_sort_and_conditional_frame_scheduler_with_external_inputs",
+  "legacy_rng_reference": {
+    "healthy": true,
+    "scope": "cross_language_implementation_comparison_not_real_client_oracle",
+    "seed_count": 8,
+    "checks": {
+      "next_integer_checks": 1024,
+      "sample_binary64_checks": 128,
+      "next_double_binary64_checks": 128,
+      "bounded_integer_checks": 64,
+      "range_integer_checks": 56,
+      "range_consumption_checks": 8,
+      "system_random_sequence_differences": 8
+    },
+    "client_runtime_compared": false
+  }
+}

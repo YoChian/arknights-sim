@@ -1,0 +1,82 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "fieldinfo_slot": {
+    "va": "0x1888a2778",
+    "file_offset": 143263096,
+    "encoded": "0x80000365",
+    "raw_bytes8": "6503008000000000",
+    "source_index": 434
+  },
+  "field_reference": {
+    "metadata_file_offset": 42770600,
+    "native_type_index": 34841,
+    "local_field_index": 10,
+    "owner": {
+      "address": "0x188b12690",
+      "file_offset": 145818768,
+      "raw_bytes12": "1ba600000000000000001200",
+      "data": 42523,
+      "bits": "0x120000",
+      "attrs": 0,
+      "type_tag": "0x12",
+      "byref": false,
+      "valuetype_bit": false,
+      "definition_index": 42523,
+      "name": "<PrivateImplementationDetails>",
+      "is_value_type": false,
+      "is_enum": false,
+      "type_index": 34841,
+      "pointer_record_file_offset": 130856616
+    },
+    "absolute_field_index": 335121,
+    "name": "195ABC1ABB69B6BD65F20ACAFA79EED2D330BF513E25C830F24B8A78D8703446",
+    "token": "0x4001cfd",
+    "native_type": {
+      "address": "0x188a9eb70",
+      "file_offset": 145344880,
+      "raw_bytes12": "f9a500000000000033011180",
+      "data": 42489,
+      "bits": "0x80110133",
+      "attrs": 307,
+      "type_tag": "0x11",
+      "byref": false,
+      "valuetype_bit": true,
+      "definition_index": 42489,
+      "name": "<PrivateImplementationDetails>.__StaticArrayInitTypeSize=128",
+      "is_value_type": true,
+      "is_enum": false,
+      "type_index": 85687,
+      "pointer_record_file_offset": 131263384
+    }
+  },
+  "metadata_default": {
+    "default_type_index": 85686,
+    "data_index": 5292392,
+    "blob_file_offset": 27057168,
+    "blob_bytes128": "000000000000f03f000000000000244000000000000059400000000000408f40000000000088c34000000000006af8400000000080842e4100000000d01263410000000084d797410000000065cdcd41000000205fa00242000000e876483742000000a2941a6d42000040e59c30a2420000901ec4bcd64200003426f56b0c43",
+    "double_le": [
+      1.0,
+      10.0,
+      100.0,
+      1000.0,
+      10000.0,
+      100000.0,
+      1000000.0,
+      10000000.0,
+      100000000.0,
+      1000000000.0,
+      10000000000.0,
+      100000000000.0,
+      1000000000000.0,
+      10000000000000.0,
+      100000000000000.0,
+      1000000000000000.0
+    ]
+  },
+  "evidence_link": "native_v5/movement/raw_helpers.json: DeterministicUtil .cctor InitializeArray argument; exact instruction next 0x185ebb4cd + disp0x29e72ab",
+  "limits": [
+    "Static source bytes. Array interpretation requires recovered .cctor Double[16] allocation and InitializeArray call.",
+    "No target initializer executed."
+  ]
+}

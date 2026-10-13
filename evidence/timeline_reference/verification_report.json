@@ -1,0 +1,224 @@
+{
+  "scope": "independent C# IEnumerator translation of static native paths; not game runtime",
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "tests_passed": 8,
+  "reference_runtime": "4.0.30319.42000",
+  "reference_pointer_bits": 64,
+  "counts": {
+    "coroutine_cases": 106,
+    "coroutine_tick_states": 803,
+    "coroutine_events": 340,
+    "float32_wait_vectors": 155,
+    "kernel_cases": 6,
+    "kernel_frame_states": 1827,
+    "kernel_events": 71
+  },
+  "kernel_summary": [
+    {
+      "name": "zero_waves",
+      "completed": true,
+      "final_frame": 1,
+      "spawn_frames": [],
+      "preview_frames": []
+    },
+    {
+      "name": "one_empty_wave",
+      "completed": true,
+      "final_frame": 5,
+      "spawn_frames": [],
+      "preview_frames": []
+    },
+    {
+      "name": "two_empty_waves_three_fragments",
+      "completed": true,
+      "final_frame": 10,
+      "spawn_frames": [],
+      "preview_frames": []
+    },
+    {
+      "name": "map_NORMAL_empty_choices",
+      "completed": true,
+      "final_frame": 841,
+      "spawn_frames": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        832
+      ],
+      "preview_frames": [
+        740,
+        750
+      ]
+    },
+    {
+      "name": "map_NORMAL_boxes",
+      "completed": true,
+      "final_frame": 936,
+      "spawn_frames": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        834,
+        931
+      ],
+      "preview_frames": [
+        742,
+        752,
+        839,
+        849
+      ]
+    },
+    {
+      "name": "map_FOUR_STAR_empty_choices",
+      "completed": true,
+      "final_frame": 28,
+      "spawn_frames": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "preview_frames": []
+    }
+  ],
+  "semantic_discrepancies_found": [],
+  "evidence_annotation_discrepancy": "wait_while doc address 0x1806619c0 vs retained MoveNext candidate0x1806619a0; notified prototype",
+  "client_runtime_compared": false,
+  "hotfix_runtime_compared": false,
+  "not_independently_checked": [
+    "prepared queue compile/filter/native sorting",
+    "actual run RNG consumption and group choices",
+    "game-mode hooks",
+    "real enemy creation/lifecycle/gate behavior",
+    "validity/cancel/error fakeHost paths",
+    "runtime dt overrides",
+    "unsupported marker log side effects"
+  ],
+  "fixture_controls": [
+    "successfulCountedCreation=false explicitly supplied for every enemy",
+    "external_final_complete supplied after prime on frame0",
+    "serialized default dt raw143165440",
+    "mode before/after hooks excluded"
+  ],
+  "compiler": {
+    "path": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+    "flags": [
+      "/nologo",
+      "/platform:x64",
+      "/optimize+",
+      "/r:System.Web.Extensions.dll"
+    ]
+  },
+  "files": [
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\timeline_reference\\TimelineReference.cs",
+      "bytes": 8775,
+      "sha256": "45a18746d122f825a30c64effff20b86b70d90a3512c1c1c846e2256db4200c0",
+      "role": "reference evidence"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\timeline_reference\\TimelineReference.exe",
+      "bytes": 16384,
+      "sha256": "0c7cab79265d76e8cdda3410e7856a128f156eefac6fc1c0411cc8733ea33aff",
+      "role": "reference evidence"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\timeline_reference\\prepare_reference_input.py",
+      "bytes": 7798,
+      "sha256": "e7d83e2011f40726aab9b154e7218db909dbd7dece784fb25986fef4a68bd703",
+      "role": "reference evidence"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\timeline_reference\\reference_input.json",
+      "bytes": 123157,
+      "sha256": "9efe2c16f1940a232c3a04a39ea4c2666feb52f276546192afd60c95c8f80e24",
+      "role": "reference evidence"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\timeline_reference\\reference_vectors.json",
+      "bytes": 264455,
+      "sha256": "23a59a0b04445d306fd76300b2bd536a4294f3f4675c7a6e374f467a9861811b",
+      "role": "reference evidence"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\timeline_reference\\native_evidence.json",
+      "bytes": 41622,
+      "sha256": "d7489ea915597e63be2aee50b7fb105cec310cefb6613eb211ed3a2ca92d5d10",
+      "role": "reference evidence"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\timeline_reference\\REPORT.md",
+      "bytes": 7526,
+      "sha256": "f975f87b7fcd15d92fbfd641ae7586514ecca49d74af02b65ba479f1c8a4801a",
+      "role": "reference evidence"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\tests\\test_timeline_reference.py",
+      "bytes": 11000,
+      "sha256": "e9e9014ab8cced99c496098106d648f7c7d4b8f2d4e14a8c2c8a0a3328b31fb8",
+      "role": "test"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\coroutines.py",
+      "bytes": 3351,
+      "sha256": "52cd4d91d4d8d0efc661c56ec066aaebe5154b1874ec4346c0ee71b266687066",
+      "role": "implementation-under-test"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\timeline.py",
+      "bytes": 21331,
+      "sha256": "d0c72b9cf12aa064ba498fa412420793feadfea9ed03a78a1c57850d2a19fecd",
+      "role": "implementation-under-test"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\queue_sort.py",
+      "bytes": 3414,
+      "sha256": "1d74539adbd9c5efbba5d62124b091988ea651ebef320ec4855e0b0ea78a6028",
+      "role": "implementation-under-test"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\fp.py",
+      "bytes": 7783,
+      "sha256": "1002ff2f8c64cb441c3a88654e413a23eedfd5af61ed8ac187999823aed3462c",
+      "role": "implementation-under-test"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\data\\manifest.json",
+      "bytes": 7223,
+      "sha256": "319aa0ecd710a135242dde1e59aa4a76bfdde0a282c8c0519b58895f42dd8199",
+      "role": "reference evidence"
+    }
+  ]
+}

@@ -1,0 +1,145 @@
+[
+  {
+    "type": "Torappu.Blackboard",
+    "method": ".ctor",
+    "address": "0x182320ab0",
+    "metadata_method_index": 30803,
+    "token": "0x6007854",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": ".ctor",
+    "address": "0x1823209f0",
+    "metadata_method_index": 30804,
+    "token": "0x6007855",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": ".ctor",
+    "address": "0x182320ec0",
+    "metadata_method_index": 30805,
+    "token": "0x6007856",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": "AssignByPrefix",
+    "address": "0x18231d9c0",
+    "metadata_method_index": 30843,
+    "token": "0x600787c",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": "AssignValueStrByPrefix",
+    "address": "0x18231dd20",
+    "metadata_method_index": 30844,
+    "token": "0x600787d",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": "GetFpOrDefault",
+    "address": "0x18231f530",
+    "metadata_method_index": 30833,
+    "token": "0x6007872",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": "GetIntOrDefault",
+    "address": "0x18231f680",
+    "metadata_method_index": 30835,
+    "token": "0x6007874",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Battle.BasicTalent",
+    "method": "_CreateBlackboard",
+    "address": "0x1809730d0",
+    "metadata_method_index": 73320,
+    "token": "0x6011e69",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Battle.Context",
+    "method": "TakeSnapshot",
+    "address": "0x1806c5dd0",
+    "metadata_method_index": 65684,
+    "token": "0x6010095",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "Torappu.Battle.Context",
+    "method": "BeginChangeGard",
+    "address": "0x1806c5c20",
+    "metadata_method_index": 65685,
+    "token": "0x6010096",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "ChangeGuard",
+    "method": ".ctor",
+    "address": "0x1806c2e70",
+    "metadata_method_index": 65700,
+    "token": "0x60100a5",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "ChangeGuard",
+    "method": "set_source",
+    "address": "0x1806c3720",
+    "metadata_method_index": 65702,
+    "token": "0x60100a7",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "ChangeGuard",
+    "method": "set_target",
+    "address": "0x1806c37b0",
+    "metadata_method_index": 65704,
+    "token": "0x60100a9",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "ChangeGuard",
+    "method": "set_buff",
+    "address": "0x1806c33d0",
+    "metadata_method_index": 65706,
+    "token": "0x60100ab",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "ChangeGuard",
+    "method": "Dispose",
+    "address": "0x1806c2ce0",
+    "metadata_method_index": 65721,
+    "token": "0x60100ba",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "SortedDoubleBufferedBuffList",
+    "method": "Add",
+    "address": "0x180692370",
+    "metadata_method_index": 65287,
+    "token": "0x600ff08",
+    "reason": "Buff priority or FP compare gate"
+  },
+  {
+    "type": "Torappu.MathUtil",
+    "method": "GetCompareFuncFP",
+    "address": "0x1866e4d20",
+    "metadata_method_index": 220354,
+    "token": "0x600028c",
+    "reason": "Buff priority or FP compare gate"
+  },
+  {
+    "type": "ObjectPtrUidDispatch",
+    "method": "GetUID_call_target",
+    "address": "0x180bfec30",
+    "raw_call_target": true,
+    "reason": "ObjectPtr<Entity> validation calls this compiled UID dispatch, table cases/Entity actualUID getter; raw result supports equality but tag proof still needed"
+  }
+]

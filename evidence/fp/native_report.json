@@ -1,0 +1,2073 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "analysis_mode": "explicit selected PE function ranges; default whole-image analysis disabled",
+  "symbol_provenance": "Local metadata type Torappu.FP in Torappu.Common.dll; pointer table candidates validated as executable/file-backed. Function bounds use exact PE unwind records or separately identified leaf INT3 padding. No original symbols or target execution.",
+  "functions": [
+    {
+      "name": "Torappu_FP_Sign_0x60002f4",
+      "display_name": "Torappu.FP.Sign 0x60002f4",
+      "address": "0x1866fc980",
+      "end_address": "0x1866fc993",
+      "ranges": [
+        {
+          "start": "0x1866fc980",
+          "end_inclusive": "0x1866fc993"
+        }
+      ],
+      "file_offset": 107986304,
+      "token": "0x60002f4",
+      "metadata_method_index": 220458,
+      "pointer_table_file_offset": 146920232,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fc9a0",
+      "disassembled": true,
+      "instruction_count": 8,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nulonglong Torappu_FP_Sign_0x60002f4(longlong param_1)\r\n\r\n{\r\n  if (param_1 \u003c 0) {\r\n    return 0xffffffff;\r\n  }\r\n  return (ulonglong)(0 \u003c param_1);\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_Abs_0x60002f5",
+      "display_name": "Torappu.FP.Abs 0x60002f5",
+      "address": "0x1866faa10",
+      "end_address": "0x1866faa87",
+      "ranges": [
+        {
+          "start": "0x1866faa10",
+          "end_inclusive": "0x1866faa87"
+        }
+      ],
+      "file_offset": 107978256,
+      "token": "0x60002f5",
+      "metadata_method_index": 220459,
+      "pointer_table_file_offset": 146920240,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107981328,
+        "end_rva_exclusive": 107981448,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091272,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107981328,
+          "end_rva_exclusive": 107981448,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091272,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866faa90",
+      "disassembled": true,
+      "instruction_count": 29,
+      "direct_calls": [
+        {
+          "source": "1866faa29",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866faa6b",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_FP_Abs_0x60002f5(longlong param_1)\r\n\r\n{\r\n  if (DAT_188cc374c \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc374c \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (param_1 !\u003d -0x8000000000000000) {\r\n    return (param_1 \u003e\u003e 0x3f) + param_1 ^ param_1 \u003e\u003e 0x3f;\r\n  }\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140(_DAT_18885a700);\r\n  }\r\n  return *(ulonglong *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x10);\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_FastAbs_0x60002f6",
+      "display_name": "Torappu.FP.FastAbs 0x60002f6",
+      "address": "0x1866fb690",
+      "end_address": "0x1866fb69e",
+      "ranges": [
+        {
+          "start": "0x1866fb690",
+          "end_inclusive": "0x1866fb69e"
+        }
+      ],
+      "file_offset": 107981456,
+      "token": "0x60002f6",
+      "metadata_method_index": 220460,
+      "pointer_table_file_offset": 146920248,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fb6a0",
+      "disassembled": true,
+      "instruction_count": 5,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nulonglong Torappu_FP_FastAbs_0x60002f6(longlong param_1)\r\n\r\n{\r\n  return (param_1 \u003e\u003e 0x3f) + param_1 ^ param_1 \u003e\u003e 0x3f;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_Floor_0x60002f7",
+      "display_name": "Torappu.FP.Floor 0x60002f7",
+      "address": "0x1866fba20",
+      "end_address": "0x1866fba2d",
+      "ranges": [
+        {
+          "start": "0x1866fba20",
+          "end_inclusive": "0x1866fba2d"
+        }
+      ],
+      "file_offset": 107982368,
+      "token": "0x60002f7",
+      "metadata_method_index": 220461,
+      "pointer_table_file_offset": 146920256,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fba30",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nulonglong Torappu_FP_Floor_0x60002f7(ulonglong param_1)\r\n\r\n{\r\n  return param_1 \u0026 0xffffffff00000000;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_Ceiling_0x60002f8",
+      "display_name": "Torappu.FP.Ceiling 0x60002f8",
+      "address": "0x1866fb460",
+      "end_address": "0x1866fb4c8",
+      "ranges": [
+        {
+          "start": "0x1866fb460",
+          "end_inclusive": "0x1866fb4c8"
+        }
+      ],
+      "file_offset": 107980896,
+      "token": "0x60002f8",
+      "metadata_method_index": 220462,
+      "pointer_table_file_offset": 146920264,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107983968,
+        "end_rva_exclusive": 107984073,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091476,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107983968,
+          "end_rva_exclusive": 107984073,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091476,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fb4d0",
+      "disassembled": true,
+      "instruction_count": 24,
+      "direct_calls": [
+        {
+          "source": "1866fb479",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fb49c",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_FP_Ceiling_0x60002f8(ulonglong param_1)\r\n\r\n{\r\n  if (DAT_188cc374d \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc374d \u003d \u0027\\x01\u0027;\r\n  }\r\n  if ((int)param_1 !\u003d 0) {\r\n    if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140(_DAT_18885a700);\r\n    }\r\n    param_1 \u003d (param_1 \u0026 0xffffffff00000000) +\r\n              *(longlong *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20);\r\n  }\r\n  return param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_Round_0x60002f9",
+      "display_name": "Torappu.FP.Round 0x60002f9",
+      "address": "0x1866fc8d0",
+      "end_address": "0x1866fc978",
+      "ranges": [
+        {
+          "start": "0x1866fc8d0",
+          "end_inclusive": "0x1866fc978"
+        }
+      ],
+      "file_offset": 107986128,
+      "token": "0x60002f9",
+      "metadata_method_index": 220463,
+      "pointer_table_file_offset": 146920272,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107989200,
+        "end_rva_exclusive": 107989369,
+        "unwind_rva": 133577276,
+        "record_file_offset": 218091620,
+        "unwind_file_offset": 133571132,
+        "unwind_flags": 0,
+        "unwind_code_count": 4,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107989200,
+          "end_rva_exclusive": 107989369,
+          "unwind_rva": 133577276,
+          "record_file_offset": 218091620,
+          "unwind_file_offset": 133571132,
+          "unwind_flags": 0,
+          "unwind_code_count": 4,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fc980",
+      "disassembled": true,
+      "instruction_count": 41,
+      "direct_calls": [
+        {
+          "source": "1866fc8ed",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fc90e",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fc946",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_FP_Round_0x60002f9(ulonglong param_1)\r\n\r\n{\r\n  if (DAT_188cc374e \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc374e \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140(_DAT_18885a700);\r\n  }\r\n  if ((0x7fffffff \u003c (param_1 \u0026 0xffffffff)) \u0026\u0026\r\n     ((0x80000000 \u003c (param_1 \u0026 0xffffffff) || ((param_1 \u003e\u003e 0x20 \u0026 1) !\u003d 0)))) {\r\n    if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140(_DAT_18885a700);\r\n    }\r\n    return *(longlong *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20) +\r\n           (param_1 \u0026 0xffffffff00000000);\r\n  }\r\n  return param_1 \u0026 0xffffffff00000000;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Addition_0x60002fa",
+      "display_name": "Torappu.FP.op_Addition 0x60002fa",
+      "address": "0x184624db0",
+      "end_address": "0x184624db4",
+      "ranges": [
+        {
+          "start": "0x184624db0",
+          "end_inclusive": "0x184624db4"
+        }
+      ],
+      "file_offset": 73548208,
+      "token": "0x60002fa",
+      "metadata_method_index": 220464,
+      "pointer_table_file_offset": 146920280,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x184625350",
+      "disassembled": true,
+      "instruction_count": 2,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_FP_op_Addition_0x60002fa(longlong param_1,longlong param_2)\r\n\r\n{\r\n  return param_1 + param_2;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_OverflowAdd_0x60002fb",
+      "display_name": "Torappu.FP.OverflowAdd 0x60002fb",
+      "address": "0x1866fc690",
+      "end_address": "0x1866fc6c1",
+      "ranges": [
+        {
+          "start": "0x1866fc690",
+          "end_inclusive": "0x1866fc6c1"
+        }
+      ],
+      "file_offset": 107985552,
+      "token": "0x60002fb",
+      "metadata_method_index": 220465,
+      "pointer_table_file_offset": 146920288,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fc6d0",
+      "disassembled": true,
+      "instruction_count": 16,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nulonglong Torappu_FP_OverflowAdd_0x60002fb(ulonglong param_1,ulonglong param_2)\r\n\r\n{\r\n  if ((longlong)((param_1 + param_2 ^ param_1) \u0026 ~(param_1 ^ param_2)) \u003c 0) {\r\n    return (ulonglong)((longlong)param_1 \u003c 1) + 0x7fffffffffffffff;\r\n  }\r\n  return param_1 + param_2;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Subtraction_0x60002fd",
+      "display_name": "Torappu.FP.op_Subtraction 0x60002fd",
+      "address": "0x1866fba10",
+      "end_address": "0x1866fba16",
+      "ranges": [
+        {
+          "start": "0x1866fba10",
+          "end_inclusive": "0x1866fba16"
+        }
+      ],
+      "file_offset": 107982352,
+      "token": "0x60002fd",
+      "metadata_method_index": 220467,
+      "pointer_table_file_offset": 146920304,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fba20",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_FP_op_Subtraction_0x60002fd(longlong param_1,longlong param_2)\r\n\r\n{\r\n  return param_1 - param_2;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_OverflowSub_0x60002fe",
+      "display_name": "Torappu.FP.OverflowSub 0x60002fe",
+      "address": "0x1866fc890",
+      "end_address": "0x1866fc8c3",
+      "ranges": [
+        {
+          "start": "0x1866fc890",
+          "end_inclusive": "0x1866fc8c3"
+        }
+      ],
+      "file_offset": 107986064,
+      "token": "0x60002fe",
+      "metadata_method_index": 220468,
+      "pointer_table_file_offset": 146920312,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fc8d0",
+      "disassembled": true,
+      "instruction_count": 16,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nulonglong Torappu_FP_OverflowSub_0x60002fe(ulonglong param_1,ulonglong param_2)\r\n\r\n{\r\n  if ((longlong)((param_1 ^ param_2) \u0026 (param_1 - param_2 ^ param_1)) \u003c 0) {\r\n    return (ulonglong)((uint)((longlong)param_1 \u003e\u003e 0x3f) \u0026 1) + 0x7fffffffffffffff;\r\n  }\r\n  return param_1 - param_2;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_AddOverflowHelper_0x6000300",
+      "display_name": "Torappu.FP.AddOverflowHelper 0x6000300",
+      "address": "0x1866fad20",
+      "end_address": "0x1866fad40",
+      "ranges": [
+        {
+          "start": "0x1866fad20",
+          "end_inclusive": "0x1866fad40"
+        }
+      ],
+      "file_offset": 107979040,
+      "token": "0x6000300",
+      "metadata_method_index": 220470,
+      "pointer_table_file_offset": 146920328,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fad50",
+      "disassembled": true,
+      "instruction_count": 9,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid Torappu_FP_AddOverflowHelper_0x6000300(ulonglong param_1,ulonglong param_2,byte *param_3)\r\n\r\n{\r\n  *param_3 \u003d *param_3 | ((param_1 + param_2 ^ param_1 ^ param_2) \u0026 0x8000000000000000) !\u003d 0;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Multiply_0x6000301",
+      "display_name": "Torappu.FP.op_Multiply 0x6000301",
+      "address": "0x1866fb870",
+      "end_address": "0x1866fb89e",
+      "ranges": [
+        {
+          "start": "0x1866fb870",
+          "end_inclusive": "0x1866fb89e"
+        }
+      ],
+      "file_offset": 107981936,
+      "token": "0x6000301",
+      "metadata_method_index": 220471,
+      "pointer_table_file_offset": 146920336,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fb8a0",
+      "disassembled": true,
+      "instruction_count": 14,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_FP_op_Multiply_0x6000301(ulonglong param_1,ulonglong param_2)\r\n\r\n{\r\n  return ((((longlong)param_2 \u003e\u003e 0x20) \u003c\u003c 0x20) + (param_2 \u0026 0xffffffff)) *\r\n         ((longlong)param_1 \u003e\u003e 0x20) + ((param_2 \u0026 0xffffffff) * (param_1 \u0026 0xffffffff) \u003e\u003e 0x20) +\r\n         ((longlong)param_2 \u003e\u003e 0x20) * (param_1 \u0026 0xffffffff);\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_OverflowMul_0x6000302",
+      "display_name": "Torappu.FP.OverflowMul 0x6000302",
+      "address": "0x1866fc6d0",
+      "end_address": "0x1866fc88b",
+      "ranges": [
+        {
+          "start": "0x1866fc6d0",
+          "end_inclusive": "0x1866fc88b"
+        }
+      ],
+      "file_offset": 107985616,
+      "token": "0x6000302",
+      "metadata_method_index": 220472,
+      "pointer_table_file_offset": 146920344,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107988688,
+        "end_rva_exclusive": 107989132,
+        "unwind_rva": 133676616,
+        "record_file_offset": 218091608,
+        "unwind_file_offset": 133670472,
+        "unwind_flags": 0,
+        "unwind_code_count": 12,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107988688,
+          "end_rva_exclusive": 107989132,
+          "unwind_rva": 133676616,
+          "record_file_offset": 218091608,
+          "unwind_file_offset": 133670472,
+          "unwind_flags": 0,
+          "unwind_code_count": 12,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fc890",
+      "disassembled": true,
+      "instruction_count": 118,
+      "direct_calls": [
+        {
+          "source": "1866fc704",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fc75a",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fc7ce",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fc815",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_FP_OverflowMul_0x6000302(ulonglong param_1,ulonglong param_2)\r\n\r\n{\r\n  ulonglong uVar1;\r\n  ulonglong uVar2;\r\n  ulonglong uVar3;\r\n  byte bVar4;\r\n  longlong lVar5;\r\n  ulonglong uVar6;\r\n  ulonglong uVar7;\r\n  ulonglong uVar8;\r\n  \r\n  if (DAT_188cc374f \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc374f \u003d \u0027\\x01\u0027;\r\n  }\r\n  lVar5 \u003d ((longlong)param_2 \u003e\u003e 0x20) * ((longlong)param_1 \u003e\u003e 0x20);\r\n  uVar6 \u003d lVar5 \u003c\u003c 0x20;\r\n  uVar8 \u003d (param_2 \u0026 0xffffffff) * ((longlong)param_1 \u003e\u003e 0x20);\r\n  uVar7 \u003d (param_1 \u0026 0xffffffff) * ((longlong)param_2 \u003e\u003e 0x20);\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140(_DAT_18885a700);\r\n  }\r\n  uVar1 \u003d uVar7 + ((param_1 \u0026 0xffffffff) * (param_2 \u0026 0xffffffff) \u003e\u003e 0x20);\r\n  uVar2 \u003d uVar1 + uVar8;\r\n  uVar3 \u003d uVar2 + uVar6;\r\n  bVar4 \u003d (byte)(param_1 \u003e\u003e 0x38) ^ (byte)(param_2 \u003e\u003e 0x38);\r\n  if ((char)bVar4 \u003c \u0027\\0\u0027) {\r\n    if ((longlong)uVar3 \u003c 1) {\r\nLAB_1866fc7f5:\r\n      lVar5 \u003d lVar5 \u003e\u003e 0x20;\r\n      if ((lVar5 \u003d\u003d 0) || (lVar5 \u003d\u003d -1)) {\r\n        if (-1 \u003c (char)bVar4) {\r\n          return uVar3;\r\n        }\r\n        uVar6 \u003d param_1;\r\n        if ((longlong)param_2 \u003c (longlong)param_1) {\r\n          uVar6 \u003d param_2;\r\n        }\r\n        if ((longlong)uVar3 \u003c\u003d (longlong)uVar6) {\r\n          return uVar3;\r\n        }\r\n        if (-0x100000001 \u003c (longlong)uVar6) {\r\n          return uVar3;\r\n        }\r\n        if ((longlong)param_2 \u003c (longlong)param_1) {\r\n          param_2 \u003d param_1;\r\n        }\r\n        if ((longlong)param_2 \u003c 0x100000001) {\r\n          return uVar3;\r\n        }\r\n      }\r\n      else if (-1 \u003c (char)bVar4) goto LAB_1866fc808;\r\n    }\r\n    if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140(_DAT_18885a700);\r\n    }\r\n    uVar6 \u003d *(ulonglong *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x18);\r\n  }\r\n  else {\r\n    if ((-1 \u003c (longlong)uVar3) \u0026\u0026\r\n       ((((uVar3 ^ uVar2 ^ uVar6) \u0026 0x8000000000000000) \u003d\u003d 0 \u0026\u0026\r\n         (((uVar2 ^ uVar1 ^ uVar8) \u0026 0x8000000000000000) \u003d\u003d 0 \u0026\u0026\r\n         ((uVar1 ^ uVar7) \u0026 0x8000000000000000) \u003d\u003d 0) || ((longlong)param_1 \u003c 1))))\r\n    goto LAB_1866fc7f5;\r\nLAB_1866fc808:\r\n    if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140(_DAT_18885a700);\r\n    }\r\n    uVar6 \u003d *(ulonglong *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x10);\r\n  }\r\n  return uVar6;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_CountLeadingZeroes_0x6000304",
+      "display_name": "Torappu.FP.CountLeadingZeroes 0x6000304",
+      "address": "0x1866fb5d0",
+      "end_address": "0x1866fb5f9",
+      "ranges": [
+        {
+          "start": "0x1866fb5d0",
+          "end_inclusive": "0x1866fb5f9"
+        }
+      ],
+      "file_offset": 107981264,
+      "token": "0x6000304",
+      "metadata_method_index": 220474,
+      "pointer_table_file_offset": 146920360,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fb600",
+      "disassembled": true,
+      "instruction_count": 14,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nint Torappu_FP_CountLeadingZeroes_0x6000304(ulonglong param_1)\r\n\r\n{\r\n  int iVar1;\r\n  \r\n  iVar1 \u003d 0;\r\n  for (; (param_1 \u0026 0xf000000000000000) \u003d\u003d 0; param_1 \u003d param_1 \u003c\u003c 4) {\r\n    iVar1 \u003d iVar1 + 4;\r\n  }\r\n  for (; -1 \u003c (longlong)param_1; param_1 \u003d param_1 * 2) {\r\n    iVar1 \u003d iVar1 + 1;\r\n  }\r\n  return iVar1;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Division_0x6000305",
+      "display_name": "Torappu.FP.op_Division 0x6000305",
+      "address": "0x1866fd730",
+      "end_address": "0x1866fd906",
+      "ranges": [
+        {
+          "start": "0x1866fd730",
+          "end_inclusive": "0x1866fd761"
+        },
+        {
+          "start": "0x1866fd762",
+          "end_inclusive": "0x1866fd88f"
+        },
+        {
+          "start": "0x1866fd890",
+          "end_inclusive": "0x1866fd8e0"
+        },
+        {
+          "start": "0x1866fd8e1",
+          "end_inclusive": "0x1866fd906"
+        }
+      ],
+      "file_offset": 107989808,
+      "token": "0x6000305",
+      "metadata_method_index": 220475,
+      "pointer_table_file_offset": 146920368,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107992880,
+        "end_rva_exclusive": 107992930,
+        "unwind_rva": 133580896,
+        "record_file_offset": 218091740,
+        "unwind_file_offset": 133574752,
+        "unwind_flags": 0,
+        "unwind_code_count": 3,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107992880,
+          "end_rva_exclusive": 107992930,
+          "unwind_rva": 133580896,
+          "record_file_offset": 218091740,
+          "unwind_file_offset": 133574752,
+          "unwind_flags": 0,
+          "unwind_code_count": 3,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        },
+        {
+          "start_rva": 107992930,
+          "end_rva_exclusive": 107993232,
+          "unwind_rva": 138974444,
+          "record_file_offset": 218091752,
+          "unwind_file_offset": 138968300,
+          "unwind_flags": 4,
+          "unwind_code_count": 10,
+          "chain_tail_file_offset": 138968324,
+          "chain_parent": [
+            107992880,
+            107992930,
+            133580896
+          ]
+        },
+        {
+          "start_rva": 107993232,
+          "end_rva_exclusive": 107993313,
+          "unwind_rva": 138974480,
+          "record_file_offset": 218091764,
+          "unwind_file_offset": 138968336,
+          "unwind_flags": 4,
+          "unwind_code_count": 10,
+          "chain_tail_file_offset": 138968360,
+          "chain_parent": [
+            107992880,
+            107992930,
+            133580896
+          ]
+        },
+        {
+          "start_rva": 107993313,
+          "end_rva_exclusive": 107993351,
+          "unwind_rva": 138974516,
+          "record_file_offset": 218091776,
+          "unwind_file_offset": 138968372,
+          "unwind_flags": 4,
+          "unwind_code_count": 0,
+          "chain_tail_file_offset": 138968376,
+          "chain_parent": [
+            107992880,
+            107992930,
+            133580896
+          ]
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fd910",
+      "disassembled": true,
+      "instruction_count": 125,
+      "direct_calls": [
+        {
+          "source": "1866fd74d",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd7e5",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd8a2",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd8c8",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd8f1",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_FP_op_Division_0x6000305(ulonglong param_1,ulonglong param_2)\r\n\r\n{\r\n  int iVar1;\r\n  ulonglong uVar2;\r\n  byte bVar3;\r\n  int iVar4;\r\n  int iVar5;\r\n  ulonglong uVar6;\r\n  longlong lVar7;\r\n  ulonglong uVar8;\r\n  longlong lVar9;\r\n  \r\n  if (DAT_188cc3750 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00();\r\n    DAT_188cc3750 \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (param_2 \u003d\u003d 0) {\r\n    if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    return 0xffffffff00000000;\r\n  }\r\n  uVar6 \u003d -param_1;\r\n  if ((longlong)-param_1 \u003c 0) {\r\n    uVar6 \u003d param_1;\r\n  }\r\n  iVar5 \u003d 0x21;\r\n  uVar8 \u003d -param_2;\r\n  if ((longlong)-param_2 \u003c 0) {\r\n    uVar8 \u003d param_2;\r\n  }\r\n  lVar9 \u003d 0;\r\n  for (; (lVar7 \u003d _DAT_18885a700, (uVar8 \u0026 0xf) \u003d\u003d 0 \u0026\u0026 (3 \u003c iVar5)); iVar5 \u003d iVar5 + -4) {\r\n    uVar8 \u003d uVar8 \u003e\u003e 4;\r\n  }\r\n  while( true ) {\r\n    if ((uVar6 \u003d\u003d 0) || (iVar5 \u003c 0)) {\r\n      uVar6 \u003d lVar9 + 1U \u003e\u003e 1;\r\n      if ((longlong)(param_1 ^ param_2) \u003c 0) {\r\n        uVar6 \u003d -uVar6;\r\n      }\r\n      return uVar6;\r\n    }\r\n    if (*(int *)(lVar7 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140();\r\n      lVar7 \u003d _DAT_18885a700;\r\n    }\r\n    iVar4 \u003d 0;\r\n    for (uVar2 \u003d uVar6; (uVar2 \u0026 0xf000000000000000) \u003d\u003d 0; uVar2 \u003d uVar2 \u003c\u003c 4) {\r\n      iVar4 \u003d iVar4 + 4;\r\n    }\r\n    for (; -1 \u003c (longlong)uVar2; uVar2 \u003d uVar2 * 2) {\r\n      iVar4 \u003d iVar4 + 1;\r\n    }\r\n    iVar1 \u003d iVar5;\r\n    if (iVar4 \u003c\u003d iVar5) {\r\n      iVar1 \u003d iVar4;\r\n    }\r\n    uVar6 \u003d uVar6 \u003c\u003c ((byte)iVar1 \u0026 0x3f);\r\n    uVar2 \u003d uVar6 / uVar8;\r\n    bVar3 \u003d (byte)(iVar5 - iVar1);\r\n    lVar9 \u003d lVar9 + (uVar2 \u003c\u003c (bVar3 \u0026 0x3f));\r\n    if ((uVar2 \u0026 ~(0xffffffffffffffffU \u003e\u003e (bVar3 \u0026 0x3f))) !\u003d 0) break;\r\n    iVar5 \u003d (iVar5 - iVar1) + -1;\r\n    uVar6 \u003d (uVar6 % uVar8) * 2;\r\n  }\r\n  if (-1 \u003c (longlong)(param_1 ^ param_2)) {\r\n    if (*(int *)(lVar7 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140(lVar7);\r\n      lVar7 \u003d _DAT_18885a700;\r\n    }\r\n    return *(ulonglong *)(*(longlong *)(lVar7 + 0xb8) + 0x10);\r\n  }\r\n  if (*(int *)(lVar7 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140(lVar7);\r\n    lVar7 \u003d _DAT_18885a700;\r\n  }\r\n  return *(ulonglong *)(*(longlong *)(lVar7 + 0xb8) + 0x18);\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Modulus_0x6000306",
+      "display_name": "Torappu.FP.op_Modulus 0x6000306",
+      "address": "0x1866fdb00",
+      "end_address": "0x1866fdb33",
+      "ranges": [
+        {
+          "start": "0x1866fdb00",
+          "end_inclusive": "0x1866fdb33"
+        }
+      ],
+      "file_offset": 107990784,
+      "token": "0x6000306",
+      "metadata_method_index": 220476,
+      "pointer_table_file_offset": 146920376,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fdb40",
+      "disassembled": true,
+      "instruction_count": 17,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_FP_op_Modulus_0x6000306(longlong param_1,longlong param_2)\r\n\r\n{\r\n  if (param_2 \u003d\u003d -1 \u0026\u0026 param_1 \u003d\u003d -0x8000000000000000) {\r\n    return 0;\r\n  }\r\n  return param_1 % param_2;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_UnaryNegation_0x6000308",
+      "display_name": "Torappu.FP.op_UnaryNegation 0x6000308",
+      "address": "0x1866fdb40",
+      "end_address": "0x1866fdbaf",
+      "ranges": [
+        {
+          "start": "0x1866fdb40",
+          "end_inclusive": "0x1866fdbaf"
+        }
+      ],
+      "file_offset": 107990848,
+      "token": "0x6000308",
+      "metadata_method_index": 220478,
+      "pointer_table_file_offset": 146920392,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107993920,
+        "end_rva_exclusive": 107994032,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091812,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107993920,
+          "end_rva_exclusive": 107994032,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091812,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": null,
+      "disassembled": true,
+      "instruction_count": 27,
+      "direct_calls": [
+        {
+          "source": "1866fdb59",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fdb87",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nlonglong Torappu_FP_op_UnaryNegation_0x6000308(longlong param_1)\r\n\r\n{\r\n  if (DAT_188cc3751 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc3751 \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (param_1 \u003d\u003d -0x8000000000000000) {\r\n    if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140(_DAT_18885a700);\r\n    }\r\n    return *(longlong *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x10);\r\n  }\r\n  return -param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Equality_0x6000309",
+      "display_name": "Torappu.FP.op_Equality 0x6000309",
+      "address": "0x184625350",
+      "end_address": "0x184625356",
+      "ranges": [
+        {
+          "start": "0x184625350",
+          "end_inclusive": "0x184625356"
+        }
+      ],
+      "file_offset": 73549648,
+      "token": "0x6000309",
+      "metadata_method_index": 220479,
+      "pointer_table_file_offset": 146920400,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1849a18e0",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nbool Torappu_FP_op_Equality_0x6000309(longlong param_1,longlong param_2)\r\n\r\n{\r\n  return param_1 \u003d\u003d param_2;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_GreaterThan_0x600030b",
+      "display_name": "Torappu.FP.op_GreaterThan 0x600030b",
+      "address": "0x185ed91c0",
+      "end_address": "0x185ed91c6",
+      "ranges": [
+        {
+          "start": "0x185ed91c0",
+          "end_inclusive": "0x185ed91c6"
+        }
+      ],
+      "file_offset": 99452352,
+      "token": "0x600030b",
+      "metadata_method_index": 220481,
+      "pointer_table_file_offset": 146920416,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x185ed91d0",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nbool Torappu_FP_op_GreaterThan_0x600030b(longlong param_1,longlong param_2)\r\n\r\n{\r\n  return param_2 \u003c param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_LessThan_0x600030c",
+      "display_name": "Torappu.FP.op_LessThan 0x600030c",
+      "address": "0x185ed91f0",
+      "end_address": "0x185ed91f6",
+      "ranges": [
+        {
+          "start": "0x185ed91f0",
+          "end_inclusive": "0x185ed91f6"
+        }
+      ],
+      "file_offset": 99452400,
+      "token": "0x600030c",
+      "metadata_method_index": 220482,
+      "pointer_table_file_offset": 146920424,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866faa10",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nbool Torappu_FP_op_LessThan_0x600030c(longlong param_1,longlong param_2)\r\n\r\n{\r\n  return param_1 \u003c param_2;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_GreaterThanOrEqual_0x600030d",
+      "display_name": "Torappu.FP.op_GreaterThanOrEqual 0x600030d",
+      "address": "0x185ed91b0",
+      "end_address": "0x185ed91b6",
+      "ranges": [
+        {
+          "start": "0x185ed91b0",
+          "end_inclusive": "0x185ed91b6"
+        }
+      ],
+      "file_offset": 99452336,
+      "token": "0x600030d",
+      "metadata_method_index": 220483,
+      "pointer_table_file_offset": 146920432,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x185ed91c0",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nbool Torappu_FP_op_GreaterThanOrEqual_0x600030d(longlong param_1,longlong param_2)\r\n\r\n{\r\n  return param_2 \u003c\u003d param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_LessThanOrEqual_0x600030e",
+      "display_name": "Torappu.FP.op_LessThanOrEqual 0x600030e",
+      "address": "0x185ed91e0",
+      "end_address": "0x185ed91e6",
+      "ranges": [
+        {
+          "start": "0x185ed91e0",
+          "end_inclusive": "0x185ed91e6"
+        }
+      ],
+      "file_offset": 99452384,
+      "token": "0x600030e",
+      "metadata_method_index": 220484,
+      "pointer_table_file_offset": 146920440,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x185ed91f0",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nbool Torappu_FP_op_LessThanOrEqual_0x600030e(longlong param_1,longlong param_2)\r\n\r\n{\r\n  return param_1 \u003c\u003d param_2;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Implicit_0x600031a",
+      "display_name": "Torappu.FP.op_Implicit 0x600031a",
+      "address": "0x1866fdae0",
+      "end_address": "0x1866fdae7",
+      "ranges": [
+        {
+          "start": "0x1866fdae0",
+          "end_inclusive": "0x1866fdae7"
+        }
+      ],
+      "file_offset": 107990752,
+      "token": "0x600031a",
+      "metadata_method_index": 220496,
+      "pointer_table_file_offset": 146920536,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fdaf0",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_FP_op_Implicit_0x600031a(longlong param_1)\r\n\r\n{\r\n  return param_1 \u003c\u003c 0x20;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Explicit_0x600031b",
+      "display_name": "Torappu.FP.op_Explicit 0x600031b",
+      "address": "0x1866fd910",
+      "end_address": "0x1866fd917",
+      "ranges": [
+        {
+          "start": "0x1866fd910",
+          "end_inclusive": "0x1866fd917"
+        }
+      ],
+      "file_offset": 107990288,
+      "token": "0x600031b",
+      "metadata_method_index": 220497,
+      "pointer_table_file_offset": 146920544,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fd920",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_FP_op_Explicit_0x600031b(longlong param_1)\r\n\r\n{\r\n  return param_1 \u003e\u003e 0x20;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Implicit_0x600031c",
+      "display_name": "Torappu.FP.op_Implicit 0x600031c",
+      "address": "0x1866fdad0",
+      "end_address": "0x1866fdadd",
+      "ranges": [
+        {
+          "start": "0x1866fdad0",
+          "end_inclusive": "0x1866fdadd"
+        }
+      ],
+      "file_offset": 107990736,
+      "token": "0x600031c",
+      "metadata_method_index": 220498,
+      "pointer_table_file_offset": 146920552,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fdae0",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_FP_op_Implicit_0x600031c(float param_1)\r\n\r\n{\r\n  return (longlong)(param_1 * 4.2949673e+09);\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Explicit_0x600031d",
+      "display_name": "Torappu.FP.op_Explicit 0x600031d",
+      "address": "0x1866fd9e0",
+      "end_address": "0x1866fd9f0",
+      "ranges": [
+        {
+          "start": "0x1866fd9e0",
+          "end_inclusive": "0x1866fd9f0"
+        }
+      ],
+      "file_offset": 107990496,
+      "token": "0x600031d",
+      "metadata_method_index": 220499,
+      "pointer_table_file_offset": 146920560,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fda00",
+      "disassembled": true,
+      "instruction_count": 4,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nfloat Torappu_FP_op_Explicit_0x600031d(longlong param_1)\r\n\r\n{\r\n  return (float)param_1 * 2.3283064e-10;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Implicit_0x600031e",
+      "display_name": "Torappu.FP.op_Implicit 0x600031e",
+      "address": "0x1866fdaf0",
+      "end_address": "0x1866fdafd",
+      "ranges": [
+        {
+          "start": "0x1866fdaf0",
+          "end_inclusive": "0x1866fdafd"
+        }
+      ],
+      "file_offset": 107990768,
+      "token": "0x600031e",
+      "metadata_method_index": 220500,
+      "pointer_table_file_offset": 146920568,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fdb00",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_FP_op_Implicit_0x600031e(double param_1)\r\n\r\n{\r\n  return (longlong)(param_1 * 4294967296.0);\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Explicit_0x600031f",
+      "display_name": "Torappu.FP.op_Explicit 0x600031f",
+      "address": "0x1866fd920",
+      "end_address": "0x1866fd930",
+      "ranges": [
+        {
+          "start": "0x1866fd920",
+          "end_inclusive": "0x1866fd930"
+        }
+      ],
+      "file_offset": 107990304,
+      "token": "0x600031f",
+      "metadata_method_index": 220501,
+      "pointer_table_file_offset": 146920576,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fd940",
+      "disassembled": true,
+      "instruction_count": 4,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\ndouble Torappu_FP_op_Explicit_0x600031f(longlong param_1)\r\n\r\n{\r\n  return (double)param_1 * 2.3283064365386963e-10;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Explicit_0x6000320",
+      "display_name": "Torappu.FP.op_Explicit 0x6000320",
+      "address": "0x1866fd940",
+      "end_address": "0x1866fd9dc",
+      "ranges": [
+        {
+          "start": "0x1866fd940",
+          "end_inclusive": "0x1866fd9dc"
+        }
+      ],
+      "file_offset": 107990336,
+      "token": "0x6000320",
+      "metadata_method_index": 220502,
+      "pointer_table_file_offset": 146920584,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107993408,
+        "end_rva_exclusive": 107993565,
+        "unwind_rva": 133588588,
+        "record_file_offset": 218091788,
+        "unwind_file_offset": 133582444,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107993408,
+          "end_rva_exclusive": 107993565,
+          "unwind_rva": 133588588,
+          "record_file_offset": 218091788,
+          "unwind_file_offset": 133582444,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fd9e0",
+      "disassembled": true,
+      "instruction_count": 35,
+      "direct_calls": [
+        {
+          "source": "1866fd959",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd97f",
+          "target": "0x185f39120",
+          "candidate_name": "System_Decimal__ctor_0x6001284"
+        },
+        {
+          "source": "1866fd994",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd9be",
+          "target": "0x185f3a370",
+          "candidate_name": "System_Decimal_op_Multiply_0x60012e1"
+        },
+        {
+          "source": "1866fd9d2",
+          "target": "0x185f39640",
+          "candidate_name": "System_Decimal_op_Explicit_0x60012d7"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_FP_op_Explicit_0x6000320(undefined4 *param_1)\r\n\r\n{\r\n  undefined4 *puVar1;\r\n  undefined8 uStack_48;\r\n  undefined8 uStack_40;\r\n  undefined4 uStack_38;\r\n  undefined4 uStack_34;\r\n  undefined4 uStack_30;\r\n  undefined4 uStack_2c;\r\n  undefined4 uStack_28;\r\n  undefined4 uStack_24;\r\n  undefined4 uStack_20;\r\n  undefined4 uStack_1c;\r\n  undefined1 auStack_18 [16];\r\n  \r\n  if (DAT_188cc375b \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_188941e60);\r\n    DAT_188cc375b \u003d \u0027\\x01\u0027;\r\n  }\r\n  uStack_48 \u003d 0;\r\n  uStack_40 \u003d 0;\r\n  func_0x000185f39120(\u0026uStack_48,0x100000000,0);\r\n  if (*(int *)(_DAT_188941e60 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  uStack_28 \u003d *param_1;\r\n  uStack_24 \u003d param_1[1];\r\n  uStack_20 \u003d param_1[2];\r\n  uStack_1c \u003d param_1[3];\r\n  uStack_38 \u003d (undefined4)uStack_48;\r\n  uStack_34 \u003d uStack_48._4_4_;\r\n  uStack_30 \u003d (undefined4)uStack_40;\r\n  uStack_2c \u003d uStack_40._4_4_;\r\n  puVar1 \u003d (undefined4 *)System_Decimal_op_Multiply_0x60012e1(auStack_18,\u0026uStack_28,\u0026uStack_38,0);\r\n  uStack_28 \u003d *puVar1;\r\n  uStack_24 \u003d puVar1[1];\r\n  uStack_20 \u003d puVar1[2];\r\n  uStack_1c \u003d puVar1[3];\r\n  System_Decimal_op_Explicit_0x60012d7(\u0026uStack_28,0);\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Implicit_0x6000321",
+      "display_name": "Torappu.FP.op_Implicit 0x6000321",
+      "address": "0x1866fdac0",
+      "end_address": "0x1866fdac7",
+      "ranges": [
+        {
+          "start": "0x1866fdac0",
+          "end_inclusive": "0x1866fdac7"
+        }
+      ],
+      "file_offset": 107990720,
+      "token": "0x6000321",
+      "metadata_method_index": 220503,
+      "pointer_table_file_offset": 146920592,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fdad0",
+      "disassembled": true,
+      "instruction_count": 3,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_FP_op_Implicit_0x6000321(int param_1)\r\n\r\n{\r\n  return (longlong)param_1 \u003c\u003c 0x20;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_op_Explicit_0x6000322",
+      "display_name": "Torappu.FP.op_Explicit 0x6000322",
+      "address": "0x1866fda00",
+      "end_address": "0x1866fdabb",
+      "ranges": [
+        {
+          "start": "0x1866fda00",
+          "end_inclusive": "0x1866fdabb"
+        }
+      ],
+      "file_offset": 107990528,
+      "token": "0x6000322",
+      "metadata_method_index": 220504,
+      "pointer_table_file_offset": 146920600,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107993600,
+        "end_rva_exclusive": 107993788,
+        "unwind_rva": 133627880,
+        "record_file_offset": 218091800,
+        "unwind_file_offset": 133621736,
+        "unwind_flags": 0,
+        "unwind_code_count": 6,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107993600,
+          "end_rva_exclusive": 107993788,
+          "unwind_rva": 133627880,
+          "record_file_offset": 218091800,
+          "unwind_file_offset": 133621736,
+          "unwind_flags": 0,
+          "unwind_code_count": 6,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fdac0",
+      "disassembled": true,
+      "instruction_count": 42,
+      "direct_calls": [
+        {
+          "source": "1866fda25",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fda41",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fda51",
+          "target": "0x185f39fb0",
+          "candidate_name": "System_Decimal_op_Implicit_0x60012cc"
+        },
+        {
+          "source": "1866fda73",
+          "target": "0x185f39120",
+          "candidate_name": "System_Decimal__ctor_0x6001284"
+        },
+        {
+          "source": "1866fda9b",
+          "target": "0x185f39540",
+          "candidate_name": "System_Decimal_op_Division_0x60012e2"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nundefined8 * Torappu_FP_op_Explicit_0x6000322(undefined8 *param_1,undefined8 param_2)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  undefined8 uVar2;\r\n  undefined8 *puVar3;\r\n  undefined8 uStack_58;\r\n  undefined8 uStack_50;\r\n  undefined4 uStack_48;\r\n  undefined4 uStack_44;\r\n  undefined4 uStack_40;\r\n  undefined4 uStack_3c;\r\n  undefined8 uStack_38;\r\n  undefined8 uStack_30;\r\n  undefined1 auStack_28 [32];\r\n  \r\n  if (DAT_188cc375c \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_188941e60);\r\n    DAT_188cc375c \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_188941e60 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  puVar3 \u003d (undefined8 *)func_0x000185f39fb0(\u0026uStack_38,param_2,0);\r\n  uVar1 \u003d *puVar3;\r\n  uVar2 \u003d puVar3[1];\r\n  uStack_58 \u003d 0;\r\n  uStack_50 \u003d 0;\r\n  func_0x000185f39120(\u0026uStack_58,0x100000000,0);\r\n  uStack_48 \u003d (undefined4)uStack_58;\r\n  uStack_44 \u003d uStack_58._4_4_;\r\n  uStack_40 \u003d (undefined4)uStack_50;\r\n  uStack_3c \u003d uStack_50._4_4_;\r\n  uStack_38 \u003d uVar1;\r\n  uStack_30 \u003d uVar2;\r\n  puVar3 \u003d (undefined8 *)System_Decimal_op_Division_0x60012e2(auStack_28,\u0026uStack_38,\u0026uStack_48,0);\r\n  uVar1 \u003d puVar3[1];\r\n  *param_1 \u003d *puVar3;\r\n  param_1[1] \u003d uVar1;\r\n  return param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_AsFloat_0x6000323",
+      "display_name": "Torappu.FP.AsFloat 0x6000323",
+      "address": "0x1866fae20",
+      "end_address": "0x1866fae72",
+      "ranges": [
+        {
+          "start": "0x1866fae20",
+          "end_inclusive": "0x1866fae72"
+        }
+      ],
+      "file_offset": 107979296,
+      "token": "0x6000323",
+      "metadata_method_index": 220505,
+      "pointer_table_file_offset": 146920608,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107982368,
+        "end_rva_exclusive": 107982451,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091368,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107982368,
+          "end_rva_exclusive": 107982451,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091368,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fae80",
+      "disassembled": true,
+      "instruction_count": 19,
+      "direct_calls": [
+        {
+          "source": "1866fae39",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fae58",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nfloat Torappu_FP_AsFloat_0x6000323(longlong *param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  \r\n  if (DAT_188cc375d \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc375d \u003d \u0027\\x01\u0027;\r\n  }\r\n  lVar1 \u003d *param_1;\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  return (float)lVar1 * 2.3283064e-10;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_AsInt_0x6000324",
+      "display_name": "Torappu.FP.AsInt 0x6000324",
+      "address": "0x1866fae80",
+      "end_address": "0x1866faec8",
+      "ranges": [
+        {
+          "start": "0x1866fae80",
+          "end_inclusive": "0x1866faec8"
+        }
+      ],
+      "file_offset": 107979392,
+      "token": "0x6000324",
+      "metadata_method_index": 220506,
+      "pointer_table_file_offset": 146920616,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107982464,
+        "end_rva_exclusive": 107982537,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091380,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107982464,
+          "end_rva_exclusive": 107982537,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091380,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866faed0",
+      "disassembled": true,
+      "instruction_count": 18,
+      "direct_calls": [
+        {
+          "source": "1866fae99",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866faeb8",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_FP_AsInt_0x6000324(longlong *param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  \r\n  if (DAT_188cc375e \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc375e \u003d \u0027\\x01\u0027;\r\n  }\r\n  lVar1 \u003d *param_1;\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  return lVar1 \u003e\u003e 0x20 \u0026 0xffffffff;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_AsLong_0x6000325",
+      "display_name": "Torappu.FP.AsLong 0x6000325",
+      "address": "0x1866faed0",
+      "end_address": "0x1866faf19",
+      "ranges": [
+        {
+          "start": "0x1866faed0",
+          "end_inclusive": "0x1866faf19"
+        }
+      ],
+      "file_offset": 107979472,
+      "token": "0x6000325",
+      "metadata_method_index": 220507,
+      "pointer_table_file_offset": 146920624,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107982544,
+        "end_rva_exclusive": 107982618,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091392,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107982544,
+          "end_rva_exclusive": 107982618,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091392,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866faf20",
+      "disassembled": true,
+      "instruction_count": 18,
+      "direct_calls": [
+        {
+          "source": "1866faee9",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866faf08",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nlonglong Torappu_FP_AsLong_0x6000325(longlong *param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  \r\n  if (DAT_188cc375f \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc375f \u003d \u0027\\x01\u0027;\r\n  }\r\n  lVar1 \u003d *param_1;\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  return lVar1 \u003e\u003e 0x20;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_AsDouble_0x6000326",
+      "display_name": "Torappu.FP.AsDouble 0x6000326",
+      "address": "0x1866fadc0",
+      "end_address": "0x1866fae12",
+      "ranges": [
+        {
+          "start": "0x1866fadc0",
+          "end_inclusive": "0x1866fae12"
+        }
+      ],
+      "file_offset": 107979200,
+      "token": "0x6000326",
+      "metadata_method_index": 220508,
+      "pointer_table_file_offset": 146920632,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107982272,
+        "end_rva_exclusive": 107982355,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091356,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107982272,
+          "end_rva_exclusive": 107982355,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091356,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fae20",
+      "disassembled": true,
+      "instruction_count": 19,
+      "direct_calls": [
+        {
+          "source": "1866fadd9",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fadf8",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\ndouble Torappu_FP_AsDouble_0x6000326(longlong *param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  \r\n  if (DAT_188cc3760 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc3760 \u003d \u0027\\x01\u0027;\r\n  }\r\n  lVar1 \u003d *param_1;\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  return (double)lVar1 * 2.3283064365386963e-10;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_ToFloat_0x6000328",
+      "display_name": "Torappu.FP.ToFloat 0x6000328",
+      "address": "0x1866fcf00",
+      "end_address": "0x1866fcf4f",
+      "ranges": [
+        {
+          "start": "0x1866fcf00",
+          "end_inclusive": "0x1866fcf4f"
+        }
+      ],
+      "file_offset": 107987712,
+      "token": "0x6000328",
+      "metadata_method_index": 220510,
+      "pointer_table_file_offset": 146920648,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107990784,
+        "end_rva_exclusive": 107990864,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091692,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107990784,
+          "end_rva_exclusive": 107990864,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091692,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fcf50",
+      "disassembled": true,
+      "instruction_count": 18,
+      "direct_calls": [
+        {
+          "source": "1866fcf19",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fcf35",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nfloat Torappu_FP_ToFloat_0x6000328(longlong param_1)\r\n\r\n{\r\n  if (DAT_188cc3762 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc3762 \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  return (float)param_1 * 2.3283064e-10;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_ToInt_0x6000329",
+      "display_name": "Torappu.FP.ToInt 0x6000329",
+      "address": "0x1866fcf50",
+      "end_address": "0x1866fcf95",
+      "ranges": [
+        {
+          "start": "0x1866fcf50",
+          "end_inclusive": "0x1866fcf95"
+        }
+      ],
+      "file_offset": 107987792,
+      "token": "0x6000329",
+      "metadata_method_index": 220511,
+      "pointer_table_file_offset": 146920656,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107990864,
+        "end_rva_exclusive": 107990934,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091704,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107990864,
+          "end_rva_exclusive": 107990934,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091704,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fcfa0",
+      "disassembled": true,
+      "instruction_count": 17,
+      "direct_calls": [
+        {
+          "source": "1866fcf69",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fcf85",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_FP_ToInt_0x6000329(longlong param_1)\r\n\r\n{\r\n  if (DAT_188cc3763 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc3763 \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  return param_1 \u003e\u003e 0x20 \u0026 0xffffffff;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_FromFloat_0x600032a",
+      "display_name": "Torappu.FP.FromFloat 0x600032a",
+      "address": "0x1866fba30",
+      "end_address": "0x1866fba83",
+      "ranges": [
+        {
+          "start": "0x1866fba30",
+          "end_inclusive": "0x1866fba83"
+        }
+      ],
+      "file_offset": 107982384,
+      "token": "0x600032a",
+      "metadata_method_index": 220512,
+      "pointer_table_file_offset": 146920664,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107985456,
+        "end_rva_exclusive": 107985540,
+        "unwind_rva": 133589456,
+        "record_file_offset": 218091536,
+        "unwind_file_offset": 133583312,
+        "unwind_flags": 0,
+        "unwind_code_count": 3,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107985456,
+          "end_rva_exclusive": 107985540,
+          "unwind_rva": 133589456,
+          "record_file_offset": 218091536,
+          "unwind_file_offset": 133583312,
+          "unwind_flags": 0,
+          "unwind_code_count": 3,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fba90",
+      "disassembled": true,
+      "instruction_count": 17,
+      "direct_calls": [
+        {
+          "source": "1866fba4c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fba68",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nlonglong Torappu_FP_FromFloat_0x600032a(float param_1)\r\n\r\n{\r\n  if (DAT_188cc3764 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc3764 \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  return (longlong)(param_1 * 4.2949673e+09);\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_IsInfinity_0x600032b",
+      "display_name": "Torappu.FP.IsInfinity 0x600032b",
+      "address": "0x1866fc5b0",
+      "end_address": "0x1866fc62e",
+      "ranges": [
+        {
+          "start": "0x1866fc5b0",
+          "end_inclusive": "0x1866fc62e"
+        }
+      ],
+      "file_offset": 107985328,
+      "token": "0x600032b",
+      "metadata_method_index": 220513,
+      "pointer_table_file_offset": 146920672,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107988400,
+        "end_rva_exclusive": 107988527,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091584,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107988400,
+          "end_rva_exclusive": 107988527,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091584,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fc630",
+      "disassembled": true,
+      "instruction_count": 30,
+      "direct_calls": [
+        {
+          "source": "1866fc5c9",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fc5e5",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fc60f",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nundefined8 Torappu_FP_IsInfinity_0x600032b(longlong param_1)\r\n\r\n{\r\n  if (DAT_188cc3765 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc3765 \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  if (param_1 \u003d\u003d *(longlong *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x48)) {\r\n    return CONCAT71((int7)((ulonglong)*(longlong *)(_DAT_18885a700 + 0xb8) \u003e\u003e 8),1);\r\n  }\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  return CONCAT71((int7)((ulonglong)*(longlong *)(_DAT_18885a700 + 0xb8) \u003e\u003e 8),\r\n                  param_1 \u003d\u003d *(longlong *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x40));\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_IsNaN_0x600032c",
+      "display_name": "Torappu.FP.IsNaN 0x600032c",
+      "address": "0x1866fc630",
+      "end_address": "0x1866fc687",
+      "ranges": [
+        {
+          "start": "0x1866fc630",
+          "end_inclusive": "0x1866fc687"
+        }
+      ],
+      "file_offset": 107985456,
+      "token": "0x600032c",
+      "metadata_method_index": 220514,
+      "pointer_table_file_offset": 146920680,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107988528,
+        "end_rva_exclusive": 107988616,
+        "unwind_rva": 133577268,
+        "record_file_offset": 218091596,
+        "unwind_file_offset": 133571124,
+        "unwind_flags": 0,
+        "unwind_code_count": 2,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107988528,
+          "end_rva_exclusive": 107988616,
+          "unwind_rva": 133577268,
+          "record_file_offset": 218091596,
+          "unwind_file_offset": 133571124,
+          "unwind_flags": 0,
+          "unwind_code_count": 2,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fc690",
+      "disassembled": true,
+      "instruction_count": 20,
+      "direct_calls": [
+        {
+          "source": "1866fc649",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fc668",
+          "target": "0x18048c140",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nundefined8 Torappu_FP_IsNaN_0x600032c(longlong param_1)\r\n\r\n{\r\n  if (DAT_188cc3766 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    DAT_188cc3766 \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140(_DAT_18885a700);\r\n  }\r\n  return CONCAT71((int7)((ulonglong)*(longlong *)(_DAT_18885a700 + 0xb8) \u003e\u003e 8),\r\n                  param_1 \u003d\u003d *(longlong *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x50));\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_FromRaw_0x6000332",
+      "display_name": "Torappu.FP.FromRaw 0x6000332",
+      "address": "0x181421260",
+      "end_address": "0x181421263",
+      "ranges": [
+        {
+          "start": "0x181421260",
+          "end_inclusive": "0x181421263"
+        }
+      ],
+      "file_offset": 21104224,
+      "token": "0x6000332",
+      "metadata_method_index": 220520,
+      "pointer_table_file_offset": 146920728,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x184624db0",
+      "disassembled": true,
+      "instruction_count": 2,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nundefined8 Torappu_FP_FromRaw_0x6000332(undefined8 param_1)\r\n\r\n{\r\n  return param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP_get_RawValue_0x6000336",
+      "display_name": "Torappu.FP.get_RawValue 0x6000336",
+      "address": "0x1806c2fc0",
+      "end_address": "0x1806c2fc3",
+      "ranges": [
+        {
+          "start": "0x1806c2fc0",
+          "end_inclusive": "0x1806c2fc3"
+        }
+      ],
+      "file_offset": 7087040,
+      "token": "0x6000336",
+      "metadata_method_index": 220524,
+      "pointer_table_file_offset": 146920760,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x181421260",
+      "disassembled": true,
+      "instruction_count": 2,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nundefined8 Torappu_FP_get_RawValue_0x6000336(undefined8 *param_1)\r\n\r\n{\r\n  return *param_1;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP__ctor_0x6000337",
+      "display_name": "Torappu.FP..ctor 0x6000337",
+      "address": "0x18065e080",
+      "end_address": "0x18065e083",
+      "ranges": [
+        {
+          "start": "0x18065e080",
+          "end_inclusive": "0x18065e083"
+        }
+      ],
+      "file_offset": 6673536,
+      "token": "0x6000337",
+      "metadata_method_index": 220525,
+      "pointer_table_file_offset": 146920768,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1806c2fc0",
+      "disassembled": true,
+      "instruction_count": 2,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid Torappu_FP__ctor_0x6000337(undefined8 *param_1,undefined8 param_2)\r\n\r\n{\r\n  *param_1 \u003d param_2;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP__ctor_0x6000338",
+      "display_name": "Torappu.FP..ctor 0x6000338",
+      "address": "0x1866fd720",
+      "end_address": "0x1866fd72a",
+      "ranges": [
+        {
+          "start": "0x1866fd720",
+          "end_inclusive": "0x1866fd72a"
+        }
+      ],
+      "file_offset": 107989792,
+      "token": "0x6000338",
+      "metadata_method_index": 220526,
+      "pointer_table_file_offset": 146920776,
+      "boundary_source": "bounded leaf range ends before decoded INT3 alignment padding; no PE unwind entry",
+      "pe_unwind_entry": null,
+      "pe_unwind_components": [],
+      "next_FP_method_candidate": "0x1866fd730",
+      "disassembled": true,
+      "instruction_count": 4,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid Torappu_FP__ctor_0x6000338(longlong *param_1,int param_2)\r\n\r\n{\r\n  *param_1 \u003d (longlong)param_2 \u003c\u003c 0x20;\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_FP__cctor_0x6000339",
+      "display_name": "Torappu.FP..cctor 0x6000339",
+      "address": "0x1866fd010",
+      "end_address": "0x1866fd711",
+      "ranges": [
+        {
+          "start": "0x1866fd010",
+          "end_inclusive": "0x1866fd711"
+        }
+      ],
+      "file_offset": 107987984,
+      "token": "0x6000339",
+      "metadata_method_index": 220527,
+      "pointer_table_file_offset": 146920784,
+      "boundary_source": "all exact PE RUNTIME_FUNCTION components whose recursively parsed UNWIND_INFO CHAININFO reaches this metadata candidate root",
+      "pe_unwind_entry": {
+        "start_rva": 107991056,
+        "end_rva_exclusive": 107992850,
+        "unwind_rva": 138976160,
+        "record_file_offset": 218091728,
+        "unwind_file_offset": 138970016,
+        "unwind_flags": 0,
+        "unwind_code_count": 7,
+        "chain_tail_file_offset": null,
+        "chain_parent": null
+      },
+      "pe_unwind_components": [
+        {
+          "start_rva": 107991056,
+          "end_rva_exclusive": 107992850,
+          "unwind_rva": 138976160,
+          "record_file_offset": 218091728,
+          "unwind_file_offset": 138970016,
+          "unwind_flags": 0,
+          "unwind_code_count": 7,
+          "chain_tail_file_offset": null,
+          "chain_parent": null
+        }
+      ],
+      "next_FP_method_candidate": "0x1866fd720",
+      "disassembled": true,
+      "instruction_count": 315,
+      "direct_calls": [
+        {
+          "source": "1866fd03a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd046",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd052",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd05e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd06a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd082",
+          "target": "0x1866fda00",
+          "candidate_name": "Torappu_FP_op_Explicit_0x6000322"
+        },
+        {
+          "source": "1866fd19f",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd1d5",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd20b",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd241",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd277",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd2ad",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd2e6",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd31f",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd3db",
+          "target": "0x185f39070",
+          "candidate_name": "System_Decimal__ctor_0x600128c"
+        },
+        {
+          "source": "1866fd3f3",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd417",
+          "target": "0x185f39120",
+          "candidate_name": "System_Decimal__ctor_0x6001284"
+        },
+        {
+          "source": "1866fd42b",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd44d",
+          "target": "0x185f3a370",
+          "candidate_name": "System_Decimal_op_Multiply_0x60012e1"
+        },
+        {
+          "source": "1866fd45f",
+          "target": "0x185f39640",
+          "candidate_name": "System_Decimal_op_Explicit_0x60012d7"
+        },
+        {
+          "source": "1866fd4a3",
+          "target": "0x185f39070",
+          "candidate_name": "System_Decimal__ctor_0x600128c"
+        },
+        {
+          "source": "1866fd4bb",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd4df",
+          "target": "0x185f39120",
+          "candidate_name": "System_Decimal__ctor_0x6001284"
+        },
+        {
+          "source": "1866fd4f3",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd515",
+          "target": "0x185f3a370",
+          "candidate_name": "System_Decimal_op_Multiply_0x60012e1"
+        },
+        {
+          "source": "1866fd527",
+          "target": "0x185f39640",
+          "candidate_name": "System_Decimal_op_Explicit_0x60012d7"
+        },
+        {
+          "source": "1866fd566",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd59b",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd5d7",
+          "target": "0x1866fd730",
+          "candidate_name": "Torappu_FP_op_Division_0x6000305"
+        },
+        {
+          "source": "1866fd5fd",
+          "target": "0x18048ba50",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd612",
+          "target": "0x185da7e10",
+          "candidate_name": "System_Runtime_CompilerServices_RuntimeHelpers_InitializeArray_0x6002516"
+        },
+        {
+          "source": "1866fd644",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd655",
+          "target": "0x18048ba50",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd66a",
+          "target": "0x185da7e10",
+          "candidate_name": "System_Runtime_CompilerServices_RuntimeHelpers_InitializeArray_0x6002516"
+        },
+        {
+          "source": "1866fd69c",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd6ad",
+          "target": "0x18048ba50",
+          "candidate_name": null
+        },
+        {
+          "source": "1866fd6c2",
+          "target": "0x185da7e10",
+          "candidate_name": "System_Runtime_CompilerServices_RuntimeHelpers_InitializeArray_0x6002516"
+        },
+        {
+          "source": "1866fd6f4",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_FP__cctor_0x6000339(void)\r\n\r\n{\r\n  undefined4 *puVar1;\r\n  undefined4 uVar2;\r\n  undefined4 uVar3;\r\n  undefined4 uVar4;\r\n  undefined8 uVar5;\r\n  undefined4 *puVar6;\r\n  undefined8 uVar7;\r\n  undefined8 *puVar8;\r\n  undefined8 uStack_78;\r\n  undefined8 uStack_70;\r\n  undefined8 uStack_68;\r\n  undefined8 uStack_60;\r\n  undefined8 uStack_58;\r\n  undefined8 uStack_50;\r\n  undefined8 uStack_48;\r\n  undefined8 uStack_40;\r\n  undefined8 uStack_38;\r\n  undefined8 uStack_30;\r\n  undefined1 auStack_28 [32];\r\n  \r\n  if (DAT_188cc376c \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    FUN_18048bf00(\u0026DAT_18891f728);\r\n    FUN_18048bf00(\u0026DAT_1888986b8);\r\n    FUN_18048bf00(\u0026DAT_188898b28);\r\n    FUN_18048bf00(\u0026DAT_188899400);\r\n    DAT_188cc376c \u003d \u0027\\x01\u0027;\r\n  }\r\n  puVar6 \u003d (undefined4 *)Torappu_FP_op_Explicit_0x6000322(\u0026uStack_38,1,0);\r\n  uVar2 \u003d puVar6[1];\r\n  uVar3 \u003d puVar6[2];\r\n  uVar4 \u003d puVar6[3];\r\n  puVar1 \u003d *(undefined4 **)(_DAT_18885a700 + 0xb8);\r\n  *puVar1 \u003d *puVar6;\r\n  puVar1[1] \u003d uVar2;\r\n  puVar1[2] \u003d uVar3;\r\n  puVar1[3] \u003d uVar4;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x10) \u003d 0x7ffffffffffffffe;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x18) \u003d 0x8000000000000002;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20) \u003d 0x100000000;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x28) \u003d 0xa00000000;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x30) \u003d 0x80000000;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x38) \u003d 0;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x40) \u003d 0x7fffffffffffffff;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x48) \u003d 0x8000000000000001;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x50) \u003d 0x8000000000000000;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20),0xa00000000,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x58) \u003d uVar7;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20),0x6400000000,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x60) \u003d uVar7;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20),0x3e800000000,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x68) \u003d uVar7;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20),0x271000000000,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x70) \u003d uVar7;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20),0x186a000000000,0)\r\n  ;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x78) \u003d uVar7;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20),0xf424000000000,0)\r\n  ;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x80) \u003d uVar7;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20),0x98968000000000,0\r\n                    );\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x88) \u003d uVar7;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20),0x5f5e10000000000,\r\n                     0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x90) \u003d uVar7;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x98) \u003d\r\n       *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0x68);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xa0) \u003d 0x3243f6a88;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xa8) \u003d 0x1921fb544;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xb0) \u003d 0x6487ed511;\r\n  uStack_78 \u003d 0;\r\n  uStack_70 \u003d 0;\r\n  System_Decimal__ctor_0x600128c(\u0026uStack_78,0xe0942c03,0xfe1d645,0xa48ff67,0,0x1c,0);\r\n  uVar5 \u003d uStack_70;\r\n  uVar7 \u003d uStack_78;\r\n  if (DAT_188cc375b \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_188941e60);\r\n    DAT_188cc375b \u003d \u0027\\x01\u0027;\r\n  }\r\n  uStack_68 \u003d 0;\r\n  uStack_60 \u003d 0;\r\n  func_0x000185f39120(\u0026uStack_68,0x100000000,0);\r\n  if (*(int *)(_DAT_188941e60 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  uStack_48 \u003d uStack_68;\r\n  uStack_40 \u003d uStack_60;\r\n  uStack_38 \u003d uVar7;\r\n  uStack_30 \u003d uVar5;\r\n  puVar8 \u003d (undefined8 *)System_Decimal_op_Multiply_0x60012e1(auStack_28,\u0026uStack_38,\u0026uStack_48,0);\r\n  uStack_38 \u003d *puVar8;\r\n  uStack_30 \u003d puVar8[1];\r\n  uVar7 \u003d System_Decimal_op_Explicit_0x60012d7(\u0026uStack_38,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xb8) \u003d uVar7;\r\n  uStack_58 \u003d 0;\r\n  uStack_50 \u003d 0;\r\n  System_Decimal__ctor_0x600128c(\u0026uStack_58,0xc1285807,0x1fc3ac8b,0x1491fece,0,0x1c,0);\r\n  uVar5 \u003d uStack_50;\r\n  uVar7 \u003d uStack_58;\r\n  if (DAT_188cc375b \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_188941e60);\r\n    DAT_188cc375b \u003d \u0027\\x01\u0027;\r\n  }\r\n  uStack_68 \u003d 0;\r\n  uStack_60 \u003d 0;\r\n  func_0x000185f39120(\u0026uStack_68,0x100000000,0);\r\n  if (*(int *)(_DAT_188941e60 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  uStack_38 \u003d uStack_68;\r\n  uStack_30 \u003d uStack_60;\r\n  uStack_48 \u003d uVar7;\r\n  uStack_40 \u003d uVar5;\r\n  puVar8 \u003d (undefined8 *)System_Decimal_op_Multiply_0x60012e1(auStack_28,\u0026uStack_48,\u0026uStack_38,0);\r\n  uStack_38 \u003d *puVar8;\r\n  uStack_30 \u003d puVar8[1];\r\n  uVar7 \u003d System_Decimal_op_Explicit_0x60012d7(\u0026uStack_38,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xc0) \u003d uVar7;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xa0),0xb400000000,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 200) \u003d uVar7;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (0xb400000000,*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xa0),0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xd0) \u003d uVar7;\r\n  uVar7 \u003d Torappu_FP_op_Division_0x6000305\r\n                    (0x3243e00000000,*(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xa8),0)\r\n  ;\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xd8) \u003d uVar7;\r\n  uVar7 \u003d func_0x00018048ba50(_DAT_18891f728,0x3243f);\r\n  System_Runtime_CompilerServices_RuntimeHelpers_InitializeArray_0x6002516(uVar7,_DAT_188898b28,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xe0) \u003d uVar7;\r\n  func_0x00018048b9e0(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xe0,uVar7);\r\n  uVar7 \u003d func_0x00018048ba50(_DAT_18891f728,0x3243f);\r\n  System_Runtime_CompilerServices_RuntimeHelpers_InitializeArray_0x6002516(uVar7,_DAT_188899400,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xe8) \u003d uVar7;\r\n  func_0x00018048b9e0(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xe8,uVar7);\r\n  uVar7 \u003d func_0x00018048ba50(_DAT_18891f728,0x3243f);\r\n  System_Runtime_CompilerServices_RuntimeHelpers_InitializeArray_0x6002516(uVar7,_DAT_1888986b8,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xf0) \u003d uVar7;\r\n  func_0x00018048b9e0(*(longlong *)(_DAT_18885a700 + 0xb8) + 0xf0,uVar7);\r\n  return;\r\n}\r\n\r\n"
+    }
+  ]
+}

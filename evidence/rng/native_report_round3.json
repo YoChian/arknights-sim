@@ -1,0 +1,417 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "analysis_mode": "explicit selected PE function ranges; default whole-image analysis disabled",
+  "symbol_provenance": "Analyst candidate mapping from local metadata and native pointer tables, corroborated by PE unwind entry. These are analysis seeds, not recovered original symbols.",
+  "functions": [
+    {
+      "name": "Torappu_RandomFactory_Create_0x6000770",
+      "display_name": "Torappu.RandomFactory.Create",
+      "address": "0x186732170",
+      "end_address": "0x18673239f",
+      "file_offset": 108205424,
+      "token": "0x6000770",
+      "disassembled": true,
+      "instruction_count": 49,
+      "direct_calls": [
+        {
+          "source": "186732188",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "186732194",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867321a0",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867321ac",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867321b8",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867321c4",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867321d0",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867321dc",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867321e8",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "186732357",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "186732369",
+          "target": "0x186505460",
+          "candidate_name": "Torappu_LegacyRandom__ctor_0x600029c"
+        },
+        {
+          "source": "18673237c",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nlonglong Torappu_RandomFactory_Create_0x6000770(undefined4 param_1)\r\n\r\n{\r\n  code *pcVar1;\r\n  longlong lVar2;\r\n  longlong lVar3;\r\n  \r\n  if (DAT_188cc39b8 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(0x1888d1940);\r\n    FUN_18048bf00(0x188875950);\r\n    FUN_18048bf00(\u0026DAT_188882d90);\r\n    FUN_18048bf00(0x1888d4c48);\r\n    FUN_18048bf00(0x1888fb468);\r\n    FUN_18048bf00(0x1888b5b50);\r\n    FUN_18048bf00(0x18882e160);\r\n    FUN_18048bf00(0x188848018);\r\n    FUN_18048bf00(0x188869ad0);\r\n    DAT_188cc39b8 \u003d \u0027\\x01\u0027;\r\n  }\r\n  switch(param_1) {\r\n  case 1:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam0000000188875950);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_18673237c;\r\n    FUN_186504f00(lVar3,0);\r\n    break;\r\n  case 2:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam00000001888d4c48);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_18673237c;\r\n    FUN_186505510(lVar3,0);\r\n    break;\r\n  case 3:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam00000001888fb468);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_18673237c;\r\n    FUN_186505a30(lVar3,0);\r\n    break;\r\n  case 4:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam00000001888b5b50);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_18673237c;\r\n    FUN_186507fe0(lVar3,0);\r\n    break;\r\n  case 5:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam000000018882e160);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_18673237c;\r\n    FUN_186508740(lVar3,0);\r\n    break;\r\n  case 6:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam0000000188848018);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_18673237c;\r\n    FUN_18650e940(lVar3,0);\r\n    break;\r\n  case 7:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam0000000188869ad0);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_18673237c;\r\n    FUN_18650ea60(lVar3,0);\r\n    break;\r\n  default:\r\n    lVar3 \u003d func_0x00018045cfe0(_DAT_188882d90);\r\n    if (lVar3 !\u003d 0) {\r\n      Torappu_LegacyRandom__ctor_0x600029c(lVar3,0);\r\n      return lVar3;\r\n    }\r\n    goto LAB_18673237c;\r\n  }\r\n  lVar2 \u003d func_0x00018045cfe0(uRam00000001888d1940);\r\n  if (lVar2 !\u003d 0) {\r\n    FUN_186502530(lVar2,lVar3,0);\r\n    return lVar2;\r\n  }\r\nLAB_18673237c:\r\n  FUN_18048c0b0();\r\n  pcVar1 \u003d (code *)swi(3);\r\n  lVar3 \u003d (*pcVar1)();\r\n  return lVar3;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_RandomFactory_Create_0x6000771",
+      "display_name": "Torappu.RandomFactory.Create",
+      "address": "0x1867323a0",
+      "end_address": "0x1867325eb",
+      "file_offset": 108205984,
+      "token": "0x6000771",
+      "disassembled": true,
+      "instruction_count": 51,
+      "direct_calls": [
+        {
+          "source": "1867323be",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867323ca",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867323d6",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867323e2",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867323ee",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867323fa",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "186732406",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "186732412",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18673241e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1867325a0",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "1867325b5",
+          "target": "0x186505240",
+          "candidate_name": "Torappu_LegacyRandom__ctor_0x600029d"
+        },
+        {
+          "source": "1867325c8",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nlonglong Torappu_RandomFactory_Create_0x6000771(undefined4 param_1,undefined4 param_2)\r\n\r\n{\r\n  code *pcVar1;\r\n  longlong lVar2;\r\n  longlong lVar3;\r\n  \r\n  if (DAT_188cc39b9 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(0x1888d1940);\r\n    FUN_18048bf00(0x188875950);\r\n    FUN_18048bf00(\u0026DAT_188882d90);\r\n    FUN_18048bf00(0x1888d4c48);\r\n    FUN_18048bf00(0x1888fb468);\r\n    FUN_18048bf00(0x1888b5b50);\r\n    FUN_18048bf00(0x18882e160);\r\n    FUN_18048bf00(0x188848018);\r\n    FUN_18048bf00(0x188869ad0);\r\n    DAT_188cc39b9 \u003d \u0027\\x01\u0027;\r\n  }\r\n  switch(param_2) {\r\n  case 1:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam0000000188875950);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_1867325c8;\r\n    FUN_186504ec0(lVar3,param_1,0);\r\n    break;\r\n  case 2:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam00000001888d4c48);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_1867325c8;\r\n    FUN_186505630(lVar3,param_1,0);\r\n    break;\r\n  case 3:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam00000001888fb468);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_1867325c8;\r\n    FUN_1865059a0(lVar3,param_1,0);\r\n    break;\r\n  case 4:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam00000001888b5b50);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_1867325c8;\r\n    FUN_1865080e0(lVar3,param_1,0);\r\n    break;\r\n  case 5:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam000000018882e160);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_1867325c8;\r\n    func_0x000186508780(lVar3,param_1,0);\r\n    break;\r\n  case 6:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam0000000188848018);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_1867325c8;\r\n    FUN_18650e860(lVar3,param_1,0);\r\n    break;\r\n  case 7:\r\n    lVar3 \u003d func_0x00018045cfe0(uRam0000000188869ad0);\r\n    if (lVar3 \u003d\u003d 0) goto LAB_1867325c8;\r\n    FUN_18650ea20(lVar3,param_1,0);\r\n    break;\r\n  default:\r\n    lVar3 \u003d func_0x00018045cfe0(_DAT_188882d90);\r\n    if (lVar3 !\u003d 0) {\r\n      Torappu_LegacyRandom__ctor_0x600029d(lVar3,param_1,0);\r\n      return lVar3;\r\n    }\r\n    goto LAB_1867325c8;\r\n  }\r\n  lVar2 \u003d func_0x00018045cfe0(uRam00000001888d1940);\r\n  if (lVar2 !\u003d 0) {\r\n    FUN_186502530(lVar2,lVar3,0);\r\n    return lVar2;\r\n  }\r\nLAB_1867325c8:\r\n  FUN_18048c0b0();\r\n  pcVar1 \u003d (code *)swi(3);\r\n  lVar3 \u003d (*pcVar1)();\r\n  return lVar3;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_LegacyRandom__ctor_0x600029c",
+      "display_name": "Torappu.LegacyRandom..ctor",
+      "address": "0x186505460",
+      "end_address": "0x186505481",
+      "file_offset": 105924704,
+      "token": "0x600029c",
+      "disassembled": true,
+      "instruction_count": 11,
+      "direct_calls": [
+        {
+          "source": "18650546b",
+          "target": "0x185f1a6f0",
+          "candidate_name": "System_Environment_get_TickCount_0x60010cd"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid Torappu_LegacyRandom__ctor_0x600029c(longlong param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  int iVar3;\r\n  undefined8 uVar4;\r\n  longlong lVar5;\r\n  int iVar6;\r\n  uint uVar7;\r\n  uint uVar8;\r\n  int iVar9;\r\n  int iVar10;\r\n  ulonglong uVar11;\r\n  \r\n  iVar3 \u003d func_0x000185f1a6f0(0);\r\n  if (cRam0000000188cc2741 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(0x18891f4e8,iVar3,0);\r\n    FUN_18048bf00(0x1888c37c0);\r\n    FUN_18048bf00(0x1888affb0);\r\n    cRam0000000188cc2741 \u003d \u0027\\x01\u0027;\r\n  }\r\n  uVar4 \u003d func_0x00018048ba50(uRam000000018891f4e8,0x38);\r\n  *(undefined8 *)(param_1 + 0x28) \u003d uVar4;\r\n  func_0x00018048b9e0(param_1 + 0x28,uVar4);\r\n  if (*(int *)(lRam00000001888affb0 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  FUN_185ecf110(param_1,0);\r\n  if (*(int *)(lRam00000001888c37c0 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  iVar9 \u003d -iVar3;\r\n  if (-iVar3 \u003c 0) {\r\n    iVar9 \u003d iVar3;\r\n  }\r\n  iVar9 \u003d 0x9a4ec86 - iVar9;\r\n  lVar5 \u003d *(longlong *)(param_1 + 0x28);\r\n  if (lVar5 !\u003d 0) {\r\n    if (*(uint *)(lVar5 + 0x18) \u003c 0x38) {\r\ncode_r0x000186505456:\r\n      FUN_18048c0a0();\r\n      pcVar2 \u003d (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    *(int *)(lVar5 + 0xfc) \u003d iVar9;\r\n    iVar3 \u003d 1;\r\n    lVar5 \u003d *(longlong *)(param_1 + 0x28);\r\n    uVar11 \u003d 0x15;\r\n    while( true ) {\r\n      iVar10 \u003d (int)uVar11;\r\n      iVar6 \u003d (int)(uVar11 * 0x29e4129f \u003e\u003e 0x20);\r\n      uVar7 \u003d iVar10 + (((uint)(iVar10 - iVar6) \u003e\u003e 1) + iVar6 \u003e\u003e 5) * -0x37;\r\n      if (lVar5 \u003d\u003d 0) break;\r\n      if (*(uint *)(lVar5 + 0x18) \u003c\u003d uVar7) goto code_r0x000186505456;\r\n      iVar9 \u003d iVar9 - iVar3;\r\n      *(int *)(lVar5 + 0x20 + (longlong)(int)uVar7 * 4) \u003d iVar3;\r\n      lVar5 \u003d *(longlong *)(param_1 + 0x28);\r\n      if (lVar5 \u003d\u003d 0) break;\r\n      if (*(uint *)(lVar5 + 0x18) \u003c\u003d uVar7) goto code_r0x000186505456;\r\n      uVar11 \u003d (ulonglong)(iVar10 + 0x15U);\r\n      iVar3 \u003d iVar9 + 0x7fffffff;\r\n      if (-1 \u003c iVar9) {\r\n        iVar3 \u003d iVar9;\r\n      }\r\n      iVar9 \u003d *(int *)(lVar5 + 0x20 + (longlong)(int)uVar7 * 4);\r\n      if (0x482 \u003c (int)(iVar10 + 0x15U)) {\r\n        iVar3 \u003d 1;\r\n        do {\r\n          lVar5 \u003d 0x24;\r\n          uVar7 \u003d 1;\r\n          do {\r\n            lVar1 \u003d *(longlong *)(param_1 + 0x28);\r\n            if (lVar1 \u003d\u003d 0) goto code_r0x000186505450;\r\n            if (*(uint *)(lVar1 + 0x18) \u003c\u003d uVar7) goto code_r0x000186505456;\r\n            uVar8 \u003d uVar7 + ((int)(uVar7 + 0x1e) / 0x37) * -0x37 + 0x1f;\r\n            if (*(uint *)(lVar1 + 0x18) \u003c\u003d uVar8) goto code_r0x000186505456;\r\n            *(int *)(lVar5 + lVar1) \u003d\r\n                 *(int *)(lVar5 + lVar1) - *(int *)(lVar1 + 0x20 + (longlong)(int)uVar8 * 4);\r\n            lVar1 \u003d *(longlong *)(param_1 + 0x28);\r\n            if (lVar1 \u003d\u003d 0) goto code_r0x000186505450;\r\n            if (*(uint *)(lVar1 + 0x18) \u003c\u003d uVar7) goto code_r0x000186505456;\r\n            if (*(int *)(lVar5 + lVar1) \u003c 0) {\r\n              *(int *)(lVar5 + lVar1) \u003d *(int *)(lVar5 + lVar1) + 0x7fffffff;\r\n            }\r\n            uVar7 \u003d uVar7 + 1;\r\n            lVar5 \u003d lVar5 + 4;\r\n          } while (lVar5 \u003c 0x100);\r\n          iVar3 \u003d iVar3 + 1;\r\n          if (4 \u003c iVar3) {\r\n            *(undefined4 *)(param_1 + 0x20) \u003d 0;\r\n            *(undefined4 *)(param_1 + 0x24) \u003d 0x1f;\r\n            return;\r\n          }\r\n        } while( true );\r\n      }\r\n    }\r\n  }\r\ncode_r0x000186505450:\r\n  FUN_18048c0b0();\r\n  pcVar2 \u003d (code *)swi(3);\r\n  (*pcVar2)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_LegacyRandom__ctor_0x600029d",
+      "display_name": "Torappu.LegacyRandom..ctor",
+      "address": "0x186505240",
+      "end_address": "0x18650545b",
+      "file_offset": 105924160,
+      "token": "0x600029d",
+      "disassembled": true,
+      "instruction_count": 132,
+      "direct_calls": [
+        {
+          "source": "18650525f",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18650526b",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "186505277",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18650528f",
+          "target": "0x18048ba50",
+          "candidate_name": null
+        },
+        {
+          "source": "18650529f",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "1865052b4",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1865052be",
+          "target": "0x185ecf110",
+          "candidate_name": "System_Random__ctor_0x6000a4a"
+        },
+        {
+          "source": "1865052d3",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "186505450",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "186505456",
+          "target": "0x18048c0a0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_LegacyRandom__ctor_0x600029d(longlong param_1,int param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  undefined8 uVar3;\r\n  longlong lVar4;\r\n  int iVar5;\r\n  uint uVar6;\r\n  uint uVar7;\r\n  int iVar8;\r\n  int iVar9;\r\n  ulonglong uVar10;\r\n  int iVar11;\r\n  \r\n  if (DAT_188cc2741 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18891f4e8);\r\n    FUN_18048bf00(\u0026DAT_1888c37c0);\r\n    FUN_18048bf00(\u0026DAT_1888affb0);\r\n    DAT_188cc2741 \u003d \u0027\\x01\u0027;\r\n  }\r\n  uVar3 \u003d func_0x00018048ba50(_DAT_18891f4e8,0x38);\r\n  *(undefined8 *)(param_1 + 0x28) \u003d uVar3;\r\n  func_0x00018048b9e0(param_1 + 0x28,uVar3);\r\n  if (*(int *)(_DAT_1888affb0 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  System_Random__ctor_0x6000a4a(param_1,0);\r\n  if (*(int *)(_DAT_1888c37c0 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  iVar8 \u003d -param_2;\r\n  if (-param_2 \u003c 0) {\r\n    iVar8 \u003d param_2;\r\n  }\r\n  iVar8 \u003d 0x9a4ec86 - iVar8;\r\n  lVar4 \u003d *(longlong *)(param_1 + 0x28);\r\n  if (lVar4 !\u003d 0) {\r\n    if (*(uint *)(lVar4 + 0x18) \u003c 0x38) {\r\nLAB_186505456:\r\n      FUN_18048c0a0();\r\n      pcVar2 \u003d (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    *(int *)(lVar4 + 0xfc) \u003d iVar8;\r\n    iVar11 \u003d 1;\r\n    lVar4 \u003d *(longlong *)(param_1 + 0x28);\r\n    uVar10 \u003d 0x15;\r\n    while( true ) {\r\n      iVar9 \u003d (int)uVar10;\r\n      iVar5 \u003d (int)(uVar10 * 0x29e4129f \u003e\u003e 0x20);\r\n      uVar6 \u003d iVar9 + (((uint)(iVar9 - iVar5) \u003e\u003e 1) + iVar5 \u003e\u003e 5) * -0x37;\r\n      if (lVar4 \u003d\u003d 0) break;\r\n      if (*(uint *)(lVar4 + 0x18) \u003c\u003d uVar6) goto LAB_186505456;\r\n      iVar8 \u003d iVar8 - iVar11;\r\n      *(int *)(lVar4 + 0x20 + (longlong)(int)uVar6 * 4) \u003d iVar11;\r\n      lVar4 \u003d *(longlong *)(param_1 + 0x28);\r\n      if (lVar4 \u003d\u003d 0) break;\r\n      if (*(uint *)(lVar4 + 0x18) \u003c\u003d uVar6) goto LAB_186505456;\r\n      uVar10 \u003d (ulonglong)(iVar9 + 0x15U);\r\n      iVar11 \u003d iVar8 + 0x7fffffff;\r\n      if (-1 \u003c iVar8) {\r\n        iVar11 \u003d iVar8;\r\n      }\r\n      iVar8 \u003d *(int *)(lVar4 + 0x20 + (longlong)(int)uVar6 * 4);\r\n      if (0x482 \u003c (int)(iVar9 + 0x15U)) {\r\n        iVar8 \u003d 1;\r\n        do {\r\n          lVar4 \u003d 0x24;\r\n          uVar6 \u003d 1;\r\n          do {\r\n            lVar1 \u003d *(longlong *)(param_1 + 0x28);\r\n            if (lVar1 \u003d\u003d 0) goto LAB_186505450;\r\n            if (*(uint *)(lVar1 + 0x18) \u003c\u003d uVar6) goto LAB_186505456;\r\n            uVar7 \u003d uVar6 + ((int)(uVar6 + 0x1e) / 0x37) * -0x37 + 0x1f;\r\n            if (*(uint *)(lVar1 + 0x18) \u003c\u003d uVar7) goto LAB_186505456;\r\n            *(int *)(lVar4 + lVar1) \u003d\r\n                 *(int *)(lVar4 + lVar1) - *(int *)(lVar1 + 0x20 + (longlong)(int)uVar7 * 4);\r\n            lVar1 \u003d *(longlong *)(param_1 + 0x28);\r\n            if (lVar1 \u003d\u003d 0) goto LAB_186505450;\r\n            if (*(uint *)(lVar1 + 0x18) \u003c\u003d uVar6) goto LAB_186505456;\r\n            if (*(int *)(lVar4 + lVar1) \u003c 0) {\r\n              *(int *)(lVar4 + lVar1) \u003d *(int *)(lVar4 + lVar1) + 0x7fffffff;\r\n            }\r\n            uVar6 \u003d uVar6 + 1;\r\n            lVar4 \u003d lVar4 + 4;\r\n          } while (lVar4 \u003c 0x100);\r\n          iVar8 \u003d iVar8 + 1;\r\n          if (4 \u003c iVar8) {\r\n            *(undefined4 *)(param_1 + 0x20) \u003d 0;\r\n            *(undefined4 *)(param_1 + 0x24) \u003d 0x1f;\r\n            return;\r\n          }\r\n        } while( true );\r\n      }\r\n    }\r\n  }\r\nLAB_186505450:\r\n  FUN_18048c0b0();\r\n  pcVar2 \u003d (code *)swi(3);\r\n  (*pcVar2)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_LegacyRandom_Next_0x600029f",
+      "display_name": "Torappu.LegacyRandom.Next",
+      "address": "0x1860e0e40",
+      "end_address": "0x1860e0e81",
+      "file_offset": 101581376,
+      "token": "0x600029f",
+      "disassembled": true,
+      "instruction_count": 17,
+      "direct_calls": [
+        {
+          "source": "1860e0e55",
+          "target": "0x180446d00",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nint Torappu_LegacyRandom_Next_0x600029f(longlong *param_1)\r\n\r\n{\r\n  double dVar1;\r\n  \r\n  if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n    func_0x000180446d00(*param_1);\r\n  }\r\n  dVar1 \u003d (double)(**(code **)(*param_1 + 0x180))(param_1,*(undefined8 *)(*param_1 + 0x188));\r\n  return (int)(dVar1 * 2147483647.0);\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_LegacyRandom_Next_0x60002a0",
+      "display_name": "Torappu.LegacyRandom.Next",
+      "address": "0x186505190",
+      "end_address": "0x186505235",
+      "file_offset": 105923984,
+      "token": "0x60002a0",
+      "disassembled": true,
+      "instruction_count": 43,
+      "direct_calls": [
+        {
+          "source": "1865051af",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1865051ec",
+          "target": "0x18048bf20",
+          "candidate_name": null
+        },
+        {
+          "source": "1865051f4",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "1865051ff",
+          "target": "0x180005cb0",
+          "candidate_name": null
+        },
+        {
+          "source": "18650520b",
+          "target": "0x18048bf20",
+          "candidate_name": null
+        },
+        {
+          "source": "186505219",
+          "target": "0x185e7d670",
+          "candidate_name": "System_ArgumentOutOfRangeException__ctor_0x6000460"
+        },
+        {
+          "source": "186505225",
+          "target": "0x18048bf20",
+          "candidate_name": null
+        },
+        {
+          "source": "186505230",
+          "target": "0x18048c070",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nulonglong Torappu_LegacyRandom_Next_0x60002a0(longlong *param_1,int param_2)\r\n\r\n{\r\n  code *pcVar1;\r\n  undefined8 uVar2;\r\n  undefined8 uVar3;\r\n  ulonglong uVar4;\r\n  double dVar5;\r\n  \r\n  if (-1 \u003c param_2) {\r\n    if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n      func_0x000180446d00(*param_1);\r\n    }\r\n    dVar5 \u003d (double)(**(code **)(*param_1 + 0x180))(param_1,*(undefined8 *)(*param_1 + 0x188));\r\n    return (ulonglong)(uint)(int)(dVar5 * (double)param_2);\r\n  }\r\n  uVar2 \u003d func_0x00018048bf20(0x18885fd98);\r\n  uVar2 \u003d func_0x00018045cfe0(uVar2);\r\n  FUN_180005cb0(uVar2);\r\n  uVar3 \u003d func_0x00018048bf20(0x1888a7500);\r\n  System_ArgumentOutOfRangeException__ctor_0x6000460(uVar2,uVar3,0);\r\n  uVar3 \u003d func_0x00018048bf20(0x188817f90);\r\n  FUN_18048c070(uVar2,uVar3);\r\n  pcVar1 \u003d (code *)swi(3);\r\n  uVar4 \u003d (*pcVar1)();\r\n  return uVar4;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_LegacyRandom_Next_0x60002a1",
+      "display_name": "Torappu.LegacyRandom.Next",
+      "address": "0x186505090",
+      "end_address": "0x186505184",
+      "file_offset": 105923728,
+      "token": "0x60002a1",
+      "disassembled": true,
+      "instruction_count": 67,
+      "direct_calls": [
+        {
+          "source": "1865050d5",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "18650513b",
+          "target": "0x18048bf20",
+          "candidate_name": null
+        },
+        {
+          "source": "186505143",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "18650514e",
+          "target": "0x180005cb0",
+          "candidate_name": null
+        },
+        {
+          "source": "18650515a",
+          "target": "0x18048bf20",
+          "candidate_name": null
+        },
+        {
+          "source": "186505168",
+          "target": "0x185e7d670",
+          "candidate_name": "System_ArgumentOutOfRangeException__ctor_0x6000460"
+        },
+        {
+          "source": "186505174",
+          "target": "0x18048bf20",
+          "candidate_name": null
+        },
+        {
+          "source": "18650517f",
+          "target": "0x18048c070",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nulonglong Torappu_LegacyRandom_Next_0x60002a1(longlong *param_1,uint param_2,int param_3)\r\n\r\n{\r\n  code *pcVar1;\r\n  undefined8 uVar2;\r\n  undefined8 uVar3;\r\n  ulonglong uVar4;\r\n  double dVar5;\r\n  \r\n  if (param_3 \u003c (int)param_2) {\r\n    uVar2 \u003d func_0x00018048bf20(0x18885fd98);\r\n    uVar2 \u003d func_0x00018045cfe0(uVar2);\r\n    FUN_180005cb0(uVar2);\r\n    uVar3 \u003d func_0x00018048bf20(0x1888b6408);\r\n    System_ArgumentOutOfRangeException__ctor_0x6000460(uVar2,uVar3,0);\r\n    uVar3 \u003d func_0x00018048bf20(0x1888181d0);\r\n    FUN_18048c070(uVar2,uVar3);\r\n    pcVar1 \u003d (code *)swi(3);\r\n    uVar4 \u003d (*pcVar1)();\r\n    return uVar4;\r\n  }\r\n  if (param_3 - param_2 \u003c 2) {\r\n    return (ulonglong)param_2;\r\n  }\r\n  if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n    func_0x000180446d00(*param_1);\r\n  }\r\n  dVar5 \u003d (double)(**(code **)(*param_1 + 0x180))(param_1,*(undefined8 *)(*param_1 + 0x188));\r\n  dVar5 \u003d dVar5 * (double)(param_3 - param_2);\r\n  if (dVar5 \u003c 0.0) {\r\n    return (ulonglong)((int)dVar5 + param_2);\r\n  }\r\n  return (ulonglong)((int)(longlong)dVar5 + param_2);\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_LegacyRandom_NextDouble_0x60002a3",
+      "display_name": "Torappu.LegacyRandom.NextDouble",
+      "address": "0x185549bb0",
+      "end_address": "0x185549be5",
+      "file_offset": 89427888,
+      "token": "0x60002a3",
+      "disassembled": true,
+      "instruction_count": 14,
+      "direct_calls": [
+        {
+          "source": "185549bc5",
+          "target": "0x180446d00",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid Torappu_LegacyRandom_NextDouble_0x60002a3(longlong *param_1)\r\n\r\n{\r\n  if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n    func_0x000180446d00(*param_1);\r\n  }\r\n                    /* WARNING: Could not recover jumptable at 0x000185549be3. Too many branches */\r\n                    /* WARNING: Treating indirect jump as call */\r\n  (**(code **)(*param_1 + 0x180))(param_1,*(undefined8 *)(*param_1 + 0x188));\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_LegacyRandom_Sample_0x600029e",
+      "display_name": "Torappu.LegacyRandom.Sample",
+      "address": "0x1860e0e90",
+      "end_address": "0x1860e0f1e",
+      "file_offset": 101581456,
+      "token": "0x600029e",
+      "disassembled": true,
+      "instruction_count": 40,
+      "direct_calls": [
+        {
+          "source": "1860e0f13",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "1860e0f19",
+          "target": "0x18048c0a0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\ndouble Torappu_LegacyRandom_Sample_0x600029e(longlong param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  int iVar3;\r\n  int iVar4;\r\n  double dVar5;\r\n  \r\n  iVar3 \u003d *(int *)(param_1 + 0x20) + 1;\r\n  *(int *)(param_1 + 0x20) \u003d iVar3;\r\n  if (0x37 \u003c iVar3) {\r\n    *(undefined4 *)(param_1 + 0x20) \u003d 1;\r\n  }\r\n  iVar3 \u003d *(int *)(param_1 + 0x24) + 1;\r\n  *(int *)(param_1 + 0x24) \u003d iVar3;\r\n  if (0x37 \u003c iVar3) {\r\n    *(undefined4 *)(param_1 + 0x24) \u003d 1;\r\n  }\r\n  lVar1 \u003d *(longlong *)(param_1 + 0x28);\r\n  if (lVar1 !\u003d 0) {\r\n    if (*(uint *)(param_1 + 0x20) \u003c *(uint *)(lVar1 + 0x18)) {\r\n      if (*(uint *)(param_1 + 0x24) \u003c *(uint *)(lVar1 + 0x18)) {\r\n        iVar4 \u003d *(int *)(lVar1 + 0x20 + (longlong)(int)*(uint *)(param_1 + 0x20) * 4) -\r\n                *(int *)(lVar1 + 0x20 + (longlong)(int)*(uint *)(param_1 + 0x24) * 4);\r\n        iVar3 \u003d iVar4 + 0x7fffffff;\r\n        if (-1 \u003c iVar4) {\r\n          iVar3 \u003d iVar4;\r\n        }\r\n        if (*(longlong *)(param_1 + 0x28) !\u003d 0) {\r\n          *(int *)(*(longlong *)(param_1 + 0x28) + 0x20 + (longlong)*(int *)(param_1 + 0x20) * 4) \u003d\r\n               iVar3;\r\n          return (double)iVar3 * 4.656612875245797e-10;\r\n        }\r\n        goto LAB_1860e0f13;\r\n      }\r\n    }\r\n    FUN_18048c0a0();\r\n    pcVar2 \u003d (code *)swi(3);\r\n    dVar5 \u003d (double)(*pcVar2)();\r\n    return dVar5;\r\n  }\r\nLAB_1860e0f13:\r\n  FUN_18048c0b0();\r\n  pcVar2 \u003d (code *)swi(3);\r\n  dVar5 \u003d (double)(*pcVar2)();\r\n  return dVar5;\r\n}\r\n\r\n"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "fixed_point": {
+    "image": "Torappu.Common.dll",
+    "type_index": 38268,
+    "storage": "signed int64",
+    "fractional_bits": 32,
+    "division_zero_raw": -4294967296,
+    "normal_operators_overflow": "unchecked wrapping",
+    "round": "nearest ties to even",
+    "multiply": "arithmetic right shift floor then wrapping",
+    "division": "native uint64 long division, usual nearest ties away, preserved saturation/wrap boundaries"
+  },
+  "native_functions": 45,
+  "all_decompile_completed": true,
+  "coverage": {
+    "unwind_functions": 18,
+    "unwind_components": 21,
+    "leaf_functions": 27,
+    "direct_branch_audit": true
+  },
+  "native_types_registration": {
+    "registration": {
+      "file_offset": 130172992,
+      "address": "0x187c26040",
+      "raw_bytes": "c89d000000000000309a298701000000028000000000000010c33387010000001e5903000000000060ce8c8701000000fdfe010000000000e08dc8870100000043a1040000000000a0883a870100000000c700000000000000804e880100000000c700000000000000b854880100000000000000000000000000000000000000",
+      "words": [
+        "0x9dc8",
+        "0x187299a30",
+        "0x8002",
+        "0x18733c310",
+        "0x3591e",
+        "0x1878cce60",
+        "0x1fefd",
+        "0x187c88de0",
+        "0x4a143",
+        "0x1873a88a0",
+        "0xc700",
+        "0x1884e8000",
+        "0xc700",
+        "0x18854b800",
+        "0x0",
+        "0x0"
+      ]
+    },
+    "table_va": "0x187c88de0",
+    "table_file_offset": 130577888,
+    "table_count": 130813,
+    "validation": {
+      "all_native_type_pointers_file_backed": 130813,
+      "all_class_and_value_type_byval_declarations_match": 50926,
+      "system_primitive_byval_tags_match": 16,
+      "field_offsets_type_count_matches_metadata": 50944,
+      "issues": []
+    }
+  },
+  "tests": {
+    "passed": 8,
+    "raw_pairs": 7073,
+    "unary_values": 81,
+    "float32_patterns": 93,
+    "double_patterns": 92,
+    "reference_runtime": "4.0.30319.42000",
+    "reference_pointer_bits": 64
+  },
+  "client_runtime_compared": false,
+  "hotfix_runtime_compared": false,
+  "assumptions": [
+    "masked SSE exceptions",
+    "nearest-even floating arithmetic MXCSR"
+  ],
+  "limitations": [
+    "Static algorithm translation rather than running client oracle",
+    "No live clock delta claim",
+    "No trig/LUT or broad FP math implementation",
+    "OverflowMul is decompiled but not implemented in scheduling FP component"
+  ],
+  "files": [
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\FPReference.cs",
+      "bytes": 6295,
+      "sha256": "ec50d0338883c6a4eb690d6da1fa7bedcc2b5cc58eaa5c10a12058014f126ec6"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\FPReference.exe",
+      "bytes": 8192,
+      "sha256": "ba7d38586fba740bad893baa705c42c783fa84316f59bcba8d17c24a6b8dbfa4"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\generate_fp_input.py",
+      "bytes": 1845,
+      "sha256": "ded637871f7e11b99155124fb69c2626e0572d664d18241d280ec637ce5b9876"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\metadata_declarations.json",
+      "bytes": 31267,
+      "sha256": "9f0ce8d5f88bfe40961b6426caf5bd76f1787e230c28ca754de1ab23a42920c4"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\native_disassembly.json",
+      "bytes": 306421,
+      "sha256": "503d12953eecbe58e4696abce8878d8d641658db5615814928d9093f408e5b2d"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\native_report.json",
+      "bytes": 94654,
+      "sha256": "e33f6349ad49e104fa82dc9276679427e5191059830423983d6bb1ca09483752"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\native_types.json",
+      "bytes": 22401,
+      "sha256": "95319901ec246848e5750b00c10f23575a22baabc0f1c3ea9ed4a6b99de99a98"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\RECOVERY.md",
+      "bytes": 9990,
+      "sha256": "edf1ed6aa136b69d4edde7a925665accbf9bfa5690f1c9ece5bac9362fb9b691"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\reference_input.json",
+      "bytes": 446623,
+      "sha256": "87cc34bd34a0d3b884ec87b198420f482b3585f28ef733e0bd1aec4a3d48f9f5"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\fp\\reference_vectors.json",
+      "bytes": 1621536,
+      "sha256": "60740a42b6f3db355107009d57da0c4f4bbe40c65eb048f0fa200cb56fa97bfe"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\fp.py",
+      "bytes": 7783,
+      "sha256": "1002ff2f8c64cb441c3a88654e413a23eedfd5af61ed8ac187999823aed3462c"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\tests\\test_fp.py",
+      "bytes": 6633,
+      "sha256": "2d4eb19f7e9681e0a6853a7c515afe64c9fa1968fe13049e3fb817c05647b234"
+    }
+  ]
+}

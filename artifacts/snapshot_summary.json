@@ -1,0 +1,97 @@
+{
+  "scope": "data_and_declaration_probe",
+  "schema_status": "structurally_verified_community_schema",
+  "dimensions": {
+    "rows": 7,
+    "cols": 11
+  },
+  "logical_coordinate_mapping": "matrix_row = height - logical_row - 1; matrix_col = logical_col",
+  "coordinate_access_status": "recovered_from_static_native_code",
+  "tile_types": {
+    "tile_forbidden": 37,
+    "tile_road": 28,
+    "tile_wall": 7,
+    "tile_start": 2,
+    "tile_end": 1,
+    "tile_floor": 1,
+    "tile_hole": 1
+  },
+  "routes": 38,
+  "extra_routes": 2,
+  "route_modes": {
+    "E_NUM": 10,
+    "WALK": 28
+  },
+  "waves": 3,
+  "main_declarations": 38,
+  "declaration_types": {
+    "ACTIVATE_PREDEFINED": 10,
+    "SPAWN": 27,
+    "EMPTY": 1
+  },
+  "spawn_count_sum_including_alternatives": 27,
+  "branches": {
+    "shsbox2": 1,
+    "shsbox1": 1
+  },
+  "enemy_references": 10,
+  "topics": {
+    "rogue_6": "沉沦者的黑流树海"
+  },
+  "stage_records": [
+    {
+      "id": "ro6_n_1_1",
+      "name": "猎犬病原",
+      "levelId": "Obt/Roguelike/RO6/level_rogue6_1-1",
+      "difficulty": "NORMAL",
+      "description": "猎犬是由被它们撕咬吞噬的病人转化成的？你怎么会有这种可怕而不切实际的想法。\\n<@rolv.rem>场地中有对敌我造成伤害的<源石祭坛></>"
+    },
+    {
+      "id": "ro6_e_1_1",
+      "name": "猎犬病原",
+      "levelId": "Obt/Roguelike/RO6/level_rogue6_1-1",
+      "difficulty": "FOUR_STAR",
+      "description": "猎犬是由被它们撕咬吞噬的病人转化成的？你怎么会有这种可怕而不切实际的想法。\\n<@rolv.rem>场地中有对敌我造成伤害的<源石祭坛></>"
+    }
+  ],
+  "table_counts": {
+    "characters": 1382,
+    "skills": 1820,
+    "enemy_database_ids": 2181
+  },
+  "table_reference_gaps": [
+    {
+      "character": "trap_755_cdsoul",
+      "missing_skill": "sktok_cdsoul"
+    },
+    {
+      "character": "trap_332_blkcan",
+      "missing_skill": "sktok_blkcan"
+    },
+    {
+      "character": "trap_338_almytw",
+      "missing_skill": "sktok_almytw"
+    }
+  ],
+  "client_level_seed": 1808733512,
+  "declaration_control_group_keys": [
+    "hiddenGroup",
+    "randomSpawnGroupKey"
+  ],
+  "conditional_timeline_available": true,
+  "conditional_timeline_status": "static_scheduler_kernel_with_explicit_external_group_choices_enemy_runtime_and_gate_inputs",
+  "schedule_blockers": [
+    "live RNG state and enumeration/consumption order",
+    "complete enemy attribute inheritance and creation",
+    "game mode hooks and live gate outcomes",
+    "automatic branch triggers",
+    "combat lifecycle/damage"
+  ],
+  "warnings": [
+    "Structural checks do not verify field semantics or runtime behavior.",
+    "Main-wave and branch array order is preserved; it is not a battle execution timeline.",
+    "E_NUM route placeholders are retained and cannot be navigated.",
+    "Dataset preserves declarations; conditional TimelineEnv and independent Rogue preprocessing are separate components.",
+    "Live RNG state/consumption, complete enemy attributes/creation, mode hooks, automatic branch triggers and combat remain unverified."
+  ]
+}

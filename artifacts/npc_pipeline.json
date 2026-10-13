@@ -1,0 +1,4191 @@
+{
+  "before_reaction": {
+    "frame": 10,
+    "time_raw": 1431654400,
+    "npc_created": true,
+    "npc_alive": true,
+    "host_disappeared": true,
+    "host_game_active": false,
+    "host_state": 11,
+    "host_grid": [
+      0,
+      1
+    ],
+    "host_route": "host_initial_route",
+    "host_cursor_index": 0,
+    "passive_active": true,
+    "restore_callbacks": 0,
+    "finish_reason": null,
+    "clear_callbacks": 0,
+    "lock": 0.0,
+    "life": 3,
+    "temp_life": 0,
+    "wave_members": 0,
+    "final_members": 1,
+    "reward": null,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false,
+    "npc_uid": 24,
+    "npc_state": 1,
+    "npc_hp_raw": 15032385536000,
+    "npc_recycled": false,
+    "scheduler": {
+      "wave": [],
+      "final": [
+        "npc_upeopl"
+      ],
+      "counters": {
+        "finished": 0,
+        "killed": 0,
+        "valid_finished": 0,
+        "valid_killed": 0,
+        "valid_missed": 0,
+        "source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      "bound_events": [
+        6,
+        8
+      ],
+      "event_binding_scope": "first Scheduler.OnGameReset with explicit fresh event pool and constant config",
+      "counter_backend": "decoded Int32 semantics; ObscuredInt implementation excluded"
+    }
+  },
+  "after_reaction": {
+    "frame": 10,
+    "time_raw": 1431654400,
+    "npc_created": true,
+    "npc_alive": false,
+    "host_disappeared": false,
+    "host_game_active": false,
+    "host_state": 11,
+    "host_grid": [
+      3,
+      5
+    ],
+    "host_route": "npc_runtime_route_11",
+    "host_cursor_index": 4,
+    "passive_active": false,
+    "restore_callbacks": 2,
+    "finish_reason": 7,
+    "clear_callbacks": 0,
+    "lock": 0.0,
+    "life": 3,
+    "temp_life": 0,
+    "wave_members": 0,
+    "final_members": 0,
+    "reward": null,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false,
+    "npc_uid": 0,
+    "npc_state": -1,
+    "npc_hp_raw": 15032385536000,
+    "npc_recycled": true,
+    "scheduler": {
+      "wave": [],
+      "final": [],
+      "counters": {
+        "finished": 0,
+        "killed": 0,
+        "valid_finished": 0,
+        "valid_killed": 0,
+        "valid_missed": 0,
+        "source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      "bound_events": [
+        6,
+        8
+      ],
+      "event_binding_scope": "first Scheduler.OnGameReset with explicit fresh event pool and constant config",
+      "counter_backend": "decoded Int32 semantics; ObscuredInt implementation excluded"
+    }
+  },
+  "damage_fixture": {
+    "scope": "selected prepared NPC factory Buff reaction finish recycle and Scheduler composition",
+    "snapshot": {
+      "frame": 12,
+      "time_raw": 1717985280,
+      "npc_created": true,
+      "npc_alive": false,
+      "host_disappeared": false,
+      "host_game_active": true,
+      "host_state": 1,
+      "host_grid": [
+        3,
+        5
+      ],
+      "host_route": "npc_runtime_route_11",
+      "host_cursor_index": 4,
+      "passive_active": false,
+      "restore_callbacks": 2,
+      "finish_reason": 7,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 3,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 0,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false,
+      "npc_uid": 0,
+      "npc_state": -1,
+      "npc_hp_raw": 15032385536000,
+      "npc_recycled": true,
+      "scheduler": {
+        "wave": [],
+        "final": [],
+        "counters": {
+          "finished": 0,
+          "killed": 0,
+          "valid_finished": 0,
+          "valid_killed": 0,
+          "valid_missed": 0,
+          "source": "explicit prepared NPC v9 fixture; no client runtime"
+        },
+        "bound_events": [
+          6,
+          8
+        ],
+        "event_binding_scope": "first Scheduler.OnGameReset with explicit fresh event pool and constant config",
+        "counter_backend": "decoded Int32 semantics; ObscuredInt implementation excluded"
+      }
+    },
+    "events": [
+      {
+        "frame": 0,
+        "event": "mode_before_provider"
+      },
+      {
+        "frame": 0,
+        "event": "before_disappear_provider",
+        "value": true
+      },
+      {
+        "frame": 0,
+        "event": "external_transition_and_move_hooks",
+        "old": 1,
+        "new": 11,
+        "admitted": true
+      },
+      {
+        "frame": 0,
+        "event": "modifier_provider",
+        "added": true
+      },
+      {
+        "frame": 0,
+        "event": "tween_ticket_provider",
+        "token": "host_shdopl/disappear/0",
+        "segments": [
+          [
+            "rgb",
+            0.0,
+            0.15000000596046448
+          ],
+          [
+            "alpha",
+            0.0,
+            0.15000000596046448
+          ]
+        ]
+      },
+      {
+        "frame": 0,
+        "event": "disappear_changed_provider",
+        "value": true
+      },
+      {
+        "frame": 0,
+        "event": "owner_buff_started_provider",
+        "buff": "passive_buff"
+      },
+      {
+        "frame": 0,
+        "event": "attribute_modifier_provider",
+        "buff": "passive_buff",
+        "enabled": true
+      },
+      {
+        "frame": 0,
+        "event": "unique_override_provider",
+        "buff": "passive_buff",
+        "operation": "register"
+      },
+      {
+        "frame": 1,
+        "event": "owner_buff_late_enabled_provider",
+        "buff": "passive_buff"
+      },
+      {
+        "frame": 1,
+        "event": "prepared_route_provider",
+        "spawned_count": 11
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "assign_skill_and_talent",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "entity_attributes_sp_timers",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "bobject_position_height",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "entity_on_init_hit_range_clear",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "unit_on_init_modes_common_dynamic_abilities",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "enemy_on_init_controllers_skills_talent_attach",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "enabled": true
+      },
+      {
+        "frame": 1,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "operation": "register"
+      },
+      {
+        "frame": 1,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "enabled": true
+      },
+      {
+        "frame": 1,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "operation": "register"
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "unit_on_post_init_animator",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "entity_origin_tile",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "enemy_tile_update",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "enemy_born_origin_nonhidden",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "external_transition_and_move_hooks",
+        "old": -1,
+        "new": 6,
+        "admitted": true
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "born_state_animation",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "entity_born_event_provider",
+        "uid": 24
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "unit_on_born_start_common_and_dynamic_abilities",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "owner_buff_started_provider",
+        "buff": "npc_upeopl/empty"
+      },
+      {
+        "frame": 1,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/empty",
+        "enabled": true
+      },
+      {
+        "frame": 1,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/empty",
+        "operation": "register"
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "unit_on_born_controller_event_and_owner_post_born",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "enemy_born_visual_mode_provider",
+        "uid": 24
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "bobject_borned_written",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "native_factory_spawn_completed",
+        "state": 6
+      },
+      {
+        "frame": 1,
+        "event": "prepared_progress_provider",
+        "progress": 0
+      },
+      {
+        "frame": 1,
+        "event": "unity_position_provider",
+        "position": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 1,
+        "event": "npc_face_provider"
+      },
+      {
+        "frame": 1,
+        "event": "owner_buff_started_provider",
+        "buff": "finish_buff"
+      },
+      {
+        "frame": 1,
+        "event": "attribute_modifier_provider",
+        "buff": "finish_buff",
+        "enabled": true
+      },
+      {
+        "frame": 1,
+        "event": "unique_override_provider",
+        "buff": "finish_buff",
+        "operation": "register"
+      },
+      {
+        "frame": 1,
+        "event": "mode_spawned_provider"
+      },
+      {
+        "frame": 1,
+        "event": "mode_after_provider"
+      },
+      {
+        "frame": 2,
+        "event": "external_transition_and_move_hooks",
+        "old": 6,
+        "new": 1,
+        "admitted": true
+      },
+      {
+        "frame": 2,
+        "event": "factory_external_phase",
+        "phase": "born_state_exit_animation",
+        "initialized": true
+      },
+      {
+        "frame": 2,
+        "event": "factory_external_phase",
+        "phase": "move_state_enter",
+        "initialized": true
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_started_provider",
+        "buff": "npc_upeopl/upeople_t"
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_started_provider",
+        "buff": "npc_upeopl/upeople_t_1"
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_late_enabled_provider",
+        "buff": "finish_buff"
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_late_enabled_provider",
+        "buff": "npc_upeopl/upeople_t"
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_late_enabled_provider",
+        "buff": "npc_upeopl/upeople_t_1"
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_late_enabled_provider",
+        "buff": "npc_upeopl/empty"
+      },
+      {
+        "frame": 3,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 4,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 5,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 6,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 7,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 8,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 9,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 9,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 9,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 9,
+        "event": "tween_completion_provider",
+        "token": "host_shdopl/disappear/0"
+      },
+      {
+        "frame": 9,
+        "event": "unity_set_active_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "external_npc_pose",
+        "grid": [
+          3,
+          5
+        ],
+        "cursor_index": 4
+      },
+      {
+        "frame": 10,
+        "event": "unity_grid_position_provider",
+        "grid": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "event": "restore_callback",
+        "result": true
+      },
+      {
+        "frame": 10,
+        "event": "before_disappear_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "face_provider"
+      },
+      {
+        "frame": 10,
+        "event": "disappear_changed_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "passive_buff",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "unique_override_provider",
+        "buff": "passive_buff",
+        "operation": "mark"
+      },
+      {
+        "frame": 10,
+        "event": "native_mark_buff_finished",
+        "key": "enemy_shdopl_passive"
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_log_runtime_snapshot",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_stats_finish",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "state_machine_stop",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "unity_grid_position_provider",
+        "grid": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "event": "restore_callback",
+        "result": true
+      },
+      {
+        "frame": 10,
+        "event": "native_mark_buff_finished",
+        "key": "enemy_shdopl_passive"
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "finish_buff",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "finish_buff",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "owner_buff_finished_provider",
+        "buff": "finish_buff",
+        "owner_finished": true
+      },
+      {
+        "frame": 10,
+        "event": "buff_pool_provider",
+        "buff": "finish_buff",
+        "next_frame": true
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "owner_buff_finished_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "owner_finished": true
+      },
+      {
+        "frame": 10,
+        "event": "buff_pool_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "next_frame": true
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "owner_buff_finished_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "owner_finished": true
+      },
+      {
+        "frame": 10,
+        "event": "buff_pool_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "next_frame": true
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/empty",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/empty",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "owner_buff_finished_provider",
+        "buff": "npc_upeopl/empty",
+        "owner_finished": true
+      },
+      {
+        "frame": 10,
+        "event": "buff_pool_provider",
+        "buff": "npc_upeopl/empty",
+        "next_frame": true
+      },
+      {
+        "frame": 10,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "operation": "clear"
+      },
+      {
+        "frame": 10,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "operation": "clear"
+      },
+      {
+        "frame": 10,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/empty",
+        "operation": "clear"
+      },
+      {
+        "frame": 10,
+        "event": "unique_override_provider",
+        "buff": "finish_buff",
+        "operation": "clear"
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "entity_clear_abilities_hold_effects_ep",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "entity_event2",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "unit_finish_animator_mode_visual_cleanup",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "runtime_route_remove_provider",
+        "count": 11
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_level_event3_tile_block_skill_cleanup",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "unit_recycle_dynamic_abilities_modes_unregister_talents_visual",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "entity_recycle_cleanup_clear_abilities",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "unregister_bobject",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_reset_cursor_and_route",
+        "uid": 0
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "ground_bound_recycle",
+        "uid": 0
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "mode_on_enemy_finished",
+        "uid": 0
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_after_finish_gates",
+        "uid": 0
+      },
+      {
+        "frame": 10,
+        "event": "mode_finalize_damage_provider",
+        "uid": 0
+      },
+      {
+        "frame": 10,
+        "event": "entity_damage_event_provider",
+        "uid": 0,
+        "event_id": 12
+      },
+      {
+        "frame": 10,
+        "event": "unit_damage_animator_provider",
+        "uid": 0
+      },
+      {
+        "frame": 11,
+        "event": "modifier_provider",
+        "added": false
+      },
+      {
+        "frame": 11,
+        "event": "unity_set_active_provider",
+        "value": true
+      },
+      {
+        "frame": 11,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 11,
+        "event": "tween_ticket_provider",
+        "token": "host_shdopl/appear/1",
+        "segments": [
+          [
+            "alpha",
+            1.0,
+            0.15000000596046448
+          ],
+          [
+            "rgb",
+            1.0,
+            0.15000000596046448
+          ]
+        ]
+      },
+      {
+        "frame": 11,
+        "event": "external_transition_and_move_hooks",
+        "old": 11,
+        "new": 1,
+        "admitted": true
+      },
+      {
+        "frame": 11,
+        "event": "attribute_modifier_provider",
+        "buff": "passive_buff",
+        "enabled": false
+      },
+      {
+        "frame": 11,
+        "event": "owner_buff_finished_provider",
+        "buff": "passive_buff",
+        "owner_finished": false
+      },
+      {
+        "frame": 11,
+        "event": "buff_pool_provider",
+        "buff": "passive_buff",
+        "next_frame": false
+      },
+      {
+        "frame": 11,
+        "event": "unique_override_provider",
+        "buff": "passive_buff",
+        "operation": "remove"
+      },
+      {
+        "frame": 12,
+        "event": "stationary_host_move_provider"
+      }
+    ],
+    "action_trace": [
+      [
+        "event",
+        "passive_buff",
+        0,
+        1
+      ],
+      [
+        "return",
+        "passive_buff",
+        0,
+        true,
+        null
+      ],
+      [
+        "event",
+        "finish_buff",
+        10,
+        2
+      ],
+      [
+        "event",
+        "finish_buff",
+        4,
+        4
+      ],
+      [
+        "return",
+        "finish_buff",
+        4,
+        true,
+        null
+      ],
+      [
+        "return",
+        "finish_buff",
+        10,
+        false,
+        "AssignValueToBB"
+      ]
+    ],
+    "factory_events": [
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "allocated_external_unity",
+        "stage": "allocated",
+        "state": -1,
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "options_assigned",
+        "stage": "options_assigned",
+        "state": -1,
+        "unharmful": true
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "data_assigned",
+        "stage": "data_assigned",
+        "state": -1,
+        "enemy_key": "enemy_3001_upeopl",
+        "life_point_reduce": 0,
+        "delay_to_born": 0.0,
+        "talent_keys": [
+          "Dead"
+        ]
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "assign_skill_and_talent",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "entity_attributes_sp_timers",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "bobject_position_height",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "entity_on_init_hit_range_clear",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "unit_on_init_modes_common_dynamic_abilities",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "enemy_on_init_controllers_skills_talent_attach",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "unit_on_post_init_animator",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "initialized_written",
+        "stage": "bobject_initialized",
+        "state": -1
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "full_hp_written",
+        "stage": "bobject_initialized",
+        "state": -1,
+        "hp_raw": 15032385536000
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "bobject_initialized",
+        "state": -1,
+        "phase": "entity_origin_tile",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "cursor_prepared",
+        "stage": "bobject_initialized",
+        "state": -1,
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "bobject_initialized",
+        "state": -1,
+        "phase": "enemy_tile_update",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "enemy_initialized",
+        "state": -1,
+        "phase": "enemy_born_origin_nonhidden",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born_state_entered",
+        "state": 6,
+        "phase": "born_state_animation",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "born_state_entered",
+        "stage": "born_state_entered",
+        "state": 6,
+        "remaining_raw": 0
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "entity_born_event0",
+        "stage": "born_state_entered",
+        "state": 6
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "buff_owner_born_dispatched",
+        "stage": "born_state_entered",
+        "state": 6
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "registered_external",
+        "stage": "born_state_entered",
+        "state": 6,
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born_state_entered",
+        "state": 6,
+        "phase": "unit_on_born_start_common_and_dynamic_abilities",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born_state_entered",
+        "state": 6,
+        "phase": "unit_on_born_controller_event_and_owner_post_born",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "enemy_on_born_move_face_start_effect_script_logger",
+        "stage": "born_state_entered",
+        "state": 6
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born",
+        "state": 6,
+        "phase": "bobject_borned_written",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "borned_written",
+        "stage": "born",
+        "state": 6,
+        "state_after_callbacks": 6
+      },
+      {
+        "frame": 2,
+        "time_raw": 286330880,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born",
+        "state": 6,
+        "phase": "born_state_exit_animation",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 2,
+        "time_raw": 286330880,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born",
+        "state": 1,
+        "phase": "move_state_enter",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 2,
+        "time_raw": 286330880,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "birth_completed",
+        "stage": "born",
+        "state": 1,
+        "remaining_raw": -143165440
+      },
+      {
+        "frame": 3,
+        "time_raw": 429496320,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 4,
+        "time_raw": 572661760,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 5,
+        "time_raw": 715827200,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 6,
+        "time_raw": 858992640,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 7,
+        "time_raw": 1002158080,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 8,
+        "time_raw": 1145323520,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      }
+    ],
+    "summon_events": [
+      {
+        "frame": 0,
+        "event": "capture",
+        "host_uid": 23,
+        "origin_cursor_index": 0
+      },
+      {
+        "frame": 1,
+        "event": "counter_and_options",
+        "spawned_count": 11
+      },
+      {
+        "frame": 1,
+        "event": "tracked",
+        "summoned_uid": 24,
+        "host_uid": 23,
+        "wave_member": false,
+        "final_member": true
+      },
+      {
+        "frame": 1,
+        "event": "spawned",
+        "summoned_uid": 24
+      },
+      {
+        "frame": 1,
+        "event": "mode_after"
+      }
+    ],
+    "restore_events": [
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "before_disappear",
+        "value": true
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "modifier_add"
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "tween_start",
+        "tween_kind": "disappear",
+        "token": "host_shdopl/disappear/0"
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "disappear_enter",
+        "coroutine_handle": 2
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "disappear_changed",
+        "value": true
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "tween_kill",
+        "token": "host_shdopl/disappear/0",
+        "complete": true
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_active",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "restore_position",
+        "grid_position": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "disable_current_still_pull",
+        "count": 0
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "route_reassigned",
+        "route": "npc_runtime_route_11",
+        "progress": 4
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "before_disappear",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "face_from_cursor"
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "disappear_changed",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "restore_position",
+        "grid_position": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "disable_current_still_pull",
+        "count": 0
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "route_reassigned",
+        "route": "npc_runtime_route_11",
+        "progress": 4
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "setter_no_change"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "switch_default_requested",
+        "requested": 0,
+        "resolved": 1
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "coroutine_stop_invalidate"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "modifier_remove"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "set_active",
+        "value": true
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "tween_start",
+        "tween_kind": "appear",
+        "token": "host_shdopl/appear/1"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "disappear_exit"
+      },
+      {
+        "frame": 12,
+        "time_raw": 1717985280,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      }
+    ],
+    "reaction_events": [
+      "entity_on_take_damage",
+      "buff_container_on_take_damage",
+      "mode_finalize_entity_damage",
+      "entity_event_12",
+      "unit_animator_on_take_damage"
+    ],
+    "lifecycle_events": [
+      {
+        "frame": 10,
+        "stage": "enemy_log_runtime_snapshot",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 0
+      },
+      {
+        "frame": 10,
+        "stage": "enemy_stats_finish",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 0,
+        "requested_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "state_machine_stop",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "buff_owner_finish",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "buff_clear",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7,
+        "is_owner_finished": true
+      },
+      {
+        "frame": 10,
+        "stage": "entity_clear_abilities_hold_effects_ep",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "entity_event2",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "unit_finish_animator_mode_visual_cleanup",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "battle_event6",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "enemy_level_event3_tile_block_skill_cleanup",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "default_mode_destroy_entity",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7,
+        "requested_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "unit_recycle_dynamic_abilities_modes_unregister_talents_visual",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "entity_recycle_cleanup_clear_abilities",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "unregister_bobject",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "uid_invalidated",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "enemy_reset_cursor_and_route",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "ground_bound_recycle",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "battle_event8",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "raw_pool_recycled",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 7,
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime",
+        "unity_exists": true,
+        "active_in_hierarchy": false
+      },
+      {
+        "frame": 10,
+        "stage": "mode_on_enemy_finished",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 7,
+        "requested_reason": 7
+      },
+      {
+        "frame": 10,
+        "stage": "enemy_after_finish_gates",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 7
+      }
+    ],
+    "buff_traces": {
+      "host_shdopl": [
+        [
+          "register",
+          "passive_buff",
+          100
+        ],
+        [
+          "start_actions",
+          "passive_buff"
+        ],
+        [
+          "started",
+          "passive_buff"
+        ],
+        [
+          "enabled",
+          "passive_buff",
+          true
+        ],
+        [
+          "enabled",
+          "passive_buff",
+          false
+        ],
+        [
+          "mark_finish",
+          "passive_buff"
+        ],
+        [
+          "remove_live",
+          "passive_buff",
+          100
+        ],
+        [
+          "actually_finished",
+          "passive_buff"
+        ],
+        [
+          "recycle_request",
+          "passive_buff",
+          false
+        ]
+      ],
+      "npc_upeopl": [
+        [
+          "register",
+          "npc_upeopl/upeople_t",
+          110
+        ],
+        [
+          "enabled",
+          "npc_upeopl/upeople_t",
+          true
+        ],
+        [
+          "register",
+          "npc_upeopl/upeople_t_1",
+          111
+        ],
+        [
+          "enabled",
+          "npc_upeopl/upeople_t_1",
+          true
+        ],
+        [
+          "owner_event",
+          "npc_upeopl/upeople_t",
+          12
+        ],
+        [
+          "owner_event",
+          "npc_upeopl/upeople_t_1",
+          12
+        ],
+        [
+          "register",
+          "npc_upeopl/empty",
+          112
+        ],
+        [
+          "start_actions",
+          "npc_upeopl/empty"
+        ],
+        [
+          "started",
+          "npc_upeopl/empty"
+        ],
+        [
+          "enabled",
+          "npc_upeopl/empty",
+          true
+        ],
+        [
+          "owner_event",
+          "npc_upeopl/upeople_t",
+          35
+        ],
+        [
+          "owner_event",
+          "npc_upeopl/upeople_t_1",
+          35
+        ],
+        [
+          "owner_event",
+          "npc_upeopl/empty",
+          35
+        ],
+        [
+          "register",
+          "finish_buff",
+          101
+        ],
+        [
+          "start_actions",
+          "finish_buff"
+        ],
+        [
+          "started",
+          "finish_buff"
+        ],
+        [
+          "enabled",
+          "finish_buff",
+          true
+        ],
+        [
+          "start_actions",
+          "npc_upeopl/upeople_t"
+        ],
+        [
+          "started",
+          "npc_upeopl/upeople_t"
+        ],
+        [
+          "start_actions",
+          "npc_upeopl/upeople_t_1"
+        ],
+        [
+          "started",
+          "npc_upeopl/upeople_t_1"
+        ],
+        [
+          "take_damage",
+          "finish_buff"
+        ],
+        [
+          "owner_finish",
+          "finish_buff",
+          7
+        ],
+        [
+          "owner_finish",
+          "npc_upeopl/upeople_t",
+          7
+        ],
+        [
+          "owner_finish",
+          "npc_upeopl/upeople_t_1",
+          7
+        ],
+        [
+          "owner_finish",
+          "npc_upeopl/empty",
+          7
+        ],
+        [
+          "enabled",
+          "finish_buff",
+          false
+        ],
+        [
+          "mark_finish",
+          "finish_buff"
+        ],
+        [
+          "actually_finished",
+          "finish_buff"
+        ],
+        [
+          "recycle_request",
+          "finish_buff",
+          true
+        ],
+        [
+          "enabled",
+          "npc_upeopl/upeople_t",
+          false
+        ],
+        [
+          "mark_finish",
+          "npc_upeopl/upeople_t"
+        ],
+        [
+          "actually_finished",
+          "npc_upeopl/upeople_t"
+        ],
+        [
+          "recycle_request",
+          "npc_upeopl/upeople_t",
+          true
+        ],
+        [
+          "enabled",
+          "npc_upeopl/upeople_t_1",
+          false
+        ],
+        [
+          "mark_finish",
+          "npc_upeopl/upeople_t_1"
+        ],
+        [
+          "actually_finished",
+          "npc_upeopl/upeople_t_1"
+        ],
+        [
+          "recycle_request",
+          "npc_upeopl/upeople_t_1",
+          true
+        ],
+        [
+          "enabled",
+          "npc_upeopl/empty",
+          false
+        ],
+        [
+          "mark_finish",
+          "npc_upeopl/empty"
+        ],
+        [
+          "actually_finished",
+          "npc_upeopl/empty"
+        ],
+        [
+          "recycle_request",
+          "npc_upeopl/empty",
+          true
+        ],
+        [
+          "clear_live"
+        ]
+      ]
+    },
+    "reaction_results": [
+      {
+        "cancelled": false,
+        "cancel_reason": -1,
+        "owner_uid_after": 0,
+        "owner_alive_after": false,
+        "hp_write_executed": false,
+        "apply_modifier_completed": false,
+        "client_runtime_compared": false
+      }
+    ],
+    "life_events": [],
+    "external_inputs": {
+      "host_initial_state": "initialized MOVE1 UID23",
+      "created_npc_uid": 24,
+      "decoded_hp_damage_modifier_value": 500,
+      "full_apply_modifier_and_hp_write": false,
+      "unity_allocation_awake_reset_controllers_pose_and_pool": "explicit prepared NPC v9 fixture; no client runtime",
+      "buff_reset_filters_infinite_lifetime_and_unique_runtime_override_keys": "explicit prepared NPC v9 fixture; no client runtime",
+      "buff_attribute_notifications_and_audio_create_buff": "explicit prepared NPC v9 fixture; no client runtime",
+      "initial_life_temp_life": [
+        3,
+        0
+      ],
+      "initial_counters": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_recycle_delay_single": 0.6,
+      "ground_bound_controller_exists": true,
+      "mode_effects_global_absence_and_registration": "explicit prepared NPC v9 fixture; no client runtime",
+      "prepared_zero_checkpoint_route_and_stationary_movement": "explicit prepared NPC v9 fixture; no client runtime",
+      "host_full_factory_birth": false,
+      "npc_live_pose_and_gate_results": "explicit prepared NPC v9 fixture; no client runtime",
+      "fsm_admission_visuals_and_tween": "explicit prepared NPC v9 fixture; no client runtime",
+      "tick_dt_raw": 143165440,
+      "fresh_event_pool_first_reset": true,
+      "live_physics_hits": false
+    },
+    "client_runtime_compared": false,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false,
+    "reward": null
+  },
+  "death_before_recycle": {
+    "frame": 10,
+    "time_raw": 1431654400,
+    "npc_created": true,
+    "npc_alive": false,
+    "host_disappeared": false,
+    "host_game_active": false,
+    "host_state": 11,
+    "host_grid": [
+      3,
+      5
+    ],
+    "host_route": "npc_runtime_route_11",
+    "host_cursor_index": 4,
+    "passive_active": false,
+    "restore_callbacks": 1,
+    "finish_reason": 2,
+    "clear_callbacks": 0,
+    "lock": 0.0,
+    "life": 2,
+    "temp_life": 0,
+    "wave_members": 0,
+    "final_members": 1,
+    "reward": null,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false,
+    "npc_uid": 24,
+    "npc_state": -1,
+    "npc_hp_raw": 15032385536000,
+    "npc_recycled": false,
+    "scheduler": {
+      "wave": [],
+      "final": [
+        "npc_upeopl"
+      ],
+      "counters": {
+        "finished": 0,
+        "killed": 0,
+        "valid_finished": 0,
+        "valid_killed": 0,
+        "valid_missed": 0,
+        "source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      "bound_events": [
+        6,
+        8
+      ],
+      "event_binding_scope": "first Scheduler.OnGameReset with explicit fresh event pool and constant config",
+      "counter_backend": "decoded Int32 semantics; ObscuredInt implementation excluded"
+    }
+  },
+  "death_fixture": {
+    "scope": "selected prepared NPC factory Buff reaction finish recycle and Scheduler composition",
+    "snapshot": {
+      "frame": 30,
+      "time_raw": 4294963200,
+      "npc_created": true,
+      "npc_alive": false,
+      "host_disappeared": false,
+      "host_game_active": true,
+      "host_state": 1,
+      "host_grid": [
+        3,
+        5
+      ],
+      "host_route": "npc_runtime_route_11",
+      "host_cursor_index": 4,
+      "passive_active": false,
+      "restore_callbacks": 1,
+      "finish_reason": 2,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 2,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 0,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false,
+      "npc_uid": 0,
+      "npc_state": -1,
+      "npc_hp_raw": 15032385536000,
+      "npc_recycled": true,
+      "scheduler": {
+        "wave": [],
+        "final": [],
+        "counters": {
+          "finished": 0,
+          "killed": 0,
+          "valid_finished": 0,
+          "valid_killed": 0,
+          "valid_missed": 0,
+          "source": "explicit prepared NPC v9 fixture; no client runtime"
+        },
+        "bound_events": [
+          6,
+          8
+        ],
+        "event_binding_scope": "first Scheduler.OnGameReset with explicit fresh event pool and constant config",
+        "counter_backend": "decoded Int32 semantics; ObscuredInt implementation excluded"
+      }
+    },
+    "events": [
+      {
+        "frame": 0,
+        "event": "mode_before_provider"
+      },
+      {
+        "frame": 0,
+        "event": "before_disappear_provider",
+        "value": true
+      },
+      {
+        "frame": 0,
+        "event": "external_transition_and_move_hooks",
+        "old": 1,
+        "new": 11,
+        "admitted": true
+      },
+      {
+        "frame": 0,
+        "event": "modifier_provider",
+        "added": true
+      },
+      {
+        "frame": 0,
+        "event": "tween_ticket_provider",
+        "token": "host_shdopl/disappear/0",
+        "segments": [
+          [
+            "rgb",
+            0.0,
+            0.15000000596046448
+          ],
+          [
+            "alpha",
+            0.0,
+            0.15000000596046448
+          ]
+        ]
+      },
+      {
+        "frame": 0,
+        "event": "disappear_changed_provider",
+        "value": true
+      },
+      {
+        "frame": 0,
+        "event": "owner_buff_started_provider",
+        "buff": "passive_buff"
+      },
+      {
+        "frame": 0,
+        "event": "attribute_modifier_provider",
+        "buff": "passive_buff",
+        "enabled": true
+      },
+      {
+        "frame": 0,
+        "event": "unique_override_provider",
+        "buff": "passive_buff",
+        "operation": "register"
+      },
+      {
+        "frame": 1,
+        "event": "owner_buff_late_enabled_provider",
+        "buff": "passive_buff"
+      },
+      {
+        "frame": 1,
+        "event": "prepared_route_provider",
+        "spawned_count": 11
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "assign_skill_and_talent",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "entity_attributes_sp_timers",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "bobject_position_height",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "entity_on_init_hit_range_clear",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "unit_on_init_modes_common_dynamic_abilities",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "enemy_on_init_controllers_skills_talent_attach",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "enabled": true
+      },
+      {
+        "frame": 1,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "operation": "register"
+      },
+      {
+        "frame": 1,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "enabled": true
+      },
+      {
+        "frame": 1,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "operation": "register"
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "unit_on_post_init_animator",
+        "initialized": false
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "entity_origin_tile",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "enemy_tile_update",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "enemy_born_origin_nonhidden",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "external_transition_and_move_hooks",
+        "old": -1,
+        "new": 6,
+        "admitted": true
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "born_state_animation",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "entity_born_event_provider",
+        "uid": 24
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "unit_on_born_start_common_and_dynamic_abilities",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "owner_buff_started_provider",
+        "buff": "npc_upeopl/empty"
+      },
+      {
+        "frame": 1,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/empty",
+        "enabled": true
+      },
+      {
+        "frame": 1,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/empty",
+        "operation": "register"
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "unit_on_born_controller_event_and_owner_post_born",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "enemy_born_visual_mode_provider",
+        "uid": 24
+      },
+      {
+        "frame": 1,
+        "event": "factory_external_phase",
+        "phase": "bobject_borned_written",
+        "initialized": true
+      },
+      {
+        "frame": 1,
+        "event": "native_factory_spawn_completed",
+        "state": 6
+      },
+      {
+        "frame": 1,
+        "event": "prepared_progress_provider",
+        "progress": 0
+      },
+      {
+        "frame": 1,
+        "event": "unity_position_provider",
+        "position": [
+          1.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 1,
+        "event": "npc_face_provider"
+      },
+      {
+        "frame": 1,
+        "event": "owner_buff_started_provider",
+        "buff": "finish_buff"
+      },
+      {
+        "frame": 1,
+        "event": "attribute_modifier_provider",
+        "buff": "finish_buff",
+        "enabled": true
+      },
+      {
+        "frame": 1,
+        "event": "unique_override_provider",
+        "buff": "finish_buff",
+        "operation": "register"
+      },
+      {
+        "frame": 1,
+        "event": "mode_spawned_provider"
+      },
+      {
+        "frame": 1,
+        "event": "mode_after_provider"
+      },
+      {
+        "frame": 2,
+        "event": "external_transition_and_move_hooks",
+        "old": 6,
+        "new": 1,
+        "admitted": true
+      },
+      {
+        "frame": 2,
+        "event": "factory_external_phase",
+        "phase": "born_state_exit_animation",
+        "initialized": true
+      },
+      {
+        "frame": 2,
+        "event": "factory_external_phase",
+        "phase": "move_state_enter",
+        "initialized": true
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_started_provider",
+        "buff": "npc_upeopl/upeople_t"
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_started_provider",
+        "buff": "npc_upeopl/upeople_t_1"
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_late_enabled_provider",
+        "buff": "finish_buff"
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_late_enabled_provider",
+        "buff": "npc_upeopl/upeople_t"
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_late_enabled_provider",
+        "buff": "npc_upeopl/upeople_t_1"
+      },
+      {
+        "frame": 2,
+        "event": "owner_buff_late_enabled_provider",
+        "buff": "npc_upeopl/empty"
+      },
+      {
+        "frame": 3,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 4,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 5,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 6,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 7,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 8,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 9,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 9,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 9,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 9,
+        "event": "tween_completion_provider",
+        "token": "host_shdopl/disappear/0"
+      },
+      {
+        "frame": 9,
+        "event": "unity_set_active_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "stationary_npc_move_provider",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "external_npc_pose",
+        "grid": [
+          3,
+          5
+        ],
+        "cursor_index": 4
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "dead_state_release_block",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_log_runtime_snapshot",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_stats_finish",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_death_extra_log",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "state_machine_stop",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "source_on_target_killed",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "entity_event1",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "unity_grid_position_provider",
+        "grid": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "event": "restore_callback",
+        "result": true
+      },
+      {
+        "frame": 10,
+        "event": "before_disappear_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "face_provider"
+      },
+      {
+        "frame": 10,
+        "event": "disappear_changed_provider",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "passive_buff",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "unique_override_provider",
+        "buff": "passive_buff",
+        "operation": "mark"
+      },
+      {
+        "frame": 10,
+        "event": "native_mark_buff_finished",
+        "key": "enemy_shdopl_passive"
+      },
+      {
+        "frame": 10,
+        "event": "modify_life_provider",
+        "delta": -1,
+        "life": 2
+      },
+      {
+        "frame": 10,
+        "event": "external_death_audio_create_buff_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "event_id": 3
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "finish_buff",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "finish_buff",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "owner_buff_finished_provider",
+        "buff": "finish_buff",
+        "owner_finished": true
+      },
+      {
+        "frame": 10,
+        "event": "buff_pool_provider",
+        "buff": "finish_buff",
+        "next_frame": true
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "owner_buff_finished_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "owner_finished": true
+      },
+      {
+        "frame": 10,
+        "event": "buff_pool_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "next_frame": true
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "owner_buff_finished_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "owner_finished": true
+      },
+      {
+        "frame": 10,
+        "event": "buff_pool_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "next_frame": true
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/empty",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "attribute_modifier_provider",
+        "buff": "npc_upeopl/empty",
+        "enabled": false
+      },
+      {
+        "frame": 10,
+        "event": "owner_buff_finished_provider",
+        "buff": "npc_upeopl/empty",
+        "owner_finished": true
+      },
+      {
+        "frame": 10,
+        "event": "buff_pool_provider",
+        "buff": "npc_upeopl/empty",
+        "next_frame": true
+      },
+      {
+        "frame": 10,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/upeople_t",
+        "operation": "clear"
+      },
+      {
+        "frame": 10,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/upeople_t_1",
+        "operation": "clear"
+      },
+      {
+        "frame": 10,
+        "event": "unique_override_provider",
+        "buff": "npc_upeopl/empty",
+        "operation": "clear"
+      },
+      {
+        "frame": 10,
+        "event": "unique_override_provider",
+        "buff": "finish_buff",
+        "operation": "clear"
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "entity_clear_abilities_hold_effects_ep",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "entity_event2",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "unit_finish_animator_mode_visual_cleanup",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "runtime_route_remove_provider",
+        "count": 11
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_level_event3_tile_block_skill_cleanup",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "mode_on_enemy_finished",
+        "uid": 24
+      },
+      {
+        "frame": 10,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_after_finish_gates",
+        "uid": 24
+      },
+      {
+        "frame": 11,
+        "event": "modifier_provider",
+        "added": false
+      },
+      {
+        "frame": 11,
+        "event": "unity_set_active_provider",
+        "value": true
+      },
+      {
+        "frame": 11,
+        "event": "unity_color_provider",
+        "color": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 11,
+        "event": "tween_ticket_provider",
+        "token": "host_shdopl/appear/1",
+        "segments": [
+          [
+            "alpha",
+            1.0,
+            0.15000000596046448
+          ],
+          [
+            "rgb",
+            1.0,
+            0.15000000596046448
+          ]
+        ]
+      },
+      {
+        "frame": 11,
+        "event": "external_transition_and_move_hooks",
+        "old": 11,
+        "new": 1,
+        "admitted": true
+      },
+      {
+        "frame": 11,
+        "event": "attribute_modifier_provider",
+        "buff": "passive_buff",
+        "enabled": false
+      },
+      {
+        "frame": 11,
+        "event": "owner_buff_finished_provider",
+        "buff": "passive_buff",
+        "owner_finished": false
+      },
+      {
+        "frame": 11,
+        "event": "buff_pool_provider",
+        "buff": "passive_buff",
+        "next_frame": false
+      },
+      {
+        "frame": 11,
+        "event": "unique_override_provider",
+        "buff": "passive_buff",
+        "operation": "remove"
+      },
+      {
+        "frame": 12,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 13,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 14,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 15,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 16,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 17,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 18,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 19,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 20,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 21,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 22,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 23,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 24,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 25,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 26,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 27,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 28,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 28,
+        "event": "native_lifecycle_external_phase",
+        "phase": "unit_recycle_dynamic_abilities_modes_unregister_talents_visual",
+        "uid": 24
+      },
+      {
+        "frame": 28,
+        "event": "native_lifecycle_external_phase",
+        "phase": "entity_recycle_cleanup_clear_abilities",
+        "uid": 24
+      },
+      {
+        "frame": 28,
+        "event": "native_lifecycle_external_phase",
+        "phase": "unregister_bobject",
+        "uid": 24
+      },
+      {
+        "frame": 28,
+        "event": "native_lifecycle_external_phase",
+        "phase": "enemy_reset_cursor_and_route",
+        "uid": 0
+      },
+      {
+        "frame": 28,
+        "event": "native_lifecycle_external_phase",
+        "phase": "ground_bound_recycle",
+        "uid": 0
+      },
+      {
+        "frame": 29,
+        "event": "stationary_host_move_provider"
+      },
+      {
+        "frame": 30,
+        "event": "stationary_host_move_provider"
+      }
+    ],
+    "action_trace": [
+      [
+        "event",
+        "passive_buff",
+        0,
+        1
+      ],
+      [
+        "return",
+        "passive_buff",
+        0,
+        true,
+        null
+      ],
+      [
+        "event",
+        "finish_buff",
+        4,
+        2
+      ],
+      [
+        "return",
+        "finish_buff",
+        4,
+        true,
+        null
+      ],
+      [
+        "event",
+        "npc_upeopl/upeople_t",
+        3,
+        2
+      ],
+      [
+        "return",
+        "npc_upeopl/upeople_t",
+        3,
+        true,
+        null
+      ]
+    ],
+    "factory_events": [
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "allocated_external_unity",
+        "stage": "allocated",
+        "state": -1,
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "options_assigned",
+        "stage": "options_assigned",
+        "state": -1,
+        "unharmful": true
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "data_assigned",
+        "stage": "data_assigned",
+        "state": -1,
+        "enemy_key": "enemy_3001_upeopl",
+        "life_point_reduce": 0,
+        "delay_to_born": 0.0,
+        "talent_keys": [
+          "Dead"
+        ]
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "assign_skill_and_talent",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "entity_attributes_sp_timers",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "bobject_position_height",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "entity_on_init_hit_range_clear",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "unit_on_init_modes_common_dynamic_abilities",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "enemy_on_init_controllers_skills_talent_attach",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "data_assigned",
+        "state": -1,
+        "phase": "unit_on_post_init_animator",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "initialized_written",
+        "stage": "bobject_initialized",
+        "state": -1
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "full_hp_written",
+        "stage": "bobject_initialized",
+        "state": -1,
+        "hp_raw": 15032385536000
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "bobject_initialized",
+        "state": -1,
+        "phase": "entity_origin_tile",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "cursor_prepared",
+        "stage": "bobject_initialized",
+        "state": -1,
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "bobject_initialized",
+        "state": -1,
+        "phase": "enemy_tile_update",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "enemy_initialized",
+        "state": -1,
+        "phase": "enemy_born_origin_nonhidden",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born_state_entered",
+        "state": 6,
+        "phase": "born_state_animation",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "born_state_entered",
+        "stage": "born_state_entered",
+        "state": 6,
+        "remaining_raw": 0
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "entity_born_event0",
+        "stage": "born_state_entered",
+        "state": 6
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "buff_owner_born_dispatched",
+        "stage": "born_state_entered",
+        "state": 6
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "registered_external",
+        "stage": "born_state_entered",
+        "state": 6,
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born_state_entered",
+        "state": 6,
+        "phase": "unit_on_born_start_common_and_dynamic_abilities",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born_state_entered",
+        "state": 6,
+        "phase": "unit_on_born_controller_event_and_owner_post_born",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "enemy_on_born_move_face_start_effect_script_logger",
+        "stage": "born_state_entered",
+        "state": 6
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born",
+        "state": 6,
+        "phase": "bobject_borned_written",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 1,
+        "time_raw": 143165440,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "borned_written",
+        "stage": "born",
+        "state": 6,
+        "state_after_callbacks": 6
+      },
+      {
+        "frame": 2,
+        "time_raw": 286330880,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born",
+        "state": 6,
+        "phase": "born_state_exit_animation",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 2,
+        "time_raw": 286330880,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "external_phase",
+        "stage": "born",
+        "state": 1,
+        "phase": "move_state_enter",
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime"
+      },
+      {
+        "frame": 2,
+        "time_raw": 286330880,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "birth_completed",
+        "stage": "born",
+        "state": 1,
+        "remaining_raw": -143165440
+      },
+      {
+        "frame": 3,
+        "time_raw": 429496320,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 4,
+        "time_raw": 572661760,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 5,
+        "time_raw": 715827200,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 6,
+        "time_raw": 858992640,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 7,
+        "time_raw": 1002158080,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 8,
+        "time_raw": 1145323520,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "uid": 24,
+        "token": "npc_upeopl",
+        "kind": "move_tick",
+        "stage": "born",
+        "state": 1
+      }
+    ],
+    "summon_events": [
+      {
+        "frame": 0,
+        "event": "capture",
+        "host_uid": 23,
+        "origin_cursor_index": 0
+      },
+      {
+        "frame": 1,
+        "event": "counter_and_options",
+        "spawned_count": 11
+      },
+      {
+        "frame": 1,
+        "event": "tracked",
+        "summoned_uid": 24,
+        "host_uid": 23,
+        "wave_member": false,
+        "final_member": true
+      },
+      {
+        "frame": 1,
+        "event": "spawned",
+        "summoned_uid": 24
+      },
+      {
+        "frame": 1,
+        "event": "mode_after"
+      }
+    ],
+    "restore_events": [
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "before_disappear",
+        "value": true
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "modifier_add"
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "tween_start",
+        "tween_kind": "disappear",
+        "token": "host_shdopl/disappear/0"
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "disappear_enter",
+        "coroutine_handle": 2
+      },
+      {
+        "frame": 0,
+        "time_raw": 0,
+        "actor": "host_shdopl",
+        "kind": "disappear_changed",
+        "value": true
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "tween_kill",
+        "token": "host_shdopl/disappear/0",
+        "complete": true
+      },
+      {
+        "frame": 9,
+        "time_raw": 1288488960,
+        "actor": "host_shdopl",
+        "kind": "set_active",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "restore_position",
+        "grid_position": [
+          3,
+          5
+        ]
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "disable_current_still_pull",
+        "count": 0
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "route_reassigned",
+        "route": "npc_runtime_route_11",
+        "progress": 4
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "before_disappear",
+        "value": false
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "face_from_cursor"
+      },
+      {
+        "frame": 10,
+        "time_raw": 1431654400,
+        "actor": "host_shdopl",
+        "kind": "disappear_changed",
+        "value": false
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "switch_default_requested",
+        "requested": 0,
+        "resolved": 1
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "coroutine_stop_invalidate"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "modifier_remove"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "set_active",
+        "value": true
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "set_color",
+        "value": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "tween_start",
+        "tween_kind": "appear",
+        "token": "host_shdopl/appear/1"
+      },
+      {
+        "frame": 11,
+        "time_raw": 1574819840,
+        "actor": "host_shdopl",
+        "kind": "disappear_exit"
+      },
+      {
+        "frame": 12,
+        "time_raw": 1717985280,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 13,
+        "time_raw": 1861150720,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 14,
+        "time_raw": 2004316160,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 15,
+        "time_raw": 2147481600,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 16,
+        "time_raw": 2290647040,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 17,
+        "time_raw": 2433812480,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 18,
+        "time_raw": 2576977920,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 19,
+        "time_raw": 2720143360,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 20,
+        "time_raw": 2863308800,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 21,
+        "time_raw": 3006474240,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 22,
+        "time_raw": 3149639680,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 23,
+        "time_raw": 3292805120,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 24,
+        "time_raw": 3435970560,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 25,
+        "time_raw": 3579136000,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 26,
+        "time_raw": 3722301440,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 27,
+        "time_raw": 3865466880,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 28,
+        "time_raw": 4008632320,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 29,
+        "time_raw": 4151797760,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      },
+      {
+        "frame": 30,
+        "time_raw": 4294963200,
+        "actor": "host_shdopl",
+        "kind": "move_tick"
+      }
+    ],
+    "reaction_events": [],
+    "lifecycle_events": [
+      {
+        "frame": 10,
+        "stage": "dead_state_release_block",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 0
+      },
+      {
+        "frame": 10,
+        "stage": "dead_state_animation_provider",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 0,
+        "source": "explicit prepared NPC v9 fixture; no client runtime",
+        "delay_single": 0.6000000238418579
+      },
+      {
+        "frame": 10,
+        "stage": "enemy_log_runtime_snapshot",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 0
+      },
+      {
+        "frame": 10,
+        "stage": "enemy_stats_finish",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 0,
+        "requested_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "enemy_death_extra_log",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 0
+      },
+      {
+        "frame": 10,
+        "stage": "state_machine_stop",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "source_on_target_killed",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2,
+        "source_entity": {
+          "token": "altar_source",
+          "uid": 9
+        }
+      },
+      {
+        "frame": 10,
+        "stage": "entity_event1",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "buff_owner_finish",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "buff_clear",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2,
+        "is_owner_finished": true
+      },
+      {
+        "frame": 10,
+        "stage": "entity_clear_abilities_hold_effects_ep",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "entity_event2",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "unit_finish_animator_mode_visual_cleanup",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "battle_event6",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "enemy_level_event3_tile_block_skill_cleanup",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "default_mode_destroy_entity",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2,
+        "requested_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "delayed_recycle_started",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2,
+        "delay_single": 0.6000000238418579
+      },
+      {
+        "frame": 10,
+        "stage": "mode_on_enemy_finished",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2,
+        "requested_reason": 2
+      },
+      {
+        "frame": 10,
+        "stage": "enemy_after_finish_gates",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 28,
+        "stage": "unit_recycle_dynamic_abilities_modes_unregister_talents_visual",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 28,
+        "stage": "entity_recycle_cleanup_clear_abilities",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 28,
+        "stage": "unregister_bobject",
+        "actor": "npc_upeopl",
+        "uid": 24,
+        "finish_reason": 2
+      },
+      {
+        "frame": 28,
+        "stage": "uid_invalidated",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 2
+      },
+      {
+        "frame": 28,
+        "stage": "enemy_reset_cursor_and_route",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 2
+      },
+      {
+        "frame": 28,
+        "stage": "ground_bound_recycle",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 2
+      },
+      {
+        "frame": 28,
+        "stage": "battle_event8",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 2
+      },
+      {
+        "frame": 28,
+        "stage": "raw_pool_recycled",
+        "actor": "npc_upeopl",
+        "uid": 0,
+        "finish_reason": 2,
+        "provider_source": "explicit prepared NPC v9 fixture; no client runtime",
+        "unity_exists": true,
+        "active_in_hierarchy": false
+      }
+    ],
+    "buff_traces": {
+      "host_shdopl": [
+        [
+          "register",
+          "passive_buff",
+          100
+        ],
+        [
+          "start_actions",
+          "passive_buff"
+        ],
+        [
+          "started",
+          "passive_buff"
+        ],
+        [
+          "enabled",
+          "passive_buff",
+          true
+        ],
+        [
+          "enabled",
+          "passive_buff",
+          false
+        ],
+        [
+          "mark_finish",
+          "passive_buff"
+        ],
+        [
+          "remove_live",
+          "passive_buff",
+          100
+        ],
+        [
+          "actually_finished",
+          "passive_buff"
+        ],
+        [
+          "recycle_request",
+          "passive_buff",
+          false
+        ]
+      ],
+      "npc_upeopl": [
+        [
+          "register",
+          "npc_upeopl/upeople_t",
+          110
+        ],
+        [
+          "enabled",
+          "npc_upeopl/upeople_t",
+          true
+        ],
+        [
+          "register",
+          "npc_upeopl/upeople_t_1",
+          111
+        ],
+        [
+          "enabled",
+          "npc_upeopl/upeople_t_1",
+          true
+        ],
+        [
+          "owner_event",
+          "npc_upeopl/upeople_t",
+          12
+        ],
+        [
+          "owner_event",
+          "npc_upeopl/upeople_t_1",
+          12
+        ],
+        [
+          "register",
+          "npc_upeopl/empty",
+          112
+        ],
+        [
+          "start_actions",
+          "npc_upeopl/empty"
+        ],
+        [
+          "started",
+          "npc_upeopl/empty"
+        ],
+        [
+          "enabled",
+          "npc_upeopl/empty",
+          true
+        ],
+        [
+          "owner_event",
+          "npc_upeopl/upeople_t",
+          35
+        ],
+        [
+          "owner_event",
+          "npc_upeopl/upeople_t_1",
+          35
+        ],
+        [
+          "owner_event",
+          "npc_upeopl/empty",
+          35
+        ],
+        [
+          "register",
+          "finish_buff",
+          101
+        ],
+        [
+          "start_actions",
+          "finish_buff"
+        ],
+        [
+          "started",
+          "finish_buff"
+        ],
+        [
+          "enabled",
+          "finish_buff",
+          true
+        ],
+        [
+          "start_actions",
+          "npc_upeopl/upeople_t"
+        ],
+        [
+          "started",
+          "npc_upeopl/upeople_t"
+        ],
+        [
+          "start_actions",
+          "npc_upeopl/upeople_t_1"
+        ],
+        [
+          "started",
+          "npc_upeopl/upeople_t_1"
+        ],
+        [
+          "owner_finish",
+          "finish_buff",
+          2
+        ],
+        [
+          "owner_finish",
+          "npc_upeopl/upeople_t",
+          2
+        ],
+        [
+          "owner_finish",
+          "npc_upeopl/upeople_t_1",
+          2
+        ],
+        [
+          "external_audio_event",
+          "npc_upeopl/upeople_t_1",
+          3
+        ],
+        [
+          "owner_finish",
+          "npc_upeopl/empty",
+          2
+        ],
+        [
+          "enabled",
+          "finish_buff",
+          false
+        ],
+        [
+          "mark_finish",
+          "finish_buff"
+        ],
+        [
+          "actually_finished",
+          "finish_buff"
+        ],
+        [
+          "recycle_request",
+          "finish_buff",
+          true
+        ],
+        [
+          "enabled",
+          "npc_upeopl/upeople_t",
+          false
+        ],
+        [
+          "mark_finish",
+          "npc_upeopl/upeople_t"
+        ],
+        [
+          "actually_finished",
+          "npc_upeopl/upeople_t"
+        ],
+        [
+          "recycle_request",
+          "npc_upeopl/upeople_t",
+          true
+        ],
+        [
+          "enabled",
+          "npc_upeopl/upeople_t_1",
+          false
+        ],
+        [
+          "mark_finish",
+          "npc_upeopl/upeople_t_1"
+        ],
+        [
+          "actually_finished",
+          "npc_upeopl/upeople_t_1"
+        ],
+        [
+          "recycle_request",
+          "npc_upeopl/upeople_t_1",
+          true
+        ],
+        [
+          "enabled",
+          "npc_upeopl/empty",
+          false
+        ],
+        [
+          "mark_finish",
+          "npc_upeopl/empty"
+        ],
+        [
+          "actually_finished",
+          "npc_upeopl/empty"
+        ],
+        [
+          "recycle_request",
+          "npc_upeopl/empty",
+          true
+        ],
+        [
+          "clear_live"
+        ]
+      ]
+    },
+    "reaction_results": [],
+    "life_events": [
+      {
+        "kind": "life_modified",
+        "frame": 10,
+        "time_raw": 1431654400,
+        "source": "Dead/value explicit NPC event provider",
+        "requested_delta": -1,
+        "applied_delta": -1,
+        "applied_delta_fp_raw": -4294967296,
+        "life_before": 3,
+        "life": 2,
+        "temp_life_before": 0,
+        "temp_life": 0,
+        "is_reach_exit": false,
+        "event_id": 34
+      }
+    ],
+    "external_inputs": {
+      "host_initial_state": "initialized MOVE1 UID23",
+      "created_npc_uid": 24,
+      "decoded_hp_damage_modifier_value": 500,
+      "full_apply_modifier_and_hp_write": false,
+      "unity_allocation_awake_reset_controllers_pose_and_pool": "explicit prepared NPC v9 fixture; no client runtime",
+      "buff_reset_filters_infinite_lifetime_and_unique_runtime_override_keys": "explicit prepared NPC v9 fixture; no client runtime",
+      "buff_attribute_notifications_and_audio_create_buff": "explicit prepared NPC v9 fixture; no client runtime",
+      "initial_life_temp_life": [
+        3,
+        0
+      ],
+      "initial_counters": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_recycle_delay_single": 0.6,
+      "ground_bound_controller_exists": true,
+      "mode_effects_global_absence_and_registration": "explicit prepared NPC v9 fixture; no client runtime",
+      "prepared_zero_checkpoint_route_and_stationary_movement": "explicit prepared NPC v9 fixture; no client runtime",
+      "host_full_factory_birth": false,
+      "npc_live_pose_and_gate_results": "explicit prepared NPC v9 fixture; no client runtime",
+      "fsm_admission_visuals_and_tween": "explicit prepared NPC v9 fixture; no client runtime",
+      "tick_dt_raw": 143165440,
+      "fresh_event_pool_first_reset": true,
+      "live_physics_hits": false
+    },
+    "client_runtime_compared": false,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false,
+    "reward": null
+  }
+}

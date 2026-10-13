@@ -1,0 +1,6136 @@
+[
+  {
+    "route_index": 10,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          3,
+          6
+        ],
+        "to": [
+          3,
+          6
+        ],
+        "cardinal_path": [
+          [
+            3,
+            6
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          6
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      99.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 11,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      60.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 12,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        4,
+        9
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          4,
+          9
+        ],
+        "to": [
+          4,
+          9
+        ],
+        "cardinal_path": [
+          [
+            4,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          4,
+          9
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      60.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 13,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        5,
+        3
+      ],
+      [
+        5,
+        3
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          5,
+          3
+        ],
+        "to": [
+          5,
+          3
+        ],
+        "cardinal_path": [
+          [
+            5,
+            3
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          3
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      120.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 14,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          5,
+          2
+        ],
+        "to": [
+          5,
+          2
+        ],
+        "cardinal_path": [
+          [
+            5,
+            2
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          2
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      120.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 15,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          5,
+          2
+        ],
+        "to": [
+          5,
+          2
+        ],
+        "cardinal_path": [
+          [
+            5,
+            2
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          2
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      120.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 16,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          5,
+          1
+        ],
+        "to": [
+          5,
+          1
+        ],
+        "cardinal_path": [
+          [
+            5,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          1
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      120.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 17,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          4
+        ],
+        "to": [
+          1,
+          4
+        ],
+        "cardinal_path": [
+          [
+            1,
+            4
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          4
+        ],
+        "to": [
+          1,
+          5
+        ],
+        "cardinal_path": [
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          5
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      78.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 18,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          3
+        ],
+        "to": [
+          1,
+          3
+        ],
+        "cardinal_path": [
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          3
+        ],
+        "to": [
+          1,
+          5
+        ],
+        "cardinal_path": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          5
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      78.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 19,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          2
+        ],
+        "to": [
+          1,
+          2
+        ],
+        "cardinal_path": [
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          2
+        ],
+        "to": [
+          1,
+          5
+        ],
+        "cardinal_path": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          5
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          3,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      78.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 20,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      45.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 21,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        8
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          8
+        ],
+        "to": [
+          1,
+          8
+        ],
+        "cardinal_path": [
+          [
+            1,
+            8
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          8
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      45.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 22,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      120.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 23,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          3,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          3,
+          1
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          1
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      120.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 24,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          5,
+          5
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          5
+        ],
+        "to": [
+          5,
+          2
+        ],
+        "cardinal_path": [
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          2
+        ],
+        "to": [
+          5,
+          5
+        ],
+        "cardinal_path": [
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          5
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      35.0,
+      5.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 25,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        3,
+        6
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          3,
+          6
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          1,
+          5
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          5
+        ],
+        "to": [
+          1,
+          2
+        ],
+        "cardinal_path": [
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          2
+        ],
+        "to": [
+          1,
+          5
+        ],
+        "cardinal_path": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          5
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      35.0,
+      5.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 26,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          3,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      35.0,
+      5.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 27,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        5,
+        5
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          9
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          9
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          3,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          1,
+          5
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          5
+        ],
+        "to": [
+          1,
+          3
+        ],
+        "cardinal_path": [
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          3
+        ],
+        "to": [
+          1,
+          5
+        ],
+        "cardinal_path": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          5
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          5,
+          5
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          5
+        ],
+        "to": [
+          5,
+          2
+        ],
+        "cardinal_path": [
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            2
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          2
+        ],
+        "to": [
+          5,
+          5
+        ],
+        "cardinal_path": [
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          5
+        ],
+        "to": [
+          3,
+          5
+        ],
+        "cardinal_path": [
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          5
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [
+      8.0,
+      5.0,
+      10.0,
+      5.0
+    ],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 28,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          9
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          9
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 29,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          9
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          9
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 30,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          9
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          9
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 31,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          9
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          9
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 32,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        9
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          9
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          9
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 33,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 34,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 35,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 36,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  },
+  {
+    "route_index": 37,
+    "route_pool": "routes",
+    "coordinate_mapping": "bottom_origin",
+    "coordinate_mapping_native_verified": true,
+    "coordinate_mapping_basis": "native_mapdata_get_item",
+    "coordinate_evidence": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "scope": "cardinal_grid_topology_only",
+    "anchors": [
+      [
+        1,
+        10
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        5,
+        9
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "segments": [
+      {
+        "from": [
+          1,
+          10
+        ],
+        "to": [
+          1,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            10
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          1,
+          7
+        ],
+        "to": [
+          5,
+          7
+        ],
+        "cardinal_path": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          7
+        ],
+        "to": [
+          5,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          5,
+          9
+        ],
+        "to": [
+          3,
+          9
+        ],
+        "cardinal_path": [
+          [
+            5,
+            9
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            3,
+            9
+          ]
+        ]
+      },
+      {
+        "from": [
+          3,
+          9
+        ],
+        "to": [
+          3,
+          0
+        ],
+        "cardinal_path": [
+          [
+            3,
+            9
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    ],
+    "declared_wait_seconds": [],
+    "all_segments_reachable": true,
+    "limits": [
+      "No movement speed, steering, diagonal path, collision, offsets or reach thresholds",
+      "Tile indexing is recovered; cardinal BFS is a diagnostic, not full Unity pathfinding",
+      "Wait declarations are inspected but not executed"
+    ]
+  }
+]

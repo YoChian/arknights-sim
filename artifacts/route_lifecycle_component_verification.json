@@ -1,0 +1,276 @@
+{
+  "initial": {
+    "frame": 0,
+    "time_raw": 0,
+    "actor_id": "isolated_actor",
+    "state_id": 6,
+    "hp_raw": 429496729600,
+    "birth_remaining_raw": 858993472,
+    "alive": true,
+    "finish_reason": 0,
+    "recycled": false,
+    "movement": {
+      "position": [
+        1.0,
+        1.0
+      ],
+      "locator_position": [
+        1.0,
+        1.0
+      ],
+      "velocity": [
+        0.0,
+        0.0
+      ],
+      "direction": [
+        0.0,
+        0.0
+      ],
+      "still": true,
+      "cursor": {
+        "checkpoint_index": 0,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "reached_exit_geometry": false,
+      "current_frame": 0,
+      "time_raw": 0,
+      "exit_requested": false,
+      "last_update": {
+        "kind": "initialized",
+        "position_assignment_applied": false
+      },
+      "runtime_battle_validated": false,
+      "battle_ready": false
+    },
+    "life": 3,
+    "temp_life": 0,
+    "wave_membership": [
+      "isolated_actor"
+    ],
+    "final_membership": [
+      "isolated_actor"
+    ],
+    "finish_request": null,
+    "terminated": false
+  },
+  "info": {
+    "scope": "automatic_single_actor_route_lifecycle_component",
+    "scenario_source": "controlled one-actor component experiment, not level_rogue6_1-1 execution",
+    "speed_source": "explicit component fixture speed",
+    "movement_context_source": "explicit deterministic/new-steering/zero-offset fixture branches",
+    "tile_context_source": "controlled open cached tile fixture; excludes real scene devices and enemies",
+    "state_gates": {
+      "can_move": true,
+      "actually_ground_bound": false,
+      "check_cursor_reached": true,
+      "exit_allowed": true
+    },
+    "lifecycle": {
+      "scope": "static_default_mode_logical_enemy_lifecycle",
+      "creation_backend": "logical_entity",
+      "context_source": "explicit single-actor DefaultGameMode logical fixture, empty modifiers/no hotfix",
+      "initial_life_origin": "explicit_run_input",
+      "mode_backend": "DefaultGameMode",
+      "hotfix_policy": "excluded",
+      "global_modifiers": [],
+      "use_recycle_to_finish_scheduler": true,
+      "active_lifecycle_templates_supported": false,
+      "runtime_battle_validated": false,
+      "pool_backend": "logical_pool_enabled",
+      "scheduler_event_binding_verified": false,
+      "finish_reason_scope": "ReachExit_reason1_only",
+      "finish_scope": "logical_FinishGame_request_before_Unity_outro",
+      "native_evidence": {
+        "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+        "Entity.OnBorn": "0x1806f7df0",
+        "Enemy.States.ConstructStateMachine": "0x180a9b3e0",
+        "BornState.OnEnter": "0x180a884c0",
+        "BornState.OnTick": "0x180a887a0",
+        "StateMachine.Tick": "0x1826483e0",
+        "Enemy.ReachExit": "0x180a73600",
+        "Enemy.OnFinish": "0x180a70920",
+        "Entity.OnFinish": "0x1806f8c40",
+        "Entity.FinishMe": "0x1806f3360",
+        "DefaultGameMode.DestroyEntity": "0x180c18e70",
+        "Scheduler._OnUnitDestroyed": "0x18091bcb0",
+        "BattleController._DoApplyGlobalModifier": "0x180636a90",
+        "BObject.DestroyMe": "0x180662710",
+        "PoolManagerExtensions._RecycleAsync_MonoBehaviour.MoveNext": "0x180661ec0",
+        "IReusable.OnRecycle_dispatch": "0x185c27ff0",
+        "client_runtime_compared": false
+      }
+    },
+    "native_relative_order": [
+      "Unit/FSM",
+      "Enemy/cursor",
+      "exit/finish callbacks",
+      "battle coroutine recycling",
+      "logical final check"
+    ],
+    "reward_defined": false,
+    "seed_consumed": false,
+    "external_lifecycle_events_required": false,
+    "full_scene_ability_executor": false,
+    "full_scene_scheduler_connected": false,
+    "autonomous_route_ready": false,
+    "battle_ready": false,
+    "client_runtime_compared": false
+  },
+  "events": [
+    {
+      "kind": "enemy_born",
+      "frame": 0,
+      "time_raw": 0,
+      "id": "isolated_actor",
+      "enemy_key": "isolated_fixture",
+      "state_id": 6,
+      "born_remaining_raw": 858993472,
+      "hp_raw": 429496729600,
+      "alive": true,
+      "tracked": true,
+      "wave_block": true
+    },
+    {
+      "kind": "enemy_birth_complete",
+      "frame": 7,
+      "time_raw": 1002158080,
+      "id": "isolated_actor",
+      "state_id": 1,
+      "born_remaining_raw": -143164608
+    },
+    {
+      "kind": "enemy_exit_state",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "id": "isolated_actor",
+      "state_id": 7
+    },
+    {
+      "kind": "enemy_finished",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "id": "isolated_actor",
+      "finish_reason": 1,
+      "state_id": -1
+    },
+    {
+      "kind": "enemy_wave_released",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "id": "isolated_actor",
+      "final_membership_retained": true
+    },
+    {
+      "kind": "life_modified",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "source": "isolated_actor",
+      "requested_delta": -1,
+      "applied_delta": -1,
+      "applied_delta_fp_raw": -4294967296,
+      "life_before": 3,
+      "life": 2,
+      "temp_life_before": 0,
+      "temp_life": 0,
+      "is_reach_exit": true,
+      "event_id": 34
+    },
+    {
+      "kind": "enemy_reached_exit",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "id": "isolated_actor",
+      "event_id": 7
+    },
+    {
+      "kind": "enemy_recycle_scheduled",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "id": "isolated_actor",
+      "delay_single": 0.6000000238418579
+    },
+    {
+      "kind": "enemy_recycled",
+      "frame": 120,
+      "time_raw": 17179852800,
+      "id": "isolated_actor",
+      "finish_reason": 1,
+      "wave_membership_changed": false
+    },
+    {
+      "kind": "battle_finish_requested",
+      "frame": 120,
+      "time_raw": 17179852800,
+      "outcome": "win",
+      "source": "Scheduler._CheckFinalNotFinish/default_mode",
+      "scope": "logical_default_mode_request_before_Unity_outro"
+    }
+  ],
+  "final": {
+    "frame": 120,
+    "time_raw": 17179852800,
+    "actor_id": "isolated_actor",
+    "state_id": -1,
+    "hp_raw": 429496729600,
+    "birth_remaining_raw": -143164608,
+    "alive": false,
+    "finish_reason": 1,
+    "recycled": true,
+    "movement": {
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "locator_position": [
+        3.972599983215332,
+        1.0
+      ],
+      "velocity": [
+        0.9999999403953552,
+        0.0
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ],
+      "still": false,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "reached_exit_geometry": true,
+      "current_frame": 103,
+      "time_raw": 14746040320,
+      "exit_requested": true,
+      "last_update": {
+        "kind": "controller_move",
+        "position_assignment_applied": true,
+        "controller_velocity_updated": true,
+        "reflected_unpassable_entry": false,
+        "fsm_position_reassigned": true
+      },
+      "runtime_battle_validated": false,
+      "battle_ready": false
+    },
+    "life": 2,
+    "temp_life": 0,
+    "wave_membership": [],
+    "final_membership": [],
+    "finish_request": "win",
+    "terminated": true
+  },
+  "reward": null,
+  "terminated": true
+}

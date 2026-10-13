@@ -1,0 +1,15 @@
+# 普通敌人出生、漏怪和回收组件
+
+本轮从原件默认分支恢复 Born6→Move1；Born.OnTick 切换到Move当帧不再次调用新state.OnTick。普通alive需要已注册正state与HP.raw>FP.EN5=42950。delayToBorn先按Single epsilon决定是否转FP，出生倒计时按FP减dt。
+
+`arknights_probe/lifecycle.py`提供显式DefaultGameMode逻辑后端。初始life/temp和useRecycleToFinishScheduler必须明确，global modifiers为空且hotfix排除。只支持ReachExit reason1；NPC模板、动态天赋、死亡状态机与实际Unity退场拒绝。生命delta先消耗temp，再写life，SetLifePoint可在event22之前请求lose。
+
+最终复核顺序：Entity.FinishMe停止state→virtualOnFinish（Unit event6、wave/final释放逻辑、Enemy生命/event7）→模式DestroyEntity→普通reason1延迟回收。早期把Entity.OnFinish虚slot118误称RecycleSelfWithDelay，它实际是ClearAbilities；已由vtable和实际FinishMe/DestroyEntity原件纠正，源码使用最终顺序。
+
+MonoBehaviour正延迟分支实例化`PoolManagerExtensions.<_RecycleAsync>d__3`=0x180661ec0。等WaitForFixedSeconds后经IReusable.OnRecycle dispatch185c27ff0调用Enemy.OnRecycle，再RawRecycle物理对象；zero/effectively-zero延迟的PoolManager.Recycle同样先同步该回调。`callback_identity.json`保存原件TypeInfo usage编码、类型记录和metadata方法身份，未执行目标初始化器。
+
+回收与波次不同。useRecycleToFinishScheduler=true时final成员等OnRecycle，false时finished回调已移除final。Scheduler的event6/8处理函数已恢复，反射监听注册链仍未证；逻辑后端显式连接回调，不代表真实启动流程已经完成。
+
+数值参考：独立编译的NativeLifecycleReference.cs共322个life/temp、alive、birth和recycle等待边界向量，通过Python对照。12个生命周期测试及父级自动路线集成测试覆盖本组件。参考是源代码转写程序，不是客户端oracle，未载入或运行游戏代码。
+
+下一步需要完成实际event注册、NPC宿主隐藏/召唤/恢复、upeople_t死亡扣生命、mode/死亡状态、与真实scheduler/其他战斗组件的事件顺序。全图battle_ready保持false。

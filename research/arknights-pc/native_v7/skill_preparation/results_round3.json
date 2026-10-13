@@ -1,0 +1,790 @@
+[
+  {
+    "selection": {
+      "type": "Torappu.Battle.Ability",
+      "method": "Reset",
+      "address": "0x1805d6a50",
+      "metadata_method_index": 63077,
+      "owner": "Torappu.Battle.Ability",
+      "type_definition_index": 9893,
+      "slot": 42,
+      "basis": "Native OnAttached(1805d07a0) immediately callsDoUpdatePlaybackSpeed; actual override UpdatePlaybackSpeed writes prepared FP fields; DoAttach calls Reset slot42"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\skill_preparation\\round3\\63077_Torappu_Battle_Ability_Reset_0x600f666.c",
+    "result": {
+      "name": "Torappu_Battle_Ability_Reset_0x600f666",
+      "display_name": "Torappu.Battle.Ability.Reset",
+      "candidate_map_type": "Torappu.Battle.Ability",
+      "address": "0x1805d6a50",
+      "end_address": "0x1805d6bba",
+      "ranges": [
+        {
+          "start": "0x1805d6a50",
+          "end": "0x1805d6aaa",
+          "unwind_rva": "0x7f6463c",
+          "chained": false,
+          "source_sha256": "f3929991c23400e8fb3457af6d3a31679f7ff71b5ec14a347dff5bf1360fc2bb",
+          "source_file_offset": 6118992
+        },
+        {
+          "start": "0x1805d6aab",
+          "end": "0x1805d6ba4",
+          "unwind_rva": "0x7f73240",
+          "chained": true,
+          "source_sha256": "48eab970105366b551fe018c19d3c37f5043c2ac015a203ff67d4026be3c4488",
+          "source_file_offset": 6119083
+        },
+        {
+          "start": "0x1805d6ba5",
+          "end": "0x1805d6bb4",
+          "unwind_rva": "0x7f73254",
+          "chained": true,
+          "source_sha256": "efa3ffec956ea369308ddedda236ca74ac250bb5e09f09c1f36bbce324ba6e7e",
+          "source_file_offset": 6119333
+        },
+        {
+          "start": "0x1805d6bb5",
+          "end": "0x1805d6bba",
+          "unwind_rva": "0x7f73264",
+          "chained": true,
+          "source_sha256": "5c6063e78f4f9d2628a9215fdc231c84fe0ef9a842ad2f80b8401f7ba5aabb6f",
+          "source_file_offset": 6119349
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6118992,
+      "token": "0x600f666",
+      "metadata_method_index": 63077,
+      "imported_range_checks": [
+        {
+          "start": "0x1805d6a50",
+          "bytes": 91,
+          "imported_sha256": "f3929991c23400e8fb3457af6d3a31679f7ff71b5ec14a347dff5bf1360fc2bb",
+          "match": true
+        },
+        {
+          "start": "0x1805d6aab",
+          "bytes": 250,
+          "imported_sha256": "48eab970105366b551fe018c19d3c37f5043c2ac015a203ff67d4026be3c4488",
+          "match": true
+        },
+        {
+          "start": "0x1805d6ba5",
+          "bytes": 16,
+          "imported_sha256": "efa3ffec956ea369308ddedda236ca74ac250bb5e09f09c1f36bbce324ba6e7e",
+          "match": true
+        },
+        {
+          "start": "0x1805d6bb5",
+          "bytes": 6,
+          "imported_sha256": "5c6063e78f4f9d2628a9215fdc231c84fe0ef9a842ad2f80b8401f7ba5aabb6f",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 86,
+      "direct_calls": [
+        {
+          "source": "1805d6a69",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d6a75",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d6a81",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d6abb",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d6ae9",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d6af6",
+          "target": "0x186b63a70",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d6b0b",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d6b34",
+          "target": "0x185159d80",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d6b55",
+          "target": "0x18000d9c0",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d6b6a",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d6bb5",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Removing unreachable block (ram,0x000181e047ff) */\r\n/* WARNING: Removing unreachable block (ram,0x0001833100fe) */\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_Battle_Ability_Reset_0x600f666(longlong *param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  char cVar3;\r\n  int iVar4;\r\n  int iVar5;\r\n  undefined8 uVar6;\r\n  longlong lVar7;\r\n  undefined8 uVar8;\r\n  undefined8 unaff_RDI;\r\n  bool bVar9;\r\n  \r\n  if (DAT_188c8fcf7 == '\\0') {\r\n    FUN_18048bf00(&DAT_1889733f0);\r\n    FUN_18048bf00(&DAT_1889355a8);\r\n    FUN_18048bf00(&DAT_188932ce8);\r\n    DAT_188c8fcf7 = '\\x01';\r\n  }\r\n  lVar7 = *(longlong *)(*(longlong *)(_DAT_1889733f0 + 0xb8) + 0x1e0);\r\n  if (lVar7 != 0) {\r\n    if (*(longlong *)(lVar7 + 0x18) == 0) {\r\n      FUN_18048c0b0();\r\n      pcVar2 = (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    FUN_185ca7f50(*(undefined8 *)(*(longlong *)(lVar7 + 0x18) + 0x30),&stack0x00000008,0);\r\n    if (*(longlong *)(lVar7 + 0x18) != 0) {\r\n      uVar6 = *(undefined8 *)(*(longlong *)(lVar7 + 0x18) + 0x10);\r\n      iVar4 = FUN_183f23b70(uVar6,*(undefined4 *)(lVar7 + 0x38),*(undefined4 *)(lVar7 + 0x14),0);\r\n      if (*(longlong *)(lVar7 + 0x18) != 0) {\r\n        lVar1 = *(longlong *)(*(longlong *)(lVar7 + 0x18) + 0x20);\r\n        if (lVar1 == 0) {\r\n          FUN_18048c0b0();\r\n        }\r\n        else {\r\n          FUN_183cf8c20(lVar1,uVar6,param_1,0);\r\n          iVar5 = FUN_183f22380(uVar6,1,0,iVar4,0);\r\n          if (iVar5 == 0) {\r\ncode_r0x0001833100e8:\r\n            FUN_183f22fd0(uVar6,iVar4 + -1,0);\r\n            return;\r\n          }\r\n          if (*(longlong *)(lVar7 + 0x18) != 0) {\r\n            FUN_183e0d130(*(longlong *)(lVar7 + 0x18),iVar4 + -1,0);\r\n            goto code_r0x0001833100e8;\r\n          }\r\n        }\r\n        FUN_18048c0b0();\r\n      }\r\n      FUN_18048c0b0();\r\n    }\r\n    FUN_18048c0b0();\r\n    FUN_180472d50();\r\n    pcVar2 = (code *)swi(3);\r\n    (*pcVar2)();\r\n    return;\r\n  }\r\n  if (DAT_188ccc7f0 != '\\0') {\r\n    func_0x000180446d00(*param_1);\r\n  }\r\n  uVar6 = (**(code **)(*param_1 + 0x230))(param_1,*(undefined8 *)(*param_1 + 0x238));\r\n  if (*(int *)(_DAT_188932ce8 + 0xe0) == 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  cVar3 = FUN_186b63a70(uVar6,0);\r\n  if (cVar3 != '\\0') {\r\n    if (DAT_188ccc7f0 != '\\0') {\r\n      func_0x000180446d00(*param_1);\r\n    }\r\n    lVar7 = (**(code **)(*param_1 + 0x230))(param_1,*(undefined8 *)(*param_1 + 0x238));\r\n    uVar6 = FUN_185159d80(param_1 + 10,_DAT_1889355a8);\r\n    if (lVar7 == 0) goto LAB_1805d6bb5;\r\n    FUN_18000d9c0(0xc,lVar7,uVar6,param_1,0);\r\n  }\r\n  lVar7 = param_1[0xe];\r\n  if (DAT_188ccc7f0 != '\\0') {\r\n    func_0x000180446d00(*param_1);\r\n  }\r\n  uVar6 = (**(code **)(*param_1 + 0x250))(param_1,*(undefined8 *)(*param_1 + 600));\r\n  if (lVar7 != 0) {\r\n    if (cRam0000000188ca0cfe == '\\0') {\r\n      FUN_18048bf00(0x18885a700,uVar6,0,0,unaff_RDI);\r\n      FUN_18048bf00(0x1888915d8);\r\n      cRam0000000188ca0cfe = '\\x01';\r\n    }\r\n    if (*(int *)(lRam000000018885a700 + 0xe0) == 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    uVar8 = func_0x0001866fdac0(0,0);\r\n    if (*(int *)(lRam00000001888915d8 + 0xe0) == 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    uVar6 = FUN_1866ff750(uVar8,uVar6,0);\r\n    bVar9 = cRam0000000188ca0cfd == '\\0';\r\n    *(undefined8 *)(lVar7 + 0x10) = uVar6;\r\n    if (bVar9) {\r\n      FUN_18048bf00(0x18885a700);\r\n      cRam0000000188ca0cfd = '\\x01';\r\n    }\r\n    if (*(int *)(lRam000000018885a700 + 0xe0) == 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    uVar6 = func_0x0001866fdac0(0,0);\r\n    *(undefined8 *)(lVar7 + 0x18) = uVar6;\r\n    return;\r\n  }\r\nLAB_1805d6bb5:\r\n  FUN_18048c0b0();\r\n  pcVar2 = (code *)swi(3);\r\n  (*pcVar2)();\r\n  return;\r\n}\r\n\r\n"
+    }
+  },
+  {
+    "selection": {
+      "type": "Torappu.Battle.AbilityStandard",
+      "method": "DoUpdatePlaybackSpeed",
+      "address": "0x1805cff60",
+      "metadata_method_index": 63178,
+      "owner": "Torappu.Battle.AbilityStandard",
+      "type_definition_index": 9903,
+      "slot": 65535,
+      "basis": "Native OnAttached(1805d07a0) immediately callsDoUpdatePlaybackSpeed; actual override UpdatePlaybackSpeed writes prepared FP fields; DoAttach calls Reset slot42"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\skill_preparation\\round3\\63178_Torappu_Battle_AbilityStandard_DoUpdatePlaybackSpeed_0x600f6cb.c",
+    "result": {
+      "name": "Torappu_Battle_AbilityStandard_DoUpdatePlaybackSpeed_0x600f6cb",
+      "display_name": "Torappu.Battle.AbilityStandard.DoUpdatePlaybackSpeed",
+      "candidate_map_type": "Torappu.Battle.AbilityStandard",
+      "address": "0x1805cff60",
+      "end_address": "0x1805d0178",
+      "ranges": [
+        {
+          "start": "0x1805cff60",
+          "end": "0x1805cffb7",
+          "unwind_rva": "0x7f72700",
+          "chained": false,
+          "source_sha256": "c1d406982e2107d54f7702e76c38e126a5c447896011b96d9a3fb8ee4a74f4be",
+          "source_file_offset": 6091616
+        },
+        {
+          "start": "0x1805cffb8",
+          "end": "0x1805d00db",
+          "unwind_rva": "0x7f72710",
+          "chained": true,
+          "source_sha256": "c010ec9f03aa4a51ec5a014f287b0e72f8e8e27c6ddf5db41221b9c2bff8ceb6",
+          "source_file_offset": 6091704
+        },
+        {
+          "start": "0x1805d00dc",
+          "end": "0x1805d0150",
+          "unwind_rva": "0x7f72734",
+          "chained": true,
+          "source_sha256": "d3fc8e394f8016fb58988d8262a378313d6b867d45e42848720b8c9e4c5b685f",
+          "source_file_offset": 6091996
+        },
+        {
+          "start": "0x1805d0151",
+          "end": "0x1805d016c",
+          "unwind_rva": "0x7f72758",
+          "chained": true,
+          "source_sha256": "6e942b86d86c64d2b580afb268f0c4fbb8b478b0120a2f3bb139b1e8e86af57e",
+          "source_file_offset": 6092113
+        },
+        {
+          "start": "0x1805d016d",
+          "end": "0x1805d0178",
+          "unwind_rva": "0x7f72734",
+          "chained": true,
+          "source_sha256": "e16891228676ff3a4478f793f31f8de01579aa340adf4f9a0947cfb38db96015",
+          "source_file_offset": 6092141
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6091616,
+      "token": "0x600f6cb",
+      "metadata_method_index": 63178,
+      "imported_range_checks": [
+        {
+          "start": "0x1805cff60",
+          "bytes": 88,
+          "imported_sha256": "c1d406982e2107d54f7702e76c38e126a5c447896011b96d9a3fb8ee4a74f4be",
+          "match": true
+        },
+        {
+          "start": "0x1805cffb8",
+          "bytes": 292,
+          "imported_sha256": "c010ec9f03aa4a51ec5a014f287b0e72f8e8e27c6ddf5db41221b9c2bff8ceb6",
+          "match": true
+        },
+        {
+          "start": "0x1805d00dc",
+          "bytes": 117,
+          "imported_sha256": "d3fc8e394f8016fb58988d8262a378313d6b867d45e42848720b8c9e4c5b685f",
+          "match": true
+        },
+        {
+          "start": "0x1805d0151",
+          "bytes": 28,
+          "imported_sha256": "6e942b86d86c64d2b580afb268f0c4fbb8b478b0120a2f3bb139b1e8e86af57e",
+          "match": true
+        },
+        {
+          "start": "0x1805d016d",
+          "bytes": 12,
+          "imported_sha256": "e16891228676ff3a4478f793f31f8de01579aa340adf4f9a0947cfb38db96015",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 127,
+      "direct_calls": [
+        {
+          "source": "1805cff83",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805cffcd",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d0072",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d0109",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d0145",
+          "target": "0x1836500a0",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp81_0x6000ab1"
+        },
+        {
+          "source": "1805d015a",
+          "target": "0x1832f9620",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp2654_0x60014be"
+        },
+        {
+          "source": "1805d016d",
+          "target": "0x18048c0a0",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d0173",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined8\r\nTorappu_Battle_AbilityStandard_DoUpdatePlaybackSpeed_0x600f6cb(longlong *param_1,undefined4 param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  longlong *plVar2;\r\n  code *pcVar3;\r\n  char cVar4;\r\n  undefined8 uVar5;\r\n  uint uVar6;\r\n  longlong lVar7;\r\n  longlong lVar8;\r\n  bool bVar9;\r\n  float fVar10;\r\n  float fVar11;\r\n  float afStackX_20 [2];\r\n  \r\n  if (DAT_188c8fd49 == '\\0') {\r\n    FUN_18048bf00(&DAT_188974cb0);\r\n    DAT_188c8fd49 = '\\x01';\r\n  }\r\n  afStackX_20[0] = 0.0;\r\n  lVar7 = *(longlong *)(*(longlong *)(_DAT_188974cb0 + 0xb8) + 0x1a8);\r\n  if (lVar7 != 0) {\r\n    uVar5 = XLua_DelegateBridge___Gen_Delegate_Imp2654_0x60014be(lVar7,param_1,param_2,0);\r\n    return uVar5;\r\n  }\r\n  if (DAT_188ccc7f0 != '\\0') {\r\n    func_0x000180446d00(*param_1);\r\n  }\r\n  cVar4 = (**(code **)(*param_1 + 0x6f0))\r\n                    (param_1,param_2,afStackX_20,*(undefined8 *)(*param_1 + 0x6f8));\r\n  fVar11 = 0.0;\r\n  if (cVar4 != '\\0') {\r\n    fVar11 = afStackX_20[0];\r\n  }\r\n  bVar9 = cVar4 != '\\0';\r\n  if (param_1[0x20] != 0) {\r\n    uVar6 = *(int *)(param_1[0x20] + 0x18) - 1;\r\n    lVar7 = (longlong)(int)uVar6;\r\n    if (-1 < (int)uVar6) {\r\n      lVar8 = lVar7 * 8 + 0x20;\r\n      do {\r\n        lVar1 = param_1[0x20];\r\n        if (lVar1 == 0) goto LAB_1805d0173;\r\n        if (*(uint *)(lVar1 + 0x18) <= uVar6) {\r\n          FUN_18048c0a0();\r\n          pcVar3 = (code *)swi(3);\r\n          uVar5 = (*pcVar3)();\r\n          return uVar5;\r\n        }\r\n        plVar2 = *(longlong **)(lVar8 + lVar1);\r\n        if (plVar2 == (longlong *)0x0) goto LAB_1805d0173;\r\n        if (DAT_188ccc7f0 != '\\0') {\r\n          func_0x000180446d00(*plVar2);\r\n        }\r\n        cVar4 = (**(code **)(*plVar2 + 0x220))\r\n                          (plVar2,param_2,afStackX_20,*(undefined8 *)(*plVar2 + 0x228));\r\n        if (cVar4 != '\\0') {\r\n          bVar9 = true;\r\n          fVar11 = afStackX_20[0];\r\n        }\r\n        uVar6 = uVar6 - 1;\r\n        lVar8 = lVar8 + -8;\r\n        lVar7 = lVar7 + -1;\r\n      } while (-1 < lVar7);\r\n    }\r\n    if (bVar9) {\r\n      fVar10 = 0.01;\r\n      if ((fVar11 < 0.01) || (fVar10 = 100.0, 100.0 < fVar11)) {\r\n        fVar11 = fVar10;\r\n      }\r\n      if (DAT_188c8fd19 == '\\0') {\r\n        FUN_18048bf00(&DAT_188974cb0);\r\n        DAT_188c8fd19 = '\\x01';\r\n      }\r\n      lVar7 = *(longlong *)(*(longlong *)(_DAT_188974cb0 + 0xb8) + 0x20);\r\n      if (lVar7 == 0) {\r\n        *(float *)(param_1 + 0x1f) = fVar11;\r\n        uVar5 = 1;\r\n      }\r\n      else {\r\n        XLua_DelegateBridge___Gen_Delegate_Imp81_0x6000ab1(lVar7,param_1,fVar11,0);\r\n        uVar5 = 1;\r\n      }\r\n    }\r\n    else {\r\n      uVar5 = 0;\r\n    }\r\n    return uVar5;\r\n  }\r\nLAB_1805d0173:\r\n  FUN_18048c0b0();\r\n  pcVar3 = (code *)swi(3);\r\n  uVar5 = (*pcVar3)();\r\n  return uVar5;\r\n}\r\n\r\n"
+    }
+  },
+  {
+    "selection": {
+      "type": "Torappu.Battle.AbilityStandard",
+      "method": "UpdatePlaybackSpeed",
+      "address": "0x1805d3320",
+      "metadata_method_index": 63179,
+      "owner": "Torappu.Battle.AbilityStandard",
+      "type_definition_index": 9903,
+      "slot": 91,
+      "basis": "Native OnAttached(1805d07a0) immediately callsDoUpdatePlaybackSpeed; actual override UpdatePlaybackSpeed writes prepared FP fields; DoAttach calls Reset slot42"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\skill_preparation\\round3\\63179_Torappu_Battle_AbilityStandard_UpdatePlaybackSpeed_0x600f6cc.c",
+    "result": {
+      "name": "Torappu_Battle_AbilityStandard_UpdatePlaybackSpeed_0x600f6cc",
+      "display_name": "Torappu.Battle.AbilityStandard.UpdatePlaybackSpeed",
+      "candidate_map_type": "Torappu.Battle.AbilityStandard",
+      "address": "0x1805d3320",
+      "end_address": "0x1805d33ab",
+      "ranges": [
+        {
+          "start": "0x1805d3320",
+          "end": "0x1805d33ab",
+          "unwind_rva": "0x7f63cf8",
+          "chained": false,
+          "source_sha256": "1c12c095bbc50bd1ada9527279c411750faf6df947416f552721a67917312fd6",
+          "source_file_offset": 6104864
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6104864,
+      "token": "0x600f6cc",
+      "metadata_method_index": 63179,
+      "imported_range_checks": [
+        {
+          "start": "0x1805d3320",
+          "bytes": 140,
+          "imported_sha256": "1c12c095bbc50bd1ada9527279c411750faf6df947416f552721a67917312fd6",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 34,
+      "direct_calls": [
+        {
+          "source": "1805d3347",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d3397",
+          "target": "0x1832f9810",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp2655_0x60014bf"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_Battle_AbilityStandard_UpdatePlaybackSpeed_0x600f6cc\r\n                    (undefined8 param_1,undefined4 param_2,undefined4 *param_3)\r\n\r\n{\r\n  longlong lVar1;\r\n  ulonglong uVar2;\r\n  \r\n  if (DAT_188c8fd4a == '\\0') {\r\n    FUN_18048bf00(&DAT_188974cb0);\r\n    DAT_188c8fd4a = '\\x01';\r\n  }\r\n  uVar2 = _DAT_188974cb0;\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188974cb0 + 0xb8) + 0x1b0);\r\n  if (lVar1 == 0) {\r\n    *param_3 = 0x3f800000;\r\n    return uVar2 & 0xffffffffffffff00;\r\n  }\r\n  uVar2 = XLua_DelegateBridge___Gen_Delegate_Imp2655_0x60014bf(lVar1,param_1,param_2,param_3,0);\r\n  return uVar2;\r\n}\r\n\r\n"
+    }
+  },
+  {
+    "selection": {
+      "type": "Torappu.Battle.AbilityStandard",
+      "method": "GeneratePurposeMask",
+      "address": "0x1805d0630",
+      "metadata_method_index": 63181,
+      "owner": "Torappu.Battle.AbilityStandard",
+      "type_definition_index": 9903,
+      "slot": 93,
+      "basis": "Native OnAttached(1805d07a0) immediately callsDoUpdatePlaybackSpeed; actual override UpdatePlaybackSpeed writes prepared FP fields; DoAttach calls Reset slot42"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\skill_preparation\\round3\\63181_Torappu_Battle_AbilityStandard_GeneratePurposeMask_0x600f6ce.c",
+    "result": {
+      "name": "Torappu_Battle_AbilityStandard_GeneratePurposeMask_0x600f6ce",
+      "display_name": "Torappu.Battle.AbilityStandard.GeneratePurposeMask",
+      "candidate_map_type": "Torappu.Battle.AbilityStandard",
+      "address": "0x1805d0630",
+      "end_address": "0x1805d0702",
+      "ranges": [
+        {
+          "start": "0x1805d0630",
+          "end": "0x1805d0672",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "a47c1e16a3a5e83c77aba41fa9a74137817bbfbc3bf61252de3914d851cafdbc",
+          "source_file_offset": 6093360
+        },
+        {
+          "start": "0x1805d0673",
+          "end": "0x1805d06f2",
+          "unwind_rva": "0x7f739a8",
+          "chained": true,
+          "source_sha256": "9cbf1f82ce8452154e6e1dd856bb354d026694f7ad95943e39cb8f86576f2aee",
+          "source_file_offset": 6093427
+        },
+        {
+          "start": "0x1805d06f3",
+          "end": "0x1805d0702",
+          "unwind_rva": "0x7f739bc",
+          "chained": true,
+          "source_sha256": "3412f8ac3a5151a50c92d30e849259305c98eb3e2fc8d6625673f2e722e791bf",
+          "source_file_offset": 6093555
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6093360,
+      "token": "0x600f6ce",
+      "metadata_method_index": 63181,
+      "imported_range_checks": [
+        {
+          "start": "0x1805d0630",
+          "bytes": 67,
+          "imported_sha256": "a47c1e16a3a5e83c77aba41fa9a74137817bbfbc3bf61252de3914d851cafdbc",
+          "match": true
+        },
+        {
+          "start": "0x1805d0673",
+          "bytes": 128,
+          "imported_sha256": "9cbf1f82ce8452154e6e1dd856bb354d026694f7ad95943e39cb8f86576f2aee",
+          "match": true
+        },
+        {
+          "start": "0x1805d06f3",
+          "bytes": 16,
+          "imported_sha256": "3412f8ac3a5151a50c92d30e849259305c98eb3e2fc8d6625673f2e722e791bf",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 52,
+      "direct_calls": [
+        {
+          "source": "1805d0649",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d0683",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d06a8",
+          "target": "0x181190010",
+          "candidate_name": "Torappu_Battle_Action_ActionUtil_GeneratePurposeMask_0x6018907"
+        },
+        {
+          "source": "1805d06bb",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1805d06e1",
+          "target": "0x181190010",
+          "candidate_name": "Torappu_Battle_Action_ActionUtil_GeneratePurposeMask_0x6018907"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Removing unreachable block (ram,0x0001832f923c) */\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_Battle_AbilityStandard_GeneratePurposeMask_0x600f6ce(longlong *param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  longlong lVar2;\r\n  code *pcVar3;\r\n  uint uVar4;\r\n  uint uVar5;\r\n  int iVar6;\r\n  int iVar7;\r\n  undefined8 uVar8;\r\n  ulonglong uVar9;\r\n  uint auStackX_20 [2];\r\n  undefined8 auStack_50 [2];\r\n  undefined8 uStack_40;\r\n  undefined1 *puStack_38;\r\n  undefined8 *puStack_30;\r\n  \r\n  if (DAT_188c8fd4c == '\\0') {\r\n    puStack_30 = (undefined8 *)0x1805d064e;\r\n    FUN_18048bf00(&DAT_188974cb0);\r\n    DAT_188c8fd4c = '\\x01';\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188974cb0 + 0xb8) + 0x1c0);\r\n  if (lVar1 == 0) {\r\n    if (DAT_188ccc7f0 != '\\0') {\r\n      puStack_30 = (undefined8 *)0x1805d0688;\r\n      func_0x000180446d00(*param_1);\r\n    }\r\n    puStack_30 = (undefined8 *)0x1805d06a3;\r\n    uVar8 = (**(code **)(*param_1 + 0x5f0))(param_1,4,*(undefined8 *)(*param_1 + 0x5f8));\r\n    puStack_30 = (undefined8 *)0x1805d06ad;\r\n    uVar4 = Torappu_Battle_Action_ActionUtil_GeneratePurposeMask_0x6018907(uVar8,0);\r\n    if (DAT_188ccc7f0 != '\\0') {\r\n      puStack_30 = (undefined8 *)0x1805d06c0;\r\n      func_0x000180446d00(*param_1);\r\n    }\r\n    puStack_30 = (undefined8 *)0x1805d06dc;\r\n    uVar8 = (**(code **)(*param_1 + 0x420))(param_1,0,0,*(undefined8 *)(*param_1 + 0x428));\r\n    puStack_30 = (undefined8 *)0x1805d06e6;\r\n    uVar5 = Torappu_Battle_Action_ActionUtil_GeneratePurposeMask_0x6018907(uVar8,0);\r\n    return (ulonglong)(uVar5 | uVar4);\r\n  }\r\n  if (cRam0000000188cafbb4 == '\\0') {\r\n    FUN_18048bf00(0x188821b98);\r\n    cRam0000000188cafbb4 = '\\x01';\r\n  }\r\n  auStackX_20[0] = 0;\r\n  if (*(longlong *)(lVar1 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\ncode_r0x0001832f928b:\r\n    FUN_18048c0b0();\r\ncode_r0x0001832f9291:\r\n    FUN_18048c0b0();\r\n  }\r\n  else {\r\n    auStack_50[0] = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x30);\r\n    uStack_40 = 0;\r\n    puStack_38 = &stack0x00000008;\r\n    puStack_30 = auStack_50;\r\n    FUN_185ca7f50(auStack_50[0],&stack0x00000008,0);\r\n    if (*(longlong *)(lVar1 + 0x18) == 0) goto code_r0x0001832f929b;\r\n    uVar8 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x10);\r\n    iVar6 = FUN_183f23b70(uVar8,*(undefined4 *)(lVar1 + 0x38),*(undefined4 *)(lVar1 + 0x14),0);\r\n    if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n      lVar2 = *(longlong *)(*(longlong *)(lVar1 + 0x18) + 0x20);\r\n      if (lVar2 == 0) goto code_r0x0001832f928b;\r\n      FUN_183cf8c20(lVar2,uVar8,param_1,0);\r\n      iVar7 = FUN_183f22380(uVar8,1,1,iVar6,0);\r\n      if (iVar7 == 0) {\r\ncode_r0x0001832f91f6:\r\n        FUN_184566d40(lVar2,uVar8,iVar6 + 1,auStackX_20,uRam0000000188821b98);\r\n        FUN_183f22fd0(uVar8,iVar6 + -1,0);\r\n        return (ulonglong)auStackX_20[0];\r\n      }\r\n      if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n        FUN_183e0d130(*(longlong *)(lVar1 + 0x18),iVar6 + -1,0);\r\n        goto code_r0x0001832f91f6;\r\n      }\r\n      goto code_r0x0001832f9291;\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\ncode_r0x0001832f929b:\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar3 = (code *)swi(3);\r\n  uVar9 = (*pcVar3)();\r\n  return uVar9;\r\n}\r\n\r\n"
+    }
+  },
+  {
+    "selection": {
+      "type": "Torappu.Battle.BasicSkill",
+      "method": "GetValue",
+      "address": "0x180959fb0",
+      "metadata_method_index": 72684,
+      "owner": "Torappu.Battle.BasicSkill",
+      "type_definition_index": 10921,
+      "slot": 10,
+      "basis": "Native OnAttached(1805d07a0) immediately callsDoUpdatePlaybackSpeed; actual override UpdatePlaybackSpeed writes prepared FP fields; DoAttach calls Reset slot42"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\skill_preparation\\round3\\72684_Torappu_Battle_BasicSkill_GetValue_0x6011bed.c",
+    "result": {
+      "name": "Torappu_Battle_BasicSkill_GetValue_0x6011bed",
+      "display_name": "Torappu.Battle.BasicSkill.GetValue",
+      "candidate_map_type": "Torappu.Battle.BasicSkill",
+      "address": "0x180959fb0",
+      "end_address": "0x18095a08d",
+      "ranges": [
+        {
+          "start": "0x180959fb0",
+          "end": "0x18095a08d",
+          "unwind_rva": "0x7f64eb4",
+          "chained": false,
+          "source_sha256": "cf695b3c62fd11ce3a80b81a13cef4cac4bc17cd21ee97fee69c10d1ebcc8874",
+          "source_file_offset": 9802672
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 9802672,
+      "token": "0x6011bed",
+      "metadata_method_index": 72684,
+      "imported_range_checks": [
+        {
+          "start": "0x180959fb0",
+          "bytes": 222,
+          "imported_sha256": "cf695b3c62fd11ce3a80b81a13cef4cac4bc17cd21ee97fee69c10d1ebcc8874",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 52,
+      "direct_calls": [
+        {
+          "source": "180959fdf",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180959feb",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18095a021",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18095a02a",
+          "target": "0x1866fdac0",
+          "candidate_name": "Torappu_FP_op_Implicit_0x6000321"
+        },
+        {
+          "source": "18095a074",
+          "target": "0x183324a50",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp2925_0x60015cd"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_Battle_BasicSkill_GetValue_0x6011bed\r\n                    (undefined8 param_1,undefined4 param_2,ulonglong *param_3,ulonglong *param_4,\r\n                    ulonglong *param_5,ulonglong *param_6)\r\n\r\n{\r\n  longlong lVar1;\r\n  ulonglong uVar2;\r\n  \r\n  if (DAT_188c91c5e == '\\0') {\r\n    FUN_18048bf00(&DAT_188925ba0);\r\n    FUN_18048bf00(&DAT_18885a700);\r\n    DAT_188c91c5e = '\\x01';\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188925ba0 + 0xb8) + 0x358);\r\n  if (lVar1 == 0) {\r\n    if (*(int *)(_DAT_18885a700 + 0xe0) == 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    uVar2 = func_0x0001866fdac0(0,0);\r\n    *param_6 = uVar2;\r\n    *param_5 = uVar2;\r\n    *param_4 = uVar2;\r\n    *param_3 = uVar2;\r\n    uVar2 = uVar2 & 0xffffffffffffff00;\r\n  }\r\n  else {\r\n    uVar2 = XLua_DelegateBridge___Gen_Delegate_Imp2925_0x60015cd\r\n                      (lVar1,param_1,param_2,param_3,param_4,param_5,param_6,0);\r\n  }\r\n  return uVar2;\r\n}\r\n\r\n"
+    }
+  },
+  {
+    "selection": {
+      "type": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+      "method": "UpdatePlaybackSpeed",
+      "address": "0x180f00820",
+      "metadata_method_index": 91798,
+      "owner": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+      "type_definition_index": 13197,
+      "slot": 91,
+      "basis": "Native OnAttached(1805d07a0) immediately callsDoUpdatePlaybackSpeed; actual override UpdatePlaybackSpeed writes prepared FP fields; DoAttach calls Reset slot42"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v7\\skill_preparation\\round3\\91798_Torappu_Battle_Abilities_AbstractAnimatedAbility_UpdatePlaybackSpeed_0x6016697.c",
+    "result": {
+      "name": "Torappu_Battle_Abilities_AbstractAnimatedAbility_UpdatePlaybackSpeed_0x6016697",
+      "display_name": "Torappu.Battle.Abilities.AbstractAnimatedAbility.UpdatePlaybackSpeed",
+      "candidate_map_type": "Torappu.Battle.Abilities.AbstractAnimatedAbility",
+      "address": "0x180f00820",
+      "end_address": "0x180f00c6b",
+      "ranges": [
+        {
+          "start": "0x180f00820",
+          "end": "0x180f008bc",
+          "unwind_rva": "0x801c9ec",
+          "chained": false,
+          "source_sha256": "dfa117ccdb89e285066356c8e384d416512cfb2f48667aa7098af5c450724b70",
+          "source_file_offset": 15727648
+        },
+        {
+          "start": "0x180f008bd",
+          "end": "0x180f00c2d",
+          "unwind_rva": "0x801ca00",
+          "chained": true,
+          "source_sha256": "6c6621e8a748be5db53023b9ee0f47afbea2e17b282a4c937727958f2db6f1d3",
+          "source_file_offset": 15727805
+        },
+        {
+          "start": "0x180f00c2e",
+          "end": "0x180f00c65",
+          "unwind_rva": "0x801ca1c",
+          "chained": true,
+          "source_sha256": "a1b307bc7075b202b0db5e7ad93a69fb9424bc89521af3391d6d6385812be5c9",
+          "source_file_offset": 15728686
+        },
+        {
+          "start": "0x180f00c66",
+          "end": "0x180f00c6b",
+          "unwind_rva": "0x801ca2c",
+          "chained": true,
+          "source_sha256": "2247e0b3ab9668eda77b06b0a9f06a2b196f9f64d43742b771a14cb4ea2f9196",
+          "source_file_offset": 15728742
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 15727648,
+      "token": "0x6016697",
+      "metadata_method_index": 91798,
+      "imported_range_checks": [
+        {
+          "start": "0x180f00820",
+          "bytes": 157,
+          "imported_sha256": "dfa117ccdb89e285066356c8e384d416512cfb2f48667aa7098af5c450724b70",
+          "match": true
+        },
+        {
+          "start": "0x180f008bd",
+          "bytes": 881,
+          "imported_sha256": "6c6621e8a748be5db53023b9ee0f47afbea2e17b282a4c937727958f2db6f1d3",
+          "match": true
+        },
+        {
+          "start": "0x180f00c2e",
+          "bytes": 56,
+          "imported_sha256": "a1b307bc7075b202b0db5e7ad93a69fb9424bc89521af3391d6d6385812be5c9",
+          "match": true
+        },
+        {
+          "start": "0x180f00c66",
+          "bytes": 6,
+          "imported_sha256": "2247e0b3ab9668eda77b06b0a9f06a2b196f9f64d43742b771a14cb4ea2f9196",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 240,
+      "direct_calls": [
+        {
+          "source": "180f0084e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180f0085a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180f00866",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180f008d0",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "180f00915",
+          "target": "0x1805d82c0",
+          "candidate_name": "Torappu_Battle_Ability_get_owner_0x600f630"
+        },
+        {
+          "source": "180f00939",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "180f00977",
+          "target": "0x180005610",
+          "candidate_name": null
+        },
+        {
+          "source": "180f0098c",
+          "target": "0x1805d82c0",
+          "candidate_name": "Torappu_Battle_Ability_get_owner_0x600f630"
+        },
+        {
+          "source": "180f0099f",
+          "target": "0x180708350",
+          "candidate_name": "Torappu_Battle_Entity_get_slowDown_0x60103b5"
+        },
+        {
+          "source": "180f009ba",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180f009d7",
+          "target": "0x185ed91d0",
+          "candidate_name": "System_TimeSpan_op_Inequality_0x6000b7e"
+        },
+        {
+          "source": "180f009ff",
+          "target": "0x1805d82c0",
+          "candidate_name": "Torappu_Battle_Ability_get_owner_0x600f630"
+        },
+        {
+          "source": "180f00a12",
+          "target": "0x180701a20",
+          "candidate_name": "Torappu_Battle_Entity_get_animSlowDown_0x60103b6"
+        },
+        {
+          "source": "180f00a2c",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180f00a38",
+          "target": "0x1866fae20",
+          "candidate_name": "Torappu_FP_AsFloat_0x6000323"
+        },
+        {
+          "source": "180f00a52",
+          "target": "0x1805d82c0",
+          "candidate_name": "Torappu_Battle_Ability_get_owner_0x600f630"
+        },
+        {
+          "source": "180f00a65",
+          "target": "0x180701a20",
+          "candidate_name": "Torappu_Battle_Entity_get_animSlowDown_0x60103b6"
+        },
+        {
+          "source": "180f00a76",
+          "target": "0x1866fae20",
+          "candidate_name": "Torappu_FP_AsFloat_0x6000323"
+        },
+        {
+          "source": "180f00aa3",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180f00ab1",
+          "target": "0x1866fae20",
+          "candidate_name": "Torappu_FP_AsFloat_0x6000323"
+        },
+        {
+          "source": "180f00aea",
+          "target": "0x1805d82c0",
+          "candidate_name": "Torappu_Battle_Ability_get_owner_0x600f630"
+        },
+        {
+          "source": "180f00afd",
+          "target": "0x180701a20",
+          "candidate_name": "Torappu_Battle_Entity_get_animSlowDown_0x60103b6"
+        },
+        {
+          "source": "180f00b17",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180f00b23",
+          "target": "0x1866fae20",
+          "candidate_name": "Torappu_FP_AsFloat_0x6000323"
+        },
+        {
+          "source": "180f00b6d",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180f00b7b",
+          "target": "0x1866fdad0",
+          "candidate_name": "Torappu_FP_op_Implicit_0x600031c"
+        },
+        {
+          "source": "180f00b8c",
+          "target": "0x180f0c420",
+          "candidate_name": "Torappu_Battle_Abilities_EasyToStartAbility_get_waitForAttackEvent_0x60166c4"
+        },
+        {
+          "source": "180f00bbc",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180f00bca",
+          "target": "0x1866fdad0",
+          "candidate_name": "Torappu_FP_op_Implicit_0x600031c"
+        },
+        {
+          "source": "180f00be2",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180f00bf0",
+          "target": "0x1866ff830",
+          "candidate_name": "Torappu_TSMath_Min_0x600033c"
+        },
+        {
+          "source": "180f00c5f",
+          "target": "0x1832f9810",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp2655_0x60014bf"
+        },
+        {
+          "source": "180f00c66",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined8\r\nTorappu_Battle_Abilities_AbstractAnimatedAbility_UpdatePlaybackSpeed_0x6016697\r\n          (longlong *param_1,int param_2,float *param_3)\r\n\r\n{\r\n  code *pcVar1;\r\n  char cVar2;\r\n  longlong lVar3;\r\n  longlong *plVar4;\r\n  undefined8 uVar5;\r\n  float fVar6;\r\n  float fVar7;\r\n  float fVar8;\r\n  float fStack_48;\r\n  float fStack_44;\r\n  undefined8 auStack_40 [7];\r\n  \r\n  if (DAT_188c956dc == '\\0') {\r\n    FUN_18048bf00(&DAT_1887f76b0);\r\n    FUN_18048bf00(&DAT_18885a700);\r\n    FUN_18048bf00(&DAT_1888915d8);\r\n    DAT_188c956dc = '\\x01';\r\n  }\r\n  fStack_48 = 0.0;\r\n  fStack_44 = 0.0;\r\n  auStack_40[0] = 0;\r\n  lVar3 = *(longlong *)(*(longlong *)(_DAT_1887f76b0 + 0xb8) + 0x118);\r\n  if (lVar3 == 0) {\r\n    if ((param_2 == 1) || (param_2 == 2)) {\r\n      *param_3 = 1.0;\r\n      return 0;\r\n    }\r\n    if (DAT_188ccc7f0 != '\\0') {\r\n      func_0x000180446d00(*param_1);\r\n    }\r\n    lVar3 = (**(code **)(*param_1 + 0x250))(param_1,*(undefined8 *)(*param_1 + 600));\r\n    param_1[0x36] = lVar3;\r\n    *(undefined4 *)(param_1 + 0x37) = 0x3f800000;\r\n    *(undefined4 *)((longlong)param_1 + 0x1bc) = 0x3f800000;\r\n    plVar4 = (longlong *)Torappu_Battle_Ability_get_owner_0x600f630(param_1,0);\r\n    lVar3 = param_1[0x29];\r\n    if (plVar4 == (longlong *)0x0) goto LAB_180f00c66;\r\n    if (DAT_188ccc7f0 != '\\0') {\r\n      func_0x000180446d00(*plVar4);\r\n    }\r\n    cVar2 = (**(code **)(*plVar4 + 0x7e0))\r\n                      (plVar4,lVar3,&fStack_48,&fStack_44,*(undefined8 *)(*plVar4 + 0x7e8));\r\n    if (cVar2 != '\\0') {\r\n      cVar2 = FUN_180005610(0xd,param_1);\r\n      if (cVar2 == '\\0') {\r\n        cVar2 = '\\0';\r\n      }\r\n      else {\r\n        lVar3 = Torappu_Battle_Ability_get_owner_0x600f630(param_1,0);\r\n        if (lVar3 == 0) goto LAB_180f00c66;\r\n        uVar5 = Torappu_Battle_Entity_get_slowDown_0x60103b5(lVar3,0);\r\n        if (*(int *)(_DAT_18885a700 + 0xe0) == 0) {\r\n          func_0x00018048c140(_DAT_18885a700);\r\n        }\r\n        cVar2 = func_0x000185ed91d0(uVar5,*(undefined8 *)\r\n                                           (*(longlong *)(_DAT_18885a700 + 0xb8) + 0x20),0);\r\n        fVar6 = fStack_44;\r\n        if ((cVar2 != '\\0') && ((int)param_1[0x28] == 1)) {\r\n          lVar3 = Torappu_Battle_Ability_get_owner_0x600f630(param_1,0);\r\n          if (lVar3 == 0) goto LAB_180f00c66;\r\n          auStack_40[0] = Torappu_Battle_Entity_get_animSlowDown_0x60103b6(lVar3,0);\r\n          if (*(int *)(_DAT_18885a700 + 0xe0) == 0) {\r\n            func_0x00018048c140();\r\n          }\r\n          fStack_44 = (float)Torappu_FP_AsFloat_0x6000323(auStack_40,0);\r\n          fVar8 = fStack_48;\r\n          fStack_44 = fStack_44 * fVar6;\r\n          lVar3 = Torappu_Battle_Ability_get_owner_0x600f630(param_1,0);\r\n          if (lVar3 == 0) goto LAB_180f00c66;\r\n          auStack_40[0] = Torappu_Battle_Entity_get_animSlowDown_0x60103b6(lVar3,0);\r\n          fStack_48 = (float)Torappu_FP_AsFloat_0x6000323(auStack_40,0);\r\n          fStack_48 = fVar8 / fStack_48;\r\n        }\r\n      }\r\n      *(float *)((longlong)param_1 + 0x1bc) = fStack_44;\r\n      if (*(int *)(_DAT_18885a700 + 0xe0) == 0) {\r\n        func_0x00018048c140();\r\n      }\r\n      fVar6 = (float)Torappu_FP_AsFloat_0x6000323(param_1 + 0x36,0);\r\n      fVar6 = fVar6 / fStack_48;\r\n      if (fVar6 <= 0.1) {\r\n        fVar6 = 0.1;\r\n      }\r\n      *(float *)(param_1 + 0x37) = fVar6;\r\n      fVar6 = *(float *)(param_1 + 0x34);\r\n      if (0.0 <= fVar6) {\r\n        fVar8 = fVar6;\r\n        if (cVar2 != '\\0') {\r\n          lVar3 = Torappu_Battle_Ability_get_owner_0x600f630(param_1,0);\r\n          if (lVar3 == 0) {\r\nLAB_180f00c66:\r\n            FUN_18048c0b0();\r\n            pcVar1 = (code *)swi(3);\r\n            uVar5 = (*pcVar1)();\r\n            return uVar5;\r\n          }\r\n          auStack_40[0] = Torappu_Battle_Entity_get_animSlowDown_0x60103b6(lVar3,0);\r\n          if (*(int *)(_DAT_18885a700 + 0xe0) == 0) {\r\n            func_0x00018048c140();\r\n          }\r\n          fVar7 = (float)Torappu_FP_AsFloat_0x6000323(auStack_40,0);\r\n          fVar8 = 2.5;\r\n          if (fVar6 / fVar7 <= 2.5) {\r\n            fVar8 = fVar6 / fVar7;\r\n          }\r\n        }\r\n        fVar6 = *(float *)(param_1 + 0x37);\r\n        if (fVar8 <= *(float *)(param_1 + 0x37)) {\r\n          fVar6 = fVar8;\r\n        }\r\n        *(float *)(param_1 + 0x37) = fVar6;\r\n      }\r\n      fVar8 = fStack_48;\r\n      fVar6 = *(float *)(param_1 + 0x37);\r\n      if (*(int *)(_DAT_18885a700 + 0xe0) == 0) {\r\n        func_0x00018048c140();\r\n      }\r\n      lVar3 = func_0x0001866fdad0(fVar6 * fVar8,0);\r\n      param_1[0x36] = lVar3;\r\n    }\r\n    cVar2 = Torappu_Battle_Abilities_EasyToStartAbility_get_waitForAttackEvent_0x60166c4(param_1,0);\r\n    lVar3 = param_1[0x36];\r\n    if (cVar2 == '\\0') {\r\n      fVar6 = *(float *)(param_1 + 0x31);\r\n      fVar8 = *(float *)(param_1 + 0x37);\r\n      if (*(int *)(_DAT_18885a700 + 0xe0) == 0) {\r\n        func_0x00018048c140();\r\n      }\r\n      uVar5 = func_0x0001866fdad0(fVar8 * fVar6,0);\r\n      if (*(int *)(_DAT_1888915d8 + 0xe0) == 0) {\r\n        func_0x00018048c140();\r\n      }\r\n      lVar3 = Torappu_TSMath_Min_0x600033c(lVar3,uVar5,0);\r\n    }\r\n    param_1[0x35] = lVar3;\r\n    uVar5 = 1;\r\n    *param_3 = (1.0 / *(float *)(param_1 + 0x37)) * fStack_44;\r\n  }\r\n  else {\r\n    uVar5 = XLua_DelegateBridge___Gen_Delegate_Imp2655_0x60014bf(lVar3,param_1,param_2,param_3,0);\r\n  }\r\n  return uVar5;\r\n}\r\n\r\n"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "FP_GE_delegate": {
+    "cctor": "0x1866e6e50",
+    "method_usage_slot": "0x18885a820",
+    "source_file_offset": 142968352,
+    "encoded_word": "0x6006b957",
+    "method_definition_index": 220331,
+    "native_method": "0x1866e4ba0",
+    "assignment_static_offset": "0x28",
+    "GetCompareFuncFP_parameter": 3,
+    "semantics": "left.raw >= unchecked(right.raw - EN5.raw), inclusive",
+    "epsilon_origin": "MathUtil.cctor copies FP static+0x78 (FP.EN5) to MathUtil static+0; recovered FP.EN5 raw=42950"
+  },
+  "Blackboard_floor": {
+    "TryGetInt": "0x182320170",
+    "double_dispatch": "0x1804d3200",
+    "SSE4": "0x1804eefb0 ROUNDSD xmm0,xmm0,9 (floor, suppress exceptions)",
+    "scalar": "0x1804d3220 truncates positive magnitude and decrements non-integral negative values",
+    "scope": "finite Single values whose floor is within Int32; nonfinite/out-of-range reject"
+  },
+  "context_fields": {
+    "source": "0x10 ContextPtrStack<Entity>",
+    "target": "0x18 ContextPtrStack<Entity>",
+    "buff": "0x20 ContextPtrStack<Buff>",
+    "mainTarget": "0x50 ContextValueStack<Entity>",
+    "guard": "DuplicateAll takes resolved Snapshot and pushes new ObjectPtrs; stale source/target/buff duplicates as null. Setters Pop/Push selected top; Dispose pops once per stack",
+    "scope": "source/target/buff/mainTarget only; non-tile Enemy owner; no modifier/projectile/ability mutation backend"
+  },
+  "key_case": {
+    "prefix": "StartsWith(prefix, StringComparison.OrdinalIgnoreCase=5), then Substring(prefix.Length)",
+    "assign": "ToLower() current culture, first String.Compare(old,key,true)==0 replacement; otherwise append",
+    "lookup": "current-culture ignoreCase; _TryGetNumber skips matching rows with nonempty valueStr and continues",
+    "scope": "ASCII keys under explicit invariant-culture fixture; no asserted observed live culture"
+  },
+  "priority": "SortedDoubleBufferedBuffList.Add immediate list only: descending priorities; new equal after existing equals; invalid incoming appends; skip invalid existing while scanning backward",
+  "membership_and_reentrancy": "Caller supplies dispatched initialized Buff membership. This module does not synthesize full BuffContainer snapshots/deferred removal. Native synchronous selected-Buff recursion is executed without coalescing or pre-writing lock."
+}

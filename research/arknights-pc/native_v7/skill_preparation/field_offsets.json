@@ -1,0 +1,2104 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "types": [
+    {
+      "definition_index": 1566,
+      "name": "Torappu.SkillDB",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139773680,
+        "record_va": "0x186fe44f8",
+        "record_file_offset": 117320952,
+        "bytes16": "68000000ffffffff3800000000000000",
+        "instance_with_header": 104,
+        "native_size_raw": 4294967295,
+        "static_size": 56,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.DB.SimpleKVTable`2<Torappu.SkillDataBundle,Torappu.SkillDB>",
+      "base_definition_indices": [
+        6500,
+        6480,
+        6493,
+        6492,
+        45447,
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_devConfig",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "Torappu.DB.TableConfig",
+          "offset_record_file_offset": 116463968
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_prodConfig",
+          "offset": 32,
+          "offset_hex": "0x20",
+          "type": "Torappu.DB.TableConfig",
+          "offset_record_file_offset": 116463972
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_requireConfig",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Torappu.DB.AbstractTable.RequireConfig",
+          "offset_record_file_offset": 116463976
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_enableAsyncLoad",
+          "offset": 43,
+          "offset_hex": "0x2b",
+          "type": "Boolean",
+          "offset_record_file_offset": 116463980
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_samplePaths",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "System.Collections.Generic.List`1<String>",
+          "offset_record_file_offset": 116463984
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "disableSampleData",
+          "offset": 56,
+          "offset_hex": "0x38",
+          "type": "Boolean",
+          "offset_record_file_offset": 116463988
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "m_extensionInterface",
+          "offset": 64,
+          "offset_hex": "0x40",
+          "type": "Torappu.DB.AbstractTable.ExtensionOnlyInterface",
+          "offset_record_file_offset": 116463992
+        },
+        {
+          "owner": "Torappu.DB.AbstractKVTable`2",
+          "name": "m_sharedList",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "System.Collections.Generic.List`1<VAR#447>",
+          "offset_record_file_offset": 116463640
+        },
+        {
+          "owner": "Torappu.DB.SimpleKVTable`2",
+          "name": "m_inited",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "Boolean",
+          "offset_record_file_offset": 116464768
+        },
+        {
+          "owner": "Torappu.DB.SimpleKVTable`2",
+          "name": "m_dataMap",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "System.Collections.Generic.Dictionary`2<String,VAR#466>",
+          "offset_record_file_offset": 116464772
+        },
+        {
+          "owner": "Torappu.DB.SimpleKVTable`2",
+          "name": "m_isValid",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "Boolean",
+          "offset_record_file_offset": 116464776
+        }
+      ]
+    },
+    {
+      "definition_index": 4137,
+      "name": "Torappu.Blackboard.DataPair",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139794248,
+        "record_va": "0x186ff1758",
+        "record_file_offset": 117374808,
+        "bytes16": "28000000180000000000000000000000",
+        "instance_with_header": 40,
+        "native_size_raw": 24,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "key",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115860544,
+          "type": "String"
+        },
+        {
+          "name": "value",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 115860548,
+          "type": "Single"
+        },
+        {
+          "name": "valueStr",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 115860552,
+          "type": "String"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 4138,
+      "name": "Torappu.Blackboard",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139794256,
+        "record_va": "0x186ff1778",
+        "record_file_offset": 117374840,
+        "bytes16": "28000000ffffffff7001000000000000",
+        "instance_with_header": 40,
+        "native_size_raw": 4294967295,
+        "static_size": 368,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.Collections.Generic.List`1<Torappu.Blackboard.DataPair>",
+      "base_definition_indices": [
+        42302
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "System.Collections.Generic.List`1",
+          "name": "_items",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "VAR#2895[]",
+          "offset_record_file_offset": 116249828
+        },
+        {
+          "owner": "System.Collections.Generic.List`1",
+          "name": "_size",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "Int32",
+          "offset_record_file_offset": 116249832
+        },
+        {
+          "owner": "System.Collections.Generic.List`1",
+          "name": "_version",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "Int32",
+          "offset_record_file_offset": 116249836
+        },
+        {
+          "owner": "System.Collections.Generic.List`1",
+          "name": "_syncRoot",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "Object",
+          "offset_record_file_offset": 116249840
+        }
+      ]
+    },
+    {
+      "definition_index": 5399,
+      "name": "Torappu.SpData",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139804344,
+        "record_va": "0x186fe6548",
+        "record_file_offset": 117329224,
+        "bytes16": "80000000ffffffff4800000000000000",
+        "instance_with_header": 128,
+        "native_size_raw": 4294967295,
+        "static_size": 72,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "spType",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115846980,
+          "type": "Torappu.SpType"
+        },
+        {
+          "name": "levelUpCost",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 115846984,
+          "type": "Torappu.ItemBundle[]"
+        },
+        {
+          "name": "maxChargeTime",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 115846988,
+          "type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt"
+        },
+        {
+          "name": "spCost",
+          "offset_hex": "0x34",
+          "offset_record_file_offset": 115846992,
+          "type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt"
+        },
+        {
+          "name": "initSp",
+          "offset_hex": "0x48",
+          "offset_record_file_offset": 115846996,
+          "type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt"
+        },
+        {
+          "name": "increment",
+          "offset_hex": "0x5c",
+          "offset_record_file_offset": 115847000,
+          "type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat"
+        },
+        {
+          "name": "m_incrementsForAllSpTypes",
+          "offset_hex": "0x78",
+          "offset_record_file_offset": 115847004,
+          "type": "Single[]"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 5401,
+      "name": "Torappu.SkillData",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139804360,
+        "record_va": "0x186ffce28",
+        "record_file_offset": 117421608,
+        "bytes16": "70000000ffffffff5000000000000000",
+        "instance_with_header": 112,
+        "native_size_raw": 4294967295,
+        "static_size": 80,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "name",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115847248,
+          "type": "String"
+        },
+        {
+          "name": "skillId",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 115847252,
+          "type": "String"
+        },
+        {
+          "name": "rangeId",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 115847256,
+          "type": "String"
+        },
+        {
+          "name": "iconId",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 115847260,
+          "type": "String"
+        },
+        {
+          "name": "level",
+          "offset_hex": "0x30",
+          "offset_record_file_offset": 115847264,
+          "type": "Int32"
+        },
+        {
+          "name": "description",
+          "offset_hex": "0x38",
+          "offset_record_file_offset": 115847268,
+          "type": "String"
+        },
+        {
+          "name": "skillType",
+          "offset_hex": "0x40",
+          "offset_record_file_offset": 115847272,
+          "type": "Torappu.SkillType"
+        },
+        {
+          "name": "durationType",
+          "offset_hex": "0x44",
+          "offset_record_file_offset": 115847276,
+          "type": "Torappu.SkillDurationType"
+        },
+        {
+          "name": "spData",
+          "offset_hex": "0x48",
+          "offset_record_file_offset": 115847280,
+          "type": "Torappu.SpData"
+        },
+        {
+          "name": "prefabKey",
+          "offset_hex": "0x50",
+          "offset_record_file_offset": 115847284,
+          "type": "String"
+        },
+        {
+          "name": "duration",
+          "offset_hex": "0x58",
+          "offset_record_file_offset": 115847288,
+          "type": "Single"
+        },
+        {
+          "name": "blackboard",
+          "offset_hex": "0x60",
+          "offset_record_file_offset": 115847292,
+          "type": "Torappu.Blackboard"
+        },
+        {
+          "name": "isPrefabKeyOverridden",
+          "offset_hex": "0x68",
+          "offset_record_file_offset": 115847296,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_inited",
+          "offset_hex": "0x69",
+          "offset_record_file_offset": 115847300,
+          "type": "Boolean"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 5402,
+      "name": "Torappu.SkillDataBundle.LevelData",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139804368,
+        "record_va": "0x186ffce48",
+        "record_file_offset": 117421640,
+        "bytes16": "60000000ffffffff0000000000000000",
+        "instance_with_header": 96,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "name",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115847624,
+          "type": "String"
+        },
+        {
+          "name": "rangeId",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 115847628,
+          "type": "String"
+        },
+        {
+          "name": "description",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 115847632,
+          "type": "String"
+        },
+        {
+          "name": "skillType",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 115847636,
+          "type": "Torappu.SkillType"
+        },
+        {
+          "name": "durationType",
+          "offset_hex": "0x2c",
+          "offset_record_file_offset": 115847640,
+          "type": "Torappu.SkillDurationType"
+        },
+        {
+          "name": "spData",
+          "offset_hex": "0x30",
+          "offset_record_file_offset": 115847644,
+          "type": "Torappu.SpData"
+        },
+        {
+          "name": "prefabId",
+          "offset_hex": "0x38",
+          "offset_record_file_offset": 115847648,
+          "type": "String"
+        },
+        {
+          "name": "duration",
+          "offset_hex": "0x40",
+          "offset_record_file_offset": 115847652,
+          "type": "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat"
+        },
+        {
+          "name": "blackboard",
+          "offset_hex": "0x58",
+          "offset_record_file_offset": 115847656,
+          "type": "Torappu.Blackboard"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 5403,
+      "name": "Torappu.SkillDataBundle",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139804376,
+        "record_va": "0x186ffce68",
+        "record_file_offset": 117421672,
+        "bytes16": "30000000ffffffff0000000000000000",
+        "instance_with_header": 48,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "skillId",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 115847888,
+          "type": "String"
+        },
+        {
+          "name": "iconId",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 115847892,
+          "type": "String"
+        },
+        {
+          "name": "hidden",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 115847896,
+          "type": "Boolean"
+        },
+        {
+          "name": "levels",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 115847900,
+          "type": "System.Collections.Generic.List`1<Torappu.SkillDataBundle.LevelData>"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 6480,
+      "name": "Torappu.DB.AbstractKVTable`2",
+      "value_type": false,
+      "generic_container_index": 368,
+      "sizes": {
+        "pointer_record_file_offset": 139812992,
+        "record_va": "0x1870051e8",
+        "record_file_offset": 117455336,
+        "bytes16": "00000000000000000000000000000000",
+        "instance_with_header": 0,
+        "native_size_raw": 0,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.DB.SingletonAbstractTable`1<VAR#448>",
+      "base_definition_indices": [
+        6493,
+        6492,
+        45447,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "m_sharedList",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 116463640,
+          "type": "System.Collections.Generic.List`1<VAR#447>"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_devConfig",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "Torappu.DB.TableConfig",
+          "offset_record_file_offset": 116463968
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_prodConfig",
+          "offset": 32,
+          "offset_hex": "0x20",
+          "type": "Torappu.DB.TableConfig",
+          "offset_record_file_offset": 116463972
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_requireConfig",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Torappu.DB.AbstractTable.RequireConfig",
+          "offset_record_file_offset": 116463976
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_enableAsyncLoad",
+          "offset": 43,
+          "offset_hex": "0x2b",
+          "type": "Boolean",
+          "offset_record_file_offset": 116463980
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_samplePaths",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "System.Collections.Generic.List`1<String>",
+          "offset_record_file_offset": 116463984
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "disableSampleData",
+          "offset": 56,
+          "offset_hex": "0x38",
+          "type": "Boolean",
+          "offset_record_file_offset": 116463988
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "m_extensionInterface",
+          "offset": 64,
+          "offset_hex": "0x40",
+          "type": "Torappu.DB.AbstractTable.ExtensionOnlyInterface",
+          "offset_record_file_offset": 116463992
+        }
+      ]
+    },
+    {
+      "definition_index": 6492,
+      "name": "Torappu.DB.AbstractTable",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139813088,
+        "record_va": "0x187005308",
+        "record_file_offset": 117455624,
+        "bytes16": "48000000ffffffff7800000000000000",
+        "instance_with_header": 72,
+        "native_size_raw": 4294967295,
+        "static_size": 120,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.ScriptableObject",
+      "base_definition_indices": [
+        45447,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "_devConfig",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116463968,
+          "type": "Torappu.DB.TableConfig"
+        },
+        {
+          "name": "_prodConfig",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 116463972,
+          "type": "Torappu.DB.TableConfig"
+        },
+        {
+          "name": "_requireConfig",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 116463976,
+          "type": "Torappu.DB.AbstractTable.RequireConfig"
+        },
+        {
+          "name": "_enableAsyncLoad",
+          "offset_hex": "0x2b",
+          "offset_record_file_offset": 116463980,
+          "type": "Boolean"
+        },
+        {
+          "name": "_samplePaths",
+          "offset_hex": "0x30",
+          "offset_record_file_offset": 116463984,
+          "type": "System.Collections.Generic.List`1<String>"
+        },
+        {
+          "name": "disableSampleData",
+          "offset_hex": "0x38",
+          "offset_record_file_offset": 116463988,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_extensionInterface",
+          "offset_hex": "0x40",
+          "offset_record_file_offset": 116463992,
+          "type": "Torappu.DB.AbstractTable.ExtensionOnlyInterface"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 6493,
+      "name": "Torappu.DB.SingletonAbstractTable`1",
+      "value_type": false,
+      "generic_container_index": 373,
+      "sizes": {
+        "pointer_record_file_offset": 139813096,
+        "record_va": "0x187005328",
+        "record_file_offset": 117455656,
+        "bytes16": "00000000000000000000000000000000",
+        "instance_with_header": 0,
+        "native_size_raw": 0,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.DB.AbstractTable",
+      "base_definition_indices": [
+        6492,
+        45447,
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_devConfig",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "Torappu.DB.TableConfig",
+          "offset_record_file_offset": 116463968
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_prodConfig",
+          "offset": 32,
+          "offset_hex": "0x20",
+          "type": "Torappu.DB.TableConfig",
+          "offset_record_file_offset": 116463972
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_requireConfig",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Torappu.DB.AbstractTable.RequireConfig",
+          "offset_record_file_offset": 116463976
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_enableAsyncLoad",
+          "offset": 43,
+          "offset_hex": "0x2b",
+          "type": "Boolean",
+          "offset_record_file_offset": 116463980
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_samplePaths",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "System.Collections.Generic.List`1<String>",
+          "offset_record_file_offset": 116463984
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "disableSampleData",
+          "offset": 56,
+          "offset_hex": "0x38",
+          "type": "Boolean",
+          "offset_record_file_offset": 116463988
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "m_extensionInterface",
+          "offset": 64,
+          "offset_hex": "0x40",
+          "type": "Torappu.DB.AbstractTable.ExtensionOnlyInterface",
+          "offset_record_file_offset": 116463992
+        }
+      ]
+    },
+    {
+      "definition_index": 6500,
+      "name": "Torappu.DB.SimpleKVTable`2",
+      "value_type": false,
+      "generic_container_index": 380,
+      "sizes": {
+        "pointer_record_file_offset": 139813152,
+        "record_va": "0x1870053b8",
+        "record_file_offset": 117455800,
+        "bytes16": "00000000000000000000000000000000",
+        "instance_with_header": 0,
+        "native_size_raw": 0,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.DB.AbstractKVTable`2<VAR#466,VAR#467>",
+      "base_definition_indices": [
+        6480,
+        6493,
+        6492,
+        45447,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "m_inited",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 116464768,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_dataMap",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 116464772,
+          "type": "System.Collections.Generic.Dictionary`2<String,VAR#466>"
+        },
+        {
+          "name": "m_isValid",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 116464776,
+          "type": "Boolean"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_devConfig",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "Torappu.DB.TableConfig",
+          "offset_record_file_offset": 116463968
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_prodConfig",
+          "offset": 32,
+          "offset_hex": "0x20",
+          "type": "Torappu.DB.TableConfig",
+          "offset_record_file_offset": 116463972
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_requireConfig",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Torappu.DB.AbstractTable.RequireConfig",
+          "offset_record_file_offset": 116463976
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_enableAsyncLoad",
+          "offset": 43,
+          "offset_hex": "0x2b",
+          "type": "Boolean",
+          "offset_record_file_offset": 116463980
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "_samplePaths",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "System.Collections.Generic.List`1<String>",
+          "offset_record_file_offset": 116463984
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "disableSampleData",
+          "offset": 56,
+          "offset_hex": "0x38",
+          "type": "Boolean",
+          "offset_record_file_offset": 116463988
+        },
+        {
+          "owner": "Torappu.DB.AbstractTable",
+          "name": "m_extensionInterface",
+          "offset": 64,
+          "offset_hex": "0x40",
+          "type": "Torappu.DB.AbstractTable.ExtensionOnlyInterface",
+          "offset_record_file_offset": 116463992
+        },
+        {
+          "owner": "Torappu.DB.AbstractKVTable`2",
+          "name": "m_sharedList",
+          "offset": 0,
+          "offset_hex": "0x0",
+          "type": "System.Collections.Generic.List`1<VAR#447>",
+          "offset_record_file_offset": 116463640
+        }
+      ]
+    },
+    {
+      "definition_index": 9887,
+      "name": "Torappu.Battle.Ability.Options",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139840248,
+        "record_va": "0x1870071e8",
+        "record_file_offset": 117463528,
+        "bytes16": "30000000ffffffff0000000000000000",
+        "instance_with_header": 48,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "blackboard",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116526512,
+          "type": "Torappu.Blackboard"
+        },
+        {
+          "name": "signalId",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116526516,
+          "type": "String"
+        },
+        {
+          "name": "rangeId",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 116526520,
+          "type": "String"
+        },
+        {
+          "name": "rangeRadius",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 116526524,
+          "type": "Single"
+        },
+        {
+          "name": "familyGroup",
+          "offset_hex": "0x2c",
+          "offset_record_file_offset": 116526528,
+          "type": "Torappu.Battle.Ability.FamilyGroup"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 9900,
+      "name": "Torappu.Battle.AbilityStandard.Behaviour",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139840352,
+        "record_va": "0x187007398",
+        "record_file_offset": 117463960,
+        "bytes16": "20000000ffffffffa800000000000000",
+        "instance_with_header": 32,
+        "native_size_raw": 4294967295,
+        "static_size": 168,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.MonoBehaviour",
+      "base_definition_indices": [
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "<ability>k__BackingField",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116532624,
+          "type": "Torappu.Battle.AbilityStandard"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 9957,
+      "name": "Torappu.Battle.MeshAnimator",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139840808,
+        "record_va": "0x187007ab8",
+        "record_file_offset": 117465784,
+        "bytes16": "98010000ffffffff5001000000000000",
+        "instance_with_header": 408,
+        "native_size_raw": 4294967295,
+        "static_size": 336,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.Battle.UnitAnimator",
+      "base_definition_indices": [
+        10000,
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "_animation",
+          "offset_hex": "0x50",
+          "offset_record_file_offset": 116550944,
+          "type": "UnityEngine.Animation"
+        },
+        {
+          "name": "_muzzleTransform",
+          "offset_hex": "0x58",
+          "offset_record_file_offset": 116550948,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_hitTransform",
+          "offset_hex": "0x60",
+          "offset_record_file_offset": 116550952,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_headTransform",
+          "offset_hex": "0x68",
+          "offset_record_file_offset": 116550956,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_graphicFootTransform",
+          "offset_hex": "0x70",
+          "offset_record_file_offset": 116550960,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint0",
+          "offset_hex": "0x78",
+          "offset_record_file_offset": 116550964,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint1",
+          "offset_hex": "0x80",
+          "offset_record_file_offset": 116550968,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint2",
+          "offset_hex": "0x88",
+          "offset_record_file_offset": 116550972,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint3",
+          "offset_hex": "0x90",
+          "offset_record_file_offset": 116550976,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint4",
+          "offset_hex": "0x98",
+          "offset_record_file_offset": 116550980,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint5",
+          "offset_hex": "0xa0",
+          "offset_record_file_offset": 116550984,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint6",
+          "offset_hex": "0xa8",
+          "offset_record_file_offset": 116550988,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint7",
+          "offset_hex": "0xb0",
+          "offset_record_file_offset": 116550992,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint8",
+          "offset_hex": "0xb8",
+          "offset_record_file_offset": 116550996,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint9",
+          "offset_hex": "0xc0",
+          "offset_record_file_offset": 116551000,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint10",
+          "offset_hex": "0xc8",
+          "offset_record_file_offset": 116551004,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint11",
+          "offset_hex": "0xd0",
+          "offset_record_file_offset": 116551008,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint12",
+          "offset_hex": "0xd8",
+          "offset_record_file_offset": 116551012,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint13",
+          "offset_hex": "0xe0",
+          "offset_record_file_offset": 116551016,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint14",
+          "offset_hex": "0xe8",
+          "offset_record_file_offset": 116551020,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_specialPoint15",
+          "offset_hex": "0xf0",
+          "offset_record_file_offset": 116551024,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_animations",
+          "offset_hex": "0xf8",
+          "offset_record_file_offset": 116551028,
+          "type": "Torappu.Battle.MeshAnimator.AnimationData[]"
+        },
+        {
+          "name": "_enableShowDamageFlash",
+          "offset_hex": "0x100",
+          "offset_record_file_offset": 116551032,
+          "type": "Boolean"
+        },
+        {
+          "name": "_enableRotate",
+          "offset_hex": "0x101",
+          "offset_record_file_offset": 116551036,
+          "type": "Boolean"
+        },
+        {
+          "name": "_rotateMeshOnly",
+          "offset_hex": "0x102",
+          "offset_record_file_offset": 116551040,
+          "type": "Boolean"
+        },
+        {
+          "name": "_meshTransform",
+          "offset_hex": "0x108",
+          "offset_record_file_offset": 116551044,
+          "type": "UnityEngine.Transform"
+        },
+        {
+          "name": "_justRotateHandler",
+          "offset_hex": "0x110",
+          "offset_record_file_offset": 116551048,
+          "type": "Boolean"
+        },
+        {
+          "name": "_useMaterialTintColorAsDefaultColor",
+          "offset_hex": "0x111",
+          "offset_record_file_offset": 116551052,
+          "type": "Boolean"
+        },
+        {
+          "name": "_fixedTweenEndColor",
+          "offset_hex": "0x112",
+          "offset_record_file_offset": 116551056,
+          "type": "Boolean"
+        },
+        {
+          "name": "_constRenders",
+          "offset_hex": "0x118",
+          "offset_record_file_offset": 116551060,
+          "type": "UnityEngine.Renderer[]"
+        },
+        {
+          "name": "_hitTransformStable",
+          "offset_hex": "0x120",
+          "offset_record_file_offset": 116551064,
+          "type": "Boolean"
+        },
+        {
+          "name": "_enableThemeTintColor",
+          "offset_hex": "0x121",
+          "offset_record_file_offset": 116551068,
+          "type": "Boolean"
+        },
+        {
+          "name": "_enableEmissionColor",
+          "offset_hex": "0x122",
+          "offset_record_file_offset": 116551072,
+          "type": "Boolean"
+        },
+        {
+          "name": "_checkMissing",
+          "offset_hex": "0x123",
+          "offset_record_file_offset": 116551076,
+          "type": "Boolean"
+        },
+        {
+          "name": "_useGraphicFootAsFootTransform",
+          "offset_hex": "0x124",
+          "offset_record_file_offset": 116551080,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_skinHooker",
+          "offset_hex": "0x128",
+          "offset_record_file_offset": 116551084,
+          "type": "Torappu.Battle.CharacterSkinHooker"
+        },
+        {
+          "name": "m_defaultColor",
+          "offset_hex": "0x130",
+          "offset_record_file_offset": 116551088,
+          "type": "UnityEngine.Color"
+        },
+        {
+          "name": "m_defaultEmissionColor",
+          "offset_hex": "0x140",
+          "offset_record_file_offset": 116551092,
+          "type": "UnityEngine.Color"
+        },
+        {
+          "name": "m_defaultEmissionEnable",
+          "offset_hex": "0x150",
+          "offset_record_file_offset": 116551096,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_renderers",
+          "offset_hex": "0x158",
+          "offset_record_file_offset": 116551100,
+          "type": "UnityEngine.Renderer[]"
+        },
+        {
+          "name": "m_initDataFlag",
+          "offset_hex": "0x160",
+          "offset_record_file_offset": 116551104,
+          "type": "Boolean"
+        },
+        {
+          "name": "m_animationDict",
+          "offset_hex": "0x168",
+          "offset_record_file_offset": 116551108,
+          "type": "System.Collections.Generic.Dictionary`2<String,Torappu.Battle.MeshAnimator.AnimationData>"
+        },
+        {
+          "name": "m_lastTween",
+          "offset_hex": "0x170",
+          "offset_record_file_offset": 116551112,
+          "type": "DG.Tweening.Tween"
+        },
+        {
+          "name": "m_material",
+          "offset_hex": "0x178",
+          "offset_record_file_offset": 116551116,
+          "type": "UnityEngine.Material"
+        },
+        {
+          "name": "m_currentAniState",
+          "offset_hex": "0x180",
+          "offset_record_file_offset": 116551120,
+          "type": "Torappu.Battle.UnitAnimator.CurrentAniState"
+        },
+        {
+          "name": "m_rotateHandlers",
+          "offset_hex": "0x190",
+          "offset_record_file_offset": 116551124,
+          "type": "Torappu.Battle.RotateHandlerAnimatorBehaviour[]"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.Battle.UnitAnimator",
+          "name": "m_faceSign",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "Int32",
+          "offset_record_file_offset": 116567204
+        },
+        {
+          "owner": "Torappu.Battle.UnitAnimator",
+          "name": "m_originScale",
+          "offset": 28,
+          "offset_hex": "0x1c",
+          "type": "UnityEngine.Vector3",
+          "offset_record_file_offset": 116567208
+        },
+        {
+          "owner": "Torappu.Battle.UnitAnimator",
+          "name": "m_muzzlesGroup",
+          "offset": 40,
+          "offset_hex": "0x28",
+          "type": "Torappu.Battle.TransformGroup",
+          "offset_record_file_offset": 116567212
+        },
+        {
+          "owner": "Torappu.Battle.UnitAnimator",
+          "name": "m_behaviours",
+          "offset": 48,
+          "offset_hex": "0x30",
+          "type": "Torappu.Battle.UnitAnimator.Behaviour[]",
+          "offset_record_file_offset": 116567216
+        },
+        {
+          "owner": "Torappu.Battle.UnitAnimator",
+          "name": "<emissionColor>k__BackingField",
+          "offset": 56,
+          "offset_hex": "0x38",
+          "type": "UnityEngine.Color",
+          "offset_record_file_offset": 116567220
+        },
+        {
+          "owner": "Torappu.Battle.UnitAnimator",
+          "name": "<host>k__BackingField",
+          "offset": 72,
+          "offset_hex": "0x48",
+          "type": "Torappu.Battle.Unit",
+          "offset_record_file_offset": 116567224
+        }
+      ]
+    },
+    {
+      "definition_index": 10000,
+      "name": "Torappu.Battle.UnitAnimator",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139841152,
+        "record_va": "0x187008058",
+        "record_file_offset": 117467224,
+        "bytes16": "50000000ffffffff7001000000000000",
+        "instance_with_header": 80,
+        "native_size_raw": 4294967295,
+        "static_size": 368,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.MonoBehaviour",
+      "base_definition_indices": [
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "m_faceSign",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116567204,
+          "type": "Int32"
+        },
+        {
+          "name": "m_originScale",
+          "offset_hex": "0x1c",
+          "offset_record_file_offset": 116567208,
+          "type": "UnityEngine.Vector3"
+        },
+        {
+          "name": "m_muzzlesGroup",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 116567212,
+          "type": "Torappu.Battle.TransformGroup"
+        },
+        {
+          "name": "m_behaviours",
+          "offset_hex": "0x30",
+          "offset_record_file_offset": 116567216,
+          "type": "Torappu.Battle.UnitAnimator.Behaviour[]"
+        },
+        {
+          "name": "<emissionColor>k__BackingField",
+          "offset_hex": "0x38",
+          "offset_record_file_offset": 116567220,
+          "type": "UnityEngine.Color"
+        },
+        {
+          "name": "<host>k__BackingField",
+          "offset_hex": "0x48",
+          "offset_record_file_offset": 116567224,
+          "type": "Torappu.Battle.Unit"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 11229,
+      "name": "Torappu.Battle.AlwaysTrigger",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139850984,
+        "record_va": "0x18701aba8",
+        "record_file_offset": 117543848,
+        "bytes16": "20000000ffffffff2800000000000000",
+        "instance_with_header": 32,
+        "native_size_raw": 4294967295,
+        "static_size": 40,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.Battle.TargetTrigger",
+      "base_definition_indices": [
+        11257,
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.Battle.TargetTrigger",
+          "name": "<ability>k__BackingField",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "Torappu.Battle.Ability",
+          "offset_record_file_offset": 116526360
+        }
+      ]
+    },
+    {
+      "definition_index": 11257,
+      "name": "Torappu.Battle.TargetTrigger",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139851208,
+        "record_va": "0x18701af38",
+        "record_file_offset": 117544760,
+        "bytes16": "20000000ffffffff4000000000000000",
+        "instance_with_header": 32,
+        "native_size_raw": 4294967295,
+        "static_size": 64,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.MonoBehaviour",
+      "base_definition_indices": [
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "<ability>k__BackingField",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116526360,
+          "type": "Torappu.Battle.Ability"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 13439,
+      "name": "Torappu.Battle.Abilities.AbstractEffectEmitter",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139868664,
+        "record_va": "0x187016568",
+        "record_file_offset": 117525864,
+        "bytes16": "20000000ffffffff0800000000000000",
+        "instance_with_header": 32,
+        "native_size_raw": 4294967295,
+        "static_size": 8,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.Battle.AbilityStandard.Behaviour",
+      "base_definition_indices": [
+        9900,
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.Battle.AbilityStandard.Behaviour",
+          "name": "<ability>k__BackingField",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "Torappu.Battle.AbilityStandard",
+          "offset_record_file_offset": 116532624
+        }
+      ]
+    },
+    {
+      "definition_index": 13475,
+      "name": "Torappu.Battle.Abilities.UberEffectEmitter",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 139868952,
+        "record_va": "0x1870167a8",
+        "record_file_offset": 117526440,
+        "bytes16": "58000000ffffffff5000000000000000",
+        "instance_with_header": 88,
+        "native_size_raw": 4294967295,
+        "static_size": 80,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Torappu.Battle.Abilities.AbstractEffectEmitter",
+      "base_definition_indices": [
+        13439,
+        9900,
+        45442,
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [
+        {
+          "name": "_hitEffects",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 116689824,
+          "type": "Torappu.Battle.Abilities.UberEffectEmitter.HitEffectOptions[]"
+        },
+        {
+          "name": "_castEffects",
+          "offset_hex": "0x28",
+          "offset_record_file_offset": 116689828,
+          "type": "Torappu.Battle.Abilities.UberEffectEmitter.CastEffectOptions[]"
+        },
+        {
+          "name": "_attachEffects",
+          "offset_hex": "0x30",
+          "offset_record_file_offset": 116689832,
+          "type": "Torappu.Battle.Abilities.UberEffectEmitter.AttachEffectOptions[]"
+        },
+        {
+          "name": "_inputTargetEffects",
+          "offset_hex": "0x38",
+          "offset_record_file_offset": 116689836,
+          "type": "Torappu.Battle.Abilities.UberEffectEmitter.InputTargetEffectOptions[]"
+        },
+        {
+          "name": "_castTargetEffects",
+          "offset_hex": "0x40",
+          "offset_record_file_offset": 116689840,
+          "type": "Torappu.Battle.Abilities.UberEffectEmitter.CastTargetEffectOptions[]"
+        },
+        {
+          "name": "_convertCastEndToAttachFinish",
+          "offset_hex": "0x48",
+          "offset_record_file_offset": 116689844,
+          "type": "Boolean"
+        },
+        {
+          "name": "_recalculatePlaybackSpeed",
+          "offset_hex": "0x49",
+          "offset_record_file_offset": 116689848,
+          "type": "Boolean"
+        },
+        {
+          "name": "_preDelayFactor",
+          "offset_hex": "0x4c",
+          "offset_record_file_offset": 116689852,
+          "type": "Single"
+        },
+        {
+          "name": "m_allEffects",
+          "offset_hex": "0x50",
+          "offset_record_file_offset": 116689856,
+          "type": "System.Collections.Generic.List`1<Torappu.Battle.Abilities.UberEffectEmitter.EffectOptions>"
+        }
+      ],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        },
+        {
+          "owner": "Torappu.Battle.AbilityStandard.Behaviour",
+          "name": "<ability>k__BackingField",
+          "offset": 24,
+          "offset_hex": "0x18",
+          "type": "Torappu.Battle.AbilityStandard",
+          "offset_record_file_offset": 116532624
+        }
+      ]
+    },
+    {
+      "definition_index": 38187,
+      "name": "Torappu.SpType",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140066648,
+        "record_va": "0x187076a78",
+        "record_file_offset": 117920376,
+        "bytes16": "14000000040000000000000000000000",
+        "instance_with_header": 20,
+        "native_size_raw": 4,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.Enum",
+      "base_definition_indices": [
+        41113,
+        41194
+      ],
+      "instance": [
+        {
+          "name": "value__",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116089992,
+          "type": "Int32"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 40631,
+      "name": "CodeStage.AntiCheat.ObscuredTypes.ObscuredFloat",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140086200,
+        "record_va": "0x187072678",
+        "record_file_offset": 117902968,
+        "bytes16": "28000000180000000400000000000000",
+        "instance_with_header": 40,
+        "native_size_raw": 24,
+        "static_size": 4,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "currentCryptoKey",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116197076,
+          "type": "Int32"
+        },
+        {
+          "name": "hiddenValue",
+          "offset_hex": "0x14",
+          "offset_record_file_offset": 116197080,
+          "type": "Int32"
+        },
+        {
+          "name": "hiddenValueOldByte4",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116197084,
+          "type": "CodeStage.AntiCheat.Common.ACTkByte4"
+        },
+        {
+          "name": "inited",
+          "offset_hex": "0x1c",
+          "offset_record_file_offset": 116197088,
+          "type": "Boolean"
+        },
+        {
+          "name": "fakeValue",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 116197092,
+          "type": "Single"
+        },
+        {
+          "name": "fakeValueActive",
+          "offset_hex": "0x24",
+          "offset_record_file_offset": 116197096,
+          "type": "Boolean"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 40632,
+      "name": "CodeStage.AntiCheat.ObscuredTypes.ObscuredInt",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140086208,
+        "record_va": "0x187072688",
+        "record_file_offset": 117902984,
+        "bytes16": "24000000140000000400000000000000",
+        "instance_with_header": 36,
+        "native_size_raw": 20,
+        "static_size": 4,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "currentCryptoKey",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116197204,
+          "type": "Int32"
+        },
+        {
+          "name": "hiddenValue",
+          "offset_hex": "0x14",
+          "offset_record_file_offset": 116197208,
+          "type": "Int32"
+        },
+        {
+          "name": "inited",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116197212,
+          "type": "Boolean"
+        },
+        {
+          "name": "fakeValue",
+          "offset_hex": "0x1c",
+          "offset_record_file_offset": 116197216,
+          "type": "Int32"
+        },
+        {
+          "name": "fakeValueActive",
+          "offset_hex": "0x20",
+          "offset_record_file_offset": 116197220,
+          "type": "Boolean"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 41113,
+      "name": "System.Enum",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140090056,
+        "record_va": "0x187074e38",
+        "record_file_offset": 117913144,
+        "bytes16": "10000000010000000800000000000000",
+        "instance_with_header": 16,
+        "native_size_raw": 1,
+        "static_size": 8,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 41194,
+      "name": "System.ValueType",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140090704,
+        "record_va": "0x1870759c8",
+        "record_file_offset": 117916104,
+        "bytes16": "10000000010000000000000000000000",
+        "instance_with_header": 16,
+        "native_size_raw": 1,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 42302,
+      "name": "System.Collections.Generic.List`1",
+      "value_type": false,
+      "generic_container_index": 2296,
+      "sizes": {
+        "pointer_record_file_offset": 140099568,
+        "record_va": "0x18707dcd8",
+        "record_file_offset": 117949656,
+        "bytes16": "00000000000000000000000000000000",
+        "instance_with_header": 0,
+        "native_size_raw": 0,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "_items",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 116249828,
+          "type": "VAR#2895[]"
+        },
+        {
+          "name": "_size",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 116249832,
+          "type": "Int32"
+        },
+        {
+          "name": "_version",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 116249836,
+          "type": "Int32"
+        },
+        {
+          "name": "_syncRoot",
+          "offset_hex": "0x0",
+          "offset_record_file_offset": 116249840,
+          "type": "Object"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 45387,
+      "name": "UnityEngine.Vector3",
+      "value_type": true,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124248,
+        "record_va": "0x18709ab88",
+        "record_file_offset": 118068104,
+        "bytes16": "1c0000000c0000007800000000000000",
+        "instance_with_header": 28,
+        "native_size_raw": 12,
+        "static_size": 120,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "System.ValueType",
+      "base_definition_indices": [
+        41194
+      ],
+      "instance": [
+        {
+          "name": "x",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116304784,
+          "type": "Single"
+        },
+        {
+          "name": "y",
+          "offset_hex": "0x14",
+          "offset_record_file_offset": 116304788,
+          "type": "Single"
+        },
+        {
+          "name": "z",
+          "offset_hex": "0x18",
+          "offset_record_file_offset": 116304792,
+          "type": "Single"
+        }
+      ],
+      "inherited_instance_layout": []
+    },
+    {
+      "definition_index": 45429,
+      "name": "UnityEngine.Behaviour",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124584,
+        "record_va": "0x18709b078",
+        "record_file_offset": 118069368,
+        "bytes16": "18000000ffffffff0000000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.Component",
+      "base_definition_indices": [
+        45432,
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 45432,
+      "name": "UnityEngine.Component",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124608,
+        "record_va": "0x18709b0d8",
+        "record_file_offset": 118069464,
+        "bytes16": "18000000ffffffff0000000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.Object",
+      "base_definition_indices": [
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 45442,
+      "name": "UnityEngine.MonoBehaviour",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124688,
+        "record_va": "0x18709b298",
+        "record_file_offset": 118069912,
+        "bytes16": "18000000ffffffff0000000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 4294967295,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.Behaviour",
+      "base_definition_indices": [
+        45429,
+        45432,
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 45447,
+      "name": "UnityEngine.ScriptableObject",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124728,
+        "record_va": "0x18709b3a8",
+        "record_file_offset": 118070184,
+        "bytes16": "18000000080000000000000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 8,
+        "static_size": 0,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "UnityEngine.Object",
+      "base_definition_indices": [
+        45465
+      ],
+      "instance": [],
+      "inherited_instance_layout": [
+        {
+          "owner": "UnityEngine.Object",
+          "name": "m_CachedPtr",
+          "offset": 16,
+          "offset_hex": "0x10",
+          "type": "IntPtr",
+          "offset_record_file_offset": 116306776
+        }
+      ]
+    },
+    {
+      "definition_index": 45465,
+      "name": "UnityEngine.Object",
+      "value_type": false,
+      "generic_container_index": -1,
+      "sizes": {
+        "pointer_record_file_offset": 140124872,
+        "record_va": "0x18709b4f8",
+        "record_file_offset": 118070520,
+        "bytes16": "18000000080000000400000000000000",
+        "instance_with_header": 24,
+        "native_size_raw": 8,
+        "static_size": 4,
+        "thread_static_size": 0,
+        "limits": "UINT32_MAX native size is unsupported/unavailable, not an allocation size"
+      },
+      "base_type": "Object",
+      "base_definition_indices": [],
+      "instance": [
+        {
+          "name": "m_CachedPtr",
+          "offset_hex": "0x10",
+          "offset_record_file_offset": 116306776,
+          "type": "IntPtr"
+        }
+      ],
+      "inherited_instance_layout": []
+    }
+  ],
+  "limits": [
+    "Static registration/type/offset/size records; no runtime process or game execution",
+    "Declared generic-definition offsets are not asserted as concrete closed Undefinable<T> ABI",
+    "Object instance offsets include16-byte object header; verified value-type member instructions must corroborate unboxed offsets",
+    "Methods metadata identities/pinned candidate pointers do not themselves prove merge or movement algorithms"
+  ]
+}

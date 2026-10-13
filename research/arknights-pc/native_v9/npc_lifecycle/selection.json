@@ -1,0 +1,66 @@
+[
+  {
+    "type": "Torappu.Battle.BObject",
+    "method": "OnRecycle",
+    "metadata_method_index": 65035,
+    "token": "0x600fe0c",
+    "address": "0x1806629d0",
+    "reason": "BObject UID invalidation and reset order"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "DontCountAsFinished",
+    "metadata_method_index": 76366,
+    "token": "0x6012a4f",
+    "address": "0x180a6c7f0",
+    "reason": "dontCountAsFinished mutation"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "get_isInvalidKilled",
+    "metadata_method_index": 76370,
+    "token": "0x6012a53",
+    "address": "0x180a7e320",
+    "reason": "invalid kill classification"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "get_isOverrideKillCnt",
+    "metadata_method_index": 76371,
+    "token": "0x6012a54",
+    "address": "0x180a7e470",
+    "reason": "override kill classification"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "get_overrideKillCnt",
+    "metadata_method_index": 76372,
+    "token": "0x6012a55",
+    "address": "0x180a7f850",
+    "reason": "override kill integer getter"
+  },
+  {
+    "type": "DeadState",
+    "method": "OnEnter",
+    "metadata_method_index": 76666,
+    "token": "0x6012b7b",
+    "address": "0x180a8b390",
+    "reason": "Enemy nested DeadState recycle delay update"
+  },
+  {
+    "type": "DeadState",
+    "method": "_PlayAnimation",
+    "metadata_method_index": 76669,
+    "token": "0x6012b7e",
+    "address": "0x180a8b6a0",
+    "reason": "Enemy nested DeadState animation/delay source"
+  },
+  {
+    "type": "Torappu.Battle.Unit",
+    "method": "OnRecycle",
+    "metadata_method_index": 77698,
+    "token": "0x6012f83",
+    "address": "0x180acb160",
+    "reason": "Unit recycle chain before Enemy callback"
+  }
+]

@@ -1,0 +1,1570 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "analysis_mode": "explicit selected PE function ranges; default whole-image analysis disabled",
+  "symbol_provenance": "Local metadata/native pointer-table candidate names; each entry corroborated by exact PE unwind start. Static analysis, no game execution.",
+  "functions": [
+    {
+      "name": "Torappu_GlobalConsts__cctor_0x6000128",
+      "display_name": "Torappu.GlobalConsts..cctor",
+      "address": "0x1866e20d0",
+      "end_address": "0x1866e2431",
+      "ranges": [
+        {
+          "start": "0x1866e20d0",
+          "end": "0x1866e2371",
+          "unwind_rva": "0x7f6463c",
+          "chained": false,
+          "source_sha256": "17807a6cf543da3296d8c15bbe447693f032d7c98ae9833c78757bc3722cf620",
+          "source_file_offset": 107877584
+        },
+        {
+          "start": "0x1866e2372",
+          "end": "0x1866e242b",
+          "unwind_rva": "0x8488d8c",
+          "chained": true,
+          "source_sha256": "cac3337f778fdd2ac5ecafbe99ac140dd8ecf368e32bcdb0bd62518da970363c",
+          "source_file_offset": 107878258
+        },
+        {
+          "start": "0x1866e242c",
+          "end": "0x1866e2431",
+          "unwind_rva": "0x8488da0",
+          "chained": true,
+          "source_sha256": "7f362a295655f4fae7676f0035fc157d91b4c02ad357b3a1fdc0615ec7c45348",
+          "source_file_offset": 107878444
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 107877584,
+      "token": "0x6000128",
+      "metadata_method_index": 219998,
+      "imported_range_checks": [
+        {
+          "start": "0x1866e20d0",
+          "bytes": 674,
+          "imported_sha256": "17807a6cf543da3296d8c15bbe447693f032d7c98ae9833c78757bc3722cf620",
+          "match": true
+        },
+        {
+          "start": "0x1866e2372",
+          "bytes": 186,
+          "imported_sha256": "cac3337f778fdd2ac5ecafbe99ac140dd8ecf368e32bcdb0bd62518da970363c",
+          "match": true
+        },
+        {
+          "start": "0x1866e242c",
+          "bytes": 6,
+          "imported_sha256": "7f362a295655f4fae7676f0035fc157d91b4c02ad357b3a1fdc0615ec7c45348",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 169,
+      "direct_calls": [
+        {
+          "source": "1866e20e6",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e20f2",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e20fe",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e210a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2116",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2122",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e212e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e213a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2146",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2152",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2167",
+          "target": "0x186b60290",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2185",
+          "target": "0x186b60290",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e219d",
+          "target": "0x186b70e10",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e21d9",
+          "target": "0x180518de0",
+          "candidate_name": "Antilog__ctor_0x600534c"
+        },
+        {
+          "source": "1866e21fc",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e221a",
+          "target": "0x1863026a0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2246",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2252",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2270",
+          "target": "0x1863026a0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e229c",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e22a8",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e22c6",
+          "target": "0x1863026a0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e22f2",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e22fe",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e231c",
+          "target": "0x1863026a0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2348",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2354",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e2377",
+          "target": "0x1863026a0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e23a3",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e23aa",
+          "target": "0x186b70e10",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e23c2",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1866e23cc",
+          "target": "0x1866fdad0",
+          "candidate_name": "Torappu_FP_op_Implicit_0x600031c"
+        },
+        {
+          "source": "1866e240a",
+          "target": "0x1866fb870",
+          "candidate_name": "Torappu_FP_op_Multiply_0x6000301"
+        },
+        {
+          "source": "1866e242c",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_GlobalConsts__cctor_0x6000128(void)\r\n\r\n{\r\n  code *pcVar1;\r\n  undefined4 uVar2;\r\n  longlong lVar3;\r\n  undefined8 uVar4;\r\n  float fVar5;\r\n  undefined8 auStackX_10 [3];\r\n  \r\n  if (DAT_188cc3666 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    FUN_18048bf00(\u0026DAT_1888ba140);\r\n    FUN_18048bf00(\u0026DAT_1888d5608);\r\n    FUN_18048bf00(\u0026DAT_18888abf8);\r\n    FUN_18048bf00(\u0026DAT_188863308);\r\n    FUN_18048bf00(\u0026DAT_18888ae30);\r\n    FUN_18048bf00(\u0026DAT_18888b070);\r\n    FUN_18048bf00(\u0026DAT_18896fd08);\r\n    FUN_18048bf00(\u0026DAT_18888a9b8);\r\n    FUN_18048bf00(\u0026DAT_18888b2a8);\r\n    DAT_188cc3666 \u003d \u0027\\x01\u0027;\r\n  }\r\n  uVar2 \u003d FUN_186b60290(_DAT_18896fd08,0);\r\n  **(undefined4 **)(_DAT_1888ba140 + 0xb8) \u003d uVar2;\r\n  uVar2 \u003d FUN_186b60290(_DAT_188863308,0);\r\n  *(undefined4 *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 4) \u003d uVar2;\r\n  fVar5 \u003d (float)FUN_186b70e10(0);\r\n  *(float *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 8) \u003d fVar5 * 0.5;\r\n  auStackX_10[0] \u003d 0;\r\n  func_0x000180518de0(auStackX_10,0xfffffff6,0x14,0);\r\n  *(undefined8 *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0xc) \u003d auStackX_10[0];\r\n  lVar3 \u003d func_0x00018045cfe0(_DAT_1888d5608);\r\n  if (lVar3 !\u003d 0) {\r\n    FUN_1863026a0(lVar3,_DAT_18888b2a8,0);\r\n    *(longlong *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x18) \u003d lVar3;\r\n    func_0x00018048b9e0(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x18,lVar3);\r\n    lVar3 \u003d func_0x00018045cfe0(_DAT_1888d5608);\r\n    if (lVar3 !\u003d 0) {\r\n      FUN_1863026a0(lVar3,_DAT_18888abf8,0);\r\n      *(longlong *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x20) \u003d lVar3;\r\n      func_0x00018048b9e0(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x20,lVar3);\r\n      lVar3 \u003d func_0x00018045cfe0(_DAT_1888d5608);\r\n      if (lVar3 !\u003d 0) {\r\n        FUN_1863026a0(lVar3,_DAT_18888a9b8,0);\r\n        *(longlong *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x28) \u003d lVar3;\r\n        func_0x00018048b9e0(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x28,lVar3);\r\n        lVar3 \u003d func_0x00018045cfe0(_DAT_1888d5608);\r\n        if (lVar3 !\u003d 0) {\r\n          FUN_1863026a0(lVar3,_DAT_18888ae30,0);\r\n          *(longlong *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x30) \u003d lVar3;\r\n          func_0x00018048b9e0(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x30,lVar3);\r\n          lVar3 \u003d func_0x00018045cfe0(_DAT_1888d5608);\r\n          if (lVar3 !\u003d 0) {\r\n            FUN_1863026a0(lVar3,_DAT_18888b070,0);\r\n            *(longlong *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x38) \u003d lVar3;\r\n            func_0x00018048b9e0(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x38,lVar3);\r\n            uVar2 \u003d FUN_186b70e10(0);\r\n            if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n              func_0x00018048c140();\r\n            }\r\n            uVar4 \u003d func_0x0001866fdad0(uVar2,0);\r\n            *(undefined8 *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x40) \u003d uVar4;\r\n            uVar4 \u003d func_0x0001866fb870(*(undefined8 *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x40)\r\n                                        ,*(undefined8 *)\r\n                                          (*(longlong *)(_DAT_18885a700 + 0xb8) + 0x30),0);\r\n            *(undefined8 *)(*(longlong *)(_DAT_1888ba140 + 0xb8) + 0x48) \u003d uVar4;\r\n            return;\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\n  pcVar1 \u003d (code *)swi(3);\r\n  (*pcVar1)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_MathUtil_LE_0x6000296",
+      "display_name": "Torappu.MathUtil.LE",
+      "address": "0x1866e56f0",
+      "end_address": "0x1866e56fe",
+      "ranges": [
+        {
+          "start": "0x1866e56f0",
+          "end": "0x1866e56fe",
+          "leaf_boundary": "straight-line RET or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "c0e9fb8abb0101e110d21b2feac83dc415f9a7f993b858995a1fa35d34a8866b",
+          "source_file_offset": 107891440
+        }
+      ],
+      "range_provenance": "Bounded leaf candidate ending at straight-line RET or decoded INT3 padding; separate from PE unwind-derived coverage",
+      "file_offset": 107891440,
+      "token": "0x6000296",
+      "metadata_method_index": 220364,
+      "imported_range_checks": [
+        {
+          "start": "0x1866e56f0",
+          "bytes": 15,
+          "imported_sha256": "c0e9fb8abb0101e110d21b2feac83dc415f9a7f993b858995a1fa35d34a8866b",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 4,
+      "direct_calls": [],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nbool Torappu_MathUtil_LE_0x6000296(float param_1,float param_2)\r\n\r\n{\r\n  return param_1 \u003c\u003d param_2 + 1e-05;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_RandomExtensions_Range_0x6005775",
+      "display_name": "Torappu.RandomExtensions.Range",
+      "address": "0x181a96e30",
+      "end_address": "0x181a96ecb",
+      "ranges": [
+        {
+          "start": "0x181a96e30",
+          "end": "0x181a96ecb",
+          "unwind_rva": "0x7f66940",
+          "chained": false,
+          "source_sha256": "359ee348c7e606ffc3977305bdc1a0790d5da32f4191eae8abba4fa76186bef2",
+          "source_file_offset": 27877936
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 27877936,
+      "token": "0x6005775",
+      "metadata_method_index": 22388,
+      "imported_range_checks": [
+        {
+          "start": "0x181a96e30",
+          "bytes": 156,
+          "imported_sha256": "359ee348c7e606ffc3977305bdc1a0790d5da32f4191eae8abba4fa76186bef2",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 38,
+      "direct_calls": [
+        {
+          "source": "181a96e59",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "181a96e75",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "181a96e8b",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "181a96ec6",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nfloat Torappu_RandomExtensions_Range_0x6005775(longlong *param_1,float param_2,float param_3)\r\n\r\n{\r\n  code *pcVar1;\r\n  double dVar2;\r\n  float fVar3;\r\n  \r\n  if (DAT_188c9debe \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_1888b0d20);\r\n    DAT_188c9debe \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_1888b0d20 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  if (param_1 !\u003d (longlong *)0x0) {\r\n    if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n      func_0x000180446d00(*param_1);\r\n    }\r\n    dVar2 \u003d (double)(**(code **)(*param_1 + 0x1c0))(param_1,*(undefined8 *)(*param_1 + 0x1c8));\r\n    return (float)dVar2 * (param_3 - param_2) + param_2;\r\n  }\r\n  FUN_18048c0b0();\r\n  pcVar1 \u003d (code *)swi(3);\r\n  fVar3 \u003d (float)(*pcVar1)();\r\n  return fVar3;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "UnresolvedCall_WeightGetter_call_target",
+      "display_name": "UnresolvedCall.WeightGetter",
+      "address": "0x1845857f0",
+      "end_address": "0x184585af3",
+      "ranges": [
+        {
+          "start": "0x1845857f0",
+          "end": "0x1845859c4",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "f46e26ec385dbb2b61e4430be2b5e7cd22ada71c0c1fa1301505693b3766bc75",
+          "source_file_offset": 72895472
+        },
+        {
+          "start": "0x1845859c5",
+          "end": "0x184585a3d",
+          "unwind_rva": "0x836b920",
+          "chained": true,
+          "source_sha256": "ddf5dc30eaca3fc3abaa1ae25d7c28541b67103e39734d7061a756efcc83b925",
+          "source_file_offset": 72895941
+        },
+        {
+          "start": "0x184585a3e",
+          "end": "0x184585af3",
+          "unwind_rva": "0x836b938",
+          "chained": true,
+          "source_sha256": "3c662671585f87de0d64778a399a7c8c11dee5cc9e994e77d6a3e176a242731c",
+          "source_file_offset": 72896062
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 72895472,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x1845857f0",
+          "bytes": 469,
+          "imported_sha256": "f46e26ec385dbb2b61e4430be2b5e7cd22ada71c0c1fa1301505693b3766bc75",
+          "match": true
+        },
+        {
+          "start": "0x1845859c5",
+          "bytes": 121,
+          "imported_sha256": "ddf5dc30eaca3fc3abaa1ae25d7c28541b67103e39734d7061a756efcc83b925",
+          "match": true
+        },
+        {
+          "start": "0x184585a3e",
+          "bytes": 182,
+          "imported_sha256": "3c662671585f87de0d64778a399a7c8c11dee5cc9e994e77d6a3e176a242731c",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 53,
+      "direct_calls": [
+        {
+          "source": "1845859de",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "184585a1d",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Removing unreachable block (ram,0x0001836405f2) */\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nvoid UnresolvedCall_WeightGetter_call_target(longlong *param_1)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  longlong lVar2;\r\n  code *pcVar3;\r\n  int iVar4;\r\n  int iVar5;\r\n  undefined8 *puVar6;\r\n  ushort uVar7;\r\n  longlong lVar8;\r\n  undefined8 auStack_58 [2];\r\n  undefined8 uStack_48;\r\n  undefined1 *puStack_40;\r\n  undefined8 *puStack_38;\r\n  undefined *puStack_30;\r\n  \r\n  lVar8 \u003d _DAT_188969980;\r\n  switch(*(undefined4 *)(*param_1 + 0x11c)) {\r\n  case 0x437:\r\n  case 0x439:\r\n    return;\r\n  case 0x438:\r\n  case 0x45b:\r\n    return;\r\n  case 0x43a:\r\n    return;\r\n  case 0x43b:\r\n    return;\r\n  case 0x43c:\r\n    return;\r\n  case 0x43d:\r\n    if (cRam0000000188ca4f24 \u003d\u003d \u0027\\0\u0027) {\r\n      puStack_30 \u003d \u0026UNK_18231cbae;\r\n      FUN_18048bf00(0x188897e18,0);\r\n      cRam0000000188ca4f24 \u003d \u0027\\x01\u0027;\r\n    }\r\n    lVar8 \u003d **(longlong **)(lRam0000000188897e18 + 0xb8);\r\n    if (lVar8 \u003d\u003d 0) {\r\n      return;\r\n    }\r\n    break;\r\n  case 0x43e:\r\n    return;\r\n  case 0x43f:\r\n    return;\r\n  case 0x440:\r\n    return;\r\n  case 0x441:\r\n    return;\r\n  case 0x442:\r\n  case 0x444:\r\n  case 0x446:\r\n  case 0x447:\r\n  case 0x449:\r\n  case 0x459:\r\n    return;\r\n  case 0x443:\r\n    return;\r\n  case 0x445:\r\n  case 0x453:\r\n    return;\r\n  case 0x448:\r\n    if (cRam0000000188cb5831 \u003d\u003d \u0027\\0\u0027) {\r\n      puStack_30 \u003d \u0026UNK_183d9e8ae;\r\n      FUN_18048bf00(0x18883bd20,0);\r\n      cRam0000000188cb5831 \u003d \u0027\\x01\u0027;\r\n    }\r\n    lVar8 \u003d *(longlong *)(*(longlong *)(lRam000000018883bd20 + 0xb8) + 0x20);\r\n    if (lVar8 \u003d\u003d 0) {\r\n      return;\r\n    }\r\n    break;\r\n  case 0x44a:\r\n    return;\r\n  case 1099:\r\n    return;\r\n  case 0x44c:\r\n  case 0x450:\r\n  case 0x45c:\r\n    return;\r\n  case 0x44d:\r\n    return;\r\n  case 0x44e:\r\n    return;\r\n  case 0x44f:\r\n    return;\r\n  case 0x451:\r\n    return;\r\n  case 0x452:\r\n    if (cRam0000000188c92f0c \u003d\u003d \u0027\\0\u0027) {\r\n      puStack_30 \u003d \u0026UNK_180b1e88e;\r\n      FUN_18048bf00(0x18882abc8,0);\r\n      cRam0000000188c92f0c \u003d \u0027\\x01\u0027;\r\n    }\r\n    lVar8 \u003d **(longlong **)(lRam000000018882abc8 + 0xb8);\r\n    if (lVar8 \u003d\u003d 0) {\r\n      return;\r\n    }\r\n    break;\r\n  case 0x454:\r\n    if (cRam0000000188c92f3c \u003d\u003d \u0027\\0\u0027) {\r\n      puStack_30 \u003d \u0026UNK_180b1c0ce;\r\n      FUN_18048bf00(0x1888e4d78,0);\r\n      cRam0000000188c92f3c \u003d \u0027\\x01\u0027;\r\n    }\r\n    lVar8 \u003d **(longlong **)(lRam00000001888e4d78 + 0xb8);\r\n    if (lVar8 \u003d\u003d 0) {\r\n      return;\r\n    }\r\n    break;\r\n  case 0x455:\r\n    if (cRam0000000188c92f3e \u003d\u003d \u0027\\0\u0027) {\r\n      puStack_30 \u003d \u0026UNK_180b1c18e;\r\n      FUN_18048bf00(0x1888e51f8,0);\r\n      cRam0000000188c92f3e \u003d \u0027\\x01\u0027;\r\n    }\r\n    lVar8 \u003d **(longlong **)(lRam00000001888e51f8 + 0xb8);\r\n    if (lVar8 \u003d\u003d 0) {\r\n      return;\r\n    }\r\n    break;\r\n  case 0x456:\r\n    if (cRam0000000188c92f40 \u003d\u003d \u0027\\0\u0027) {\r\n      puStack_30 \u003d \u0026UNK_180b1f52e;\r\n      FUN_18048bf00(0x18888a9e0,0);\r\n      cRam0000000188c92f40 \u003d \u0027\\x01\u0027;\r\n    }\r\n    lVar8 \u003d **(longlong **)(lRam000000018888a9e0 + 0xb8);\r\n    if (lVar8 \u003d\u003d 0) {\r\n      return;\r\n    }\r\n    break;\r\n  case 0x457:\r\n    return;\r\n  case 0x458:\r\n    return;\r\n  case 0x45a:\r\n    return;\r\n  case 0x45d:\r\n    if (cRam0000000188cad2ba \u003d\u003d \u0027\\0\u0027) {\r\n      puStack_30 \u003d \u0026UNK_182db7cde;\r\n      FUN_18048bf00(0x18894e750,0);\r\n      cRam0000000188cad2ba \u003d \u0027\\x01\u0027;\r\n    }\r\n    lVar8 \u003d *(longlong *)(*(longlong *)(lRam000000018894e750 + 0xb8) + 8);\r\n    if (lVar8 \u003d\u003d 0) {\r\n      return;\r\n    }\r\n    break;\r\n  default:\r\n    lVar2 \u003d *param_1;\r\n    if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n      puStack_30 \u003d (undefined *)0x1845859e3;\r\n      func_0x000180446d00();\r\n    }\r\n    uVar7 \u003d 0;\r\n    if (*(ushort *)(lVar2 + 0x12e) !\u003d 0) {\r\n      do {\r\n        if (*(longlong *)(*(longlong *)(lVar2 + 0xb0) + (ulonglong)uVar7 * 0x10) \u003d\u003d lVar8) {\r\n          puVar6 \u003d (undefined8 *)\r\n                   (((longlong)*(int *)(*(longlong *)(lVar2 + 0xb0) + 8 + (ulonglong)uVar7 * 0x10) +\r\n                    0x14) * 0x10 + lVar2);\r\n          goto LAB_184585a22;\r\n        }\r\n        uVar7 \u003d uVar7 + 1;\r\n      } while (uVar7 \u003c *(ushort *)(lVar2 + 0x12e));\r\n    }\r\n    puStack_30 \u003d (undefined *)0x184585a22;\r\n    puVar6 \u003d (undefined8 *)FUN_180445cc0(param_1,lVar8,0);\r\nLAB_184585a22:\r\n                    /* WARNING: Could not recover jumptable at 0x000184585a3b. Too many branches */\r\n                    /* WARNING: Treating indirect jump as call */\r\n    (*(code *)*puVar6)(param_1,puVar6[1],(code *)*puVar6);\r\n    return;\r\n  }\r\n  if (*(longlong *)(lVar8 + 0x18) \u003d\u003d 0) {\r\n    FUN_18048c0b0();\r\ncode_r0x000183640648:\r\n    FUN_18048c0b0();\r\ncode_r0x00018364064e:\r\n    FUN_18048c0b0();\r\n  }\r\n  else {\r\n    auStack_58[0] \u003d *(undefined8 *)(*(longlong *)(lVar8 + 0x18) + 0x30);\r\n    uStack_48 \u003d 0;\r\n    puStack_40 \u003d \u0026stack0x00000008;\r\n    puStack_38 \u003d auStack_58;\r\n    FUN_185ca7f50(auStack_58[0],\u0026stack0x00000008,0);\r\n    if (*(longlong *)(lVar8 + 0x18) \u003d\u003d 0) goto code_r0x000183640658;\r\n    uVar1 \u003d *(undefined8 *)(*(longlong *)(lVar8 + 0x18) + 0x10);\r\n    iVar4 \u003d FUN_183f23b70(uVar1,*(undefined4 *)(lVar8 + 0x38),*(undefined4 *)(lVar8 + 0x14),0);\r\n    if (*(longlong *)(lVar8 + 0x18) !\u003d 0) {\r\n      lVar2 \u003d *(longlong *)(*(longlong *)(lVar8 + 0x18) + 0x20);\r\n      if (lVar2 \u003d\u003d 0) goto code_r0x000183640648;\r\n      FUN_183cf8c20(lVar2,uVar1,param_1,0);\r\n      iVar5 \u003d FUN_183f22380(uVar1,1,1,iVar4,0);\r\n      if (iVar5 \u003d\u003d 0) {\r\ncode_r0x0001836405bc:\r\n        FUN_183f23420(uVar1,iVar4 + 1,0);\r\n        FUN_183f22fd0(uVar1,iVar4 + -1,0);\r\n        return;\r\n      }\r\n      if (*(longlong *)(lVar8 + 0x18) !\u003d 0) {\r\n        FUN_183e0d130(*(longlong *)(lVar8 + 0x18),iVar4 + -1,0);\r\n        goto code_r0x0001836405bc;\r\n      }\r\n      goto code_r0x00018364064e;\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\ncode_r0x000183640658:\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar3 \u003d (code *)swi(3);\r\n  (*pcVar3)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "UnresolvedCall_CeilToInt_call_target",
+      "display_name": "UnresolvedCall.CeilToInt",
+      "address": "0x18059e290",
+      "end_address": "0x18059e389",
+      "ranges": [
+        {
+          "start": "0x18059e290",
+          "end": "0x18059e389",
+          "unwind_rva": "0x7f669d0",
+          "chained": false,
+          "source_sha256": "7a6b7c58d9e0c1e921f82026377f20fdfcbae5458f7e8fd884327f011cc6f929",
+          "source_file_offset": 5887632
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 5887632,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x18059e290",
+          "bytes": 250,
+          "imported_sha256": "7a6b7c58d9e0c1e921f82026377f20fdfcbae5458f7e8fd884327f011cc6f929",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 59,
+      "direct_calls": [
+        {
+          "source": "18059e2ac",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18059e2c8",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18059e2e2",
+          "target": "0x1804d57f0",
+          "candidate_name": null
+        },
+        {
+          "source": "18059e323",
+          "target": "0x1804d3200",
+          "candidate_name": null
+        },
+        {
+          "source": "18059e336",
+          "target": "0x1804d57f0",
+          "candidate_name": null
+        },
+        {
+          "source": "18059e377",
+          "target": "0x1804d58c0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nint UnresolvedCall_CeilToInt_call_target(float param_1)\r\n\r\n{\r\n  double dVar1;\r\n  double dVar2;\r\n  double adStackX_18 [2];\r\n  \r\n  if (DAT_188c8fb6a \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_1888c37c0);\r\n    DAT_188c8fb6a \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_1888c37c0 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  dVar2 \u003d (double)param_1;\r\n  if (dVar2 \u003c 0.0) {\r\n    dVar1 \u003d (double)func_0x0001804d57f0(dVar2,adStackX_18);\r\n    if (dVar1 \u003d\u003d -0.5) {\r\n      if (((longlong)adStackX_18[0] \u0026 1U) !\u003d 0) {\r\n        return (int)(adStackX_18[0] - 1.0);\r\n      }\r\n    }\r\n    else {\r\n      adStackX_18[0] \u003d (double)func_0x0001804d58c0(dVar2 - 0.5);\r\n    }\r\n  }\r\n  else {\r\n    dVar1 \u003d (double)func_0x0001804d57f0(dVar2,adStackX_18);\r\n    if (dVar1 !\u003d 0.5) {\r\n      dVar2 \u003d (double)func_0x0001804d3200(dVar2 + 0.5);\r\n      return (int)dVar2;\r\n    }\r\n    if (((longlong)adStackX_18[0] \u0026 1U) !\u003d 0) {\r\n      return (int)(adStackX_18[0] + 1.0);\r\n    }\r\n  }\r\n  return (int)adStackX_18[0];\r\n}\r\n\r\n"
+    },
+    {
+      "name": "UnresolvedCall_SmallQueueSort_call_target",
+      "display_name": "UnresolvedCall.SmallQueueSort",
+      "address": "0x184543930",
+      "end_address": "0x1845439d6",
+      "ranges": [
+        {
+          "start": "0x184543930",
+          "end": "0x1845439d6",
+          "unwind_rva": "0x7f63a7c",
+          "chained": false,
+          "source_sha256": "9bcb707e95b3d5a1a49b8a2afb414af1200ce6a1f94fccf7eba76aec8981f49f",
+          "source_file_offset": 72625456
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 72625456,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x184543930",
+          "bytes": 167,
+          "imported_sha256": "9bcb707e95b3d5a1a49b8a2afb414af1200ce6a1f94fccf7eba76aec8981f49f",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 45,
+      "direct_calls": [
+        {
+          "source": "184543952",
+          "target": "0x180446470",
+          "candidate_name": null
+        },
+        {
+          "source": "184543999",
+          "target": "0x18048bf20",
+          "candidate_name": null
+        },
+        {
+          "source": "1845439a1",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "1845439ac",
+          "target": "0x180005cb0",
+          "candidate_name": null
+        },
+        {
+          "source": "1845439b8",
+          "target": "0x18048bf20",
+          "candidate_name": null
+        },
+        {
+          "source": "1845439c6",
+          "target": "0x185e7d220",
+          "candidate_name": "System_ArgumentNullException__ctor_0x600045c"
+        },
+        {
+          "source": "1845439d1",
+          "target": "0x18048c070",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid UnresolvedCall_SmallQueueSort_call_target(longlong param_1,longlong param_2,longlong param_3)\r\n\r\n{\r\n  int iVar1;\r\n  undefined8 *puVar2;\r\n  longlong lVar3;\r\n  code *pcVar4;\r\n  int iVar5;\r\n  longlong lVar6;\r\n  undefined8 uVar7;\r\n  undefined8 uVar8;\r\n  \r\n  if (*(longlong *)(param_3 + 0x38) \u003d\u003d 0) {\r\n    FUN_180446470(param_3);\r\n  }\r\n  if (param_1 \u003d\u003d 0) {\r\n    uVar7 \u003d func_0x00018048bf20(0x18885fb68);\r\n    uVar7 \u003d func_0x00018045cfe0(uVar7);\r\n    FUN_180005cb0(uVar7);\r\n    uVar8 \u003d func_0x00018048bf20(0x18890f690);\r\n    System_ArgumentNullException__ctor_0x600045c(uVar7,uVar8,0);\r\n    FUN_18048c070(uVar7,param_3);\r\n    pcVar4 \u003d (code *)swi(3);\r\n    (*pcVar4)();\r\n    return;\r\n  }\r\n  puVar2 \u003d *(undefined8 **)(*(longlong *)(param_3 + 0x38) + 8);\r\n  if (puVar2[4] \u003d\u003d 0) {\r\n    (*(code *)*puVar2)();\r\n  }\r\n  iVar1 \u003d *(int *)(param_1 + 0x18);\r\n  lVar3 \u003d *(longlong *)(*(longlong *)(param_3 + 0x38) + 0x10);\r\n  if (*(longlong *)(lVar3 + 0x38) \u003d\u003d 0) {\r\n    FUN_180446470(lVar3);\r\n  }\r\n  if (param_2 !\u003d 0) {\r\n    if (1 \u003c iVar1) {\r\n      if (param_1 \u003d\u003d 0) {\r\n        FUN_18048c0b0();\r\n        pcVar4 \u003d (code *)swi(3);\r\n        (*pcVar4)();\r\n        return;\r\n      }\r\n      lVar6 \u003d **(longlong **)(lVar3 + 0x38);\r\n      if ((*(byte *)(lVar6 + 0x136) \u0026 1) \u003d\u003d 0) {\r\n        lVar6 \u003d FUN_1804463f0(lVar6);\r\n      }\r\n      iVar5 \u003d FUN_180005310(0,lVar6,param_1);\r\n      if (1 \u003c iVar5) {\r\n        FUN_184547860(param_1,0,iVar1 + -1,param_2,\r\n                      *(undefined8 *)(*(longlong *)(lVar3 + 0x38) + 0x10));\r\n      }\r\n    }\r\n    return;\r\n  }\r\n  uVar7 \u003d func_0x00018048bf20(0x18885fb68);\r\n  uVar7 \u003d func_0x00018045cfe0(uVar7);\r\n  FUN_180005cb0(uVar7);\r\n  uVar8 \u003d func_0x00018048bf20(0x1888c08a0);\r\n  System_ArgumentNullException__ctor_0x600045c(uVar7,uVar8,0);\r\n  FUN_18048c070(uVar7,lVar3);\r\n  pcVar4 \u003d (code *)swi(3);\r\n  (*pcVar4)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "UnresolvedCall_GameModePlayingCommon_call_target",
+      "display_name": "UnresolvedCall.GameModePlayingCommon",
+      "address": "0x180c1ba60",
+      "end_address": "0x180c1bab4",
+      "ranges": [
+        {
+          "start": "0x180c1ba60",
+          "end": "0x180c1bab4",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "f03fa11aebb3f07067e81b3e42e2a1497976583e7cdfe26eed9c1d23787b3dd4",
+          "source_file_offset": 12693088
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 12693088,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x180c1ba60",
+          "bytes": 85,
+          "imported_sha256": "f03fa11aebb3f07067e81b3e42e2a1497976583e7cdfe26eed9c1d23787b3dd4",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 22,
+      "direct_calls": [
+        {
+          "source": "180c1ba79",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nulonglong UnresolvedCall_GameModePlayingCommon_call_target(longlong param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  undefined8 uVar2;\r\n  longlong lVar3;\r\n  code *pcVar4;\r\n  byte bVar5;\r\n  int iVar6;\r\n  int iVar7;\r\n  ulonglong uVar8;\r\n  char acStackX_8 [24];\r\n  byte bStackX_20;\r\n  undefined8 auStack_48 [2];\r\n  undefined8 uStack_38;\r\n  char *pcStack_30;\r\n  undefined8 *puStack_28;\r\n  \r\n  if (DAT_188c939a6 \u003d\u003d \u0027\\0\u0027) {\r\n    pcStack_30 \u003d (char *)0x180c1ba7e;\r\n    FUN_18048bf00(\u0026DAT_1888a8d10);\r\n    DAT_188c939a6 \u003d \u0027\\x01\u0027;\r\n  }\r\n  lVar1 \u003d **(longlong **)(_DAT_1888a8d10 + 0xb8);\r\n  if (lVar1 \u003d\u003d 0) {\r\n    return (ulonglong)*(byte *)(param_1 + 0x10);\r\n  }\r\n  bStackX_20 \u003d 0;\r\n  if (*(longlong *)(lVar1 + 0x18) \u003d\u003d 0) {\r\n    FUN_18048c0b0();\r\ncode_r0x0001832b3a74:\r\n    FUN_18048c0b0();\r\ncode_r0x0001832b3a7a:\r\n    FUN_18048c0b0();\r\n  }\r\n  else {\r\n    auStack_48[0] \u003d *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x30);\r\n    acStackX_8[0] \u003d \u0027\\0\u0027;\r\n    uStack_38 \u003d 0;\r\n    pcStack_30 \u003d acStackX_8;\r\n    puStack_28 \u003d auStack_48;\r\n    FUN_185ca7f50(auStack_48[0],acStackX_8,0);\r\n    if (*(longlong *)(lVar1 + 0x18) \u003d\u003d 0) goto code_r0x0001832b3a84;\r\n    uVar2 \u003d *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x10);\r\n    iVar6 \u003d FUN_183f23b70(uVar2,*(undefined4 *)(lVar1 + 0x38),*(undefined4 *)(lVar1 + 0x14),0);\r\n    if (*(longlong *)(lVar1 + 0x18) !\u003d 0) {\r\n      lVar3 \u003d *(longlong *)(*(longlong *)(lVar1 + 0x18) + 0x20);\r\n      if (lVar3 \u003d\u003d 0) goto code_r0x0001832b3a74;\r\n      FUN_183cf8c20(lVar3,uVar2,param_1,0);\r\n      iVar7 \u003d FUN_183f22380(uVar2,1,1,iVar6,0);\r\n      if (iVar7 \u003d\u003d 0) {\r\ncode_r0x0001832b39f4:\r\n        bVar5 \u003d FUN_183f23100(uVar2,iVar6 + 1,0);\r\n        FUN_183f22fd0(uVar2,iVar6 + -1,0);\r\n        if (acStackX_8[0] !\u003d \u0027\\0\u0027) {\r\n          bStackX_20 \u003d bVar5;\r\n          func_0x000185ca7ff0(auStack_48[0],0);\r\n        }\r\n        return (ulonglong)bVar5;\r\n      }\r\n      if (*(longlong *)(lVar1 + 0x18) !\u003d 0) {\r\n        FUN_183e0d130(*(longlong *)(lVar1 + 0x18),iVar6 + -1,0);\r\n        goto code_r0x0001832b39f4;\r\n      }\r\n      goto code_r0x0001832b3a7a;\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\ncode_r0x0001832b3a84:\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar4 \u003d (code *)swi(3);\r\n  uVar8 \u003d (*pcVar4)();\r\n  return uVar8;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "__DoActivatePredefined_d__152_MoveNext_0x6011a81",
+      "display_name": "\u003c_DoActivatePredefined\u003ed__152.MoveNext",
+      "address": "0x180952770",
+      "end_address": "0x18095285b",
+      "ranges": [
+        {
+          "start": "0x180952770",
+          "end": "0x18095285b",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "3703de3745806d5acebc294a9d772cfafdd710fc4d95ef8e906641631cf6c337",
+          "source_file_offset": 9771888
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 9771888,
+      "token": "0x6011a81",
+      "metadata_method_index": 72320,
+      "imported_range_checks": [
+        {
+          "start": "0x180952770",
+          "bytes": 236,
+          "imported_sha256": "3703de3745806d5acebc294a9d772cfafdd710fc4d95ef8e906641631cf6c337",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 57,
+      "direct_calls": [
+        {
+          "source": "180952789",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180952795",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1809527db",
+          "target": "0x180918530",
+          "candidate_name": "Torappu_Battle_Scheduler_TryActivePredefined_0x60119d3"
+        },
+        {
+          "source": "180952810",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18095282e",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "180952856",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nundefined8 __DoActivatePredefined_d__152_MoveNext_0x6011a81(longlong param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  undefined8 uVar3;\r\n  \r\n  if (DAT_188c91b7a \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18886a5d0);\r\n    FUN_18048bf00(\u0026DAT_1888fb678);\r\n    DAT_188c91b7a \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(param_1 + 0x10) \u003d\u003d 0) {\r\n    *(undefined4 *)(param_1 + 0x10) \u003d 0xffffffff;\r\n    if ((*(longlong *)(param_1 + 0x28) !\u003d 0) \u0026\u0026 (*(longlong *)(param_1 + 0x20) !\u003d 0)) {\r\n      Torappu_Battle_Scheduler_TryActivePredefined_0x60119d3\r\n                (*(longlong *)(param_1 + 0x20),*(undefined8 *)(*(longlong *)(param_1 + 0x28) + 0x18)\r\n                 ,_DAT_1888fb678,0);\r\n      if (*(longlong *)(param_1 + 0x30) !\u003d 0) {\r\n        lVar1 \u003d *(longlong *)(param_1 + 0x30);\r\n        (**(code **)(lVar1 + 0x18))\r\n                  (*(undefined8 *)(lVar1 + 0x40),*(undefined8 *)(param_1 + 0x28),\r\n                   *(undefined8 *)(lVar1 + 0x28));\r\n      }\r\n      if (*(int *)(_DAT_18886a5d0 + 0xe0) \u003d\u003d 0) {\r\n        func_0x00018048c140(_DAT_18886a5d0);\r\n      }\r\n      *(undefined8 *)(param_1 + 0x18) \u003d **(undefined8 **)(_DAT_18886a5d0 + 0xb8);\r\n      func_0x00018048b9e0(param_1 + 0x18);\r\n      *(undefined4 *)(param_1 + 0x10) \u003d 1;\r\n      return 1;\r\n    }\r\n    FUN_18048c0b0();\r\n    pcVar2 \u003d (code *)swi(3);\r\n    uVar3 \u003d (*pcVar2)();\r\n    return uVar3;\r\n  }\r\n  if (*(int *)(param_1 + 0x10) \u003d\u003d 1) {\r\n    *(undefined4 *)(param_1 + 0x10) \u003d 0xffffffff;\r\n  }\r\n  return 0;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "RuntimeHandler_MoveNext_0x600faf6",
+      "display_name": "RuntimeHandler.MoveNext",
+      "address": "0x18065ff70",
+      "end_address": "0x180660306",
+      "ranges": [
+        {
+          "start": "0x18065ff70",
+          "end": "0x180660306",
+          "unwind_rva": "0x7f7b704",
+          "chained": false,
+          "source_sha256": "965c2d0babe5dbb1b01ba3ba2598bc9e7944dee9e6894337b7ef03d57fbb2174",
+          "source_file_offset": 6681456
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6681456,
+      "token": "0x600faf6",
+      "metadata_method_index": 64245,
+      "imported_range_checks": [
+        {
+          "start": "0x18065ff70",
+          "bytes": 919,
+          "imported_sha256": "965c2d0babe5dbb1b01ba3ba2598bc9e7944dee9e6894337b7ef03d57fbb2174",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 207,
+      "direct_calls": [
+        {
+          "source": "18065ff89",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18065ff95",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18065ffa1",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18065ffad",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18065ffb9",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18065ffc5",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18065ffd1",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18065ffed",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18065fff9",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18066004f",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18066005c",
+          "target": "0x186b638d0",
+          "candidate_name": null
+        },
+        {
+          "source": "180660078",
+          "target": "0x186b59d80",
+          "candidate_name": null
+        },
+        {
+          "source": "18066008b",
+          "target": "0x186b5c940",
+          "candidate_name": null
+        },
+        {
+          "source": "1806600d3",
+          "target": "0x18536a8f0",
+          "candidate_name": null
+        },
+        {
+          "source": "180660110",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "180660151",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "180660194",
+          "target": "0x18536b0a0",
+          "candidate_name": null
+        },
+        {
+          "source": "1806601b8",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "1806601ca",
+          "target": "0x18048b9f0",
+          "candidate_name": null
+        },
+        {
+          "source": "1806601ee",
+          "target": "0x18048b9f0",
+          "candidate_name": null
+        },
+        {
+          "source": "180660205",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18066022d",
+          "target": "0x18536b0a0",
+          "candidate_name": null
+        },
+        {
+          "source": "180660286",
+          "target": "0x185f1fc70",
+          "candidate_name": "System_Object_GetType_0x6001192"
+        },
+        {
+          "source": "18066029b",
+          "target": "0x185db83d0",
+          "candidate_name": "System_String_Format_0x600030d"
+        },
+        {
+          "source": "1806602b3",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1806602bd",
+          "target": "0x1866dd600",
+          "candidate_name": "UnityEngine_DLog_LogError_0x6000031"
+        },
+        {
+          "source": "1806602fb",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180660301",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nulonglong RuntimeHandler_MoveNext_0x600faf6(longlong param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  char cVar3;\r\n  ulonglong uVar4;\r\n  longlong lVar5;\r\n  undefined8 *puVar6;\r\n  longlong *plVar7;\r\n  undefined8 uVar8;\r\n  ushort uVar9;\r\n  longlong *plVar10;\r\n  ulonglong uStack_48;\r\n  longlong *plStack_40;\r\n  ulonglong uStack_38;\r\n  longlong *plStack_30;\r\n  ulonglong uStack_28;\r\n  longlong *plStack_20;\r\n  \r\n  if (DAT_188c9018e \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18892ea20);\r\n    FUN_18048bf00(\u0026DAT_188959b58);\r\n    FUN_18048bf00(\u0026DAT_18894bc20);\r\n    FUN_18048bf00(\u0026DAT_18894be60);\r\n    FUN_18048bf00(0x18894c0a0);\r\n    FUN_18048bf00(\u0026DAT_18883d670);\r\n    FUN_18048bf00(\u0026DAT_1889659a8);\r\n    DAT_188c9018e \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (DAT_188c9018d \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_188932ce8);\r\n    FUN_18048bf00(0x18894c0a0);\r\n    DAT_188c9018d \u003d \u0027\\x01\u0027;\r\n  }\r\n  uVar4 \u003d *(ulonglong *)(param_1 + 0x20);\r\n  if (uVar4 \u003d\u003d 0) goto LAB_1806602fb;\r\n  if (*(int *)(uVar4 + 0x18) !\u003d 0) {\r\n    uVar8 \u003d *(undefined8 *)(param_1 + 0x18);\r\n    if (*(int *)(_DAT_188932ce8 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    uVar4 \u003d FUN_186b638d0(uVar8,0,0);\r\n    if ((char)uVar4 \u003d\u003d \u0027\\0\u0027) {\r\n      if ((*(longlong *)(param_1 + 0x18) !\u003d 0) \u0026\u0026\r\n         (lVar5 \u003d FUN_186b59d80(*(longlong *)(param_1 + 0x18),0), lVar5 !\u003d 0)) {\r\n        uVar4 \u003d FUN_186b5c940(lVar5,0);\r\n        if ((char)uVar4 \u003d\u003d \u0027\\0\u0027) goto LAB_1806602f7;\r\n        lVar5 \u003d *(longlong *)(param_1 + 0x20);\r\n        if (lVar5 !\u003d 0) {\r\n          while (0 \u003c *(int *)(lVar5 + 0x18)) {\r\n            if (*(longlong *)(param_1 + 0x20) \u003d\u003d 0) goto LAB_1806602fb;\r\n            FUN_18536a8f0(\u0026uStack_38,*(longlong *)(param_1 + 0x20),_DAT_18894bc20);\r\n            plVar7 \u003d plStack_30;\r\n            uVar4 \u003d uStack_38;\r\n            lVar5 \u003d _DAT_188959b58;\r\n            uStack_48 \u003d uStack_38;\r\n            plStack_40 \u003d plStack_30;\r\n            if (plStack_30 \u003d\u003d (longlong *)0x0) goto LAB_1806602fb;\r\n            lVar1 \u003d *plStack_30;\r\n            if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n              func_0x000180446d00(lVar1);\r\n            }\r\n            uVar9 \u003d 0;\r\n            if (*(ushort *)(lVar1 + 0x12e) !\u003d 0) {\r\n              do {\r\n                if (*(longlong *)(*(longlong *)(lVar1 + 0xb0) + (ulonglong)uVar9 * 0x10) \u003d\u003d lVar5) {\r\n                  puVar6 \u003d (undefined8 *)\r\n                           (((longlong)\r\n                             *(int *)(*(longlong *)(lVar1 + 0xb0) + 8 + (ulonglong)uVar9 * 0x10) +\r\n                            0x14) * 0x10 + lVar1);\r\n                  goto LAB_180660156;\r\n                }\r\n                uVar9 \u003d uVar9 + 1;\r\n              } while (uVar9 \u003c *(ushort *)(lVar1 + 0x12e));\r\n            }\r\n            puVar6 \u003d (undefined8 *)FUN_180445cc0(plVar7,lVar5,0);\r\nLAB_180660156:\r\n            cVar3 \u003d (*(code *)*puVar6)(plVar7,puVar6[1]);\r\n            plVar7 \u003d plStack_40;\r\n            if (cVar3 \u003d\u003d \u0027\\0\u0027) {\r\n              if ((char)uVar4 \u003d\u003d \u0027\\0\u0027) goto LAB_180660257;\r\n              break;\r\n            }\r\n            uStack_48 \u003d uStack_48 \u0026 0xffffffffffffff00;\r\n            if ((*(longlong *)(param_1 + 0x20) \u003d\u003d 0) ||\r\n               (FUN_18536b0a0(*(longlong *)(param_1 + 0x20),\u0026uStack_48,_DAT_18894be60),\r\n               plVar7 \u003d\u003d (longlong *)0x0)) goto LAB_1806602fb;\r\n            plVar7 \u003d (longlong *)FUN_180005310(1,_DAT_188959b58);\r\n            lVar5 \u003d func_0x00018048b9f0(plVar7,_DAT_188959b58);\r\n            if (lVar5 \u003d\u003d 0) {\r\n              if (plVar7 !\u003d (longlong *)0x0) {\r\n                plVar10 \u003d (longlong *)0x0;\r\n                if (*plVar7 \u003d\u003d _DAT_18883d670) {\r\n                  plVar10 \u003d plVar7;\r\n                }\r\n                if (plVar10 \u003d\u003d (longlong *)0x0) {\r\n                  uVar8 \u003d func_0x000185f1fc70(plVar7,0);\r\n                  uVar8 \u003d System_String_Format_0x600030d(_DAT_1889659a8,uVar8,plVar7,0);\r\n                  if (*(int *)(_DAT_18892ea20 + 0xe0) \u003d\u003d 0) {\r\n                    func_0x00018048c140();\r\n                  }\r\n                  UnityEngine_DLog_LogError_0x6000031(uVar8,0);\r\n                }\r\n              }\r\n              break;\r\n            }\r\n            lVar5 \u003d *(longlong *)(param_1 + 0x20);\r\n            uStack_48 \u003d 0;\r\n            plStack_40 \u003d (longlong *)0x0;\r\n            plStack_40 \u003d (longlong *)func_0x00018048b9f0(plVar7,_DAT_188959b58);\r\n            uStack_48 \u003d CONCAT71(uStack_48._1_7_,1);\r\n            func_0x00018048b9e0(\u0026plStack_40,plStack_40);\r\n            if (lVar5 \u003d\u003d 0) {\r\n              FUN_18048c0b0();\r\n              pcVar2 \u003d (code *)swi(3);\r\n              uVar4 \u003d (*pcVar2)();\r\n              return uVar4;\r\n            }\r\n            uStack_28 \u003d uStack_48;\r\n            plStack_20 \u003d plStack_40;\r\n            FUN_18536b0a0(lVar5,\u0026uStack_28,_DAT_18894be60);\r\nLAB_180660257:\r\n            lVar5 \u003d *(longlong *)(param_1 + 0x20);\r\n            if (lVar5 \u003d\u003d 0) goto LAB_1806602fb;\r\n          }\r\n          lVar5 \u003d *(longlong *)(param_1 + 0x20);\r\n          if (lVar5 !\u003d 0) {\r\n            return CONCAT71((int7)((ulonglong)lVar5 \u003e\u003e 8),0 \u003c *(int *)(lVar5 + 0x18));\r\n          }\r\n        }\r\n      }\r\nLAB_1806602fb:\r\n      FUN_18048c0b0();\r\n      pcVar2 \u003d (code *)swi(3);\r\n      uVar4 \u003d (*pcVar2)();\r\n      return uVar4;\r\n    }\r\n  }\r\nLAB_1806602f7:\r\n  return uVar4 \u0026 0xffffffffffffff00;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Battle_BattleController__cctor_0x600fd43",
+      "display_name": "Torappu.Battle.BattleController..cctor",
+      "address": "0x18063ef40",
+      "end_address": "0x18063f264",
+      "ranges": [
+        {
+          "start": "0x18063ef40",
+          "end": "0x18063f264",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "fd91a7b41a57ccb1ee14e219c8e3d848c5fa057e67fb2479bb7587a934e77378",
+          "source_file_offset": 6546240
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6546240,
+      "token": "0x600fd43",
+      "metadata_method_index": 64834,
+      "imported_range_checks": [
+        {
+          "start": "0x18063ef40",
+          "bytes": 805,
+          "imported_sha256": "fd91a7b41a57ccb1ee14e219c8e3d848c5fa057e67fb2479bb7587a934e77378",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 155,
+      "direct_calls": [
+        {
+          "source": "18063ef56",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18063ef62",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18063ef6e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18063ef7a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18063ef86",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18063ef92",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18063ef9e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18063efaa",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18063efb6",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18063efd5",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f010",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f037",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f040",
+          "target": "0x1866fdac0",
+          "candidate_name": "Torappu_FP_op_Implicit_0x6000321"
+        },
+        {
+          "source": "18063f05b",
+          "target": "0x1866fdac0",
+          "candidate_name": "Torappu_FP_op_Implicit_0x6000321"
+        },
+        {
+          "source": "18063f085",
+          "target": "0x1808ab110",
+          "candidate_name": "Torappu_Battle_BattleRandomFactory_Create_0x601150c"
+        },
+        {
+          "source": "18063f0b1",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f0b8",
+          "target": "0x1808ab110",
+          "candidate_name": "Torappu_Battle_BattleRandomFactory_Create_0x601150c"
+        },
+        {
+          "source": "18063f0e4",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f0fe",
+          "target": "0x1866fdac0",
+          "candidate_name": "Torappu_FP_op_Implicit_0x6000321"
+        },
+        {
+          "source": "18063f13d",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f15d",
+          "target": "0x184ac2a60",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f189",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f1a5",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f1c5",
+          "target": "0x184ac2a60",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f1f1",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f20d",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f229",
+          "target": "0x184ac2a60",
+          "candidate_name": null
+        },
+        {
+          "source": "18063f25f",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Possible PIC construction at 0x00018063f010: Changing call to branch */\r\n/* WARNING: Possible PIC construction at 0x00018063f0b1: Changing call to branch */\r\n/* WARNING: Possible PIC construction at 0x00018063f0e4: Changing call to branch */\r\n/* WARNING: Possible PIC construction at 0x00018063f189: Changing call to branch */\r\n/* WARNING: Possible PIC construction at 0x00018063f1f1: Changing call to branch */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f18e) */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f1b6) */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f0e9) */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f14e) */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f0b6) */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f015) */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f037) */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f03c) */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f1f6) */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f25f) */\r\n/* WARNING: Removing unreachable block (ram,0x00018063f21a) */\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nulonglong Torappu_Battle_BattleController__cctor_0x600fd43(void)\r\n\r\n{\r\n  ulonglong *puVar1;\r\n  ulonglong uVar2;\r\n  undefined8 *puVar3;\r\n  undefined8 uVar4;\r\n  ulonglong uVar5;\r\n  uint uVar6;\r\n  bool bVar7;\r\n  \r\n  if (DAT_188c9016c \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_188927d60);\r\n    FUN_18048bf00(\u0026DAT_18885a700);\r\n    FUN_18048bf00(\u0026DAT_1888adca8);\r\n    FUN_18048bf00(\u0026DAT_1888169a8);\r\n    FUN_18048bf00(\u0026DAT_188817ba8);\r\n    FUN_18048bf00(\u0026DAT_1888172a8);\r\n    FUN_18048bf00(\u0026DAT_1889719a8);\r\n    FUN_18048bf00(\u0026DAT_188971528);\r\n    FUN_18048bf00(\u0026DAT_188971768);\r\n    DAT_188c9016c \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_1888adca8 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140(_DAT_1888adca8);\r\n  }\r\n  uVar4 \u003d (*(undefined8 **)(_DAT_1888adca8 + 0xb8))[1];\r\n  puVar3 \u003d *(undefined8 **)(_DAT_188927d60 + 0xb8);\r\n  *puVar3 \u003d **(undefined8 **)(_DAT_1888adca8 + 0xb8);\r\n  puVar3[1] \u003d uVar4;\r\n  uVar5 \u003d _DAT_188927d60;\r\n  if (iRam0000000188cccdd8 !\u003d 0) {\r\n    uVar6 \u003d (uint)(*(longlong *)(_DAT_188927d60 + 0xb8) + 8U \u003e\u003e 0xc);\r\n    puVar1 \u003d (ulonglong *)((ulonglong)((uVar6 \u0026 0x1fffff) \u003e\u003e 6) * 8 + 0x188d15560);\r\n    do {\r\n      uVar2 \u003d *puVar1;\r\n      LOCK();\r\n      uVar5 \u003d *puVar1;\r\n      bVar7 \u003d uVar2 \u003d\u003d uVar5;\r\n      if (bVar7) {\r\n        *puVar1 \u003d uVar2 | 1L \u003c\u003c (uVar6 \u0026 0x3f);\r\n        uVar5 \u003d uVar2;\r\n      }\r\n      UNLOCK();\r\n    } while (!bVar7);\r\n  }\r\n  return uVar5;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Battle_BattleController_ManualFrameTick_0x600fc9b",
+      "display_name": "Torappu.Battle.BattleController.ManualFrameTick",
+      "address": "0x180629410",
+      "end_address": "0x1806295df",
+      "ranges": [
+        {
+          "start": "0x180629410",
+          "end": "0x1806295df",
+          "unwind_rva": "0x7f63cf8",
+          "chained": false,
+          "source_sha256": "b5a8b5d08b31086ccddf3cc28b15bf528280cf508d2217f2c4ba62eb71c4528a",
+          "source_file_offset": 6457360
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6457360,
+      "token": "0x600fc9b",
+      "metadata_method_index": 64666,
+      "imported_range_checks": [
+        {
+          "start": "0x180629410",
+          "bytes": 464,
+          "imported_sha256": "b5a8b5d08b31086ccddf3cc28b15bf528280cf508d2217f2c4ba62eb71c4528a",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 66,
+      "direct_calls": [
+        {
+          "source": "180629439",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180629458",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180629506",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "180629528",
+          "target": "0x18065dd70",
+          "candidate_name": "FrameData_DumpToPlayerOpQueue_0x600fd63"
+        },
+        {
+          "source": "180629559",
+          "target": "0x1832fa300",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp265_0x6000b69"
+        },
+        {
+          "source": "18062956e",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_Battle_BattleController_ManualFrameTick_0x600fc9b\r\n               (longlong param_1,longlong param_2,undefined1 param_3)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  char cVar3;\r\n  int iVar4;\r\n  undefined8 uVar5;\r\n  undefined8 uVar6;\r\n  longlong *plVar7;\r\n  longlong lVar8;\r\n  undefined8 *puVar9;\r\n  ushort uVar10;\r\n  int iVar11;\r\n  float fVar12;\r\n  undefined8 uVar13;\r\n  undefined8 uStackX_18;\r\n  undefined8 uStackX_20;\r\n  undefined8 uStack_78;\r\n  undefined8 uStack_70;\r\n  ulonglong uStack_68;\r\n  undefined4 uStack_60;\r\n  undefined4 uStack_5c;\r\n  undefined4 uStack_58;\r\n  undefined4 uStack_54;\r\n  ulonglong uStack_50;\r\n  undefined8 uStack_40;\r\n  \r\n  if (DAT_188c900c5 \u003d\u003d \u0027\\0\u0027) {\r\n    uStack_40 \u003d 0x18062943e;\r\n    FUN_18048bf00(\u0026DAT_188927d60);\r\n    DAT_188c900c5 \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n    uStack_40 \u003d 0x18062945d;\r\n    func_0x00018048c140(_DAT_188927d60);\r\n  }\r\n  lVar8 \u003d *(longlong *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x778);\r\n  if (lVar8 \u003d\u003d 0) {\r\n    plVar7 \u003d *(longlong **)(param_1 + 0x170);\r\n    if (plVar7 \u003d\u003d (longlong *)0x0) {\r\n      uStack_40 \u003d 0x180629573;\r\n      FUN_18048c0b0();\r\n      pcVar2 \u003d (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    switch(*(undefined4 *)(*plVar7 + 0x11c)) {\r\n    case 0x9b7:\r\n    case 0x9b8:\r\n    case 0x9b9:\r\n    case 0x9ba:\r\n    case 0x9bb:\r\n    case 0x9bc:\r\n    case 0x9bf:\r\n    case 0x9c1:\r\n    case 0x9c2:\r\n    case 0x9c4:\r\n    case 0x9c5:\r\n    case 0x9c6:\r\n    case 0x9c7:\r\n    case 0x9c8:\r\n    case 0x9ca:\r\n    case 0x9cb:\r\n    case 0x9cc:\r\n    case 0x9cd:\r\n    case 0x9ce:\r\n    case 0x9cf:\r\n    case 0x9d0:\r\n    case 0x9d1:\r\n      uStack_40 \u003d 0x1806294bf;\r\n      cVar3 \u003d UnresolvedCall_GameModePlayingCommon_call_target(plVar7,0);\r\n      break;\r\n    case 0x9bd:\r\n      uStack_40 \u003d 0x1806294cb;\r\n      cVar3 \u003d ArkDexGameMode_get_allowManualTick_0x6013c06(plVar7,0);\r\n      break;\r\n    case 0x9be:\r\n      uStack_40 \u003d 0x1806294d7;\r\n      cVar3 \u003d AutoChessGameMode_get_allowManualTick_0x6013c5b(plVar7,0);\r\n      break;\r\n    case 0x9c0:\r\n      uStack_40 \u003d 0x1806294e3;\r\n      cVar3 \u003d CooperateGameMode_get_allowManualTick_0x6013ddb(plVar7,0);\r\n      break;\r\n    case 0x9c3:\r\n      uStack_40 \u003d 0x1806294ef;\r\n      cVar3 \u003d EnemyDuelGameMode_get_allowManualTick_0x6013fa6(plVar7,0);\r\n      break;\r\n    case 0x9c9:\r\n      uStack_40 \u003d 0x1806294fb;\r\n      cVar3 \u003d MultiplayerGameMode_get_allowManualTick_0x60142ac(plVar7,0);\r\n      break;\r\n    default:\r\n      uStack_40 \u003d 0x18062950b;\r\n      cVar3 \u003d FUN_180005310(0,_DAT_188961dd0);\r\n    }\r\n    if (cVar3 !\u003d \u0027\\0\u0027) {\r\n      *(undefined1 *)(param_1 + 0x118) \u003d param_3;\r\n      if (param_2 !\u003d 0) {\r\n        uStack_40 \u003d 0x18062952d;\r\n        FrameData_DumpToPlayerOpQueue_0x600fd63(param_2,*(undefined8 *)(param_1 + 0x110),0);\r\n      }\r\n      if (cRam0000000188c90164 \u003d\u003d \u0027\\0\u0027) {\r\n        FUN_18048bf00(\u0026DAT_188927d60,0);\r\n        FUN_18048bf00(0x1888838e8);\r\n        FUN_18048bf00(0x188883b20);\r\n        FUN_18048bf00(0x188883d60);\r\n        FUN_18048bf00(\u0026DAT_18885a700);\r\n        FUN_18048bf00(0x1888c4c08);\r\n        FUN_18048bf00(0x1888f6820);\r\n        FUN_18048bf00(0x1888495d8);\r\n        FUN_18048bf00(0x1889663c0);\r\n        FUN_18048bf00(0x188849810);\r\n        FUN_18048bf00(0x188966600);\r\n        FUN_18048bf00(0x188962e58);\r\n        FUN_18048bf00(0x1888eae80);\r\n        FUN_18048bf00(0x1888eb0c0);\r\n        cRam0000000188c90164 \u003d \u0027\\x01\u0027;\r\n      }\r\n      if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n        func_0x00018048c140(_DAT_188927d60);\r\n      }\r\n      lVar8 \u003d *(longlong *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0xc70);\r\n      if (lVar8 !\u003d 0) {\r\n        FUN_183310010(lVar8,param_1,0);\r\n        return;\r\n      }\r\n      if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n        func_0x00018048c140(_DAT_188927d60);\r\n      }\r\n      *(int *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x14) \u003d\r\n           *(int *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x14) + 1;\r\n      uVar5 \u003d FUN_180640e40(0);\r\n      uStackX_20 \u003d uVar5;\r\n      if (cRam0000000188c9008a \u003d\u003d \u0027\\0\u0027) {\r\n        FUN_18048bf00(\u0026DAT_188927d60);\r\n        FUN_18048bf00(\u0026DAT_18885a700);\r\n        cRam0000000188c9008a \u003d \u0027\\x01\u0027;\r\n      }\r\n      iVar11 \u003d 0;\r\n      uStackX_18 \u003d 0;\r\n      if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n        func_0x00018048c140();\r\n      }\r\n      lVar8 \u003d *(longlong *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x580);\r\n      if (lVar8 \u003d\u003d 0) {\r\n        if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n          func_0x00018048c140();\r\n        }\r\n        uStackX_18 \u003d FUN_180640e40(0);\r\n        if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n          func_0x00018048c140();\r\n        }\r\n        uVar13 \u003d FUN_1866fae20(\u0026uStackX_18,0);\r\n      }\r\n      else {\r\n        uVar13 \u003d FUN_1834682c0(lVar8,0);\r\n      }\r\n      fVar12 \u003d (float)uVar13;\r\n      uStackX_18 \u003d CONCAT44(uStackX_18._4_4_,fVar12);\r\n      *(undefined4 *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x50) \u003d 0;\r\n      uVar6 \u003d *(undefined8 *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x18);\r\n      if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n        func_0x00018048c140();\r\n      }\r\n      uVar6 \u003d func_0x000184624db0(uVar6,uVar5,0);\r\n      *(undefined8 *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x18) \u003d uVar6;\r\n      *(float *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x28) \u003d\r\n           fVar12 + *(float *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x28);\r\n      plVar7 \u003d (longlong *)FUN_180641830(param_1,0);\r\n      if (plVar7 !\u003d (longlong *)0x0) {\r\n        switch(*(undefined4 *)(*plVar7 + 0x11c)) {\r\n        case 0x9b7:\r\n        case 0x9b8:\r\n        case 0x9b9:\r\n        case 0x9ba:\r\n        case 0x9bb:\r\n        case 0x9bc:\r\n        case 0x9bd:\r\n        case 0x9be:\r\n        case 0x9bf:\r\n        case 0x9c0:\r\n        case 0x9c1:\r\n        case 0x9c2:\r\n        case 0x9c3:\r\n        case 0x9c4:\r\n        case 0x9c5:\r\n        case 0x9c6:\r\n        case 0x9c7:\r\n        case 0x9c8:\r\n        case 0x9c9:\r\n        case 0x9ca:\r\n        case 0x9cb:\r\n        case 0x9cc:\r\n        case 0x9cd:\r\n        case 0x9ce:\r\n        case 0x9cf:\r\n        case 0x9d1:\r\n          cVar3 \u003d FUN_180c19e20(plVar7,0);\r\n          break;\r\n        case 0x9d0:\r\n          cVar3 \u003d FUN_180c6dc40(plVar7,0);\r\n          break;\r\n        default:\r\n          cVar3 \u003d FUN_180005310(0x6a,_DAT_188961dd0,plVar7);\r\n        }\r\n        if (cVar3 !\u003d \u0027\\0\u0027) {\r\n          if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n            func_0x00018048c140(_DAT_188927d60);\r\n          }\r\n          uVar6 \u003d *(undefined8 *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x20);\r\n          if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n            func_0x00018048c140();\r\n          }\r\n          uVar6 \u003d func_0x000184624db0(uVar6,uVar5,0);\r\n          *(undefined8 *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x20) \u003d uVar6;\r\n        }\r\n        if (*(longlong *)(param_1 + 0x150) !\u003d 0) {\r\n          FUN_181986890(*(undefined8 *)(param_1 + 0x150),uVar5,0);\r\n        }\r\n        if (*(longlong *)(param_1 + 0xa8) !\u003d 0) {\r\n          FUN_184c3ec30(\u0026uStack_78,*(longlong *)(param_1 + 0xa8),uRam00000001888f6820);\r\n          uStack_60 \u003d (undefined4)uStack_78;\r\n          uStack_5c \u003d uStack_78._4_4_;\r\n          uStack_58 \u003d (undefined4)uStack_70;\r\n          uStack_54 \u003d uStack_70._4_4_;\r\n          uStack_50 \u003d uStack_68;\r\n          uStack_78 \u003d 0;\r\n          uStack_70 \u003d \u0026uStack_60;\r\n          while (cVar3 \u003d FUN_185a56be0(\u0026uStack_60,uRam0000000188883b20), cVar3 !\u003d \u0027\\0\u0027) {\r\n            lVar8 \u003d FUN_180640b90(param_1,0);\r\n            if (lVar8 \u003d\u003d 0) {\r\n              FUN_18048c0b0();\r\n              FUN_180472d50();\r\n              goto code_r0x00018062cef1;\r\n            }\r\n            FUN_180656130(lVar8,uVar5);\r\n          }\r\n          func_0x00018050cf60(\u0026uStack_60,uRam00000001888838e8);\r\n          if (cRam0000000188c90151 \u003d\u003d \u0027\\0\u0027) {\r\n            FUN_18048bf00(\u0026DAT_188927d60);\r\n            FUN_18048bf00(\u0026DAT_18885a700);\r\n            cRam0000000188c90151 \u003d \u0027\\x01\u0027;\r\n          }\r\n          if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n            func_0x00018048c140(_DAT_188927d60);\r\n          }\r\n          lVar8 \u003d *(longlong *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0xbd8);\r\n          if (lVar8 \u003d\u003d 0) {\r\n            lVar8 \u003d FUN_180644510(param_1,0);\r\n            if (lVar8 \u003d\u003d 0) goto code_r0x00018062cf02;\r\n            iVar4 \u003d FUN_180ac3930(lVar8,0);\r\n            if (iVar4 \u003c 1) {\r\n              uVar6 \u003d *(undefined8 *)(param_1 + 0x288);\r\n              if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n                func_0x00018048c140();\r\n              }\r\n              uVar6 \u003d func_0x000184624db0(uVar6,uVar5,0);\r\n              *(undefined8 *)(param_1 + 0x288) \u003d uVar6;\r\n            }\r\n            else {\r\n              if (*(int *)(_DAT_18885a700 + 0xe0) \u003d\u003d 0) {\r\n                func_0x00018048c140();\r\n              }\r\n              uVar6 \u003d func_0x0001866fdac0(0,0);\r\n              *(undefined8 *)(param_1 + 0x288) \u003d uVar6;\r\n            }\r\n          }\r\n          else {\r\n            FUN_1833f9830(lVar8,param_1,uVar5,0);\r\n          }\r\n          if (*(longlong *)(param_1 + 0xa8) !\u003d 0) {\r\n            FUN_184c3ec30(\u0026uStack_78,*(longlong *)(param_1 + 0xa8),uRam00000001888f6820);\r\n            uStack_60 \u003d (undefined4)uStack_78;\r\n            uStack_5c \u003d uStack_78._4_4_;\r\n            uStack_58 \u003d (undefined4)uStack_70;\r\n            uStack_54 \u003d uStack_70._4_4_;\r\n            uStack_50 \u003d uStack_68;\r\n            uStack_78 \u003d 0;\r\n            uStack_70 \u003d \u0026uStack_60;\r\n            while (cVar3 \u003d FUN_185a56be0(\u0026uStack_60,uRam0000000188883b20), cVar3 !\u003d \u0027\\0\u0027) {\r\n              if (*(longlong *)(param_1 + 0xb0) \u003d\u003d 0) goto code_r0x00018062cef6;\r\n              lVar8 \u003d FUN_184a8da30(*(longlong *)(param_1 + 0xb0),uStack_50 \u0026 0xffffffff);\r\n              if (lVar8 \u003d\u003d 0) goto code_r0x00018062cef1;\r\n              FUN_1806c96d0(lVar8,uVar5);\r\n            }\r\n            func_0x00018050cf60(\u0026uStack_60,uRam00000001888838e8);\r\n            if (*(longlong *)(param_1 + 0x78) !\u003d 0) {\r\n              FUN_1808d5300(*(longlong *)(param_1 + 0x78),uVar5,0);\r\n              cVar3 \u003d FUN_185337b70(uRam00000001888eae80);\r\n              if (cVar3 !\u003d \u0027\\0\u0027) {\r\n                lVar8 \u003d FUN_185337c50(uRam00000001888eb0c0);\r\n                if (lVar8 \u003d\u003d 0) goto code_r0x00018062cf02;\r\n                FUN_181277dc0(lVar8,uVar5,0);\r\n              }\r\n              if (cRam0000000188c90016 \u003d\u003d \u0027\\0\u0027) {\r\n                FUN_18048bf00(\u0026DAT_188927d60);\r\n                cRam0000000188c90016 \u003d \u0027\\x01\u0027;\r\n              }\r\n              if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n                func_0x00018048c140(_DAT_188927d60);\r\n              }\r\n              lVar8 \u003d *(longlong *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x1e0);\r\n              if (lVar8 \u003d\u003d 0) {\r\n                lVar8 \u003d *(longlong *)(param_1 + 0x28);\r\n              }\r\n              else {\r\n                lVar8 \u003d FUN_183308530(lVar8,param_1,0);\r\n              }\r\n              if (lVar8 !\u003d 0) {\r\n                FUN_18087f9b0(lVar8,uVar5,0);\r\n                if (*(longlong *)(param_1 + 0x1e0) !\u003d 0) {\r\n                  FUN_180c8c230(*(longlong *)(param_1 + 0x1e0),uVar5,0);\r\n                  if (*(longlong *)(param_1 + 0x1e8) !\u003d 0) {\r\n                    FUN_180c9d3e0(*(longlong *)(param_1 + 0x1e8),uVar5,0);\r\n                    if (*(longlong *)(param_1 + 400) !\u003d 0) {\r\n                      FUN_180603ff0(*(longlong *)(param_1 + 400),uVar5,0);\r\n                      if (cRam0000000188c90152 \u003d\u003d \u0027\\0\u0027) {\r\n                        FUN_18048bf00(\u0026DAT_188927d60);\r\n                        cRam0000000188c90152 \u003d \u0027\\x01\u0027;\r\n                      }\r\n                      if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n                        func_0x00018048c140(_DAT_188927d60);\r\n                      }\r\n                      lVar8 \u003d *(longlong *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0xbe0);\r\n                      if (lVar8 \u003d\u003d 0) {\r\n                        cVar3 \u003d FUN_180641ed0(param_1,0);\r\n                        if (cVar3 \u003d\u003d \u0027\\0\u0027) {\r\n                          if (*(longlong *)(param_1 + 0x110) \u003d\u003d 0) goto code_r0x00018062cf02;\r\n                          FUN_18065e580(*(longlong *)(param_1 + 0x110),0);\r\n                        }\r\n                        else {\r\n                          lVar8 \u003d *(longlong *)(param_1 + 0xe0);\r\n                          if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n                            func_0x00018048c140();\r\n                          }\r\n                          uVar6 \u003d FUN_1806416e0(0);\r\n                          if (lVar8 \u003d\u003d 0) goto code_r0x00018062cf02;\r\n                          FUN_18065f240(lVar8,uVar6,0);\r\n                        }\r\n                      }\r\n                      else {\r\n                        FUN_183310010(lVar8,param_1,0);\r\n                      }\r\n                      FUN_18063e6d0(param_1,0);\r\n                      cVar3 \u003d FUN_1867460c0(0);\r\n                      if (cVar3 \u003d\u003d \u0027\\0\u0027) {\r\n                        if (*(int *)(lRam0000000188962e58 + 0xe0) \u003d\u003d 0) {\r\n                          func_0x00018048c140();\r\n                        }\r\n                        FUN_186bc5160(fVar12,0);\r\n                        lVar8 \u003d *(longlong *)(param_1 + 200);\r\n                        iVar4 \u003d iVar11;\r\n                        while (lVar8 !\u003d 0) {\r\n                          if (*(int *)(lVar8 + 0x18) \u003c\u003d iVar4) goto code_r0x00018062cd5c;\r\n                          if ((*(longlong *)(param_1 + 200) \u003d\u003d 0) ||\r\n                             (plVar7 \u003d (longlong *)FUN_184afcf00(*(longlong *)(param_1 + 200),iVar4)\r\n                             , lVar8 \u003d lRam00000001887feeb8, plVar7 \u003d\u003d (longlong *)0x0)) break;\r\n                          lVar1 \u003d *plVar7;\r\n                          if (*(int *)(lVar1 + 0x11c) \u003d\u003d 0x8cd) {\r\n                            FUN_180a9e6f0(plVar7,uVar13);\r\n                          }\r\n                          else {\r\n                            if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n                              func_0x000180446d00(lVar1);\r\n                            }\r\n                            uVar10 \u003d 0;\r\n                            if (*(ushort *)(lVar1 + 0x12e) !\u003d 0) {\r\n                              do {\r\n                                if (*(longlong *)\r\n                                     (*(longlong *)(lVar1 + 0xb0) + (ulonglong)uVar10 * 0x10) \u003d\u003d\r\n                                    lVar8) {\r\n                                  (**(code **)(((longlong)\r\n                                                (*(int *)(*(longlong *)(lVar1 + 0xb0) + 8 +\r\n                                                         (ulonglong)uVar10 * 0x10) + 2) + 0x14) *\r\n                                               0x10 + lVar1))(plVar7,uVar13);\r\n                                  goto code_r0x00018062cd41;\r\n                                }\r\n                                uVar10 \u003d uVar10 + 1;\r\n                              } while (uVar10 \u003c *(ushort *)(lVar1 + 0x12e));\r\n                            }\r\n                            puVar9 \u003d (undefined8 *)FUN_180445cc0(plVar7,lVar8,2);\r\n                            (*(code *)*puVar9)(plVar7,uVar13);\r\n                          }\r\ncode_r0x00018062cd41:\r\n                          iVar4 \u003d iVar4 + 1;\r\n                          lVar8 \u003d *(longlong *)(param_1 + 200);\r\n                        }\r\n                      }\r\n                      else {\r\ncode_r0x00018062cd5c:\r\n                        if (*(longlong *)(param_1 + 0x1b8) !\u003d 0) {\r\n                          FUN_180c7a980(*(longlong *)(param_1 + 0x1b8),uVar5,0);\r\n                          if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n                            func_0x00018048c140();\r\n                          }\r\n                          if (cRam0000000188c8ffe8 \u003d\u003d \u0027\\0\u0027) {\r\n                            FUN_18048bf00(\u0026DAT_188927d60);\r\n                            cRam0000000188c8ffe8 \u003d \u0027\\x01\u0027;\r\n                          }\r\n                          if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n                            func_0x00018048c140();\r\n                          }\r\n                          lVar8 \u003d *(longlong *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x70);\r\n                          if (lVar8 \u003d\u003d 0) {\r\n                            if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n                              func_0x00018048c140();\r\n                            }\r\n                            cVar3 \u003d *(char *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x10);\r\n                          }\r\n                          else {\r\n                            cVar3 \u003d FUN_183596f60(lVar8,0);\r\n                          }\r\n                          if (cVar3 !\u003d \u0027\\0\u0027) {\r\n                            if (*(longlong *)(param_1 + 0x130) \u003d\u003d 0) goto code_r0x00018062cf02;\r\n                            FUN_18065d0a0(*(longlong *)(param_1 + 0x130),0);\r\n                          }\r\n                          lVar8 \u003d *(longlong *)(param_1 + 0x68);\r\n                          if (lVar8 !\u003d 0) {\r\n                            while (iVar11 \u003c *(int *)(lVar8 + 0x18)) {\r\n                              if ((*(longlong *)(param_1 + 0x68) \u003d\u003d 0) ||\r\n                                 (plVar7 \u003d (longlong *)\r\n                                           FUN_184afcf00(*(longlong *)(param_1 + 0x68),iVar11,\r\n                                                         uRam0000000188966600),\r\n                                 plVar7 \u003d\u003d (longlong *)0x0)) goto code_r0x00018062cf02;\r\n                              if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n                                func_0x000180446d00(*plVar7);\r\n                              }\r\n                              (**(code **)(*plVar7 + 0x1e0))(plVar7,uVar5);\r\n                              iVar11 \u003d iVar11 + 1;\r\n                              lVar8 \u003d *(longlong *)(param_1 + 0x68);\r\n                              if (lVar8 \u003d\u003d 0) goto code_r0x00018062cf02;\r\n                            }\r\n                            if (*(longlong *)(param_1 + 0x70) !\u003d 0) {\r\n                              FUN_18074b330(*(longlong *)(param_1 + 0x70),uVar5,0);\r\n                              if (*(longlong *)(param_1 + 0x78) !\u003d 0) {\r\n                                FUN_1808d54d0(*(longlong *)(param_1 + 0x78),uVar5,0);\r\n                                return;\r\n                              }\r\n                            }\r\n                          }\r\n                        }\r\n                      }\r\n                    }\r\n                  }\r\n                }\r\n              }\r\n            }\r\n          }\r\n        }\r\n      }\r\ncode_r0x00018062cf02:\r\n      FUN_18048c0b0();\r\n      pcVar2 \u003d (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n  }\r\n  else {\r\n    uStack_40 \u003d 0x18062955e;\r\n    XLua_DelegateBridge___Gen_Delegate_Imp265_0x6000b69(lVar8,param_1,param_2,param_3);\r\n  }\r\n  return;\r\ncode_r0x00018062cef1:\r\n  FUN_18048c0b0();\r\ncode_r0x00018062cef6:\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar2 \u003d (code *)swi(3);\r\n  (*pcVar2)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "_ExecuteActionQueue_d__21_MoveNext_0x6011a02",
+      "display_name": "\u003cExecuteActionQueue\u003ed__21.MoveNext",
+      "address": "0x18094e650",
+      "end_address": "0x18094e9f0",
+      "ranges": [
+        {
+          "start": "0x18094e650",
+          "end": "0x18094e9f0",
+          "unwind_rva": "0x7fb1c74",
+          "chained": false,
+          "source_sha256": "2b5160007984e023dd29562ec41c1f9580b221a8e8b895694af2e764be624bf0",
+          "source_file_offset": 9755216
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 9755216,
+      "token": "0x6011a02",
+      "metadata_method_index": 72193,
+      "imported_range_checks": [
+        {
+          "start": "0x18094e650",
+          "bytes": 929,
+          "imported_sha256": "2b5160007984e023dd29562ec41c1f9580b221a8e8b895694af2e764be624bf0",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 214,
+      "direct_calls": [
+        {
+          "source": "18094e66d",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e679",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e685",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e691",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e69d",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e6a9",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e735",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e765",
+          "target": "0x183309860",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp2758_0x6001526"
+        },
+        {
+          "source": "18094e79e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e7cd",
+          "target": "0x183309860",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp2758_0x6001526"
+        },
+        {
+          "source": "18094e7fb",
+          "target": "0x184ad2ef0",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e80f",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e83b",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e86a",
+          "target": "0x183309860",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp2758_0x6001526"
+        },
+        {
+          "source": "18094e88c",
+          "target": "0x185337c50",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e89f",
+          "target": "0x180641550",
+          "candidate_name": "Torappu_Battle_BattleController_get_eventPool_0x600fbf9"
+        },
+        {
+          "source": "18094e8c0",
+          "target": "0x1848dca60",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e8f1",
+          "target": "0x180947670",
+          "candidate_name": "DefaultWaveHandler_get_scheduler_0x60119e8"
+        },
+        {
+          "source": "18094e936",
+          "target": "0x180947670",
+          "candidate_name": "DefaultWaveHandler_get_scheduler_0x60119e8"
+        },
+        {
+          "source": "18094e945",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e966",
+          "target": "0x18198f850",
+          "candidate_name": "PinchUpdateExtendedDelegate__ctor_0x60054bb"
+        },
+        {
+          "source": "18094e990",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e9c7",
+          "target": "0x180647f20",
+          "candidate_name": "Torappu_Battle_AsyncUtil_WaitForFixedSeconds_0x600fa80"
+        },
+        {
+          "source": "18094e9d7",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e9e5",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "18094e9eb",
+          "target": "0x18048c0a0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nundefined8 _ExecuteActionQueue_d__21_MoveNext_0x6011a02(longlong param_1)\r\n\r\n{\r\n  int iVar1;\r\n  longlong lVar2;\r\n  code *pcVar3;\r\n  longlong lVar4;\r\n  undefined8 uVar5;\r\n  longlong lVar6;\r\n  float fVar7;\r\n  undefined4 uStack_28;\r\n  undefined4 uStack_24;\r\n  undefined4 uStack_20;\r\n  undefined4 uStack_1c;\r\n  \r\n  if (DAT_188c91b64 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_1888e96e8);\r\n    FUN_18048bf00(\u0026DAT_188811960);\r\n    FUN_18048bf00(0x18896bb78);\r\n    FUN_18048bf00(\u0026DAT_18896bdb8);\r\n    FUN_18048bf00(\u0026DAT_18896e660);\r\n    FUN_18048bf00(\u0026DAT_1888d3908);\r\n    DAT_188c91b64 \u003d \u0027\\x01\u0027;\r\n  }\r\n  iVar1 \u003d *(int *)(param_1 + 0x10);\r\n  lVar6 \u003d *(longlong *)(param_1 + 0x20);\r\n  if (iVar1 \u003d\u003d 0) {\r\n    *(undefined4 *)(param_1 + 0x10) \u003d 0xffffffff;\r\n    fVar7 \u003d 0.0;\r\n    *(undefined4 *)(param_1 + 0x28) \u003d 0;\r\n  }\r\n  else {\r\n    if (iVar1 \u003d\u003d 1) {\r\n      *(undefined4 *)(param_1 + 0x10) \u003d 0xffffffff;\r\n      goto LAB_18094e822;\r\n    }\r\n    if (iVar1 !\u003d 2) {\r\n      return 0;\r\n    }\r\n    *(undefined4 *)(param_1 + 0x10) \u003d 0xffffffff;\r\n    fVar7 \u003d *(float *)(param_1 + 0x38);\r\n    *(undefined8 *)(param_1 + 0x30) \u003d 0;\r\n    *(undefined8 *)(param_1 + 0x38) \u003d 0;\r\n    *(int *)(param_1 + 0x28) \u003d *(int *)(param_1 + 0x28) + 1;\r\n  }\r\n  do {\r\n    iVar1 \u003d *(int *)(param_1 + 0x28);\r\n    if (lVar6 \u003d\u003d 0) {\r\nLAB_18094e9e5:\r\n      FUN_18048c0b0();\r\n      pcVar3 \u003d (code *)swi(3);\r\n      uVar5 \u003d (*pcVar3)();\r\n      return uVar5;\r\n    }\r\n    if (DAT_188c91b58 \u003d\u003d \u0027\\0\u0027) {\r\n      FUN_18048bf00(\u0026DAT_18889c7b8);\r\n      DAT_188c91b58 \u003d \u0027\\x01\u0027;\r\n    }\r\n    lVar4 \u003d *(longlong *)(*(longlong *)(_DAT_18889c7b8 + 0xb8) + 8);\r\n    if (lVar4 \u003d\u003d 0) {\r\n      lVar4 \u003d *(longlong *)(lVar6 + 0x18);\r\n    }\r\n    else {\r\n      lVar4 \u003d XLua_DelegateBridge___Gen_Delegate_Imp2758_0x6001526(lVar4,lVar6,0);\r\n    }\r\n    if ((lVar4 \u003d\u003d 0) || (*(longlong *)(lVar4 + 0xb8) \u003d\u003d 0)) goto LAB_18094e9e5;\r\n    if (*(int *)(*(longlong *)(lVar4 + 0xb8) + 0x18) \u003c\u003d iVar1) {\r\n      return 0;\r\n    }\r\n    if (DAT_188c91b58 \u003d\u003d \u0027\\0\u0027) {\r\n      FUN_18048bf00(\u0026DAT_18889c7b8);\r\n      DAT_188c91b58 \u003d \u0027\\x01\u0027;\r\n    }\r\n    lVar4 \u003d *(longlong *)(*(longlong *)(_DAT_18889c7b8 + 0xb8) + 8);\r\n    if (lVar4 \u003d\u003d 0) {\r\n      lVar4 \u003d *(longlong *)(lVar6 + 0x18);\r\n    }\r\n    else {\r\n      lVar4 \u003d XLua_DelegateBridge___Gen_Delegate_Imp2758_0x6001526(lVar4,lVar6,0);\r\n    }\r\n    if ((lVar4 \u003d\u003d 0) || (*(longlong *)(lVar4 + 0xb8) \u003d\u003d 0)) goto LAB_18094e9e5;\r\n    FUN_184ad2ef0(\u0026uStack_28,*(longlong *)(lVar4 + 0xb8),*(undefined4 *)(param_1 + 0x28),\r\n                  _DAT_18896bdb8);\r\n    *(undefined4 *)(param_1 + 0x30) \u003d uStack_28;\r\n    *(undefined4 *)(param_1 + 0x34) \u003d uStack_24;\r\n    *(undefined4 *)(param_1 + 0x38) \u003d uStack_20;\r\n    *(undefined4 *)(param_1 + 0x3c) \u003d uStack_1c;\r\n    func_0x00018048b9e0(param_1 + 0x30,0);\r\n    if (fVar7 \u003c *(float *)(param_1 + 0x38)) {\r\n      uVar5 \u003d Torappu_Battle_AsyncUtil_WaitForFixedSeconds_0x600fa80\r\n                        (*(float *)(param_1 + 0x38) - fVar7,0);\r\n      *(undefined8 *)(param_1 + 0x18) \u003d uVar5;\r\n      func_0x00018048b9e0(param_1 + 0x18,uVar5);\r\n      *(undefined4 *)(param_1 + 0x10) \u003d 1;\r\n      return 1;\r\n    }\r\nLAB_18094e822:\r\n    if (lVar6 \u003d\u003d 0) goto LAB_18094e9e5;\r\n    if (DAT_188c91b58 \u003d\u003d \u0027\\0\u0027) {\r\n      FUN_18048bf00(\u0026DAT_18889c7b8);\r\n      DAT_188c91b58 \u003d \u0027\\x01\u0027;\r\n    }\r\n    lVar4 \u003d *(longlong *)(*(longlong *)(_DAT_18889c7b8 + 0xb8) + 8);\r\n    if (lVar4 \u003d\u003d 0) {\r\n      lVar4 \u003d *(longlong *)(lVar6 + 0x18);\r\n    }\r\n    else {\r\n      lVar4 \u003d XLua_DelegateBridge___Gen_Delegate_Imp2758_0x6001526(lVar4,lVar6,0);\r\n    }\r\n    if (lVar4 \u003d\u003d 0) goto LAB_18094e9e5;\r\n    if (*(char *)(lVar4 + 0xf9) !\u003d \u0027\\0\u0027) {\r\n      return 0;\r\n    }\r\n    lVar4 \u003d FUN_185337c50(_DAT_1888d3908);\r\n    if ((lVar4 \u003d\u003d 0) ||\r\n       (lVar4 \u003d Torappu_Battle_BattleController_get_eventPool_0x600fbf9(lVar4,0), lVar4 \u003d\u003d 0))\r\n    goto LAB_18094e9e5;\r\n    FUN_1848dca60(lVar4,0x34,*(undefined8 *)(param_1 + 0x30),_DAT_188811960);\r\n    if (*(longlong *)(param_1 + 0x30) \u003d\u003d 0) goto LAB_18094e9e5;\r\n    if (*(char *)(*(longlong *)(param_1 + 0x30) + 0x5e) !\u003d \u0027\\0\u0027) {\r\n      lVar4 \u003d DefaultWaveHandler_get_scheduler_0x60119e8(lVar6,0);\r\n      if (((lVar4 !\u003d 0) \u0026\u0026 (lVar2 \u003d *(longlong *)(param_1 + 0x30), lVar2 !\u003d 0)) \u0026\u0026\r\n         (lVar4 \u003d *(longlong *)(lVar4 + 0xb0), lVar4 !\u003d 0)) {\r\n        if (*(uint *)(lVar4 + 0x18) \u003c\u003d *(uint *)(lVar2 + 0x10)) {\r\n          FUN_18048c0a0();\r\n          pcVar3 \u003d (code *)swi(3);\r\n          uVar5 \u003d (*pcVar3)();\r\n          return uVar5;\r\n        }\r\n        lVar4 \u003d *(longlong *)(lVar4 + 0x20 + (longlong)(int)*(uint *)(lVar2 + 0x10) * 8);\r\n        uVar5 \u003d DefaultWaveHandler_get_scheduler_0x60119e8(lVar6,0);\r\n        lVar6 \u003d func_0x00018045cfe0(_DAT_1888e96e8);\r\n        if ((lVar6 !\u003d 0) \u0026\u0026\r\n           (PinchUpdateExtendedDelegate__ctor_0x60054bb(lVar6,uVar5,_DAT_18896e660,0), lVar4 !\u003d 0))\r\n        {\r\n          uVar5 \u003d (**(code **)(lVar4 + 0x18))\r\n                            (*(undefined8 *)(lVar4 + 0x40),lVar2,lVar6,*(undefined8 *)(lVar4 + 0x28)\r\n                            );\r\n          *(undefined8 *)(param_1 + 0x18) \u003d uVar5;\r\n          func_0x00018048b9e0(param_1 + 0x18,uVar5);\r\n          *(undefined4 *)(param_1 + 0x10) \u003d 2;\r\n          return 1;\r\n        }\r\n      }\r\n      goto LAB_18094e9e5;\r\n    }\r\n    fVar7 \u003d *(float *)(param_1 + 0x38);\r\n    *(undefined8 *)(param_1 + 0x30) \u003d 0;\r\n    *(undefined8 *)(param_1 + 0x38) \u003d 0;\r\n    *(int *)(param_1 + 0x28) \u003d *(int *)(param_1 + 0x28) + 1;\r\n  } while( true );\r\n}\r\n\r\n"
+    },
+    {
+      "name": "_WaitForFixedSeconds_d__0_MoveNext_0x600fa96",
+      "display_name": "\u003cWaitForFixedSeconds\u003ed__0.MoveNext",
+      "address": "0x180661350",
+      "end_address": "0x18066144b",
+      "ranges": [
+        {
+          "start": "0x180661350",
+          "end": "0x180661390",
+          "unwind_rva": "0x7f64854",
+          "chained": false,
+          "source_sha256": "0c2a8ae6b50cd0a43e4d3e18b71541d13b0b64113e2dc33d5280a9e3897a232e",
+          "source_file_offset": 6686544
+        },
+        {
+          "start": "0x180661391",
+          "end": "0x1806613e0",
+          "unwind_rva": "0x7f7c580",
+          "chained": true,
+          "source_sha256": "2ec3b6d3ed9347ef79f4a3d3769f70eb61d50215a4256464fe10a1797b3bc848",
+          "source_file_offset": 6686609
+        },
+        {
+          "start": "0x1806613e1",
+          "end": "0x18066144b",
+          "unwind_rva": "0x7f7c594",
+          "chained": true,
+          "source_sha256": "850757f1f11ad68c74427c31e075dc04e156f02a7cffb7535757a46f6d30c059",
+          "source_file_offset": 6686689
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6686544,
+      "token": "0x600fa96",
+      "metadata_method_index": 64149,
+      "imported_range_checks": [
+        {
+          "start": "0x180661350",
+          "bytes": 65,
+          "imported_sha256": "0c2a8ae6b50cd0a43e4d3e18b71541d13b0b64113e2dc33d5280a9e3897a232e",
+          "match": true
+        },
+        {
+          "start": "0x180661391",
+          "bytes": 80,
+          "imported_sha256": "2ec3b6d3ed9347ef79f4a3d3769f70eb61d50215a4256464fe10a1797b3bc848",
+          "match": true
+        },
+        {
+          "start": "0x1806613e1",
+          "bytes": 107,
+          "imported_sha256": "850757f1f11ad68c74427c31e075dc04e156f02a7cffb7535757a46f6d30c059",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 63,
+      "direct_calls": [
+        {
+          "source": "18066136d",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180661379",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806613b1",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1806613b8",
+          "target": "0x180640ed0",
+          "candidate_name": "Torappu_Battle_BattleController_get_deltaPlayTime_0x600fc5c"
+        },
+        {
+          "source": "1806613c6",
+          "target": "0x18059e290",
+          "candidate_name": null
+        },
+        {
+          "source": "18066140a",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180661428",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nlonglong _WaitForFixedSeconds_d__0_MoveNext_0x600fa96(longlong param_1)\r\n\r\n{\r\n  float fVar1;\r\n  uint uVar2;\r\n  int iVar3;\r\n  float fVar4;\r\n  \r\n  if (DAT_188c90179 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_188927d60);\r\n    FUN_18048bf00(\u0026DAT_18886a5d0);\r\n    DAT_188c90179 \u003d \u0027\\x01\u0027;\r\n  }\r\n  uVar2 \u003d *(uint *)(param_1 + 0x10);\r\n  if (uVar2 \u003d\u003d 0) {\r\n    fVar1 \u003d *(float *)(param_1 + 0x20);\r\n    *(undefined4 *)(param_1 + 0x10) \u003d 0xffffffff;\r\n    if (*(int *)(_DAT_188927d60 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    fVar4 \u003d (float)Torappu_Battle_BattleController_get_deltaPlayTime_0x600fc5c(0);\r\n    iVar3 \u003d UnresolvedCall_CeilToInt_call_target(fVar1 / fVar4,0);\r\n    if (iVar3 \u003c 1) {\r\n      iVar3 \u003d 1;\r\n    }\r\n    *(int *)(param_1 + 0x24) \u003d iVar3;\r\n    *(undefined4 *)(param_1 + 0x28) \u003d 0;\r\n  }\r\n  else {\r\n    if (uVar2 !\u003d 1) goto LAB_18066143f;\r\n    *(int *)(param_1 + 0x28) \u003d *(int *)(param_1 + 0x28) + 1;\r\n    *(undefined4 *)(param_1 + 0x10) \u003d 0xffffffff;\r\n  }\r\n  uVar2 \u003d *(uint *)(param_1 + 0x24);\r\n  if (*(int *)(param_1 + 0x28) \u003c (int)uVar2) {\r\n    if (*(int *)(_DAT_18886a5d0 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140(_DAT_18886a5d0);\r\n    }\r\n    *(undefined8 *)(param_1 + 0x18) \u003d **(undefined8 **)(_DAT_18886a5d0 + 0xb8);\r\n    func_0x00018048b9e0(param_1 + 0x18);\r\n    *(undefined4 *)(param_1 + 0x10) \u003d 1;\r\n    return 1;\r\n  }\r\nLAB_18066143f:\r\n  return (ulonglong)(uVar2 \u003e\u003e 8) \u003c\u003c 8;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "__DoPreviewCursor_d__145_MoveNext_0x6011a53",
+      "display_name": "\u003c_DoPreviewCursor\u003ed__145.MoveNext",
+      "address": "0x180953330",
+      "end_address": "0x1809536cf",
+      "ranges": [
+        {
+          "start": "0x180953330",
+          "end": "0x180953413",
+          "unwind_rva": "0x7fb1f68",
+          "chained": false,
+          "source_sha256": "d7f5d06edb6fb492bf4a24f7c6d042330eb0c16bed32ee0f2b933a9c4065cdba",
+          "source_file_offset": 9774896
+        },
+        {
+          "start": "0x180953414",
+          "end": "0x1809535ce",
+          "unwind_rva": "0x7fb1f74",
+          "chained": true,
+          "source_sha256": "486b8575e30e64c1125f2c8928858b0e66634b9689f23dfa6c84da4e035f5791",
+          "source_file_offset": 9775124
+        },
+        {
+          "start": "0x1809535cf",
+          "end": "0x1809535d8",
+          "unwind_rva": "0x7fb1f94",
+          "chained": true,
+          "source_sha256": "d02a212edd92e92dae78be303d28332652f70a7a89e61e9525733f47c40ae24c",
+          "source_file_offset": 9775567
+        },
+        {
+          "start": "0x1809535d9",
+          "end": "0x1809536cf",
+          "unwind_rva": "0x7fb1fa4",
+          "chained": true,
+          "source_sha256": "6ae2b240194d613faf7a1f8d8c990af462fabdf4069ca3f814522589af85b66d",
+          "source_file_offset": 9775577
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 9774896,
+      "token": "0x6011a53",
+      "metadata_method_index": 72274,
+      "imported_range_checks": [
+        {
+          "start": "0x180953330",
+          "bytes": 228,
+          "imported_sha256": "d7f5d06edb6fb492bf4a24f7c6d042330eb0c16bed32ee0f2b933a9c4065cdba",
+          "match": true
+        },
+        {
+          "start": "0x180953414",
+          "bytes": 443,
+          "imported_sha256": "486b8575e30e64c1125f2c8928858b0e66634b9689f23dfa6c84da4e035f5791",
+          "match": true
+        },
+        {
+          "start": "0x1809535cf",
+          "bytes": 10,
+          "imported_sha256": "d02a212edd92e92dae78be303d28332652f70a7a89e61e9525733f47c40ae24c",
+          "match": true
+        },
+        {
+          "start": "0x1809535d9",
+          "bytes": 247,
+          "imported_sha256": "6ae2b240194d613faf7a1f8d8c990af462fabdf4069ca3f814522589af85b66d",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 200,
+      "direct_calls": [
+        {
+          "source": "180953351",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18095335d",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180953369",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180953375",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180953381",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18095338d",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180953399",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1809533a5",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1809533b1",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1809533bd",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1809533c9",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180953442",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "180953458",
+          "target": "0x18050cf60",
+          "candidate_name": "BattleTimer_EventOnEntryClick_0x6000062"
+        },
+        {
+          "source": "180953469",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18095347a",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "180953486",
+          "target": "0x185337c50",
+          "candidate_name": null
+        },
+        {
+          "source": "1809534b8",
+          "target": "0x180918050",
+          "candidate_name": "Torappu_Battle_Scheduler_TakeSnapshot_0x601199c"
+        },
+        {
+          "source": "1809534da",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "1809534fb",
+          "target": "0x180515cd0",
+          "candidate_name": "EasyTouchIsReadyHandler__ctor_0x6000a20"
+        },
+        {
+          "source": "180953542",
+          "target": "0x180622020",
+          "candidate_name": "Torappu_Battle_BattleController_CreatePreviewCursor_0x600fcbd"
+        },
+        {
+          "source": "18095355a",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180953567",
+          "target": "0x186b638d0",
+          "candidate_name": null
+        },
+        {
+          "source": "180953583",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1809535a1",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "1809535ff",
+          "target": "0x18048b9c0",
+          "candidate_name": null
+        },
+        {
+          "source": "18095363e",
+          "target": "0x185db83d0",
+          "candidate_name": "System_String_Format_0x600030d"
+        },
+        {
+          "source": "180953656",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180953660",
+          "target": "0x1866dd600",
+          "candidate_name": "UnityEngine_DLog_LogError_0x6000031"
+        },
+        {
+          "source": "180953695",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1809536b3",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "1809536c4",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "1809536ca",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nundefined8 __DoPreviewCursor_d__145_MoveNext_0x6011a53(longlong param_1)\r\n\r\n{\r\n  undefined1 uVar1;\r\n  int iVar2;\r\n  undefined4 uVar3;\r\n  longlong lVar4;\r\n  code *pcVar5;\r\n  char cVar6;\r\n  longlong lVar7;\r\n  longlong lVar8;\r\n  undefined8 *puVar9;\r\n  longlong lVar10;\r\n  undefined8 uVar11;\r\n  undefined8 uVar12;\r\n  undefined8 uStackX_8;\r\n  undefined8 uStack_58;\r\n  undefined8 uStack_50;\r\n  undefined8 uStack_48;\r\n  undefined1 auStack_38 [32];\r\n  \r\n  if (DAT_188c91b73 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_188802da8);\r\n    FUN_18048bf00(\u0026DAT_18892ea20);\r\n    FUN_18048bf00(\u0026DAT_188848cb0);\r\n    FUN_18048bf00(\u0026DAT_188932ce8);\r\n    FUN_18048bf00(\u0026DAT_1888d3908);\r\n    FUN_18048bf00(\u0026DAT_188878840);\r\n    FUN_18048bf00(\u0026DAT_1888315f0);\r\n    FUN_18048bf00(\u0026DAT_188898940);\r\n    FUN_18048bf00(\u0026DAT_18886a5d0);\r\n    FUN_18048bf00(\u0026DAT_188831908);\r\n    FUN_18048bf00(\u0026DAT_18886d268);\r\n    DAT_188c91b73 \u003d \u0027\\x01\u0027;\r\n  }\r\n  iVar2 \u003d *(int *)(param_1 + 0x10);\r\n  lVar10 \u003d *(longlong *)(param_1 + 0x30);\r\n  if (iVar2 \u003d\u003d 0) {\r\n    *(undefined4 *)(param_1 + 0x10) \u003d 0xffffffff;\r\n    lVar7 \u003d func_0x00018045cfe0(_DAT_188898940);\r\n    if (lVar7 !\u003d 0) {\r\n      func_0x00018050cf60(lVar7,0);\r\n      *(undefined8 *)(lVar7 + 0x10) \u003d *(undefined8 *)(param_1 + 0x20);\r\n      func_0x00018048b9e0(lVar7 + 0x10);\r\n      *(undefined8 *)(lVar7 + 0x18) \u003d *(undefined8 *)(param_1 + 0x28);\r\n      func_0x00018048b9e0(lVar7 + 0x18);\r\n      lVar8 \u003d FUN_185337c50(_DAT_1888d3908);\r\n      lVar4 \u003d *(longlong *)(lVar7 + 0x18);\r\n      if (lVar4 !\u003d 0) {\r\n        uVar3 \u003d *(undefined4 *)(lVar4 + 0x30);\r\n        uVar1 \u003d *(undefined1 *)(lVar4 + 0x2c);\r\n        if (lVar10 !\u003d 0) {\r\n          puVar9 \u003d (undefined8 *)\r\n                   Torappu_Battle_Scheduler_TakeSnapshot_0x601199c(auStack_38,lVar10,0);\r\n          uStack_58 \u003d *puVar9;\r\n          uStack_50 \u003d puVar9[1];\r\n          uStackX_8 \u003d puVar9[2];\r\n          lVar10 \u003d func_0x00018045cfe0(_DAT_188802da8);\r\n          if ((lVar10 !\u003d 0) \u0026\u0026\r\n             (EasyTouchIsReadyHandler__ctor_0x6000a20(lVar10,lVar7,_DAT_1888315f0,0), lVar8 !\u003d 0)) {\r\n            uStack_48 \u003d uStackX_8;\r\n            uVar11 \u003d Torappu_Battle_BattleController_CreatePreviewCursor_0x600fcbd\r\n                               (lVar8,uVar3,uVar1,\u0026uStack_58,lVar10,0,0);\r\n            if (*(int *)(_DAT_188932ce8 + 0xe0) \u003d\u003d 0) {\r\n              func_0x00018048c140();\r\n            }\r\n            cVar6 \u003d FUN_186b638d0(uVar11,0,0);\r\n            if (cVar6 !\u003d \u0027\\0\u0027) {\r\n              if (*(longlong *)(lVar7 + 0x18) !\u003d 0) {\r\n                uStackX_8 \u003d CONCAT44(uStackX_8._4_4_,\r\n                                     *(undefined4 *)(*(longlong *)(lVar7 + 0x18) + 0x30));\r\n                uVar11 \u003d func_0x00018048b9c0(_DAT_188848cb0,\u0026uStackX_8);\r\n                if (*(longlong *)(lVar7 + 0x18) !\u003d 0) {\r\n                  uVar12 \u003d _DAT_18886d268;\r\n                  if (*(char *)(*(longlong *)(lVar7 + 0x18) + 0x2c) \u003d\u003d \u0027\\0\u0027) {\r\n                    uVar12 \u003d **(undefined8 **)(_DAT_188878840 + 0xb8);\r\n                  }\r\n                  uVar11 \u003d System_String_Format_0x600030d(_DAT_188831908,uVar11,uVar12,0);\r\n                  if (*(int *)(_DAT_18892ea20 + 0xe0) \u003d\u003d 0) {\r\n                    func_0x00018048c140();\r\n                  }\r\n                  UnityEngine_DLog_LogError_0x6000031(uVar11,0);\r\n                  if (*(longlong *)(lVar7 + 0x10) !\u003d 0) {\r\n                    lVar10 \u003d *(longlong *)(lVar7 + 0x10);\r\n                    (**(code **)(lVar10 + 0x18))\r\n                              (*(undefined8 *)(lVar10 + 0x40),*(undefined8 *)(lVar7 + 0x18),\r\n                               *(undefined8 *)(lVar10 + 0x28));\r\n                  }\r\n                  if (*(int *)(_DAT_18886a5d0 + 0xe0) \u003d\u003d 0) {\r\n                    func_0x00018048c140(_DAT_18886a5d0);\r\n                  }\r\n                  *(undefined8 *)(param_1 + 0x18) \u003d **(undefined8 **)(_DAT_18886a5d0 + 0xb8);\r\n                  func_0x00018048b9e0(param_1 + 0x18);\r\n                  *(undefined4 *)(param_1 + 0x10) \u003d 1;\r\n                  return 1;\r\n                }\r\n              }\r\n              FUN_18048c0b0();\r\n              pcVar5 \u003d (code *)swi(3);\r\n              uVar11 \u003d (*pcVar5)();\r\n              return uVar11;\r\n            }\r\n            if (*(int *)(_DAT_18886a5d0 + 0xe0) \u003d\u003d 0) {\r\n              func_0x00018048c140(_DAT_18886a5d0);\r\n            }\r\n            *(undefined8 *)(param_1 + 0x18) \u003d **(undefined8 **)(_DAT_18886a5d0 + 0xb8);\r\n            func_0x00018048b9e0(param_1 + 0x18);\r\n            *(undefined4 *)(param_1 + 0x10) \u003d 2;\r\n            return 1;\r\n          }\r\n        }\r\n      }\r\n    }\r\n    FUN_18048c0b0();\r\n    pcVar5 \u003d (code *)swi(3);\r\n    uVar11 \u003d (*pcVar5)();\r\n    return uVar11;\r\n  }\r\n  if (iVar2 \u003d\u003d 1) {\r\n    *(undefined4 *)(param_1 + 0x10) \u003d 0xffffffff;\r\n    return 0;\r\n  }\r\n  if (iVar2 \u003d\u003d 2) {\r\n    *(undefined4 *)(param_1 + 0x10) \u003d 0xffffffff;\r\n    return 0;\r\n  }\r\n  return 0;\r\n}\r\n\r\n"
+    }
+  ]
+}

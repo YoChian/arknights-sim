@@ -1,0 +1,174 @@
+{
+  "format_version": 1,
+  "files": {
+    "level": {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\level_rogue6_1-1.json",
+      "sha256": "59c757ed7d0dcf9c1dc5e026bbbfa5f43b99c5f4075ca63a61ce796418ba240a",
+      "bytes": 127739
+    },
+    "enemies": {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\enemy_databasea5b667.json",
+      "sha256": "4eb6d9a02814c3c251362859b82e7cff90ad89060fb3a598c608e384961cd640",
+      "bytes": 14044378
+    },
+    "characters": {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\character_table9fc534.json",
+      "sha256": "68f19ec5c72acf291b59fdf861461822aa5f6be8d668711febd6f803eb096c57",
+      "bytes": 14985208
+    },
+    "skills": {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\skill_tableafb859.json",
+      "sha256": "979d036bbca77514c39c60efd76b961d9f04fa681a7dd0bf3c208112062cf3af",
+      "bytes": 10973218
+    },
+    "topics": {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\roguelike_topic_tablebd71d3.json",
+      "sha256": "686762f1e195db2c0facf544c2b5923113b88a792a6905af975de4e2f5ebeda9",
+      "bytes": 16386306
+    },
+    "constants": {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\gamedata_const61fefd.json",
+      "sha256": "42ab735aa0864c279596453b52cc78ac06dba4f2c4ef0df5b308d012e0a4deb1",
+      "bytes": 61667
+    }
+  },
+  "provenance": {
+    "level_id": "level_rogue6_1-1",
+    "schema_status": "structurally_verified_community_schema",
+    "runtime_semantics_status": "not_validated",
+    "coordinate_access": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round2.json",
+      "report_sha256": "1dd60f0a4101063b9d6095a0f23acb080fefd9c40c0ed22def1e68662652761a",
+      "get_item_addresses": [
+        "0x18241d270",
+        "0x18241d1e0"
+      ],
+      "get_height_address": "0x18241d300",
+      "get_width_address": "0x18241d330",
+      "formula": "tile_index = matrix[height - logical_row - 1, logical_col]; tile = tiles[tile_index]",
+      "limits": "Analyst symbol candidates matched metadata/pointer tables and PE unwind entries; static evidence only. No claim about full pathfinding, movement, collision or hot-patch runtime behavior."
+    },
+    "independent_legacy_rng_component": {
+      "kind": "static_native_decompilation",
+      "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\focused_results_round3.json",
+      "report_sha256": "f48a1ac56f11064265e0ebb7dbc12f7815f180e36a00e9d64a53a4febb568a72",
+      "reference_source_sha256": "3f3daa216291e2b54466094f95706ac7cfa857db53950af7334edc04a2f13627",
+      "reference_vectors_sha256": "642f90baf3ed87c29c340eda5c71e9906449fc7a09e14cc61865d61de538bf02",
+      "seeded_ctor": "0x186505240",
+      "sample": "0x1860e0e90",
+      "next": "0x1860e0e40",
+      "next_max": "0x186505190",
+      "next_min_max": "0x186505090",
+      "next_double_dispatch": "0x185549bb0",
+      "random_factory_seeded": "0x1867323a0",
+      "limits": "Names are analyst candidates matched to metadata/pointers and PE unwind. Factory type 0 selects the LegacyRandom seeded ctor statically; hot-patch/virtual dispatch in a running client and complete battle RNG consumption remain unverified."
+    },
+    "extraction_evidence": [
+      {
+        "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\verification.json",
+        "sha256": "83cda9d3ac4527e6fd2de905dcc88ae833b933f12b15d2b7f969873bf34b9779"
+      },
+      {
+        "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\sample_provenance.json",
+        "sha256": "811e839187f9c005f72496ab2eef92f2c7cc580f97b8222599cd44cc77a49556"
+      },
+      {
+        "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\download_provenance.json",
+        "sha256": "1ced959879c48eb44fdb1972c1372678914c1a55be39d6bb25a0e5a638d75bd9"
+      }
+    ],
+    "scope": "local PC client snapshot; no game execution or server requests"
+  },
+  "validated_summary": {
+    "scope": "data_and_declaration_probe",
+    "schema_status": "structurally_verified_community_schema",
+    "dimensions": {
+      "rows": 7,
+      "cols": 11
+    },
+    "logical_coordinate_mapping": "matrix_row = height - logical_row - 1; matrix_col = logical_col",
+    "coordinate_access_status": "recovered_from_static_native_code",
+    "tile_types": {
+      "tile_forbidden": 37,
+      "tile_road": 28,
+      "tile_wall": 7,
+      "tile_start": 2,
+      "tile_end": 1,
+      "tile_floor": 1,
+      "tile_hole": 1
+    },
+    "routes": 38,
+    "extra_routes": 2,
+    "route_modes": {
+      "E_NUM": 10,
+      "WALK": 28
+    },
+    "waves": 3,
+    "main_declarations": 38,
+    "declaration_types": {
+      "ACTIVATE_PREDEFINED": 10,
+      "SPAWN": 27,
+      "EMPTY": 1
+    },
+    "spawn_count_sum_including_alternatives": 27,
+    "branches": {
+      "shsbox2": 1,
+      "shsbox1": 1
+    },
+    "enemy_references": 10,
+    "topics": {
+      "rogue_6": "沉沦者的黑流树海"
+    },
+    "stage_records": [
+      {
+        "id": "ro6_n_1_1",
+        "name": "猎犬病原",
+        "levelId": "Obt/Roguelike/RO6/level_rogue6_1-1",
+        "difficulty": "NORMAL",
+        "description": "猎犬是由被它们撕咬吞噬的病人转化成的？你怎么会有这种可怕而不切实际的想法。\\n<@rolv.rem>场地中有对敌我造成伤害的<源石祭坛></>"
+      },
+      {
+        "id": "ro6_e_1_1",
+        "name": "猎犬病原",
+        "levelId": "Obt/Roguelike/RO6/level_rogue6_1-1",
+        "difficulty": "FOUR_STAR",
+        "description": "猎犬是由被它们撕咬吞噬的病人转化成的？你怎么会有这种可怕而不切实际的想法。\\n<@rolv.rem>场地中有对敌我造成伤害的<源石祭坛></>"
+      }
+    ],
+    "table_counts": {
+      "characters": 1382,
+      "skills": 1820,
+      "enemy_database_ids": 2181
+    },
+    "table_reference_gaps": [
+      {
+        "character": "trap_755_cdsoul",
+        "missing_skill": "sktok_cdsoul"
+      },
+      {
+        "character": "trap_332_blkcan",
+        "missing_skill": "sktok_blkcan"
+      },
+      {
+        "character": "trap_338_almytw",
+        "missing_skill": "sktok_almytw"
+      }
+    ],
+    "client_level_seed": 1808733512,
+    "schedule_blockers": [
+      "hiddenGroup",
+      "randomSpawnGroupKey",
+      "wave/fragment completion gating",
+      "branch activation"
+    ],
+    "warnings": [
+      "Structural checks do not verify field semantics or runtime behavior.",
+      "Main-wave and branch array order is preserved; it is not a battle execution timeline.",
+      "E_NUM route placeholders are retained and cannot be navigated.",
+      "Hidden groups, weighted groups, branch activation, damage and battle RNG consumption are unimplemented."
+    ]
+  }
+}

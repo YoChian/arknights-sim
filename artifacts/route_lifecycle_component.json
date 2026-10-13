@@ -1,0 +1,3037 @@
+{
+  "initial": {
+    "frame": 0,
+    "time_raw": 0,
+    "actor_id": "isolated_actor",
+    "state_id": 6,
+    "hp_raw": 429496729600,
+    "birth_remaining_raw": 858993472,
+    "alive": true,
+    "finish_reason": 0,
+    "recycled": false,
+    "movement": {
+      "position": [
+        1.0,
+        1.0
+      ],
+      "locator_position": [
+        1.0,
+        1.0
+      ],
+      "velocity": [
+        0.0,
+        0.0
+      ],
+      "direction": [
+        0.0,
+        0.0
+      ],
+      "still": true,
+      "cursor": {
+        "checkpoint_index": 0,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "reached_exit_geometry": false,
+      "current_frame": 0,
+      "time_raw": 0,
+      "exit_requested": false,
+      "last_update": {
+        "kind": "initialized",
+        "position_assignment_applied": false
+      },
+      "runtime_battle_validated": false,
+      "battle_ready": false
+    },
+    "life": 3,
+    "temp_life": 0,
+    "wave_membership": [
+      "isolated_actor"
+    ],
+    "final_membership": [
+      "isolated_actor"
+    ],
+    "finish_request": null,
+    "terminated": false
+  },
+  "info": {
+    "scope": "automatic_single_actor_route_lifecycle_component",
+    "scenario_source": "controlled one-actor component experiment, not level_rogue6_1-1 execution",
+    "speed_source": "explicit component fixture speed",
+    "movement_context_source": "explicit deterministic/new-steering/zero-offset fixture branches",
+    "tile_context_source": "controlled open cached tile fixture; excludes real scene devices and enemies",
+    "state_gates": {
+      "can_move": true,
+      "actually_ground_bound": false,
+      "check_cursor_reached": true,
+      "exit_allowed": true
+    },
+    "lifecycle": {
+      "scope": "static_default_mode_logical_enemy_lifecycle",
+      "creation_backend": "logical_entity",
+      "context_source": "explicit single-actor DefaultGameMode logical fixture, empty modifiers/no hotfix",
+      "initial_life_origin": "explicit_run_input",
+      "mode_backend": "DefaultGameMode",
+      "hotfix_policy": "excluded",
+      "global_modifiers": [],
+      "use_recycle_to_finish_scheduler": true,
+      "active_lifecycle_templates_supported": false,
+      "runtime_battle_validated": false,
+      "pool_backend": "logical_pool_enabled",
+      "scheduler_event_binding_verified": false,
+      "finish_reason_scope": "ReachExit_reason1_only",
+      "finish_scope": "logical_FinishGame_request_before_Unity_outro",
+      "native_evidence": {
+        "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+        "Entity.OnBorn": "0x1806f7df0",
+        "Enemy.States.ConstructStateMachine": "0x180a9b3e0",
+        "BornState.OnEnter": "0x180a884c0",
+        "BornState.OnTick": "0x180a887a0",
+        "StateMachine.Tick": "0x1826483e0",
+        "Enemy.ReachExit": "0x180a73600",
+        "Enemy.OnFinish": "0x180a70920",
+        "Entity.OnFinish": "0x1806f8c40",
+        "Entity.FinishMe": "0x1806f3360",
+        "DefaultGameMode.DestroyEntity": "0x180c18e70",
+        "Scheduler._OnUnitDestroyed": "0x18091bcb0",
+        "BattleController._DoApplyGlobalModifier": "0x180636a90",
+        "BObject.DestroyMe": "0x180662710",
+        "PoolManagerExtensions._RecycleAsync_MonoBehaviour.MoveNext": "0x180661ec0",
+        "IReusable.OnRecycle_dispatch": "0x185c27ff0",
+        "client_runtime_compared": false
+      }
+    },
+    "native_relative_order": [
+      "Unit/FSM",
+      "Enemy/cursor",
+      "exit/finish callbacks",
+      "battle coroutine recycling",
+      "logical final check"
+    ],
+    "reward_defined": false,
+    "seed_consumed": false,
+    "external_lifecycle_events_required": false,
+    "full_scene_ability_executor": false,
+    "full_scene_scheduler_connected": false,
+    "autonomous_route_ready": false,
+    "battle_ready": false,
+    "client_runtime_compared": false
+  },
+  "frame_samples": [
+    {
+      "frame": 1,
+      "time_raw": 143165440,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 6,
+      "birth_remaining_raw": 715828032,
+      "cursor": {
+        "checkpoint_index": 1,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": 1288490240
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 2,
+      "time_raw": 286330880,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 6,
+      "birth_remaining_raw": 572662592,
+      "cursor": {
+        "checkpoint_index": 1,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": 1145324800
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 3,
+      "time_raw": 429496320,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 6,
+      "birth_remaining_raw": 429497152,
+      "cursor": {
+        "checkpoint_index": 1,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": 1002159360
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 4,
+      "time_raw": 572661760,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 6,
+      "birth_remaining_raw": 286331712,
+      "cursor": {
+        "checkpoint_index": 1,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": 858993920
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 5,
+      "time_raw": 715827200,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 6,
+      "birth_remaining_raw": 143166272,
+      "cursor": {
+        "checkpoint_index": 1,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": 715828480
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 6,
+      "time_raw": 858992640,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 6,
+      "birth_remaining_raw": 832,
+      "cursor": {
+        "checkpoint_index": 1,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": 572663040
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 7,
+      "time_raw": 1002158080,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 1,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": 429497600
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 8,
+      "time_raw": 1145323520,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 1,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": 286332160
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 9,
+      "time_raw": 1288488960,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 1,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": 143166720
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 10,
+      "time_raw": 1431654400,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 1,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": 1280
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 11,
+      "time_raw": 1574819840,
+      "position": [
+        1.0,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 12,
+      "time_raw": 1717985280,
+      "position": [
+        1.0089000463485718,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 13,
+      "time_raw": 1861150720,
+      "position": [
+        1.0242999792099,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 14,
+      "time_raw": 2004316160,
+      "position": [
+        1.0444999933242798,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 15,
+      "time_raw": 2147481600,
+      "position": [
+        1.0681999921798706,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 16,
+      "time_raw": 2290647040,
+      "position": [
+        1.094499945640564,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 17,
+      "time_raw": 2433812480,
+      "position": [
+        1.1225999593734741,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 18,
+      "time_raw": 2576977920,
+      "position": [
+        1.1520999670028687,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 19,
+      "time_raw": 2720143360,
+      "position": [
+        1.1826000213623047,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 20,
+      "time_raw": 2863308800,
+      "position": [
+        1.2138999700546265,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 21,
+      "time_raw": 3006474240,
+      "position": [
+        1.2457000017166138,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 22,
+      "time_raw": 3149639680,
+      "position": [
+        1.277899980545044,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 23,
+      "time_raw": 3292805120,
+      "position": [
+        1.3104000091552734,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 24,
+      "time_raw": 3435970560,
+      "position": [
+        1.3430999517440796,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 25,
+      "time_raw": 3579136000,
+      "position": [
+        1.3760000467300415,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 26,
+      "time_raw": 3722301440,
+      "position": [
+        1.409000039100647,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 27,
+      "time_raw": 3865466880,
+      "position": [
+        1.4421000480651855,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 28,
+      "time_raw": 4008632320,
+      "position": [
+        1.4752999544143677,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 29,
+      "time_raw": 4151797760,
+      "position": [
+        1.5084999799728394,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 30,
+      "time_raw": 4294963200,
+      "position": [
+        1.541700005531311,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 31,
+      "time_raw": 4438128640,
+      "position": [
+        1.5750000476837158,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 32,
+      "time_raw": 4581294080,
+      "position": [
+        1.608299970626831,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 33,
+      "time_raw": 4724459520,
+      "position": [
+        1.6416000127792358,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 34,
+      "time_raw": 4867624960,
+      "position": [
+        1.6749000549316406,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 35,
+      "time_raw": 5010790400,
+      "position": [
+        1.7081999778747559,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 36,
+      "time_raw": 5153955840,
+      "position": [
+        1.7415000200271606,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 37,
+      "time_raw": 5297121280,
+      "position": [
+        1.7747999429702759,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 38,
+      "time_raw": 5440286720,
+      "position": [
+        1.8080999851226807,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 39,
+      "time_raw": 5583452160,
+      "position": [
+        1.8414000272750854,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 40,
+      "time_raw": 5726617600,
+      "position": [
+        1.8746999502182007,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 41,
+      "time_raw": 5869783040,
+      "position": [
+        1.9079999923706055,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 42,
+      "time_raw": 6012948480,
+      "position": [
+        1.9413000345230103,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 43,
+      "time_raw": 6156113920,
+      "position": [
+        1.9745999574661255,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 44,
+      "time_raw": 6299279360,
+      "position": [
+        2.0078999996185303,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 45,
+      "time_raw": 6442444800,
+      "position": [
+        2.0411999225616455,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 46,
+      "time_raw": 6585610240,
+      "position": [
+        2.07450008392334,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 47,
+      "time_raw": 6728775680,
+      "position": [
+        2.107800006866455,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 48,
+      "time_raw": 6871941120,
+      "position": [
+        2.1410999298095703,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 49,
+      "time_raw": 7015106560,
+      "position": [
+        2.1744000911712646,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 50,
+      "time_raw": 7158272000,
+      "position": [
+        2.20770001411438,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 51,
+      "time_raw": 7301437440,
+      "position": [
+        2.240999937057495,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 52,
+      "time_raw": 7444602880,
+      "position": [
+        2.2743000984191895,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 53,
+      "time_raw": 7587768320,
+      "position": [
+        2.3076000213623047,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 54,
+      "time_raw": 7730933760,
+      "position": [
+        2.34089994430542,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 55,
+      "time_raw": 7874099200,
+      "position": [
+        2.3742001056671143,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 56,
+      "time_raw": 8017264640,
+      "position": [
+        2.4075000286102295,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 57,
+      "time_raw": 8160430080,
+      "position": [
+        2.4407999515533447,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 58,
+      "time_raw": 8303595520,
+      "position": [
+        2.474100112915039,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 59,
+      "time_raw": 8446760960,
+      "position": [
+        2.5074000358581543,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 60,
+      "time_raw": 8589926400,
+      "position": [
+        2.5406999588012695,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 61,
+      "time_raw": 8733091840,
+      "position": [
+        2.5739998817443848,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 62,
+      "time_raw": 8876257280,
+      "position": [
+        2.607300043106079,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 63,
+      "time_raw": 9019422720,
+      "position": [
+        2.6405999660491943,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 64,
+      "time_raw": 9162588160,
+      "position": [
+        2.6738998889923096,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 65,
+      "time_raw": 9305753600,
+      "position": [
+        2.707200050354004,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 66,
+      "time_raw": 9448919040,
+      "position": [
+        2.740499973297119,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 67,
+      "time_raw": 9592084480,
+      "position": [
+        2.7737998962402344,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 68,
+      "time_raw": 9735249920,
+      "position": [
+        2.8071000576019287,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 69,
+      "time_raw": 9878415360,
+      "position": [
+        2.840399980545044,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 70,
+      "time_raw": 10021580800,
+      "position": [
+        2.873699903488159,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 71,
+      "time_raw": 10164746240,
+      "position": [
+        2.9070000648498535,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 72,
+      "time_raw": 10307911680,
+      "position": [
+        2.9402999877929688,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 73,
+      "time_raw": 10451077120,
+      "position": [
+        2.973599910736084,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 74,
+      "time_raw": 10594242560,
+      "position": [
+        3.0069000720977783,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 75,
+      "time_raw": 10737408000,
+      "position": [
+        3.0401999950408936,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 76,
+      "time_raw": 10880573440,
+      "position": [
+        3.073499917984009,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 77,
+      "time_raw": 11023738880,
+      "position": [
+        3.106800079345703,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 78,
+      "time_raw": 11166904320,
+      "position": [
+        3.1401000022888184,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 79,
+      "time_raw": 11310069760,
+      "position": [
+        3.1733999252319336,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 80,
+      "time_raw": 11453235200,
+      "position": [
+        3.206700086593628,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 81,
+      "time_raw": 11596400640,
+      "position": [
+        3.240000009536743,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 82,
+      "time_raw": 11739566080,
+      "position": [
+        3.2732999324798584,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 83,
+      "time_raw": 11882731520,
+      "position": [
+        3.3066000938415527,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 84,
+      "time_raw": 12025896960,
+      "position": [
+        3.339900016784668,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 85,
+      "time_raw": 12169062400,
+      "position": [
+        3.373199939727783,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 86,
+      "time_raw": 12312227840,
+      "position": [
+        3.4065001010894775,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 87,
+      "time_raw": 12455393280,
+      "position": [
+        3.4398000240325928,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 88,
+      "time_raw": 12598558720,
+      "position": [
+        3.473099946975708,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 89,
+      "time_raw": 12741724160,
+      "position": [
+        3.5064001083374023,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 90,
+      "time_raw": 12884889600,
+      "position": [
+        3.5397000312805176,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 91,
+      "time_raw": 13028055040,
+      "position": [
+        3.572999954223633,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 92,
+      "time_raw": 13171220480,
+      "position": [
+        3.606300115585327,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 93,
+      "time_raw": 13314385920,
+      "position": [
+        3.6396000385284424,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 94,
+      "time_raw": 13457551360,
+      "position": [
+        3.6728999614715576,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 95,
+      "time_raw": 13600716800,
+      "position": [
+        3.706199884414673,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 96,
+      "time_raw": 13743882240,
+      "position": [
+        3.739500045776367,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 97,
+      "time_raw": 13887047680,
+      "position": [
+        3.7727999687194824,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 98,
+      "time_raw": 14030213120,
+      "position": [
+        3.8060998916625977,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 99,
+      "time_raw": 14173378560,
+      "position": [
+        3.839400053024292,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 100,
+      "time_raw": 14316544000,
+      "position": [
+        3.8726999759674072,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 101,
+      "time_raw": 14459709440,
+      "position": [
+        3.9059998989105225,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 102,
+      "time_raw": 14602874880,
+      "position": [
+        3.939300060272217,
+        1.0
+      ],
+      "state_id": 1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 2,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 3,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 103,
+      "time_raw": 14746040320,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 104,
+      "time_raw": 14889205760,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 105,
+      "time_raw": 15032371200,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 106,
+      "time_raw": 15175536640,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 107,
+      "time_raw": 15318702080,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 108,
+      "time_raw": 15461867520,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 109,
+      "time_raw": 15605032960,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 110,
+      "time_raw": 15748198400,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 111,
+      "time_raw": 15891363840,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 112,
+      "time_raw": 16034529280,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 113,
+      "time_raw": 16177694720,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 114,
+      "time_raw": 16320860160,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 115,
+      "time_raw": 16464025600,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 116,
+      "time_raw": 16607191040,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 117,
+      "time_raw": 16750356480,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 118,
+      "time_raw": 16893521920,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 119,
+      "time_raw": 17036687360,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": false
+    },
+    {
+      "frame": 120,
+      "time_raw": 17179852800,
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "state_id": -1,
+      "birth_remaining_raw": -143164608,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "life": 2,
+      "temp_life": 0,
+      "recycled": true
+    }
+  ],
+  "events": [
+    {
+      "kind": "enemy_born",
+      "frame": 0,
+      "time_raw": 0,
+      "id": "isolated_actor",
+      "enemy_key": "isolated_fixture",
+      "state_id": 6,
+      "born_remaining_raw": 858993472,
+      "hp_raw": 429496729600,
+      "alive": true,
+      "tracked": true,
+      "wave_block": true
+    },
+    {
+      "kind": "enemy_birth_complete",
+      "frame": 7,
+      "time_raw": 1002158080,
+      "id": "isolated_actor",
+      "state_id": 1,
+      "born_remaining_raw": -143164608
+    },
+    {
+      "kind": "enemy_exit_state",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "id": "isolated_actor",
+      "state_id": 7
+    },
+    {
+      "kind": "enemy_finished",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "id": "isolated_actor",
+      "finish_reason": 1,
+      "state_id": -1
+    },
+    {
+      "kind": "enemy_wave_released",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "id": "isolated_actor",
+      "final_membership_retained": true
+    },
+    {
+      "kind": "life_modified",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "source": "isolated_actor",
+      "requested_delta": -1,
+      "applied_delta": -1,
+      "applied_delta_fp_raw": -4294967296,
+      "life_before": 3,
+      "life": 2,
+      "temp_life_before": 0,
+      "temp_life": 0,
+      "is_reach_exit": true,
+      "event_id": 34
+    },
+    {
+      "kind": "enemy_reached_exit",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "id": "isolated_actor",
+      "event_id": 7
+    },
+    {
+      "kind": "enemy_recycle_scheduled",
+      "frame": 103,
+      "time_raw": 14746040320,
+      "id": "isolated_actor",
+      "delay_single": 0.6000000238418579
+    },
+    {
+      "kind": "enemy_recycled",
+      "frame": 120,
+      "time_raw": 17179852800,
+      "id": "isolated_actor",
+      "finish_reason": 1,
+      "wave_membership_changed": false
+    },
+    {
+      "kind": "battle_finish_requested",
+      "frame": 120,
+      "time_raw": 17179852800,
+      "outcome": "win",
+      "source": "Scheduler._CheckFinalNotFinish/default_mode",
+      "scope": "logical_default_mode_request_before_Unity_outro"
+    }
+  ],
+  "final": {
+    "frame": 120,
+    "time_raw": 17179852800,
+    "actor_id": "isolated_actor",
+    "state_id": -1,
+    "hp_raw": 429496729600,
+    "birth_remaining_raw": -143164608,
+    "alive": false,
+    "finish_reason": 1,
+    "recycled": true,
+    "movement": {
+      "position": [
+        3.972599983215332,
+        1.0
+      ],
+      "locator_position": [
+        3.972599983215332,
+        1.0
+      ],
+      "velocity": [
+        0.9999999403953552,
+        0.0
+      ],
+      "direction": [
+        1.0,
+        0.0
+      ],
+      "still": false,
+      "cursor": {
+        "checkpoint_index": 3,
+        "visit_every_node_stably": false,
+        "next_grid": [
+          1,
+          1
+        ],
+        "always_check_current_point": false,
+        "wait_remaining_raw": null
+      },
+      "reached_exit_geometry": true,
+      "current_frame": 103,
+      "time_raw": 14746040320,
+      "exit_requested": true,
+      "last_update": {
+        "kind": "controller_move",
+        "position_assignment_applied": true,
+        "controller_velocity_updated": true,
+        "reflected_unpassable_entry": false,
+        "fsm_position_reassigned": true
+      },
+      "runtime_battle_validated": false,
+      "battle_ready": false
+    },
+    "life": 2,
+    "temp_life": 0,
+    "wave_membership": [],
+    "final_membership": [],
+    "finish_request": "win",
+    "terminated": true
+  },
+  "reward": null
+}

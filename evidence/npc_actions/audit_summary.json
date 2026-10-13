@@ -1,0 +1,263 @@
+{
+  "scope": "selected initialized NPC Buff/event actions with explicit external providers",
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "ghidra": [
+    {
+      "collection": "results_round1.json",
+      "functions": 18,
+      "ranges": 36,
+      "bytes": 7261,
+      "all_match": true
+    },
+    {
+      "collection": "results_round2.json",
+      "functions": 7,
+      "ranges": 15,
+      "bytes": 4257,
+      "all_match": true
+    }
+  ],
+  "raw": {
+    "collection": "raw_helpers.json",
+    "functions": 22,
+    "ranges": 31,
+    "bytes": 3206,
+    "all_match": true
+  },
+  "raw_checks": [
+    {
+      "function": "ObjectPtr_Entity.value",
+      "start": "0x185159d80",
+      "bytes": 70,
+      "source_sha256": "7dc92f7bbc3f9171e1432f2fe75b2d35f634d94f9723fe0cee4a16af388a1bea",
+      "match": true
+    },
+    {
+      "function": "ObjectPtr_Entity.IsValid",
+      "start": "0x185159fc0",
+      "bytes": 130,
+      "source_sha256": "32b959968d5a8257d47947e812ef1c320478e7ad7208a245ea8d7644ae5e3b2d",
+      "match": true
+    },
+    {
+      "function": "ObjectExtensions.IsDestroyedOrNull",
+      "start": "0x1866e81e0",
+      "bytes": 46,
+      "source_sha256": "7dd33c2352dace35b9d47368677ae3d4821c7e6ac094098ed44f16e0466c3a6f",
+      "match": true
+    },
+    {
+      "function": "ObjectExtensions.IsDestroyedOrNull",
+      "start": "0x1866e820e",
+      "bytes": 126,
+      "source_sha256": "7b221b805e8b00aab62ab7ee5b3bde639f6eca222a547a82d7394b9c8b865594",
+      "match": true
+    },
+    {
+      "function": "ObjectExtensions.IsDestroyedOrNull",
+      "start": "0x1866e828c",
+      "bytes": 117,
+      "source_sha256": "32b78cad6a76f6db4849e240392f50a7698c066bb312e6df0680d645c118bfc1",
+      "match": true
+    },
+    {
+      "function": "ObjectExtensions.IsDestroyedOrNull",
+      "start": "0x1866e8301",
+      "bytes": 8,
+      "source_sha256": "a2632c2c5d94ccb24ed01277af7170a1c8d591585fce705f5baf3e0fbaea40fc",
+      "match": true
+    },
+    {
+      "function": "MathUtil.GE_FP",
+      "start": "0x1866e4ba0",
+      "bytes": 166,
+      "source_sha256": "b89e524b1f2cd8cd0ade597a8753d3d88367993260e3ee4c1225f5574494c2a7",
+      "match": true
+    },
+    {
+      "function": "MathUtil.cctor",
+      "start": "0x1866e6e50",
+      "bytes": 660,
+      "source_sha256": "9fa27eaa67c433d18cb6d54ad809c0f82d1192aa96cbf645bc0b00f066ecc687",
+      "match": true
+    },
+    {
+      "function": "Buff.get_onEventPriority",
+      "start": "0x18068f190",
+      "bytes": 115,
+      "source_sha256": "496de0e502fb71007115d6fae476aad61c0d606210314f86228bf0aaa9a96dfc",
+      "match": true
+    },
+    {
+      "function": "ContextPtrStack_Pop_raw",
+      "start": "0x185733450",
+      "bytes": 203,
+      "source_sha256": "1d1372b8432e3d81caf16187ab3c8c1ea17c6f0e755302bb83674a86c70718b1",
+      "match": true
+    },
+    {
+      "function": "ContextPtrStack_Push_raw",
+      "start": "0x185367ff0",
+      "bytes": 37,
+      "source_sha256": "4f585012c9e9cbdc489b3a55675982d7ae79356e887e20945f6be90e8e56161c",
+      "match": true
+    },
+    {
+      "function": "ContextPtrStack_Push_raw",
+      "start": "0x185368015",
+      "bytes": 112,
+      "source_sha256": "7eebdc7cd4c7e6952650c15a714cb112fe16503f96fabe9d8ae31748f4d7d325",
+      "match": true
+    },
+    {
+      "function": "ContextPtrStack_Push_raw",
+      "start": "0x185368085",
+      "bytes": 44,
+      "source_sha256": "77dbc9e9cf46333f65d6eb7b0dc333f1e57416b56bb722ac2a29c33b81287b0d",
+      "match": true
+    },
+    {
+      "function": "ContextPtrStack_Push_raw",
+      "start": "0x1853680b1",
+      "bytes": 6,
+      "source_sha256": "f03d46ac88eb4af8e1228728bd24213927d0bd73cdba868c99ce8c33f0b68f49",
+      "match": true
+    },
+    {
+      "function": "Blackboard.TryGetString",
+      "start": "0x1823203b0",
+      "bytes": 124,
+      "source_sha256": "72e3803393f4e8746f136f29e8efb7b2236c6459156599bf15c873b8bd3ed9f2",
+      "match": true
+    },
+    {
+      "function": "Blackboard.TryGetString",
+      "start": "0x18232042c",
+      "bytes": 155,
+      "source_sha256": "7196cc615e30f55a526903b065bdfeae1de1ae84d8d6883f8ac4a1aa0f36d3be",
+      "match": true
+    },
+    {
+      "function": "Blackboard.TryGetString",
+      "start": "0x1823204c7",
+      "bytes": 43,
+      "source_sha256": "dac1fad0ebdd2a9d9040e4544d64bdf5de4a1e554bc6b556d3cb57915ce692c4",
+      "match": true
+    },
+    {
+      "function": "Blackboard.TryGetString",
+      "start": "0x1823204f2",
+      "bytes": 80,
+      "source_sha256": "ee7cc45d9ee4a80f4a7e28b1ea57ce4beb7a7ca0226877039683bf5759956e16",
+      "match": true
+    },
+    {
+      "function": "Torappu.Battle.Action.Nodes.AssignValueToBB.get_allowedSource",
+      "start": "0x1810161a0",
+      "bytes": 86,
+      "source_sha256": "300a346947b4b0ddf154b040e0304b1b7bc503bce3ea7b4a4b39ba99667001f1",
+      "match": true
+    },
+    {
+      "function": "Torappu.Battle.Action.Nodes.FinishBuffsById.get_allowedSource",
+      "start": "0x18102a760",
+      "bytes": 86,
+      "source_sha256": "42e22fee8fffc0bffc5fd310f6963f1b1defa719d02005ae9995f36a0ffa83f7",
+      "match": true
+    },
+    {
+      "function": "Torappu.Battle.Action.Nodes.ClearAllBuffs.get_allowedSource",
+      "start": "0x18101d250",
+      "bytes": 86,
+      "source_sha256": "c75bb437d31581990a2f24227523070d3c58e67f9506b20372a7f3b1c3e3e320",
+      "match": true
+    },
+    {
+      "function": "Torappu.Battle.Action.Nodes.ModifyLifePoint.get_allowedSource",
+      "start": "0x1810412b0",
+      "bytes": 86,
+      "source_sha256": "248a260196291efcdfa81dee0b190f2e9c05d557491a442815d84c64f0202570",
+      "match": true
+    },
+    {
+      "function": "Torappu.Battle.Action.Nodes.InstantKill.get_allowedSource",
+      "start": "0x181058e70",
+      "bytes": 86,
+      "source_sha256": "bc2f27752da1abbb52b70400be0ea54ec279ab11327c9fd14d5b6c7ce92787bb",
+      "match": true
+    },
+    {
+      "function": "Torappu.Battle.Action.Nodes.ForceSetToSourcePosition.get_allowedSource",
+      "start": "0x18107c7e0",
+      "bytes": 86,
+      "source_sha256": "8e08f9c1e61661ffd3ebd5917b912623065db589d8358cead0b4d0471ea37e68",
+      "match": true
+    },
+    {
+      "function": "Torappu.Battle.Action.Nodes.SummonEnemiesFollowMyRouteWithBuff.get_allowedSource",
+      "start": "0x1810dd9d0",
+      "bytes": 87,
+      "source_sha256": "f17913ab8d94021e6849c7e6217bf1b79e30dfe6539d8d4d911716b6247cc3ca",
+      "match": true
+    },
+    {
+      "function": "Torappu.Battle.Action.Nodes.FilterByBlackboardValue.get_allowedSource",
+      "start": "0x18112d850",
+      "bytes": 87,
+      "source_sha256": "04f598b34cec9f6218773fbe14a13161e4ea83764bb3bd2e15429b3a6291a410",
+      "match": true
+    },
+    {
+      "function": "Torappu.Battle.Action.Nodes.SetDisappear.get_allowedSource",
+      "start": "0x1811724c0",
+      "bytes": 86,
+      "source_sha256": "1abcd1af38755750679e582b8853f27e6cd56acf5efb8e05ae1aa1d52a76ecc8",
+      "match": true
+    },
+    {
+      "function": "IsValid_direct_call_trampoline",
+      "start": "0x1800c9210",
+      "bytes": 5,
+      "source_sha256": "3ba40f2c885635c61e264b1af51e4ec31a2d751333957fe82e0f9c229d0fb273",
+      "match": true
+    },
+    {
+      "function": "CRT_Floor_dispatch",
+      "start": "0x1804d3200",
+      "bytes": 18,
+      "source_sha256": "2a0a5acc2d2432774268614d57601f390bd76565c3097431174d2d8703f4345d",
+      "match": true
+    },
+    {
+      "function": "CRT_Floor_SSE4",
+      "start": "0x1804eefb0",
+      "bytes": 7,
+      "source_sha256": "2dc9de64307e5eb43e7f5440b4a2cc5e11b1f25e264a1d300afa560eec241825",
+      "match": true
+    },
+    {
+      "function": "CRT_Floor_scalar_finite_path",
+      "start": "0x1804d3220",
+      "bytes": 158,
+      "source_sha256": "ddf5fff810dfed0927f470b6f21831dfab3b2abd90b65a53bcf3fa9dbf577c66",
+      "match": true
+    }
+  ],
+  "all_original_checks_match": true,
+  "v7_frozen_manifest_files_verified_unchanged": 99,
+  "unit_tests": 28,
+  "independent_csharp_vectors": 187,
+  "client_runtime_compared": false,
+  "game_launched": false,
+  "complete_npc_simulator": false,
+  "external_dependencies": [
+    "source/destination entity UID and Unity existence predicates",
+    "initialized Buff membership dispatch",
+    "restoration/state/tween/route callbacks",
+    "shared tracked summon scheduler/factory/mode callbacks",
+    "life/global-modifier/mode callback",
+    "full multi-Buff traversal and deferred mutation remain unsupported",
+    "audio CreateBuff node unsupported"
+  ]
+}

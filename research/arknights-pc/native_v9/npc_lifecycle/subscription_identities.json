@@ -1,0 +1,87 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "records": [
+    {
+      "slot_va": "0x1888797f0",
+      "file_offset": 143095280,
+      "raw_bytes8": "79f0022000000000",
+      "usage_kind": 1,
+      "usage_index": 96316,
+      "native_type": {
+        "address": "0x188985b80",
+        "file_offset": 144193920,
+        "raw_bytes12": "969500000000000000001200",
+        "data": 38294,
+        "bits": "0x120000",
+        "attrs": 0,
+        "type_tag": "0x12",
+        "byref": false,
+        "valuetype_bit": false,
+        "definition_index": 38294,
+        "name": "Torappu.EventPool.EventCallbackDelegate",
+        "is_value_type": false,
+        "is_enum": false,
+        "type_index": 96316,
+        "pointer_record_file_offset": 131348416
+      }
+    },
+    {
+      "slot_va": "0x188811de0",
+      "file_offset": 142670816,
+      "raw_bytes8": "e1fe07c000000000",
+      "usage_kind": 6,
+      "usage_index": 262000,
+      "method_spec_file_offset": 124414432,
+      "method_spec_raw12": "015f0300c9170000ffffffff",
+      "class_inst_index": 6089,
+      "method_inst_index": -1,
+      "class_arguments": [
+        {
+          "address": "0x188b9cf40",
+          "file_offset": 146386240,
+          "raw_bytes12": "7f2600000000000000001180",
+          "data": 9855,
+          "bits": "0x80110000",
+          "attrs": 0,
+          "type_tag": "0x11",
+          "byref": false,
+          "valuetype_bit": true,
+          "definition_index": 9855,
+          "name": "Torappu.Battle.BattleEvent",
+          "is_value_type": true,
+          "is_enum": true
+        }
+      ],
+      "method_definition_index": 220929,
+      "declaring_type": "Torappu.EventPool`1",
+      "method_name": "On",
+      "metadata_method_record_file_offset": 18009536
+    },
+    {
+      "slot_va": "0x18896eae0",
+      "file_offset": 144099552,
+      "raw_bytes8": "9f33026000000000",
+      "usage_kind": 3,
+      "usage_index": 72143,
+      "method_definition_index": 72143,
+      "declaring_type": "Torappu.Battle.Scheduler",
+      "method_name": "_OnUnitDestroyed",
+      "metadata_method_record_file_offset": 13248384
+    },
+    {
+      "slot_va": "0x18896e8a0",
+      "file_offset": 144098976,
+      "raw_bytes8": "a333026000000000",
+      "usage_kind": 3,
+      "usage_index": 72145,
+      "method_definition_index": 72145,
+      "declaring_type": "Torappu.Battle.Scheduler",
+      "method_name": "_OnEnemyRecycled",
+      "metadata_method_record_file_offset": 13248448
+    }
+  ],
+  "limits": [
+    "Method/type identity only; whole IntEventPool ordering/reentrancy and BattleController bootstrap not executed."
+  ]
+}

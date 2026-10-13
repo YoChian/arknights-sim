@@ -1,0 +1,287 @@
+[
+  {
+    "type": "Torappu.Battle.BObject",
+    "method": "Born",
+    "metadata_method_index": 65026,
+    "token": "0x600fe03",
+    "address": "0x180662520",
+    "virtual_slot": 24,
+    "parameters": [],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round2.json",
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\results_round2.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.BObject",
+    "method": "Init",
+    "metadata_method_index": 65029,
+    "token": "0x600fe06",
+    "address": "0x180662860",
+    "virtual_slot": 65535,
+    "parameters": [
+      {
+        "name": "side",
+        "native_type": "Torappu.Battle.SideType"
+      },
+      {
+        "name": "playerSide",
+        "native_type": "Torappu.PlayerSide"
+      },
+      {
+        "name": "pos",
+        "native_type": "UnityEngine.Vector2"
+      },
+      {
+        "name": "height",
+        "native_type": "Single"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round2.json",
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\results_round2.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "Init",
+    "metadata_method_index": 66624,
+    "token": "0x6010441",
+    "address": "0x1806f50d0",
+    "virtual_slot": 65535,
+    "parameters": [
+      {
+        "name": "attributesData",
+        "native_type": "Torappu.AttributesData"
+      },
+      {
+        "name": "side",
+        "native_type": "Torappu.Battle.SideType"
+      },
+      {
+        "name": "playerSide",
+        "native_type": "Torappu.PlayerSide"
+      },
+      {
+        "name": "motionMode",
+        "native_type": "Torappu.MotionMode"
+      },
+      {
+        "name": "pos",
+        "native_type": "UnityEngine.Vector2"
+      },
+      {
+        "name": "height",
+        "native_type": "Single"
+      },
+      {
+        "name": "spData",
+        "native_type": "Torappu.SpData"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\attributes\\results_round2.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "OnBorn",
+    "metadata_method_index": 66647,
+    "token": "0x6010458",
+    "address": "0x1806f7df0",
+    "virtual_slot": 32,
+    "parameters": [],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round1.json",
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\results_round1.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.ObjectManager",
+    "method": "Register",
+    "metadata_method_index": 71074,
+    "token": "0x60115a3",
+    "address": "0x1808d56a0",
+    "virtual_slot": 65535,
+    "parameters": [
+      {
+        "name": "obj",
+        "native_type": "Torappu.Battle.BObject"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "Spawn",
+    "metadata_method_index": 76418,
+    "token": "0x6012a83",
+    "address": "0x180a750d0",
+    "virtual_slot": 231,
+    "parameters": [
+      {
+        "name": "data",
+        "native_type": "Torappu.LevelData.EnemyData"
+      },
+      {
+        "name": "handbookData",
+        "native_type": "Torappu.EnemyHandBookData"
+      },
+      {
+        "name": "snapshot",
+        "native_type": "Torappu.Battle.Scheduler.SchedulerSnapshot"
+      },
+      {
+        "name": "route",
+        "native_type": "Torappu.Battle.Route"
+      },
+      {
+        "name": "options",
+        "native_type": "Torappu.Battle.Enemy.Options"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\creation\\results_round1.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "Born",
+    "metadata_method_index": 76419,
+    "token": "0x6012a84",
+    "address": "0x180a6b290",
+    "virtual_slot": 24,
+    "parameters": [],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round2.json",
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\results_round2.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "Init",
+    "metadata_method_index": 76469,
+    "token": "0x6012ab6",
+    "address": "0x180a6e450",
+    "virtual_slot": 236,
+    "parameters": [
+      {
+        "name": "data",
+        "native_type": "Torappu.LevelData.EnemyData"
+      },
+      {
+        "name": "handbookData",
+        "native_type": "Torappu.EnemyHandBookData"
+      },
+      {
+        "name": "snapshot",
+        "native_type": "Torappu.Battle.Scheduler.SchedulerSnapshot"
+      },
+      {
+        "name": "route",
+        "native_type": "Torappu.Battle.Route"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\creation\\results_round1.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "OnBorn",
+    "metadata_method_index": 76472,
+    "token": "0x6012ab9",
+    "address": "0x180a70140",
+    "virtual_slot": 32,
+    "parameters": [],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round1.json",
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\results_round1.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "_AssignData",
+    "metadata_method_index": 76521,
+    "token": "0x6012aea",
+    "address": "0x180a76eb0",
+    "virtual_slot": 65535,
+    "parameters": [
+      {
+        "name": "data",
+        "native_type": "Torappu.LevelData.EnemyData"
+      },
+      {
+        "name": "handbookData",
+        "native_type": "Torappu.EnemyHandBookData"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\attributes\\results_round2.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "_AssignTalent",
+    "metadata_method_index": 76523,
+    "token": "0x6012aec",
+    "address": "0x180a779b0",
+    "virtual_slot": 65535,
+    "parameters": [
+      {
+        "name": "talentBlackboard",
+        "native_type": "Torappu.Blackboard"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round2.json",
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\results_round2.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.Unit",
+    "method": "OnInit",
+    "metadata_method_index": 77665,
+    "token": "0x6012f62",
+    "address": "0x180acaac0",
+    "virtual_slot": 30,
+    "parameters": [
+      {
+        "name": "initHeight",
+        "native_type": "Single"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round1.json",
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\results_round1.json"
+    ]
+  },
+  {
+    "type": "Torappu.Battle.Unit",
+    "method": "OnBorn",
+    "metadata_method_index": 77696,
+    "token": "0x6012f81",
+    "address": "0x180aca090",
+    "virtual_slot": 32,
+    "parameters": [],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency",
+    "sources": [
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round1.json",
+      "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\results_round1.json"
+    ]
+  }
+]

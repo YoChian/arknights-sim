@@ -1,0 +1,93 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "helper_source_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\prepare.py",
+  "helper_source_sha256": "8428c91b5da0691a8713db811e72e0af097e95814baf9aeba5add1aa7457862d",
+  "method_usage_slots": [
+    {
+      "va": "0x18896eae0",
+      "method_index": 72143,
+      "name": "Scheduler._OnUnitDestroyed",
+      "file_offset": 144099552,
+      "usage_word": "9f330260",
+      "raw_bytes8": "9f33026000000000"
+    },
+    {
+      "va": "0x18896e8a0",
+      "method_index": 72145,
+      "name": "Scheduler._OnEnemyRecycled",
+      "file_offset": 144098976,
+      "usage_word": "a3330260",
+      "raw_bytes8": "a333026000000000"
+    }
+  ],
+  "rip_references": [
+    {
+      "instruction_va": "0x1809146d1",
+      "raw_bytes7": "488d0dc8a10508",
+      "usage_slot_va": "0x18896e8a0",
+      "usage_identity": {
+        "method_index": 72145,
+        "name": "Scheduler._OnEnemyRecycled",
+        "file_offset": 144098976,
+        "usage_word": "a3330260",
+        "raw_bytes8": "a333026000000000"
+      },
+      "unwind_root": "0x1809146a0",
+      "candidate_aliases": [
+        "Torappu.Battle.Scheduler.OnGameReset"
+      ]
+    },
+    {
+      "instruction_va": "0x1809146dd",
+      "raw_bytes7": "488d0dfca30508",
+      "usage_slot_va": "0x18896eae0",
+      "usage_identity": {
+        "method_index": 72143,
+        "name": "Scheduler._OnUnitDestroyed",
+        "file_offset": 144099552,
+        "usage_word": "9f330260",
+        "raw_bytes8": "9f33026000000000"
+      },
+      "unwind_root": "0x1809146a0",
+      "candidate_aliases": [
+        "Torappu.Battle.Scheduler.OnGameReset"
+      ]
+    },
+    {
+      "instruction_va": "0x1809147ff",
+      "raw_bytes7": "4c8b05daa20508",
+      "usage_slot_va": "0x18896eae0",
+      "usage_identity": {
+        "method_index": 72143,
+        "name": "Scheduler._OnUnitDestroyed",
+        "file_offset": 144099552,
+        "usage_word": "9f330260",
+        "raw_bytes8": "9f33026000000000"
+      },
+      "unwind_root": "0x1809146a0",
+      "candidate_aliases": [
+        "Torappu.Battle.Scheduler.OnGameReset"
+      ]
+    },
+    {
+      "instruction_va": "0x180914887",
+      "raw_bytes7": "4c8b0512a00508",
+      "usage_slot_va": "0x18896e8a0",
+      "usage_identity": {
+        "method_index": 72145,
+        "name": "Scheduler._OnEnemyRecycled",
+        "file_offset": 144098976,
+        "usage_word": "a3330260",
+        "raw_bytes8": "a333026000000000"
+      },
+      "unwind_root": "0x1809146a0",
+      "candidate_aliases": [
+        "Torappu.Battle.Scheduler.OnGameReset"
+      ]
+    }
+  ],
+  "limits": [
+    "Recognized x64 MOV/LEA RIP-relative patterns only; not all xrefs.",
+    "Source bytes plus metadata usage identity locate candidates; callers require semantic follow-up."
+  ]
+}

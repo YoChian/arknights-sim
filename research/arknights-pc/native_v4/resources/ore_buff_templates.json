@@ -1,0 +1,125 @@
+{
+  "source": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\StreamingAssets\\AB\\Windows\\config\\buff_template_holder.ab",
+  "source_bytes": 2022247,
+  "source_sha256": "12419ad8d1ea9f670cca214e525240c691cdf3796b82acc8050698d66c202a37",
+  "source_cab": "CAB-7983df61b3ae63c96fb4e076fc3d80af",
+  "object_path_id": 6070581171229484677,
+  "object_raw_sha256": "8f2717ac371161a269f0a52c15f8c4887e150dd274635ef613723606cf5b4068",
+  "total_template_count": 8659,
+  "templates": [
+    {
+      "raw": {
+        "templateKey": "ore_buff",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 1,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_OWNER\",\"_buffKeys\":[\"ore_listener\"],\"isAND\":true,\"_loadFromBlackboard\":false,\"_checkBuffSource\":false,\"_buffSourceType\":\"BUFF_SOURCE\",\"_checkSourceHost\":false,\"$type\":\"Torappu.Battle.Action.Nodes+CheckContainsBuff\"},{\"_modeIndex\":0,\"_loadModeFromBlackboard\":true,\"_restoreDefault\":false,\"_restartFSM\":true,\"_targetType\":\"TARGET\",\"$type\":\"Torappu.Battle.Action.Nodes+SwitchMode\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "serialized_state_json": [
+        {
+          "path": "$.eventToActions._items[0].value.SerializedState",
+          "decoded_json": [
+            {
+              "_targetType": "BUFF_OWNER",
+              "_buffKeys": [
+                "ore_listener"
+              ],
+              "isAND": true,
+              "_loadFromBlackboard": false,
+              "_checkBuffSource": false,
+              "_buffSourceType": "BUFF_SOURCE",
+              "_checkSourceHost": false,
+              "$type": "Torappu.Battle.Action.Nodes+CheckContainsBuff"
+            },
+            {
+              "_modeIndex": 0,
+              "_loadModeFromBlackboard": true,
+              "_restoreDefault": false,
+              "_restartFSM": true,
+              "_targetType": "TARGET",
+              "$type": "Torappu.Battle.Action.Nodes+SwitchMode"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "raw": {
+        "templateKey": "ore_s",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 1,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_OWNER\",\"_buffKeys\":[\"ore_immune\"],\"isAND\":true,\"_loadFromBlackboard\":false,\"_checkBuffSource\":false,\"_buffSourceType\":\"BUFF_SOURCE\",\"_checkSourceHost\":false,\"$type\":\"Torappu.Battle.Action.Nodes+CheckContainsBuff\"},{\"$type\":\"Torappu.Battle.Action.Nodes+IfNot\"},{\"_damageType\":\"PURE\",\"_damageKey\":\"value\",\"_atkScaleKey\":\"atk_scale\",\"_ignoreForSp\":false,\"_attackType\":\"NONE\",\"_skipModifierEvent\":false,\"_considerUnhurtable\":false,\"_noSourceDamage\":false,\"_targetType\":\"TARGET\",\"_assignRealDamageToBB\":false,\"_assignFinalDamageToBB\":false,\"_multiplierByKey\":false,\"_multiplierKey\":\"cnt\",\"_damageSourceType\":\"SOURCE\",\"_damageTargetType\":\"TARGET\",\"_triggerOnCalculateDamage\":false,\"_isEnvDamage\":false,\"_ignoreCancelReasonMask\":\"NONE\",\"_forceDisplayDamageNum\":false,\"_undeadable\":false,\"_modifierKey\":\"\",\"_devideDamageFromAbilityCnt\":false,\"$type\":\"Torappu.Battle.Action.Nodes+FixedValueDamage\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "serialized_state_json": [
+        {
+          "path": "$.eventToActions._items[0].value.SerializedState",
+          "decoded_json": [
+            {
+              "_targetType": "BUFF_OWNER",
+              "_buffKeys": [
+                "ore_immune"
+              ],
+              "isAND": true,
+              "_loadFromBlackboard": false,
+              "_checkBuffSource": false,
+              "_buffSourceType": "BUFF_SOURCE",
+              "_checkSourceHost": false,
+              "$type": "Torappu.Battle.Action.Nodes+CheckContainsBuff"
+            },
+            {
+              "$type": "Torappu.Battle.Action.Nodes+IfNot"
+            },
+            {
+              "_damageType": "PURE",
+              "_damageKey": "value",
+              "_atkScaleKey": "atk_scale",
+              "_ignoreForSp": false,
+              "_attackType": "NONE",
+              "_skipModifierEvent": false,
+              "_considerUnhurtable": false,
+              "_noSourceDamage": false,
+              "_targetType": "TARGET",
+              "_assignRealDamageToBB": false,
+              "_assignFinalDamageToBB": false,
+              "_multiplierByKey": false,
+              "_multiplierKey": "cnt",
+              "_damageSourceType": "SOURCE",
+              "_damageTargetType": "TARGET",
+              "_triggerOnCalculateDamage": false,
+              "_isEnvDamage": false,
+              "_ignoreCancelReasonMask": "NONE",
+              "_forceDisplayDamageNum": false,
+              "_undeadable": false,
+              "_modifierKey": "",
+              "_devideDamageFromAbilityCnt": false,
+              "$type": "Torappu.Battle.Action.Nodes+FixedValueDamage"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "limits": [
+    "Configuration only. Buff event/key meanings, damage values and active-state conditions require native behavior recovery.",
+    "JSON strings parsed as plain data; no target deserialization/constructor/code executed."
+  ]
+}

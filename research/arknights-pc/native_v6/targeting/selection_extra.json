@@ -1,0 +1,141 @@
+[
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "IsInHitRange",
+    "address": "0x1806f5d10",
+    "metadata_method_index": 66720,
+    "token": "0x60104a1",
+    "reason": "TargetSelector.ValidateTarget target virtualslot135 geometry/provider gate"
+  },
+  {
+    "type": "Torappu.Battle.BattleUtil",
+    "method": "ConvertSideType",
+    "address": "0x180ae0690",
+    "metadata_method_index": 78221,
+    "token": "0x601318e",
+    "reason": "Relative source-side to absolute target-side mask helper"
+  },
+  {
+    "type": "Torappu.Battle.BattleUtil",
+    "method": "GetOppositeSideMask",
+    "address": "0x180ae17a0",
+    "metadata_method_index": 78219,
+    "token": "0x601318c",
+    "reason": "Opposite source side mask conversion"
+  },
+  {
+    "type": "Torappu.Battle.BattleUtil",
+    "method": "GetSameSideMask",
+    "address": "0x180ae1880",
+    "metadata_method_index": 78220,
+    "token": "0x601318d",
+    "reason": "Same source side mask conversion"
+  },
+  {
+    "type": "Torappu.GridPosition",
+    "method": "RotateVector",
+    "address": "0x182103a90",
+    "metadata_method_index": 28061,
+    "token": "0x6006d9e",
+    "reason": "RangeData.ConstructBoundingBoxes RotateVector current direction to UP0; correct axis/order"
+  },
+  {
+    "type": "Torappu.RangeData.<>c",
+    "method": "<ConstructBoundingBoxes>b__9_0",
+    "address": "0x18242fbd0",
+    "metadata_method_index": 31691,
+    "token": "0x6007bcc",
+    "reason": "ConstructBoundingBoxes input sorted-order lambda; exact nested parent4762 proven by raw metadata"
+  },
+  {
+    "type": "Torappu.Battle.Box2dPhysicsUtil",
+    "method": "SafeBounds",
+    "address": "0x1809a60e0",
+    "metadata_method_index": 73943,
+    "token": "0x60120d8",
+    "reason": "Box SafeBounds float edge epsilon and transform space"
+  },
+  {
+    "type": "Torappu.Battle.MapUtil",
+    "method": "InBounds",
+    "address": "0x180b00a90",
+    "metadata_method_index": 78322,
+    "token": "0x60131f3",
+    "reason": "Point-in-native-bounds actual inequality/math"
+  },
+  {
+    "type": "Torappu.Battle.TargetOptions",
+    "method": "GetLayerMask",
+    "address": "0x1809fa470",
+    "metadata_method_index": 75071,
+    "token": "0x6012540",
+    "reason": "Overlap Physics2D layer mask from target side"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "CompareTo",
+    "address": "0x1806f1750",
+    "metadata_method_index": 66718,
+    "token": "0x601049f",
+    "reason": "Deterministic Entity.CompareTo used by default List.Sort"
+  },
+  {
+    "type": "Torappu.Battle.BObject",
+    "method": "CompareTo",
+    "address": "0x180662560",
+    "metadata_method_index": 65023,
+    "token": "0x600fe00",
+    "reason": "Inherited BObject comparison object overload"
+  },
+  {
+    "type": "Torappu.Battle.BObject",
+    "method": "CompareTo",
+    "address": "0x1806625f0",
+    "metadata_method_index": 65024,
+    "token": "0x600fe01",
+    "reason": "Inherited BObject comparison exact generic overload"
+  },
+  {
+    "type": "Torappu.Battle.BObject",
+    "method": "get_isValid",
+    "address": "0x180663060",
+    "metadata_method_index": 65018,
+    "token": "0x600fdfb",
+    "reason": "Box2d target candidate isValid gate exact native getter"
+  },
+  {
+    "type": "UnresolvedCall",
+    "method": "List_Entity_Sort",
+    "address": "0x184d14820",
+    "metadata_method_index": null,
+    "token": null,
+    "reason": "Box2dPhysicsUtil.FindTargets tail explicit methodInfo slot188938418 encodedc0084945 kind6/spec271522; exact instantiated generic identity pending, do not guess from shared address",
+    "raw_call_target": true
+  },
+  {
+    "type": "UnresolvedCall",
+    "method": "Filter_Entity_Weight",
+    "address": "0x1844f9140",
+    "metadata_method_index": null,
+    "token": null,
+    "raw_call_target": true,
+    "reason": "FilterUtil.Filter ALL default weighted helper methodInfo188904ab8; createdTime FP weight + comparison scope"
+  },
+  {
+    "type": "UnresolvedCall",
+    "method": "Filter_Entity_PriorWeight",
+    "address": "0x1844f9740",
+    "metadata_method_index": null,
+    "token": null,
+    "raw_call_target": true,
+    "reason": "Alternate weighted helper reached by Filter dictionary fallback methodInfo188904cf8; identify true ALL branch"
+  },
+  {
+    "type": "Torappu.Battle.FilterUtil",
+    "method": ".cctor",
+    "address": "0x1809e1dc0",
+    "metadata_method_index": 74719,
+    "token": "0x60123e0",
+    "reason": "FilterUtil static comparison at+10 for ALL0/createdTime sorting; bind dictionary and comparator defaults"
+  }
+]

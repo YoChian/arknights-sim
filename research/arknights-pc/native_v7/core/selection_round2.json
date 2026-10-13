@@ -1,0 +1,293 @@
+[
+  {
+    "type": "Torappu.Battle.SideTypes",
+    "method": ".cctor",
+    "address": "0x180b06970",
+    "metadata_method_index": 78269,
+    "token": "0x60131be",
+    "reason": "Actual SideTypes same/opposite arrays and ALL side bitmask initialization"
+  },
+  {
+    "type": "Torappu.Battle.Layers",
+    "method": ".cctor",
+    "address": "0x1805e15a0",
+    "metadata_method_index": 62955,
+    "token": "0x600f5ec",
+    "reason": "Actual Battle.Layers side-specific Unity layer/mask initialization"
+  },
+  {
+    "type": "Torappu.Battle.TargetSelector",
+    "method": "get_sourcePurposeMask",
+    "address": "0x1809fc980",
+    "metadata_method_index": 75087,
+    "token": "0x6012550",
+    "reason": "TargetSelector owner Ability purpose mask getter; actual altar fixed branch"
+  },
+  {
+    "type": "HitRangeManager",
+    "method": "Register",
+    "address": "0x18071eef0",
+    "metadata_method_index": 66789,
+    "token": "0x60104e6",
+    "reason": "HitRangeManager provider registration semantics; determine empty-provider default"
+  },
+  {
+    "type": "HitRangeManager",
+    "method": "Unregister",
+    "address": "0x18071f0a0",
+    "metadata_method_index": 66790,
+    "token": "0x60104e7",
+    "reason": "HitRangeManager provider unregistration identity/reference semantics"
+  },
+  {
+    "type": "HitRangeManager",
+    "method": "IsInHitRange",
+    "address": "0x18071e930",
+    "metadata_method_index": 66792,
+    "token": "0x60104e9",
+    "reason": "TargetSelector validation target HitRangeManager gate actual source data/providers"
+  },
+  {
+    "type": "HitRangeManager",
+    "method": ".ctor",
+    "address": "0x18071f130",
+    "metadata_method_index": 66793,
+    "token": "0x60104ea",
+    "reason": "HitRangeManager construction/default provider container"
+  },
+  {
+    "type": "HitRangeManager",
+    "method": "Reset",
+    "address": "0x18071f020",
+    "metadata_method_index": 66788,
+    "token": "0x60104e5",
+    "reason": "HitRangeManager reset preserves/clears provider context"
+  },
+  {
+    "type": "Torappu.Battle.FilterUtil",
+    "method": "_CreateFilterFuncs",
+    "address": "0x1809d9890",
+    "metadata_method_index": 74636,
+    "token": "0x601238d",
+    "reason": "FilterUtil ALL dictionary delegate binding; do not infer from filter enum alone"
+  },
+  {
+    "type": "Torappu.Battle.FilterUtil",
+    "method": "_SecondFilterInExtraMode",
+    "address": "0x1809e1aa0",
+    "metadata_method_index": 74621,
+    "token": "0x601237e",
+    "reason": "ALL weighted queue secondary extra-mode weight mutation/gate"
+  },
+  {
+    "type": "Torappu.FP",
+    "method": ".cctor",
+    "address": "0x1866fd010",
+    "metadata_method_index": 220527,
+    "token": "0x6000339",
+    "reason": "Torappu.FP static +68 value copied to FilterUtil default smallEnoughGap"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "get_mapLayer",
+    "address": "0x180706fc0",
+    "metadata_method_index": 66404,
+    "token": "0x6010365",
+    "reason": "Native Entity mapLayer context getter"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "get_isHealFree",
+    "address": "0x180705c90",
+    "metadata_method_index": 66516,
+    "token": "0x60103d5",
+    "reason": "Native heal-free getter; trace underlying status flags/ownership"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "get_isAllyTargetFree",
+    "address": "0x180705450",
+    "metadata_method_index": 66517,
+    "token": "0x60103d6",
+    "reason": "Native ally-target-free getter; trace underlying status flags/ownership"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "get_isCamouflage",
+    "address": "0x180705680",
+    "metadata_method_index": 66527,
+    "token": "0x60103e0",
+    "reason": "Native camouflage getter; trace underlying status flags/ownership"
+  },
+  {
+    "type": "UnresolvedCall",
+    "method": "PriorityQueue_WeightedTarget_Entity_Clear",
+    "address": "0x1851b0a00",
+    "metadata_method_index": null,
+    "token": null,
+    "raw_call_target": true,
+    "reason": "Filter<Entity> actual methodInfo18896eb80; queue clear, not SortedSet"
+  },
+  {
+    "type": "UnresolvedCall",
+    "method": "PriorityQueue_WeightedTarget_Entity_Add",
+    "address": "0x1851afeb0",
+    "metadata_method_index": null,
+    "token": null,
+    "raw_call_target": true,
+    "reason": "Filter<Entity> actual methodInfo18896e940; ordering and same-weight insertion behavior"
+  },
+  {
+    "type": "UnresolvedCall",
+    "method": "PriorityQueue_WeightedTarget_Entity_RemoveLast",
+    "address": "0x1851b1b10",
+    "metadata_method_index": null,
+    "token": null,
+    "raw_call_target": true,
+    "reason": "Filter<Entity> raw call at1844f94da, methodInfo slot from RIP44758e6 at1844f94d3; cap removes tail"
+  },
+  {
+    "type": "UnresolvedCall",
+    "method": "PriorityQueue_WeightedTarget_Entity_get_Item",
+    "address": "0x1851b36f0",
+    "metadata_method_index": null,
+    "token": null,
+    "raw_call_target": true,
+    "reason": "Filter<Entity> actual methodInfo18896f000; indexed rank/heap output semantics"
+  },
+  {
+    "type": "UnresolvedCall",
+    "method": "WeightedTarget_Entity_ctor",
+    "address": "0x185528950",
+    "metadata_method_index": null,
+    "token": null,
+    "raw_call_target": true,
+    "reason": "Filter<Entity> constructs stack WeightedTarget with FP weight and Entity; fields/layout and comparator identity require metadata support"
+  },
+  {
+    "type": "SummonEnemiesFollowMyRouteWithBuff",
+    "method": "Execute",
+    "address": "0x1810dcf50",
+    "metadata_method_index": 98663,
+    "token": "0x6018168"
+  },
+  {
+    "type": "SummonEnemiesFollowMyRouteWithBuff",
+    "method": "GatherBuffs",
+    "address": "0x1810dd830",
+    "metadata_method_index": 98664,
+    "token": "0x6018169"
+  },
+  {
+    "type": "ForceSetToSourcePosition",
+    "method": "Execute",
+    "address": "0x18107c4b0",
+    "metadata_method_index": 97534,
+    "token": "0x6017cff"
+  },
+  {
+    "type": "SetDisappear",
+    "method": "Execute",
+    "address": "0x181172300",
+    "metadata_method_index": 100162,
+    "token": "0x6018743"
+  },
+  {
+    "type": "FinishBuffsById",
+    "method": "Execute",
+    "address": "0x18102a470",
+    "metadata_method_index": 96093,
+    "token": "0x601775e"
+  },
+  {
+    "type": "InstantKill",
+    "method": "Execute",
+    "address": "0x181058b90",
+    "metadata_method_index": 96943,
+    "token": "0x6017ab0"
+  },
+  {
+    "type": "ModifyLifePoint",
+    "method": "Execute",
+    "address": "0x181040fe0",
+    "metadata_method_index": 96553,
+    "token": "0x601792a"
+  },
+  {
+    "type": "AssignValueToBB",
+    "method": "Execute",
+    "address": "0x181015fd0",
+    "metadata_method_index": 95884,
+    "token": "0x601768d"
+  },
+  {
+    "type": "ClearAllBuffs",
+    "method": "Execute",
+    "address": "0x18101d020",
+    "metadata_method_index": 96270,
+    "token": "0x601780f"
+  },
+  {
+    "type": "FilterByBlackboardValue",
+    "method": "Execute",
+    "address": "0x18112d470",
+    "metadata_method_index": 99072,
+    "token": "0x6018301"
+  },
+  {
+    "type": "Torappu.Battle.BObject",
+    "method": "SetDisappeared",
+    "address": "0x180662be0",
+    "metadata_method_index": 65027,
+    "token": "0x600fe04"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "OnDisappearChanged",
+    "address": "0x180a70650",
+    "metadata_method_index": 76479,
+    "token": "0x6012ac0"
+  },
+  {
+    "type": "Torappu.Battle.Buff",
+    "method": "OnOwnerFinish",
+    "address": "0x180686200",
+    "metadata_method_index": 65154,
+    "token": "0x600fe83"
+  },
+  {
+    "type": "Torappu.Battle.Buff",
+    "method": "OnOwnerDying",
+    "address": "0x180686150",
+    "metadata_method_index": 65156,
+    "token": "0x600fe85"
+  },
+  {
+    "type": "Torappu.Battle.Buff",
+    "method": "OnTakeDamage",
+    "address": "0x1806873c0",
+    "metadata_method_index": 65171,
+    "token": "0x600fe94"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "CheckCanSwitchToDisappearState",
+    "address": "0x1806f0ad0",
+    "metadata_method_index": 66654,
+    "token": "0x601045f"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "OnBeforeDisappearChanged",
+    "address": "0x1806f7a90",
+    "metadata_method_index": 66655,
+    "token": "0x6010460"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "OnDisappearChanged",
+    "address": "0x1806f87a0",
+    "metadata_method_index": 66656,
+    "token": "0x6010461"
+  }
+]

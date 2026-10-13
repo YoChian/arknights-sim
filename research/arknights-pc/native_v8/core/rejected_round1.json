@@ -1,0 +1,19 @@
+{
+  "reason": "No PE unwind entry; generic dispatcher contains embedded jump tables, bounded-leaf rule rejects it. Mode dispatch remains explicit callback; no guessed function span imported.",
+  "entries": [
+    {
+      "type": "raw.summon",
+      "method": "before_summon_mode_dispatch",
+      "address": "0x180942250",
+      "raw_call_target": true,
+      "reason": "direct original d__129 call target; name provisional dispatch"
+    },
+    {
+      "type": "raw.summon",
+      "method": "after_summon_mode_dispatch",
+      "address": "0x1809421d0",
+      "raw_call_target": true,
+      "reason": "direct original d__129 call target; name provisional dispatch"
+    }
+  ]
+}

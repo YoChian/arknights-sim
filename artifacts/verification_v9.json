@@ -1,0 +1,411 @@
+{
+  "healthy": true,
+  "tests_run": 468,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "v9_component_evidence": {
+    "healthy": true,
+    "scope": "reviewed_v9_npc_factory_buff_membership_damage_reaction_and_lifecycle",
+    "previous_v8_evidence": {
+      "healthy": true,
+      "scope": "reviewed_v8_npc_actions_restore_tracked_summon_and_physics_query_contracts",
+      "previous_v7_evidence": {
+        "healthy": true,
+        "scope": "reviewed_v7_static_preparation_targeting_and_component_composition",
+        "previous_v6_evidence": {
+          "healthy": true,
+          "scope": "reviewed_v6_selected_static_components",
+          "file_pins_checked": 323,
+          "native_batches": [
+            {
+              "entries": 119,
+              "ranges": 271
+            },
+            {
+              "entries": 34,
+              "ranges": 67
+            },
+            {
+              "entries": 14,
+              "ranges": 20
+            }
+          ],
+          "native_selected_entries": 167,
+          "native_imported_ranges": 358,
+          "rejected_candidate_entries": 1,
+          "accepted_candidate_entries": 166,
+          "original_native_ranges_checked": 358,
+          "physics_overlap_backend": "explicit_external_snapshot",
+          "client_runtime_compared": false,
+          "battle_ready": false,
+          "autonomous_route_ready": false,
+          "runtime_battle_validated": false
+        },
+        "file_pins_checked": 310,
+        "native_batches": [
+          {
+            "entries": 21,
+            "ranges": 58
+          },
+          {
+            "entries": 38,
+            "ranges": 71
+          },
+          {
+            "entries": 21,
+            "ranges": 48
+          },
+          {
+            "entries": 5,
+            "ranges": 13
+          }
+        ],
+        "native_selected_entries": 85,
+        "native_imported_ranges": 190,
+        "original_native_ranges_checked": 190,
+        "client_runtime_compared": false,
+        "battle_ready": false,
+        "autonomous_route_ready": false,
+        "runtime_battle_validated": false
+      },
+      "file_pins_checked": 290,
+      "native_batches": [
+        {
+          "entries": 61,
+          "ranges": 117
+        },
+        {
+          "entries": 11,
+          "ranges": 19
+        }
+      ],
+      "native_selected_entries": 72,
+      "native_imported_ranges": 136,
+      "original_native_ranges_checked": 136,
+      "client_runtime_compared": false,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false
+    },
+    "file_pins_checked": 346,
+    "native_batches": [
+      {
+        "entries": 30,
+        "ranges": 73
+      },
+      {
+        "entries": 11,
+        "ranges": 20
+      },
+      {
+        "entries": 7,
+        "ranges": 10
+      },
+      {
+        "entries": 1,
+        "ranges": 6
+      }
+    ],
+    "native_selected_entries": 49,
+    "native_imported_ranges": 109,
+    "original_native_ranges_checked": 109,
+    "client_runtime_compared": false,
+    "battle_ready": false,
+    "autonomous_route_ready": false,
+    "runtime_battle_validated": false
+  },
+  "previous_verification": "D:\\Repo\\arknights-sim\\artifacts\\verification_v8.json",
+  "npc_pipeline": {
+    "artifact": "D:\\Repo\\arknights-sim\\artifacts\\npc_pipeline.json",
+    "before_reaction": {
+      "frame": 10,
+      "time_raw": 1431654400,
+      "npc_created": true,
+      "npc_alive": true,
+      "host_disappeared": true,
+      "host_game_active": false,
+      "host_state": 11,
+      "host_grid": [
+        0,
+        1
+      ],
+      "host_route": "host_initial_route",
+      "host_cursor_index": 0,
+      "passive_active": true,
+      "restore_callbacks": 0,
+      "finish_reason": null,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 3,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 1,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false,
+      "npc_uid": 24,
+      "npc_state": 1,
+      "npc_hp_raw": 15032385536000,
+      "npc_recycled": false,
+      "scheduler": {
+        "wave": [],
+        "final": [
+          "npc_upeopl"
+        ],
+        "counters": {
+          "finished": 0,
+          "killed": 0,
+          "valid_finished": 0,
+          "valid_killed": 0,
+          "valid_missed": 0,
+          "source": "explicit prepared NPC v9 fixture; no client runtime"
+        },
+        "bound_events": [
+          6,
+          8
+        ],
+        "event_binding_scope": "first Scheduler.OnGameReset with explicit fresh event pool and constant config",
+        "counter_backend": "decoded Int32 semantics; ObscuredInt implementation excluded"
+      }
+    },
+    "after_reaction": {
+      "frame": 10,
+      "time_raw": 1431654400,
+      "npc_created": true,
+      "npc_alive": false,
+      "host_disappeared": false,
+      "host_game_active": false,
+      "host_state": 11,
+      "host_grid": [
+        3,
+        5
+      ],
+      "host_route": "npc_runtime_route_11",
+      "host_cursor_index": 4,
+      "passive_active": false,
+      "restore_callbacks": 2,
+      "finish_reason": 7,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 3,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 0,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false,
+      "npc_uid": 0,
+      "npc_state": -1,
+      "npc_hp_raw": 15032385536000,
+      "npc_recycled": true,
+      "scheduler": {
+        "wave": [],
+        "final": [],
+        "counters": {
+          "finished": 0,
+          "killed": 0,
+          "valid_finished": 0,
+          "valid_killed": 0,
+          "valid_missed": 0,
+          "source": "explicit prepared NPC v9 fixture; no client runtime"
+        },
+        "bound_events": [
+          6,
+          8
+        ],
+        "event_binding_scope": "first Scheduler.OnGameReset with explicit fresh event pool and constant config",
+        "counter_backend": "decoded Int32 semantics; ObscuredInt implementation excluded"
+      }
+    },
+    "damage_fixture": {
+      "frame": 12,
+      "time_raw": 1717985280,
+      "npc_created": true,
+      "npc_alive": false,
+      "host_disappeared": false,
+      "host_game_active": true,
+      "host_state": 1,
+      "host_grid": [
+        3,
+        5
+      ],
+      "host_route": "npc_runtime_route_11",
+      "host_cursor_index": 4,
+      "passive_active": false,
+      "restore_callbacks": 2,
+      "finish_reason": 7,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 3,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 0,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false,
+      "npc_uid": 0,
+      "npc_state": -1,
+      "npc_hp_raw": 15032385536000,
+      "npc_recycled": true,
+      "scheduler": {
+        "wave": [],
+        "final": [],
+        "counters": {
+          "finished": 0,
+          "killed": 0,
+          "valid_finished": 0,
+          "valid_killed": 0,
+          "valid_missed": 0,
+          "source": "explicit prepared NPC v9 fixture; no client runtime"
+        },
+        "bound_events": [
+          6,
+          8
+        ],
+        "event_binding_scope": "first Scheduler.OnGameReset with explicit fresh event pool and constant config",
+        "counter_backend": "decoded Int32 semantics; ObscuredInt implementation excluded"
+      }
+    },
+    "death_before_recycle": {
+      "frame": 10,
+      "time_raw": 1431654400,
+      "npc_created": true,
+      "npc_alive": false,
+      "host_disappeared": false,
+      "host_game_active": false,
+      "host_state": 11,
+      "host_grid": [
+        3,
+        5
+      ],
+      "host_route": "npc_runtime_route_11",
+      "host_cursor_index": 4,
+      "passive_active": false,
+      "restore_callbacks": 1,
+      "finish_reason": 2,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 2,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 1,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false,
+      "npc_uid": 24,
+      "npc_state": -1,
+      "npc_hp_raw": 15032385536000,
+      "npc_recycled": false,
+      "scheduler": {
+        "wave": [],
+        "final": [
+          "npc_upeopl"
+        ],
+        "counters": {
+          "finished": 0,
+          "killed": 0,
+          "valid_finished": 0,
+          "valid_killed": 0,
+          "valid_missed": 0,
+          "source": "explicit prepared NPC v9 fixture; no client runtime"
+        },
+        "bound_events": [
+          6,
+          8
+        ],
+        "event_binding_scope": "first Scheduler.OnGameReset with explicit fresh event pool and constant config",
+        "counter_backend": "decoded Int32 semantics; ObscuredInt implementation excluded"
+      }
+    },
+    "death_fixture": {
+      "frame": 30,
+      "time_raw": 4294963200,
+      "npc_created": true,
+      "npc_alive": false,
+      "host_disappeared": false,
+      "host_game_active": true,
+      "host_state": 1,
+      "host_grid": [
+        3,
+        5
+      ],
+      "host_route": "npc_runtime_route_11",
+      "host_cursor_index": 4,
+      "passive_active": false,
+      "restore_callbacks": 1,
+      "finish_reason": 2,
+      "clear_callbacks": 0,
+      "lock": 0.0,
+      "life": 2,
+      "temp_life": 0,
+      "wave_members": 0,
+      "final_members": 0,
+      "reward": null,
+      "battle_ready": false,
+      "autonomous_route_ready": false,
+      "runtime_battle_validated": false,
+      "npc_uid": 0,
+      "npc_state": -1,
+      "npc_hp_raw": 15032385536000,
+      "npc_recycled": true,
+      "scheduler": {
+        "wave": [],
+        "final": [],
+        "counters": {
+          "finished": 0,
+          "killed": 0,
+          "valid_finished": 0,
+          "valid_killed": 0,
+          "valid_missed": 0,
+          "source": "explicit prepared NPC v9 fixture; no client runtime"
+        },
+        "bound_events": [
+          6,
+          8
+        ],
+        "event_binding_scope": "first Scheduler.OnGameReset with explicit fresh event pool and constant config",
+        "counter_backend": "decoded Int32 semantics; ObscuredInt implementation excluded"
+      }
+    },
+    "external_inputs": {
+      "host_initial_state": "initialized MOVE1 UID23",
+      "created_npc_uid": 24,
+      "decoded_hp_damage_modifier_value": 500,
+      "full_apply_modifier_and_hp_write": false,
+      "unity_allocation_awake_reset_controllers_pose_and_pool": "explicit prepared NPC v9 fixture; no client runtime",
+      "buff_reset_filters_infinite_lifetime_and_unique_runtime_override_keys": "explicit prepared NPC v9 fixture; no client runtime",
+      "buff_attribute_notifications_and_audio_create_buff": "explicit prepared NPC v9 fixture; no client runtime",
+      "initial_life_temp_life": [
+        3,
+        0
+      ],
+      "initial_counters": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "retained_recycle_delay_single": 0.6,
+      "ground_bound_controller_exists": true,
+      "mode_effects_global_absence_and_registration": "explicit prepared NPC v9 fixture; no client runtime",
+      "prepared_zero_checkpoint_route_and_stationary_movement": "explicit prepared NPC v9 fixture; no client runtime",
+      "host_full_factory_birth": false,
+      "npc_live_pose_and_gate_results": "explicit prepared NPC v9 fixture; no client runtime",
+      "fsm_admission_visuals_and_tween": "explicit prepared NPC v9 fixture; no client runtime",
+      "tick_dt_raw": 143165440,
+      "fresh_event_pool_first_reset": true,
+      "live_physics_hits": false
+    }
+  },
+  "scope": "selected_prepared_NPC_factory_buff_membership_damage_reaction_finish_recycle_and_scheduler",
+  "battle_ready": false,
+  "autonomous_route_ready": false,
+  "runtime_battle_validated": false,
+  "reward": null
+}

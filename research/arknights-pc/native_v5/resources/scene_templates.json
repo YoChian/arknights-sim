@@ -1,0 +1,677 @@
+{
+  "format": "native_v5_scene_templates_v1",
+  "source_pin": {
+    "path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\StreamingAssets\\AB\\Windows\\config\\buff_template_holder.ab",
+    "bytes": 2022247,
+    "sha256": "12419ad8d1ea9f670cca214e525240c691cdf3796b82acc8050698d66c202a37"
+  },
+  "source_cab": "CAB-7983df61b3ae63c96fb4e076fc3d80af",
+  "object_path_id": 6070581171229484677,
+  "object_raw_sha256": "8f2717ac371161a269f0a52c15f8c4887e150dd274635ef613723606cf5b4068",
+  "rule_subtree_pin": {
+    "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\rule_prefab_subtrees.json",
+    "bytes": 515651,
+    "sha256": "2f7912e5564e6f8608163f38f31071cf3a913f2fbc437c9725860ed77c6e532a"
+  },
+  "total_template_count": 8659,
+  "root_reference_paths": {
+    "enemy_shdopl_passive": [
+      "$.prefabs[1].rule_components[5].fields._buffs[0].templateKey"
+    ],
+    "enemy_shsdgo_projectile": [
+      "$.prefabs[2].rule_components[6].fields._buffs[0].templateKey"
+    ],
+    "enemy_shsdgo_pos": [
+      "$.prefabs[2].rule_components[10].fields._activeBuffs[0].templateKey"
+    ],
+    "empty": [
+      "$.prefabs[2].rule_components[12].fields._activeBuffs[0].templateKey",
+      "$.prefabs[2].rule_components[19].fields._buffs[0].templateKey",
+      "$.prefabs[4].rule_components[21].fields._buffs[0].templateKey",
+      "$.prefabs[4].rule_components[21].fields._buffs[1].templateKey",
+      "$.prefabs[4].rule_components[26].fields._buffs[0].templateKey",
+      "$.prefabs[4].rule_components[26].fields._buffs[1].templateKey",
+      "$.prefabs[4].rule_components[27].fields._buffs[0].templateKey",
+      "$.prefabs[5].rule_components[3].fields._buffs[0].templateKey",
+      "$.prefabs[7].rule_components[3].fields._activeBuffs[0].templateKey",
+      "$.prefabs[7].rule_components[6].fields._buffs[0].templateKey",
+      "$.prefabs[8].rule_components[4].fields._buffs[2].templateKey",
+      "$.prefabs[8].rule_components[11].fields._buffs[2].templateKey",
+      "$.prefabs[9].rule_components[4].fields._buffs[0].templateKey",
+      "$.prefabs[11].rule_components[2].fields._buffs[0].templateKey",
+      "$.prefabs[12].rule_components[5].fields._buffs[0].templateKey",
+      "$.prefabs[15].rule_components[5].fields._buffs[0].templateKey"
+    ],
+    "enemy_shsdgo_skill_end": [
+      "$.prefabs[2].rule_components[13].fields._buffs[0].templateKey"
+    ],
+    "enemy_shsdgo_pos_start": [
+      "$.prefabs[2].rule_components[20].fields._buffs[0].templateKey"
+    ],
+    "enemy_shezlc_log": [
+      "$.prefabs[3].rule_components[4].fields._buffs[0].templateKey"
+    ],
+    "enemy_duckmi_t": [
+      "$.prefabs[5].rule_components[7].fields._buffs[0].templateKey"
+    ],
+    "log_killed": [
+      "$.prefabs[5].rule_components[7].fields._buffs[1].templateKey",
+      "$.prefabs[6].rule_components[7].fields._buffs[0].templateKey",
+      "$.prefabs[7].rule_components[8].fields._buffs[0].templateKey",
+      "$.prefabs[8].rule_components[20].fields._buffs[0].templateKey"
+    ],
+    "skzjxd_a[face_listener]": [
+      "$.prefabs[8].rule_components[4].fields._buffs[0].templateKey"
+    ],
+    "skzjxd_a[direction_listener]": [
+      "$.prefabs[8].rule_components[4].fields._buffs[1].templateKey",
+      "$.prefabs[8].rule_components[11].fields._buffs[1].templateKey"
+    ],
+    "skzjxd_t[show_trigger]": [
+      "$.prefabs[8].rule_components[9].fields._buffs[0].templateKey"
+    ],
+    "skzjxd_a[back_listener]": [
+      "$.prefabs[8].rule_components[11].fields._buffs[0].templateKey"
+    ],
+    "skzjxd_t[shield]": [
+      "$.prefabs[8].rule_components[17].fields._buffs[0].templateKey"
+    ],
+    "upeople_t": [
+      "$.prefabs[9].rule_components[6].fields._buffs[0].templateKey"
+    ],
+    "upeople_t_1": [
+      "$.prefabs[9].rule_components[6].fields._buffs[1].templateKey"
+    ],
+    "ore_s": [
+      "$.prefabs[10].rule_components[5].fields._activeBuffs[0].templateKey"
+    ],
+    "ore_buff": [
+      "$.prefabs[10].rule_components[5].fields._activeBuffs[1].templateKey"
+    ],
+    "trap_shnbox_t[log_killed]": [
+      "$.prefabs[13].rule_components[4].fields._buffs[0].templateKey"
+    ],
+    "trap_shrbox_t[logkilled]": [
+      "$.prefabs[14].rule_components[4].fields._buffs[0].templateKey"
+    ],
+    "trap_rarebox_t[inverse_damage]": [
+      "$.prefabs[14].rule_components[5].fields._buffs[0].templateKey"
+    ]
+  },
+  "templates": {
+    "trap_rarebox_t[inverse_damage]": {
+      "raw": {
+        "templateKey": "trap_rarebox_t[inverse_damage]",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 10,
+              "value": {
+                "SerializedState": "[{\"_source\":\"BUFF_OWNER\",\"_target\":\"MODIFIER_SOURCE\",\"_targetOptions\":{\"targetSide\":\"ENEMY\",\"targetMotion\":\"ALL\",\"targetCategory\":\"NONE,DEFAULT\",\"enableAdvancedOptions\":false,\"ignoreTargetFree\":false,\"ignoreAllyTargetFree\":false,\"ignoreHealFree\":false,\"ignoreMotionMode\":false,\"ignoreTargetSide\":false,\"excludeSomeAbnormalFlags\":false,\"containSomeAbnormalFlags\":false,\"excludeAbnormalFlag\":\"STUNNED\",\"containAbnormalFlag\":\"STUNNED\",\"purposeMask\":\"NONE\",\"professionMask\":\"NONE\",\"checkUnitType\":false,\"unitTypeMask\":\"NONE\",\"onlyIgnoreSomeOfTargetFreeCase\":false,\"abnormalFlag\":\"STUNNED\",\"abnormalCombo\":\"SLEEPING\"},\"$type\":\"Torappu.Battle.Action.Nodes+VertifyTarget\"},{\"_buff\":{\"attributes\":{\"abnormalFlags\":[],\"abnormalImmunes\":[],\"abnormalAntis\":[],\"abnormalCombos\":[],\"abnormalComboImmunes\":[],\"attributeModifiers\":[]},\"buffKey\":\"rarebox_t[effect]\",\"loadFromDB\":false,\"isDurableBuff\":false,\"isDamageMissable\":false,\"isSilenceable\":false,\"isStunnable\":false,\"isFreezable\":false,\"isLevitatable\":false,\"isGroundBoundable\":false,\"statusResistable\":\"AUTOMATIC\",\"templateKey\":\"empty\",\"disableOverride\":false,\"overrideKey\":null,\"overrideType\":\"DEFAULT\",\"maxStackCnt\":1,\"refreshRemainingTimeWhenStackMax\":false,\"clearAllStackCntWhenTimeUp\":false,\"maxValidStackCnt\":-1,\"independentCharacterSource\":false,\"overrideEffectKey\":\"trap_rarebox_counter\",\"overrideOnEventPriority\":false,\"onEventPriority\":\"DEFAULT\",\"audioSignal\":null,\"lifeTimeType\":\"LIMITED\",\"takeSnapshotWhenExtend\":false,\"durationKey\":null,\"remainingTimeKey\":null,\"lifeTime\":0.5,\"triggerLifeType\":\"IMMEDIATELY\",\"triggerCnt\":0,\"triggerInterval\":-1.0,\"waitFirstTriggerInterval\":true,\"firstTriggerInterval\":-1.0,\"priority\":-1,\"priorityBBKeys\":[],\"stripBlackboardParamsWithBuffKey\":false,\"blackboard\":[],\"enableInitDirectionFromSource\":false},\"_buffOwner\":\"BUFF_SOURCE\",\"_useSpecialBuffSource\":false,\"_specialBuffSource\":\"BUFF_SOURCE\",\"_isDerivedBuff\":true,\"_finishDerivedBuffIfParentFinish\":true,\"_inherateSourceProjectileFromParentBuff\":false,\"_hookEffectKeyFromSourceProjectile\":false,\"$type\":\"Torappu.Battle.Action.Nodes+CreateBuff\"},{\"_damageType\":\"PURE\",\"_damageTypeKey\":\"\",\"_sideMask\":\"ENEMY\",\"_attackType\":\"NORMAL\",\"_hasSource\":false,\"_skipSourceEvent\":false,\"_sourceType\":\"MODIFIER_TARGET\",\"_skipModifierEvent\":false,\"_fixValue\":false,\"_damageValueKey\":\"value\",\"_filterModifierCancelled\":false,\"$type\":\"Torappu.Battle.Action.Nodes+InverseDamage\"},{\"_buff\":{\"attributes\":{\"abnormalFlags\":[],\"abnormalImmunes\":[],\"abnormalAntis\":[],\"abnormalCombos\":[],\"abnormalComboImmunes\":[],\"attributeModifiers\":[]},\"buffKey\":\"rarebox_hit[effect]\",\"loadFromDB\":false,\"isDurableBuff\":false,\"isDamageMissable\":false,\"isSilenceable\":false,\"isStunnable\":false,\"isFreezable\":false,\"isLevitatable\":false,\"isGroundBoundable\":false,\"statusResistable\":\"AUTOMATIC\",\"templateKey\":\"empty\",\"disableOverride\":false,\"overrideKey\":null,\"overrideType\":\"DEFAULT\",\"maxStackCnt\":1,\"refreshRemainingTimeWhenStackMax\":false,\"clearAllStackCntWhenTimeUp\":false,\"maxValidStackCnt\":-1,\"independentCharacterSource\":false,\"overrideEffectKey\":\"trap_rarebox_counter_hit\",\"overrideOnEventPriority\":false,\"onEventPriority\":\"DEFAULT\",\"audioSignal\":\"trap_rarebox_hit\",\"lifeTimeType\":\"LIMITED\",\"takeSnapshotWhenExtend\":false,\"durationKey\":null,\"remainingTimeKey\":null,\"lifeTime\":0.5,\"triggerLifeType\":\"IMMEDIATELY\",\"triggerCnt\":0,\"triggerInterval\":-1.0,\"waitFirstTriggerInterval\":true,\"firstTriggerInterval\":-1.0,\"priority\":-1,\"priorityBBKeys\":[],\"stripBlackboardParamsWithBuffKey\":false,\"blackboard\":[],\"enableInitDirectionFromSource\":false},\"_buffOwner\":\"MODIFIER_SOURCE\",\"_useSpecialBuffSource\":false,\"_specialBuffSource\":\"BUFF_SOURCE\",\"_isDerivedBuff\":true,\"_finishDerivedBuffIfParentFinish\":true,\"_inherateSourceProjectileFromParentBuff\":false,\"_hookEffectKeyFromSourceProjectile\":false,\"$type\":\"Torappu.Battle.Action.Nodes+CreateBuff\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "trap_rarebox_t[inverse_damage]",
+          "path": "$.templateKey"
+        },
+        {
+          "key": "empty",
+          "path": "$.eventToActions._items[0].value.SerializedState(json)[1]._buff.templateKey"
+        },
+        {
+          "key": "empty",
+          "path": "$.eventToActions._items[0].value.SerializedState(json)[3]._buff.templateKey"
+        }
+      ]
+    },
+    "empty": {
+      "raw": {
+        "templateKey": "empty",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": []
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "empty",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "trap_shrbox_t[logkilled]": {
+      "raw": {
+        "templateKey": "trap_shrbox_t[logkilled]",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 3,
+              "value": {
+                "SerializedState": "[{\"_logType\":\"SIMPLE\",\"_key\":\"trap_322_shrbox\",\"_loadKeyFromBlackBoard\":false,\"_countInHostIfToken\":false,\"_additionValue\":1,\"_additionValueKey\":\"\",\"_attributeType\":\"NONE\",\"_target\":\"BUFF_OWNER\",\"$type\":\"Torappu.Battle.Action.Nodes+LogExtraBattleInfo\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "trap_shrbox_t[logkilled]",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "trap_shnbox_t[log_killed]": {
+      "raw": {
+        "templateKey": "trap_shnbox_t[log_killed]",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 3,
+              "value": {
+                "SerializedState": "[{\"_logType\":\"SIMPLE\",\"_key\":\"trap_321_shnbox\",\"_loadKeyFromBlackBoard\":false,\"_countInHostIfToken\":false,\"_additionValue\":1,\"_additionValueKey\":\"\",\"_attributeType\":\"NONE\",\"_target\":\"BUFF_OWNER\",\"$type\":\"Torappu.Battle.Action.Nodes+LogExtraBattleInfo\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "trap_shnbox_t[log_killed]",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "ore_buff": {
+      "raw": {
+        "templateKey": "ore_buff",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 1,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_OWNER\",\"_buffKeys\":[\"ore_listener\"],\"isAND\":true,\"_loadFromBlackboard\":false,\"_checkBuffSource\":false,\"_buffSourceType\":\"BUFF_SOURCE\",\"_checkSourceHost\":false,\"$type\":\"Torappu.Battle.Action.Nodes+CheckContainsBuff\"},{\"_modeIndex\":0,\"_loadModeFromBlackboard\":true,\"_restoreDefault\":false,\"_restartFSM\":true,\"_targetType\":\"TARGET\",\"$type\":\"Torappu.Battle.Action.Nodes+SwitchMode\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "ore_buff",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "ore_s": {
+      "raw": {
+        "templateKey": "ore_s",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 1,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_OWNER\",\"_buffKeys\":[\"ore_immune\"],\"isAND\":true,\"_loadFromBlackboard\":false,\"_checkBuffSource\":false,\"_buffSourceType\":\"BUFF_SOURCE\",\"_checkSourceHost\":false,\"$type\":\"Torappu.Battle.Action.Nodes+CheckContainsBuff\"},{\"$type\":\"Torappu.Battle.Action.Nodes+IfNot\"},{\"_damageType\":\"PURE\",\"_damageKey\":\"value\",\"_atkScaleKey\":\"atk_scale\",\"_ignoreForSp\":false,\"_attackType\":\"NONE\",\"_skipModifierEvent\":false,\"_considerUnhurtable\":false,\"_noSourceDamage\":false,\"_targetType\":\"TARGET\",\"_assignRealDamageToBB\":false,\"_assignFinalDamageToBB\":false,\"_multiplierByKey\":false,\"_multiplierKey\":\"cnt\",\"_damageSourceType\":\"SOURCE\",\"_damageTargetType\":\"TARGET\",\"_triggerOnCalculateDamage\":false,\"_isEnvDamage\":false,\"_ignoreCancelReasonMask\":\"NONE\",\"_forceDisplayDamageNum\":false,\"_undeadable\":false,\"_modifierKey\":\"\",\"_devideDamageFromAbilityCnt\":false,\"$type\":\"Torappu.Battle.Action.Nodes+FixedValueDamage\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "ore_s",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "upeople_t_1": {
+      "raw": {
+        "templateKey": "upeople_t_1",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 3,
+              "value": {
+                "SerializedState": "[{\"_buff\":{\"attributes\":{\"abnormalFlags\":[],\"abnormalImmunes\":[],\"abnormalAntis\":null,\"abnormalCombos\":[],\"abnormalComboImmunes\":[],\"attributeModifiers\":[]},\"buffKey\":\"upeople_t_1[Audio]\",\"loadFromDB\":false,\"isDurableBuff\":false,\"isDamageMissable\":false,\"isSilenceable\":false,\"isStunnable\":false,\"isFreezable\":false,\"isLevitatable\":false,\"isGroundBoundable\":false,\"statusResistable\":\"AUTOMATIC\",\"templateKey\":\"empty\",\"disableOverride\":false,\"overrideKey\":null,\"overrideType\":\"DEFAULT\",\"maxStackCnt\":1,\"refreshRemainingTimeWhenStackMax\":false,\"clearAllStackCntWhenTimeUp\":false,\"maxValidStackCnt\":-1,\"independentCharacterSource\":false,\"overrideEffectKey\":null,\"overrideOnEventPriority\":false,\"onEventPriority\":\"DEFAULT\",\"audioSignal\":\"upeople_t_1[Audio]\",\"lifeTimeType\":\"IMMEDIATELY\",\"takeSnapshotWhenExtend\":false,\"durationKey\":null,\"remainingTimeKey\":null,\"lifeTime\":0.0,\"triggerLifeType\":\"IMMEDIATELY\",\"triggerCnt\":0,\"triggerInterval\":-1.0,\"waitFirstTriggerInterval\":true,\"firstTriggerInterval\":-1.0,\"priority\":-1,\"priorityBBKeys\":[],\"stripBlackboardParamsWithBuffKey\":false,\"blackboard\":[],\"enableInitDirectionFromSource\":false},\"_buffOwner\":\"BUFF_OWNER\",\"_useSpecialBuffSource\":false,\"_specialBuffSource\":\"BUFF_SOURCE\",\"_isDerivedBuff\":false,\"_finishDerivedBuffIfParentFinish\":false,\"_inherateSourceProjectileFromParentBuff\":false,\"_hookEffectKeyFromSourceProjectile\":false,\"$type\":\"Torappu.Battle.Action.Nodes+CreateBuff\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "upeople_t_1",
+          "path": "$.templateKey"
+        },
+        {
+          "key": "empty",
+          "path": "$.eventToActions._items[0].value.SerializedState(json)[0]._buff.templateKey"
+        }
+      ]
+    },
+    "upeople_t": {
+      "raw": {
+        "templateKey": "upeople_t",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 3,
+              "value": {
+                "SerializedState": "[{\"_sourceType\":\"BUFF_OWNER\",\"_isSub\":false,\"_blackboardKey\":\"value\",\"_isReachExit\":false,\"$type\":\"Torappu.Battle.Action.Nodes+ModifyLifePoint\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "upeople_t",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "skzjxd_t[shield]": {
+      "raw": {
+        "templateKey": "skzjxd_t[shield]",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 10,
+              "value": {
+                "SerializedState": "[{\"_source\":\"BUFF_OWNER\",\"_target\":\"MODIFIER_SOURCE\",\"_faceType\":\"FRONT\",\"_targetColOffset\":0.0,\"_faceIfSameCol\":\"NONE\",\"$type\":\"Torappu.Battle.Action.Nodes+CheckIfSourceGridPosFaceTargetGridPos\"},{\"_filterDamageType\":true,\"_damageMask\":\"PHYSICAL_AND_MAGICAL\",\"_filterApplyWay\":false,\"_applyWayFilter\":\"NONE\",\"_filterModifierKey\":false,\"_modifierKey\":\"\",\"_isOneMinus\":true,\"_isStackable\":false,\"_isValidStackCnt\":false,\"_cachedDeltaValueToBBKey\":\"\",\"_customKey\":\"\",\"$type\":\"Torappu.Battle.Action.Nodes+DamageScale\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "skzjxd_t[shield]",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "skzjxd_a[back_listener]": {
+      "raw": {
+        "templateKey": "skzjxd_a[back_listener]",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 2,
+              "value": {
+                "SerializedState": "[{\"_target\":\"BUFF_OWNER\",\"_checkType\":\"SAME\",\"$type\":\"Torappu.Battle.Action.Nodes+CheckEnemyFaceAndMoveDir\"},{\"_modeIndex\":0,\"_loadModeFromBlackboard\":false,\"_restoreDefault\":false,\"_restartFSM\":true,\"_targetType\":\"TARGET\",\"$type\":\"Torappu.Battle.Action.Nodes+SwitchMode\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "skzjxd_a[back_listener]",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "skzjxd_t[show_trigger]": {
+      "raw": {
+        "templateKey": "skzjxd_t[show_trigger]",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 2,
+              "value": {
+                "SerializedState": "[{\"_skillName\":\"Show\",\"_checkSkillActive\":true,\"_checkSkillReady\":false,\"_ownerType\":\"BUFF_OWNER\",\"_targetType\":\"BUFF_OWNER\",\"_interruptCurAbility\":true,\"_interruptCurAbilityUnlessItIsExpectedAbility\":false,\"_assignCombatAbility\":false,\"_forceFindTargetBySkillSelector\":false,\"_clearPalsyingBuffBeforeTrigger\":true,\"_tryCastDirectlyWhenNoTarget\":false,\"$type\":\"Torappu.Battle.Action.Nodes+TriggerEnemySkill\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "skzjxd_t[show_trigger]",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "skzjxd_a[direction_listener]": {
+      "raw": {
+        "templateKey": "skzjxd_a[direction_listener]",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 2,
+              "value": {
+                "SerializedState": "[{\"_ownerType\":\"BUFF_OWNER\",\"_targetOptions\":{\"targetSide\":\"ENEMY\",\"targetMotion\":\"ALL\",\"targetCategory\":\"NONE,DEFAULT\",\"enableAdvancedOptions\":true,\"ignoreTargetFree\":true,\"ignoreAllyTargetFree\":false,\"ignoreHealFree\":false,\"ignoreMotionMode\":false,\"ignoreTargetSide\":false,\"excludeSomeAbnormalFlags\":false,\"containSomeAbnormalFlags\":false,\"excludeAbnormalFlag\":\"STUNNED\",\"containAbnormalFlag\":\"STUNNED\",\"purposeMask\":\"NONE\",\"professionMask\":\"NONE,WARRIOR,SNIPER,TANK,MEDIC,SUPPORT,CASTER,SPECIAL,PIONEER\",\"checkUnitType\":false,\"unitTypeMask\":\"NONE\",\"onlyIgnoreSomeOfTargetFreeCase\":false,\"abnormalFlag\":\"STUNNED\",\"abnormalCombo\":\"SLEEPING\"},\"$type\":\"Torappu.Battle.Action.Nodes+FaceToLOrRViaMoreTargets\"}]",
+                "SerializedObjectReferences": []
+              }
+            },
+            {
+              "key": 0,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_OWNER\",\"_disabled\":true,\"$type\":\"Torappu.Battle.Action.Nodes+DisableEnemySwitchFaceByMove\"}]",
+                "SerializedObjectReferences": []
+              }
+            },
+            {
+              "key": 1,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_OWNER\",\"_disabled\":true,\"$type\":\"Torappu.Battle.Action.Nodes+DisableEnemySwitchFaceByMove\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "skzjxd_a[direction_listener]",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "skzjxd_a[face_listener]": {
+      "raw": {
+        "templateKey": "skzjxd_a[face_listener]",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 2,
+              "value": {
+                "SerializedState": "[{\"_target\":\"BUFF_OWNER\",\"_checkType\":\"OPPOSITE\",\"$type\":\"Torappu.Battle.Action.Nodes+CheckEnemyFaceAndMoveDir\"},{\"_modeIndex\":1,\"_loadModeFromBlackboard\":false,\"_restoreDefault\":false,\"_restartFSM\":true,\"_targetType\":\"TARGET\",\"$type\":\"Torappu.Battle.Action.Nodes+SwitchMode\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "skzjxd_a[face_listener]",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "log_killed": {
+      "raw": {
+        "templateKey": "log_killed",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 3,
+              "value": {
+                "SerializedState": "[{\"_logType\":\"SIMPLE\",\"_key\":\"killed\",\"_loadKeyFromBlackBoard\":true,\"_countInHostIfToken\":false,\"_additionValue\":1,\"_additionValueKey\":\"\",\"_attributeType\":\"NONE\",\"_target\":\"BUFF_OWNER\",\"$type\":\"Torappu.Battle.Action.Nodes+LogExtraBattleInfo\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "log_killed",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "enemy_duckmi_t": {
+      "raw": {
+        "templateKey": "enemy_duckmi_t",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 10,
+              "value": {
+                "SerializedState": "[{\"_modeIndex\":1,\"_loadModeFromBlackboard\":false,\"_restoreDefault\":false,\"_restartFSM\":true,\"_targetType\":\"TARGET\",\"$type\":\"Torappu.Battle.Action.Nodes+SwitchMode\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "enemy_duckmi_t",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "enemy_shezlc_log": {
+      "raw": {
+        "templateKey": "enemy_shezlc_log",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 3,
+              "value": {
+                "SerializedState": "[{\"_logType\":\"SIMPLE\",\"_key\":\"enemy_shezlc_kill\",\"_loadKeyFromBlackBoard\":false,\"_countInHostIfToken\":false,\"_additionValue\":1,\"_additionValueKey\":\"\",\"_attributeType\":\"NONE\",\"_target\":\"BUFF_OWNER\",\"$type\":\"Torappu.Battle.Action.Nodes+LogExtraBattleInfo\"}]",
+                "SerializedObjectReferences": []
+              }
+            },
+            {
+              "key": 34,
+              "value": {
+                "SerializedState": "[{\"_logType\":\"SIMPLE\",\"_key\":\"enemy_shezlc_exit\",\"_loadKeyFromBlackBoard\":false,\"_countInHostIfToken\":false,\"_additionValue\":1,\"_additionValueKey\":\"\",\"_attributeType\":\"NONE\",\"_target\":\"BUFF_OWNER\",\"$type\":\"Torappu.Battle.Action.Nodes+LogExtraBattleInfo\"},{\"_toastTypeRL06\":\"GOLD_STEAL\",\"_lastTime\":3.0,\"$type\":\"Torappu.Battle.Action.Nodes+RoguelikeShowToastRL06\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "enemy_shezlc_log",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "enemy_shsdgo_pos_start": {
+      "raw": {
+        "templateKey": "enemy_shsdgo_pos_start",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 0,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_SOURCE\",\"_assignTargetTokenOrHost\":false,\"_colKey\":\"col\",\"_rowKey\":\"row\",\"_assignAsString\":false,\"_bbKey\":null,\"$type\":\"Torappu.Battle.Action.Nodes+AssignRootTileToBB\"},{\"_blackboardKeys\":\"row\",\"_fromBlackboardKeys\":\"row\",\"fromAbilityBlackBoard\":false,\"_fromBuffBlackboard\":false,\"_buffKey\":null,\"_value\":0.0,\"_useSnapshotAbility\":false,\"_useOtherAbility\":true,\"_abilityName\":\"Jump\",\"_abilityOwnerType\":\"BUFF_SOURCE\",\"_isUpdateSelector\":false,\"_assignString\":false,\"_stringValue\":null,\"$type\":\"Torappu.Battle.Action.Nodes+ModifyAbilityBlackboard\"},{\"_blackboardKeys\":\"col\",\"_fromBlackboardKeys\":\"col\",\"fromAbilityBlackBoard\":false,\"_fromBuffBlackboard\":false,\"_buffKey\":null,\"_value\":0.0,\"_useSnapshotAbility\":false,\"_useOtherAbility\":true,\"_abilityName\":\"Jump\",\"_abilityOwnerType\":\"BUFF_SOURCE\",\"_isUpdateSelector\":false,\"_assignString\":false,\"_stringValue\":null,\"$type\":\"Torappu.Battle.Action.Nodes+ModifyAbilityBlackboard\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "enemy_shsdgo_pos_start",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "enemy_shsdgo_skill_end": {
+      "raw": {
+        "templateKey": "enemy_shsdgo_skill_end",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 0,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_OWNER\",\"$type\":\"Torappu.Battle.Action.Nodes+FinishManagedProjectiles\"},{\"_buffKey\":\"enemy_shsdgo_pos\",\"_loadFromBlackboard\":false,\"_decCntIfStack\":false,\"_updateOverrideMap\":true,\"_targetType\":\"BUFF_OWNER\",\"_checkBuffSource\":false,\"_sourceType\":\"BUFF_SOURCE\",\"_alsoClearNullSource\":false,\"_finishHostBuff\":false,\"_excludeThisBuff\":false,\"_decCntKey\":null,\"_decCnt\":1,\"$type\":\"Torappu.Battle.Action.Nodes+FinishBuffsById\"},{\"_targetType\":\"BUFF_OWNER\",\"_useTargetHost\":false,\"_abilityName\":\"Jump\",\"_assignedBlackboardKey\":\"col\",\"_blackboardKeyInAbility\":\"col\",\"$type\":\"Torappu.Battle.Action.Nodes+AssignBuffBlackboardFromAbility\"},{\"_targetType\":\"BUFF_OWNER\",\"_useTargetHost\":false,\"_abilityName\":\"Jump\",\"_assignedBlackboardKey\":\"row\",\"_blackboardKeyInAbility\":\"row\",\"$type\":\"Torappu.Battle.Action.Nodes+AssignBuffBlackboardFromAbility\"},{\"_targetType\":\"BUFF_OWNER\",\"_colKey\":\"col\",\"_rowKey\":\"row\",\"_useSnapshotTile\":false,\"_disableCurrentStillPull\":true,\"_randomOffset\":-1.0,\"_randomOffsetKey\":\"\",\"_randomOffsetInnerRange\":-1.0,\"_findNearestPassableTile\":false,\"_releaseFromBlocker\":false,\"_checkTeleportImmune\":false,\"$type\":\"Torappu.Battle.Action.Nodes+ForceSetToTilePosition\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "enemy_shsdgo_skill_end",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "enemy_shsdgo_pos": {
+      "raw": {
+        "templateKey": "enemy_shsdgo_pos",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 0,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_SOURCE\",\"_assignTargetTokenOrHost\":false,\"_colKey\":\"col\",\"_rowKey\":\"row\",\"_assignAsString\":false,\"_bbKey\":null,\"$type\":\"Torappu.Battle.Action.Nodes+AssignRootTileToBB\"},{\"_blackboardKeys\":\"row\",\"_fromBlackboardKeys\":\"row\",\"fromAbilityBlackBoard\":false,\"_fromBuffBlackboard\":false,\"_buffKey\":null,\"_value\":0.0,\"_useSnapshotAbility\":false,\"_useOtherAbility\":true,\"_abilityName\":\"Jump\",\"_abilityOwnerType\":\"BUFF_SOURCE\",\"_isUpdateSelector\":false,\"_assignString\":false,\"_stringValue\":null,\"$type\":\"Torappu.Battle.Action.Nodes+ModifyAbilityBlackboard\"},{\"_blackboardKeys\":\"col\",\"_fromBlackboardKeys\":\"col\",\"fromAbilityBlackBoard\":false,\"_fromBuffBlackboard\":false,\"_buffKey\":null,\"_value\":0.0,\"_useSnapshotAbility\":false,\"_useOtherAbility\":true,\"_abilityName\":\"Jump\",\"_abilityOwnerType\":\"BUFF_SOURCE\",\"_isUpdateSelector\":false,\"_assignString\":false,\"_stringValue\":null,\"$type\":\"Torappu.Battle.Action.Nodes+ModifyAbilityBlackboard\"},{\"_mountPoint\":\"FOOT\",\"_emitOnRootTile\":false,\"_ev\":\"ON_HIT_OBJECT\",\"_actions\":null,\"_overwriteActions\":false,\"_buffDataList\":[],\"_overwriteBuffs\":false,\"_sourceType\":\"BUFF_SOURCE\",\"_targetType\":\"BUFF_SOURCE\",\"_targetPosFromBB\":false,\"_projectileKey\":\"projectile_enemy_shsdgo\",\"_useSourceAsProjectileSource\":false,\"_useProjectileAsTarget\":false,\"_useTargetAsStartPoint\":false,\"_useSourceProjectileAsStartPoint\":false,\"_extraBlackboard\":false,\"_overwriteBlackboard\":false,\"_useTileAsTarget\":false,\"_cacheAtkToActions\":false,\"_useSnapshotAbilityWhenFromBuff\":false,\"_useTargetRootTile\":false,\"_useAbilityTileSelector\":false,\"_abilityName\":\"\",\"_useAbilityFromOther\":false,\"_abilityOwner\":\"SOURCE\",\"_dealHitTargetAfterCreate\":false,\"_forceDealHitTarget\":true,\"$type\":\"Torappu.Battle.Action.Nodes+EmitProjectile\"},{\"_targetType\":\"BUFF_SOURCE\",\"_sourceType\":\"BUFF_OWNER\",\"_disableCurrentStillPull\":true,\"_releaseFromBlocker\":true,\"_reassignRoute\":false,\"$type\":\"Torappu.Battle.Action.Nodes+ForceSetToSourcePosition\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "enemy_shsdgo_pos",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "enemy_shsdgo_projectile": {
+      "raw": {
+        "templateKey": "enemy_shsdgo_projectile",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 1,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_OWNER\",\"$type\":\"Torappu.Battle.Action.Nodes+FinishManagedProjectiles\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "enemy_shsdgo_projectile",
+          "path": "$.templateKey"
+        }
+      ]
+    },
+    "enemy_shdopl_passive": {
+      "raw": {
+        "templateKey": "enemy_shdopl_passive",
+        "effectKey": "",
+        "onEventPriority": 0,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 0,
+              "value": {
+                "SerializedState": "[{\"_source\":\"BUFF_OWNER\",\"_enemyKey\":null,\"_summonCount\":1,\"_delayTime\":0.0,\"_managedByScheduler\":true,\"_dontBlockWave\":true,\"_trySummonOutsideWhenInObstacle\":false,\"_randomOffsetBound\":0.0,\"_ignoreOffset\":true,\"_passableMask\":\"NONE\",\"_onlySummonOneInTheSamePlace\":false,\"_useOffsetInBB\":false,\"_offsetXKey\":null,\"_offsetYKey\":null,\"_offset\":{\"x\":0.0,\"y\":0.0},\"_useLocalUnharmfulFlag\":true,\"_unharmful\":true,\"_useMapPosition\":false,\"_spawnOnHostRootTile\":true,\"_useTargetPosition\":false,\"_targetType\":\"TARGET\",\"_useRandomDelay\":false,\"_randomDelayRange\":0.5,\"_stopSummonIfHostDead\":false,\"_useOffsetForEach\":false,\"_addNoSourceBuffImmediately\":false,\"_noSourceBuff\":{\"attributes\":{\"abnormalFlags\":null,\"abnormalImmunes\":null,\"abnormalAntis\":null,\"abnormalCombos\":null,\"abnormalComboImmunes\":null,\"attributeModifiers\":null},\"buffKey\":null,\"loadFromDB\":false,\"isDurableBuff\":false,\"isDamageMissable\":false,\"isSilenceable\":false,\"isStunnable\":false,\"isFreezable\":false,\"isLevitatable\":false,\"isGroundBoundable\":false,\"statusResistable\":\"AUTOMATIC\",\"templateKey\":\"empty\",\"disableOverride\":false,\"overrideKey\":null,\"overrideType\":\"DEFAULT\",\"maxStackCnt\":1,\"refreshRemainingTimeWhenStackMax\":false,\"clearAllStackCntWhenTimeUp\":false,\"maxValidStackCnt\":-1,\"independentCharacterSource\":false,\"overrideEffectKey\":null,\"overrideOnEventPriority\":false,\"onEventPriority\":\"DEFAULT\",\"audioSignal\":null,\"lifeTimeType\":\"LIMITED\",\"takeSnapshotWhenExtend\":false,\"durationKey\":null,\"remainingTimeKey\":null,\"lifeTime\":0.0,\"triggerLifeType\":\"IMMEDIATELY\",\"triggerCnt\":0,\"triggerInterval\":-1.0,\"waitFirstTriggerInterval\":true,\"firstTriggerInterval\":-1.0,\"priority\":-1,\"priorityBBKeys\":[],\"stripBlackboardParamsWithBuffKey\":false,\"blackboard\":[],\"enableInitDirectionFromSource\":false},\"_checkMotionMode\":\"ALL\",\"_buffSource\":\"BUFF_OWNER\",\"_additionalBuff\":[{\"attributes\":{\"abnormalFlags\":null,\"abnormalImmunes\":null,\"abnormalAntis\":null,\"abnormalCombos\":null,\"abnormalComboImmunes\":null,\"attributeModifiers\":null},\"buffKey\":\"enemy_shdopl_finish\",\"loadFromDB\":false,\"isDurableBuff\":false,\"isDamageMissable\":false,\"isSilenceable\":false,\"isStunnable\":false,\"isFreezable\":false,\"isLevitatable\":false,\"isGroundBoundable\":false,\"statusResistable\":\"AUTOMATIC\",\"templateKey\":\"enemy_shdopl_finish\",\"disableOverride\":false,\"overrideKey\":null,\"overrideType\":\"DEFAULT\",\"maxStackCnt\":1,\"refreshRemainingTimeWhenStackMax\":false,\"clearAllStackCntWhenTimeUp\":false,\"maxValidStackCnt\":-1,\"independentCharacterSource\":false,\"overrideEffectKey\":\"enemy_shdopl_skill_01_Buff\",\"overrideOnEventPriority\":false,\"onEventPriority\":\"DEFAULT\",\"audioSignal\":null,\"lifeTimeType\":\"INFINITY\",\"takeSnapshotWhenExtend\":false,\"durationKey\":null,\"remainingTimeKey\":null,\"lifeTime\":0.0,\"triggerLifeType\":\"IMMEDIATELY\",\"triggerCnt\":0,\"triggerInterval\":-1.0,\"waitFirstTriggerInterval\":true,\"firstTriggerInterval\":-1.0,\"priority\":-1,\"priorityBBKeys\":[],\"stripBlackboardParamsWithBuffKey\":false,\"blackboard\":[],\"enableInitDirectionFromSource\":false}],\"_skipCheckPoint\":false,\"$type\":\"Torappu.Battle.Action.Nodes+SummonEnemiesFollowMyRouteWithBuff\"},{\"_targetType\":\"BUFF_OWNER\",\"_isDisappear\":true,\"$type\":\"Torappu.Battle.Action.Nodes+SetDisappear\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "enemy_shdopl_passive",
+          "path": "$.templateKey"
+        },
+        {
+          "key": "empty",
+          "path": "$.eventToActions._items[0].value.SerializedState(json)[0]._noSourceBuff.templateKey"
+        },
+        {
+          "key": "enemy_shdopl_finish",
+          "path": "$.eventToActions._items[0].value.SerializedState(json)[0]._additionalBuff[0].templateKey"
+        }
+      ]
+    },
+    "enemy_shdopl_finish": {
+      "raw": {
+        "templateKey": "enemy_shdopl_finish",
+        "effectKey": "",
+        "onEventPriority": 2000,
+        "eventToActions": {
+          "_items": [
+            {
+              "key": 4,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_OWNER\",\"_anotherBuff\":false,\"_buffKey\":null,\"_blackboardKey\":\"lock\",\"_blackboardKeyFromBb\":null,\"_valueToCompare\":1,\"_anotherKeyToCompare\":null,\"_condType\":\"GE\",\"$type\":\"Torappu.Battle.Action.Nodes+FilterByBlackboardValue\"},{\"$type\":\"Torappu.Battle.Action.Nodes+IfNot\"},{\"_targetType\":\"BUFF_SOURCE\",\"_sourceType\":\"BUFF_OWNER\",\"_disableCurrentStillPull\":true,\"_releaseFromBlocker\":true,\"_reassignRoute\":true,\"$type\":\"Torappu.Battle.Action.Nodes+ForceSetToSourcePosition\"},{\"_targetType\":\"BUFF_SOURCE\",\"_isDisappear\":false,\"$type\":\"Torappu.Battle.Action.Nodes+SetDisappear\"},{\"_buffKey\":\"enemy_shdopl_passive\",\"_loadFromBlackboard\":false,\"_decCntIfStack\":false,\"_updateOverrideMap\":true,\"_targetType\":\"BUFF_SOURCE\",\"_checkBuffSource\":false,\"_sourceType\":\"BUFF_SOURCE\",\"_alsoClearNullSource\":false,\"_finishHostBuff\":false,\"_excludeThisBuff\":false,\"_decCntKey\":null,\"_decCnt\":1,\"$type\":\"Torappu.Battle.Action.Nodes+FinishBuffsById\"}]",
+                "SerializedObjectReferences": []
+              }
+            },
+            {
+              "key": 10,
+              "value": {
+                "SerializedState": "[{\"_targetType\":\"BUFF_SOURCE\",\"_sourceType\":\"BUFF_OWNER\",\"_disableCurrentStillPull\":true,\"_releaseFromBlocker\":true,\"_reassignRoute\":true,\"$type\":\"Torappu.Battle.Action.Nodes+ForceSetToSourcePosition\"},{\"_targetType\":\"BUFF_SOURCE\",\"_isDisappear\":false,\"$type\":\"Torappu.Battle.Action.Nodes+SetDisappear\"},{\"_buffKey\":\"enemy_shdopl_passive\",\"_loadFromBlackboard\":false,\"_decCntIfStack\":false,\"_updateOverrideMap\":true,\"_targetType\":\"BUFF_SOURCE\",\"_checkBuffSource\":false,\"_sourceType\":\"BUFF_SOURCE\",\"_alsoClearNullSource\":false,\"_finishHostBuff\":false,\"_excludeThisBuff\":false,\"_decCntKey\":null,\"_decCnt\":1,\"$type\":\"Torappu.Battle.Action.Nodes+FinishBuffsById\"},{\"_targetType\":\"BUFF_OWNER\",\"_killSource\":false,\"_noSource\":false,\"_withdrawIfRallyPoint\":false,\"_resultIfInRallyPointMode\":false,\"_skipReborn\":true,\"_noReason\":true,\"_markReachExit\":false,\"_switchState\":false,\"$type\":\"Torappu.Battle.Action.Nodes+InstantKill\"},{\"_blackboardKey\":\"lock\",\"_value\":1.0,\"_copyFromKey\":null,\"_assignString\":false,\"$type\":\"Torappu.Battle.Action.Nodes+AssignValueToBB\"},{\"_targetType\":\"BUFF_OWNER\",\"_retainedBuffsWhenClear\":[],\"_alsoRemoveDurableBuff\":false,\"$type\":\"Torappu.Battle.Action.Nodes+ClearAllBuffs\"}]",
+                "SerializedObjectReferences": []
+              }
+            }
+          ]
+        }
+      },
+      "outgoing_references": [
+        {
+          "key": "enemy_shdopl_finish",
+          "path": "$.templateKey"
+        }
+      ]
+    }
+  },
+  "missing_templates": [],
+  "limits": [
+    "Only literal template references recursively found in shipped prefab rule data and parsed SerializedState strings. Dynamic string/blackboard/template lookups remain explicit runtime closure obligations.",
+    "Includes the shipped empty template declaration, without assuming that a missing template is inert.",
+    "No target deserializer/constructor/actions executed."
+  ]
+}

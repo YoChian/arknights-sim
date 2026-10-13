@@ -1,0 +1,328 @@
+{
+  "healthy": true,
+  "target_path": "D:\\Hypergryph Launcher\\games\\Arknights\\GameAssembly.dll",
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "fresh_selected_entries": 16,
+  "fresh_imported_ranges": 36,
+  "raw_functions": 19,
+  "raw_ranges_verified": 39,
+  "observations": [
+    {
+      "claim": "state11 exact nested owner, not another DisappearState",
+      "source": "selection.json + native_fields.json + state_enum.json"
+    },
+    {
+      "claim": "OnEnter default path constructs iterator, primes deterministic coroutine and stores id after AddModifier",
+      "source": "raw_helpers.json 180a8d030 spans, esp 180a8d146..180a8d1cb",
+      "decompiler_limit": "Ghidra warns PIC at 180a8d16e and incorrectly drops default tail; raw instructions resolve this. A completed decompile alone is insufficient."
+    },
+    {
+      "claim": "Hide/appear two 0.15f segments use Append, not Join; wait calls Single overload with .3f",
+      "source": "76795/76781 C + dependency_identities.json"
+    },
+    {
+      "claim": "Clear flag only faces + event23; state11 next Tick requests DEFAULT0; no tween/wait completion gate",
+      "source": "v7 Enemy.OnDisappearChanged + 76779 + v6 StateMachine._SwitchStateInternal"
+    },
+    {
+      "claim": "OnExit stops/invalidate coroutine, removes modifier, activates root GO, starts appearance; one-shot flag resets false",
+      "source": "76778/76781/76782 C; original byte ranges pinned"
+    },
+    {
+      "claim": "ForceSet uses source currentGridPosition, not continuous world or initial spawn point",
+      "source": "v7 ForceSetToSourcePosition.Execute"
+    },
+    {
+      "claim": "Route flags sticky OR; CP list rebuilt then Reset, host progress raw Int32 overwritten afterward; no copied wait",
+      "source": "70159/70269 C + v7 Enemy.ReassignRoute + v4 BasicCursor/DirectionCursor Reset"
+    },
+    {
+      "claim": "DisableCurrentStillPull clears disabled ListSet then copies current pull ListSet, does not kill pulls",
+      "source": "76436 C"
+    },
+    {
+      "claim": "Entity before-change sends event30 and dispatches Buff hooks; these are explicit providers",
+      "source": "v7 Entity.OnBeforeDisappearChanged"
+    },
+    {
+      "claim": "UID0 SetDisappeared setter no-op, existing SetDisappear action still returns success; Unity-null separate from alive",
+      "source": "v7 BObject.SetDisappeared / SetDisappear.Execute / ForceSetToSourcePosition.Execute"
+    }
+  ],
+  "native_ranges": [
+    {
+      "address": "0x180a8d030",
+      "start": "0x180a8d030",
+      "end_exclusive": "0x180a8d09a",
+      "source_file_offset": 11060272,
+      "source_sha256": "dae887da92a60106c059d0db80f3cb956e6af2a27e72565c517827d3c9450cb5"
+    },
+    {
+      "address": "0x180a8d030",
+      "start": "0x180a8d09a",
+      "end_exclusive": "0x180a8d1cc",
+      "source_file_offset": 11060378,
+      "source_sha256": "e84cd0284e0f6611aac23a5c83ff6aae004ebd9c61e5f72f64785c49fe3c0740"
+    },
+    {
+      "address": "0x180a8d030",
+      "start": "0x180a8d1cc",
+      "end_exclusive": "0x180a8d1e4",
+      "source_file_offset": 11060684,
+      "source_sha256": "ae81d07eabb70e7738017eea0f059bdd3671d9c62049258dd806305751234e19"
+    },
+    {
+      "address": "0x180a8d030",
+      "start": "0x180a8d1e4",
+      "end_exclusive": "0x180a8d1ea",
+      "source_file_offset": 11060708,
+      "source_sha256": "9c84a24817170cfd3259d6480dfb97109e44de463884287f65634059dec5e044"
+    },
+    {
+      "address": "0x180a8d1f0",
+      "start": "0x180a8d1f0",
+      "end_exclusive": "0x180a8d2a5",
+      "source_file_offset": 11060720,
+      "source_sha256": "ae1b47d5947112d171715d1b34ed0d2565f3a8153c23fbfa7e9b0148a78f3798"
+    },
+    {
+      "address": "0x180a8d1f0",
+      "start": "0x180a8d2a5",
+      "end_exclusive": "0x180a8d2f6",
+      "source_file_offset": 11060901,
+      "source_sha256": "9be374b7f0c73e5f3cb011595e9c5a6843a99a611f42bde0e0a5adb343ec24e9"
+    },
+    {
+      "address": "0x180a8d1f0",
+      "start": "0x180a8d2f6",
+      "end_exclusive": "0x180a8d369",
+      "source_file_offset": 11060982,
+      "source_sha256": "d42e1d29f98896de28409afc922ec334a425bd40136ecaf78419057ed97a8b44"
+    },
+    {
+      "address": "0x180a8d370",
+      "start": "0x180a8d370",
+      "end_exclusive": "0x180a8d43d",
+      "source_file_offset": 11061104,
+      "source_sha256": "c171904fe6a81983bd4bc5a4385268e76d29102d13fc0c4be3f3a01da7d63041"
+    },
+    {
+      "address": "0x180a8da00",
+      "start": "0x180a8da00",
+      "end_exclusive": "0x180a8da48",
+      "source_file_offset": 11062784,
+      "source_sha256": "f01cfba52884d992fc4a78c8f7c716d42a0834e0567b704ab70bd559c1aad50e"
+    },
+    {
+      "address": "0x180a8da00",
+      "start": "0x180a8da48",
+      "end_exclusive": "0x180a8da90",
+      "source_file_offset": 11062856,
+      "source_sha256": "e40fe15212420a078eb7f110bb581a83eb5ccf42d7757ee89ab356970f8492d2"
+    },
+    {
+      "address": "0x180a8da00",
+      "start": "0x180a8da90",
+      "end_exclusive": "0x180a8daa0",
+      "source_file_offset": 11062928,
+      "source_sha256": "9df89c15fd3e361195ac888c44c3f0549e9c58989f4d3a961169c0c1e7e56658"
+    },
+    {
+      "address": "0x180a8da00",
+      "start": "0x180a8daa0",
+      "end_exclusive": "0x180a8daa6",
+      "source_file_offset": 11062944,
+      "source_sha256": "1b0e28c648d224731bcb887d30f592b6ec2960dd3b209afe4d8567a4f7c81760"
+    },
+    {
+      "address": "0x180a8d440",
+      "start": "0x180a8d440",
+      "end_exclusive": "0x180a8d508",
+      "source_file_offset": 11061312,
+      "source_sha256": "35b5d91cacc8258b2b6dfdb7aef2e69f78d2e60056fc59a229ba21f9be79eee7"
+    },
+    {
+      "address": "0x180a8d440",
+      "start": "0x180a8d508",
+      "end_exclusive": "0x180a8d9ea",
+      "source_file_offset": 11061512,
+      "source_sha256": "6eba1454bed91070aaa057aad3b8a4bfcf8b87de18b15135a83cc29095abe042"
+    },
+    {
+      "address": "0x180a8d440",
+      "start": "0x180a8d9ea",
+      "end_exclusive": "0x180a8d9fa",
+      "source_file_offset": 11062762,
+      "source_sha256": "6f07d0d75ac5000e021883cb10ac7a20c3188c933f4b53a0b88c05b3a97209ef"
+    },
+    {
+      "address": "0x180a8d440",
+      "start": "0x180a8d9fa",
+      "end_exclusive": "0x180a8da00",
+      "source_file_offset": 11062778,
+      "source_sha256": "33a4514901a703803400fb161ad85440bd56d0d57c88b620d71b7edaf5c48626"
+    },
+    {
+      "address": "0x180a8dab0",
+      "start": "0x180a8dab0",
+      "end_exclusive": "0x180a8db05",
+      "source_file_offset": 11062960,
+      "source_sha256": "92d3fd818f23bd0071765c569830eb81c284e0d5169eac04580a763c3c5e6754"
+    },
+    {
+      "address": "0x180a8dab0",
+      "start": "0x180a8db05",
+      "end_exclusive": "0x180a8dbb8",
+      "source_file_offset": 11063045,
+      "source_sha256": "9da67be470ddf119134d37ed5c263bb0c418a1d029e477b94404576bfc29cd1b"
+    },
+    {
+      "address": "0x180a8dab0",
+      "start": "0x180a8dbb8",
+      "end_exclusive": "0x180a8dbc5",
+      "source_file_offset": 11063224,
+      "source_sha256": "fb4497fdd25d4dfb588c061afa41086fcfebb343eb909bea3ac0241b975f702a"
+    },
+    {
+      "address": "0x180a8dab0",
+      "start": "0x180a8dbc5",
+      "end_exclusive": "0x180a8dbcb",
+      "source_file_offset": 11063237,
+      "source_sha256": "fd0d3327fda25834682d98a977936a3cd83bc800f0975707861c0e10d91e98fd"
+    },
+    {
+      "address": "0x180a8dbd0",
+      "start": "0x180a8dbd0",
+      "end_exclusive": "0x180a8dc7e",
+      "source_file_offset": 11063248,
+      "source_sha256": "cfa6e6881050178892d991b86d837142e494e813daabb128b01aefc1feac7962"
+    },
+    {
+      "address": "0x180875fa0",
+      "start": "0x180875fa0",
+      "end_exclusive": "0x180875ffd",
+      "source_file_offset": 8868768,
+      "source_sha256": "c820100cdbc5319263386caaf9f20bb000645d088e8f0759db8df196b9186657"
+    },
+    {
+      "address": "0x180875fa0",
+      "start": "0x180875ffd",
+      "end_exclusive": "0x180876298",
+      "source_file_offset": 8868861,
+      "source_sha256": "c27ae2dd94e31940359b2af6f543ad391a77cdc4edaea40a8473b771713c4186"
+    },
+    {
+      "address": "0x180875fa0",
+      "start": "0x180876298",
+      "end_exclusive": "0x1808762ad",
+      "source_file_offset": 8869528,
+      "source_sha256": "fa0562493767741f69b3d592e8199fc68b40c9d986f4d575fc15e959ceab4314"
+    },
+    {
+      "address": "0x180875fa0",
+      "start": "0x1808762ad",
+      "end_exclusive": "0x1808762c9",
+      "source_file_offset": 8869549,
+      "source_sha256": "c6e974180b22157e537ac5021f4193c3eeca3def9750b95c727227a5e997c657"
+    },
+    {
+      "address": "0x180894bb0",
+      "start": "0x180894bb0",
+      "end_exclusive": "0x180894c18",
+      "source_file_offset": 8994736,
+      "source_sha256": "d1759035ed121e4c4b961c64c39a615fd398d0669641512d642df8bc72a9c02e"
+    },
+    {
+      "address": "0x180a6c480",
+      "start": "0x180a6c480",
+      "end_exclusive": "0x180a6c556",
+      "source_file_offset": 10926208,
+      "source_sha256": "c613924db2ac9441f19c0cb3ac962faab1c3ff0c66e318c9d8272f3a6ff193ff"
+    },
+    {
+      "address": "0x180a741c0",
+      "start": "0x180a741c0",
+      "end_exclusive": "0x180a7423c",
+      "source_file_offset": 10958272,
+      "source_sha256": "52528f114eac648ca1dddcfcb72065128e0336f87e9a9fb7d9615dc05ae17c80"
+    },
+    {
+      "address": "0x180a741c0",
+      "start": "0x180a7423c",
+      "end_exclusive": "0x180a742f1",
+      "source_file_offset": 10958396,
+      "source_sha256": "a30ba5e220829d7b813ae04c037179c70192498386c3559822a5eeb3deb0c5ee"
+    },
+    {
+      "address": "0x180a741c0",
+      "start": "0x180a742f1",
+      "end_exclusive": "0x180a74308",
+      "source_file_offset": 10958577,
+      "source_sha256": "dea7d8263c92ad555c12cbcbd0143ded5e406284fcc00ffc787402589844c73c"
+    },
+    {
+      "address": "0x180a741c0",
+      "start": "0x180a74308",
+      "end_exclusive": "0x180a7430e",
+      "source_file_offset": 10958600,
+      "source_sha256": "f9205c7b1ad5339b6b3beb1c59d8f4c148e14db49c06d94e5b811233a597b054"
+    },
+    {
+      "address": "0x180a9c820",
+      "start": "0x180a9c820",
+      "end_exclusive": "0x180a9c94f",
+      "source_file_offset": 11123744,
+      "source_sha256": "a75d952a16184293c00a1f288bbf6f80e4c6685b762ba688b2811fedabd5a86b"
+    },
+    {
+      "address": "0x180a9c950",
+      "start": "0x180a9c950",
+      "end_exclusive": "0x180a9ca36",
+      "source_file_offset": 11124048,
+      "source_sha256": "911409685f557fb97ae0f7cefc4ed401ca2ea4c5d4ed0fe10660c6515209ee1a"
+    },
+    {
+      "address": "0x180a9da10",
+      "start": "0x180a9da10",
+      "end_exclusive": "0x180a9deb1",
+      "source_file_offset": 11128336,
+      "source_sha256": "c549e79b1f0387a2a06035e94fffb2835828e88156ef0fcb244c864737f2b277"
+    },
+    {
+      "address": "0x180a9ca40",
+      "start": "0x180a9ca40",
+      "end_exclusive": "0x180a9cb26",
+      "source_file_offset": 11124288,
+      "source_sha256": "dbfe7dda82bc84d39ab80d4412a8b859dd076ade92b7803d9b95f4371b7ea7d6"
+    },
+    {
+      "address": "0x180a9cb30",
+      "start": "0x180a9cb30",
+      "end_exclusive": "0x180a9cc5f",
+      "source_file_offset": 11124528,
+      "source_sha256": "1a00369524cfbae35fadbf95f49052f4b1c04485070c303c2641889eaf071dfe"
+    },
+    {
+      "address": "0x18536e450",
+      "start": "0x18536e450",
+      "end_exclusive": "0x18536e4c2",
+      "source_file_offset": 87480400,
+      "source_sha256": "1e3363a207c914a30947b211351d6aedf0d3b548ba87349941133ea521769479"
+    },
+    {
+      "address": "0x18536e540",
+      "start": "0x18536e540",
+      "end_exclusive": "0x18536e586",
+      "source_file_offset": 87480640,
+      "source_sha256": "67f51b4df184519938099909d0448523b4415e6d823e4644b37add2e9ef37c7a"
+    },
+    {
+      "address": "0x18499c9d0",
+      "start": "0x18499c9d0",
+      "end_exclusive": "0x18499ca10",
+      "source_file_offset": 77184464,
+      "source_sha256": "ee85d4ae5487115dc650942e5a71804bf09927027f3da63fc30e508bf81d85ef"
+    }
+  ],
+  "client_runtime_compared": false
+}

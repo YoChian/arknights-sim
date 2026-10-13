@@ -1,0 +1,42 @@
+[
+  {
+    "type": "Torappu.SpData",
+    "method": "Init",
+    "metadata_method_index": 32852,
+    "token": "0x6008055",
+    "address": "0x18252b300",
+    "basis": "SkillData.InitIfNot invokes SpData.Init(blackboard)"
+  },
+  {
+    "type": "Torappu.DataConvertUtil",
+    "method": "GetSkillData",
+    "metadata_method_index": 33612,
+    "token": "0x600834d",
+    "address": "0x1827433b0",
+    "basis": "Table level→SkillData object fields/blackboard"
+  },
+  {
+    "type": "Torappu.Battle.UnitAnimator",
+    "method": "GetAnimationTime",
+    "metadata_method_index": 64049,
+    "token": "0x600fa32",
+    "address": "0x1806180e0",
+    "basis": "Actual Unit GetAnimationTime3arg forwards here; emptyanimkey must provefalse before defaultscale1"
+  },
+  {
+    "type": "Torappu.Battle.Attributes",
+    "method": "GetAbnormalFlag",
+    "address": "0x180649280",
+    "metadata_method_index": 64279,
+    "token": "0x600fb18",
+    "reason": "Entity normal isAllyTargetFree(flag15), isHealFree(flag7), isCamouflage(flag17) aggregate short active/disabled counts plus base flags; close logical input from attribute state instead of external getter Boolean. Getters round2 inline much of this body, direct entry needed exact return/fallback."
+  },
+  {
+    "type": "Torappu.Battle.Attributes",
+    "method": "CheckAbnormalImmune",
+    "address": "0x1806488d0",
+    "metadata_method_index": 64292,
+    "token": "0x600fb25",
+    "reason": "Camouflage getter(flag17 && !CheckAbnormalImmune9), requires exact immune count/base bits semantics; damage agent confirms its old external status Booleans do not close this."
+  }
+]

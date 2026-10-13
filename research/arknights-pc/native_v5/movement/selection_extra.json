@@ -1,0 +1,65 @@
+[
+  {
+    "type": "Torappu.Battle.Unit",
+    "method": "OnTick",
+    "address": "0x180acbdb0",
+    "metadata_method_index": 77699,
+    "reason": "Unit tick\u2192FSM ordering"
+  },
+  {
+    "type": "MoveState",
+    "method": "OnEnter",
+    "address": "0x180a97520",
+    "metadata_method_index": 76656,
+    "reason": "MoveState entry/reset movement state"
+  },
+  {
+    "type": "MoveState",
+    "method": "OnTick",
+    "address": "0x180a977d0",
+    "metadata_method_index": 76658,
+    "reason": "Default MoveState movement tick/gates"
+  },
+  {
+    "type": "MoveState",
+    "method": ".ctor",
+    "address": "0x180a97e00",
+    "metadata_method_index": 76660,
+    "reason": "MoveState default constants"
+  },
+  {
+    "type": "Torappu.Battle.Tile",
+    "method": "get_isObstacleLike",
+    "address": "0x1808adbb0",
+    "metadata_method_index": 70679,
+    "reason": "Tile obstacle-like source"
+  },
+  {
+    "type": "Torappu.Battle.Map",
+    "method": "UpdatePassableMap",
+    "address": "0x1808827b0",
+    "metadata_method_index": 70014,
+    "reason": "cached passable map update semantics"
+  },
+  {
+    "type": "Torappu.Battle.HoleTile",
+    "method": "get_moveCost",
+    "address": "0x1808addd0",
+    "metadata_method_index": 70580,
+    "reason": "HoleTile moveCost override"
+  },
+  {
+    "type": "Torappu.Battle.HoleTile",
+    "method": "get_isObstacleLike",
+    "address": "0x1808add70",
+    "metadata_method_index": 70582,
+    "reason": "HoleTile obstacle-like override"
+  },
+  {
+    "type": "Torappu.Battle.Token",
+    "method": "OnSwitchMode",
+    "address": "0x180ab5b40",
+    "metadata_method_index": 77463,
+    "reason": "Token.OnSwitchMode owns altar tile options rewrite"
+  }
+]

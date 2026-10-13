@@ -1,0 +1,200 @@
+{
+  "source_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\rule_prefab_subtrees.json",
+  "source_sha256": "2f7912e5564e6f8608163f38f31071cf3a913f2fbc437c9725860ed77c6e532a",
+  "source_game_bundle_pin": {
+    "path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\StreamingAssets\\AB\\Windows\\battle\\prefabs\\[uc]skills.ab",
+    "bytes": 1343313,
+    "sha256": "14306a31b1856f61b25812a69a2a057b7c4634561fb2c2bccc42fb37ee41a27e"
+  },
+  "selector_component": {
+    "path_id": 5133488200763406096,
+    "hierarchy_path": "sktok_ore/Selector",
+    "class_name": "Torappu.Battle.AdvancedSelector",
+    "assembly": "Assembly-CSharp.dll",
+    "script_path_id": 7080728813803358465,
+    "script_external_cab": "CAB-658d74aab777086fc32b93f385be999a",
+    "serialized_sha256": "41618d0a0f54fd8005a18afa9c27fe4bb05164282e835b5204e5ff8f840ffba0",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -2023210780827093232
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": 7080728813803358465
+      },
+      "m_Name": "",
+      "_targetSide": 3,
+      "_targetMotion": 3,
+      "_targetCategory": 1,
+      "_postFilter": 0,
+      "_ignoreTargetFree": 1,
+      "_onlyIgnoreSomeOfTargetFreeCase": 0,
+      "_abnormalFlag": 46,
+      "_abnormalCombo": 3,
+      "_ignoreAllyTargetFree": 0,
+      "_ignoreHealFree": 0,
+      "_ignoreMotionMode": 0,
+      "_forceIgnoreCamouflage": 0,
+      "_needProfessionMask": 0,
+      "_professionMask": 0,
+      "_excludeSomeAbnormalFlags": 0,
+      "_excludeAbnormalFlag": 46,
+      "_limitTargetNum": 0,
+      "_maxTargetKey": "max_target",
+      "_maxNum": 1,
+      "_excludeOwner": 0,
+      "_sortByTauntAtLast": 0,
+      "_ignoreHitRange": 0,
+      "_checkUnitType": 0,
+      "_unitTypeMask": 0,
+      "_abilityInputTargetAsSortSource": 0
+    }
+  },
+  "range_component": {
+    "path_id": -8567466267385104624,
+    "hierarchy_path": "sktok_ore/Selector",
+    "class_name": "Torappu.Battle.AutoLoadBoxRange",
+    "assembly": "Assembly-CSharp.dll",
+    "script_path_id": -2891200616113119906,
+    "script_external_cab": "CAB-658d74aab777086fc32b93f385be999a",
+    "serialized_sha256": "efbfe5081098f8e2140d28dcf2cd86959b537b07f18b6b17c1704db3134e24e3",
+    "fields": {
+      "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": -2023210780827093232
+      },
+      "m_Enabled": 1,
+      "m_Script": {
+        "m_FileID": 1,
+        "m_PathID": -2891200616113119906
+      },
+      "m_Name": "",
+      "_useBlackboardRangeId": 0,
+      "_extendable": 0
+    }
+  },
+  "ability_selector_reference": {
+    "path_id": 5041462664297346832,
+    "serialized_sha256": "9cd9f01af8b9fe3d734b3c9aa72adf4bc93f23a0100a731e0ce36d1798c76ef9",
+    "selector_ptr": {
+      "m_FileID": 0,
+      "m_PathID": 5133488200763406096
+    }
+  },
+  "range_table_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\range_table.json",
+  "range_table_sha256": "4d974598394630a1ad465b954321254397f514c7fb26cba944d320ac18b874d0",
+  "range_declaration": {
+    "id": "x-1",
+    "direction": 1,
+    "grids": [
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 1,
+        "col": -1
+      },
+      {
+        "row": 1,
+        "col": 0
+      },
+      {
+        "row": 1,
+        "col": 1
+      },
+      {
+        "row": 0,
+        "col": -2
+      },
+      {
+        "row": 0,
+        "col": -1
+      },
+      {
+        "row": 0,
+        "col": 0
+      },
+      {
+        "row": 0,
+        "col": 1
+      },
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": -1,
+        "col": -1
+      },
+      {
+        "row": -1,
+        "col": 0
+      },
+      {
+        "row": -1,
+        "col": 1
+      },
+      {
+        "row": -2,
+        "col": 0
+      }
+    ]
+  },
+  "scope": "Verified resource identity/flags and native local bounding collider declarations; world Physics2D overlap and native ALL order remain external",
+  "unknown_contexts": [
+    "live rangeId reset/cache/extensions and transform chain",
+    "target UBody/Unity collider continuous world shape",
+    "Unity Physics2D touch/buffer/order/synchronization",
+    "initialized owner/masks/status/HitRange providers",
+    "native ALL SortedSet gap/comparison/ties/extra-mode",
+    "live hotfix pointer state"
+  ],
+  "battle_ready": false,
+  "native_local_collider_declarations": [
+    {
+      "minimum": [
+        -0.5,
+        -2.5
+      ],
+      "size": [
+        1,
+        5
+      ],
+      "center": [
+        0,
+        0
+      ]
+    },
+    {
+      "minimum": [
+        -1.5,
+        -1.5
+      ],
+      "size": [
+        3,
+        3
+      ],
+      "center": [
+        0,
+        0
+      ]
+    },
+    {
+      "minimum": [
+        -2.5,
+        -0.5
+      ],
+      "size": [
+        5,
+        1
+      ],
+      "center": [
+        0,
+        0
+      ]
+    }
+  ]
+}

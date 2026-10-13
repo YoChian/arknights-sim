@@ -1,0 +1,476 @@
+{
+  "manifest_version": 1,
+  "scope": "static prefab physics declarations and native binary32 query arguments/phase subsequence; explicit external Unity bounds/pose/filter/hit receipts; independent C# scalar translation comparison",
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "metadata_sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f",
+  "reference_scope": "independent reconstructed C# scalar implementation comparison and explicit physics contract fixtures; not a Unity/native/client oracle",
+  "arithmetic_scope": "finite normal-or-zero binary32 intermediates, nearest-even assumption; live MXCSR/FTZ/DAZ not validated",
+  "native_query_arguments_reconstructed": true,
+  "physics_context_component_available": true,
+  "physics_overlap_generated": false,
+  "filter_consistency_generated": false,
+  "world_bounds_generated": false,
+  "engine_sync_generated": false,
+  "engine_registration_pairing_proven": false,
+  "runtime_battle_validated": false,
+  "client_runtime_compared": false,
+  "hotfix_runtime_compared": false,
+  "battle_ready": false,
+  "counts": {
+    "component_tests": 21,
+    "reference_tests": 4,
+    "box_cases": 300,
+    "supported_box_cases": 295,
+    "rejected_box_cases": 5,
+    "box_single_bit_patterns": 3245,
+    "radius_cases": 200,
+    "supported_radius_cases": 195,
+    "rejected_radius_cases": 5,
+    "initial_filter_cases": 30,
+    "simulation_mode_cases": 3,
+    "tests_run": 25,
+    "preserved_v6_file_pins": 53,
+    "physics_selected_addresses": 25,
+    "physics_recovered_functions": 25,
+    "short_raw_helpers": 15,
+    "reused_native_functions": 4,
+    "metadata_types": 30,
+    "metadata_fields": 565,
+    "generic_instances": 36,
+    "prefabs": 5,
+    "prefab_nodes": 59,
+    "prefab_colliders": 7,
+    "prefab_rigidbodies": 4,
+    "unresolved_prefab_references": 0
+  },
+  "files": [
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\targeting.py",
+      "sha256": "77a266dcc034a3622ceabe4eed2676686147ae5d26caa6baff0532ad83578dc0"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\movement.py",
+      "sha256": "c98fe7d0de2ebe8586fad934fd8ac2ceed805604cb510db0f16cb3ba1400f72b"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\fp.py",
+      "sha256": "1002ff2f8c64cb441c3a88654e413a23eedfd5af61ed8ac187999823aed3462c"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\tests\\test_targeting.py",
+      "sha256": "a7109193093356ff11c603a2159fadbbd6497429e71f3ba3ecfdaa943965c8c4"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\tests\\test_targeting_reference.py",
+      "sha256": "5255aa8eaf5cc3eb41d7c8f78d7fac2cc282e1b4d5f19a37cff5e4b52362021b"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\targeting\\TargetingReference.cs",
+      "sha256": "57b92ee7ca9f9c7734944391a1da21990684fb30f519f623ccd3a9b4dddfe130"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\targeting\\TargetingReference.exe",
+      "sha256": "5f9e54d1185b588035b0f8d7172c5993eca8f4c44d0fb3380395f16171a3292b"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\targeting\\generate_reference_input.py",
+      "sha256": "489f6f1593dc8668e0c0f03ea14cad59a4275dcc70a5c5d212e4533e87e6359d"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\targeting\\reference_input.json",
+      "sha256": "ad777cfd0a70bb117b701c03008397d1b458f8ed0b84869ba94a7465e3ab12be"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\targeting\\reference_vectors.json",
+      "sha256": "7c60cae06bfb5c2c958ac29e1eb13d55120ad9ee2b40168a46a0cd9438605a15"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\targeting\\reference_comparison.json",
+      "sha256": "39f2afb2752efb56dbf5001ecdda823c23157d856709f501873b0b4eb643cead"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\targeting\\verify_evidence.py",
+      "sha256": "3b9115492ec3ca1904926ac7ccc61b74c23dbc8574d53093dfe3f0495ff3e23c"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\targeting\\create_reviewed_manifest.py",
+      "sha256": "3cbd4787c09675e2dd0f9800e3c7c7b4ff198911a7ab388c28607805b32906de"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\targeting\\REPORT.md",
+      "sha256": "98669fb12a8e83618ddbc99e26753a70b3f27fbf18f4658ed234ffb38fa6dfcb"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\selection.json",
+      "sha256": "7383582fe370a6f7fce65c95c782e1f12dd58e3c2f939592d0266fdb6057ceaa"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\selection_extra.json",
+      "sha256": "987687585d5277cb65ed448fcf4306d09ca8a437e80a7d2913cbc50ceceae1b5"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\native_fields.json",
+      "sha256": "f91640910f79d1dfb14d79e28d67fa9064ba56ab7a493ccfe4c3060a5205b341"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\field_offsets.json",
+      "sha256": "1f6e1cf18bb03c049bb2d26f677ff41e3d10a2561d7625744777b1ec6b14acd3"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\export_native_fields.py",
+      "sha256": "a7c9d5f6d051ce5779dd1d50cb14fd50ff9d883754960884161adf120c620fd9"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\prefab_selector.json",
+      "sha256": "7e2eec943574b900ea2aa7e8c753f049ed3215ab6818edac357122ec9b83f955"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\generic_identities.json",
+      "sha256": "37b3d46b14aea88c214b964fbd13d5d575a4a8c0c9d0d78954ec4e5aa2b5cde5"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\inspect_generic_identities.py",
+      "sha256": "fe3166f597bfa6b6ea2206a56645e00f35c9faeced833ffb8bb7186fe62e796b"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\inspect_short_helpers.py",
+      "sha256": "2748641598f9c63df9c2d0f8e2017b28267143dcdd59e4cc2b961baeda96504d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\raw_helpers.json",
+      "sha256": "cd47f39352cfe41ffa965d25706c512983f1d2b66cae66f631a0ed36f192b5ff"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\recovered_functions.json",
+      "sha256": "3907b008c803ab10a96bb815dde63d5260ed7ce946ff1d3512537ee5f898df13"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\targeting\\NOTES.md",
+      "sha256": "f9bd0b9fd4e521897da708f7e39ef468fbf86d4261238fbf421392bebf3e4090"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round1.json",
+      "sha256": "b3dd4e8ee01e31e81e5f3d531b6229d039bb28632346ab3697b45a533162f337"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round2.json",
+      "sha256": "2fd554ee5c514fc8166eee68c3287567aded954dfe0400ffe5c11ff01c3d7505"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\core\\results_round3.json",
+      "sha256": "6050259684552295392a37e9b9be7b0e3db62dc160e248cf6ca793e0bb21480d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "sha256": "c732deafe4093d8366f1f09e68f00ba7aa577f287b317e0012bbc05863539712"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round2.json",
+      "sha256": "a32b81b6c5bcd86bfabb17c307e8643c1bf241ada8bc10a9ba1ca16d3ba9bc06"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+      "sha256": "147ca081a0e8891628af15a63c5dfc559411229069c22a99e854b412ec2d5195"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\raw_round1.json",
+      "sha256": "4bf1327e48453c4fb6602163dc61f257bb1477b8a14983cbd6129de0f85e8f6a"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\raw_round2.json",
+      "sha256": "04a418f35bbef89a5ed6e238907db978e98868182d0400eec6cf76b130490395"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\raw_round3.json",
+      "sha256": "541a8cd5f99355a4e93c0558d1eacc1835c86db0f09256cd9f91fa1c79f092a9"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\rule_prefab_subtrees.json",
+      "sha256": "2f7912e5564e6f8608163f38f31071cf3a913f2fbc437c9725860ed77c6e532a"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\range_table.json",
+      "sha256": "4d974598394630a1ad465b954321254397f514c7fb26cba944d320ac18b874d0"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\range_provenance.json",
+      "sha256": "3fe726d558258c7586522e44cfd239bb21abc1ec354f1989d49090cc51332b9d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\range_asset_provenance.json",
+      "sha256": "d19732ff4d02c4343f326e96bbde95a63ba3dc8eda7117cb0da7ba3a4636ef96"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\devices\\enum_constants.json",
+      "sha256": "a617fead612c0b274fdab1ec148fc04b88ef5d9939740a991742bc564942a8bb"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\native_fields.json",
+      "sha256": "5330f43cbccaff59dc271d56193a65da0e0a4add612b924e478c4be7dcb1afd0"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\native_types.json",
+      "sha256": "95319901ec246848e5750b00c10f23575a22baabc0f1c3ea9ed4a6b99de99a98"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\inspect_native_types.py",
+      "sha256": "4653ac06d11756bbb4501abca762c5ad317b783b0b81075b66da8ed4736bada0"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\lifecycle\\prepare.py",
+      "sha256": "8428c91b5da0691a8713db811e72e0af097e95814baf9aeba5add1aa7457862d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\pe_inventory.json",
+      "sha256": "a2c3e9457e7e187cedc42481946a7bb91151562d161e4831c112c96f52e35de4"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\Assembly-CSharp_candidate_method_map.json",
+      "sha256": "bf43dc6b3935b61c2b193ca51ed89477c2fb59d8a315f17124f03baa318b824e"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\Torappu.Common_candidate_method_map.json",
+      "sha256": "e7aa34490e844443955fcaa17d46a6c3bb2e8ceed6fe8927de4ce0691b31cb48"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\mscorlib_candidate_method_map.json",
+      "sha256": "4dbcb599ec84189d9cd120b070069ee3dad8e1c8989f197edfd166deaabc7d76"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\UnityEngine.CoreModule_candidate_method_map.json",
+      "sha256": "3b53d49bfac7ca89223baa31a3af93a564db1e2fcfa2e450724e1162ab08df50"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\core\\UnityEngine.Physics2DModule_candidate_method_map.json",
+      "sha256": "e678425f91f9b00af0936c4d642a3b13c24aab3c27b30528ba733eede8585465"
+    },
+    {
+      "path": "D:\\Hypergryph Launcher\\games\\Arknights\\GameAssembly.dll",
+      "sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5"
+    },
+    {
+      "path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\il2cpp_data\\Metadata\\global-metadata.dat",
+      "sha256": "d3fede171f92740a6f5dc053c58c7013d3c962db764ad1f05cbe977c074fcd1f"
+    },
+    {
+      "path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\StreamingAssets\\AB\\Windows\\battle\\prefabs\\[uc]skills.ab",
+      "sha256": "14306a31b1856f61b25812a69a2a057b7c4634561fb2c2bccc42fb37ee41a27e"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\targeting\\native_evidence.json",
+      "sha256": "366bf84c649c7ee3574575edd1ec2dff6671540c625988668d6338f6b3edf6c3"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\arknights_probe\\physics_context.py",
+      "sha256": "6533885c15885cc5b5e8ab8d6c2252762ab58ec22625035dcb5d277a70d2127c"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\tests\\test_physics_context.py",
+      "sha256": "0331514741cec75ba7f9803b8e8a9b39aba208cafa17f29f473c604733618a39"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\tests\\test_physics_context_reference.py",
+      "sha256": "8efb3b3fecfcd3a286ff7543fb719a150c0e28e31983674778ca7a830291d120"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\physics_context\\PhysicsContextReference.cs",
+      "sha256": "180241ffd6760d52af435bf552e2059cfff5c17963856cd6149a5df5349fbe20"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\physics_context\\PhysicsContextReference.exe",
+      "sha256": "3b22c5b7f6532056b974634bf5500fc0aedec096d3898484a2c734344cc60bcd"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\physics_context\\generate_reference_input.py",
+      "sha256": "e66c56d6a0e47b0fd0d7504ab83a83666e27f78f3539696165eb5123761cad70"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\physics_context\\reference_input.json",
+      "sha256": "b4ec8f649a89cea4069287f09e05b9a161db358811ee77425165580cf424b84c"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\physics_context\\reference_vectors.json",
+      "sha256": "0599ce9393f8df46a80584e153e35b58140ab90c641c6dc54019db75cb163fba"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\physics_context\\check_reference.py",
+      "sha256": "422f8232fe6e8ba51ba1545083b646a65cc2545135c22e658a11a8e2bf560a36"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\physics_context\\reference_comparison.json",
+      "sha256": "00da84b077ef3bc943f7e7cef69a78579a03aa14b5e067d9ceec308f9f97714c"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\physics_context\\REPORT.md",
+      "sha256": "8fd89857a54eadc85cc26d94b9cd4c743809997996bdaed7a05d2878bae70c2d"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\physics_context\\verify_evidence.py",
+      "sha256": "04aab8f497184ad9c460eb269354b2b008b98e9c76fc53af3b6d951727522d58"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\physics_context\\write_manifest_once.py",
+      "sha256": "211a966c4c603f94c01cfc4b8c41f0008eb62c2066453714a2965e402dd7cb09"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\caller_types.json",
+      "sha256": "ea636d3c1936327966f0861dff0b150e26dd5569a5bdee323ad55fe65f4bc9f9"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\collect_reused_native.py",
+      "sha256": "bf1b8433a1efc67880ac6340ed035eb71ec1f9ee004255d2829cf886d8d91945"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\engine_binding_candidates.json",
+      "sha256": "68f7aae1cd6c20a618f01eafd5652a13cc8ed06cb28b6aafd0feb51c579dc31a"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\engine_inventory.json",
+      "sha256": "8f1260354c028c03f65ea341262ec342d8842d1196155a684e73557e78c906ce"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\export_native_fields.py",
+      "sha256": "3c689b6af2e4923387c30f875d22c032c54fbf072afb8c0de7eabbf46f4e71d8"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\export_static_inputs.py",
+      "sha256": "ceec8796680bed09a0aadf43ae730d8fe82d713c1adc8826ac92ed5a140925ae"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\extract_prefab_physics.py",
+      "sha256": "9eff11e0f7f6e7939fd5f8c841dd474ab94ecf35004e247978adec581c919a97"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\field_offsets.json",
+      "sha256": "8f090311b266867f16be73d535e32a7d780350897e30eb3f4ac60a5755b40e15"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\inspect_caller_types.py",
+      "sha256": "31ae2c3076b7c2a048f5f530176948f70a72a57b63890f8a110e1b0a14b439a1"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\inspect_engine_bindings.py",
+      "sha256": "cef7816348cb39c4e903e2eadfaa78001ce3c1dd640fe6943fa394ae14ffcf73"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\inspect_engine_inventory.py",
+      "sha256": "6b87ae13fa1ec7d1e8963620f6b7baf67d69a64239f1edda9e07db8bea0efd15"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\inspect_short_helpers.py",
+      "sha256": "bfa85ab97ae1a234e66525ce0a17b30d8774e35bf68f2928f968501cfc4530d5"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\native_fields.json",
+      "sha256": "369078a127b0b30f35cf3bab7748a242a9bf47fda4bf137d7a19d9890fdcd64a"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\NOTES.md",
+      "sha256": "9bcdfde7fe748d68b19dac7f3b3c304f50a279c3271bf91d1b45c91b427566da"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\prefab_physics_inputs.json",
+      "sha256": "9e0028b602dae39212bcb09d81547068a41cb5a99cd3a9ca0bed77b62172bd37"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\raw_helpers.json",
+      "sha256": "37377f60ea6eec39815fe92375269bb207e4bcffef62484d29ee749debb62fc5"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\REPORT.md",
+      "sha256": "4b35506b0609fc533e0f5066b04f8a308269d39daa42841623f34f9d4d13d417"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\reused_native.json",
+      "sha256": "0f46fe4a981627819da65bf40020f21dba036d3ffe785ed6d832bcc6e967a71a"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\selection.json",
+      "sha256": "a4d35a6821b02cd3c9a8e48dd9b15e7878022102d4a44754c0425f9709828f0b"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\selection_extra.json",
+      "sha256": "7479d53c328cedb0ea926a1ce7b451687a15e30c52c8af778b2309b5c7f5068f"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\physics_context\\static_inputs.json",
+      "sha256": "b895610432f5329f1ed007f226c615b9476074078ad7f3a4cf2a8e35a7fd99dd"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\core\\results_round1.json",
+      "sha256": "4d521e39398724781087e4d3c2ea044430ca17c3cc831b03d78624a3c2613861"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\core\\raw_round1.json",
+      "sha256": "891a0fdbaba47782aac4538584ca2957f4518ed20942c6a92ebffe65c1368991"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\core\\input_round1.json",
+      "sha256": "20aae8d12d60dff9d5d21d6a0e9c1073ef0a186a562f065a39414b5386aa9b6d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\core\\results_round2.json",
+      "sha256": "ce862856a192996a7a7504d744531927dd34e987a69d6a30c8e542c36a5f2ad4"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\core\\raw_round2.json",
+      "sha256": "f3676df41262ef92189ef1a4e2166486f7f4177659c86e977a008dd2c56f1135"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\core\\input_round2.json",
+      "sha256": "604ea3f179605a3b7bb6d9ee83952d7afb3c89590387364a8831cb5df9ba2df7"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\core\\prepare.py",
+      "sha256": "40f4990f4939aa773fcee53e896710d907ace25fbe84f3aab03d76da0a7e5f3d"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v8\\core\\ArknightsFocused.java",
+      "sha256": "c50d3bbf37dd411ad85552da7d38598e78d01e468b9453d309186a4c6dfc9b18"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\prefab_inputs.json",
+      "sha256": "86b14581d13012c3c7f4974ce83263350fdcdb8552986173882d2aa66c2db32c"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\normalized\\resource_index.json",
+      "sha256": "15fb905224bd5afd17ac119c010311ee234db7d57b690966a721d132bc816f94"
+    },
+    {
+      "path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\StreamingAssets\\AB\\Windows\\anon\\88b3c3ecaaefa6003de730686dd5ac53.bin",
+      "sha256": "eb1f2d8339c466192624c42dbb0ab986efa38517e8aca22fd54b5737d78908f3"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\resources_v2\\ark_bundle.py",
+      "sha256": "b9ef5f7e388af8cc6c15d5a9a64d82c1b8d37d931806e3a2d72bdd135b074bc9"
+    },
+    {
+      "path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\StreamingAssets\\AB\\Windows\\battle\\enm_pfb_base_0.ab",
+      "sha256": "da7e5c5fd620eac9b7020f143423285b87eea861a0b6cf6534142db7dcf06b5b"
+    },
+    {
+      "path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\StreamingAssets\\AB\\Windows\\battle\\enm_pfb_33.ab",
+      "sha256": "d34a7e6100deebd756697f7b9b1fd7bfed7ea9470dabded99f0de713fd69af22"
+    },
+    {
+      "path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\StreamingAssets\\AB\\Windows\\battle\\enm_pfb_20.ab",
+      "sha256": "d287334cf74ecad0e974455f6a764def75e07ae0beda68994eb2b4a51e228799"
+    },
+    {
+      "path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\StreamingAssets\\AB\\Windows\\pkgrps\\btl_pfb_tokens_0.ab",
+      "sha256": "0a825931c0073fbf9888454802cbc3f5e068428a48e27b7ad48e0708097b4235"
+    },
+    {
+      "path": "D:\\Hypergryph Launcher\\games\\Arknights\\UnityPlayer.dll",
+      "sha256": "ad54c51f443c5960a3df7c629f96b6aff57bc79d643db33f644927099c306fad"
+    },
+    {
+      "path": "D:\\Hypergryph Launcher\\games\\Arknights\\Arknights_Data\\globalgamemanagers",
+      "sha256": "4b722650a29264488701bb438a8f6e310461f9dc4d14245a25fae0b6c0a64ac4"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\inspect_attribute_meta.py",
+      "sha256": "ccf3b38db7d494a31d6566666cee5a4278e92061476b6f645980bad6ceaf7620"
+    }
+  ]
+}

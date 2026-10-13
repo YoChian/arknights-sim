@@ -1,0 +1,170 @@
+[
+  {
+    "type": "Torappu.Battle.Tile",
+    "method": "Init",
+    "address": "0x1808bf100",
+    "metadata_method_index": 70688,
+    "reason": "Tile prefab/data initialization and origin/cached options"
+  },
+  {
+    "type": "Torappu.Battle.Tile",
+    "method": "SetData",
+    "address": "0x1808c2f00",
+    "metadata_method_index": 70729,
+    "reason": "Map TileData assignment"
+  },
+  {
+    "type": "Torappu.Battle.Tile",
+    "method": "TryUpdateOptions",
+    "address": "0x1808c3820",
+    "metadata_method_index": 70734,
+    "reason": "Option override update"
+  },
+  {
+    "type": "Torappu.Battle.Tile",
+    "method": "RestoreOptions",
+    "address": "0x1808c2b40",
+    "metadata_method_index": 70736,
+    "reason": "Restore origin options"
+  },
+  {
+    "type": "Torappu.Battle.Tile",
+    "method": "RefreshOptionsOnly",
+    "address": "0x1808c1ba0",
+    "metadata_method_index": 70737,
+    "reason": "Refresh cache/route side effects"
+  },
+  {
+    "type": "Torappu.Battle.Tile",
+    "method": "RewriteOptions",
+    "address": "0x1808c2cd0",
+    "metadata_method_index": 70739,
+    "reason": "Trap option rewrite entry"
+  },
+  {
+    "type": "Torappu.Battle.Tile",
+    "method": "PreprocessTileOptions",
+    "address": "0x1808c1440",
+    "metadata_method_index": 70740,
+    "reason": "Default preprocess cache/source"
+  },
+  {
+    "type": "Torappu.Battle.Trap",
+    "method": "OnInit",
+    "address": "0x180ab8f60",
+    "metadata_method_index": 77519,
+    "reason": "Trap.OnInit rewrite timing and TrapMode options"
+  },
+  {
+    "type": "Torappu.Battle.DirectionCursor",
+    "method": ".ctor",
+    "address": "0x180897ef0",
+    "metadata_method_index": 70270,
+    "reason": "DirectionCursor creation/default flags and offset"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "OnTick",
+    "address": "0x180a72340",
+    "metadata_method_index": 76531,
+    "reason": "Enemy FP tick movement/cursor/controller call order"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "get_cursor",
+    "address": "0x180a7bf80",
+    "metadata_method_index": 76397,
+    "reason": "Default main cursor dispatch excludes trace/fear/attract"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "get_moveCursor",
+    "address": "0x180a7ee80",
+    "metadata_method_index": 76398,
+    "reason": "Default move cursor dispatch"
+  },
+  {
+    "type": "Torappu.Battle.VisualObject",
+    "method": "_AssignLocalPosInternal",
+    "address": "0x180ad3fd0",
+    "metadata_method_index": 77885,
+    "reason": "Base local position assignment and deterministic processing"
+  },
+  {
+    "type": "Torappu.PeriodicTicker",
+    "method": ".ctor",
+    "address": "0x181e043f0",
+    "metadata_method_index": 25960,
+    "reason": "PeriodicTicker integer frame cadence"
+  },
+  {
+    "type": "Torappu.PeriodicTicker",
+    "method": "Reset",
+    "address": "0x181e04390",
+    "metadata_method_index": 25961,
+    "reason": "PeriodicTicker reset base state"
+  },
+  {
+    "type": "Torappu.PeriodicTicker",
+    "method": "Reset",
+    "address": "0x181e043c0",
+    "metadata_method_index": 25962,
+    "reason": "PeriodicTicker alternate reset"
+  },
+  {
+    "type": "Torappu.PeriodicTicker",
+    "method": "Tick",
+    "address": "0x181e043d0",
+    "metadata_method_index": 25963,
+    "reason": "PeriodicTicker check and increment"
+  },
+  {
+    "type": "Torappu.Battle.BattleController",
+    "method": "get_isDeterministic",
+    "address": "0x180642080",
+    "metadata_method_index": 64441,
+    "reason": "Actual deterministic-mode getter"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "get_canMove",
+    "address": "0x180702180",
+    "metadata_method_index": 66413,
+    "reason": "canMove status gate"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "get_isActuallyGroundBound",
+    "address": "0x180705270",
+    "metadata_method_index": 66492,
+    "reason": "ActuallyGroundBound movement early exit"
+  },
+  {
+    "type": "WaitForSecondsCheckpoint",
+    "method": "GetNextDirection",
+    "address": "0x1805073b0",
+    "metadata_method_index": 70219,
+    "reason": "WAIT Checkpoint zero movement vector (base Checkpoint method is abstract)"
+  },
+  {
+    "type": "Checkpoint",
+    "method": "NextCursor",
+    "address": "0x1808930e0",
+    "metadata_method_index": 70183,
+    "reason": "Checkpoint next index transition"
+  },
+  {
+    "type": "Torappu.Battle.MoveController",
+    "method": "_ConveyorMove",
+    "address": "0x1808b7f60",
+    "metadata_method_index": 71064,
+    "reason": "Controller conveyor early-exit path; require explicit absent fixture"
+  },
+  {
+    "type": "Torappu.Battle.MoveController",
+    "method": "_CanApplyConveyorMove",
+    "address": "0x1808b7390",
+    "metadata_method_index": 71065,
+    "reason": "Conveyor motion applicability gating"
+  }
+]

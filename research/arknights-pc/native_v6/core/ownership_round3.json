@@ -1,0 +1,174 @@
+[
+  {
+    "owner": "skill",
+    "address": "0x1826483d0",
+    "metadata": {
+      "type": "Torappu.StateMachine",
+      "method": "SwitchState",
+      "address": "0x1826483d0",
+      "metadata_method_index": 33275,
+      "owner": "Torappu.StateMachine",
+      "type_definition_index": 5601,
+      "reason": "Character generic state adapter ultimately uses this base switch/tick/start and queue-draining closure"
+    }
+  },
+  {
+    "owner": "skill",
+    "address": "0x182648540",
+    "metadata": {
+      "type": "Torappu.StateMachine",
+      "method": "_SwitchStateInternal",
+      "address": "0x182648540",
+      "metadata_method_index": 33284,
+      "owner": "Torappu.StateMachine",
+      "type_definition_index": 5601,
+      "reason": "Character generic state adapter ultimately uses this base switch/tick/start and queue-draining closure"
+    }
+  },
+  {
+    "owner": "skill",
+    "address": "0x182648440",
+    "metadata": {
+      "type": "Torappu.StateMachine",
+      "method": "_CheckValidState",
+      "address": "0x182648440",
+      "metadata_method_index": 33286,
+      "owner": "Torappu.StateMachine",
+      "type_definition_index": 5601,
+      "reason": "Character generic state adapter ultimately uses this base switch/tick/start and queue-draining closure"
+    }
+  },
+  {
+    "owner": "skill",
+    "address": "0x18262d450",
+    "metadata": {
+      "type": "ObservedSkillCallTarget",
+      "method": "StateSwitchScopeDisposal",
+      "address": "0x18262d450",
+      "raw_call_target": true,
+      "source": "SkillState.OnTick/_DoStartSkill/finish callback exact direct call targets; owner declaration unasserted until body/metadata is resolved"
+    }
+  },
+  {
+    "owner": "skill",
+    "address": "0x182648530",
+    "metadata": {
+      "type": "ObservedSkillCallTarget",
+      "method": "ObservedStateSwitchAdapter",
+      "address": "0x182648530",
+      "raw_call_target": true,
+      "source": "SkillState.OnTick/_DoStartSkill/finish callback exact direct call targets; owner declaration unasserted until body/metadata is resolved"
+    }
+  },
+  {
+    "owner": "targeting",
+    "address": "0x1809a60e0",
+    "metadata": {
+      "type": "Torappu.Battle.Box2dPhysicsUtil",
+      "method": "SafeBounds",
+      "address": "0x1809a60e0",
+      "metadata_method_index": 73943,
+      "token": "0x60120d8",
+      "reason": "Box SafeBounds float edge epsilon and transform space"
+    }
+  },
+  {
+    "owner": "targeting",
+    "address": "0x180b00a90",
+    "metadata": {
+      "type": "Torappu.Battle.MapUtil",
+      "method": "InBounds",
+      "address": "0x180b00a90",
+      "metadata_method_index": 78322,
+      "token": "0x60131f3",
+      "reason": "Point-in-native-bounds actual inequality/math"
+    }
+  },
+  {
+    "owner": "targeting",
+    "address": "0x1809fa470",
+    "metadata": {
+      "type": "Torappu.Battle.TargetOptions",
+      "method": "GetLayerMask",
+      "address": "0x1809fa470",
+      "metadata_method_index": 75071,
+      "token": "0x6012540",
+      "reason": "Overlap Physics2D layer mask from target side"
+    }
+  },
+  {
+    "owner": "targeting",
+    "address": "0x1806f1750",
+    "metadata": {
+      "type": "Torappu.Battle.Entity",
+      "method": "CompareTo",
+      "address": "0x1806f1750",
+      "metadata_method_index": 66718,
+      "token": "0x601049f",
+      "reason": "Deterministic Entity.CompareTo used by default List.Sort"
+    }
+  },
+  {
+    "owner": "targeting",
+    "address": "0x180663060",
+    "metadata": {
+      "type": "Torappu.Battle.BObject",
+      "method": "get_isValid",
+      "address": "0x180663060",
+      "metadata_method_index": 65018,
+      "token": "0x600fdfb",
+      "reason": "Box2d target candidate isValid gate exact native getter"
+    }
+  },
+  {
+    "owner": "targeting",
+    "address": "0x184d14820",
+    "metadata": {
+      "type": "UnresolvedCall",
+      "method": "List_Entity_Sort",
+      "address": "0x184d14820",
+      "metadata_method_index": null,
+      "token": null,
+      "reason": "Box2dPhysicsUtil.FindTargets tail explicit methodInfo slot188938418 encodedc0084945 kind6/spec271522; exact instantiated generic identity pending, do not guess from shared address",
+      "raw_call_target": true
+    }
+  },
+  {
+    "owner": "targeting",
+    "address": "0x1844f9140",
+    "metadata": {
+      "type": "UnresolvedCall",
+      "method": "Filter_Entity_Weight",
+      "address": "0x1844f9140",
+      "metadata_method_index": null,
+      "token": null,
+      "raw_call_target": true,
+      "reason": "FilterUtil.Filter ALL default weighted helper methodInfo188904ab8; createdTime FP weight + comparison scope"
+    }
+  },
+  {
+    "owner": "targeting",
+    "address": "0x1844f9740",
+    "metadata": {
+      "type": "UnresolvedCall",
+      "method": "Filter_Entity_PriorWeight",
+      "address": "0x1844f9740",
+      "metadata_method_index": null,
+      "token": null,
+      "raw_call_target": true,
+      "reason": "Alternate weighted helper reached by Filter dictionary fallback methodInfo188904cf8; identify true ALL branch"
+    }
+  },
+  {
+    "owner": "targeting",
+    "address": "0x1809e1dc0",
+    "metadata": {
+      "type": "Torappu.Battle.FilterUtil",
+      "method": ".cctor",
+      "address": "0x1809e1dc0",
+      "metadata_method_index": 74719,
+      "token": "0x60123e0",
+      "reason": "FilterUtil static comparison at+10 for ALL0/createdTime sorting; bind dictionary and comparator defaults"
+    }
+  }
+]

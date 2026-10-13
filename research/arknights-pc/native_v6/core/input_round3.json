@@ -1,0 +1,367 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "image_base": "0x180000000",
+  "targets": [
+    {
+      "name": "Torappu_StateMachine_SwitchState_0x60081fc",
+      "display_name": "Torappu.StateMachine.SwitchState",
+      "candidate_map_type": "Torappu.StateMachine",
+      "address": "0x1826483d0",
+      "end_address": "0x1826483da",
+      "ranges": [
+        {
+          "start": "0x1826483d0",
+          "end": "0x1826483da",
+          "leaf_boundary": "straight-line RET/tail JMP or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "1e58fab8566e9a0fdf770cf12693059bfa537277841ab32157b777989d8d3879",
+          "source_file_offset": 40138704
+        }
+      ],
+      "range_provenance": "Bounded leaf candidate ending at straight-line RET/tail JMP or decoded INT3 padding; separate from PE unwind-derived coverage",
+      "file_offset": 40138704,
+      "token": "0x60081fc",
+      "metadata_method_index": 33275
+    },
+    {
+      "name": "Torappu_StateMachine__SwitchStateInternal_0x6008205",
+      "display_name": "Torappu.StateMachine._SwitchStateInternal",
+      "candidate_map_type": "Torappu.StateMachine",
+      "address": "0x182648540",
+      "end_address": "0x18264894f",
+      "ranges": [
+        {
+          "start": "0x182648540",
+          "end": "0x18264894f",
+          "unwind_rva": "0x81b69ec",
+          "chained": false,
+          "source_sha256": "83401f76306dbc210f0f4a2dbf8aa89f4895a3443566fbdc8753af43743eb0a8",
+          "source_file_offset": 40139072
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 40139072,
+      "token": "0x6008205",
+      "metadata_method_index": 33284
+    },
+    {
+      "name": "Torappu_StateMachine__CheckValidState_0x6008207",
+      "display_name": "Torappu.StateMachine._CheckValidState",
+      "candidate_map_type": "Torappu.StateMachine",
+      "address": "0x182648440",
+      "end_address": "0x1826484a2",
+      "ranges": [
+        {
+          "start": "0x182648440",
+          "end": "0x1826484a2",
+          "unwind_rva": "0x7f63a3c",
+          "chained": false,
+          "source_sha256": "b6625d61391933329c331b3e538056c9e1500c53744c9c9bb06da597199c37a1",
+          "source_file_offset": 40138816
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 40138816,
+      "token": "0x6008207",
+      "metadata_method_index": 33286
+    },
+    {
+      "name": "ObservedSkillCallTarget_StateSwitchScopeDisposal_call_target",
+      "display_name": "ObservedSkillCallTarget.StateSwitchScopeDisposal",
+      "candidate_map_type": "ObservedSkillCallTarget",
+      "address": "0x18262d450",
+      "end_address": "0x18262d4e2",
+      "ranges": [
+        {
+          "start": "0x18262d450",
+          "end": "0x18262d4e2",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "bf4acfd12619118052b91b78826f4d002141a633e9aaea79ed5d4f010d51c121",
+          "source_file_offset": 40028240
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 40028240,
+      "token": "call_target",
+      "metadata_method_index": null
+    },
+    {
+      "name": "ObservedSkillCallTarget_ObservedStateSwitchAdapter_call_target",
+      "display_name": "ObservedSkillCallTarget.ObservedStateSwitchAdapter",
+      "candidate_map_type": "ObservedSkillCallTarget",
+      "address": "0x182648530",
+      "end_address": "0x182648539",
+      "ranges": [
+        {
+          "start": "0x182648530",
+          "end": "0x182648539",
+          "leaf_boundary": "straight-line RET/tail JMP or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "6b603835e74345053f40e79d5e4c11119007faaedbc932b174e240a7f70f1559",
+          "source_file_offset": 40139056
+        }
+      ],
+      "range_provenance": "Bounded leaf candidate ending at straight-line RET/tail JMP or decoded INT3 padding; separate from PE unwind-derived coverage",
+      "file_offset": 40139056,
+      "token": "call_target",
+      "metadata_method_index": null
+    },
+    {
+      "name": "Torappu_Battle_Box2dPhysicsUtil_SafeBounds_0x60120d8",
+      "display_name": "Torappu.Battle.Box2dPhysicsUtil.SafeBounds",
+      "candidate_map_type": "Torappu.Battle.Box2dPhysicsUtil",
+      "address": "0x1809a60e0",
+      "end_address": "0x1809a62cd",
+      "ranges": [
+        {
+          "start": "0x1809a60e0",
+          "end": "0x1809a62cd",
+          "unwind_rva": "0x7fb905c",
+          "chained": false,
+          "source_sha256": "1e27f52ac02c01a7fe762b0d8a9a2375ac9408205fc67195779b85676fe944df",
+          "source_file_offset": 10114272
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 10114272,
+      "token": "0x60120d8",
+      "metadata_method_index": 73943
+    },
+    {
+      "name": "Torappu_Battle_MapUtil_InBounds_0x60131f3",
+      "display_name": "Torappu.Battle.MapUtil.InBounds",
+      "candidate_map_type": "Torappu.Battle.MapUtil",
+      "address": "0x180b00a90",
+      "end_address": "0x180b00b22",
+      "ranges": [
+        {
+          "start": "0x180b00a90",
+          "end": "0x180b00b22",
+          "unwind_rva": "0x7fd1558",
+          "chained": false,
+          "source_sha256": "4723cc38ba1506104d07030a0245bd770715985673be564e52a5b2c4dfafb0cc",
+          "source_file_offset": 11533968
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 11533968,
+      "token": "0x60131f3",
+      "metadata_method_index": 78322
+    },
+    {
+      "name": "Torappu_Battle_TargetOptions_GetLayerMask_0x6012540",
+      "display_name": "Torappu.Battle.TargetOptions.GetLayerMask",
+      "candidate_map_type": "Torappu.Battle.TargetOptions",
+      "address": "0x1809fa470",
+      "end_address": "0x1809fa479",
+      "ranges": [
+        {
+          "start": "0x1809fa470",
+          "end": "0x1809fa479",
+          "leaf_boundary": "straight-line RET/tail JMP or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "cf74756a499ee6955ea5a25be7de2b5ba9a90544892433ce7402f34474bf6ce6",
+          "source_file_offset": 10459248
+        }
+      ],
+      "range_provenance": "Bounded leaf candidate ending at straight-line RET/tail JMP or decoded INT3 padding; separate from PE unwind-derived coverage",
+      "file_offset": 10459248,
+      "token": "0x6012540",
+      "metadata_method_index": 75071
+    },
+    {
+      "name": "Torappu_Battle_Entity_CompareTo_0x601049f",
+      "display_name": "Torappu.Battle.Entity.CompareTo",
+      "candidate_map_type": "Torappu.Battle.Entity",
+      "address": "0x1806f1750",
+      "end_address": "0x1806f17f3",
+      "ranges": [
+        {
+          "start": "0x1806f1750",
+          "end": "0x1806f17f3",
+          "unwind_rva": "0x7f63a3c",
+          "chained": false,
+          "source_sha256": "9358f801c443aa1052a4578daa1551fed93594cf586d65fd894b5be987d18878",
+          "source_file_offset": 7277392
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 7277392,
+      "token": "0x601049f",
+      "metadata_method_index": 66718
+    },
+    {
+      "name": "Torappu_Battle_BObject_get_isValid_0x600fdfb",
+      "display_name": "Torappu.Battle.BObject.get_isValid",
+      "candidate_map_type": "Torappu.Battle.BObject",
+      "address": "0x180663060",
+      "end_address": "0x180663067",
+      "ranges": [
+        {
+          "start": "0x180663060",
+          "end": "0x180663067",
+          "leaf_boundary": "straight-line RET/tail JMP or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "d3bb7b6918b3947b410aa2cf0f1e65ab16d13c6f93c2e94e4ee1b092c86f4253",
+          "source_file_offset": 6693984
+        }
+      ],
+      "range_provenance": "Bounded leaf candidate ending at straight-line RET/tail JMP or decoded INT3 padding; separate from PE unwind-derived coverage",
+      "file_offset": 6693984,
+      "token": "0x600fdfb",
+      "metadata_method_index": 65018
+    },
+    {
+      "name": "UnresolvedCall_List_Entity_Sort_call_target",
+      "display_name": "UnresolvedCall.List_Entity_Sort",
+      "candidate_map_type": "UnresolvedCall",
+      "address": "0x184d14820",
+      "end_address": "0x184d14904",
+      "ranges": [
+        {
+          "start": "0x184d14820",
+          "end": "0x184d14904",
+          "unwind_rva": "0x7f63cf8",
+          "chained": false,
+          "source_sha256": "33eaf0908c66af064618fabd84e82e09b86b232531e00e82be375c98ca49ef4d",
+          "source_file_offset": 80821280
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 80821280,
+      "token": "call_target",
+      "metadata_method_index": null
+    },
+    {
+      "name": "UnresolvedCall_Filter_Entity_Weight_call_target",
+      "display_name": "UnresolvedCall.Filter_Entity_Weight",
+      "candidate_map_type": "UnresolvedCall",
+      "address": "0x1844f9140",
+      "end_address": "0x1844f9730",
+      "ranges": [
+        {
+          "start": "0x1844f9140",
+          "end": "0x1844f9271",
+          "unwind_rva": "0x8364050",
+          "chained": false,
+          "source_sha256": "2d88d849c9735d9537ec0bee08f78a1d617a815694394a6f8c89a6b2e8a21c55",
+          "source_file_offset": 72320320
+        },
+        {
+          "start": "0x1844f9272",
+          "end": "0x1844f9666",
+          "unwind_rva": "0x8364064",
+          "chained": true,
+          "source_sha256": "7671888e754913f378f0aa02c2824ef9fa96a52d9afab9f8a3c58ddaeb7a22d0",
+          "source_file_offset": 72320626
+        },
+        {
+          "start": "0x1844f9667",
+          "end": "0x1844f9718",
+          "unwind_rva": "0x836407c",
+          "chained": true,
+          "source_sha256": "a1277aca31ddfa3fe0b31f02bd5a522f1c967a1d0e4ee47fee2e5ee398e4e0ce",
+          "source_file_offset": 72321639
+        },
+        {
+          "start": "0x1844f9719",
+          "end": "0x1844f9730",
+          "unwind_rva": "0x836408c",
+          "chained": true,
+          "source_sha256": "2f7efaaa7dce64186164c61d4d8bdcdaf4adfd3a024bd33be6b7ddb82ec58480",
+          "source_file_offset": 72321817
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 72320320,
+      "token": "call_target",
+      "metadata_method_index": null
+    },
+    {
+      "name": "UnresolvedCall_Filter_Entity_PriorWeight_call_target",
+      "display_name": "UnresolvedCall.Filter_Entity_PriorWeight",
+      "candidate_map_type": "UnresolvedCall",
+      "address": "0x1844f9740",
+      "end_address": "0x1844f9d5f",
+      "ranges": [
+        {
+          "start": "0x1844f9740",
+          "end": "0x1844f9884",
+          "unwind_rva": "0x83640a4",
+          "chained": false,
+          "source_sha256": "653aa8e5bdfbb0a9858e17afbbe59e5d6bd7acf85344126365928cc1c238e29a",
+          "source_file_offset": 72321856
+        },
+        {
+          "start": "0x1844f9885",
+          "end": "0x1844f9c8f",
+          "unwind_rva": "0x83640bc",
+          "chained": true,
+          "source_sha256": "cf7c0d0d20394416e324833e5cc56b73c922612becd9da4d265a7ab9b34ca97e",
+          "source_file_offset": 72322181
+        },
+        {
+          "start": "0x1844f9c90",
+          "end": "0x1844f9d47",
+          "unwind_rva": "0x83640d0",
+          "chained": true,
+          "source_sha256": "56acaa7584000cc9533b349ae0e7158f58978cb430828bf8edd87a4d86203f7e",
+          "source_file_offset": 72323216
+        },
+        {
+          "start": "0x1844f9d48",
+          "end": "0x1844f9d5f",
+          "unwind_rva": "0x83640e0",
+          "chained": true,
+          "source_sha256": "f3444a8db954ac9f206a499e0e93661a748c350d1a4330e5b1c4c064ccaf3af5",
+          "source_file_offset": 72323400
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 72321856,
+      "token": "call_target",
+      "metadata_method_index": null
+    },
+    {
+      "name": "Torappu_Battle_FilterUtil__cctor_0x60123e0",
+      "display_name": "Torappu.Battle.FilterUtil..cctor",
+      "candidate_map_type": "Torappu.Battle.FilterUtil",
+      "address": "0x1809e1dc0",
+      "end_address": "0x1809e2074",
+      "ranges": [
+        {
+          "start": "0x1809e1dc0",
+          "end": "0x1809e2074",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "9423bbc3f60c5aceac3e4e53ecf4237a3750a4d539f67c1f4c38fd8630a7cdef",
+          "source_file_offset": 10359232
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 10359232,
+      "token": "0x60123e0",
+      "metadata_method_index": 74719
+    }
+  ],
+  "seed_labels": {
+    "0x182648540": "Torappu_StateMachine__SwitchStateInternal_0x6008205",
+    "0x182648440": "Torappu_StateMachine__CheckValidState_0x6008207",
+    "0x183cc2f80": "Torappu_Building_BuildingModel_OnStop_0x600b020",
+    "0x18050cf60": "BattleTimer_EventOnEntryClick_0x6000062",
+    "0x185db4490": "System_String_Concat_0x6000308",
+    "0x1866dd600": "UnityEngine_DLog_LogError_0x6000031",
+    "0x1841abc40": "Torappu_MathUtil_Abs_0x60002d3",
+    "0x180ae1520": "Torappu_Battle_BattleUtil_GetLayerMask_0x6013191",
+    "0x185ee3720": "System_UInt32_CompareTo_0x6000cbf",
+    "0x183326c80": "XLua_DelegateBridge___Gen_Delegate_Imp293_0x6000b85",
+    "0x185ed6250": "System_ThrowHelper_ThrowArgumentOutOfRangeException_0x6000ddc",
+    "0x185ed60f0": "System_ThrowHelper_ThrowArgumentException_0x6000dda",
+    "0x1809e1aa0": "Torappu_Battle_FilterUtil__SecondFilterInExtraMode_0x601237e",
+    "0x185ee99a0": "System_Array_Clear_0x6000ea1",
+    "0x1830626c0": "XLua_DelegateBridge_InvokeSessionStart_0x6003c9d",
+    "0x183062770": "XLua_DelegateBridge_Invoke_0x6003c9e",
+    "0x1866fdad0": "Torappu_FP_op_Implicit_0x600031c",
+    "0x1809d9890": "Torappu_Battle_FilterUtil__CreateFilterFuncs_0x601238d",
+    "0x1809d8660": "Torappu_Battle_FilterUtil__CreateFilterFuncsWithPriorWeight_0x601238e"
+  },
+  "labels_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\labels.tsv",
+  "provenance": "Local metadata/native pointer-table candidate names; each entry corroborated by exact PE unwind start. Static analysis, no game execution."
+}

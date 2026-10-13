@@ -1,0 +1,72 @@
+[
+  {
+    "type": "Torappu.Battle.BattleController",
+    "method": "RegisterUnit",
+    "metadata_method_index": 64672,
+    "token": "0x600fca1",
+    "address": "0x18062f110",
+    "virtual_slot": 65535,
+    "parameters": [
+      {
+        "name": "unit",
+        "native_type": "Torappu.Battle.Unit"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "OnInit",
+    "metadata_method_index": 66657,
+    "token": "0x6010462",
+    "address": "0x1806f92b0",
+    "virtual_slot": 30,
+    "parameters": [
+      {
+        "name": "initHeight",
+        "native_type": "Single"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+  },
+  {
+    "type": "Torappu.Battle.BattleFactory",
+    "method": "CreateEnemy",
+    "metadata_method_index": 71615,
+    "token": "0x60117c0",
+    "address": "0x1808e9170",
+    "virtual_slot": 65535,
+    "parameters": [
+      {
+        "name": "enemyKey",
+        "native_type": "String"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "OnInit",
+    "metadata_method_index": 76528,
+    "token": "0x6012af1",
+    "address": "0x180a71010",
+    "virtual_slot": 30,
+    "parameters": [
+      {
+        "name": "initHeight",
+        "native_type": "Single"
+      }
+    ],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+  },
+  {
+    "type": "Torappu.Battle.Unit",
+    "method": "OnPostInit",
+    "metadata_method_index": 77666,
+    "token": "0x6012f63",
+    "address": "0x180acae20",
+    "virtual_slot": 31,
+    "parameters": [],
+    "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+  }
+]

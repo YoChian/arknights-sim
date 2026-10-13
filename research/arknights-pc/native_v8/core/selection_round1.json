@@ -1,0 +1,510 @@
+[
+  {
+    "type": "Torappu.Blackboard",
+    "method": ".ctor",
+    "address": "0x182320ab0",
+    "metadata_method_index": 30803,
+    "token": "0x6007854",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": ".ctor",
+    "address": "0x1823209f0",
+    "metadata_method_index": 30804,
+    "token": "0x6007855",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": ".ctor",
+    "address": "0x182320ec0",
+    "metadata_method_index": 30805,
+    "token": "0x6007856",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": "AssignByPrefix",
+    "address": "0x18231d9c0",
+    "metadata_method_index": 30843,
+    "token": "0x600787c",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": "AssignValueStrByPrefix",
+    "address": "0x18231dd20",
+    "metadata_method_index": 30844,
+    "token": "0x600787d",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": "GetFpOrDefault",
+    "address": "0x18231f530",
+    "metadata_method_index": 30833,
+    "token": "0x6007872",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Blackboard",
+    "method": "GetIntOrDefault",
+    "address": "0x18231f680",
+    "metadata_method_index": 30835,
+    "token": "0x6007874",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Battle.BasicTalent",
+    "method": "_CreateBlackboard",
+    "address": "0x1809730d0",
+    "metadata_method_index": 73320,
+    "token": "0x6011e69",
+    "reason": "Blackboard prefix/case/numeric getter"
+  },
+  {
+    "type": "Torappu.Battle.Context",
+    "method": "TakeSnapshot",
+    "address": "0x1806c5dd0",
+    "metadata_method_index": 65684,
+    "token": "0x6010095",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "Torappu.Battle.Context",
+    "method": "BeginChangeGard",
+    "address": "0x1806c5c20",
+    "metadata_method_index": 65685,
+    "token": "0x6010096",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "ChangeGuard",
+    "method": ".ctor",
+    "address": "0x1806c2e70",
+    "metadata_method_index": 65700,
+    "token": "0x60100a5",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "ChangeGuard",
+    "method": "set_source",
+    "address": "0x1806c3720",
+    "metadata_method_index": 65702,
+    "token": "0x60100a7",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "ChangeGuard",
+    "method": "set_target",
+    "address": "0x1806c37b0",
+    "metadata_method_index": 65704,
+    "token": "0x60100a9",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "ChangeGuard",
+    "method": "set_buff",
+    "address": "0x1806c33d0",
+    "metadata_method_index": 65706,
+    "token": "0x60100ab",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "ChangeGuard",
+    "method": "Dispose",
+    "address": "0x1806c2ce0",
+    "metadata_method_index": 65721,
+    "token": "0x60100ba",
+    "reason": "Context snapshot/ChangeGuard restore"
+  },
+  {
+    "type": "SortedDoubleBufferedBuffList",
+    "method": "Add",
+    "address": "0x180692370",
+    "metadata_method_index": 65287,
+    "token": "0x600ff08",
+    "reason": "Buff priority or FP compare gate"
+  },
+  {
+    "type": "Torappu.MathUtil",
+    "method": "GetCompareFuncFP",
+    "address": "0x1866e4d20",
+    "metadata_method_index": 220354,
+    "token": "0x600028c",
+    "reason": "Buff priority or FP compare gate"
+  },
+  {
+    "type": "ObjectPtrUidDispatch",
+    "method": "GetUID_call_target",
+    "address": "0x180bfec30",
+    "raw_call_target": true,
+    "reason": "ObjectPtr<Entity> validation calls this compiled UID dispatch, table cases/Entity actualUID getter; raw result supports equality but tag proof still needed"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState",
+    "method": "OnEnter",
+    "metadata_method_index": 76777,
+    "token": "0x6012bea",
+    "address": "0x180a8d030",
+    "type_definition_index": 11377,
+    "virtual_slot": 10,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState",
+    "method": "OnExit",
+    "metadata_method_index": 76778,
+    "token": "0x6012beb",
+    "address": "0x180a8d1f0",
+    "type_definition_index": 11377,
+    "virtual_slot": 11,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState",
+    "method": "OnTick",
+    "metadata_method_index": 76779,
+    "token": "0x6012bec",
+    "address": "0x180a8d370",
+    "type_definition_index": 11377,
+    "virtual_slot": 12,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState",
+    "method": "_DoDisappear",
+    "metadata_method_index": 76780,
+    "token": "0x6012bed",
+    "address": "0x180a8da00",
+    "type_definition_index": 11377,
+    "virtual_slot": 65535,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState",
+    "method": "_DoAppear",
+    "metadata_method_index": 76781,
+    "token": "0x6012bee",
+    "address": "0x180a8d440",
+    "type_definition_index": 11377,
+    "virtual_slot": 65535,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState",
+    "method": "_InterruptDisappearTweenIfNot",
+    "metadata_method_index": 76782,
+    "token": "0x6012bef",
+    "address": "0x180a8dab0",
+    "type_definition_index": 11377,
+    "virtual_slot": 65535,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState",
+    "method": ".ctor",
+    "metadata_method_index": 76783,
+    "token": "0x6012bf0",
+    "address": "0x180a8dbd0",
+    "type_definition_index": 11377,
+    "virtual_slot": 65535,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.BasicCursor",
+    "method": "OnRouteChanged",
+    "metadata_method_index": 70159,
+    "token": "0x6011210",
+    "address": "0x180875fa0",
+    "type_definition_index": 10657,
+    "virtual_slot": 65535,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.DirectionCursor",
+    "method": "AssignHostRouteProgress",
+    "metadata_method_index": 70269,
+    "token": "0x601127e",
+    "address": "0x180894bb0",
+    "type_definition_index": 10658,
+    "virtual_slot": 65535,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "DisableCurrentStillPull",
+    "metadata_method_index": 76436,
+    "token": "0x6012a95",
+    "address": "0x180a6c480",
+    "type_definition_index": 11393,
+    "virtual_slot": 65535,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "ReleaseFromBlocker",
+    "metadata_method_index": 76492,
+    "token": "0x6012acd",
+    "address": "0x180a741c0",
+    "type_definition_index": 11393,
+    "virtual_slot": 65535,
+    "basis": "Exact original metadata/native pointer candidate; NPC disappear state11 and route restore prerequisite"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState.<>c__DisplayClass21_0",
+    "method": "<_DoDisappear>b__1",
+    "metadata_method_index": 76785,
+    "token": "0x6012bf2",
+    "address": "0x180a9c820",
+    "basis": "DoDisappear is IEnumerator factory and exact generated MoveNext + color completion callbacks are required for state11 visual/timing boundary"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState.<>c__DisplayClass21_0",
+    "method": "<_DoDisappear>b__3",
+    "metadata_method_index": 76786,
+    "token": "0x6012bf3",
+    "address": "0x180a9c950",
+    "basis": "DoDisappear is IEnumerator factory and exact generated MoveNext + color completion callbacks are required for state11 visual/timing boundary"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState.<_DoDisappear>d__21",
+    "method": "MoveNext",
+    "metadata_method_index": 76795,
+    "token": "0x6012bfc",
+    "address": "0x180a9da10",
+    "basis": "DoDisappear is IEnumerator factory and exact generated MoveNext + color completion callbacks are required for state11 visual/timing boundary"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState.<>c__DisplayClass22_0",
+    "method": "<_DoAppear>b__1",
+    "metadata_method_index": 76800,
+    "token": "0x6012c01",
+    "address": "0x180a9ca40",
+    "basis": "DoDisappear is IEnumerator factory and exact generated MoveNext + color completion callbacks are required for state11 visual/timing boundary"
+  },
+  {
+    "type": "Torappu.Battle.Enemy.States.DisappearState.<>c__DisplayClass22_0",
+    "method": "<_DoAppear>b__3",
+    "metadata_method_index": 76801,
+    "token": "0x6012c02",
+    "address": "0x180a9cb30",
+    "basis": "DoDisappear is IEnumerator factory and exact generated MoveNext + color completion callbacks are required for state11 visual/timing boundary"
+  },
+  {
+    "type": "Torappu.UnityCrossVersionFacade",
+    "method": "get_Physics2DAutoSimulation",
+    "metadata_method_index": 221678,
+    "token": "0x60007b8",
+    "address": "0x1867460c0",
+    "reason": "simulation mode facade getter"
+  },
+  {
+    "type": "Torappu.UnityCrossVersionFacade",
+    "method": "set_Physics2DAutoSimulation",
+    "metadata_method_index": 221679,
+    "token": "0x60007b9",
+    "address": "0x186746110",
+    "reason": "simulation mode facade setter"
+  },
+  {
+    "type": "UnityEngine.Physics2D",
+    "method": "get_queriesHitTriggers",
+    "metadata_method_index": 318493,
+    "token": "0x600001f",
+    "address": "0x186bc5350",
+    "reason": "queriesHitTriggers engine wrapper"
+  },
+  {
+    "type": "UnityEngine.Physics2D",
+    "method": "get_simulationMode",
+    "metadata_method_index": 318494,
+    "token": "0x6000020",
+    "address": "0x186bc5380",
+    "reason": "simulationMode engine wrapper"
+  },
+  {
+    "type": "UnityEngine.Physics2D",
+    "method": "set_simulationMode",
+    "metadata_method_index": 318495,
+    "token": "0x6000021",
+    "address": "0x186bc53b0",
+    "reason": "simulationMode setter wrapper"
+  },
+  {
+    "type": "UnityEngine.Physics2D",
+    "method": "Simulate",
+    "metadata_method_index": 318496,
+    "token": "0x6000022",
+    "address": "0x186bc5160",
+    "reason": "Simulate wrapper"
+  },
+  {
+    "type": "UnityEngine.Physics2D",
+    "method": "Simulate_Internal",
+    "metadata_method_index": 318497,
+    "token": "0x6000023",
+    "address": "0x186bc50e0",
+    "reason": "Simulate internal resolver"
+  },
+  {
+    "type": "UnityEngine.Physics2D",
+    "method": "Simulate_Internal_Injected",
+    "metadata_method_index": 318518,
+    "token": "0x6000038",
+    "address": "0x186bc5090",
+    "reason": "Simulate injected internal resolver"
+  },
+  {
+    "type": "UnityEngine.Physics2D",
+    "method": "OverlapCircleNonAlloc",
+    "metadata_method_index": 318514,
+    "token": "0x6000034",
+    "address": "0x186bc4560",
+    "reason": "OverlapCircleNonAlloc query wrapper"
+  },
+  {
+    "type": "UnityEngine.Physics2D",
+    "method": "OverlapAreaNonAlloc",
+    "metadata_method_index": 318515,
+    "token": "0x6000035",
+    "address": "0x186bc4460",
+    "reason": "OverlapAreaNonAlloc query wrapper"
+  },
+  {
+    "type": "UnityEngine.Collider2D",
+    "method": "get_bounds",
+    "metadata_method_index": 318570,
+    "token": "0x600006c",
+    "address": "0x186bc29f0",
+    "reason": "Collider world bounds wrapper"
+  },
+  {
+    "type": "UnityEngine.Collider2D",
+    "method": "get_bounds_Injected",
+    "metadata_method_index": 318577,
+    "token": "0x6000073",
+    "address": "0x186bc29a0",
+    "reason": "Collider bounds injected resolver"
+  },
+  {
+    "type": "UnityEngine.Rigidbody2D",
+    "method": "set_position",
+    "metadata_method_index": 318541,
+    "token": "0x600004f",
+    "address": "0x186bc70c0",
+    "reason": "Rigidbody position wrapper"
+  },
+  {
+    "type": "UnityEngine.Rigidbody2D",
+    "method": "set_position_Injected",
+    "metadata_method_index": 318560,
+    "token": "0x6000062",
+    "address": "0x186bc7070",
+    "reason": "Rigidbody position injected resolver"
+  },
+  {
+    "type": "UnityEngine.Rigidbody2D",
+    "method": "get_bodyType",
+    "metadata_method_index": 318548,
+    "token": "0x6000056",
+    "address": "0x186bc6e30",
+    "reason": "Rigidbody bodyType wrapper"
+  },
+  {
+    "type": "UnityEngine.Collider2D",
+    "method": "get_isTrigger",
+    "metadata_method_index": 318565,
+    "token": "0x6000067",
+    "address": "0x186bc2a50",
+    "reason": "Collider isTrigger wrapper"
+  },
+  {
+    "type": "UnityEngine.Transform",
+    "method": "set_position",
+    "metadata_method_index": 283262,
+    "token": "0x6000b91",
+    "address": "0x186b75b30",
+    "reason": "Transform world position wrapper"
+  },
+  {
+    "type": "UnityEngine.Transform",
+    "method": "set_localPosition",
+    "metadata_method_index": 283264,
+    "token": "0x6000b93",
+    "address": "0x186b75890",
+    "reason": "Transform local position wrapper"
+  },
+  {
+    "type": "UnityEngine.Transform",
+    "method": "get_lossyScale",
+    "metadata_method_index": 283344,
+    "token": "0x6000be3",
+    "address": "0x186b75240",
+    "reason": "Transform lossyScale wrapper"
+  },
+  {
+    "type": "Torappu.Battle.Box2dPhysicsUtil",
+    "method": "GetWorldRadius",
+    "metadata_method_index": 73942,
+    "token": "0x60120d7",
+    "address": "0x1809a5fe0",
+    "reason": "Circle query world radius float conversion"
+  },
+  {
+    "type": "Torappu.Battle.Box2dPhysicsUtil",
+    "method": ".cctor",
+    "metadata_method_index": 73949,
+    "token": "0x60120de",
+    "address": "0x1809a6990",
+    "reason": "Box2d physics collider buffer initializer"
+  },
+  {
+    "type": "Torappu.Battle.Scheduler",
+    "method": "_DoSpawnEnemyInternal",
+    "address": "0x18091b310",
+    "metadata_method_index": 72122,
+    "token": "0x60119bb",
+    "reason": "tracked summon source factory / duplicate route chain"
+  },
+  {
+    "type": "Torappu.RouteData",
+    "method": "Duplicate",
+    "address": "0x18242d930",
+    "metadata_method_index": 31506,
+    "token": "0x6007b13",
+    "reason": "tracked summon source factory / duplicate route chain"
+  },
+  {
+    "type": "Torappu.Battle.Map",
+    "method": "GenerateRuntimeRoute",
+    "address": "0x18087b800",
+    "metadata_method_index": 70043,
+    "token": "0x601119c",
+    "reason": "tracked summon source factory / duplicate route chain"
+  },
+  {
+    "type": "Torappu.Battle.Map",
+    "method": "GenerateRuntimeRoute",
+    "address": "0x18087b9c0",
+    "metadata_method_index": 70044,
+    "token": "0x601119d",
+    "reason": "tracked summon source factory / duplicate route chain"
+  },
+  {
+    "type": "Torappu.Battle.Map",
+    "method": "GenerateRuntimeRoute",
+    "address": "0x18087b700",
+    "metadata_method_index": 70045,
+    "token": "0x601119e",
+    "reason": "tracked summon source factory / duplicate route chain"
+  },
+  {
+    "type": "raw.summon",
+    "method": "spawned_mode_dispatch",
+    "address": "0x1808fdfc0",
+    "raw_call_target": true,
+    "reason": "direct original d__129 call target; name provisional dispatch"
+  }
+]

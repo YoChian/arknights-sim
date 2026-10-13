@@ -1,0 +1,816 @@
+[
+  {
+    "selection": {
+      "type": "Torappu.Battle.BattleController",
+      "method": "RegisterUnit",
+      "metadata_method_index": 64672,
+      "token": "0x600fca1",
+      "address": "0x18062f110",
+      "virtual_slot": 65535,
+      "parameters": [
+        {
+          "name": "unit",
+          "native_type": "Torappu.Battle.Unit"
+        }
+      ],
+      "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v9\\enemy_factory\\round1\\64672_Torappu_Battle_BattleController_RegisterUnit.c",
+    "result": {
+      "name": "Torappu_Battle_BattleController_RegisterUnit_0x600fca1",
+      "display_name": "Torappu.Battle.BattleController.RegisterUnit",
+      "candidate_map_type": "Torappu.Battle.BattleController",
+      "address": "0x18062f110",
+      "end_address": "0x18062f3f3",
+      "ranges": [
+        {
+          "start": "0x18062f110",
+          "end": "0x18062f19b",
+          "unwind_rva": "0x7f73d00",
+          "chained": false,
+          "source_sha256": "d040923b3fcc1fd1898e2bfc692c0458ce2637ed9d3fb6fd433a08c406e42b22",
+          "source_file_offset": 6481168
+        },
+        {
+          "start": "0x18062f19c",
+          "end": "0x18062f354",
+          "unwind_rva": "0x7f7a670",
+          "chained": true,
+          "source_sha256": "9debe5230e0f8337d1d962ae841c7f31360c1244ca47c9a737f6ce09f4ac119e",
+          "source_file_offset": 6481308
+        },
+        {
+          "start": "0x18062f355",
+          "end": "0x18062f36c",
+          "unwind_rva": "0x7f7a688",
+          "chained": true,
+          "source_sha256": "8c9644211ac9b3d3f08e21f70daf8b7b70cdc83b0273ce5395996f73599f0550",
+          "source_file_offset": 6481749
+        },
+        {
+          "start": "0x18062f36d",
+          "end": "0x18062f376",
+          "unwind_rva": "0x7f7a698",
+          "chained": true,
+          "source_sha256": "70cadd7c11d8a61dc71bd6a00828998072f3b22206b54f2a33ad47a44ff90bc5",
+          "source_file_offset": 6481773
+        },
+        {
+          "start": "0x18062f377",
+          "end": "0x18062f381",
+          "unwind_rva": "0x7f7a688",
+          "chained": true,
+          "source_sha256": "5173f7a759d400402826ca71acb8e62f122d0209871eae404e6b6eda9e1c498c",
+          "source_file_offset": 6481783
+        },
+        {
+          "start": "0x18062f382",
+          "end": "0x18062f3f3",
+          "unwind_rva": "0x7f7a698",
+          "chained": true,
+          "source_sha256": "0f407a85a6ae31a745e5ce130457f2aeaaea178d4afc90ba7efee3b2ad85396b",
+          "source_file_offset": 6481794
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6481168,
+      "token": "0x600fca1",
+      "metadata_method_index": 64672,
+      "imported_range_checks": [
+        {
+          "start": "0x18062f110",
+          "bytes": 140,
+          "imported_sha256": "d040923b3fcc1fd1898e2bfc692c0458ce2637ed9d3fb6fd433a08c406e42b22",
+          "match": true
+        },
+        {
+          "start": "0x18062f19c",
+          "bytes": 441,
+          "imported_sha256": "9debe5230e0f8337d1d962ae841c7f31360c1244ca47c9a737f6ce09f4ac119e",
+          "match": true
+        },
+        {
+          "start": "0x18062f355",
+          "bytes": 24,
+          "imported_sha256": "8c9644211ac9b3d3f08e21f70daf8b7b70cdc83b0273ce5395996f73599f0550",
+          "match": true
+        },
+        {
+          "start": "0x18062f36d",
+          "bytes": 10,
+          "imported_sha256": "70cadd7c11d8a61dc71bd6a00828998072f3b22206b54f2a33ad47a44ff90bc5",
+          "match": true
+        },
+        {
+          "start": "0x18062f377",
+          "bytes": 11,
+          "imported_sha256": "5173f7a759d400402826ca71acb8e62f122d0209871eae404e6b6eda9e1c498c",
+          "match": true
+        },
+        {
+          "start": "0x18062f382",
+          "bytes": 114,
+          "imported_sha256": "0f407a85a6ae31a745e5ce130457f2aeaaea178d4afc90ba7efee3b2ad85396b",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 109,
+      "direct_calls": [
+        {
+          "source": "18062f130",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18062f13c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18062f148",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18062f167",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18062f18f",
+          "target": "0x180644380",
+          "candidate_name": "Torappu_Battle_BattleController_get_state_0x600fc2f"
+        },
+        {
+          "source": "18062f1ab",
+          "target": "0x180644510",
+          "candidate_name": "Torappu_Battle_BattleController_get_unitManager_0x600fbf7"
+        },
+        {
+          "source": "18062f1c2",
+          "target": "0x180ac2db0",
+          "candidate_name": "Torappu_Battle_UnitManager_Register_0x6012fe5"
+        },
+        {
+          "source": "18062f1cc",
+          "target": "0x180641830",
+          "candidate_name": "Torappu_Battle_BattleController_get_gameMode_0x600fc04"
+        },
+        {
+          "source": "18062f2d7",
+          "target": "0x180005010",
+          "candidate_name": null
+        },
+        {
+          "source": "18062f30b",
+          "target": "0x184afcf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18062f324",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "18062f382",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Removing unreachable block (ram,0x0001832d2335) */\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_Battle_BattleController_RegisterUnit_0x600fca1(longlong param_1,undefined8 param_2)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  longlong lVar2;\r\n  code *pcVar3;\r\n  int iVar4;\r\n  int iVar5;\r\n  longlong lVar6;\r\n  longlong *plVar7;\r\n  undefined8 auStack_48 [2];\r\n  undefined8 uStack_38;\r\n  undefined1 *puStack_30;\r\n  undefined8 *puStack_28;\r\n  \r\n  if (DAT_188c900cb == '\\0') {\r\n    puStack_30 = (undefined1 *)0x18062f135;\r\n    FUN_18048bf00(&DAT_188927d60);\r\n    puStack_30 = (undefined1 *)0x18062f141;\r\n    FUN_18048bf00(0x1889663c0);\r\n    puStack_30 = (undefined1 *)0x18062f14d;\r\n    FUN_18048bf00(&DAT_188966600);\r\n    DAT_188c900cb = '\\x01';\r\n  }\r\n  if (*(int *)(_DAT_188927d60 + 0xe0) == 0) {\r\n    puStack_30 = (undefined1 *)0x18062f16c;\r\n    func_0x00018048c140(_DAT_188927d60);\r\n  }\r\n  lVar6 = *(longlong *)(*(longlong *)(_DAT_188927d60 + 0xb8) + 0x7a8);\r\n  if (lVar6 == 0) {\r\n    puStack_30 = (undefined1 *)0x18062f194;\r\n    iVar4 = Torappu_Battle_BattleController_get_state_0x600fc2f(param_1,0);\r\n    if (iVar4 == 0) {\r\n      return;\r\n    }\r\n    puStack_30 = (undefined1 *)0x18062f1b0;\r\n    lVar6 = Torappu_Battle_BattleController_get_unitManager_0x600fbf7(param_1,0);\r\n    if (lVar6 != 0) {\r\n      puStack_30 = (undefined1 *)0x18062f1c7;\r\n      Torappu_Battle_UnitManager_Register_0x6012fe5(lVar6,param_2,0);\r\n      puStack_30 = (undefined1 *)0x18062f1d1;\r\n      plVar7 = (longlong *)Torappu_Battle_BattleController_get_gameMode_0x600fc04(param_1,0);\r\n      if (plVar7 != (longlong *)0x0) {\r\n        switch(*(undefined4 *)(*plVar7 + 0x11c)) {\r\n        case 0x9b7:\r\n        case 0x9b8:\r\n        case 0x9b9:\r\n        case 0x9bb:\r\n        case 0x9bc:\r\n        case 0x9bf:\r\n        case 0x9c1:\r\n        case 0x9c4:\r\n        case 0x9c5:\r\n        case 0x9c8:\r\n        case 0x9c9:\r\n        case 0x9ca:\r\n        case 0x9cb:\r\n        case 0x9cc:\r\n        case 0x9cf:\r\n        case 0x9d0:\r\n        case 0x9d1:\r\n          puStack_30 = (undefined1 *)0x18062f2c3;\r\n          DefaultGameMode_OnUnitRegistered_0x601411a(plVar7,param_2,0);\r\n          break;\r\n        case 0x9ba:\r\n          puStack_30 = (undefined1 *)0x18062f217;\r\n          Act6FunGameMode_OnUnitRegistered_0x6013b6a(plVar7,param_2,0);\r\n          break;\r\n        case 0x9bd:\r\n          puStack_30 = (undefined1 *)0x18062f22a;\r\n          ArkDexGameMode_OnUnitRegistered_0x6013c17(plVar7,param_2,0);\r\n          break;\r\n        case 0x9be:\r\n          puStack_30 = (undefined1 *)0x18062f23d;\r\n          AutoChessGameMode_OnUnitRegistered_0x6013c73(plVar7,param_2,0);\r\n          break;\r\n        case 0x9c0:\r\n          puStack_30 = (undefined1 *)0x18062f250;\r\n          CooperateGameMode_OnUnitRegistered_0x6013def(plVar7,param_2,0);\r\n          break;\r\n        case 0x9c2:\r\n          puStack_30 = (undefined1 *)0x18062f263;\r\n          DouququGameMode_OnUnitRegistered_0x6013f7e(plVar7,param_2,0);\r\n          break;\r\n        case 0x9c3:\r\n          puStack_30 = (undefined1 *)0x18062f273;\r\n          EnemyDuelGameMode_OnUnitRegistered_0x6013fad(plVar7,param_2,0);\r\n          break;\r\n        case 0x9c6:\r\n          puStack_30 = (undefined1 *)0x18062f283;\r\n          GameCityGameMode_OnUnitRegistered_0x6014097(plVar7,param_2,0);\r\n          break;\r\n        case 0x9c7:\r\n          puStack_30 = (undefined1 *)0x18062f293;\r\n          HalfIdleGameMode_OnUnitRegistered_0x601417f(plVar7,param_2,0);\r\n          break;\r\n        case 0x9cd:\r\n          puStack_30 = (undefined1 *)0x18062f2a3;\r\n          RoguelikeDuelGameMode_OnUnitRegistered_0x601431d(plVar7,param_2,0);\r\n          break;\r\n        case 0x9ce:\r\n          puStack_30 = (undefined1 *)0x18062f2b3;\r\n          SandboxGameMode_OnUnitRegistered_0x60143c1(plVar7,param_2,0);\r\n          break;\r\n        default:\r\n          puStack_30 = (undefined1 *)0x18062f2dc;\r\n          FUN_180005010(0x39,_DAT_188961dd0,plVar7,param_2);\r\n        }\r\n        iVar4 = 0;\r\n        lVar6 = *(longlong *)(param_1 + 0x68);\r\n        while (lVar6 != 0) {\r\n          if (*(int *)(lVar6 + 0x18) <= iVar4) {\r\n            return;\r\n          }\r\n          if (*(longlong *)(param_1 + 0x68) == 0) break;\r\n          puStack_30 = (undefined1 *)0x18062f310;\r\n          plVar7 = (longlong *)FUN_184afcf00(*(longlong *)(param_1 + 0x68),iVar4,_DAT_188966600);\r\n          if (plVar7 == (longlong *)0x0) break;\r\n          if (DAT_188ccc7f0 != '\\0') {\r\n            puStack_30 = (undefined1 *)0x18062f329;\r\n            func_0x000180446d00(*plVar7);\r\n          }\r\n          puStack_30 = (undefined1 *)0x18062f346;\r\n          (**(code **)(*plVar7 + 0x210))(plVar7,param_2,1,*(undefined8 *)(*plVar7 + 0x218));\r\n          iVar4 = iVar4 + 1;\r\n          lVar6 = *(longlong *)(param_1 + 0x68);\r\n        }\r\n      }\r\n    }\r\n    puStack_30 = (undefined1 *)0x18062f387;\r\n    FUN_18048c0b0();\r\n    pcVar3 = (code *)swi(3);\r\n    (*pcVar3)();\r\n    return;\r\n  }\r\n  if (*(longlong *)(lVar6 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\n    pcVar3 = (code *)swi(3);\r\n    (*pcVar3)();\r\n    return;\r\n  }\r\n  auStack_48[0] = *(undefined8 *)(*(longlong *)(lVar6 + 0x18) + 0x30);\r\n  uStack_38 = 0;\r\n  puStack_30 = &stack0x00000008;\r\n  puStack_28 = auStack_48;\r\n  FUN_185ca7f50(auStack_48[0],&stack0x00000008,0);\r\n  if (*(longlong *)(lVar6 + 0x18) != 0) {\r\n    uVar1 = *(undefined8 *)(*(longlong *)(lVar6 + 0x18) + 0x10);\r\n    iVar4 = FUN_183f23b70(uVar1,*(undefined4 *)(lVar6 + 0x38),*(undefined4 *)(lVar6 + 0x14),0);\r\n    if (*(longlong *)(lVar6 + 0x18) != 0) {\r\n      lVar2 = *(longlong *)(*(longlong *)(lVar6 + 0x18) + 0x20);\r\n      if (lVar2 == 0) {\r\n        FUN_18048c0b0();\r\n      }\r\n      else {\r\n        FUN_183cf8c20(lVar2,uVar1,param_1,0);\r\n        FUN_183cf8c20(lVar2,uVar1,param_2,0);\r\n        iVar5 = FUN_183f22380(uVar1,2,0,iVar4,0);\r\n        if (iVar5 == 0) {\r\ncode_r0x0001832d231b:\r\n          FUN_183f22fd0(uVar1,iVar4 + -1,0);\r\n          return;\r\n        }\r\n        if (*(longlong *)(lVar6 + 0x18) != 0) {\r\n          FUN_183e0d130(*(longlong *)(lVar6 + 0x18),iVar4 + -1,0);\r\n          goto code_r0x0001832d231b;\r\n        }\r\n      }\r\n      FUN_18048c0b0();\r\n    }\r\n    FUN_18048c0b0();\r\n  }\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar3 = (code *)swi(3);\r\n  (*pcVar3)();\r\n  return;\r\n}\r\n\r\n"
+    }
+  },
+  {
+    "selection": {
+      "type": "Torappu.Battle.Entity",
+      "method": "OnInit",
+      "metadata_method_index": 66657,
+      "token": "0x6010462",
+      "address": "0x1806f92b0",
+      "virtual_slot": 30,
+      "parameters": [
+        {
+          "name": "initHeight",
+          "native_type": "Single"
+        }
+      ],
+      "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v9\\enemy_factory\\round1\\66657_Torappu_Battle_Entity_OnInit.c",
+    "result": {
+      "name": "Torappu_Battle_Entity_OnInit_0x6010462",
+      "display_name": "Torappu.Battle.Entity.OnInit",
+      "candidate_map_type": "Torappu.Battle.Entity",
+      "address": "0x1806f92b0",
+      "end_address": "0x1806f9349",
+      "ranges": [
+        {
+          "start": "0x1806f92b0",
+          "end": "0x1806f9349",
+          "unwind_rva": "0x7f66910",
+          "chained": false,
+          "source_sha256": "9e6ad2f3d230e44c8517e457ed045bd4d698e30195237179d1158257333c605c",
+          "source_file_offset": 7308976
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 7308976,
+      "token": "0x6010462",
+      "metadata_method_index": 66657,
+      "imported_range_checks": [
+        {
+          "start": "0x1806f92b0",
+          "bytes": 154,
+          "imported_sha256": "9e6ad2f3d230e44c8517e457ed045bd4d698e30195237179d1158257333c605c",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 37,
+      "direct_calls": [
+        {
+          "source": "1806f92d1",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806f92f0",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1806f9344",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_Battle_Entity_OnInit_0x6010462(longlong param_1,float param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  longlong lVar2;\r\n  undefined8 uVar3;\r\n  undefined8 uVar4;\r\n  longlong lVar5;\r\n  code *pcVar6;\r\n  int iVar7;\r\n  int iVar8;\r\n  ulonglong auStackX_8 [2];\r\n  undefined8 uStack_48;\r\n  undefined8 uStack_40;\r\n  undefined8 uStack_38;\r\n  ulonglong *puStack_30;\r\n  ulonglong *puStack_28;\r\n  undefined1 *puStack_20;\r\n  \r\n  if (DAT_188c908f1 == '\\0') {\r\n    uStack_40 = 0x1806f92d6;\r\n    FUN_18048bf00(&DAT_188841368);\r\n    DAT_188c908f1 = '\\x01';\r\n  }\r\n  if (*(int *)(_DAT_188841368 + 0xe0) == 0) {\r\n    uStack_40 = 0x1806f92f5;\r\n    func_0x00018048c140(_DAT_188841368);\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188841368 + 0xb8) + 0x928);\r\n  if (lVar1 != 0) {\r\n    if (*(longlong *)(lVar1 + 0x18) == 0) {\r\n      FUN_18048c0b0(lVar1,param_1,param_2,0);\r\n      pcVar6 = (code *)swi(3);\r\n      (*pcVar6)();\r\n      return;\r\n    }\r\n    uStack_48 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x30);\r\n    auStackX_8[0] = auStackX_8[0] & 0xffffffffffffff00;\r\n    uStack_38 = 0;\r\n    puStack_30 = auStackX_8;\r\n    puStack_28 = &uStack_48;\r\n    FUN_185ca7f50(uStack_48,auStackX_8,0);\r\n    if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n      uVar3 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x10);\r\n      iVar7 = FUN_183f23b70(uVar3,*(undefined4 *)(lVar1 + 0x38),*(undefined4 *)(lVar1 + 0x14),0);\r\n      if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n        lVar2 = *(longlong *)(*(longlong *)(lVar1 + 0x18) + 0x20);\r\n        if (lVar2 == 0) {\r\n          FUN_18048c0b0();\r\n        }\r\n        else {\r\n          FUN_183cf8c20(lVar2,uVar3,param_1,0);\r\n          FUN_183f22700(uVar3,(double)param_2,0);\r\n          iVar8 = FUN_183f22380(uVar3,2,0,iVar7,0);\r\n          if (iVar8 == 0) {\r\ncode_r0x000183650198:\r\n            FUN_183f22fd0(uVar3,iVar7 + -1,0);\r\n            if ((char)auStackX_8[0] != '\\0') {\r\n              func_0x000185ca7ff0(uStack_48,0);\r\n            }\r\n            return;\r\n          }\r\n          if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n            FUN_183e0d130(*(longlong *)(lVar1 + 0x18),iVar7 + -1,0);\r\n            goto code_r0x000183650198;\r\n          }\r\n        }\r\n        FUN_18048c0b0();\r\n      }\r\n      FUN_18048c0b0();\r\n    }\r\n    FUN_18048c0b0();\r\n    FUN_180472d50();\r\n    pcVar6 = (code *)swi(3);\r\n    (*pcVar6)();\r\n    return;\r\n  }\r\n  lVar1 = *(longlong *)(param_1 + 400);\r\n  if (lVar1 == 0) {\r\n    uStack_40 = 0x1806f9349;\r\n    FUN_18048c0b0();\r\n    pcVar6 = (code *)swi(3);\r\n    (*pcVar6)();\r\n    return;\r\n  }\r\n  if (cRam0000000188c90963 == '\\0') {\r\n    puStack_30 = (ulonglong *)&UNK_18071f03e;\r\n    FUN_18048bf00(0x18889ed08,0);\r\n    puStack_30 = (ulonglong *)&UNK_18071f04a;\r\n    FUN_18048bf00(0x1888737d8);\r\n    cRam0000000188c90963 = '\\x01';\r\n  }\r\n  lVar2 = **(longlong **)(lRam00000001888737d8 + 0xb8);\r\n  if (lVar2 == 0) {\r\n    lVar1 = *(longlong *)(lVar1 + 0x10);\r\n    if (lVar1 == 0) {\r\n      puStack_30 = (ulonglong *)&UNK_18071f096;\r\n      FUN_18048c0b0();\r\n      pcVar6 = (code *)swi(3);\r\n      (*pcVar6)();\r\n      return;\r\n    }\r\n    iVar7 = *(int *)(lVar1 + 0x20);\r\n    if (0 < iVar7) {\r\n      if (*(longlong *)(lVar1 + 0x10) == 0) {\r\n        puStack_30 = (ulonglong *)&UNK_185761152;\r\n        FUN_18048c0b0();\r\n        pcVar6 = (code *)swi(3);\r\n        (*pcVar6)();\r\n        return;\r\n      }\r\n      puStack_30 = (ulonglong *)&UNK_18576111f;\r\n      System_Array_Clear_0x6000ea1\r\n                (*(undefined8 *)(lVar1 + 0x10),0,*(undefined4 *)(*(longlong *)(lVar1 + 0x10) + 0x18)\r\n                 ,0);\r\n      *(undefined4 *)(lVar1 + 0x20) = 0;\r\n      *(undefined4 *)(lVar1 + 0x28) = 0;\r\n      *(undefined4 *)(lVar1 + 0x24) = 0xffffffff;\r\n      puStack_30 = (ulonglong *)&UNK_18576113f;\r\n      System_Array_Clear_0x6000ea1(*(undefined8 *)(lVar1 + 0x18),0,iVar7,0);\r\n    }\r\n    *(int *)(lVar1 + 0x2c) = *(int *)(lVar1 + 0x2c) + 1;\r\n    return;\r\n  }\r\n  if (*(longlong *)(lVar2 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\n    pcVar6 = (code *)swi(3);\r\n    (*pcVar6)();\r\n    return;\r\n  }\r\n  uVar3 = *(undefined8 *)(*(longlong *)(lVar2 + 0x18) + 0x30);\r\n  auStackX_8[0] = auStackX_8[0] & 0xffffffffffffff00;\r\n  puStack_30 = (ulonglong *)0x0;\r\n  puStack_28 = auStackX_8;\r\n  puStack_20 = &stack0x00000020;\r\n  FUN_185ca7f50(uVar3,auStackX_8,0);\r\n  if (*(longlong *)(lVar2 + 0x18) != 0) {\r\n    uVar4 = *(undefined8 *)(*(longlong *)(lVar2 + 0x18) + 0x10);\r\n    iVar7 = FUN_183f23b70(uVar4,*(undefined4 *)(lVar2 + 0x38),*(undefined4 *)(lVar2 + 0x14),0);\r\n    if (*(longlong *)(lVar2 + 0x18) != 0) {\r\n      lVar5 = *(longlong *)(*(longlong *)(lVar2 + 0x18) + 0x20);\r\n      if (lVar5 == 0) {\r\n        FUN_18048c0b0();\r\n      }\r\n      else {\r\n        FUN_183cf8c20(lVar5,uVar4,lVar1,0);\r\n        uStack_48 = 0;\r\n        iVar8 = FUN_183f22380(uVar4,1,0,iVar7);\r\n        if (iVar8 == 0) {\r\ncode_r0x0001833100e8:\r\n          FUN_183f22fd0(uVar4,iVar7 + -1,0);\r\n          if ((char)auStackX_8[0] != '\\0') {\r\n            func_0x000185ca7ff0(uVar3,0);\r\n          }\r\n          return;\r\n        }\r\n        if (*(longlong *)(lVar2 + 0x18) != 0) {\r\n          FUN_183e0d130(*(longlong *)(lVar2 + 0x18),iVar7 + -1,0);\r\n          goto code_r0x0001833100e8;\r\n        }\r\n      }\r\n      FUN_18048c0b0();\r\n    }\r\n    FUN_18048c0b0();\r\n  }\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar6 = (code *)swi(3);\r\n  (*pcVar6)();\r\n  return;\r\n}\r\n\r\n"
+    }
+  },
+  {
+    "selection": {
+      "type": "Torappu.Battle.BattleFactory",
+      "method": "CreateEnemy",
+      "metadata_method_index": 71615,
+      "token": "0x60117c0",
+      "address": "0x1808e9170",
+      "virtual_slot": 65535,
+      "parameters": [
+        {
+          "name": "enemyKey",
+          "native_type": "String"
+        }
+      ],
+      "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v9\\enemy_factory\\round1\\71615_Torappu_Battle_BattleFactory_CreateEnemy.c",
+    "result": {
+      "name": "Torappu_Battle_BattleFactory_CreateEnemy_0x60117c0",
+      "display_name": "Torappu.Battle.BattleFactory.CreateEnemy",
+      "candidate_map_type": "Torappu.Battle.BattleFactory",
+      "address": "0x1808e9170",
+      "end_address": "0x1808e933e",
+      "ranges": [
+        {
+          "start": "0x1808e9170",
+          "end": "0x1808e933e",
+          "unwind_rva": "0x7f64854",
+          "chained": false,
+          "source_sha256": "db475e3ef640ec432f122011b80ce52021c259632918ba02bf894b00c392ec7b",
+          "source_file_offset": 9340272
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 9340272,
+      "token": "0x60117c0",
+      "metadata_method_index": 71615,
+      "imported_range_checks": [
+        {
+          "start": "0x1808e9170",
+          "bytes": 463,
+          "imported_sha256": "db475e3ef640ec432f122011b80ce52021c259632918ba02bf894b00c392ec7b",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 106,
+      "direct_calls": [
+        {
+          "source": "1808e9190",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e919c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e91a8",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e91b4",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e91ea",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e91f6",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e9212",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e9224",
+          "target": "0x186716c80",
+          "candidate_name": "Torappu_FileUtil_Combine_0x600062a"
+        },
+        {
+          "source": "1808e923c",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e924b",
+          "target": "0x184589b30",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e9263",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e9270",
+          "target": "0x186b638d0",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e928b",
+          "target": "0x186b59e30",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e92a3",
+          "target": "0x186b73fb0",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e92ad",
+          "target": "0x186b59e30",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e92c5",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e9301",
+          "target": "0x186b759d0",
+          "candidate_name": null
+        },
+        {
+          "source": "1808e9339",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Removing unreachable block (ram,0x0001833561ec) */\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nlonglong * Torappu_Battle_BattleFactory_CreateEnemy_0x60117c0(longlong param_1,undefined8 param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  char cVar3;\r\n  int iVar4;\r\n  int iVar5;\r\n  undefined8 uVar6;\r\n  longlong *plVar7;\r\n  longlong lVar8;\r\n  undefined8 uVar9;\r\n  longlong *unaff_RSI;\r\n  bool bVar10;\r\n  undefined8 uStack_58;\r\n  undefined8 uStack_50;\r\n  undefined8 uStack_40;\r\n  undefined1 *puStack_38;\r\n  undefined8 *puStack_30;\r\n  \r\n  if (DAT_188c918dd == '\\0') {\r\n    uStack_40 = 0x1808e9195;\r\n    FUN_18048bf00(&DAT_18892a3a0);\r\n    uStack_40 = 0x1808e91a1;\r\n    FUN_18048bf00(&DAT_188932ce8);\r\n    uStack_40 = 0x1808e91ad;\r\n    FUN_18048bf00(&DAT_188937848);\r\n    uStack_40 = 0x1808e91b9;\r\n    FUN_18048bf00(&DAT_188815538);\r\n    DAT_188c918dd = '\\x01';\r\n  }\r\n  lVar8 = *(longlong *)(*(longlong *)(_DAT_18892a3a0 + 0xb8) + 0x40);\r\n  if (lVar8 == 0) {\r\n    if (DAT_188c91938 == '\\0') {\r\n      uStack_40 = 0x1808e91ef;\r\n      FUN_18048bf00(&DAT_188871340);\r\n      uStack_40 = 0x1808e91fb;\r\n      FUN_18048bf00(&DAT_188816f48);\r\n      DAT_188c91938 = '\\x01';\r\n    }\r\n    if (*(int *)(_DAT_188871340 + 0xe0) == 0) {\r\n      uStack_40 = 0x1808e9217;\r\n      func_0x00018048c140();\r\n    }\r\n    uStack_40 = 0x1808e9229;\r\n    uVar6 = Torappu_FileUtil_Combine_0x600062a(_DAT_188816f48,param_2,0);\r\n    if (*(int *)(_DAT_188815538 + 0xe0) == 0) {\r\n      uStack_40 = 0x1808e9241;\r\n      func_0x00018048c140();\r\n    }\r\n    uStack_40 = 0x1808e9250;\r\n    plVar7 = (longlong *)FUN_184589b30(uVar6,_DAT_188937848);\r\n    if (*(int *)(_DAT_188932ce8 + 0xe0) == 0) {\r\n      uStack_40 = 0x1808e9268;\r\n      func_0x00018048c140();\r\n    }\r\n    uStack_40 = 0x1808e9275;\r\n    cVar3 = FUN_186b638d0(plVar7,0,0);\r\n    if (cVar3 != '\\0') {\r\n      return (longlong *)0x0;\r\n    }\r\n    if (plVar7 != (longlong *)0x0) {\r\n      uStack_40 = 0x1808e9290;\r\n      lVar8 = FUN_186b59e30(plVar7,0);\r\n      if (lVar8 != 0) {\r\n        uStack_40 = 0x1808e92a8;\r\n        FUN_186b73fb0(lVar8,*(undefined8 *)(param_1 + 0x28),0);\r\n        uStack_40 = 0x1808e92b2;\r\n        lVar8 = FUN_186b59e30(plVar7,0);\r\n        if (DAT_188c8fd8f == '\\0') {\r\n          uStack_40 = 0x1808e92ca;\r\n          FUN_18048bf00(&DAT_188829ff0);\r\n          DAT_188c8fd8f = '\\x01';\r\n        }\r\n        if (lVar8 != 0) {\r\n          uStack_40 = 0x1808e9306;\r\n          FUN_186b759d0(lVar8,&stack0xffffffffffffffe8,0);\r\n          return plVar7;\r\n        }\r\n      }\r\n    }\r\n    uStack_40 = 0x1808e933e;\r\n    FUN_18048c0b0();\r\n    pcVar2 = (code *)swi(3);\r\n    plVar7 = (longlong *)(*pcVar2)();\r\n    return plVar7;\r\n  }\r\n  if (cRam0000000188cafdc2 == '\\0') {\r\n    FUN_18048bf00(0x188923610,param_1,param_2,0);\r\n    FUN_18048bf00(0x18881b6b0);\r\n    FUN_18048bf00(0x188906850);\r\n    cRam0000000188cafdc2 = '\\x01';\r\n  }\r\n  uStack_50 = 0;\r\n  if (*(longlong *)(lVar8 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\ncode_r0x000183356242:\r\n    FUN_18048c0b0();\r\ncode_r0x000183356248:\r\n    FUN_18048ba10(unaff_RSI,lVar8);\r\ncode_r0x000183356253:\r\n    FUN_18048c0b0();\r\n  }\r\n  else {\r\n    uStack_58 = *(undefined8 *)(*(longlong *)(lVar8 + 0x18) + 0x30);\r\n    uStack_40 = 0;\r\n    puStack_38 = &stack0x00000008;\r\n    puStack_30 = &uStack_58;\r\n    FUN_185ca7f50(uStack_58,&stack0x00000008,0);\r\n    if (*(longlong *)(lVar8 + 0x18) == 0) goto code_r0x00018335625d;\r\n    uVar6 = *(undefined8 *)(*(longlong *)(lVar8 + 0x18) + 0x10);\r\n    iVar4 = FUN_183f23b70(uVar6,*(undefined4 *)(lVar8 + 0x38),*(undefined4 *)(lVar8 + 0x14),0);\r\n    if (*(longlong *)(lVar8 + 0x18) != 0) {\r\n      unaff_RSI = *(longlong **)(*(longlong *)(lVar8 + 0x18) + 0x20);\r\n      if (unaff_RSI != (longlong *)0x0) {\r\n        FUN_183cf8c20(unaff_RSI,uVar6,param_1,0);\r\n        FUN_183cf8c20(unaff_RSI,uVar6,param_2,0);\r\n        bVar10 = true;\r\n        iVar5 = FUN_183f22380(uVar6,2,1,iVar4,0);\r\n        if (iVar5 != 0) {\r\n          if (*(longlong *)(lVar8 + 0x18) == 0) goto code_r0x000183356242;\r\n          FUN_183e0d130(*(longlong *)(lVar8 + 0x18),iVar4 + -1,0);\r\n        }\r\n        uVar9 = uRam0000000188923610;\r\n        if (*(int *)(lRam0000000188906850 + 0xe0) == 0) {\r\n          func_0x00018048c140();\r\n        }\r\n        uVar9 = FUN_185eded20(uVar9,0);\r\n        unaff_RSI = (longlong *)FUN_183cf3ce0(unaff_RSI,uVar6,iVar4 + 1,uVar9,0);\r\n        FUN_183f22fd0(uVar6,iVar4 + -1,0);\r\n        lVar8 = lRam000000018881b6b0;\r\n        if (unaff_RSI == (longlong *)0x0) {\r\n          return (longlong *)0x0;\r\n        }\r\n        lVar1 = *unaff_RSI;\r\n        if (DAT_188ccc7f0 == '\\0') {\r\n          if ((*(byte *)(lVar1 + 0x130) < *(byte *)(lRam000000018881b6b0 + 0x130)) ||\r\n             (*(longlong *)\r\n               (*(longlong *)(lVar1 + 200) + -8 +\r\n               (ulonglong)*(byte *)(lRam000000018881b6b0 + 0x130) * 8) != lRam000000018881b6b0)) {\r\n            bVar10 = false;\r\n          }\r\n          bVar10 = !bVar10;\r\n        }\r\n        else {\r\n          cVar3 = func_0x0001804463e0(lVar1,lRam000000018881b6b0);\r\n          bVar10 = cVar3 == '\\0';\r\n        }\r\n        plVar7 = (longlong *)0x0;\r\n        if (!bVar10) {\r\n          plVar7 = unaff_RSI;\r\n        }\r\n        if (plVar7 != (longlong *)0x0) {\r\n          return plVar7;\r\n        }\r\n        goto code_r0x000183356248;\r\n      }\r\n      goto code_r0x000183356253;\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\ncode_r0x00018335625d:\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar2 = (code *)swi(3);\r\n  plVar7 = (longlong *)(*pcVar2)();\r\n  return plVar7;\r\n}\r\n\r\n"
+    }
+  },
+  {
+    "selection": {
+      "type": "Torappu.Battle.Enemy",
+      "method": "OnInit",
+      "metadata_method_index": 76528,
+      "token": "0x6012af1",
+      "address": "0x180a71010",
+      "virtual_slot": 30,
+      "parameters": [
+        {
+          "name": "initHeight",
+          "native_type": "Single"
+        }
+      ],
+      "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v9\\enemy_factory\\round1\\76528_Torappu_Battle_Enemy_OnInit.c",
+    "result": {
+      "name": "Torappu_Battle_Enemy_OnInit_0x6012af1",
+      "display_name": "Torappu.Battle.Enemy.OnInit",
+      "candidate_map_type": "Torappu.Battle.Enemy",
+      "address": "0x180a71010",
+      "end_address": "0x180a71436",
+      "ranges": [
+        {
+          "start": "0x180a71010",
+          "end": "0x180a710a2",
+          "unwind_rva": "0x7f66910",
+          "chained": false,
+          "source_sha256": "17b0124ad7731c835419381983153b04a497d65d86960c2334539b340c372457",
+          "source_file_offset": 10945552
+        },
+        {
+          "start": "0x180a710a3",
+          "end": "0x180a713e2",
+          "unwind_rva": "0x7fc80e8",
+          "chained": true,
+          "source_sha256": "6f8f88829aede24d13d70448d1b270930baddd1253c20dbd7b219650c0736324",
+          "source_file_offset": 10945699
+        },
+        {
+          "start": "0x180a713e3",
+          "end": "0x180a71405",
+          "unwind_rva": "0x7fc8104",
+          "chained": true,
+          "source_sha256": "3fdc3d2682a6540ff5617581cb987a0d76cb5dfa0f593cedab3bd043ef299920",
+          "source_file_offset": 10946531
+        },
+        {
+          "start": "0x180a71406",
+          "end": "0x180a71436",
+          "unwind_rva": "0x7fc8114",
+          "chained": true,
+          "source_sha256": "866fe6bf53ac5434431f07fd751b706885545c3fd1cede82a0dd821d30f4bfe2",
+          "source_file_offset": 10946566
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 10945552,
+      "token": "0x6012af1",
+      "metadata_method_index": 76528,
+      "imported_range_checks": [
+        {
+          "start": "0x180a71010",
+          "bytes": 147,
+          "imported_sha256": "17b0124ad7731c835419381983153b04a497d65d86960c2334539b340c372457",
+          "match": true
+        },
+        {
+          "start": "0x180a710a3",
+          "bytes": 832,
+          "imported_sha256": "6f8f88829aede24d13d70448d1b270930baddd1253c20dbd7b219650c0736324",
+          "match": true
+        },
+        {
+          "start": "0x180a713e3",
+          "bytes": 35,
+          "imported_sha256": "3fdc3d2682a6540ff5617581cb987a0d76cb5dfa0f593cedab3bd043ef299920",
+          "match": true
+        },
+        {
+          "start": "0x180a71406",
+          "bytes": 49,
+          "imported_sha256": "866fe6bf53ac5434431f07fd751b706885545c3fd1cede82a0dd821d30f4bfe2",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 236,
+      "direct_calls": [
+        {
+          "source": "180a71031",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180a7103d",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180a71049",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180a71055",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180a71061",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180a71080",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180a710bb",
+          "target": "0x180acaac0",
+          "candidate_name": "Torappu_Battle_Unit_OnInit_0x6012f62"
+        },
+        {
+          "source": "180a710d6",
+          "target": "0x180a95880",
+          "candidate_name": "HeightController_OnInit_0x6012c75"
+        },
+        {
+          "source": "180a710ed",
+          "target": "0x180a91590",
+          "candidate_name": "FearController_OnInit_0x6012c5c"
+        },
+        {
+          "source": "180a71104",
+          "target": "0x180a86f80",
+          "candidate_name": "AttractController_OnInit_0x6012c67"
+        },
+        {
+          "source": "180a7111b",
+          "target": "0x180aa98b0",
+          "candidate_name": "Torappu_Battle_GroundBoundController_OnInit_0x6012d58"
+        },
+        {
+          "source": "180a71158",
+          "target": "0x184afcf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180a7116b",
+          "target": "0x1806ddda0",
+          "candidate_name": "Torappu_Battle_EnemySkill_Init_0x60102ff"
+        },
+        {
+          "source": "180a71189",
+          "target": "0x184afcf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180a7119c",
+          "target": "0x1806df6b0",
+          "candidate_name": "Torappu_Battle_EnemySkill_get_isRoot_0x60102eb"
+        },
+        {
+          "source": "180a711be",
+          "target": "0x184afcf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180a711d1",
+          "target": "0x1806dcf00",
+          "candidate_name": "Torappu_Battle_EnemySkill_Attach_0x6010300"
+        },
+        {
+          "source": "180a711f6",
+          "target": "0x180ad3930",
+          "candidate_name": "Torappu_Battle_Unit_get_talents_0x6012f2d"
+        },
+        {
+          "source": "180a7121e",
+          "target": "0x180ad3930",
+          "candidate_name": "Torappu_Battle_Unit_get_talents_0x6012f2d"
+        },
+        {
+          "source": "180a7123e",
+          "target": "0x180ad10c0",
+          "candidate_name": "Torappu_Battle_Unit_get_currentMode_0x6012ef4"
+        },
+        {
+          "source": "180a71255",
+          "target": "0x1809726b0",
+          "candidate_name": "Torappu_Battle_BasicTalent_CheckRootOrValidModeTalent_0x6011e62"
+        },
+        {
+          "source": "180a71263",
+          "target": "0x180ad3930",
+          "candidate_name": "Torappu_Battle_Unit_get_talents_0x6012f2d"
+        },
+        {
+          "source": "180a71289",
+          "target": "0x186b59d80",
+          "candidate_name": null
+        },
+        {
+          "source": "180a7129f",
+          "target": "0x186b5c530",
+          "candidate_name": null
+        },
+        {
+          "source": "180a712af",
+          "target": "0x1809724d0",
+          "candidate_name": "Torappu_Battle_BasicTalent_Attach_0x6011e59"
+        },
+        {
+          "source": "180a712c1",
+          "target": "0x180ad3930",
+          "candidate_name": "Torappu_Battle_Unit_get_talents_0x6012f2d"
+        },
+        {
+          "source": "180a712db",
+          "target": "0x185337c50",
+          "candidate_name": null
+        },
+        {
+          "source": "180a712ee",
+          "target": "0x180641830",
+          "candidate_name": "Torappu_Battle_BattleController_get_gameMode_0x600fc04"
+        },
+        {
+          "source": "180a71357",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "180a71377",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180a71397",
+          "target": "0x186732bd0",
+          "candidate_name": "Torappu_RandomUtil_Range_0x600077f"
+        },
+        {
+          "source": "180a713af",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180a713b9",
+          "target": "0x1866fdad0",
+          "candidate_name": "Torappu_FP_op_Implicit_0x600031c"
+        },
+        {
+          "source": "180a713cf",
+          "target": "0x181e04750",
+          "candidate_name": "Torappu_PeriodicTimer_Reset_0x6006576"
+        },
+        {
+          "source": "180a71406",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180a7140c",
+          "target": "0x18048c0a0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Removing unreachable block (ram,0x0001836501b1) */\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_Battle_Enemy_OnInit_0x6012af1(longlong param_1,undefined8 param_2)\r\n\r\n{\r\n  code *pcVar1;\r\n  char cVar2;\r\n  int iVar3;\r\n  longlong lVar4;\r\n  undefined8 uVar5;\r\n  longlong *plVar6;\r\n  uint uVar7;\r\n  int iVar8;\r\n  longlong lVar9;\r\n  undefined4 uVar10;\r\n  undefined8 uStack_48;\r\n  undefined8 uStack_40;\r\n  undefined8 uStack_38;\r\n  undefined1 *puStack_30;\r\n  undefined8 *puStack_28;\r\n  \r\n  if (DAT_188c928d9 == '\\0') {\r\n    uStack_40 = 0x180a71036;\r\n    FUN_18048bf00(&DAT_18881b6b0);\r\n    uStack_40 = 0x180a71042;\r\n    FUN_18048bf00(&DAT_18885a700);\r\n    uStack_40 = 0x180a7104e;\r\n    FUN_18048bf00(0x188935958);\r\n    uStack_40 = 0x180a7105a;\r\n    FUN_18048bf00(&DAT_188935b98);\r\n    uStack_40 = 0x180a71066;\r\n    FUN_18048bf00(&DAT_1888d3908);\r\n    DAT_188c928d9 = '\\x01';\r\n  }\r\n  if (*(int *)(_DAT_18881b6b0 + 0xe0) == 0) {\r\n    uStack_40 = 0x180a71085;\r\n    func_0x00018048c140(_DAT_18881b6b0);\r\n  }\r\n  lVar4 = *(longlong *)(*(longlong *)(_DAT_18881b6b0 + 0xb8) + 0x808);\r\n  if (lVar4 != 0) {\r\n    if (*(longlong *)(lVar4 + 0x18) == 0) {\r\n      FUN_18048c0b0(lVar4,param_1,(float)param_2,0);\r\n      pcVar1 = (code *)swi(3);\r\n      (*pcVar1)();\r\n      return;\r\n    }\r\n    uStack_48 = *(undefined8 *)(*(longlong *)(lVar4 + 0x18) + 0x30);\r\n    uStack_38 = 0;\r\n    puStack_30 = &stack0x00000008;\r\n    puStack_28 = &uStack_48;\r\n    FUN_185ca7f50(uStack_48,&stack0x00000008,0);\r\n    if (*(longlong *)(lVar4 + 0x18) != 0) {\r\n      uVar5 = *(undefined8 *)(*(longlong *)(lVar4 + 0x18) + 0x10);\r\n      iVar8 = FUN_183f23b70(uVar5,*(undefined4 *)(lVar4 + 0x38),*(undefined4 *)(lVar4 + 0x14),0);\r\n      if (*(longlong *)(lVar4 + 0x18) != 0) {\r\n        lVar9 = *(longlong *)(*(longlong *)(lVar4 + 0x18) + 0x20);\r\n        if (lVar9 == 0) {\r\n          FUN_18048c0b0();\r\n        }\r\n        else {\r\n          FUN_183cf8c20(lVar9,uVar5,param_1,0);\r\n          FUN_183f22700(uVar5,(double)(float)param_2,0);\r\n          iVar3 = FUN_183f22380(uVar5,2,0,iVar8,0);\r\n          if (iVar3 == 0) {\r\ncode_r0x000183650198:\r\n            FUN_183f22fd0(uVar5,iVar8 + -1,0);\r\n            return;\r\n          }\r\n          if (*(longlong *)(lVar4 + 0x18) != 0) {\r\n            FUN_183e0d130(*(longlong *)(lVar4 + 0x18),iVar8 + -1,0);\r\n            goto code_r0x000183650198;\r\n          }\r\n        }\r\n        FUN_18048c0b0();\r\n      }\r\n      FUN_18048c0b0();\r\n    }\r\n    FUN_18048c0b0();\r\n    FUN_180472d50();\r\n    pcVar1 = (code *)swi(3);\r\n    (*pcVar1)();\r\n    return;\r\n  }\r\n  uStack_40 = 0x180a710c0;\r\n  Torappu_Battle_Unit_OnInit_0x6012f62(param_1,param_2,0);\r\n  if (*(longlong *)(param_1 + 0x3b0) != 0) {\r\n    uStack_40 = 0x180a710db;\r\n    HeightController_OnInit_0x6012c75(*(longlong *)(param_1 + 0x3b0),param_2,0);\r\n    if (*(longlong *)(param_1 + 0x3d8) != 0) {\r\n      uStack_40 = 0x180a710f2;\r\n      FearController_OnInit_0x6012c5c(*(longlong *)(param_1 + 0x3d8),0);\r\n      if (*(longlong *)(param_1 + 0x3e0) != 0) {\r\n        uStack_40 = 0x180a71109;\r\n        AttractController_OnInit_0x6012c67(*(longlong *)(param_1 + 0x3e0),0);\r\n        if (*(longlong *)(param_1 + 1000) != 0) {\r\n          uStack_40 = 0x180a71120;\r\n          Torappu_Battle_GroundBoundController_OnInit_0x6012d58(*(longlong *)(param_1 + 1000),0);\r\n          iVar8 = 0;\r\n          lVar4 = *(longlong *)(param_1 + 0x4e0);\r\n          while (lVar4 != 0) {\r\n            if (*(int *)(lVar4 + 0x18) <= iVar8) {\r\n              uVar7 = 0;\r\n              uStack_40 = 0x180a711fb;\r\n              lVar4 = Torappu_Battle_Unit_get_talents_0x6012f2d(param_1,0);\r\n              if (lVar4 != 0) {\r\n                lVar9 = 0x20;\r\n                goto LAB_180a71210;\r\n              }\r\n              break;\r\n            }\r\n            if (*(longlong *)(param_1 + 0x4e0) == 0) break;\r\n            uStack_40 = 0x180a7115d;\r\n            lVar4 = FUN_184afcf00(*(longlong *)(param_1 + 0x4e0),iVar8,_DAT_188935b98);\r\n            if (lVar4 == 0) break;\r\n            uStack_40 = 0x180a71170;\r\n            Torappu_Battle_EnemySkill_Init_0x60102ff(lVar4,0);\r\n            if (*(longlong *)(param_1 + 0x4e0) == 0) break;\r\n            uStack_40 = 0x180a7118e;\r\n            lVar4 = FUN_184afcf00();\r\n            if (lVar4 == 0) break;\r\n            uStack_40 = 0x180a711a1;\r\n            cVar2 = Torappu_Battle_EnemySkill_get_isRoot_0x60102eb(lVar4);\r\n            if (cVar2 != '\\0') {\r\n              if (*(longlong *)(param_1 + 0x4e0) == 0) break;\r\n              uStack_40 = 0x180a711c3;\r\n              lVar4 = FUN_184afcf00();\r\n              if (lVar4 == 0) break;\r\n              uStack_40 = 0x180a711d6;\r\n              Torappu_Battle_EnemySkill_Attach_0x6010300(lVar4);\r\n            }\r\n            iVar8 = iVar8 + 1;\r\n            lVar4 = *(longlong *)(param_1 + 0x4e0);\r\n          }\r\n        }\r\n      }\r\n    }\r\n  }\r\n  goto LAB_180a71406;\r\nLAB_180a71210:\r\n  do {\r\n    if (*(int *)(lVar4 + 0x18) <= (int)uVar7) {\r\n      uStack_40 = 0x180a712e0;\r\n      lVar4 = FUN_185337c50(_DAT_1888d3908);\r\n      if (lVar4 == 0) break;\r\n      uStack_40 = 0x180a712f3;\r\n      plVar6 = (longlong *)Torappu_Battle_BattleController_get_gameMode_0x600fc04(lVar4,0);\r\n      if (plVar6 == (longlong *)0x0) break;\r\n      switch(*(undefined4 *)(*plVar6 + 0x11c)) {\r\n      case 0x9b7:\r\n      case 0x9b8:\r\n      case 0x9b9:\r\n      case 0x9ba:\r\n      case 0x9bb:\r\n      case 0x9bc:\r\n      case 0x9be:\r\n      case 0x9bf:\r\n      case 0x9c0:\r\n      case 0x9c1:\r\n      case 0x9c2:\r\n      case 0x9c3:\r\n      case 0x9c4:\r\n      case 0x9c5:\r\n      case 0x9c6:\r\n      case 0x9c7:\r\n      case 0x9c8:\r\n      case 0x9c9:\r\n      case 0x9ca:\r\n      case 0x9cb:\r\n      case 0x9cc:\r\n      case 0x9cd:\r\n      case 0x9ce:\r\n      case 0x9cf:\r\n      case 0x9d0:\r\n      case 0x9d1:\r\n        uStack_40 = 0x180a7133a;\r\n        cVar2 = DefaultGameMode_get_enableEnemyRuntimeSnapshot_0x60140eb(plVar6,0);\r\n        break;\r\n      case 0x9bd:\r\n        uStack_40 = 0x180a71346;\r\n        cVar2 = ArkDexGameMode_get_enableEnemyRuntimeSnapshot_0x6013c08(plVar6,0);\r\n        break;\r\n      default:\r\n        uStack_40 = 0x180a7135c;\r\n        cVar2 = FUN_180005310(0x10,_DAT_188961dd0,plVar6);\r\n      }\r\n      if (cVar2 != '\\0') {\r\n        lVar4 = *(longlong *)(param_1 + 0x4e8);\r\n        if (*(int *)(_DAT_18881b6b0 + 0xe0) == 0) {\r\n          uStack_40 = 0x180a7137c;\r\n          func_0x00018048c140();\r\n        }\r\n        uStack_40 = 0x180a7139c;\r\n        uVar10 = func_0x000186732bd0(*(undefined4 *)(*(longlong *)(_DAT_18881b6b0 + 0xb8) + 8),\r\n                                     *(undefined4 *)(*(longlong *)(_DAT_18881b6b0 + 0xb8) + 0xc),0);\r\n        if (*(int *)(_DAT_18885a700 + 0xe0) == 0) {\r\n          uStack_40 = 0x180a713b4;\r\n          func_0x00018048c140();\r\n        }\r\n        uStack_40 = 0x180a713be;\r\n        uVar5 = func_0x0001866fdad0(uVar10,0);\r\n        if (lVar4 == 0) break;\r\n        uStack_40 = 0x180a713d4;\r\n        Torappu_PeriodicTimer_Reset_0x6006576(lVar4,uVar5,1,0);\r\n      }\r\n      return;\r\n    }\r\n    uStack_40 = 0x180a71223;\r\n    lVar4 = Torappu_Battle_Unit_get_talents_0x6012f2d(param_1,0);\r\n    if (lVar4 == 0) break;\r\n    if (*(uint *)(lVar4 + 0x18) <= uVar7) {\r\nLAB_180a7140c:\r\n      uStack_40 = 0x180a71411;\r\n      FUN_18048c0a0();\r\n      pcVar1 = (code *)swi(3);\r\n      (*pcVar1)();\r\n      return;\r\n    }\r\n    lVar4 = *(longlong *)(lVar9 + lVar4);\r\n    uStack_40 = 0x180a71243;\r\n    uVar5 = Torappu_Battle_Unit_get_currentMode_0x6012ef4(param_1,0);\r\n    if (lVar4 == 0) break;\r\n    uStack_40 = 0x180a7125a;\r\n    cVar2 = Torappu_Battle_BasicTalent_CheckRootOrValidModeTalent_0x6011e62(lVar4,uVar5,0);\r\n    if (cVar2 == '\\0') {\r\n      uStack_40 = 0x180a71268;\r\n      lVar4 = Torappu_Battle_Unit_get_talents_0x6012f2d(param_1);\r\n      if (lVar4 == 0) break;\r\n      if (*(uint *)(lVar4 + 0x18) <= uVar7) goto LAB_180a7140c;\r\n      if (*(longlong *)(lVar9 + lVar4) == 0) break;\r\n      uStack_40 = 0x180a7128e;\r\n      lVar4 = FUN_186b59d80();\r\n      if (lVar4 == 0) break;\r\n      uStack_40 = 0x180a712a4;\r\n      FUN_186b5c530(lVar4);\r\n    }\r\n    else {\r\n      uStack_40 = 0x180a712b4;\r\n      Torappu_Battle_BasicTalent_Attach_0x6011e59(lVar4);\r\n    }\r\n    uVar7 = uVar7 + 1;\r\n    lVar9 = lVar9 + 8;\r\n    uStack_40 = 0x180a712c6;\r\n    lVar4 = Torappu_Battle_Unit_get_talents_0x6012f2d(param_1);\r\n  } while (lVar4 != 0);\r\nLAB_180a71406:\r\n  uStack_40 = 0x180a7140b;\r\n  FUN_18048c0b0();\r\n  pcVar1 = (code *)swi(3);\r\n  (*pcVar1)();\r\n  return;\r\n}\r\n\r\n"
+    }
+  },
+  {
+    "selection": {
+      "type": "Torappu.Battle.Unit",
+      "method": "OnPostInit",
+      "metadata_method_index": 77666,
+      "token": "0x6012f63",
+      "address": "0x180acae20",
+      "virtual_slot": 31,
+      "parameters": [],
+      "basis": "Exact metadata owner/token/codegen method pointer; CreateEnemy->Enemy.Init dependency"
+    },
+    "c_file": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v9\\enemy_factory\\round1\\77666_Torappu_Battle_Unit_OnPostInit.c",
+    "result": {
+      "name": "Torappu_Battle_Unit_OnPostInit_0x6012f63",
+      "display_name": "Torappu.Battle.Unit.OnPostInit",
+      "candidate_map_type": "Torappu.Battle.Unit",
+      "address": "0x180acae20",
+      "end_address": "0x180acaf51",
+      "ranges": [
+        {
+          "start": "0x180acae20",
+          "end": "0x180acae6e",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "a921859c75c8a243c4ca3c20950916dae1acbf900a27ddb593874c8fef9565c1",
+          "source_file_offset": 11313696
+        },
+        {
+          "start": "0x180acae6f",
+          "end": "0x180acaf3b",
+          "unwind_rva": "0x7fcd4b8",
+          "chained": true,
+          "source_sha256": "bc87087046dd4d7fdfc9f630a83744b4fda0d64d1b41e6bcc7860fc888e40456",
+          "source_file_offset": 11313775
+        },
+        {
+          "start": "0x180acaf3c",
+          "end": "0x180acaf4b",
+          "unwind_rva": "0x7fcd4cc",
+          "chained": true,
+          "source_sha256": "053c7fc1458a1d1617154ac6556371c0cb9f40a21826d0069ea4fb4dc5efa8cb",
+          "source_file_offset": 11313980
+        },
+        {
+          "start": "0x180acaf4c",
+          "end": "0x180acaf51",
+          "unwind_rva": "0x7fcd4dc",
+          "chained": true,
+          "source_sha256": "2eca99b326ce3c09f56e8f90420531557ab3eefd88aa568d74506d61f844f24a",
+          "source_file_offset": 11313996
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 11313696,
+      "token": "0x6012f63",
+      "metadata_method_index": 77666,
+      "imported_range_checks": [
+        {
+          "start": "0x180acae20",
+          "bytes": 79,
+          "imported_sha256": "a921859c75c8a243c4ca3c20950916dae1acbf900a27ddb593874c8fef9565c1",
+          "match": true
+        },
+        {
+          "start": "0x180acae6f",
+          "bytes": 205,
+          "imported_sha256": "bc87087046dd4d7fdfc9f630a83744b4fda0d64d1b41e6bcc7860fc888e40456",
+          "match": true
+        },
+        {
+          "start": "0x180acaf3c",
+          "bytes": 16,
+          "imported_sha256": "053c7fc1458a1d1617154ac6556371c0cb9f40a21826d0069ea4fb4dc5efa8cb",
+          "match": true
+        },
+        {
+          "start": "0x180acaf4c",
+          "bytes": 6,
+          "imported_sha256": "2eca99b326ce3c09f56e8f90420531557ab3eefd88aa568d74506d61f844f24a",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 74,
+      "direct_calls": [
+        {
+          "source": "180acae39",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180acae45",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180acae79",
+          "target": "0x18050cf60",
+          "candidate_name": "BattleTimer_EventOnEntryClick_0x6000062"
+        },
+        {
+          "source": "180acae8a",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "180acaeb8",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "180acaec5",
+          "target": "0x186b63a70",
+          "candidate_name": null
+        },
+        {
+          "source": "180acaeda",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "180acaf09",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "180acaf4c",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Removing unreachable block (ram,0x0001833006f9) */\r\n/* WARNING: Removing unreachable block (ram,0x0001833100fe) */\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_Battle_Unit_OnPostInit_0x6012f63(longlong *param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  longlong lVar2;\r\n  code *pcVar3;\r\n  char cVar4;\r\n  int iVar5;\r\n  int iVar6;\r\n  undefined8 uVar7;\r\n  longlong *plVar8;\r\n  undefined8 uStackX_20;\r\n  undefined8 auStack_48 [2];\r\n  undefined8 uStack_38;\r\n  undefined *puStack_30;\r\n  undefined8 *puStack_28;\r\n  undefined8 *puStack_20;\r\n  \r\n  if (DAT_188c92be4 == '\\0') {\r\n    puStack_30 = (undefined *)0x180acae3e;\r\n    FUN_18048bf00(&DAT_188932ce8);\r\n    puStack_30 = (undefined *)0x180acae4a;\r\n    FUN_18048bf00(&DAT_188805040);\r\n    DAT_188c92be4 = '\\x01';\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188805040 + 0xb8) + 0x350);\r\n  if (lVar1 != 0) {\r\n    if (*(longlong *)(lVar1 + 0x18) == 0) {\r\n      FUN_18048c0b0();\r\n      pcVar3 = (code *)swi(3);\r\n      (*pcVar3)();\r\n      return;\r\n    }\r\n    uStackX_20 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x30);\r\n    puStack_30 = (undefined *)0x0;\r\n    puStack_28 = (undefined8 *)&stack0x00000008;\r\n    puStack_20 = &uStackX_20;\r\n    FUN_185ca7f50(uStackX_20,&stack0x00000008,0);\r\n    if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n      uVar7 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x10);\r\n      iVar5 = FUN_183f23b70(uVar7,*(undefined4 *)(lVar1 + 0x38),*(undefined4 *)(lVar1 + 0x14),0);\r\n      if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n        lVar2 = *(longlong *)(*(longlong *)(lVar1 + 0x18) + 0x20);\r\n        if (lVar2 == 0) {\r\n          FUN_18048c0b0();\r\n        }\r\n        else {\r\n          FUN_183cf8c20(lVar2,uVar7,param_1,0);\r\n          auStack_48[0] = 0;\r\n          iVar6 = FUN_183f22380(uVar7,1,0,iVar5);\r\n          if (iVar6 == 0) {\r\ncode_r0x0001833100e8:\r\n            FUN_183f22fd0(uVar7,iVar5 + -1,0);\r\n            return;\r\n          }\r\n          if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n            FUN_183e0d130(*(longlong *)(lVar1 + 0x18),iVar5 + -1,0);\r\n            goto code_r0x0001833100e8;\r\n          }\r\n        }\r\n        FUN_18048c0b0();\r\n      }\r\n      FUN_18048c0b0();\r\n    }\r\n    FUN_18048c0b0();\r\n    FUN_180472d50();\r\n    pcVar3 = (code *)swi(3);\r\n    (*pcVar3)();\r\n    return;\r\n  }\r\n  puStack_30 = (undefined *)0x180acae7e;\r\n  func_0x00018050cf60(param_1,0);\r\n  if (DAT_188ccc7f0 != '\\0') {\r\n    puStack_30 = (undefined *)0x180acae8f;\r\n    func_0x000180446d00(*param_1);\r\n  }\r\n  puStack_30 = (undefined *)0x180acaea5;\r\n  uVar7 = (**(code **)(*param_1 + 0xb60))(param_1,*(undefined8 *)(*param_1 + 0xb68));\r\n  if (*(int *)(_DAT_188932ce8 + 0xe0) == 0) {\r\n    puStack_30 = (undefined *)0x180acaebd;\r\n    func_0x00018048c140();\r\n  }\r\n  puStack_30 = (undefined *)0x180acaeca;\r\n  cVar4 = FUN_186b63a70(uVar7,0,0);\r\n  if (cVar4 != '\\0') {\r\n    if (DAT_188ccc7f0 != '\\0') {\r\n      puStack_30 = (undefined *)0x180acaedf;\r\n      func_0x000180446d00(*param_1);\r\n    }\r\n    puStack_30 = (undefined *)0x180acaef5;\r\n    plVar8 = (longlong *)(**(code **)(*param_1 + 0xb60))(param_1,*(undefined8 *)(*param_1 + 0xb68));\r\n    if (plVar8 == (longlong *)0x0) {\r\n      puStack_30 = (undefined *)0x180acaf51;\r\n      FUN_18048c0b0();\r\n      pcVar3 = (code *)swi(3);\r\n      (*pcVar3)();\r\n      return;\r\n    }\r\n    if (DAT_188ccc7f0 != '\\0') {\r\n      puStack_30 = (undefined *)0x180acaf0e;\r\n      func_0x000180446d00(*plVar8);\r\n    }\r\n    puStack_30 = (undefined *)0x180acaf25;\r\n    (**(code **)(*plVar8 + 0x330))(plVar8,*(undefined8 *)(*plVar8 + 0x338));\r\n  }\r\n  if (cRam0000000188c90812 == '\\0') {\r\n    puStack_30 = &UNK_180709d65;\r\n    FUN_18048bf00(&DAT_188841368,1,0);\r\n    cRam0000000188c90812 = '\\x01';\r\n  }\r\n  if (*(int *)(_DAT_188841368 + 0xe0) == 0) {\r\n    puStack_30 = &UNK_180709d84;\r\n    func_0x00018048c140(_DAT_188841368);\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_188841368 + 0xb8) + 0x228);\r\n  if (lVar1 == 0) {\r\n    *(undefined1 *)((longlong)param_1 + 0x174) = 1;\r\n    return;\r\n  }\r\n  if (*(longlong *)(lVar1 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\n    pcVar3 = (code *)swi(3);\r\n    (*pcVar3)();\r\n    return;\r\n  }\r\n  auStack_48[0] = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x30);\r\n  uStack_38 = 0;\r\n  puStack_30 = &stack0x00000008;\r\n  puStack_28 = auStack_48;\r\n  FUN_185ca7f50(auStack_48[0],&stack0x00000008,0);\r\n  if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n    uVar7 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x10);\r\n    iVar5 = FUN_183f23b70(uVar7,*(undefined4 *)(lVar1 + 0x38),*(undefined4 *)(lVar1 + 0x14),0);\r\n    if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n      lVar2 = *(longlong *)(*(longlong *)(lVar1 + 0x18) + 0x20);\r\n      if (lVar2 == 0) {\r\n        FUN_18048c0b0();\r\n      }\r\n      else {\r\n        FUN_183cf8c20(lVar2,uVar7,param_1,0);\r\n        FUN_183f22430(uVar7,1,0);\r\n        iVar6 = FUN_183f22380(uVar7,2,0,iVar5,0);\r\n        if (iVar6 == 0) {\r\ncode_r0x0001833006e0:\r\n          FUN_183f22fd0(uVar7,iVar5 + -1,0);\r\n          return;\r\n        }\r\n        if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n          FUN_183e0d130(*(longlong *)(lVar1 + 0x18),iVar5 + -1,0);\r\n          goto code_r0x0001833006e0;\r\n        }\r\n      }\r\n      FUN_18048c0b0();\r\n    }\r\n    FUN_18048c0b0();\r\n  }\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar3 = (code *)swi(3);\r\n  (*pcVar3)();\r\n  return;\r\n}\r\n\r\n"
+    }
+  }
+]

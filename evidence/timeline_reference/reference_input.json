@@ -1,0 +1,5291 @@
+{
+  "schema": 1,
+  "seed": 1129271887,
+  "scope": "static coroutine translation; map kernels use independently labeled external no-counted-creation input",
+  "cases": [
+    {
+      "name": "empty_root",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "event_only_prime_frame0",
+      "ops": [
+        {
+          "op": "event",
+          "label": "prime"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "plain_null_marker",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "ordinary_list_is_not_iterator",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "new_empty_child_suspends_parent",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "three_empty_siblings",
+      "ops": [
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "event",
+          "label": "a"
+        },
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "event",
+          "label": "b"
+        },
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "event",
+          "label": "c"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "nested_empty_leaf",
+      "ops": [
+        {
+          "op": "event",
+          "label": "root"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "child"
+            },
+            {
+              "op": "child",
+              "ops": []
+            },
+            {
+              "op": "event",
+              "label": "child_after"
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "root_after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "filled_child_finishes_same_frame",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "child_before"
+            },
+            {
+              "op": "marker",
+              "value": "null"
+            },
+            {
+              "op": "event",
+              "label": "child_after"
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "root_after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "filled_then_new_empty",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "marker",
+              "value": "null"
+            },
+            {
+              "op": "event",
+              "label": "filled_after"
+            }
+          ]
+        },
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "event",
+          "label": "root_after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "deep_nested_nonempty",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "child",
+                  "ops": [
+                    {
+                      "op": "marker",
+                      "value": "null"
+                    },
+                    {
+                      "op": "event",
+                      "label": "leaf_after"
+                    }
+                  ]
+                },
+                {
+                  "op": "event",
+                  "label": "middle_after"
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "label": "outer_after"
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "root_after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "wait_while_initial_false",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "p"
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "wait_while_true_true_false",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "p"
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "two_wait_while_initial_false",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "a"
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "b"
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "wait_boundary_-0.25",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "wait",
+          "delay": -0.25
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "wait_boundary_0",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "wait",
+          "delay": 0
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "wait_boundary_0.125",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "wait",
+          "delay": 0.125
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "wait_boundary_0.375",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "wait",
+          "delay": 0.375
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "wait_boundary_0.625",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "wait",
+          "delay": 0.625
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "wait_boundary_0.875",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "wait",
+          "delay": 0.875
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "wait_boundary_1.125",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "wait",
+          "delay": 1.125
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "serial_zero_time_empty_executors",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "a",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "b",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "c",
+              "frames": 0,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "serial_zero_time_single_frame_executors",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "a",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "b",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "c",
+              "frames": 1,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "serial_planned_difference_with_executor_drift",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 1,
+              "label": "a",
+              "frames": 2,
+              "isValid": true
+            },
+            {
+              "time": 2,
+              "label": "b",
+              "frames": 2,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "serial_invalid_advances_planned_time",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0.5,
+              "label": "invalid",
+              "frames": 1,
+              "isValid": false
+            },
+            {
+              "time": 0.75,
+              "label": "valid",
+              "frames": 1,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "serial_all_invalid_first_empty_boundary",
+      "ops": [
+        {
+          "op": "event",
+          "label": "before"
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "invalid",
+              "frames": 1,
+              "isValid": false
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "serial_preview_negative_times",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -3,
+              "label": "p0",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": -2.700000047683716,
+              "label": "p1",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "spawn",
+              "frames": 1,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "after"
+        }
+      ],
+      "delta_bits": "3d088880",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_00",
+      "ops": [
+        {
+          "op": "queue",
+          "items": []
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "0.1"
+        },
+        {
+          "op": "wait",
+          "delay": 0
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "0.3.q0",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": -0.5,
+              "label": "0.3.q1",
+              "frames": 2,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "0.3.q2",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0.75,
+              "label": "0.3.q3",
+              "frames": 0,
+              "isValid": true
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_01",
+      "ops": [
+        {
+          "op": "event",
+          "label": "1.0"
+        },
+        {
+          "op": "wait",
+          "delay": 0.125
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "1.2.0"
+            },
+            {
+              "op": "wait",
+              "delay": 0
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "child",
+                  "ops": [
+                    {
+                      "op": "while",
+                      "values": [
+                        true,
+                        true,
+                        false
+                      ],
+                      "label": "1.2.2.0.0"
+                    },
+                    {
+                      "op": "marker",
+                      "value": "list"
+                    }
+                  ]
+                },
+                {
+                  "op": "marker",
+                  "value": "object"
+                }
+              ]
+            },
+            {
+              "op": "marker",
+              "value": "null"
+            }
+          ]
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "child",
+                  "ops": [
+                    {
+                      "op": "wait",
+                      "delay": -0.25
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_02",
+      "ops": [
+        {
+          "op": "queue",
+          "items": []
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_03",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "3.0.0"
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "3.1"
+        },
+        {
+          "op": "event",
+          "label": "3.2"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "wait",
+              "delay": 0.375
+            },
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 1.0,
+                  "label": "3.3.1.q0",
+                  "frames": 2,
+                  "isValid": true
+                }
+              ]
+            },
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 0.5,
+                  "label": "3.3.2.q0",
+                  "frames": 0,
+                  "isValid": true
+                },
+                {
+                  "time": 0.75,
+                  "label": "3.3.2.q1",
+                  "frames": 2,
+                  "isValid": true
+                },
+                {
+                  "time": 0.75,
+                  "label": "3.3.2.q2",
+                  "frames": 0,
+                  "isValid": false
+                },
+                {
+                  "time": 1.0,
+                  "label": "3.3.2.q3",
+                  "frames": 2,
+                  "isValid": true
+                }
+              ]
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "while",
+                  "values": [
+                    true,
+                    false
+                  ],
+                  "label": "3.3.3.0"
+                },
+                {
+                  "op": "event",
+                  "label": "3.3.3.1"
+                },
+                {
+                  "op": "while",
+                  "values": [
+                    false
+                  ],
+                  "label": "3.3.3.2"
+                },
+                {
+                  "op": "child",
+                  "ops": []
+                },
+                {
+                  "op": "child",
+                  "ops": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_04",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0.5,
+              "label": "4.0.q0",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0.5,
+              "label": "4.0.q1",
+              "frames": 2,
+              "isValid": true
+            },
+            {
+              "time": 0.75,
+              "label": "4.0.q2",
+              "frames": 0,
+              "isValid": true
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_05",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "5.0.q0",
+              "frames": 0,
+              "isValid": false
+            },
+            {
+              "time": -0.5,
+              "label": "5.0.q1",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "5.0.q2",
+              "frames": 2,
+              "isValid": true
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_06",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 0.25,
+                  "label": "6.0.0.q0",
+                  "frames": 2,
+                  "isValid": false
+                }
+              ]
+            },
+            {
+              "op": "marker",
+              "value": "null"
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "event",
+                  "label": "6.0.2.0"
+                },
+                {
+                  "op": "wait",
+                  "delay": 0.375
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "6.1.q0",
+              "frames": 2,
+              "isValid": true
+            },
+            {
+              "time": 0.5,
+              "label": "6.1.q1",
+              "frames": 1,
+              "isValid": false
+            }
+          ]
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "6.2"
+        },
+        {
+          "op": "queue",
+          "items": []
+        },
+        {
+          "op": "event",
+          "label": "6.4"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_07",
+      "ops": [
+        {
+          "op": "wait",
+          "delay": 0.125
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_08",
+      "ops": [
+        {
+          "op": "wait",
+          "delay": 0
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "8.1.q0",
+              "frames": 0,
+              "isValid": false
+            },
+            {
+              "time": 0.5,
+              "label": "8.1.q1",
+              "frames": 0,
+              "isValid": false
+            },
+            {
+              "time": 0.75,
+              "label": "8.1.q2",
+              "frames": 0,
+              "isValid": false
+            }
+          ]
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "8.2"
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_09",
+      "ops": [
+        {
+          "op": "queue",
+          "items": []
+        },
+        {
+          "op": "event",
+          "label": "9.1"
+        },
+        {
+          "op": "queue",
+          "items": []
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "9.3.q0",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": -0.5,
+              "label": "9.3.q1",
+              "frames": 0,
+              "isValid": true
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_10",
+      "ops": [
+        {
+          "op": "wait",
+          "delay": 0.125
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "10.1"
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "10.2.q0",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "10.2.q1",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0.25,
+              "label": "10.2.q2",
+              "frames": 1,
+              "isValid": true
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_11",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "11.0.q0",
+              "frames": 0,
+              "isValid": false
+            },
+            {
+              "time": -0.5,
+              "label": "11.0.q1",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": -0.5,
+              "label": "11.0.q2",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0.5,
+              "label": "11.0.q3",
+              "frames": 0,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "queue",
+              "items": []
+            },
+            {
+              "op": "child",
+              "ops": []
+            },
+            {
+              "op": "marker",
+              "value": "list"
+            },
+            {
+              "op": "marker",
+              "value": "object"
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_12",
+      "ops": [
+        {
+          "op": "event",
+          "label": "12.0"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_13",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "event",
+          "label": "13.1"
+        },
+        {
+          "op": "wait",
+          "delay": -0.25
+        },
+        {
+          "op": "event",
+          "label": "13.3"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_14",
+      "ops": [
+        {
+          "op": "event",
+          "label": "14.0"
+        },
+        {
+          "op": "event",
+          "label": "14.1"
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0.25,
+              "label": "14.3.q0",
+              "frames": 2,
+              "isValid": false
+            },
+            {
+              "time": 0.25,
+              "label": "14.3.q1",
+              "frames": 0,
+              "isValid": false
+            },
+            {
+              "time": 0.75,
+              "label": "14.3.q2",
+              "frames": 1,
+              "isValid": true
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_15",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "event",
+          "label": "15.1"
+        },
+        {
+          "op": "event",
+          "label": "15.2"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_16",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "queue",
+                  "items": []
+                },
+                {
+                  "op": "wait",
+                  "delay": 0.375
+                },
+                {
+                  "op": "event",
+                  "label": "16.0.0.2"
+                }
+              ]
+            },
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": -0.5,
+                  "label": "16.0.1.q0",
+                  "frames": 2,
+                  "isValid": true
+                },
+                {
+                  "time": 0.5,
+                  "label": "16.0.1.q1",
+                  "frames": 0,
+                  "isValid": false
+                }
+              ]
+            },
+            {
+              "op": "while",
+              "values": [
+                false
+              ],
+              "label": "16.0.2"
+            },
+            {
+              "op": "wait",
+              "delay": 0.875
+            },
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 1.0,
+                  "label": "16.0.4.q0",
+                  "frames": 2,
+                  "isValid": false
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_17",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "while",
+                  "values": [
+                    false
+                  ],
+                  "label": "17.0.0.0"
+                },
+                {
+                  "op": "while",
+                  "values": [
+                    true,
+                    false
+                  ],
+                  "label": "17.0.0.1"
+                },
+                {
+                  "op": "while",
+                  "values": [
+                    false
+                  ],
+                  "label": "17.0.0.2"
+                }
+              ]
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "event",
+                  "label": "17.0.1.0"
+                },
+                {
+                  "op": "event",
+                  "label": "17.0.1.1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "17.3.q0",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0.5,
+              "label": "17.3.q1",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0.75,
+              "label": "17.3.q2",
+              "frames": 2,
+              "isValid": false
+            }
+          ]
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "17.4"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_18",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "18.0.0"
+            },
+            {
+              "op": "event",
+              "label": "18.0.1"
+            },
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 0.25,
+                  "label": "18.0.2.q0",
+                  "frames": 1,
+                  "isValid": true
+                },
+                {
+                  "time": 0.5,
+                  "label": "18.0.2.q1",
+                  "frames": 2,
+                  "isValid": true
+                },
+                {
+                  "time": 0.75,
+                  "label": "18.0.2.q2",
+                  "frames": 2,
+                  "isValid": true
+                },
+                {
+                  "time": 1.0,
+                  "label": "18.0.2.q3",
+                  "frames": 0,
+                  "isValid": false
+                }
+              ]
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "marker",
+                  "value": "object"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "wait",
+          "delay": -0.25
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_19",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_20",
+      "ops": [
+        {
+          "op": "child",
+          "ops": []
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_21",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_22",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "wait",
+          "delay": 0.375
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "22.3.0"
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "marker",
+                  "value": "object"
+                },
+                {
+                  "op": "child",
+                  "ops": [
+                    {
+                      "op": "queue",
+                      "items": [
+                        {
+                          "time": 1.0,
+                          "label": "22.3.1.1.0.q0",
+                          "frames": 1,
+                          "isValid": false
+                        }
+                      ]
+                    },
+                    {
+                      "op": "event",
+                      "label": "22.3.1.1.1"
+                    },
+                    {
+                      "op": "while",
+                      "values": [
+                        true,
+                        false
+                      ],
+                      "label": "22.3.1.1.2"
+                    }
+                  ]
+                },
+                {
+                  "op": "queue",
+                  "items": []
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "label": "22.3.2"
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "event",
+                  "label": "22.3.3.0"
+                },
+                {
+                  "op": "queue",
+                  "items": [
+                    {
+                      "time": 0,
+                      "label": "22.3.3.1.q0",
+                      "frames": 1,
+                      "isValid": true
+                    },
+                    {
+                      "time": 0,
+                      "label": "22.3.3.1.q1",
+                      "frames": 1,
+                      "isValid": true
+                    }
+                  ]
+                },
+                {
+                  "op": "wait",
+                  "delay": 0.625
+                },
+                {
+                  "op": "wait",
+                  "delay": -0.25
+                },
+                {
+                  "op": "child",
+                  "ops": [
+                    {
+                      "op": "while",
+                      "values": [
+                        false
+                      ],
+                      "label": "22.3.3.4.0"
+                    },
+                    {
+                      "op": "while",
+                      "values": [
+                        true,
+                        false
+                      ],
+                      "label": "22.3.3.4.1"
+                    },
+                    {
+                      "op": "queue",
+                      "items": [
+                        {
+                          "time": 0.25,
+                          "label": "22.3.3.4.2.q0",
+                          "frames": 1,
+                          "isValid": true
+                        },
+                        {
+                          "time": 0.25,
+                          "label": "22.3.3.4.2.q1",
+                          "frames": 1,
+                          "isValid": true
+                        },
+                        {
+                          "time": 0.5,
+                          "label": "22.3.3.4.2.q2",
+                          "frames": 0,
+                          "isValid": true
+                        }
+                      ]
+                    },
+                    {
+                      "op": "queue",
+                      "items": [
+                        {
+                          "time": -0.5,
+                          "label": "22.3.3.4.3.q0",
+                          "frames": 2,
+                          "isValid": true
+                        },
+                        {
+                          "time": 0.5,
+                          "label": "22.3.3.4.3.q1",
+                          "frames": 0,
+                          "isValid": true
+                        }
+                      ]
+                    },
+                    {
+                      "op": "while",
+                      "values": [
+                        true,
+                        true,
+                        false
+                      ],
+                      "label": "22.3.3.4.4"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_23",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_24",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "24.0"
+        },
+        {
+          "op": "marker",
+          "value": "object"
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "24.2.q0",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0.5,
+              "label": "24.2.q1",
+              "frames": 1,
+              "isValid": false
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "24.3"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_25",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_26",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "object"
+        },
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "26.3"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "marker",
+              "value": "null"
+            },
+            {
+              "op": "queue",
+              "items": []
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "queue",
+                  "items": [
+                    {
+                      "time": -0.5,
+                      "label": "26.4.2.0.q0",
+                      "frames": 2,
+                      "isValid": true
+                    },
+                    {
+                      "time": 0.25,
+                      "label": "26.4.2.0.q1",
+                      "frames": 2,
+                      "isValid": false
+                    },
+                    {
+                      "time": 0.75,
+                      "label": "26.4.2.0.q2",
+                      "frames": 0,
+                      "isValid": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "op": "wait",
+              "delay": 0
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_27",
+      "ops": [
+        {
+          "op": "wait",
+          "delay": 0.875
+        },
+        {
+          "op": "wait",
+          "delay": 0.625
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_28",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_29",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "wait",
+              "delay": -0.25
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "29.1"
+        },
+        {
+          "op": "event",
+          "label": "29.2"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": -0.5,
+                  "label": "29.3.0.q0",
+                  "frames": 0,
+                  "isValid": false
+                },
+                {
+                  "time": 0.5,
+                  "label": "29.3.0.q1",
+                  "frames": 2,
+                  "isValid": true
+                },
+                {
+                  "time": 0.5,
+                  "label": "29.3.0.q2",
+                  "frames": 1,
+                  "isValid": true
+                },
+                {
+                  "time": 1.0,
+                  "label": "29.3.0.q3",
+                  "frames": 2,
+                  "isValid": false
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "label": "29.3.1"
+            },
+            {
+              "op": "child",
+              "ops": []
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_30",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "queue",
+          "items": []
+        },
+        {
+          "op": "wait",
+          "delay": -0.25
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_31",
+      "ops": [
+        {
+          "op": "event",
+          "label": "31.0"
+        },
+        {
+          "op": "event",
+          "label": "31.1"
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "31.2"
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "31.3"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_32",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "wait",
+          "delay": 0
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "32.2"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_33",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_34",
+      "ops": [
+        {
+          "op": "event",
+          "label": "34.0"
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "queue",
+          "items": []
+        },
+        {
+          "op": "event",
+          "label": "34.3"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "queue",
+              "items": []
+            },
+            {
+              "op": "while",
+              "values": [
+                false
+              ],
+              "label": "34.4.1"
+            },
+            {
+              "op": "marker",
+              "value": "null"
+            },
+            {
+              "op": "wait",
+              "delay": 0.875
+            },
+            {
+              "op": "child",
+              "ops": []
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_35",
+      "ops": [
+        {
+          "op": "event",
+          "label": "35.0"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_36",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "36.0"
+        },
+        {
+          "op": "event",
+          "label": "36.1"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "36.2.0"
+            },
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 0,
+                  "label": "36.2.1.q0",
+                  "frames": 1,
+                  "isValid": true
+                },
+                {
+                  "time": 0.75,
+                  "label": "36.2.1.q1",
+                  "frames": 2,
+                  "isValid": false
+                },
+                {
+                  "time": 1.0,
+                  "label": "36.2.1.q2",
+                  "frames": 2,
+                  "isValid": false
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "wait",
+          "delay": 0.625
+        },
+        {
+          "op": "event",
+          "label": "36.4"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_37",
+      "ops": [
+        {
+          "op": "wait",
+          "delay": 0.125
+        },
+        {
+          "op": "wait",
+          "delay": -0.25
+        },
+        {
+          "op": "event",
+          "label": "37.2"
+        },
+        {
+          "op": "wait",
+          "delay": 0.875
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "event",
+                  "label": "37.4.0.0"
+                },
+                {
+                  "op": "child",
+                  "ops": [
+                    {
+                      "op": "event",
+                      "label": "37.4.0.1.0"
+                    },
+                    {
+                      "op": "while",
+                      "values": [
+                        false
+                      ],
+                      "label": "37.4.0.1.1"
+                    },
+                    {
+                      "op": "event",
+                      "label": "37.4.0.1.2"
+                    },
+                    {
+                      "op": "while",
+                      "values": [
+                        false
+                      ],
+                      "label": "37.4.0.1.3"
+                    },
+                    {
+                      "op": "wait",
+                      "delay": -0.25
+                    }
+                  ]
+                },
+                {
+                  "op": "wait",
+                  "delay": 0.625
+                },
+                {
+                  "op": "queue",
+                  "items": []
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_38",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_39",
+      "ops": [
+        {
+          "op": "wait",
+          "delay": 0
+        },
+        {
+          "op": "event",
+          "label": "39.1"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "39.2.0"
+            }
+          ]
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "39.3"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_40",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "40.0"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "40.1.0"
+            },
+            {
+              "op": "queue",
+              "items": []
+            },
+            {
+              "op": "while",
+              "values": [
+                true,
+                false
+              ],
+              "label": "40.1.2"
+            },
+            {
+              "op": "event",
+              "label": "40.1.3"
+            }
+          ]
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "40.2"
+        },
+        {
+          "op": "wait",
+          "delay": 0
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_41",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "null"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_42",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "42.0.q0",
+              "frames": 2,
+              "isValid": false
+            },
+            {
+              "time": 0.75,
+              "label": "42.0.q1",
+              "frames": 1,
+              "isValid": false
+            }
+          ]
+        },
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0.5,
+              "label": "42.2.q0",
+              "frames": 0,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "wait",
+          "delay": 0
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_43",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "43.0"
+        },
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "event",
+          "label": "43.2"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_44",
+      "ops": [
+        {
+          "op": "event",
+          "label": "44.0"
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "44.2"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_45",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 0.25,
+                  "label": "45.0.0.q0",
+                  "frames": 2,
+                  "isValid": false
+                }
+              ]
+            },
+            {
+              "op": "marker",
+              "value": "object"
+            },
+            {
+              "op": "event",
+              "label": "45.0.2"
+            },
+            {
+              "op": "while",
+              "values": [
+                false
+              ],
+              "label": "45.0.3"
+            }
+          ]
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "45.2.0"
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_46",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "46.2"
+        },
+        {
+          "op": "event",
+          "label": "46.3"
+        },
+        {
+          "op": "event",
+          "label": "46.4"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_47",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "event",
+              "label": "47.0.0"
+            },
+            {
+              "op": "marker",
+              "value": "object"
+            },
+            {
+              "op": "marker",
+              "value": "null"
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "wait",
+                  "delay": 0.375
+                },
+                {
+                  "op": "queue",
+                  "items": [
+                    {
+                      "time": 1.0,
+                      "label": "47.0.3.1.q0",
+                      "frames": 0,
+                      "isValid": false
+                    }
+                  ]
+                },
+                {
+                  "op": "event",
+                  "label": "47.0.3.2"
+                },
+                {
+                  "op": "child",
+                  "ops": [
+                    {
+                      "op": "queue",
+                      "items": [
+                        {
+                          "time": -0.5,
+                          "label": "47.0.3.3.0.q0",
+                          "frames": 0,
+                          "isValid": true
+                        },
+                        {
+                          "time": -0.5,
+                          "label": "47.0.3.3.0.q1",
+                          "frames": 0,
+                          "isValid": true
+                        },
+                        {
+                          "time": -0.5,
+                          "label": "47.0.3.3.0.q2",
+                          "frames": 1,
+                          "isValid": true
+                        },
+                        {
+                          "time": 1.0,
+                          "label": "47.0.3.3.0.q3",
+                          "frames": 1,
+                          "isValid": false
+                        }
+                      ]
+                    },
+                    {
+                      "op": "event",
+                      "label": "47.0.3.3.1"
+                    },
+                    {
+                      "op": "queue",
+                      "items": [
+                        {
+                          "time": 0.25,
+                          "label": "47.0.3.3.2.q0",
+                          "frames": 2,
+                          "isValid": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "47.1.q0",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 1.0,
+              "label": "47.1.q1",
+              "frames": 0,
+              "isValid": false
+            }
+          ]
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "47.2"
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "47.3.q0",
+              "frames": 2,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "47.3.q1",
+              "frames": 2,
+              "isValid": false
+            },
+            {
+              "time": 0.25,
+              "label": "47.3.q2",
+              "frames": 0,
+              "isValid": true
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_48",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "48.2"
+        },
+        {
+          "op": "event",
+          "label": "48.3"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_49",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 0.25,
+                  "label": "49.0.0.q0",
+                  "frames": 1,
+                  "isValid": true
+                }
+              ]
+            },
+            {
+              "op": "child",
+              "ops": []
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_50",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "50.0.q0",
+              "frames": 0,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "50.1"
+        },
+        {
+          "op": "event",
+          "label": "50.2"
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "wait",
+              "delay": -0.25
+            },
+            {
+              "op": "while",
+              "values": [
+                true,
+                false
+              ],
+              "label": "50.4.1"
+            },
+            {
+              "op": "wait",
+              "delay": 0.625
+            },
+            {
+              "op": "while",
+              "values": [
+                true,
+                true,
+                false
+              ],
+              "label": "50.4.3"
+            },
+            {
+              "op": "event",
+              "label": "50.4.4"
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_51",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_52",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "52.0.q0",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "52.0.q1",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "52.0.q2",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "52.0.q3",
+              "frames": 1,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0.75,
+              "label": "52.1.q0",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0.75,
+              "label": "52.1.q1",
+              "frames": 1,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_53",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 0,
+                  "label": "53.0.0.q0",
+                  "frames": 2,
+                  "isValid": false
+                },
+                {
+                  "time": 0,
+                  "label": "53.0.0.q1",
+                  "frames": 1,
+                  "isValid": true
+                },
+                {
+                  "time": 0.25,
+                  "label": "53.0.0.q2",
+                  "frames": 2,
+                  "isValid": false
+                }
+              ]
+            },
+            {
+              "op": "while",
+              "values": [
+                true,
+                false
+              ],
+              "label": "53.0.1"
+            },
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 0.25,
+                  "label": "53.0.2.q0",
+                  "frames": 0,
+                  "isValid": true
+                },
+                {
+                  "time": 0.75,
+                  "label": "53.0.2.q1",
+                  "frames": 1,
+                  "isValid": false
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "label": "53.0.3"
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "wait",
+                  "delay": 0.875
+                },
+                {
+                  "op": "queue",
+                  "items": [
+                    {
+                      "time": 0.25,
+                      "label": "53.0.4.1.q0",
+                      "frames": 2,
+                      "isValid": true
+                    },
+                    {
+                      "time": 0.75,
+                      "label": "53.0.4.1.q1",
+                      "frames": 0,
+                      "isValid": false
+                    },
+                    {
+                      "time": 1.0,
+                      "label": "53.0.4.1.q2",
+                      "frames": 1,
+                      "isValid": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "marker",
+          "value": "object"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "marker",
+              "value": "null"
+            },
+            {
+              "op": "while",
+              "values": [
+                true,
+                false
+              ],
+              "label": "53.2.1"
+            }
+          ]
+        },
+        {
+          "op": "wait",
+          "delay": 0
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "53.4"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_54",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "54.0"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": -0.5,
+                  "label": "54.1.0.q0",
+                  "frames": 1,
+                  "isValid": true
+                },
+                {
+                  "time": 0,
+                  "label": "54.1.0.q1",
+                  "frames": 2,
+                  "isValid": false
+                },
+                {
+                  "time": 0,
+                  "label": "54.1.0.q2",
+                  "frames": 2,
+                  "isValid": false
+                },
+                {
+                  "time": 0.25,
+                  "label": "54.1.0.q3",
+                  "frames": 1,
+                  "isValid": true
+                }
+              ]
+            },
+            {
+              "op": "marker",
+              "value": "object"
+            }
+          ]
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "while",
+              "values": [
+                true,
+                false
+              ],
+              "label": "54.2.0"
+            }
+          ]
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "54.3"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_55",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "55.0.q0",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0.25,
+              "label": "55.0.q1",
+              "frames": 2,
+              "isValid": true
+            },
+            {
+              "time": 0.5,
+              "label": "55.0.q2",
+              "frames": 2,
+              "isValid": false
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "55.1"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 0,
+                  "label": "55.2.0.q0",
+                  "frames": 0,
+                  "isValid": true
+                },
+                {
+                  "time": 0.25,
+                  "label": "55.2.0.q1",
+                  "frames": 1,
+                  "isValid": true
+                },
+                {
+                  "time": 0.5,
+                  "label": "55.2.0.q2",
+                  "frames": 0,
+                  "isValid": false
+                },
+                {
+                  "time": 0.75,
+                  "label": "55.2.0.q3",
+                  "frames": 2,
+                  "isValid": false
+                }
+              ]
+            },
+            {
+              "op": "event",
+              "label": "55.2.1"
+            },
+            {
+              "op": "wait",
+              "delay": -0.25
+            },
+            {
+              "op": "event",
+              "label": "55.2.3"
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "55.3"
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_56",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "56.0"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_57",
+      "ops": [
+        {
+          "op": "event",
+          "label": "57.0"
+        },
+        {
+          "op": "event",
+          "label": "57.1"
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "57.3"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_58",
+      "ops": [
+        {
+          "op": "wait",
+          "delay": -0.25
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "while",
+              "values": [
+                true,
+                true,
+                false
+              ],
+              "label": "58.1.0"
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "while",
+                  "values": [
+                    true,
+                    true,
+                    false
+                  ],
+                  "label": "58.1.1.0"
+                },
+                {
+                  "op": "wait",
+                  "delay": 0.625
+                },
+                {
+                  "op": "marker",
+                  "value": "object"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "wait",
+          "delay": 0.625
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_59",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "queue",
+              "items": []
+            },
+            {
+              "op": "while",
+              "values": [
+                false
+              ],
+              "label": "59.0.1"
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_60",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_61",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "61.0.q0",
+              "frames": 2,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "marker",
+          "value": "object"
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "marker",
+          "value": "null"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_62",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "event",
+                  "label": "62.0.0.0"
+                },
+                {
+                  "op": "marker",
+                  "value": "null"
+                },
+                {
+                  "op": "child",
+                  "ops": [
+                    {
+                      "op": "wait",
+                      "delay": 0.375
+                    }
+                  ]
+                },
+                {
+                  "op": "marker",
+                  "value": "object"
+                }
+              ]
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "wait",
+                  "delay": 0.125
+                }
+              ]
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "event",
+                  "label": "62.0.2.0"
+                },
+                {
+                  "op": "wait",
+                  "delay": 0.125
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_63",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "63.0"
+        },
+        {
+          "op": "event",
+          "label": "63.1"
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "63.2"
+        },
+        {
+          "op": "queue",
+          "items": []
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_64",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "64.0"
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "64.1"
+        },
+        {
+          "op": "wait",
+          "delay": 0.375
+        },
+        {
+          "op": "wait",
+          "delay": 0
+        },
+        {
+          "op": "event",
+          "label": "64.4"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_65",
+      "ops": [
+        {
+          "op": "event",
+          "label": "65.0"
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "65.1"
+        },
+        {
+          "op": "while",
+          "values": [
+            false
+          ],
+          "label": "65.2"
+        },
+        {
+          "op": "event",
+          "label": "65.3"
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "65.4"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_66",
+      "ops": [
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "while",
+              "values": [
+                false
+              ],
+              "label": "66.0.0"
+            },
+            {
+              "op": "queue",
+              "items": [
+                {
+                  "time": 0.5,
+                  "label": "66.0.1.q0",
+                  "frames": 0,
+                  "isValid": true
+                },
+                {
+                  "time": 1.0,
+                  "label": "66.0.1.q1",
+                  "frames": 2,
+                  "isValid": false
+                }
+              ]
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "queue",
+                  "items": []
+                },
+                {
+                  "op": "event",
+                  "label": "66.0.2.1"
+                },
+                {
+                  "op": "event",
+                  "label": "66.0.2.2"
+                },
+                {
+                  "op": "wait",
+                  "delay": 0
+                },
+                {
+                  "op": "queue",
+                  "items": [
+                    {
+                      "time": 0,
+                      "label": "66.0.2.4.q0",
+                      "frames": 0,
+                      "isValid": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "marker",
+                  "value": "null"
+                },
+                {
+                  "op": "wait",
+                  "delay": 0.875
+                },
+                {
+                  "op": "child",
+                  "ops": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "66.1.q0",
+              "frames": 0,
+              "isValid": false
+            },
+            {
+              "time": 0.25,
+              "label": "66.1.q1",
+              "frames": 1,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "queue",
+          "items": []
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "wait",
+              "delay": 0
+            }
+          ]
+        },
+        {
+          "op": "event",
+          "label": "66.4"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_67",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "object"
+        },
+        {
+          "op": "marker",
+          "value": "object"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_68",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "68.0.q0",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0.25,
+              "label": "68.0.q1",
+              "frames": 2,
+              "isValid": false
+            },
+            {
+              "time": 0.25,
+              "label": "68.0.q2",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0.75,
+              "label": "68.0.q3",
+              "frames": 0,
+              "isValid": true
+            }
+          ]
+        },
+        {
+          "op": "child",
+          "ops": []
+        },
+        {
+          "op": "marker",
+          "value": "object"
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0,
+              "label": "68.3.q0",
+              "frames": 0,
+              "isValid": true
+            },
+            {
+              "time": 0.25,
+              "label": "68.3.q1",
+              "frames": 1,
+              "isValid": false
+            },
+            {
+              "time": 0.25,
+              "label": "68.3.q2",
+              "frames": 1,
+              "isValid": false
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_69",
+      "ops": [
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": 0.5,
+              "label": "69.0.q0",
+              "frames": 1,
+              "isValid": false
+            },
+            {
+              "time": 0.5,
+              "label": "69.0.q1",
+              "frames": 2,
+              "isValid": true
+            },
+            {
+              "time": 0.5,
+              "label": "69.0.q2",
+              "frames": 2,
+              "isValid": false
+            }
+          ]
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "69.1"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "while",
+              "values": [
+                true,
+                false
+              ],
+              "label": "69.2.0"
+            },
+            {
+              "op": "event",
+              "label": "69.2.1"
+            },
+            {
+              "op": "while",
+              "values": [
+                false
+              ],
+              "label": "69.2.2"
+            },
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "marker",
+                  "value": "null"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_70",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_71",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "null"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_72",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_73",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "null"
+        },
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "wait",
+          "delay": 0.375
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_74",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            true,
+            false
+          ],
+          "label": "74.0"
+        },
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "74.1"
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "74.2.q0",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "74.2.q1",
+              "frames": 1,
+              "isValid": false
+            },
+            {
+              "time": 0,
+              "label": "74.2.q2",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0,
+              "label": "74.2.q3",
+              "frames": 1,
+              "isValid": true
+            }
+          ]
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_75",
+      "ops": [],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_76",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "76.0"
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "child",
+              "ops": [
+                {
+                  "op": "wait",
+                  "delay": 0
+                },
+                {
+                  "op": "marker",
+                  "value": "object"
+                },
+                {
+                  "op": "child",
+                  "ops": [
+                    {
+                      "op": "wait",
+                      "delay": 0.125
+                    },
+                    {
+                      "op": "wait",
+                      "delay": 0.375
+                    },
+                    {
+                      "op": "marker",
+                      "value": "object"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "op": "marker",
+              "value": "object"
+            }
+          ]
+        },
+        {
+          "op": "child",
+          "ops": [
+            {
+              "op": "wait",
+              "delay": 0.625
+            },
+            {
+              "op": "while",
+              "values": [
+                true,
+                true,
+                false
+              ],
+              "label": "76.2.1"
+            }
+          ]
+        },
+        {
+          "op": "marker",
+          "value": "object"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_77",
+      "ops": [
+        {
+          "op": "while",
+          "values": [
+            true,
+            true,
+            false
+          ],
+          "label": "77.0"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_78",
+      "ops": [
+        {
+          "op": "marker",
+          "value": "list"
+        },
+        {
+          "op": "queue",
+          "items": [
+            {
+              "time": -0.5,
+              "label": "78.1.q0",
+              "frames": 1,
+              "isValid": true
+            },
+            {
+              "time": 0.25,
+              "label": "78.1.q1",
+              "frames": 2,
+              "isValid": false
+            }
+          ]
+        },
+        {
+          "op": "wait",
+          "delay": 0
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    },
+    {
+      "name": "generated_79",
+      "ops": [
+        {
+          "op": "event",
+          "label": "79.0"
+        }
+      ],
+      "delta_bits": "3e800000",
+      "max_frames": 1024
+    }
+  ],
+  "kernels": [
+    {
+      "name": "zero_waves",
+      "waves": [],
+      "dt_raw": "143165440",
+      "delta_bits": "3d088880",
+      "max_frames": 10000
+    },
+    {
+      "name": "one_empty_wave",
+      "waves": [
+        {
+          "preDelay": 0,
+          "postDelay": 0,
+          "fragments": [
+            {
+              "preDelay": 0,
+              "items": []
+            }
+          ]
+        }
+      ],
+      "dt_raw": "143165440",
+      "delta_bits": "3d088880",
+      "max_frames": 10000
+    },
+    {
+      "name": "two_empty_waves_three_fragments",
+      "waves": [
+        {
+          "preDelay": 0,
+          "postDelay": 0,
+          "fragments": [
+            {
+              "preDelay": 0,
+              "items": []
+            },
+            {
+              "preDelay": 0,
+              "items": []
+            }
+          ]
+        },
+        {
+          "preDelay": 0,
+          "postDelay": 0,
+          "fragments": [
+            {
+              "preDelay": 0,
+              "items": []
+            }
+          ]
+        }
+      ],
+      "dt_raw": "143165440",
+      "delta_bits": "3d088880",
+      "max_frames": 10000
+    },
+    {
+      "name": "map_NORMAL_empty_choices",
+      "waves": [
+        {
+          "preDelay": 0.0,
+          "postDelay": 0.0,
+          "fragments": [
+            {
+              "preDelay": 0.0,
+              "items": []
+            }
+          ]
+        },
+        {
+          "preDelay": 0.0,
+          "postDelay": 0.0,
+          "fragments": [
+            {
+              "preDelay": 0.0,
+              "items": [
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/9|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/8|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/7|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/10|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/13|0|enemy_1034_laxe",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/12|0|enemy_1034_laxe",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/11|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/2|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/1|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/0|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/3|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/6|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/5|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/4|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                }
+              ]
+            },
+            {
+              "preDelay": 7.0,
+              "items": [
+                {
+                  "time": 24.0,
+                  "label": "/waves/1/fragments/1/actions/0/autoPreviewRoute|0|",
+                  "kind": "preview_cursor_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 24.299999237060547,
+                  "label": "/waves/1/fragments/1/actions/0/autoPreviewRoute|1|",
+                  "kind": "preview_cursor_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 27.0,
+                  "label": "/waves/1/fragments/1/actions/0|0|enemy_1085_sotiwz_3",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "preDelay": 0.0,
+          "postDelay": 0.0,
+          "fragments": [
+            {
+              "preDelay": 0.0,
+              "items": []
+            }
+          ]
+        }
+      ],
+      "dt_raw": "143165440",
+      "delta_bits": "3d088880",
+      "max_frames": 10000,
+      "mode": "NORMAL",
+      "group_selections": {
+        "t1": 0,
+        "t2": 5,
+        "c1": 4
+      },
+      "enemy_runtime": {
+        "enemy_2001_duckmi": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2085_skzjxd": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2002_bearmi": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2034_sythef": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2152_shezlc": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2133_shdopl": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_1034_laxe": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_1085_sotiwz_3": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_3001_upeopl": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2137_shsdgo": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        }
+      },
+      "input_source": "independent_reference_fixture_no_counted_enemy_creation_external_final_complete"
+    },
+    {
+      "name": "map_NORMAL_boxes",
+      "waves": [
+        {
+          "preDelay": 0.0,
+          "postDelay": 0.0,
+          "fragments": [
+            {
+              "preDelay": 0.0,
+              "items": [
+                {
+                  "time": 0.0,
+                  "label": "/waves/0/fragments/0/actions/6|0|trap_321_shnbox#2",
+                  "kind": "activate_predefined_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/0/fragments/0/actions/1|0|trap_321_shnbox#1",
+                  "kind": "activate_predefined_request",
+                  "isValid": true,
+                  "frames": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "preDelay": 0.0,
+          "postDelay": 0.0,
+          "fragments": [
+            {
+              "preDelay": 0.0,
+              "items": [
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/9|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/8|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/7|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/10|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/13|0|enemy_1034_laxe",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/12|0|enemy_1034_laxe",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/11|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/2|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/1|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/0|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/3|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/6|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/5|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/4|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                }
+              ]
+            },
+            {
+              "preDelay": 7.0,
+              "items": [
+                {
+                  "time": 24.0,
+                  "label": "/waves/1/fragments/1/actions/0/autoPreviewRoute|0|",
+                  "kind": "preview_cursor_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 24.299999237060547,
+                  "label": "/waves/1/fragments/1/actions/0/autoPreviewRoute|1|",
+                  "kind": "preview_cursor_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 27.0,
+                  "label": "/waves/1/fragments/1/actions/0|0|enemy_1085_sotiwz_3",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "preDelay": 0.0,
+          "postDelay": 0.0,
+          "fragments": [
+            {
+              "preDelay": 0.0,
+              "items": [
+                {
+                  "time": -3.0,
+                  "label": "/waves/2/fragments/0/actions/1/autoPreviewRoute|0|",
+                  "kind": "preview_cursor_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": -2.700000047683716,
+                  "label": "/waves/2/fragments/0/actions/1/autoPreviewRoute|1|",
+                  "kind": "preview_cursor_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/2/fragments/0/actions/1|0|enemy_2001_duckmi",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "dt_raw": "143165440",
+      "delta_bits": "3d088880",
+      "max_frames": 10000,
+      "mode": "NORMAL",
+      "group_selections": {
+        "t1": 1,
+        "t2": 6,
+        "c1": 1
+      },
+      "enemy_runtime": {
+        "enemy_2001_duckmi": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2085_skzjxd": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2002_bearmi": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2034_sythef": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2152_shezlc": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2133_shdopl": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_1034_laxe": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_1085_sotiwz_3": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_3001_upeopl": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2137_shsdgo": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        }
+      },
+      "input_source": "independent_reference_fixture_no_counted_enemy_creation_external_final_complete"
+    },
+    {
+      "name": "map_FOUR_STAR_empty_choices",
+      "waves": [
+        {
+          "preDelay": 0.0,
+          "postDelay": 0.0,
+          "fragments": [
+            {
+              "preDelay": 0.0,
+              "items": []
+            }
+          ]
+        },
+        {
+          "preDelay": 0.0,
+          "postDelay": 0.0,
+          "fragments": [
+            {
+              "preDelay": 0.0,
+              "items": [
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/10|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/9|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/8|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/11|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/16|0|enemy_1085_sotiwz_3",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/15|0|enemy_1085_sotiwz_3",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/14|0|enemy_1085_sotiwz_3",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/3|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/2|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/1|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/4|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/7|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/6|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                },
+                {
+                  "time": 0.0,
+                  "label": "/waves/1/fragments/0/actions/5|0|enemy_2133_shdopl",
+                  "kind": "spawn_request",
+                  "isValid": true,
+                  "frames": 1
+                }
+              ]
+            },
+            {
+              "preDelay": 7.0,
+              "items": []
+            }
+          ]
+        },
+        {
+          "preDelay": 0.0,
+          "postDelay": 0.0,
+          "fragments": [
+            {
+              "preDelay": 0.0,
+              "items": []
+            }
+          ]
+        }
+      ],
+      "dt_raw": "143165440",
+      "delta_bits": "3d088880",
+      "max_frames": 10000,
+      "mode": "FOUR_STAR",
+      "group_selections": {
+        "t1": 0,
+        "t2": 5,
+        "c1": 4
+      },
+      "enemy_runtime": {
+        "enemy_2001_duckmi": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2085_skzjxd": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2002_bearmi": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2034_sythef": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2152_shezlc": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2133_shdopl": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_1034_laxe": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_1085_sotiwz_3": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_3001_upeopl": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        },
+        "enemy_2137_shsdgo": {
+          "extraSpawnDelay": 0.0,
+          "notCountInTotal": false,
+          "successfulCountedCreation": false
+        }
+      },
+      "input_source": "independent_reference_fixture_no_counted_enemy_creation_external_final_complete"
+    }
+  ],
+  "waits": [
+    {
+      "delay_bits": "00000000",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3dffffff",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3e000000",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3e000001",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3e999999",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3e99999a",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3e99999b",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3ebfffff",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3ec00000",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3ec00001",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3f1fffff",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3f200000",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3f200001",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3f5fffff",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3f600000",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3f600001",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3f7fffff",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3f800000",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "3f800001",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "40dfffff",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "40e00000",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "40e00001",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "419fffff",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "41a00000",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "41a00001",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "429fffff",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "42a00000",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "42a00001",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "bf7fffff",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "bf800000",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "bf800001",
+      "delta_bits": "3e800000"
+    },
+    {
+      "delay_bits": "00000000",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3d7fffff",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3d800000",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3d800001",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3e3fffff",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3e400000",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3e400001",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3e999999",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3e99999a",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3e99999b",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3e9fffff",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3ea00000",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3ea00001",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3edfffff",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3ee00000",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3ee00001",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3f7fffff",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3f800000",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "3f800001",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "40dfffff",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "40e00000",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "40e00001",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "419fffff",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "41a00000",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "41a00001",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "429fffff",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "42a00000",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "42a00001",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "bf7fffff",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "bf800000",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "bf800001",
+      "delta_bits": "3e000000"
+    },
+    {
+      "delay_bits": "00000000",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3c88887f",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3c888880",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3c888881",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3d4cccbf",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3d4cccc0",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3d4cccc1",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3daaaa9f",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3daaaaa0",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3daaaaa1",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3deeeedf",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3deeeee0",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3deeeee1",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3e999999",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3e99999a",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3e99999b",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3f7fffff",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3f800000",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "3f800001",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "40dfffff",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "40e00000",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "40e00001",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "419fffff",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "41a00000",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "41a00001",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "429fffff",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "42a00000",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "42a00001",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "bf7fffff",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "bf800000",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "bf800001",
+      "delta_bits": "3d088880"
+    },
+    {
+      "delay_bits": "00000000",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3c888888",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3c888889",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3c88888a",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3d4ccccd",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3d4cccce",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3d4ccccf",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3daaaaaa",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3daaaaab",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3daaaaac",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3deeeeef",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3deeeef0",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3deeeef1",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3e999999",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3e99999a",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3e99999b",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3f7fffff",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3f800000",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "3f800001",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "40dfffff",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "40e00000",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "40e00001",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "419fffff",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "41a00000",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "41a00001",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "429fffff",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "42a00000",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "42a00001",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "bf7fffff",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "bf800000",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "bf800001",
+      "delta_bits": "3d088889"
+    },
+    {
+      "delay_bits": "00000000",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3c088888",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3c088889",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3c08888a",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3ccccccd",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3cccccce",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3ccccccf",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3d2aaaaa",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3d2aaaab",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3d2aaaac",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3d6eeeef",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3d6eeef0",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3d6eeef1",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3e999999",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3e99999a",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3e99999b",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3f7fffff",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3f800000",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "3f800001",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "40dfffff",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "40e00000",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "40e00001",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "419fffff",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "41a00000",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "41a00001",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "429fffff",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "42a00000",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "42a00001",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "bf7fffff",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "bf800000",
+      "delta_bits": "3c888889"
+    },
+    {
+      "delay_bits": "bf800001",
+      "delta_bits": "3c888889"
+    }
+  ]
+}

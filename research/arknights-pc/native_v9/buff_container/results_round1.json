@@ -1,0 +1,2189 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "analysis_mode": "explicit selected PE function ranges; default whole-image analysis disabled",
+  "symbol_provenance": "Local metadata/native pointer-table candidate names; each entry corroborated by exact PE unwind start. Static analysis, no game execution.",
+  "functions": [
+    {
+      "name": "Torappu_Battle_Buff_get_isFinishedOrDisabled_0x600fe50",
+      "display_name": "Torappu.Battle.Buff.get_isFinishedOrDisabled",
+      "candidate_map_type": "Torappu.Battle.Buff",
+      "address": "0x18068edb0",
+      "end_address": "0x18068ee3e",
+      "ranges": [
+        {
+          "start": "0x18068edb0",
+          "end": "0x18068ee3e",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "5b1264852e87181361c897466e916858c49f181013c02080498e4e1945efb1c4",
+          "source_file_offset": 6873520
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6873520,
+      "token": "0x600fe50",
+      "metadata_method_index": 65103,
+      "imported_range_checks": [
+        {
+          "start": "0x18068edb0",
+          "bytes": 143,
+          "imported_sha256": "5b1264852e87181361c897466e916858c49f181013c02080498e4e1945efb1c4",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 39,
+      "direct_calls": [
+        {
+          "source": "18068edc9",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18068ede8",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18068ee0c",
+          "target": "0x18068ee40",
+          "candidate_name": "Torappu_Battle_Buff_get_isFinished_0x600fe4d"
+        },
+        {
+          "source": "18068ee22",
+          "target": "0x18068ed30",
+          "candidate_name": "Torappu_Battle_Buff_get_isEnabled_0x600fe4b"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nbyte Torappu_Battle_Buff_get_isFinishedOrDisabled_0x600fe50(undefined8 param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  undefined8 uVar2;\r\n  longlong lVar3;\r\n  code *pcVar4;\r\n  char cVar5;\r\n  byte bVar6;\r\n  int iVar7;\r\n  int iVar8;\r\n  char acStackX_8 [24];\r\n  byte bStackX_20;\r\n  undefined8 auStack_48 [2];\r\n  undefined8 uStack_38;\r\n  char *pcStack_30;\r\n  undefined8 *puStack_28;\r\n  \r\n  if (DAT_188c902d5 == '\\0') {\r\n    pcStack_30 = (char *)0x18068edce;\r\n    FUN_18048bf00(&DAT_18895c250);\r\n    DAT_188c902d5 = '\\x01';\r\n  }\r\n  if (*(int *)(_DAT_18895c250 + 0xe0) == 0) {\r\n    pcStack_30 = (char *)0x18068eded;\r\n    func_0x00018048c140(_DAT_18895c250);\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_18895c250 + 0xb8) + 0x1b8);\r\n  if (lVar1 == 0) {\r\n    pcStack_30 = (char *)0x18068ee11;\r\n    cVar5 = Torappu_Battle_Buff_get_isFinished_0x600fe4d(param_1,0);\r\n    if (cVar5 != '\\0') {\r\n      return 1;\r\n    }\r\n    pcStack_30 = (char *)0x18068ee27;\r\n    bVar6 = Torappu_Battle_Buff_get_isEnabled_0x600fe4b(param_1,0);\r\n    return bVar6 ^ 1;\r\n  }\r\n  bStackX_20 = 0;\r\n  if (*(longlong *)(lVar1 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\ncode_r0x0001832b3a74:\r\n    FUN_18048c0b0();\r\ncode_r0x0001832b3a7a:\r\n    FUN_18048c0b0();\r\n  }\r\n  else {\r\n    auStack_48[0] = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x30);\r\n    acStackX_8[0] = '\\0';\r\n    uStack_38 = 0;\r\n    pcStack_30 = acStackX_8;\r\n    puStack_28 = auStack_48;\r\n    FUN_185ca7f50(auStack_48[0],acStackX_8,0);\r\n    if (*(longlong *)(lVar1 + 0x18) == 0) goto code_r0x0001832b3a84;\r\n    uVar2 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x10);\r\n    iVar7 = FUN_183f23b70(uVar2,*(undefined4 *)(lVar1 + 0x38),*(undefined4 *)(lVar1 + 0x14),0);\r\n    if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n      lVar3 = *(longlong *)(*(longlong *)(lVar1 + 0x18) + 0x20);\r\n      if (lVar3 == 0) goto code_r0x0001832b3a74;\r\n      FUN_183cf8c20(lVar3,uVar2,param_1,0);\r\n      iVar8 = FUN_183f22380(uVar2,1,1,iVar7,0);\r\n      if (iVar8 == 0) {\r\ncode_r0x0001832b39f4:\r\n        bVar6 = FUN_183f23100(uVar2,iVar7 + 1,0);\r\n        FUN_183f22fd0(uVar2,iVar7 + -1,0);\r\n        if (acStackX_8[0] != '\\0') {\r\n          bStackX_20 = bVar6;\r\n          func_0x000185ca7ff0(auStack_48[0],0);\r\n        }\r\n        return bVar6;\r\n      }\r\n      if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n        FUN_183e0d130(*(longlong *)(lVar1 + 0x18),iVar7 + -1,0);\r\n        goto code_r0x0001832b39f4;\r\n      }\r\n      goto code_r0x0001832b3a7a;\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\ncode_r0x0001832b3a84:\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar4 = (code *)swi(3);\r\n  bVar6 = (*pcVar4)();\r\n  return bVar6;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "DoubleBufferedBuffList_Remove_0x600ff04",
+      "display_name": "DoubleBufferedBuffList.Remove",
+      "candidate_map_type": "DoubleBufferedBuffList",
+      "address": "0x180690a40",
+      "end_address": "0x180690c03",
+      "ranges": [
+        {
+          "start": "0x180690a40",
+          "end": "0x180690ad2",
+          "unwind_rva": "0x7f7e0d8",
+          "chained": false,
+          "source_sha256": "a7c6bddb9847458a91575c18df0e1c3801c148e7d8191849613b958e218505c9",
+          "source_file_offset": 6880832
+        },
+        {
+          "start": "0x180690ad3",
+          "end": "0x180690bbc",
+          "unwind_rva": "0x7f7e0e4",
+          "chained": true,
+          "source_sha256": "b04138f25c2fb2c2499c29efcff1480d95e5fb9e56aa16cc205f881b17df7944",
+          "source_file_offset": 6880979
+        },
+        {
+          "start": "0x180690bbd",
+          "end": "0x180690bd7",
+          "unwind_rva": "0x7f7e0fc",
+          "chained": true,
+          "source_sha256": "bf50b0d4e3d88d281c1bc295f5991395998fe413824a48db398fa7663a45d030",
+          "source_file_offset": 6881213
+        },
+        {
+          "start": "0x180690bd8",
+          "end": "0x180690bfd",
+          "unwind_rva": "0x7f7e114",
+          "chained": true,
+          "source_sha256": "6f194465da2d24e61ce288e0579e38e42170675e10b367cb5d4ec9cd77ab27bf",
+          "source_file_offset": 6881240
+        },
+        {
+          "start": "0x180690bfe",
+          "end": "0x180690c03",
+          "unwind_rva": "0x7f7e0fc",
+          "chained": true,
+          "source_sha256": "c2e10de3ff0d1df58a66b5ffe8baef46453d5d2a1b35926d3a6373a5ea807c25",
+          "source_file_offset": 6881278
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6880832,
+      "token": "0x600ff04",
+      "metadata_method_index": 65283,
+      "imported_range_checks": [
+        {
+          "start": "0x180690a40",
+          "bytes": 147,
+          "imported_sha256": "a7c6bddb9847458a91575c18df0e1c3801c148e7d8191849613b958e218505c9",
+          "match": true
+        },
+        {
+          "start": "0x180690ad3",
+          "bytes": 234,
+          "imported_sha256": "b04138f25c2fb2c2499c29efcff1480d95e5fb9e56aa16cc205f881b17df7944",
+          "match": true
+        },
+        {
+          "start": "0x180690bbd",
+          "bytes": 27,
+          "imported_sha256": "bf50b0d4e3d88d281c1bc295f5991395998fe413824a48db398fa7663a45d030",
+          "match": true
+        },
+        {
+          "start": "0x180690bd8",
+          "bytes": 38,
+          "imported_sha256": "6f194465da2d24e61ce288e0579e38e42170675e10b367cb5d4ec9cd77ab27bf",
+          "match": true
+        },
+        {
+          "start": "0x180690bfe",
+          "bytes": 6,
+          "imported_sha256": "c2e10de3ff0d1df58a66b5ffe8baef46453d5d2a1b35926d3a6373a5ea807c25",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 107,
+      "direct_calls": [
+        {
+          "source": "180690a60",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180690a6c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180690a78",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180690a84",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180690a90",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180690a9c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180690b1c",
+          "target": "0x184ad2ef0",
+          "candidate_name": null
+        },
+        {
+          "source": "180690b38",
+          "target": "0x185159fc0",
+          "candidate_name": null
+        },
+        {
+          "source": "180690b5d",
+          "target": "0x184ad2ef0",
+          "candidate_name": null
+        },
+        {
+          "source": "180690b79",
+          "target": "0x185159d80",
+          "candidate_name": null
+        },
+        {
+          "source": "180690b88",
+          "target": "0x18068ecc0",
+          "candidate_name": "Torappu_Battle_Buff_get_instanceUid_0x600fe22"
+        },
+        {
+          "source": "180690b94",
+          "target": "0x18068ecc0",
+          "candidate_name": "Torappu_Battle_Buff_get_instanceUid_0x600fe22"
+        },
+        {
+          "source": "180690bcf",
+          "target": "0x184acd910",
+          "candidate_name": null
+        },
+        {
+          "source": "180690bee",
+          "target": "0x18332fc60",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp29_0x6000a7d"
+        },
+        {
+          "source": "180690bfe",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined8 DoubleBufferedBuffList_Remove_0x600ff04(longlong param_1,longlong param_2)\r\n\r\n{\r\n  int iVar1;\r\n  code *pcVar2;\r\n  char cVar3;\r\n  int iVar4;\r\n  int iVar5;\r\n  longlong lVar6;\r\n  undefined8 uVar7;\r\n  undefined8 uStack_38;\r\n  undefined8 uStack_30;\r\n  undefined4 uStack_28;\r\n  undefined4 uStack_24;\r\n  undefined4 uStack_20;\r\n  undefined4 uStack_1c;\r\n  undefined4 uStack_18;\r\n  undefined4 uStack_14;\r\n  undefined4 uStack_10;\r\n  undefined4 uStack_c;\r\n  \r\n  if (DAT_188c90388 == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5490);\r\n    FUN_18048bf00(&DAT_1888dd438);\r\n    FUN_18048bf00(0x1888dd8b8);\r\n    FUN_18048bf00(&DAT_1888ddaf8);\r\n    FUN_18048bf00(&DAT_1889316a8);\r\n    FUN_18048bf00(&DAT_188931b28);\r\n    DAT_188c90388 = '\\x01';\r\n  }\r\n  uStack_38 = 0;\r\n  uStack_30 = 0;\r\n  if (**(longlong **)(_DAT_1888d5490 + 0xb8) != 0) {\r\n    uVar7 = XLua_DelegateBridge___Gen_Delegate_Imp29_0x6000a7d\r\n                      (**(longlong **)(_DAT_1888d5490 + 0xb8),param_1,param_2,0);\r\n    return uVar7;\r\n  }\r\n  if (param_2 == 0) {\r\n    return 0;\r\n  }\r\n  if (*(longlong *)(param_1 + 0x10) != 0) {\r\n    iVar1 = *(int *)(*(longlong *)(param_1 + 0x10) + 0x18);\r\n    do {\r\n      do {\r\n        iVar1 = iVar1 + -1;\r\n        if (iVar1 < 0) {\r\n          return 0;\r\n        }\r\n        if (*(longlong *)(param_1 + 0x10) == 0) goto LAB_180690bfe;\r\n        FUN_184ad2ef0(&uStack_28,*(longlong *)(param_1 + 0x10),iVar1,_DAT_1888ddaf8);\r\n        uStack_38 = CONCAT44(uStack_24,uStack_28);\r\n        uStack_30 = CONCAT44(uStack_1c,uStack_20);\r\n        cVar3 = FUN_185159fc0(&uStack_38,_DAT_188931b28);\r\n      } while (cVar3 == '\\0');\r\n      if (*(longlong *)(param_1 + 0x10) == 0) goto LAB_180690bfe;\r\n      FUN_184ad2ef0(&uStack_18,*(longlong *)(param_1 + 0x10),iVar1,_DAT_1888ddaf8);\r\n      uStack_38 = CONCAT44(uStack_14,uStack_18);\r\n      uStack_30 = CONCAT44(uStack_c,uStack_10);\r\n      lVar6 = FUN_185159d80(&uStack_38,_DAT_1889316a8);\r\n      if (lVar6 == 0) goto LAB_180690bfe;\r\n      iVar4 = Torappu_Battle_Buff_get_instanceUid_0x600fe22(lVar6,0);\r\n      iVar5 = Torappu_Battle_Buff_get_instanceUid_0x600fe22(param_2,0);\r\n    } while (iVar4 != iVar5);\r\n    if (*(longlong *)(param_1 + 0x10) != 0) {\r\n      FUN_184acd910(*(longlong *)(param_1 + 0x10),iVar1,_DAT_1888dd438);\r\n      return 1;\r\n    }\r\n  }\r\nLAB_180690bfe:\r\n  FUN_18048c0b0();\r\n  pcVar2 = (code *)swi(3);\r\n  uVar7 = (*pcVar2)();\r\n  return uVar7;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "DoubleBufferedBuffList_ClearInvalidElementsIfNotLoop_0x600ff05",
+      "display_name": "DoubleBufferedBuffList.ClearInvalidElementsIfNotLoop",
+      "candidate_map_type": "DoubleBufferedBuffList",
+      "address": "0x180690780",
+      "end_address": "0x1806908ab",
+      "ranges": [
+        {
+          "start": "0x180690780",
+          "end": "0x180690816",
+          "unwind_rva": "0x7f65e68",
+          "chained": false,
+          "source_sha256": "f3a89c482114031cddfea0c3c7552dd93c3b609c5037a449df3ab5f9e3f4cebe",
+          "source_file_offset": 6880128
+        },
+        {
+          "start": "0x180690817",
+          "end": "0x18069088e",
+          "unwind_rva": "0x7f7e07c",
+          "chained": true,
+          "source_sha256": "b9d9cf5c0da7f91c167b727395fe099beb266c983bcd6ceea9f01a62c286db72",
+          "source_file_offset": 6880279
+        },
+        {
+          "start": "0x18069088f",
+          "end": "0x1806908a5",
+          "unwind_rva": "0x7f7e090",
+          "chained": true,
+          "source_sha256": "b5bcc881e704e2dd63864fdd38ad335cc9a59db58ff3c2744c20ae49eea6b25e",
+          "source_file_offset": 6880399
+        },
+        {
+          "start": "0x1806908a6",
+          "end": "0x1806908ab",
+          "unwind_rva": "0x7f7e0a0",
+          "chained": true,
+          "source_sha256": "08877bd3030932bbe70665a8f524eb8bfd6f316e7576f4322c4708d7a6c03558",
+          "source_file_offset": 6880422
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6880128,
+      "token": "0x600ff05",
+      "metadata_method_index": 65284,
+      "imported_range_checks": [
+        {
+          "start": "0x180690780",
+          "bytes": 151,
+          "imported_sha256": "f3a89c482114031cddfea0c3c7552dd93c3b609c5037a449df3ab5f9e3f4cebe",
+          "match": true
+        },
+        {
+          "start": "0x180690817",
+          "bytes": 120,
+          "imported_sha256": "b9d9cf5c0da7f91c167b727395fe099beb266c983bcd6ceea9f01a62c286db72",
+          "match": true
+        },
+        {
+          "start": "0x18069088f",
+          "bytes": 23,
+          "imported_sha256": "b5bcc881e704e2dd63864fdd38ad335cc9a59db58ff3c2744c20ae49eea6b25e",
+          "match": true
+        },
+        {
+          "start": "0x1806908a6",
+          "bytes": 6,
+          "imported_sha256": "08877bd3030932bbe70665a8f524eb8bfd6f316e7576f4322c4708d7a6c03558",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 71,
+      "direct_calls": [
+        {
+          "source": "180690799",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806907a5",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806907b1",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806907bd",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806907c9",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806907d5",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18069080e",
+          "target": "0x185a19b40",
+          "candidate_name": null
+        },
+        {
+          "source": "180690849",
+          "target": "0x184ad2ef0",
+          "candidate_name": null
+        },
+        {
+          "source": "180690865",
+          "target": "0x185159fc0",
+          "candidate_name": null
+        },
+        {
+          "source": "180690880",
+          "target": "0x184acd910",
+          "candidate_name": null
+        },
+        {
+          "source": "18069089b",
+          "target": "0x183310010",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp27_0x6000a7b"
+        },
+        {
+          "source": "1806908a6",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid DoubleBufferedBuffList_ClearInvalidElementsIfNotLoop_0x600ff05(longlong param_1)\r\n\r\n{\r\n  int iVar1;\r\n  longlong lVar2;\r\n  code *pcVar3;\r\n  char cVar4;\r\n  undefined8 uStack_28;\r\n  undefined8 uStack_20;\r\n  undefined4 uStack_18;\r\n  undefined4 uStack_14;\r\n  undefined4 uStack_10;\r\n  undefined4 uStack_c;\r\n  \r\n  if (DAT_188c90389 == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5490);\r\n    FUN_18048bf00(&DAT_18882bdc0);\r\n    FUN_18048bf00(&DAT_1888dd438);\r\n    FUN_18048bf00(0x1888dd8b8);\r\n    FUN_18048bf00(&DAT_1888ddaf8);\r\n    FUN_18048bf00(&DAT_188931b28);\r\n    DAT_188c90389 = '\\x01';\r\n  }\r\n  uStack_28 = 0;\r\n  uStack_20 = 0;\r\n  lVar2 = *(longlong *)(*(longlong *)(_DAT_1888d5490 + 0xb8) + 8);\r\n  if (lVar2 != 0) {\r\n    XLua_DelegateBridge___Gen_Delegate_Imp27_0x6000a7b(lVar2,param_1,0);\r\n    return;\r\n  }\r\n  cVar4 = FUN_185a19b40(param_1,_DAT_18882bdc0);\r\n  if (cVar4 == '\\0') {\r\n    if (*(longlong *)(param_1 + 0x10) == 0) {\r\nLAB_1806908a6:\r\n      FUN_18048c0b0();\r\n      pcVar3 = (code *)swi(3);\r\n      (*pcVar3)();\r\n      return;\r\n    }\r\n    iVar1 = *(int *)(*(longlong *)(param_1 + 0x10) + 0x18);\r\n    while (iVar1 = iVar1 + -1, -1 < iVar1) {\r\n      if (*(longlong *)(param_1 + 0x10) == 0) goto LAB_1806908a6;\r\n      FUN_184ad2ef0(&uStack_18,*(longlong *)(param_1 + 0x10),iVar1,_DAT_1888ddaf8);\r\n      uStack_28 = CONCAT44(uStack_14,uStack_18);\r\n      uStack_20 = CONCAT44(uStack_c,uStack_10);\r\n      cVar4 = FUN_185159fc0(&uStack_28,_DAT_188931b28);\r\n      if (cVar4 == '\\0') {\r\n        if (*(longlong *)(param_1 + 0x10) == 0) goto LAB_1806908a6;\r\n        FUN_184acd910(*(longlong *)(param_1 + 0x10),iVar1,_DAT_1888dd438);\r\n      }\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "DoubleBufferedBuffList_ClearWithWhiteList_0x600ff06",
+      "display_name": "DoubleBufferedBuffList.ClearWithWhiteList",
+      "candidate_map_type": "DoubleBufferedBuffList",
+      "address": "0x1806908b0",
+      "end_address": "0x180690a3f",
+      "ranges": [
+        {
+          "start": "0x1806908b0",
+          "end": "0x18069093a",
+          "unwind_rva": "0x7f7df30",
+          "chained": false,
+          "source_sha256": "58758075da4acfa4a15f713fdc6a6b94273cb39eb6dda56125461a65b5ecf74c",
+          "source_file_offset": 6880432
+        },
+        {
+          "start": "0x18069093b",
+          "end": "0x180690a20",
+          "unwind_rva": "0x7f7df3c",
+          "chained": true,
+          "source_sha256": "cfc438ce62ceec2b85497a4acee70ec968d5fa7113da8bb73f87507d26294446",
+          "source_file_offset": 6880571
+        },
+        {
+          "start": "0x180690a21",
+          "end": "0x180690a39",
+          "unwind_rva": "0x7f7df54",
+          "chained": true,
+          "source_sha256": "a5c62871c16adceec2041d6f1be83c04afcc8938ab63e3202eb18eccba37b0de",
+          "source_file_offset": 6880801
+        },
+        {
+          "start": "0x180690a3a",
+          "end": "0x180690a3f",
+          "unwind_rva": "0x7f7df64",
+          "chained": true,
+          "source_sha256": "a20b042837aa4f7c6c2c4c3feebfd6e80b28ff706f37dc5a8d97cc939d12bffa",
+          "source_file_offset": 6880826
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6880432,
+      "token": "0x600ff06",
+      "metadata_method_index": 65285,
+      "imported_range_checks": [
+        {
+          "start": "0x1806908b0",
+          "bytes": 139,
+          "imported_sha256": "58758075da4acfa4a15f713fdc6a6b94273cb39eb6dda56125461a65b5ecf74c",
+          "match": true
+        },
+        {
+          "start": "0x18069093b",
+          "bytes": 230,
+          "imported_sha256": "cfc438ce62ceec2b85497a4acee70ec968d5fa7113da8bb73f87507d26294446",
+          "match": true
+        },
+        {
+          "start": "0x180690a21",
+          "bytes": 25,
+          "imported_sha256": "a5c62871c16adceec2041d6f1be83c04afcc8938ab63e3202eb18eccba37b0de",
+          "match": true
+        },
+        {
+          "start": "0x180690a3a",
+          "bytes": 6,
+          "imported_sha256": "a20b042837aa4f7c6c2c4c3feebfd6e80b28ff706f37dc5a8d97cc939d12bffa",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 98,
+      "direct_calls": [
+        {
+          "source": "1806908d0",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806908dc",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806908e8",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806908f4",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180690900",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18069090c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18069097c",
+          "target": "0x184ad2ef0",
+          "candidate_name": null
+        },
+        {
+          "source": "180690998",
+          "target": "0x185159d80",
+          "candidate_name": null
+        },
+        {
+          "source": "1806909aa",
+          "target": "0x18068f000",
+          "candidate_name": "Torappu_Battle_Buff_get_key_0x600fe1d"
+        },
+        {
+          "source": "1806909c5",
+          "target": "0x184d0ba50",
+          "candidate_name": null
+        },
+        {
+          "source": "1806909d3",
+          "target": "0x18068ee40",
+          "candidate_name": "Torappu_Battle_Buff_get_isFinished_0x600fe4d"
+        },
+        {
+          "source": "1806909ee",
+          "target": "0x184acd910",
+          "candidate_name": null
+        },
+        {
+          "source": "1806909fd",
+          "target": "0x1806904a0",
+          "candidate_name": "Torappu_Battle_Buff_set_needRemove_0x600fe4f"
+        },
+        {
+          "source": "180690a2a",
+          "target": "0x1832d2220",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp23_0x6000a77"
+        },
+        {
+          "source": "180690a3a",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid DoubleBufferedBuffList_ClearWithWhiteList_0x600ff06(longlong param_1,longlong param_2)\r\n\r\n{\r\n  int iVar1;\r\n  code *pcVar2;\r\n  char cVar3;\r\n  longlong lVar4;\r\n  undefined8 uVar5;\r\n  undefined8 uStack_28;\r\n  undefined8 uStack_20;\r\n  undefined4 uStack_18;\r\n  undefined4 uStack_14;\r\n  undefined4 uStack_10;\r\n  undefined4 uStack_c;\r\n  \r\n  if (DAT_188c9038a == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5490);\r\n    FUN_18048bf00(&DAT_1888c9940);\r\n    FUN_18048bf00(&DAT_1888dd438);\r\n    FUN_18048bf00(0x1888dd8b8);\r\n    FUN_18048bf00(&DAT_1888ddaf8);\r\n    FUN_18048bf00(&DAT_1889316a8);\r\n    DAT_188c9038a = '\\x01';\r\n  }\r\n  uStack_28 = 0;\r\n  uStack_20 = 0;\r\n  lVar4 = *(longlong *)(*(longlong *)(_DAT_1888d5490 + 0xb8) + 0x10);\r\n  if (lVar4 != 0) {\r\n    XLua_DelegateBridge___Gen_Delegate_Imp23_0x6000a77(lVar4,param_1,param_2,0);\r\n    return;\r\n  }\r\n  if (*(longlong *)(param_1 + 0x10) != 0) {\r\n    iVar1 = *(int *)(*(longlong *)(param_1 + 0x10) + 0x18);\r\n    while( true ) {\r\n      while( true ) {\r\n        do {\r\n          do {\r\n            iVar1 = iVar1 + -1;\r\n            if (iVar1 < 1) {\r\n              return;\r\n            }\r\n            if (*(longlong *)(param_1 + 0x10) == 0) goto LAB_180690a3a;\r\n            FUN_184ad2ef0(&uStack_18,*(longlong *)(param_1 + 0x10),iVar1,_DAT_1888ddaf8);\r\n            uStack_28 = CONCAT44(uStack_14,uStack_18);\r\n            uStack_20 = CONCAT44(uStack_c,uStack_10);\r\n            lVar4 = FUN_185159d80(&uStack_28,_DAT_1889316a8);\r\n          } while (lVar4 == 0);\r\n          uVar5 = Torappu_Battle_Buff_get_key_0x600fe1d(lVar4,0);\r\n          if (param_2 == 0) goto LAB_180690a3a;\r\n          cVar3 = FUN_184d0ba50(param_2,uVar5,_DAT_1888c9940);\r\n        } while (cVar3 != '\\0');\r\n        cVar3 = Torappu_Battle_Buff_get_isFinished_0x600fe4d(lVar4,0);\r\n        if (cVar3 != '\\0') break;\r\n        Torappu_Battle_Buff_set_needRemove_0x600fe4f(lVar4,1,0);\r\n      }\r\n      if (*(longlong *)(param_1 + 0x10) == 0) break;\r\n      FUN_184acd910(*(longlong *)(param_1 + 0x10),iVar1,_DAT_1888dd438);\r\n    }\r\n  }\r\nLAB_180690a3a:\r\n  FUN_18048c0b0();\r\n  pcVar2 = (code *)swi(3);\r\n  (*pcVar2)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "DoubleBufferedBuffList__ctor_0x600ff07",
+      "display_name": "DoubleBufferedBuffList..ctor",
+      "candidate_map_type": "DoubleBufferedBuffList",
+      "address": "0x180690c10",
+      "end_address": "0x180690c7c",
+      "ranges": [
+        {
+          "start": "0x180690c10",
+          "end": "0x180690c7c",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "a5c69e447ff7b1f2df214f06bb04271c1b9a4349f54e65bba3df3a589a9b5e62",
+          "source_file_offset": 6881296
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6881296,
+      "token": "0x600ff07",
+      "metadata_method_index": 65286,
+      "imported_range_checks": [
+        {
+          "start": "0x180690c10",
+          "bytes": 109,
+          "imported_sha256": "a5c69e447ff7b1f2df214f06bb04271c1b9a4349f54e65bba3df3a589a9b5e62",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 26,
+      "direct_calls": [
+        {
+          "source": "180690c29",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180690c35",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180690c4b",
+          "target": "0x185a18d90",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid DoubleBufferedBuffList__ctor_0x600ff07(undefined8 param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  undefined8 uVar2;\r\n  longlong lVar3;\r\n  code *pcVar4;\r\n  int iVar5;\r\n  int iVar6;\r\n  char acStackX_8 [24];\r\n  undefined8 uStackX_20;\r\n  \r\n  if (DAT_188c9038b == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5490);\r\n    FUN_18048bf00(&DAT_18882b068);\r\n    DAT_188c9038b = '\\x01';\r\n  }\r\n  FUN_185a18d90(param_1,_DAT_18882b068);\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_1888d5490 + 0xb8) + 0x18);\r\n  if (lVar1 == 0) {\r\n    return;\r\n  }\r\n  if (*(longlong *)(lVar1 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\n    pcVar4 = (code *)swi(3);\r\n    (*pcVar4)();\r\n    return;\r\n  }\r\n  uStackX_20 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x30);\r\n  acStackX_8[0] = '\\0';\r\n  FUN_185ca7f50(uStackX_20,acStackX_8,0);\r\n  if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n    uVar2 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x10);\r\n    iVar5 = FUN_183f23b70(uVar2,*(undefined4 *)(lVar1 + 0x38),*(undefined4 *)(lVar1 + 0x14),0);\r\n    if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n      lVar3 = *(longlong *)(*(longlong *)(lVar1 + 0x18) + 0x20);\r\n      if (lVar3 == 0) {\r\n        FUN_18048c0b0();\r\n      }\r\n      else {\r\n        FUN_183cf8c20(lVar3,uVar2,param_1,0);\r\n        iVar6 = FUN_183f22380(uVar2,1,0,iVar5,0);\r\n        if (iVar6 == 0) {\r\ncode_r0x0001833100e8:\r\n          FUN_183f22fd0(uVar2,iVar5 + -1,0);\r\n          if (acStackX_8[0] != '\\0') {\r\n            func_0x000185ca7ff0(uStackX_20,0);\r\n          }\r\n          return;\r\n        }\r\n        if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n          FUN_183e0d130(*(longlong *)(lVar1 + 0x18),iVar5 + -1,0);\r\n          goto code_r0x0001833100e8;\r\n        }\r\n      }\r\n      FUN_18048c0b0();\r\n    }\r\n    FUN_18048c0b0();\r\n  }\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar4 = (code *)swi(3);\r\n  (*pcVar4)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "SortedDoubleBufferedBuffList__ctor_0x600ff09",
+      "display_name": "SortedDoubleBufferedBuffList..ctor",
+      "candidate_map_type": "SortedDoubleBufferedBuffList",
+      "address": "0x1806925d0",
+      "end_address": "0x18069267a",
+      "ranges": [
+        {
+          "start": "0x1806925d0",
+          "end": "0x18069267a",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "f666cfc9cbaf6ed278149aa8054a172e9e21ae9e6b2e8727c7a1b2248a09e6de",
+          "source_file_offset": 6887888
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6887888,
+      "token": "0x600ff09",
+      "metadata_method_index": 65288,
+      "imported_range_checks": [
+        {
+          "start": "0x1806925d0",
+          "bytes": 171,
+          "imported_sha256": "f666cfc9cbaf6ed278149aa8054a172e9e21ae9e6b2e8727c7a1b2248a09e6de",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 39,
+      "direct_calls": [
+        {
+          "source": "1806925e9",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180692605",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180692611",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180692627",
+          "target": "0x185a18d90",
+          "candidate_name": null
+        },
+        {
+          "source": "180692649",
+          "target": "0x183310010",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp27_0x6000a7b"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid SortedDoubleBufferedBuffList__ctor_0x600ff09(undefined8 param_1)\r\n\r\n{\r\n  longlong lVar1;\r\n  undefined8 uVar2;\r\n  longlong lVar3;\r\n  code *pcVar4;\r\n  int iVar5;\r\n  int iVar6;\r\n  char acStackX_8 [24];\r\n  undefined8 uStackX_20;\r\n  \r\n  if (DAT_188c9038d == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5b50);\r\n    DAT_188c9038d = '\\x01';\r\n  }\r\n  if (DAT_188c9038b == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5490);\r\n    FUN_18048bf00(&DAT_18882b068);\r\n    DAT_188c9038b = '\\x01';\r\n  }\r\n  FUN_185a18d90(param_1,_DAT_18882b068);\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_1888d5490 + 0xb8) + 0x18);\r\n  if (lVar1 != 0) {\r\n    XLua_DelegateBridge___Gen_Delegate_Imp27_0x6000a7b(lVar1,param_1,0);\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_1888d5b50 + 0xb8) + 8);\r\n  if (lVar1 == 0) {\r\n    return;\r\n  }\r\n  if (*(longlong *)(lVar1 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\n    pcVar4 = (code *)swi(3);\r\n    (*pcVar4)();\r\n    return;\r\n  }\r\n  uStackX_20 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x30);\r\n  acStackX_8[0] = '\\0';\r\n  FUN_185ca7f50(uStackX_20,acStackX_8,0);\r\n  if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n    uVar2 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x10);\r\n    iVar5 = FUN_183f23b70(uVar2,*(undefined4 *)(lVar1 + 0x38),*(undefined4 *)(lVar1 + 0x14),0);\r\n    if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n      lVar3 = *(longlong *)(*(longlong *)(lVar1 + 0x18) + 0x20);\r\n      if (lVar3 == 0) {\r\n        FUN_18048c0b0();\r\n      }\r\n      else {\r\n        FUN_183cf8c20(lVar3,uVar2,param_1,0);\r\n        iVar6 = FUN_183f22380(uVar2,1,0,iVar5,0);\r\n        if (iVar6 == 0) {\r\ncode_r0x0001833100e8:\r\n          FUN_183f22fd0(uVar2,iVar5 + -1,0);\r\n          if (acStackX_8[0] != '\\0') {\r\n            func_0x000185ca7ff0(uStackX_20,0);\r\n          }\r\n          return;\r\n        }\r\n        if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n          FUN_183e0d130(*(longlong *)(lVar1 + 0x18),iVar5 + -1,0);\r\n          goto code_r0x0001833100e8;\r\n        }\r\n      }\r\n      FUN_18048c0b0();\r\n    }\r\n    FUN_18048c0b0();\r\n  }\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar4 = (code *)swi(3);\r\n  (*pcVar4)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "BuffContainer_RemoveBuff_0x600ff21",
+      "display_name": "BuffContainer.RemoveBuff",
+      "candidate_map_type": "BuffContainer",
+      "address": "0x18067ad60",
+      "end_address": "0x18067ae21",
+      "ranges": [
+        {
+          "start": "0x18067ad60",
+          "end": "0x18067ae21",
+          "unwind_rva": "0x7f63a3c",
+          "chained": false,
+          "source_sha256": "e9f761b4fbf17b055365376b8bf0dac638c899d0db31624c731674d4ef95d94d",
+          "source_file_offset": 6791520
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6791520,
+      "token": "0x600ff21",
+      "metadata_method_index": 65312,
+      "imported_range_checks": [
+        {
+          "start": "0x18067ad60",
+          "bytes": 194,
+          "imported_sha256": "e9f761b4fbf17b055365376b8bf0dac638c899d0db31624c731674d4ef95d94d",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 52,
+      "direct_calls": [
+        {
+          "source": "18067ad7f",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067ad8b",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067adce",
+          "target": "0x1859851e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067adf1",
+          "target": "0x180681cc0",
+          "candidate_name": "Torappu_Battle_Buff_MarkFinish_0x600fe62"
+        },
+        {
+          "source": "18067ae0c",
+          "target": "0x18332fac0",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp299_0x6000b8b"
+        },
+        {
+          "source": "18067ae1c",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined1 BuffContainer_RemoveBuff_0x600ff21(longlong param_1,undefined4 param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  char cVar3;\r\n  undefined1 uVar4;\r\n  longlong lStackX_20;\r\n  \r\n  if (DAT_188c903a3 == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5250);\r\n    FUN_18048bf00(&DAT_188944048);\r\n    DAT_188c903a3 = '\\x01';\r\n  }\r\n  lStackX_20 = 0;\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_1888d5250 + 0xb8) + 0x50);\r\n  if (lVar1 != 0) {\r\n    uVar4 = XLua_DelegateBridge___Gen_Delegate_Imp299_0x6000b8b(lVar1,param_1,param_2,0);\r\n    return uVar4;\r\n  }\r\n  if (*(longlong *)(param_1 + 0x28) != 0) {\r\n    cVar3 = FUN_1859851e0(*(longlong *)(param_1 + 0x28),param_2,&lStackX_20,_DAT_188944048);\r\n    if (cVar3 == '\\0') {\r\n      return 0;\r\n    }\r\n    if (lStackX_20 != 0) {\r\n      Torappu_Battle_Buff_MarkFinish_0x600fe62(lStackX_20,1,0);\r\n      return 1;\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\n  pcVar2 = (code *)swi(3);\r\n  uVar4 = (*pcVar2)();\r\n  return uVar4;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "BuffContainer_RemoveBuffs_0x600ff22",
+      "display_name": "BuffContainer.RemoveBuffs",
+      "candidate_map_type": "BuffContainer",
+      "address": "0x18067b400",
+      "end_address": "0x18067b693",
+      "ranges": [
+        {
+          "start": "0x18067b400",
+          "end": "0x18067b45c",
+          "unwind_rva": "0x7f79b1c",
+          "chained": false,
+          "source_sha256": "ca1c14520367ec28766c6d792770e991c0fb54007a4099c6cbd4868c6bea7c64",
+          "source_file_offset": 6793216
+        },
+        {
+          "start": "0x18067b45d",
+          "end": "0x18067b651",
+          "unwind_rva": "0x7f7e718",
+          "chained": true,
+          "source_sha256": "154dbeb448c588683cdd73c98f4693f915f4891e85b08a29205552c979200835",
+          "source_file_offset": 6793309
+        },
+        {
+          "start": "0x18067b652",
+          "end": "0x18067b666",
+          "unwind_rva": "0x7f7e73c",
+          "chained": true,
+          "source_sha256": "48b530baa0c79d393cc2e20ccc05862933ea96f0db3405cc356dcdd9e5fd3fe2",
+          "source_file_offset": 6793810
+        },
+        {
+          "start": "0x18067b667",
+          "end": "0x18067b687",
+          "unwind_rva": "0x7f7e74c",
+          "chained": true,
+          "source_sha256": "f611ce3d44a8b51a5e1b178e39b97d0813e0af0d7598fe5101cffa9177f9b79d",
+          "source_file_offset": 6793831
+        },
+        {
+          "start": "0x18067b688",
+          "end": "0x18067b68d",
+          "unwind_rva": "0x7f7e74c",
+          "chained": true,
+          "source_sha256": "5cef707ede135c964c271011d15b6ca528cd207c0ab08d4f28f1c524ad036edf",
+          "source_file_offset": 6793864
+        },
+        {
+          "start": "0x18067b68e",
+          "end": "0x18067b693",
+          "unwind_rva": "0x7f7e770",
+          "chained": true,
+          "source_sha256": "1a189ac52c3ac4cf1600acaba92c7a13fe8bf91de72ff485e0897edde4cb90bb",
+          "source_file_offset": 6793870
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6793216,
+      "token": "0x600ff22",
+      "metadata_method_index": 65313,
+      "imported_range_checks": [
+        {
+          "start": "0x18067b400",
+          "bytes": 93,
+          "imported_sha256": "ca1c14520367ec28766c6d792770e991c0fb54007a4099c6cbd4868c6bea7c64",
+          "match": true
+        },
+        {
+          "start": "0x18067b45d",
+          "bytes": 501,
+          "imported_sha256": "154dbeb448c588683cdd73c98f4693f915f4891e85b08a29205552c979200835",
+          "match": true
+        },
+        {
+          "start": "0x18067b652",
+          "bytes": 21,
+          "imported_sha256": "48b530baa0c79d393cc2e20ccc05862933ea96f0db3405cc356dcdd9e5fd3fe2",
+          "match": true
+        },
+        {
+          "start": "0x18067b667",
+          "bytes": 33,
+          "imported_sha256": "f611ce3d44a8b51a5e1b178e39b97d0813e0af0d7598fe5101cffa9177f9b79d",
+          "match": true
+        },
+        {
+          "start": "0x18067b688",
+          "bytes": 6,
+          "imported_sha256": "5cef707ede135c964c271011d15b6ca528cd207c0ab08d4f28f1c524ad036edf",
+          "match": true
+        },
+        {
+          "start": "0x18067b68e",
+          "bytes": 6,
+          "imported_sha256": "1a189ac52c3ac4cf1600acaba92c7a13fe8bf91de72ff485e0897edde4cb90bb",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 161,
+      "direct_calls": [
+        {
+          "source": "18067b41e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b42a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b436",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b4a6",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b4f1",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b521",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b561",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b588",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b594",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b5d7",
+          "target": "0x1859851e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b5f3",
+          "target": "0x180681cc0",
+          "candidate_name": "Torappu_Battle_Buff_MarkFinish_0x600fe62"
+        },
+        {
+          "source": "18067b642",
+          "target": "0x18332fac0",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp299_0x6000b8b"
+        },
+        {
+          "source": "18067b688",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b68e",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Removing unreachable block (ram,0x0001832d2335) */\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid BuffContainer_RemoveBuffs_0x600ff22(longlong param_1,longlong *param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  longlong lVar2;\r\n  undefined8 uVar3;\r\n  code *pcVar4;\r\n  char cVar5;\r\n  ushort uVar6;\r\n  int iVar7;\r\n  undefined4 uVar8;\r\n  undefined8 *puVar9;\r\n  ushort uVar10;\r\n  int iVar11;\r\n  longlong lStackX_20;\r\n  \r\n  if (DAT_188c903a4 == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5250);\r\n    FUN_18048bf00(&DAT_1888a29e0);\r\n    FUN_18048bf00(&DAT_1888ff290);\r\n    DAT_188c903a4 = '\\x01';\r\n  }\r\n  lVar1 = *(longlong *)(*(longlong *)(_DAT_1888d5250 + 0xb8) + 0x58);\r\n  if (lVar1 == 0) {\r\n    iVar11 = 0;\r\n    if (param_2 == (longlong *)0x0) {\r\n      FUN_18048c0b0();\r\n      pcVar4 = (code *)swi(3);\r\n      (*pcVar4)();\r\n      return;\r\n    }\r\nLAB_18067b490:\r\n    do {\r\n      lVar2 = _DAT_1888a29e0;\r\n      lVar1 = *param_2;\r\n      if (DAT_188ccc7f0 != '\\0') {\r\n        func_0x000180446d00(lVar1);\r\n      }\r\n      uVar6 = 0;\r\n      if (*(ushort *)(lVar1 + 0x12e) != 0) {\r\n        uVar10 = uVar6;\r\n        do {\r\n          if (*(longlong *)(*(longlong *)(lVar1 + 0xb0) + (ulonglong)uVar10 * 0x10) == lVar2) {\r\n            puVar9 = (undefined8 *)\r\n                     (((longlong)\r\n                       *(int *)(*(longlong *)(lVar1 + 0xb0) + 8 + (ulonglong)uVar10 * 0x10) + 0x14)\r\n                      * 0x10 + lVar1);\r\n            goto LAB_18067b4f6;\r\n          }\r\n          uVar10 = uVar10 + 1;\r\n        } while (uVar10 < *(ushort *)(lVar1 + 0x12e));\r\n      }\r\n      puVar9 = (undefined8 *)FUN_180445cc0(param_2,lVar2,0);\r\nLAB_18067b4f6:\r\n      iVar7 = (*(code *)*puVar9)(param_2,puVar9[1]);\r\n      lVar1 = _DAT_1888ff290;\r\n      if (iVar7 <= iVar11) {\r\n        return;\r\n      }\r\n      lVar2 = *param_2;\r\n      if (DAT_188ccc7f0 != '\\0') {\r\n        func_0x000180446d00(lVar2);\r\n      }\r\n      if (*(ushort *)(lVar2 + 0x12e) != 0) {\r\n        do {\r\n          if (*(longlong *)(*(longlong *)(lVar2 + 0xb0) + (ulonglong)uVar6 * 0x10) == lVar1) {\r\n            puVar9 = (undefined8 *)\r\n                     (((longlong)*(int *)(*(longlong *)(lVar2 + 0xb0) + 8 + (ulonglong)uVar6 * 0x10)\r\n                      + 0x14) * 0x10 + lVar2);\r\n            goto LAB_18067b566;\r\n          }\r\n          uVar6 = uVar6 + 1;\r\n        } while (uVar6 < *(ushort *)(lVar2 + 0x12e));\r\n      }\r\n      puVar9 = (undefined8 *)FUN_180445cc0(param_2,lVar1,0);\r\nLAB_18067b566:\r\n      uVar8 = (*(code *)*puVar9)(param_2,iVar11,puVar9[1]);\r\n      if (DAT_188c903a3 == '\\0') {\r\n        FUN_18048bf00(&DAT_1888d5250);\r\n        FUN_18048bf00(&DAT_188944048);\r\n        DAT_188c903a3 = '\\x01';\r\n      }\r\n      lStackX_20 = 0;\r\n      lVar1 = *(longlong *)(*(longlong *)(_DAT_1888d5250 + 0xb8) + 0x50);\r\n      if (lVar1 == 0) {\r\n        if (*(longlong *)(param_1 + 0x28) == 0) {\r\nLAB_18067b688:\r\n          FUN_18048c0b0();\r\n          pcVar4 = (code *)swi(3);\r\n          (*pcVar4)();\r\n          return;\r\n        }\r\n        cVar5 = FUN_1859851e0(*(longlong *)(param_1 + 0x28),uVar8,&lStackX_20,_DAT_188944048);\r\n        if (cVar5 != '\\0') {\r\n          if (lStackX_20 == 0) goto LAB_18067b688;\r\n          Torappu_Battle_Buff_MarkFinish_0x600fe62(lStackX_20,1);\r\n          iVar11 = iVar11 + 1;\r\n          goto LAB_18067b490;\r\n        }\r\n      }\r\n      else {\r\n        XLua_DelegateBridge___Gen_Delegate_Imp299_0x6000b8b(lVar1,param_1,uVar8,0);\r\n      }\r\n      iVar11 = iVar11 + 1;\r\n    } while( true );\r\n  }\r\n  if (*(longlong *)(lVar1 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\n    pcVar4 = (code *)swi(3);\r\n    (*pcVar4)();\r\n    return;\r\n  }\r\n  FUN_185ca7f50(*(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x30),&stack0x00000008,0);\r\n  if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n    uVar3 = *(undefined8 *)(*(longlong *)(lVar1 + 0x18) + 0x10);\r\n    iVar11 = FUN_183f23b70(uVar3,*(undefined4 *)(lVar1 + 0x38),*(undefined4 *)(lVar1 + 0x14),0);\r\n    if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n      lVar2 = *(longlong *)(*(longlong *)(lVar1 + 0x18) + 0x20);\r\n      if (lVar2 == 0) {\r\n        FUN_18048c0b0();\r\n      }\r\n      else {\r\n        FUN_183cf8c20(lVar2,uVar3,param_1,0);\r\n        FUN_183cf8c20(lVar2,uVar3,param_2,0);\r\n        iVar7 = FUN_183f22380(uVar3,2,0,iVar11,0);\r\n        if (iVar7 == 0) {\r\ncode_r0x0001832d231b:\r\n          FUN_183f22fd0(uVar3,iVar11 + -1,0);\r\n          return;\r\n        }\r\n        if (*(longlong *)(lVar1 + 0x18) != 0) {\r\n          FUN_183e0d130(*(longlong *)(lVar1 + 0x18),iVar11 + -1,0);\r\n          goto code_r0x0001832d231b;\r\n        }\r\n      }\r\n      FUN_18048c0b0();\r\n    }\r\n    FUN_18048c0b0();\r\n  }\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar4 = (code *)swi(3);\r\n  (*pcVar4)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "BuffContainer_RemoveBuffs_0x600ff23",
+      "display_name": "BuffContainer.RemoveBuffs",
+      "candidate_map_type": "BuffContainer",
+      "address": "0x18067b160",
+      "end_address": "0x18067b3f0",
+      "ranges": [
+        {
+          "start": "0x18067b160",
+          "end": "0x18067b3f0",
+          "unwind_rva": "0x7f7e78c",
+          "chained": false,
+          "source_sha256": "b458591b31f3116b32fc13ca49e1cd42cf7e3bfd3347b949740d760f4c0b89aa",
+          "source_file_offset": 6792544
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6792544,
+      "token": "0x600ff23",
+      "metadata_method_index": 65314,
+      "imported_range_checks": [
+        {
+          "start": "0x18067b160",
+          "bytes": 657,
+          "imported_sha256": "b458591b31f3116b32fc13ca49e1cd42cf7e3bfd3347b949740d760f4c0b89aa",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 148,
+      "direct_calls": [
+        {
+          "source": "18067b197",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b1a3",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b1af",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b1bb",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b1c7",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b1d3",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b216",
+          "target": "0x185a17960",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b249",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b27a",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b2c1",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b2ee",
+          "target": "0x185159d80",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b30d",
+          "target": "0x18068f000",
+          "candidate_name": "Torappu_Battle_Buff_get_key_0x600fe1d"
+        },
+        {
+          "source": "18067b324",
+          "target": "0x185db7700",
+          "candidate_name": "System_String_Equals_0x60002b9"
+        },
+        {
+          "source": "18067b339",
+          "target": "0x180681cc0",
+          "candidate_name": "Torappu_Battle_Buff_MarkFinish_0x600fe62"
+        },
+        {
+          "source": "18067b370",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b3b0",
+          "target": "0x18339deb0",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp36_0x6000a84"
+        },
+        {
+          "source": "18067b3d4",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b3da",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b3df",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b3e5",
+          "target": "0x180472d50",
+          "candidate_name": null
+        },
+        {
+          "source": "18067b3eb",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid BuffContainer_RemoveBuffs_0x600ff23(longlong param_1,undefined8 param_2,longlong param_3)\r\n\r\n{\r\n  code *pcVar1;\r\n  longlong *plVar2;\r\n  char cVar3;\r\n  undefined8 *puVar4;\r\n  longlong lVar5;\r\n  longlong lVar6;\r\n  ushort uVar7;\r\n  longlong *aplStack_58 [2];\r\n  undefined8 uStack_48;\r\n  longlong **pplStack_40;\r\n  undefined8 uStack_38;\r\n  undefined8 uStack_30;\r\n  undefined1 auStack_28 [16];\r\n  \r\n  if (DAT_188c903a5 == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5250);\r\n    FUN_18048bf00(&DAT_18882b720);\r\n    FUN_18048bf00(&DAT_188954c98);\r\n    FUN_18048bf00(&DAT_1888cfcb0);\r\n    FUN_18048bf00(&DAT_188959b58);\r\n    FUN_18048bf00(&DAT_1889316a8);\r\n    DAT_188c903a5 = '\\x01';\r\n  }\r\n  uStack_38 = 0;\r\n  uStack_30 = 0;\r\n  lVar5 = *(longlong *)(*(longlong *)(_DAT_1888d5250 + 0xb8) + 0x60);\r\n  if (lVar5 != 0) {\r\n    XLua_DelegateBridge___Gen_Delegate_Imp36_0x6000a84(lVar5,param_1,param_2,param_3,0);\r\n    return;\r\n  }\r\n  if (*(longlong *)(param_1 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\n    pcVar1 = (code *)swi(3);\r\n    (*pcVar1)();\r\n    return;\r\n  }\r\n  aplStack_58[0] = (longlong *)FUN_185a17960(*(longlong *)(param_1 + 0x18),_DAT_18882b720);\r\n  uStack_48 = 0;\r\n  pplStack_40 = aplStack_58;\r\nLAB_18067b232:\r\n  if (aplStack_58[0] != (longlong *)0x0) {\r\n    cVar3 = FUN_180005310(0,_DAT_188959b58);\r\n    plVar2 = aplStack_58[0];\r\n    lVar5 = _DAT_1888cfcb0;\r\n    if (cVar3 == '\\0') {\r\n      if (aplStack_58[0] == (longlong *)0x0) {\r\n        return;\r\n      }\r\n      FUN_180005310(0,_DAT_188954c98,aplStack_58[0]);\r\n      return;\r\n    }\r\n    if (aplStack_58[0] != (longlong *)0x0) goto code_r0x00018067b264;\r\n    goto LAB_18067b3da;\r\n  }\r\nLAB_18067b3df:\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar1 = (code *)swi(3);\r\n  (*pcVar1)();\r\n  return;\r\ncode_r0x00018067b264:\r\n  lVar6 = *aplStack_58[0];\r\n  if (DAT_188ccc7f0 != '\\0') {\r\n    func_0x000180446d00(lVar6);\r\n  }\r\n  uVar7 = 0;\r\n  if (*(ushort *)(lVar6 + 0x12e) != 0) {\r\n    do {\r\n      if (*(longlong *)(*(longlong *)(lVar6 + 0xb0) + (ulonglong)uVar7 * 0x10) == lVar5) {\r\n        puVar4 = (undefined8 *)\r\n                 (((longlong)*(int *)(*(longlong *)(lVar6 + 0xb0) + 8 + (ulonglong)uVar7 * 0x10) +\r\n                  0x14) * 0x10 + lVar6);\r\n        goto LAB_18067b2c9;\r\n      }\r\n      uVar7 = uVar7 + 1;\r\n    } while (uVar7 < *(ushort *)(lVar6 + 0x12e));\r\n  }\r\n  puVar4 = (undefined8 *)FUN_180445cc0(plVar2,lVar5,0);\r\nLAB_18067b2c9:\r\n  puVar4 = (undefined8 *)(*(code *)*puVar4)(auStack_28,plVar2,puVar4[1]);\r\n  uStack_38 = *puVar4;\r\n  uStack_30 = puVar4[1];\r\n  lVar5 = FUN_185159d80(&uStack_38,_DAT_1889316a8);\r\n  if ((lVar5 != 0) && (lVar5 != param_3)) {\r\n    lVar6 = Torappu_Battle_Buff_get_key_0x600fe1d(lVar5,0);\r\n    if (lVar6 == 0) {\r\n      FUN_18048c0b0();\r\nLAB_18067b3da:\r\n      FUN_18048c0b0();\r\n      goto LAB_18067b3df;\r\n    }\r\n    cVar3 = func_0x000185db7700(lVar6,param_2,0);\r\n    if (cVar3 != '\\0') {\r\n      Torappu_Battle_Buff_MarkFinish_0x600fe62(lVar5,1,0);\r\n    }\r\n  }\r\n  goto LAB_18067b232;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "BuffContainer_ClearWithWhiteList_0x600ff4f",
+      "display_name": "BuffContainer.ClearWithWhiteList",
+      "candidate_map_type": "BuffContainer",
+      "address": "0x180663e70",
+      "end_address": "0x180664a80",
+      "ranges": [
+        {
+          "start": "0x180663e70",
+          "end": "0x180664a80",
+          "unwind_rva": "0x7f7f3cc",
+          "chained": false,
+          "source_sha256": "10fa9b1fc68a08b58b62739b4994a4bd7f72e97deee102dbe53d7c010e237c4f",
+          "source_file_offset": 6697584
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6697584,
+      "token": "0x600ff4f",
+      "metadata_method_index": 65358,
+      "imported_range_checks": [
+        {
+          "start": "0x180663e70",
+          "bytes": 3089,
+          "imported_sha256": "10fa9b1fc68a08b58b62739b4994a4bd7f72e97deee102dbe53d7c010e237c4f",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 656,
+      "direct_calls": [
+        {
+          "source": "180663eb2",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663ebe",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663eca",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663ed6",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663ee2",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663eee",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663efa",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f06",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f12",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f1e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f2a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f36",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f42",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f4e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f5a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f66",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f72",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663f7e",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180663fd5",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "180663ff8",
+          "target": "0x184d1bb80",
+          "candidate_name": null
+        },
+        {
+          "source": "180664009",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664029",
+          "target": "0x1848f2320",
+          "candidate_name": null
+        },
+        {
+          "source": "180664042",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664062",
+          "target": "0x1848f2320",
+          "candidate_name": null
+        },
+        {
+          "source": "180664093",
+          "target": "0x185a17960",
+          "candidate_name": null
+        },
+        {
+          "source": "1806640c7",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "1806640f8",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "180664141",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664177",
+          "target": "0x185159d80",
+          "candidate_name": null
+        },
+        {
+          "source": "18066418d",
+          "target": "0x18068f000",
+          "candidate_name": "Torappu_Battle_Buff_get_key_0x600fe1d"
+        },
+        {
+          "source": "1806641a8",
+          "target": "0x184d0ba50",
+          "candidate_name": null
+        },
+        {
+          "source": "1806641c6",
+          "target": "0x18068f000",
+          "candidate_name": "Torappu_Battle_Buff_get_key_0x600fe1d"
+        },
+        {
+          "source": "1806641da",
+          "target": "0x1805072d0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664211",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "18066428c",
+          "target": "0x185a17960",
+          "candidate_name": null
+        },
+        {
+          "source": "1806642d4",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "180664321",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664361",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806643a1",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "1806643d7",
+          "target": "0x185159d80",
+          "candidate_name": null
+        },
+        {
+          "source": "1806643ed",
+          "target": "0x18068f000",
+          "candidate_name": "Torappu_Battle_Buff_get_key_0x600fe1d"
+        },
+        {
+          "source": "1806643ff",
+          "target": "0x184d0ba50",
+          "candidate_name": null
+        },
+        {
+          "source": "18066440d",
+          "target": "0x18068f380",
+          "candidate_name": "Torappu_Battle_Buff_get_overrideKey_0x600fe20"
+        },
+        {
+          "source": "180664421",
+          "target": "0x1805072d0",
+          "candidate_name": null
+        },
+        {
+          "source": "18066442b",
+          "target": "0x18068ecc0",
+          "candidate_name": "Torappu_Battle_Buff_get_instanceUid_0x600fe22"
+        },
+        {
+          "source": "18066443e",
+          "target": "0x180007630",
+          "candidate_name": null
+        },
+        {
+          "source": "180664494",
+          "target": "0x18067f9d0",
+          "candidate_name": "BuffContainer__FinishBuff_0x600ff5a"
+        },
+        {
+          "source": "1806644b0",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "18066451f",
+          "target": "0x185a17960",
+          "candidate_name": null
+        },
+        {
+          "source": "180664564",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806645b1",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "1806645f1",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "180664631",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664667",
+          "target": "0x185159d80",
+          "candidate_name": null
+        },
+        {
+          "source": "18066468a",
+          "target": "0x18068ecc0",
+          "candidate_name": "Torappu_Battle_Buff_get_instanceUid_0x600fe22"
+        },
+        {
+          "source": "1806646a0",
+          "target": "0x184dbb210",
+          "candidate_name": null
+        },
+        {
+          "source": "1806646b2",
+          "target": "0x18068f000",
+          "candidate_name": "Torappu_Battle_Buff_get_key_0x600fe1d"
+        },
+        {
+          "source": "1806646c4",
+          "target": "0x184d0ba50",
+          "candidate_name": null
+        },
+        {
+          "source": "1806646d2",
+          "target": "0x18068f380",
+          "candidate_name": "Torappu_Battle_Buff_get_overrideKey_0x600fe20"
+        },
+        {
+          "source": "1806646e6",
+          "target": "0x1805072d0",
+          "candidate_name": null
+        },
+        {
+          "source": "1806646f0",
+          "target": "0x18068ecc0",
+          "candidate_name": "Torappu_Battle_Buff_get_instanceUid_0x600fe22"
+        },
+        {
+          "source": "180664701",
+          "target": "0x180007630",
+          "candidate_name": null
+        },
+        {
+          "source": "180664744",
+          "target": "0x180680060",
+          "candidate_name": "BuffContainer_get_owner_0x600ff17"
+        },
+        {
+          "source": "180664757",
+          "target": "0x180701e20",
+          "candidate_name": "Torappu_Battle_Entity_get_attributes_0x6010337"
+        },
+        {
+          "source": "18066476e",
+          "target": "0x18064a270",
+          "candidate_name": "Torappu_Battle_Attributes_RemoveModifier_0x600fb13"
+        },
+        {
+          "source": "180664778",
+          "target": "0x1806800c0",
+          "candidate_name": "BuffContainer_get_pool_0x600ff1c"
+        },
+        {
+          "source": "180664793",
+          "target": "0x185158320",
+          "candidate_name": null
+        },
+        {
+          "source": "1806647af",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "180664827",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180664833",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18066483f",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18066484b",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180664857",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "180664863",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "1806648cf",
+          "target": "0x184ad2ef0",
+          "candidate_name": null
+        },
+        {
+          "source": "1806648ee",
+          "target": "0x185159d80",
+          "candidate_name": null
+        },
+        {
+          "source": "180664900",
+          "target": "0x18068f000",
+          "candidate_name": "Torappu_Battle_Buff_get_key_0x600fe1d"
+        },
+        {
+          "source": "180664912",
+          "target": "0x184d0ba50",
+          "candidate_name": null
+        },
+        {
+          "source": "180664920",
+          "target": "0x18068ee40",
+          "candidate_name": "Torappu_Battle_Buff_get_isFinished_0x600fe4d"
+        },
+        {
+          "source": "18066493f",
+          "target": "0x184acd910",
+          "candidate_name": null
+        },
+        {
+          "source": "18066494e",
+          "target": "0x1806904a0",
+          "candidate_name": "Torappu_Battle_Buff_set_needRemove_0x600fe4f"
+        },
+        {
+          "source": "180664968",
+          "target": "0x1832d2220",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp23_0x6000a77"
+        },
+        {
+          "source": "18066498e",
+          "target": "0x18067efd0",
+          "candidate_name": "BuffContainer__ClearBuffOverrideMapWithWhiteList_0x600ff50"
+        },
+        {
+          "source": "18066499c",
+          "target": "0x18067f330",
+          "candidate_name": "BuffContainer__ClearBuffUidMapWithWhiteList_0x600ff51"
+        },
+        {
+          "source": "1806649bf",
+          "target": "0x185ee99a0",
+          "candidate_name": "System_Array_Clear_0x6000ea1"
+        },
+        {
+          "source": "1806649f5",
+          "target": "0x185ee99a0",
+          "candidate_name": "System_Array_Clear_0x6000ea1"
+        },
+        {
+          "source": "180664a0b",
+          "target": "0x1832fa300",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp265_0x6000b69"
+        },
+        {
+          "source": "180664a2d",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a33",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a38",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a3e",
+          "target": "0x180472d50",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a44",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a49",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a4f",
+          "target": "0x180472d50",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a55",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a5a",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a5f",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a64",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a69",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a6f",
+          "target": "0x180472d50",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a75",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "180664a7b",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid BuffContainer_ClearWithWhiteList_0x600ff4f(longlong param_1,longlong param_2,char param_3)\r\n\r\n{\r\n  int iVar1;\r\n  code *pcVar2;\r\n  longlong *plVar3;\r\n  char cVar4;\r\n  undefined4 uVar5;\r\n  longlong lVar6;\r\n  undefined8 *puVar7;\r\n  undefined8 uVar8;\r\n  longlong lVar9;\r\n  longlong lVar10;\r\n  longlong lVar11;\r\n  ushort uVar12;\r\n  ulonglong uVar13;\r\n  ushort uVar14;\r\n  ulonglong in_stack_fffffffffffffef8;\r\n  longlong *aplStack_f8 [2];\r\n  longlong lStack_e8;\r\n  undefined8 uStack_e0;\r\n  longlong lStack_d8;\r\n  longlong lStack_d0;\r\n  longlong lStack_c8;\r\n  longlong lStack_c0;\r\n  longlong lStack_b8;\r\n  longlong lStack_b0;\r\n  longlong lStack_a8;\r\n  longlong lStack_a0;\r\n  longlong lStack_98;\r\n  undefined4 uStack_90;\r\n  undefined4 uStack_8c;\r\n  undefined8 uStack_88;\r\n  undefined8 uStack_80;\r\n  undefined8 uStack_78;\r\n  undefined8 uStack_70;\r\n  undefined8 uStack_68;\r\n  undefined8 uStack_60;\r\n  undefined1 auStack_58 [48];\r\n  \r\n  lStack_d8 = param_1;\r\n  if (DAT_188c903d1 == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5250);\r\n    FUN_18048bf00(&DAT_18882b720);\r\n    FUN_18048bf00(&DAT_188954c98);\r\n    FUN_18048bf00(&DAT_1888cfcb0);\r\n    FUN_18048bf00(&DAT_188959b58);\r\n    FUN_18048bf00(&DAT_18892dce0);\r\n    FUN_18048bf00(&DAT_1888c9280);\r\n    FUN_18048bf00(0x18892e160);\r\n    FUN_18048bf00(0x1888c9700);\r\n    FUN_18048bf00(&DAT_1888c9940);\r\n    FUN_18048bf00(&DAT_18892e3a0);\r\n    FUN_18048bf00(&DAT_1888c8e00);\r\n    FUN_18048bf00(&DAT_18892d860);\r\n    FUN_18048bf00(&DAT_1888c8bc0);\r\n    FUN_18048bf00(&DAT_188908578);\r\n    FUN_18048bf00(&DAT_1888f6598);\r\n    FUN_18048bf00(&DAT_1889237f0);\r\n    FUN_18048bf00(&DAT_1889316a8);\r\n    DAT_188c903d1 = '\\x01';\r\n  }\r\n  aplStack_f8[0] = (longlong *)0x0;\r\n  uStack_88 = 0;\r\n  uStack_80 = 0;\r\n  uStack_78 = 0;\r\n  uStack_70 = 0;\r\n  uStack_68 = 0;\r\n  uStack_60 = 0;\r\n  lVar6 = *(longlong *)(*(longlong *)(_DAT_1888d5250 + 0xb8) + 0x1c0);\r\n  if (lVar6 != 0) {\r\n    XLua_DelegateBridge___Gen_Delegate_Imp265_0x6000b69(lVar6,param_1,param_2,param_3,0);\r\n    return;\r\n  }\r\n  lVar6 = func_0x00018045cfe0(_DAT_1888f6598);\r\n  lStack_b8 = lVar6;\r\n  if (lVar6 != 0) {\r\n    FUN_184d1bb80(lVar6,param_2,_DAT_1888c8e00);\r\n    lStack_b0 = lVar6;\r\n    lVar6 = func_0x00018045cfe0(_DAT_1888f6598);\r\n    lStack_c8 = lVar6;\r\n    if (lVar6 != 0) {\r\n      FUN_1848f2320(lVar6,_DAT_1888c8bc0);\r\n      lStack_d0 = lVar6;\r\n      lStack_a8 = lVar6;\r\n      lVar6 = func_0x00018045cfe0(_DAT_188908578);\r\n      lStack_c0 = lVar6;\r\n      if (lVar6 != 0) {\r\n        FUN_1848f2320(lVar6,_DAT_18892d860);\r\n        uVar14 = 0;\r\n        lStack_a0 = lVar6;\r\n        lStack_98 = lVar6;\r\n        if (param_3 == '\\0') {\r\n          if (*(longlong *)(param_1 + 0x18) == 0) goto LAB_180664a7b;\r\n          aplStack_f8[0] = (longlong *)FUN_185a17960(*(longlong *)(param_1 + 0x18),_DAT_18882b720);\r\n          lStack_e8 = 0;\r\n          uStack_e0 = aplStack_f8;\r\nLAB_1806640b0:\r\n          if (aplStack_f8[0] != (longlong *)0x0) {\r\n            cVar4 = FUN_180005310(0,_DAT_188959b58);\r\n            plVar3 = aplStack_f8[0];\r\n            lVar6 = _DAT_1888cfcb0;\r\n            if (cVar4 != '\\0') {\r\n              if (aplStack_f8[0] != (longlong *)0x0) goto code_r0x0001806640e2;\r\n              goto LAB_180664a33;\r\n            }\r\n            if (aplStack_f8[0] != (longlong *)0x0) {\r\n              FUN_180005310(0,_DAT_188954c98,aplStack_f8[0]);\r\n            }\r\n            goto LAB_180664278;\r\n          }\r\nLAB_180664a38:\r\n          FUN_18048c0b0();\r\n          FUN_180472d50();\r\nLAB_180664a44:\r\n          FUN_18048c0b0();\r\n        }\r\n        else {\r\nLAB_180664278:\r\n          lVar6 = lStack_b8;\r\n          if (*(longlong *)(param_1 + 0x18) == 0) goto LAB_180664a7b;\r\n          aplStack_f8[0] = (longlong *)FUN_185a17960(*(longlong *)(param_1 + 0x18),_DAT_18882b720);\r\n          lStack_e8 = 0;\r\n          uStack_e0 = aplStack_f8;\r\n          while (plVar3 = aplStack_f8[0], lVar9 = _DAT_188959b58, aplStack_f8[0] != (longlong *)0x0)\r\n          {\r\n            lVar10 = *aplStack_f8[0];\r\n            if (DAT_188ccc7f0 != '\\0') {\r\n              func_0x000180446d00(lVar10);\r\n            }\r\n            if (*(ushort *)(lVar10 + 0x12e) != 0) {\r\n              uVar12 = uVar14;\r\n              do {\r\n                if (*(longlong *)(*(longlong *)(lVar10 + 0xb0) + (ulonglong)uVar12 * 0x10) == lVar9)\r\n                {\r\n                  puVar7 = (undefined8 *)\r\n                           (((longlong)\r\n                             *(int *)(*(longlong *)(lVar10 + 0xb0) + 8 + (ulonglong)uVar12 * 0x10) +\r\n                            0x14) * 0x10 + lVar10);\r\n                  goto LAB_180664329;\r\n                }\r\n                uVar12 = uVar12 + 1;\r\n              } while (uVar12 < *(ushort *)(lVar10 + 0x12e));\r\n            }\r\n            puVar7 = (undefined8 *)FUN_180445cc0(plVar3,lVar9,0);\r\nLAB_180664329:\r\n            cVar4 = (*(code *)*puVar7)(plVar3,puVar7[1]);\r\n            plVar3 = aplStack_f8[0];\r\n            lVar9 = _DAT_1888cfcb0;\r\n            if (cVar4 == '\\0') {\r\n              if (aplStack_f8[0] != (longlong *)0x0) {\r\n                FUN_180005310(0,_DAT_188954c98,aplStack_f8[0]);\r\n              }\r\n              if (*(longlong *)(param_1 + 0x18) == 0) goto LAB_180664a7b;\r\n              aplStack_f8[0] =\r\n                   (longlong *)FUN_185a17960(*(longlong *)(param_1 + 0x18),_DAT_18882b720);\r\n              lStack_e8 = 0;\r\n              uStack_e0 = aplStack_f8;\r\n              goto LAB_180664540;\r\n            }\r\n            if (aplStack_f8[0] == (longlong *)0x0) goto LAB_180664a44;\r\n            lVar10 = *aplStack_f8[0];\r\n            if (DAT_188ccc7f0 != '\\0') {\r\n              func_0x000180446d00(lVar10);\r\n            }\r\n            uVar13 = 0;\r\n            if (*(ushort *)(lVar10 + 0x12e) != 0) {\r\n              do {\r\n                if (*(longlong *)(*(longlong *)(lVar10 + 0xb0) + uVar13 * 0x10) == lVar9) {\r\n                  puVar7 = (undefined8 *)\r\n                           (((longlong)*(int *)(*(longlong *)(lVar10 + 0xb0) + 8 + uVar13 * 0x10) +\r\n                            0x14) * 0x10 + lVar10);\r\n                  goto LAB_1806643a9;\r\n                }\r\n                uVar12 = (short)uVar13 + 1;\r\n                uVar13 = (ulonglong)uVar12;\r\n              } while (uVar12 < *(ushort *)(lVar10 + 0x12e));\r\n            }\r\n            puVar7 = (undefined8 *)FUN_180445cc0(plVar3,lVar9,0);\r\nLAB_1806643a9:\r\n            puVar7 = (undefined8 *)(*(code *)*puVar7)(auStack_58,plVar3);\r\n            uStack_78 = *puVar7;\r\n            uStack_70 = puVar7[1];\r\n            lVar9 = FUN_185159d80(&uStack_78,_DAT_1889316a8);\r\n            if (lVar9 != 0) {\r\n              uVar8 = Torappu_Battle_Buff_get_key_0x600fe1d(lVar9,0);\r\n              cVar4 = FUN_184d0ba50(lVar6,uVar8);\r\n              if (cVar4 == '\\0') {\r\n                in_stack_fffffffffffffef8 = in_stack_fffffffffffffef8 & 0xffffffffffffff00;\r\n                BuffContainer__FinishBuff_0x600ff5a(param_1,lVar9,0,1,in_stack_fffffffffffffef8,0);\r\n              }\r\n              else {\r\n                uVar8 = Torappu_Battle_Buff_get_overrideKey_0x600fe20(lVar9,0);\r\n                FUN_1805072d0(lStack_c8,uVar8,_DAT_1888c9280);\r\n                uVar5 = Torappu_Battle_Buff_get_instanceUid_0x600fe22(lVar9,0);\r\n                FUN_180007630(lStack_c0,uVar5);\r\n              }\r\n            }\r\n          }\r\n        }\r\n        FUN_18048c0b0();\r\n        FUN_180472d50();\r\nLAB_180664a55:\r\n        FUN_18048c0b0();\r\nLAB_180664a5a:\r\n        FUN_18048c0b0();\r\nLAB_180664a5f:\r\n        FUN_18048c0b0();\r\nLAB_180664a64:\r\n        FUN_18048c0b0();\r\n        goto LAB_180664a69;\r\n      }\r\n    }\r\n  }\r\nLAB_180664a7b:\r\n  FUN_18048c0b0();\r\n  pcVar2 = (code *)swi(3);\r\n  (*pcVar2)();\r\n  return;\r\ncode_r0x0001806640e2:\r\n  lVar9 = *aplStack_f8[0];\r\n  if (DAT_188ccc7f0 != '\\0') {\r\n    func_0x000180446d00(lVar9);\r\n  }\r\n  if (*(ushort *)(lVar9 + 0x12e) != 0) {\r\n    uVar12 = uVar14;\r\n    do {\r\n      if (*(longlong *)(*(longlong *)(lVar9 + 0xb0) + (ulonglong)uVar12 * 0x10) == lVar6) {\r\n        puVar7 = (undefined8 *)\r\n                 (((longlong)*(int *)(*(longlong *)(lVar9 + 0xb0) + 8 + (ulonglong)uVar12 * 0x10) +\r\n                  0x14) * 0x10 + lVar9);\r\n        goto LAB_180664149;\r\n      }\r\n      uVar12 = uVar12 + 1;\r\n    } while (uVar12 < *(ushort *)(lVar9 + 0x12e));\r\n  }\r\n  puVar7 = (undefined8 *)FUN_180445cc0(plVar3,lVar6,0);\r\nLAB_180664149:\r\n  puVar7 = (undefined8 *)(*(code *)*puVar7)(auStack_58,plVar3,puVar7[1]);\r\n  uStack_88 = *puVar7;\r\n  uStack_80 = puVar7[1];\r\n  lVar6 = FUN_185159d80(&uStack_88,_DAT_1889316a8);\r\n  if (lVar6 != 0) {\r\n    uVar8 = Torappu_Battle_Buff_get_key_0x600fe1d(lVar6,0);\r\n    if (param_2 == 0) {\r\n      FUN_18048c0b0();\r\nLAB_180664a33:\r\n      FUN_18048c0b0();\r\n      goto LAB_180664a38;\r\n    }\r\n    cVar4 = FUN_184d0ba50(param_2,uVar8,_DAT_1888c9940);\r\n    if ((cVar4 == '\\0') && (*(char *)(lVar6 + 0x1f0) != '\\0')) {\r\n      uVar8 = Torappu_Battle_Buff_get_key_0x600fe1d(lVar6,0);\r\n      FUN_1805072d0(lStack_b8,uVar8,_DAT_1888c9280);\r\n    }\r\n  }\r\n  goto LAB_1806640b0;\r\njoined_r0x0001806648a6:\r\n  do {\r\n    do {\r\n      iVar1 = iVar1 + -1;\r\n      if (iVar1 < 1) {\r\nLAB_18066496d:\r\n        lVar11 = lStack_a0;\r\n        lVar9 = lStack_d8;\r\n        BuffContainer__ClearBuffOverrideMapWithWhiteList_0x600ff50(lStack_d8,lStack_d0,0);\r\n        BuffContainer__ClearBuffUidMapWithWhiteList_0x600ff51(lVar9,lVar11,0);\r\n        *(int *)(lStack_c8 + 0x1c) = *(int *)(lStack_c8 + 0x1c) + 1;\r\n        iVar1 = *(int *)(lStack_c8 + 0x18);\r\n        *(undefined4 *)(lStack_c8 + 0x18) = 0;\r\n        if (iVar1 < 1) {\r\n          *(int *)(lVar10 + 0x1c) = *(int *)(lVar10 + 0x1c) + 1;\r\n        }\r\n        else {\r\n          System_Array_Clear_0x6000ea1(*(undefined8 *)(lStack_c8 + 0x10),0,iVar1,0);\r\n          *(int *)(lVar11 + 0x1c) = *(int *)(lVar11 + 0x1c) + 1;\r\n          lVar10 = lVar11;\r\n        }\r\n        *(undefined4 *)(lVar10 + 0x18) = 0;\r\n        *(int *)(lVar6 + 0x1c) = *(int *)(lVar6 + 0x1c) + 1;\r\n        iVar1 = *(int *)(lVar6 + 0x18);\r\n        *(undefined4 *)(lVar6 + 0x18) = 0;\r\n        if (0 < iVar1) {\r\n          System_Array_Clear_0x6000ea1(*(undefined8 *)(lVar6 + 0x10),0,iVar1,0);\r\n        }\r\n        return;\r\n      }\r\n      if (*(longlong *)(lVar9 + 0x10) == 0) goto LAB_180664a75;\r\n      FUN_184ad2ef0(&lStack_98,*(longlong *)(lVar9 + 0x10),iVar1,_DAT_1888ddaf8);\r\n      lStack_e8 = lStack_98;\r\n      uStack_e0 = (longlong **)CONCAT44(uStack_8c,uStack_90);\r\n      lVar11 = FUN_185159d80(&lStack_e8,_DAT_1889316a8);\r\n    } while (lVar11 == 0);\r\n    uVar8 = Torappu_Battle_Buff_get_key_0x600fe1d(lVar11,0);\r\n    cVar4 = FUN_184d0ba50(lVar6,uVar8,_DAT_1888c9940);\r\n  } while (cVar4 != '\\0');\r\n  cVar4 = Torappu_Battle_Buff_get_isFinished_0x600fe4d(lVar11,0);\r\n  if (cVar4 != '\\0') {\r\n    if (*(longlong *)(lVar9 + 0x10) == 0) {\r\nLAB_180664a75:\r\n      FUN_18048c0b0();\r\n      pcVar2 = (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    FUN_184acd910(*(longlong *)(lVar9 + 0x10),iVar1,_DAT_1888dd438);\r\n    goto joined_r0x0001806648a6;\r\n  }\r\n  Torappu_Battle_Buff_set_needRemove_0x600fe4f(lVar11,1,0);\r\n  goto joined_r0x0001806648a6;\r\nLAB_180664540:\r\n  plVar3 = aplStack_f8[0];\r\n  lVar9 = _DAT_188959b58;\r\n  if (aplStack_f8[0] != (longlong *)0x0) {\r\n    lVar10 = *aplStack_f8[0];\r\n    if (DAT_188ccc7f0 != '\\0') {\r\n      func_0x000180446d00(lVar10);\r\n    }\r\n    if (*(ushort *)(lVar10 + 0x12e) != 0) {\r\n      uVar12 = uVar14;\r\n      do {\r\n        if (*(longlong *)(*(longlong *)(lVar10 + 0xb0) + (ulonglong)uVar12 * 0x10) == lVar9) {\r\n          puVar7 = (undefined8 *)\r\n                   (((longlong)*(int *)(*(longlong *)(lVar10 + 0xb0) + 8 + (ulonglong)uVar12 * 0x10)\r\n                    + 0x14) * 0x10 + lVar10);\r\n          goto LAB_1806645b9;\r\n        }\r\n        uVar12 = uVar12 + 1;\r\n      } while (uVar12 < *(ushort *)(lVar10 + 0x12e));\r\n    }\r\n    puVar7 = (undefined8 *)FUN_180445cc0(plVar3,lVar9,0);\r\nLAB_1806645b9:\r\n    cVar4 = (*(code *)*puVar7)(plVar3,puVar7[1]);\r\n    plVar3 = aplStack_f8[0];\r\n    lVar9 = _DAT_1888cfcb0;\r\n    if (cVar4 == '\\0') {\r\n      if (aplStack_f8[0] != (longlong *)0x0) {\r\n        FUN_180005310(0,_DAT_188954c98,aplStack_f8[0]);\r\n      }\r\n      lVar10 = lStack_c0;\r\n      lVar9 = *(longlong *)(param_1 + 0x18);\r\n      if (lVar9 == 0) goto LAB_180664a7b;\r\n      if (DAT_188c9038a == '\\0') {\r\n        FUN_18048bf00(&DAT_1888d5490);\r\n        FUN_18048bf00(&DAT_1888c9940);\r\n        FUN_18048bf00(&DAT_1888dd438);\r\n        FUN_18048bf00(0x1888dd8b8);\r\n        FUN_18048bf00(&DAT_1888ddaf8);\r\n        FUN_18048bf00(&DAT_1889316a8);\r\n        DAT_188c9038a = '\\x01';\r\n      }\r\n      lStack_e8 = 0;\r\n      uStack_e0 = (longlong **)0x0;\r\n      lVar11 = *(longlong *)(*(longlong *)(_DAT_1888d5490 + 0xb8) + 0x10);\r\n      if (lVar11 != 0) {\r\n        XLua_DelegateBridge___Gen_Delegate_Imp23_0x6000a77(lVar11,lVar9,lVar6,0);\r\n        goto LAB_18066496d;\r\n      }\r\n      if (*(longlong *)(lVar9 + 0x10) == 0) goto LAB_180664a75;\r\n      iVar1 = *(int *)(*(longlong *)(lVar9 + 0x10) + 0x18);\r\n      goto joined_r0x0001806648a6;\r\n    }\r\n    if (aplStack_f8[0] == (longlong *)0x0) goto LAB_180664a64;\r\n    lVar10 = *aplStack_f8[0];\r\n    if (DAT_188ccc7f0 != '\\0') {\r\n      func_0x000180446d00(lVar10);\r\n    }\r\n    uVar13 = 0;\r\n    if (*(ushort *)(lVar10 + 0x12e) != 0) {\r\n      do {\r\n        if (*(longlong *)(*(longlong *)(lVar10 + 0xb0) + uVar13 * 0x10) == lVar9) {\r\n          puVar7 = (undefined8 *)\r\n                   (((longlong)*(int *)(*(longlong *)(lVar10 + 0xb0) + 8 + uVar13 * 0x10) + 0x14) *\r\n                    0x10 + lVar10);\r\n          goto LAB_180664639;\r\n        }\r\n        uVar12 = (short)uVar13 + 1;\r\n        uVar13 = (ulonglong)uVar12;\r\n      } while (uVar12 < *(ushort *)(lVar10 + 0x12e));\r\n    }\r\n    puVar7 = (undefined8 *)FUN_180445cc0(plVar3,lVar9,0);\r\nLAB_180664639:\r\n    puVar7 = (undefined8 *)(*(code *)*puVar7)(auStack_58,plVar3);\r\n    uStack_68 = *puVar7;\r\n    uStack_60 = puVar7[1];\r\n    lVar9 = FUN_185159d80(&uStack_68,_DAT_1889316a8);\r\n    if ((lVar9 != 0) && (*(char *)(lVar9 + 0x1fb) == '\\0')) {\r\n      uVar5 = Torappu_Battle_Buff_get_instanceUid_0x600fe22(lVar9,0);\r\n      lVar10 = lStack_c0;\r\n      cVar4 = FUN_184dbb210(lStack_c0,uVar5);\r\n      if (cVar4 == '\\0') {\r\n        uVar8 = Torappu_Battle_Buff_get_key_0x600fe1d(lVar9,0);\r\n        cVar4 = FUN_184d0ba50(lVar6,uVar8,_DAT_1888c9940);\r\n        if (cVar4 == '\\0') {\r\n          lVar10 = BuffContainer_get_owner_0x600ff17(param_1,0);\r\n          if (lVar10 == 0) goto LAB_180664a5f;\r\n          lVar10 = Torappu_Battle_Entity_get_attributes_0x6010337(lVar10,0);\r\n          if (lVar10 == 0) goto LAB_180664a5a;\r\n          Torappu_Battle_Attributes_RemoveModifier_0x600fb13(lVar10,lVar9,0);\r\n          lVar10 = BuffContainer_get_pool_0x600ff1c(param_1,0);\r\n          if (lVar10 == 0) goto LAB_180664a55;\r\n          FUN_185158320(lVar10,lVar9);\r\n        }\r\n        else {\r\n          uVar8 = Torappu_Battle_Buff_get_overrideKey_0x600fe20(lVar9);\r\n          FUN_1805072d0(lStack_c8,uVar8,_DAT_1888c9280);\r\n          uVar5 = Torappu_Battle_Buff_get_instanceUid_0x600fe22(lVar9,0);\r\n          FUN_180007630(lVar10,uVar5);\r\n        }\r\n      }\r\n    }\r\n    goto LAB_180664540;\r\n  }\r\nLAB_180664a69:\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar2 = (code *)swi(3);\r\n  (*pcVar2)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "BuffContainer__CheckBuffsActionValid_0x600ff53",
+      "display_name": "BuffContainer._CheckBuffsActionValid",
+      "candidate_map_type": "BuffContainer",
+      "address": "0x18067e3a0",
+      "end_address": "0x18067e5ae",
+      "ranges": [
+        {
+          "start": "0x18067e3a0",
+          "end": "0x18067e5ae",
+          "unwind_rva": "0x7f7e15c",
+          "chained": false,
+          "source_sha256": "121bb4b6369b8fb4d3ee8025c01b1ac6e432727753257f7de4f2170fbe1cc264",
+          "source_file_offset": 6805408
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6805408,
+      "token": "0x600ff53",
+      "metadata_method_index": 65362,
+      "imported_range_checks": [
+        {
+          "start": "0x18067e3a0",
+          "bytes": 527,
+          "imported_sha256": "121bb4b6369b8fb4d3ee8025c01b1ac6e432727753257f7de4f2170fbe1cc264",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 114,
+      "direct_calls": [
+        {
+          "source": "18067e3c4",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e3d0",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e3dc",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e3e8",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e3f4",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e400",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e446",
+          "target": "0x185a17960",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e48a",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e4b6",
+          "target": "0x18000f5e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e4cf",
+          "target": "0x185159d80",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e4e1",
+          "target": "0x18068edb0",
+          "candidate_name": "Torappu_Battle_Buff_get_isFinishedOrDisabled_0x600fe50"
+        },
+        {
+          "source": "18067e4f2",
+          "target": "0x18068c060",
+          "candidate_name": "Torappu_Battle_Buff__IsActionValid_0x600fe58"
+        },
+        {
+          "source": "18067e511",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e53a",
+          "target": "0x180005310",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e582",
+          "target": "0x183324610",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp2923_0x60015cb"
+        },
+        {
+          "source": "18067e597",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e59d",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e5a3",
+          "target": "0x180472d50",
+          "candidate_name": null
+        },
+        {
+          "source": "18067e5a9",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined8 BuffContainer__CheckBuffsActionValid_0x600ff53(longlong param_1,undefined4 param_2)\r\n\r\n{\r\n  code *pcVar1;\r\n  char cVar2;\r\n  longlong lVar3;\r\n  undefined8 *puVar4;\r\n  longlong lVar5;\r\n  undefined8 uVar6;\r\n  undefined8 uStack_30;\r\n  undefined8 uStack_28;\r\n  undefined1 auStack_20 [24];\r\n  \r\n  if (DAT_188c903d5 == '\\0') {\r\n    FUN_18048bf00(&DAT_1888d5250);\r\n    FUN_18048bf00(&DAT_18882b720);\r\n    FUN_18048bf00(&DAT_188954c98);\r\n    FUN_18048bf00(&DAT_1888cfcb0);\r\n    FUN_18048bf00(&DAT_188959b58);\r\n    FUN_18048bf00(&DAT_1889316a8);\r\n    DAT_188c903d5 = '\\x01';\r\n  }\r\n  uStack_30 = 0;\r\n  uStack_28 = 0;\r\n  lVar3 = *(longlong *)(*(longlong *)(_DAT_1888d5250 + 0xb8) + 0x1e0);\r\n  if (lVar3 != 0) {\r\n    uVar6 = XLua_DelegateBridge___Gen_Delegate_Imp2923_0x60015cb(lVar3,param_1,param_2,0);\r\n    return uVar6;\r\n  }\r\n  if (*(longlong *)(param_1 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\n    pcVar1 = (code *)swi(3);\r\n    uVar6 = (*pcVar1)();\r\n    return uVar6;\r\n  }\r\n  lVar3 = FUN_185a17960(*(longlong *)(param_1 + 0x18),_DAT_18882b720);\r\n  do {\r\n    if (lVar3 == 0) {\r\nLAB_18067e59d:\r\n      FUN_18048c0b0();\r\n      FUN_180472d50();\r\n      pcVar1 = (code *)swi(3);\r\n      uVar6 = (*pcVar1)();\r\n      return uVar6;\r\n    }\r\n    cVar2 = FUN_180005310(0,_DAT_188959b58);\r\n    if (cVar2 == '\\0') {\r\n      if (lVar3 != 0) {\r\n        FUN_180005310(0,_DAT_188954c98,lVar3);\r\n      }\r\n      return 0;\r\n    }\r\n    if (lVar3 == 0) {\r\n      FUN_18048c0b0();\r\n      goto LAB_18067e59d;\r\n    }\r\n    puVar4 = (undefined8 *)FUN_18000f5e0(auStack_20,0,_DAT_1888cfcb0);\r\n    uStack_30 = *puVar4;\r\n    uStack_28 = puVar4[1];\r\n    lVar5 = FUN_185159d80(&uStack_30,_DAT_1889316a8);\r\n    if (lVar5 != 0) {\r\n      cVar2 = Torappu_Battle_Buff_get_isFinishedOrDisabled_0x600fe50(lVar5,0);\r\n      if (cVar2 == '\\0') {\r\n        cVar2 = Torappu_Battle_Buff__IsActionValid_0x600fe58(lVar5,param_2,0);\r\n        if (cVar2 != '\\0') {\r\n          if (lVar3 != 0) {\r\n            FUN_180005310(0,_DAT_188954c98,lVar3);\r\n          }\r\n          return 1;\r\n        }\r\n      }\r\n    }\r\n  } while( true );\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_GetEnumerator_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.GetEnumerator",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1",
+      "address": "0x185a17960",
+      "end_address": "0x185a17d37",
+      "ranges": [
+        {
+          "start": "0x185a17960",
+          "end": "0x185a179a7",
+          "unwind_rva": "0x7f746f0",
+          "chained": false,
+          "source_sha256": "88c8e0ec65617ffc9638d17d8e60cfb885ab180bbbfffa96d5c358ede90cef54",
+          "source_file_offset": 94465376
+        },
+        {
+          "start": "0x185a179a8",
+          "end": "0x185a17bd3",
+          "unwind_rva": "0x83f87a4",
+          "chained": true,
+          "source_sha256": "969c3603c1b06be0861030af12604a9f886c1525fc74f644e28522b474837705",
+          "source_file_offset": 94465448
+        },
+        {
+          "start": "0x185a17bd4",
+          "end": "0x185a17c89",
+          "unwind_rva": "0x83f87b8",
+          "chained": true,
+          "source_sha256": "eb79a374870951f844069c03a981c8811b97415c989dea12d94983e07649af43",
+          "source_file_offset": 94466004
+        },
+        {
+          "start": "0x185a17c8a",
+          "end": "0x185a17d31",
+          "unwind_rva": "0x83f87cc",
+          "chained": true,
+          "source_sha256": "62c70c2a109faf11fea46736ab21ecff76ca3a04a604ed8bd1e81f071560ef44",
+          "source_file_offset": 94466186
+        },
+        {
+          "start": "0x185a17d32",
+          "end": "0x185a17d37",
+          "unwind_rva": "0x83f87b8",
+          "chained": true,
+          "source_sha256": "c37e3d75e10761a897d5dbf3034ea617809f8a1049ce504eb330374c3f65e9e3",
+          "source_file_offset": 94466354
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 94465376,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x185a17960",
+          "bytes": 72,
+          "imported_sha256": "88c8e0ec65617ffc9638d17d8e60cfb885ab180bbbfffa96d5c358ede90cef54",
+          "match": true
+        },
+        {
+          "start": "0x185a179a8",
+          "bytes": 556,
+          "imported_sha256": "969c3603c1b06be0861030af12604a9f886c1525fc74f644e28522b474837705",
+          "match": true
+        },
+        {
+          "start": "0x185a17bd4",
+          "bytes": 182,
+          "imported_sha256": "eb79a374870951f844069c03a981c8811b97415c989dea12d94983e07649af43",
+          "match": true
+        },
+        {
+          "start": "0x185a17c8a",
+          "bytes": 168,
+          "imported_sha256": "62c70c2a109faf11fea46736ab21ecff76ca3a04a604ed8bd1e81f071560ef44",
+          "match": true
+        },
+        {
+          "start": "0x185a17d32",
+          "bytes": 6,
+          "imported_sha256": "c37e3d75e10761a897d5dbf3034ea617809f8a1049ce504eb330374c3f65e9e3",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 221,
+      "direct_calls": [
+        {
+          "source": "185a1798f",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17a11",
+          "target": "0x185ee99a0",
+          "candidate_name": "System_Array_Clear_0x6000ea1"
+        },
+        {
+          "source": "185a17a63",
+          "target": "0x184bac9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17ace",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17ad6",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17b33",
+          "target": "0x18198f850",
+          "candidate_name": "PinchUpdateExtendedDelegate__ctor_0x60054bb"
+        },
+        {
+          "source": "185a17b56",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17b5e",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17bb7",
+          "target": "0x184916ca0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17c23",
+          "target": "0x185366bb0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17c7d",
+          "target": "0x184916b60",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17c8f",
+          "target": "0x1830626c0",
+          "candidate_name": "XLua_DelegateBridge_InvokeSessionStart_0x6003c9d"
+        },
+        {
+          "source": "185a17cd0",
+          "target": "0x1844c6730",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17ce0",
+          "target": "0x183062770",
+          "candidate_name": "XLua_DelegateBridge_Invoke_0x6003c9e"
+        },
+        {
+          "source": "185a17d32",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_DoubleBufferedList_1_GetEnumerator_call_target(longlong param_1,longlong param_2)\r\n\r\n{\r\n  short sVar1;\r\n  longlong lVar2;\r\n  longlong lVar3;\r\n  code *pcVar4;\r\n  int iVar5;\r\n  undefined8 uVar6;\r\n  undefined8 uVar7;\r\n  longlong lVar8;\r\n  longlong lVar9;\r\n  \r\n  lVar8 = **(longlong **)(*(longlong *)(param_2 + 0x20) + 0xc0);\r\n  if ((*(byte *)(lVar8 + 0x136) & 1) == 0) {\r\n    lVar8 = FUN_1804463f0(lVar8);\r\n  }\r\n  lVar8 = *(longlong *)(*(longlong *)(lVar8 + 0xb8) + 0x40);\r\n  if (lVar8 != 0) {\r\n    XLua_DelegateBridge_InvokeSessionStart_0x6003c9d(lVar8,0);\r\n    if (*(longlong *)(*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 8) + 0x20)\r\n        == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 8))();\r\n    }\r\n    FUN_1844c6730(lVar8,param_1,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 8));\r\n    XLua_DelegateBridge_Invoke_0x6003c9e(lVar8,1,0);\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x70) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x70))();\r\n    }\r\n    lVar9 = *(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x70);\r\n    if (*(longlong *)(lVar9 + 0x38) == 0) {\r\n      FUN_180446470(lVar9);\r\n    }\r\n    if (*(longlong *)(lVar8 + 0x18) == 0) {\r\n      FUN_18048c0b0();\r\n    }\r\n    else {\r\n      uVar6 = FUN_183e0e550(*(longlong *)(lVar8 + 0x18),0);\r\n      iVar5 = FUN_183f21da0(uVar6,0);\r\n      if (iVar5 < *(int *)(lVar8 + 0x40) + 2) {\r\n        XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f(lVar8,0);\r\n        uVar6 = func_0x00018048bf20(0x1888506e8);\r\n        uVar6 = func_0x00018045cfe0(uVar6);\r\n        FUN_180005cb0(uVar6);\r\n        uVar7 = func_0x00018048bf20(0x18887bcf0);\r\n        FUN_185eb96e0(uVar6,uVar7,0);\r\n        FUN_18048c070(uVar6,lVar9);\r\n        pcVar4 = (code *)swi(3);\r\n        lVar8 = (*pcVar4)();\r\n        return lVar8;\r\n      }\r\n      lVar2 = *(longlong *)(lVar8 + 0x18);\r\n      if (lVar2 == 0) goto code_r0x0001844ca116;\r\n      lVar3 = *(longlong *)(lVar2 + 0x20);\r\n      uVar6 = FUN_183e0e550(lVar2,0);\r\n      iVar5 = *(int *)(lVar8 + 0x40);\r\n      if (lVar3 != 0) {\r\n        if (((undefined8 *)**(longlong **)(lVar9 + 0x38))[4] == 0) {\r\n          (**(code **)**(longlong **)(lVar9 + 0x38))();\r\n        }\r\n        FUN_18456c000(lVar3,uVar6,iVar5 + 2,&stack0x00000010,**(undefined8 **)(lVar9 + 0x38));\r\n        XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f(lVar8,0);\r\n        return 0;\r\n      }\r\n    }\r\n    FUN_18048c0b0();\r\ncode_r0x0001844ca116:\r\n    FUN_18048c0b0();\r\n    FUN_180472d50();\r\n    pcVar4 = (code *)swi(3);\r\n    lVar8 = (*pcVar4)();\r\n    return lVar8;\r\n  }\r\n  sVar1 = *(short *)(param_1 + 0x20);\r\n  *(short *)(param_1 + 0x20) = sVar1 + 1;\r\n  if (sVar1 == 0) {\r\n    lVar8 = *(longlong *)(param_1 + 0x18);\r\n    if (lVar8 == 0) goto LAB_185a17d32;\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x68) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x68))();\r\n    }\r\n    iVar5 = *(int *)(lVar8 + 0x18);\r\n    *(int *)(lVar8 + 0x1c) = *(int *)(lVar8 + 0x1c) + 1;\r\n    *(undefined4 *)(lVar8 + 0x18) = 0;\r\n    if (0 < iVar5) {\r\n      System_Array_Clear_0x6000ea1(*(undefined8 *)(lVar8 + 0x10),0,iVar5,0);\r\n    }\r\n    lVar8 = *(longlong *)(param_1 + 0x18);\r\n    uVar6 = *(undefined8 *)(param_1 + 0x10);\r\n    if (lVar8 == 0) goto LAB_185a17d32;\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x78) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x78))();\r\n    }\r\n    FUN_184bac9e0(lVar8,uVar6,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x78));\r\n  }\r\n  lVar8 = *(longlong *)(param_1 + 0x28);\r\n  if (lVar8 != 0) {\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x80) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x80))();\r\n    }\r\n    if (*(int *)(lVar8 + 0x18) < 1) {\r\n      uVar6 = *(undefined8 *)(param_1 + 0x18);\r\n      lVar8 = *(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xa8);\r\n      if ((*(byte *)(lVar8 + 0x136) & 1) == 0) {\r\n        lVar8 = FUN_1804463f0(lVar8);\r\n      }\r\n      lVar8 = func_0x00018045cfe0(lVar8);\r\n      if (lVar8 != 0) {\r\n        if (*(longlong *)\r\n             (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xb0) + 0x20) == 0\r\n           ) {\r\n          (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xb0))()\r\n          ;\r\n        }\r\n        lVar9 = *(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0);\r\n        PinchUpdateExtendedDelegate__ctor_0x60054bb\r\n                  (lVar8,param_1,*(undefined8 *)(lVar9 + 0xa0),*(undefined8 *)(lVar9 + 0xb0));\r\n        lVar9 = *(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x90);\r\n        if ((*(byte *)(lVar9 + 0x136) & 1) == 0) {\r\n          lVar9 = FUN_1804463f0(lVar9);\r\n        }\r\n        lVar9 = func_0x00018045cfe0(lVar9);\r\n        if (lVar9 != 0) {\r\n          if (*(longlong *)\r\n               (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xb8) + 0x20) ==\r\n              0) {\r\n            (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xb8))\r\n                      ();\r\n          }\r\n          FUN_184916ca0(lVar9,uVar6,lVar8,\r\n                        *(undefined8 *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xb8))\r\n          ;\r\n          return lVar9;\r\n        }\r\n      }\r\n    }\r\n    else {\r\n      lVar8 = *(longlong *)(param_1 + 0x28);\r\n      if (lVar8 != 0) {\r\n        if (*(longlong *)\r\n             (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x88) + 0x20) == 0\r\n           ) {\r\n          (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x88))()\r\n          ;\r\n        }\r\n        lVar8 = FUN_185366bb0(lVar8,*(undefined8 *)\r\n                                     (*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x88));\r\n        uVar6 = *(undefined8 *)(param_1 + 0x18);\r\n        if (lVar8 != 0) {\r\n          if (*(longlong *)\r\n               (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x98) + 0x20) ==\r\n              0) {\r\n            (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x98))\r\n                      ();\r\n          }\r\n          FUN_184916b60(lVar8,uVar6,\r\n                        *(undefined8 *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x98))\r\n          ;\r\n          return lVar8;\r\n        }\r\n      }\r\n    }\r\n  }\r\nLAB_185a17d32:\r\n  FUN_18048c0b0();\r\n  pcVar4 = (code *)swi(3);\r\n  lVar8 = (*pcVar4)();\r\n  return lVar8;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_GetInversedEnumerator_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.GetInversedEnumerator",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1",
+      "address": "0x185a17d40",
+      "end_address": "0x185a18117",
+      "ranges": [
+        {
+          "start": "0x185a17d40",
+          "end": "0x185a17d87",
+          "unwind_rva": "0x7f746f0",
+          "chained": false,
+          "source_sha256": "44810ed7c7a6eee84131f413f728d4cf3211bf38ab50880f465acd04e7a33b88",
+          "source_file_offset": 94466368
+        },
+        {
+          "start": "0x185a17d88",
+          "end": "0x185a17fb3",
+          "unwind_rva": "0x83f8a20",
+          "chained": true,
+          "source_sha256": "6fe35fb86db17dbb0c21da9f77ca269e0598c451e6486e93b924ecdfc59926a5",
+          "source_file_offset": 94466440
+        },
+        {
+          "start": "0x185a17fb4",
+          "end": "0x185a18069",
+          "unwind_rva": "0x83f8a34",
+          "chained": true,
+          "source_sha256": "03f24b9f01b4db0b6ee8d2b720d0d0297d381001d1e2f5038e61ad54446585ae",
+          "source_file_offset": 94466996
+        },
+        {
+          "start": "0x185a1806a",
+          "end": "0x185a18111",
+          "unwind_rva": "0x83f8a48",
+          "chained": true,
+          "source_sha256": "58614c07588d086e06641f18b33300461c66e971c28fd1ac07a573581e99a6f9",
+          "source_file_offset": 94467178
+        },
+        {
+          "start": "0x185a18112",
+          "end": "0x185a18117",
+          "unwind_rva": "0x83f8a34",
+          "chained": true,
+          "source_sha256": "46d983f2bb258c4663b949ab992176ec140010b980777fc9b81bac0f53f2c451",
+          "source_file_offset": 94467346
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 94466368,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x185a17d40",
+          "bytes": 72,
+          "imported_sha256": "44810ed7c7a6eee84131f413f728d4cf3211bf38ab50880f465acd04e7a33b88",
+          "match": true
+        },
+        {
+          "start": "0x185a17d88",
+          "bytes": 556,
+          "imported_sha256": "6fe35fb86db17dbb0c21da9f77ca269e0598c451e6486e93b924ecdfc59926a5",
+          "match": true
+        },
+        {
+          "start": "0x185a17fb4",
+          "bytes": 182,
+          "imported_sha256": "03f24b9f01b4db0b6ee8d2b720d0d0297d381001d1e2f5038e61ad54446585ae",
+          "match": true
+        },
+        {
+          "start": "0x185a1806a",
+          "bytes": 168,
+          "imported_sha256": "58614c07588d086e06641f18b33300461c66e971c28fd1ac07a573581e99a6f9",
+          "match": true
+        },
+        {
+          "start": "0x185a18112",
+          "bytes": 6,
+          "imported_sha256": "46d983f2bb258c4663b949ab992176ec140010b980777fc9b81bac0f53f2c451",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 221,
+      "direct_calls": [
+        {
+          "source": "185a17d6f",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17df1",
+          "target": "0x185ee99a0",
+          "candidate_name": "System_Array_Clear_0x6000ea1"
+        },
+        {
+          "source": "185a17e43",
+          "target": "0x184bac9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17eae",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17eb6",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17f13",
+          "target": "0x18198f850",
+          "candidate_name": "PinchUpdateExtendedDelegate__ctor_0x60054bb"
+        },
+        {
+          "source": "185a17f36",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17f3e",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17f97",
+          "target": "0x18558e680",
+          "candidate_name": null
+        },
+        {
+          "source": "185a18003",
+          "target": "0x185366bb0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a1805d",
+          "target": "0x18558e5a0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a1806f",
+          "target": "0x1830626c0",
+          "candidate_name": "XLua_DelegateBridge_InvokeSessionStart_0x6003c9d"
+        },
+        {
+          "source": "185a180b0",
+          "target": "0x1844c6730",
+          "candidate_name": null
+        },
+        {
+          "source": "185a180c0",
+          "target": "0x183062770",
+          "candidate_name": "XLua_DelegateBridge_Invoke_0x6003c9e"
+        },
+        {
+          "source": "185a18112",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nlonglong Torappu_DoubleBufferedList_1_GetInversedEnumerator_call_target\r\n                   (longlong param_1,longlong param_2)\r\n\r\n{\r\n  short sVar1;\r\n  longlong lVar2;\r\n  longlong lVar3;\r\n  code *pcVar4;\r\n  int iVar5;\r\n  undefined8 uVar6;\r\n  undefined8 uVar7;\r\n  longlong lVar8;\r\n  longlong lVar9;\r\n  \r\n  lVar8 = **(longlong **)(*(longlong *)(param_2 + 0x20) + 0xc0);\r\n  if ((*(byte *)(lVar8 + 0x136) & 1) == 0) {\r\n    lVar8 = FUN_1804463f0(lVar8);\r\n  }\r\n  lVar8 = *(longlong *)(*(longlong *)(lVar8 + 0xb8) + 0x50);\r\n  if (lVar8 != 0) {\r\n    XLua_DelegateBridge_InvokeSessionStart_0x6003c9d(lVar8,0);\r\n    if (*(longlong *)(*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 8) + 0x20)\r\n        == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 8))();\r\n    }\r\n    FUN_1844c6730(lVar8,param_1,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 8));\r\n    XLua_DelegateBridge_Invoke_0x6003c9e(lVar8,1,0);\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x70) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x70))();\r\n    }\r\n    lVar9 = *(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x70);\r\n    if (*(longlong *)(lVar9 + 0x38) == 0) {\r\n      FUN_180446470(lVar9);\r\n    }\r\n    if (*(longlong *)(lVar8 + 0x18) == 0) {\r\n      FUN_18048c0b0();\r\n    }\r\n    else {\r\n      uVar6 = FUN_183e0e550(*(longlong *)(lVar8 + 0x18),0);\r\n      iVar5 = FUN_183f21da0(uVar6,0);\r\n      if (iVar5 < *(int *)(lVar8 + 0x40) + 2) {\r\n        XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f(lVar8,0);\r\n        uVar6 = func_0x00018048bf20(0x1888506e8);\r\n        uVar6 = func_0x00018045cfe0(uVar6);\r\n        FUN_180005cb0(uVar6);\r\n        uVar7 = func_0x00018048bf20(0x18887bcf0);\r\n        FUN_185eb96e0(uVar6,uVar7,0);\r\n        FUN_18048c070(uVar6,lVar9);\r\n        pcVar4 = (code *)swi(3);\r\n        lVar8 = (*pcVar4)();\r\n        return lVar8;\r\n      }\r\n      lVar2 = *(longlong *)(lVar8 + 0x18);\r\n      if (lVar2 == 0) goto code_r0x0001844ca116;\r\n      lVar3 = *(longlong *)(lVar2 + 0x20);\r\n      uVar6 = FUN_183e0e550(lVar2,0);\r\n      iVar5 = *(int *)(lVar8 + 0x40);\r\n      if (lVar3 != 0) {\r\n        if (((undefined8 *)**(longlong **)(lVar9 + 0x38))[4] == 0) {\r\n          (**(code **)**(longlong **)(lVar9 + 0x38))();\r\n        }\r\n        FUN_18456c000(lVar3,uVar6,iVar5 + 2,&stack0x00000010,**(undefined8 **)(lVar9 + 0x38));\r\n        XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f(lVar8,0);\r\n        return 0;\r\n      }\r\n    }\r\n    FUN_18048c0b0();\r\ncode_r0x0001844ca116:\r\n    FUN_18048c0b0();\r\n    FUN_180472d50();\r\n    pcVar4 = (code *)swi(3);\r\n    lVar8 = (*pcVar4)();\r\n    return lVar8;\r\n  }\r\n  sVar1 = *(short *)(param_1 + 0x20);\r\n  *(short *)(param_1 + 0x20) = sVar1 + 1;\r\n  if (sVar1 == 0) {\r\n    lVar8 = *(longlong *)(param_1 + 0x18);\r\n    if (lVar8 == 0) goto LAB_185a18112;\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x68) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x68))();\r\n    }\r\n    iVar5 = *(int *)(lVar8 + 0x18);\r\n    *(int *)(lVar8 + 0x1c) = *(int *)(lVar8 + 0x1c) + 1;\r\n    *(undefined4 *)(lVar8 + 0x18) = 0;\r\n    if (0 < iVar5) {\r\n      System_Array_Clear_0x6000ea1(*(undefined8 *)(lVar8 + 0x10),0,iVar5,0);\r\n    }\r\n    lVar8 = *(longlong *)(param_1 + 0x18);\r\n    uVar6 = *(undefined8 *)(param_1 + 0x10);\r\n    if (lVar8 == 0) goto LAB_185a18112;\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x78) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x78))();\r\n    }\r\n    FUN_184bac9e0(lVar8,uVar6,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x78));\r\n  }\r\n  lVar8 = *(longlong *)(param_1 + 0x30);\r\n  if (lVar8 != 0) {\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 200) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 200))();\r\n    }\r\n    if (*(int *)(lVar8 + 0x18) < 1) {\r\n      uVar6 = *(undefined8 *)(param_1 + 0x18);\r\n      lVar8 = *(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xf0);\r\n      if ((*(byte *)(lVar8 + 0x136) & 1) == 0) {\r\n        lVar8 = FUN_1804463f0(lVar8);\r\n      }\r\n      lVar8 = func_0x00018045cfe0(lVar8);\r\n      if (lVar8 != 0) {\r\n        if (*(longlong *)\r\n             (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xf8) + 0x20) == 0\r\n           ) {\r\n          (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xf8))()\r\n          ;\r\n        }\r\n        lVar9 = *(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0);\r\n        PinchUpdateExtendedDelegate__ctor_0x60054bb\r\n                  (lVar8,param_1,*(undefined8 *)(lVar9 + 0xe8),*(undefined8 *)(lVar9 + 0xf8));\r\n        lVar9 = *(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xd8);\r\n        if ((*(byte *)(lVar9 + 0x136) & 1) == 0) {\r\n          lVar9 = FUN_1804463f0(lVar9);\r\n        }\r\n        lVar9 = func_0x00018045cfe0(lVar9);\r\n        if (lVar9 != 0) {\r\n          if (*(longlong *)\r\n               (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x100) + 0x20)\r\n              == 0) {\r\n            (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x100)\r\n            )();\r\n          }\r\n          FUN_18558e680(lVar9,uVar6,lVar8,\r\n                        *(undefined8 *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0x100)\r\n                       );\r\n          return lVar9;\r\n        }\r\n      }\r\n    }\r\n    else {\r\n      lVar8 = *(longlong *)(param_1 + 0x30);\r\n      if (lVar8 != 0) {\r\n        if (*(longlong *)\r\n             (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xd0) + 0x20) == 0\r\n           ) {\r\n          (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xd0))()\r\n          ;\r\n        }\r\n        lVar8 = FUN_185366bb0(lVar8,*(undefined8 *)\r\n                                     (*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xd0));\r\n        uVar6 = *(undefined8 *)(param_1 + 0x18);\r\n        if (lVar8 != 0) {\r\n          if (*(longlong *)\r\n               (*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xe0) + 0x20) ==\r\n              0) {\r\n            (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xe0))\r\n                      ();\r\n          }\r\n          FUN_18558e5a0(lVar8,uVar6,\r\n                        *(undefined8 *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 0xe0))\r\n          ;\r\n          return lVar8;\r\n        }\r\n      }\r\n    }\r\n  }\r\nLAB_185a18112:\r\n  FUN_18048c0b0();\r\n  pcVar4 = (code *)swi(3);\r\n  lVar8 = (*pcVar4)();\r\n  return lVar8;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_Add_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.Add",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1",
+      "address": "0x185a16f20",
+      "end_address": "0x185a17120",
+      "ranges": [
+        {
+          "start": "0x185a16f20",
+          "end": "0x185a17120",
+          "unwind_rva": "0x7f63d6c",
+          "chained": false,
+          "source_sha256": "6bf43e1d969cedaaa350c7d98e879beb2b33d7ec942f633ed86dba1334355dd1",
+          "source_file_offset": 94462752
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 94462752,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x185a16f20",
+          "bytes": 513,
+          "imported_sha256": "6bf43e1d969cedaaa350c7d98e879beb2b33d7ec942f633ed86dba1334355dd1",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 125,
+      "direct_calls": [
+        {
+          "source": "185a16f57",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17013",
+          "target": "0x184ac7730",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17048",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a17057",
+          "target": "0x1830626c0",
+          "candidate_name": "XLua_DelegateBridge_InvokeSessionStart_0x6003c9d"
+        },
+        {
+          "source": "185a17098",
+          "target": "0x1844c6730",
+          "candidate_name": null
+        },
+        {
+          "source": "185a170e4",
+          "target": "0x1844c5100",
+          "candidate_name": null
+        },
+        {
+          "source": "185a170f1",
+          "target": "0x183062770",
+          "candidate_name": "XLua_DelegateBridge_Invoke_0x6003c9e"
+        },
+        {
+          "source": "185a170fb",
+          "target": "0x183062640",
+          "candidate_name": "XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f"
+        },
+        {
+          "source": "185a17115",
+          "target": "0x18048c0a0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a1711b",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid Torappu_DoubleBufferedList_1_Add_call_target\r\n               (longlong param_1,undefined4 *param_2,longlong param_3)\r\n\r\n{\r\n  undefined4 *puVar1;\r\n  uint uVar2;\r\n  longlong lVar3;\r\n  longlong lVar4;\r\n  code *pcVar5;\r\n  undefined4 uVar6;\r\n  undefined4 uVar7;\r\n  undefined4 uVar8;\r\n  longlong lVar9;\r\n  undefined4 uStack_18;\r\n  undefined4 uStack_14;\r\n  undefined4 uStack_10;\r\n  undefined4 uStack_c;\r\n  \r\n  lVar9 = **(longlong **)(*(longlong *)(param_3 + 0x20) + 0xc0);\r\n  if ((*(byte *)(lVar9 + 0x136) & 1) == 0) {\r\n    lVar9 = FUN_1804463f0(lVar9);\r\n  }\r\n  lVar9 = *(longlong *)(*(longlong *)(lVar9 + 0xb8) + 0x28);\r\n  if (lVar9 != 0) {\r\n    XLua_DelegateBridge_InvokeSessionStart_0x6003c9d(lVar9,0);\r\n    if (*(longlong *)(*(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 8) + 0x20)\r\n        == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 8))();\r\n    }\r\n    FUN_1844c6730(lVar9,param_1,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 8));\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x50) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x50))();\r\n    }\r\n    uStack_18 = *param_2;\r\n    uStack_14 = param_2[1];\r\n    uStack_10 = param_2[2];\r\n    uStack_c = param_2[3];\r\n    FUN_1844c5100(lVar9,&uStack_18,\r\n                  *(undefined8 *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x50));\r\n    XLua_DelegateBridge_Invoke_0x6003c9e(lVar9,0,0);\r\n    XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f(lVar9,0);\r\n    return;\r\n  }\r\n  lVar9 = *(longlong *)(param_1 + 0x10);\r\n  if (lVar9 != 0) {\r\n    if (*(longlong *)\r\n         (*(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x58) + 0x20) == 0) {\r\n      (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x58))();\r\n    }\r\n    lVar3 = *(longlong *)(lVar9 + 0x10);\r\n    lVar4 = *(longlong *)(*(longlong *)(*(longlong *)(param_3 + 0x20) + 0xc0) + 0x58);\r\n    *(int *)(lVar9 + 0x1c) = *(int *)(lVar9 + 0x1c) + 1;\r\n    if (lVar3 != 0) {\r\n      uVar2 = *(uint *)(lVar9 + 0x18);\r\n      if (*(uint *)(lVar3 + 0x18) <= uVar2) {\r\n        if (*(longlong *)\r\n             (*(longlong *)(*(longlong *)(*(longlong *)(lVar4 + 0x20) + 0xc0) + 0x58) + 0x20) == 0)\r\n        {\r\n          (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(lVar4 + 0x20) + 0xc0) + 0x58))();\r\n        }\r\n        uStack_18 = *param_2;\r\n        uStack_14 = param_2[1];\r\n        uStack_10 = param_2[2];\r\n        uStack_c = param_2[3];\r\n        FUN_184ac7730(lVar9,&uStack_18,\r\n                      *(undefined8 *)(*(longlong *)(*(longlong *)(lVar4 + 0x20) + 0xc0) + 0x58));\r\n        return;\r\n      }\r\n      *(uint *)(lVar9 + 0x18) = uVar2 + 1;\r\n      if (uVar2 < *(uint *)(lVar3 + 0x18)) {\r\n        uVar6 = param_2[1];\r\n        uVar7 = param_2[2];\r\n        uVar8 = param_2[3];\r\n        puVar1 = (undefined4 *)(lVar3 + ((longlong)(int)uVar2 + 2) * 0x10);\r\n        *puVar1 = *param_2;\r\n        puVar1[1] = uVar6;\r\n        puVar1[2] = uVar7;\r\n        puVar1[3] = uVar8;\r\n        func_0x00018048b9e0(((longlong)(int)uVar2 + 2) * 0x10 + lVar3,0);\r\n        return;\r\n      }\r\n      FUN_18048c0a0();\r\n      pcVar5 = (code *)swi(3);\r\n      (*pcVar5)();\r\n      return;\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\n  pcVar5 = (code *)swi(3);\r\n  (*pcVar5)();\r\n  return;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_DoubleBufferedList_1_get_isInLoop_call_target",
+      "display_name": "Torappu.DoubleBufferedList`1.get_isInLoop",
+      "candidate_map_type": "Torappu.DoubleBufferedList`1",
+      "address": "0x185a19b40",
+      "end_address": "0x185a19c2f",
+      "ranges": [
+        {
+          "start": "0x185a19b40",
+          "end": "0x185a19c2f",
+          "unwind_rva": "0x7f63a7c",
+          "chained": false,
+          "source_sha256": "2b9d0d45cb2a161b7495270e824a376bbd7fe314fc5d6f588fc036ef5f41b717",
+          "source_file_offset": 94474048
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 94474048,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x185a19b40",
+          "bytes": 240,
+          "imported_sha256": "2b9d0d45cb2a161b7495270e824a376bbd7fe314fc5d6f588fc036ef5f41b717",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 58,
+      "direct_calls": [
+        {
+          "source": "185a19b65",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "185a19b8b",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "185a19bbc",
+          "target": "0x1830626c0",
+          "candidate_name": "XLua_DelegateBridge_InvokeSessionStart_0x6003c9d"
+        },
+        {
+          "source": "185a19bfd",
+          "target": "0x1844c6730",
+          "candidate_name": null
+        },
+        {
+          "source": "185a19c0d",
+          "target": "0x183062770",
+          "candidate_name": "XLua_DelegateBridge_Invoke_0x6003c9e"
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined8 Torappu_DoubleBufferedList_1_get_isInLoop_call_target(longlong param_1,longlong param_2)\r\n\r\n{\r\n  longlong lVar1;\r\n  longlong lVar2;\r\n  longlong lVar3;\r\n  code *pcVar4;\r\n  int iVar5;\r\n  undefined8 uVar6;\r\n  undefined8 uVar7;\r\n  longlong lVar8;\r\n  \r\n  if (DAT_188cbd831 == '\\0') {\r\n    FUN_18048bf00(&DAT_18892adb8);\r\n    DAT_188cbd831 = '\\x01';\r\n  }\r\n  lVar8 = **(longlong **)(*(longlong *)(param_2 + 0x20) + 0xc0);\r\n  if ((*(byte *)(lVar8 + 0x136) & 1) == 0) {\r\n    lVar8 = FUN_1804463f0(lVar8);\r\n  }\r\n  lVar3 = *(longlong *)(*(longlong *)(lVar8 + 0xb8) + 0x10);\r\n  if (lVar3 == 0) {\r\n    return CONCAT71((int7)((ulonglong)*(longlong *)(lVar8 + 0xb8) >> 8),\r\n                    *(short *)(param_1 + 0x20) != 0);\r\n  }\r\n  XLua_DelegateBridge_InvokeSessionStart_0x6003c9d(lVar3,0);\r\n  if (*(longlong *)(*(longlong *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 8) + 0x20)\r\n      == 0) {\r\n    (*(code *)**(undefined8 **)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 8))();\r\n  }\r\n  FUN_1844c6730(lVar3,param_1,\r\n                *(undefined8 *)(*(longlong *)(*(longlong *)(param_2 + 0x20) + 0xc0) + 8));\r\n  XLua_DelegateBridge_Invoke_0x6003c9e(lVar3,1,0);\r\n  lVar8 = _DAT_18892adb8;\r\n  if (*(longlong *)(_DAT_18892adb8 + 0x38) == 0) {\r\n    FUN_180446470(_DAT_18892adb8);\r\n  }\r\n  if (*(longlong *)(lVar3 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\n  }\r\n  else {\r\n    uVar6 = FUN_183e0e550(*(longlong *)(lVar3 + 0x18),0);\r\n    iVar5 = FUN_183f21da0(uVar6,0);\r\n    if (iVar5 < *(int *)(lVar3 + 0x40) + 2) {\r\n      XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f(lVar3,0);\r\n      uVar6 = func_0x00018048bf20(0x1888506e8);\r\n      uVar6 = func_0x00018045cfe0(uVar6);\r\n      FUN_180005cb0(uVar6);\r\n      uVar7 = func_0x00018048bf20(0x18887bcf0);\r\n      FUN_185eb96e0(uVar6,uVar7,0);\r\n      FUN_18048c070(uVar6,lVar8);\r\n      pcVar4 = (code *)swi(3);\r\n      uVar6 = (*pcVar4)();\r\n      return uVar6;\r\n    }\r\n    lVar1 = *(longlong *)(lVar3 + 0x18);\r\n    if (lVar1 == 0) goto code_r0x0001844c7ce7;\r\n    lVar2 = *(longlong *)(lVar1 + 0x20);\r\n    uVar6 = FUN_183e0e550(lVar1,0);\r\n    iVar5 = *(int *)(lVar3 + 0x40);\r\n    if (lVar2 != 0) {\r\n      if (((undefined8 *)**(longlong **)(lVar8 + 0x38))[4] == 0) {\r\n        (**(code **)**(longlong **)(lVar8 + 0x38))();\r\n      }\r\n      FUN_1845670a0(lVar2,uVar6,iVar5 + 2,&stack0x00000010,**(undefined8 **)(lVar8 + 0x38));\r\n      XLua_DelegateBridge_InvokeSessionEnd_0x6003c9f(lVar3,0);\r\n      return 0;\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\ncode_r0x0001844c7ce7:\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar4 = (code *)swi(3);\r\n  uVar6 = (*pcVar4)();\r\n  return uVar6;\r\n}\r\n\r\n"
+    }
+  ]
+}

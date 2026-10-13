@@ -1,0 +1,304 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "analysis_mode": "explicit selected PE function ranges; default whole-image analysis disabled",
+  "symbol_provenance": "Local metadata/native pointer-table candidate names; each entry corroborated by exact PE unwind start. Static analysis, no game execution.",
+  "functions": [
+    {
+      "name": "Torappu_Battle_Buff__UpdateIsEnabledIfNotFinished_0x600fef4",
+      "display_name": "Torappu.Battle.Buff._UpdateIsEnabledIfNotFinished",
+      "candidate_map_type": "Torappu.Battle.Buff",
+      "address": "0x18068dc50",
+      "end_address": "0x18068e05a",
+      "ranges": [
+        {
+          "start": "0x18068dc50",
+          "end": "0x18068dcb9",
+          "unwind_rva": "0x7f7d4cc",
+          "chained": false,
+          "source_sha256": "9f6ced3d9ba42fd4a75c4af89cb69b11f14c5f50c500cb9c9d2adf290b0f9e1a",
+          "source_file_offset": 6869072
+        },
+        {
+          "start": "0x18068dcba",
+          "end": "0x18068df57",
+          "unwind_rva": "0x7f7d4d8",
+          "chained": true,
+          "source_sha256": "b73f4954825094923ea1f51aacfca7c193d380e43899bed03654b21da082d626",
+          "source_file_offset": 6869178
+        },
+        {
+          "start": "0x18068df58",
+          "end": "0x18068df60",
+          "unwind_rva": "0x7f7d4f0",
+          "chained": true,
+          "source_sha256": "d843cc5c7c80b22ea1c50dd07e6825135ef55a6d50f17bcbe83e113673c7f998",
+          "source_file_offset": 6869848
+        },
+        {
+          "start": "0x18068df61",
+          "end": "0x18068e041",
+          "unwind_rva": "0x7f7d500",
+          "chained": true,
+          "source_sha256": "a13089ad6a2dd9026ec9eef0d8382652ca56a5b834767eb311317440e7f1e8b8",
+          "source_file_offset": 6869857
+        },
+        {
+          "start": "0x18068e042",
+          "end": "0x18068e054",
+          "unwind_rva": "0x7f7d4f0",
+          "chained": true,
+          "source_sha256": "4a323295a98a5784835aa5ec6c7e0244cb5f2ec6e70d4d69442e6a28813f90b5",
+          "source_file_offset": 6870082
+        },
+        {
+          "start": "0x18068e055",
+          "end": "0x18068e05a",
+          "unwind_rva": "0x7f7d500",
+          "chained": true,
+          "source_sha256": "3ca5cdfe91925d8e049922754b685dcf99b030d0731cea878f74b8681d2ede14",
+          "source_file_offset": 6870101
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6869072,
+      "token": "0x600fef4",
+      "metadata_method_index": 65267,
+      "imported_range_checks": [
+        {
+          "start": "0x18068dc50",
+          "bytes": 106,
+          "imported_sha256": "9f6ced3d9ba42fd4a75c4af89cb69b11f14c5f50c500cb9c9d2adf290b0f9e1a",
+          "match": true
+        },
+        {
+          "start": "0x18068dcba",
+          "bytes": 670,
+          "imported_sha256": "b73f4954825094923ea1f51aacfca7c193d380e43899bed03654b21da082d626",
+          "match": true
+        },
+        {
+          "start": "0x18068df58",
+          "bytes": 9,
+          "imported_sha256": "d843cc5c7c80b22ea1c50dd07e6825135ef55a6d50f17bcbe83e113673c7f998",
+          "match": true
+        },
+        {
+          "start": "0x18068df61",
+          "bytes": 225,
+          "imported_sha256": "a13089ad6a2dd9026ec9eef0d8382652ca56a5b834767eb311317440e7f1e8b8",
+          "match": true
+        },
+        {
+          "start": "0x18068e042",
+          "bytes": 19,
+          "imported_sha256": "4a323295a98a5784835aa5ec6c7e0244cb5f2ec6e70d4d69442e6a28813f90b5",
+          "match": true
+        },
+        {
+          "start": "0x18068e055",
+          "bytes": 6,
+          "imported_sha256": "3ca5cdfe91925d8e049922754b685dcf99b030d0731cea878f74b8681d2ede14",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 245,
+      "direct_calls": [
+        {
+          "source": "18068dc6c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18068dc78",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18068dc97",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18068dcd6",
+          "target": "0x18068f400",
+          "candidate_name": "Torappu_Battle_Buff_get_owner_0x600fe27"
+        },
+        {
+          "source": "18068dcf7",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18068dd04",
+          "target": "0x186b63a70",
+          "candidate_name": null
+        },
+        {
+          "source": "18068dd1b",
+          "target": "0x180706710",
+          "candidate_name": "Torappu_Battle_Entity_get_isSilenced_0x60103da"
+        },
+        {
+          "source": "18068dd41",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18068dd4e",
+          "target": "0x186b63a70",
+          "candidate_name": null
+        },
+        {
+          "source": "18068dd65",
+          "target": "0x180706a00",
+          "candidate_name": "Torappu_Battle_Entity_get_isStunned_0x60103b7"
+        },
+        {
+          "source": "18068dd8b",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18068dd98",
+          "target": "0x186b63a70",
+          "candidate_name": null
+        },
+        {
+          "source": "18068ddaf",
+          "target": "0x180705b50",
+          "candidate_name": "Torappu_Battle_Entity_get_isFrozen_0x60103b9"
+        },
+        {
+          "source": "18068ddd5",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18068dde2",
+          "target": "0x186b63a70",
+          "candidate_name": null
+        },
+        {
+          "source": "18068ddf9",
+          "target": "0x180705320",
+          "candidate_name": "Torappu_Battle_Entity_get_isActuallyLevitate_0x60103be"
+        },
+        {
+          "source": "18068de1b",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18068de28",
+          "target": "0x186b63a70",
+          "candidate_name": null
+        },
+        {
+          "source": "18068de3f",
+          "target": "0x180705270",
+          "candidate_name": "Torappu_Battle_Entity_get_isActuallyGroundBound_0x60103bd"
+        },
+        {
+          "source": "18068de78",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18068de97",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18068debf",
+          "target": "0x18068f400",
+          "candidate_name": "Torappu_Battle_Buff_get_owner_0x600fe27"
+        },
+        {
+          "source": "18068ded2",
+          "target": "0x180701e20",
+          "candidate_name": "Torappu_Battle_Entity_get_attributes_0x6010337"
+        },
+        {
+          "source": "18068dee9",
+          "target": "0x18064a270",
+          "candidate_name": "Torappu_Battle_Attributes_RemoveModifier_0x600fb13"
+        },
+        {
+          "source": "18068defa",
+          "target": "0x18068f400",
+          "candidate_name": "Torappu_Battle_Buff_get_owner_0x600fe27"
+        },
+        {
+          "source": "18068df0d",
+          "target": "0x180701e20",
+          "candidate_name": "Torappu_Battle_Entity_get_attributes_0x6010337"
+        },
+        {
+          "source": "18068df24",
+          "target": "0x18064a1d0",
+          "candidate_name": "Torappu_Battle_Attributes_RemoveAbnormalResistanceModifier_0x600fb1d"
+        },
+        {
+          "source": "18068df43",
+          "target": "0x18068d4b0",
+          "candidate_name": "Torappu_Battle_Buff__RunActions_0x600fee4"
+        },
+        {
+          "source": "18068df7a",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18068df99",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18068dfbd",
+          "target": "0x18068f400",
+          "candidate_name": "Torappu_Battle_Buff_get_owner_0x600fe27"
+        },
+        {
+          "source": "18068dfd0",
+          "target": "0x180701e20",
+          "candidate_name": "Torappu_Battle_Entity_get_attributes_0x6010337"
+        },
+        {
+          "source": "18068dfe3",
+          "target": "0x180648650",
+          "candidate_name": "Torappu_Battle_Attributes_AddModifier_0x600fb12"
+        },
+        {
+          "source": "18068dff4",
+          "target": "0x18068f400",
+          "candidate_name": "Torappu_Battle_Buff_get_owner_0x600fe27"
+        },
+        {
+          "source": "18068e003",
+          "target": "0x180701e20",
+          "candidate_name": "Torappu_Battle_Entity_get_attributes_0x6010337"
+        },
+        {
+          "source": "18068e016",
+          "target": "0x1806484d0",
+          "candidate_name": "Torappu_Battle_Attributes_AddAbnormalResistanceModifier_0x600fb1c"
+        },
+        {
+          "source": "18068e038",
+          "target": "0x183310010",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp27_0x6000a7b"
+        },
+        {
+          "source": "18068e055",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Removing unreachable block (ram,0x0001833100fe) */\r\n/* WARNING: Globals starting with \u0027_\u0027 overlap smaller symbols at the same address */\r\n\r\nvoid Torappu_Battle_Buff__UpdateIsEnabledIfNotFinished_0x600fef4\r\n               (longlong param_1,undefined8 param_2,undefined8 param_3,undefined8 param_4)\r\n\r\n{\r\n  longlong lVar1;\r\n  code *pcVar2;\r\n  char cVar3;\r\n  int iVar4;\r\n  int iVar5;\r\n  longlong lVar6;\r\n  char cVar7;\r\n  undefined8 uVar8;\r\n  undefined7 uVar9;\r\n  bool bVar10;\r\n  undefined8 uStackX_20;\r\n  undefined1 auStack_f8 [136];\r\n  undefined *puStack_70;\r\n  undefined8 uStack_48;\r\n  undefined8 uStack_30;\r\n  undefined1 *puStack_28;\r\n  undefined8 *puStack_20;\r\n  \r\n  if (DAT_188c90379 \u003d\u003d \u0027\\0\u0027) {\r\n    FUN_18048bf00(\u0026DAT_18895c250);\r\n    FUN_18048bf00(\u0026DAT_188932ce8);\r\n    DAT_188c90379 \u003d \u0027\\x01\u0027;\r\n  }\r\n  if (*(int *)(_DAT_18895c250 + 0xe0) \u003d\u003d 0) {\r\n    func_0x00018048c140(_DAT_18895c250);\r\n  }\r\n  lVar6 \u003d *(longlong *)(*(longlong *)(_DAT_18895c250 + 0xb8) + 0x6d8);\r\n  if (lVar6 !\u003d 0) {\r\n    if (*(longlong *)(lVar6 + 0x18) \u003d\u003d 0) {\r\n      puStack_70 \u003d \u0026UNK_18331015e;\r\n      FUN_18048c0b0();\r\n      pcVar2 \u003d (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    uStackX_20 \u003d *(undefined8 *)(*(longlong *)(lVar6 + 0x18) + 0x30);\r\n    uStack_30 \u003d 0;\r\n    puStack_28 \u003d \u0026stack0x00000008;\r\n    puStack_20 \u003d \u0026uStackX_20;\r\n    puStack_70 \u003d \u0026UNK_183310067;\r\n    FUN_185ca7f50(uStackX_20,\u0026stack0x00000008,0);\r\n    if (*(longlong *)(lVar6 + 0x18) !\u003d 0) {\r\n      uVar8 \u003d *(undefined8 *)(*(longlong *)(lVar6 + 0x18) + 0x10);\r\n      puStack_70 \u003d \u0026UNK_18331008a;\r\n      iVar4 \u003d FUN_183f23b70(uVar8,*(undefined4 *)(lVar6 + 0x38),*(undefined4 *)(lVar6 + 0x14),0);\r\n      if (*(longlong *)(lVar6 + 0x18) !\u003d 0) {\r\n        lVar1 \u003d *(longlong *)(*(longlong *)(lVar6 + 0x18) + 0x20);\r\n        if (lVar1 \u003d\u003d 0) {\r\n          puStack_70 \u003d \u0026UNK_183310142;\r\n          FUN_18048c0b0();\r\n        }\r\n        else {\r\n          puStack_70 \u003d \u0026UNK_1833100b4;\r\n          FUN_183cf8c20(lVar1,uVar8,param_1,0);\r\n          uStack_48 \u003d 0;\r\n          puStack_70 \u003d \u0026UNK_1833100d0;\r\n          iVar5 \u003d FUN_183f22380(uVar8,1,0,iVar4);\r\n          if (iVar5 \u003d\u003d 0) {\r\ncode_r0x0001833100e8:\r\n            puStack_70 \u003d \u0026UNK_1833100f6;\r\n            FUN_183f22fd0(uVar8,iVar4 + -1,0);\r\n            return;\r\n          }\r\n          if (*(longlong *)(lVar6 + 0x18) !\u003d 0) {\r\n            puStack_70 \u003d \u0026UNK_1833100e8;\r\n            FUN_183e0d130(*(longlong *)(lVar6 + 0x18),iVar4 + -1,0);\r\n            goto code_r0x0001833100e8;\r\n          }\r\n        }\r\n        puStack_70 \u003d \u0026UNK_183310148;\r\n        FUN_18048c0b0();\r\n      }\r\n      puStack_70 \u003d \u0026UNK_18331014d;\r\n      FUN_18048c0b0();\r\n    }\r\n    puStack_70 \u003d \u0026UNK_183310152;\r\n    FUN_18048c0b0();\r\n    puStack_70 \u003d \u0026UNK_183310158;\r\n    FUN_180472d50();\r\n    pcVar2 \u003d (code *)swi(3);\r\n    (*pcVar2)();\r\n    return;\r\n  }\r\n  cVar7 \u003d *(char *)(param_1 + 0x1ff);\r\n  lVar6 \u003d Torappu_Battle_Buff_get_owner_0x600fe27(param_1,0);\r\n  if (*(char *)(param_1 + 0x1f2) \u003d\u003d \u0027\\0\u0027) {\r\nLAB_18068dd28:\r\n    if (*(char *)(param_1 + 499) !\u003d \u0027\\0\u0027) {\r\n      if (*(int *)(_DAT_188932ce8 + 0xe0) \u003d\u003d 0) {\r\n        func_0x00018048c140();\r\n      }\r\n      cVar3 \u003d FUN_186b63a70(lVar6,0,0);\r\n      if (cVar3 !\u003d \u0027\\0\u0027) {\r\n        if (lVar6 \u003d\u003d 0) goto LAB_18068e055;\r\n        cVar3 \u003d Torappu_Battle_Entity_get_isStunned_0x60103b7(lVar6,0);\r\n        if (cVar3 !\u003d \u0027\\0\u0027) goto LAB_18068de48;\r\n      }\r\n    }\r\n    if (*(char *)(param_1 + 500) !\u003d \u0027\\0\u0027) {\r\n      if (*(int *)(_DAT_188932ce8 + 0xe0) \u003d\u003d 0) {\r\n        func_0x00018048c140();\r\n      }\r\n      cVar3 \u003d FUN_186b63a70(lVar6,0,0);\r\n      if (cVar3 !\u003d \u0027\\0\u0027) {\r\n        if (lVar6 \u003d\u003d 0) goto LAB_18068e055;\r\n        cVar3 \u003d Torappu_Battle_Entity_get_isFrozen_0x60103b9(lVar6,0);\r\n        if (cVar3 !\u003d \u0027\\0\u0027) goto LAB_18068de48;\r\n      }\r\n    }\r\n    if (*(char *)(param_1 + 0x1f7) !\u003d \u0027\\0\u0027) {\r\n      if (*(int *)(_DAT_188932ce8 + 0xe0) \u003d\u003d 0) {\r\n        func_0x00018048c140();\r\n      }\r\n      cVar3 \u003d FUN_186b63a70(lVar6,0,0);\r\n      if (cVar3 !\u003d \u0027\\0\u0027) {\r\n        if (lVar6 \u003d\u003d 0) goto LAB_18068e055;\r\n        cVar3 \u003d Torappu_Battle_Entity_get_isActuallyLevitate_0x60103be(lVar6,0);\r\n        if (cVar3 !\u003d \u0027\\0\u0027) goto LAB_18068de48;\r\n      }\r\n    }\r\n    if (*(char *)(param_1 + 0x1f8) !\u003d \u0027\\0\u0027) {\r\n      if (*(int *)(_DAT_188932ce8 + 0xe0) \u003d\u003d 0) {\r\n        func_0x00018048c140();\r\n      }\r\n      cVar3 \u003d FUN_186b63a70(lVar6,0,0);\r\n      if (cVar3 !\u003d \u0027\\0\u0027) {\r\n        if (lVar6 \u003d\u003d 0) goto LAB_18068e055;\r\n        cVar3 \u003d Torappu_Battle_Entity_get_isActuallyGroundBound_0x60103bd(lVar6,0);\r\n        if (cVar3 !\u003d \u0027\\0\u0027) goto LAB_18068de48;\r\n      }\r\n    }\r\n  }\r\n  else {\r\n    if (*(int *)(_DAT_188932ce8 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    cVar3 \u003d FUN_186b63a70(lVar6,0,0);\r\n    if (cVar3 \u003d\u003d \u0027\\0\u0027) goto LAB_18068dd28;\r\n    if (lVar6 \u003d\u003d 0) goto LAB_18068e055;\r\n    cVar3 \u003d Torappu_Battle_Entity_get_isSilenced_0x60103da(lVar6,0);\r\n    if (cVar3 \u003d\u003d \u0027\\0\u0027) goto LAB_18068dd28;\r\nLAB_18068de48:\r\n    cVar7 \u003d \u0027\\0\u0027;\r\n  }\r\n  if (*(char *)(param_1 + 0x1fd) \u003d\u003d cVar7) {\r\n    return;\r\n  }\r\n  if (cVar7 \u003d\u003d \u0027\\0\u0027) {\r\n    bVar10 \u003d DAT_188c902fc \u003d\u003d \u0027\\0\u0027;\r\n    *(undefined1 *)(param_1 + 0x1fd) \u003d 0;\r\n    if (bVar10) {\r\n      FUN_18048bf00(\u0026DAT_18895c250);\r\n      DAT_188c902fc \u003d \u0027\\x01\u0027;\r\n    }\r\n    if (*(int *)(_DAT_18895c250 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140(_DAT_18895c250);\r\n    }\r\n    lVar6 \u003d *(longlong *)(*(longlong *)(_DAT_18895c250 + 0xb8) + 0x2f0);\r\n    if (lVar6 !\u003d 0) {\r\nLAB_18068e032:\r\n      XLua_DelegateBridge___Gen_Delegate_Imp27_0x6000a7b(lVar6,param_1,0);\r\n      return;\r\n    }\r\n    lVar6 \u003d Torappu_Battle_Buff_get_owner_0x600fe27(param_1,0);\r\n    if ((lVar6 \u003d\u003d 0) ||\r\n       (lVar6 \u003d Torappu_Battle_Entity_get_attributes_0x6010337(lVar6,0), lVar6 \u003d\u003d 0)) {\r\nLAB_18068e055:\r\n      FUN_18048c0b0();\r\n      pcVar2 \u003d (code *)swi(3);\r\n      (*pcVar2)();\r\n      return;\r\n    }\r\n    Torappu_Battle_Attributes_RemoveModifier_0x600fb13(lVar6,param_1,0);\r\n    if (*(longlong *)(param_1 + 0x70) !\u003d 0) {\r\n      lVar6 \u003d Torappu_Battle_Buff_get_owner_0x600fe27(param_1,0);\r\n      if ((lVar6 \u003d\u003d 0) ||\r\n         (lVar6 \u003d Torappu_Battle_Entity_get_attributes_0x6010337(lVar6,0), lVar6 \u003d\u003d 0))\r\n      goto LAB_18068e055;\r\n      Torappu_Battle_Attributes_RemoveAbnormalResistanceModifier_0x600fb1d(lVar6,param_1,0);\r\n    }\r\n    uVar9 \u003d (undefined7)((ulonglong)param_4 \u003e\u003e 8);\r\n    uVar8 \u003d 0x19;\r\n  }\r\n  else {\r\n    bVar10 \u003d DAT_188c902fb \u003d\u003d \u0027\\0\u0027;\r\n    *(undefined2 *)(param_1 + 0x1fd) \u003d 0x101;\r\n    if (bVar10) {\r\n      FUN_18048bf00(\u0026DAT_18895c250);\r\n      DAT_188c902fb \u003d \u0027\\x01\u0027;\r\n    }\r\n    if (*(int *)(_DAT_18895c250 + 0xe0) \u003d\u003d 0) {\r\n      func_0x00018048c140(_DAT_18895c250);\r\n    }\r\n    lVar6 \u003d *(longlong *)(*(longlong *)(_DAT_18895c250 + 0xb8) + 0x2e8);\r\n    if (lVar6 !\u003d 0) goto LAB_18068e032;\r\n    lVar6 \u003d Torappu_Battle_Buff_get_owner_0x600fe27(param_1,0);\r\n    if ((lVar6 \u003d\u003d 0) ||\r\n       (lVar6 \u003d Torappu_Battle_Entity_get_attributes_0x6010337(lVar6,0), lVar6 \u003d\u003d 0))\r\n    goto LAB_18068e055;\r\n    Torappu_Battle_Attributes_AddModifier_0x600fb12(lVar6,param_1,0);\r\n    if (*(longlong *)(param_1 + 0x70) !\u003d 0) {\r\n      lVar6 \u003d Torappu_Battle_Buff_get_owner_0x600fe27(param_1,0);\r\n      if ((lVar6 \u003d\u003d 0) ||\r\n         (lVar6 \u003d Torappu_Battle_Entity_get_attributes_0x6010337(lVar6,0), lVar6 \u003d\u003d 0))\r\n      goto LAB_18068e055;\r\n      Torappu_Battle_Attributes_AddAbnormalResistanceModifier_0x600fb1c(lVar6,param_1,0);\r\n    }\r\n    uVar9 \u003d (undefined7)((ulonglong)param_4 \u003e\u003e 8);\r\n    uVar8 \u003d 0x18;\r\n  }\r\n  Torappu_Battle_Buff__RunActions_0x600fee4(auStack_f8,param_1,uVar8,CONCAT71(uVar9,1),0);\r\n  return;\r\n}\r\n\r\n"
+    }
+  ]
+}

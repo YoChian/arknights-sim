@@ -1,0 +1,232 @@
+[
+  {
+    "type": "Torappu.Battle.BattleFormula",
+    "method": "CalculateDamageNoEvent",
+    "address": "0x180657050",
+    "metadata_method_index": 64919,
+    "token": "0x600fd98"
+  },
+  {
+    "type": "Torappu.Battle.BattleFormula",
+    "method": "CalculateDamageInternal",
+    "address": "0x180656ba0",
+    "metadata_method_index": 64920,
+    "token": "0x600fd99"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "OnHpZero",
+    "address": "0x1806f9170",
+    "metadata_method_index": 66650,
+    "token": "0x601045b"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "OnAppliedModifier",
+    "address": "0x1806f68c0",
+    "metadata_method_index": 66669,
+    "token": "0x601046e"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "set_hp",
+    "address": "0x180709750",
+    "metadata_method_index": 66435,
+    "token": "0x6010384"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "get_maxMinusHp",
+    "address": "0x1807074b0",
+    "metadata_method_index": 66448,
+    "token": "0x6010391"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "get_isUndeadable",
+    "address": "0x180706c80",
+    "metadata_method_index": 66515,
+    "token": "0x60103d4"
+  },
+  {
+    "type": "Torappu.Battle.Entity",
+    "method": "_VerifyAbilityDamageMiss",
+    "address": "0x180700d10",
+    "metadata_method_index": 66708,
+    "token": "0x6010495"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "OnHpZero",
+    "address": "0x180a70e80",
+    "metadata_method_index": 76481,
+    "token": "0x6012ac2"
+  },
+  {
+    "type": "Torappu.Battle.Enemy",
+    "method": "SwitchToDeadState",
+    "address": "0x180a754d0",
+    "metadata_method_index": 76464,
+    "token": "0x6012ab1"
+  },
+  {
+    "type": "Torappu.Battle.Unit",
+    "method": "OnHpZero",
+    "address": "0x180aca920",
+    "metadata_method_index": 77704,
+    "token": "0x6012f89"
+  },
+  {
+    "type": "DefaultGameMode",
+    "method": "OnEntityApplyModifier",
+    "address": "0x180c1a6b0",
+    "metadata_method_index": 82231,
+    "token": "0x6014138"
+  },
+  {
+    "type": "DefaultGameMode",
+    "method": "OnFinalizeEntityDamage",
+    "address": "0x180c1a740",
+    "metadata_method_index": 82232,
+    "token": "0x6014139"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "OnBeforeApplyingModifier",
+    "address": "0x18066cc00",
+    "metadata_method_index": 65377,
+    "token": "0x600ff62"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "OnApplyingModifier",
+    "address": "0x18066bd20",
+    "metadata_method_index": 65378,
+    "token": "0x600ff63"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "OnAppliedModifier",
+    "address": "0x18066b9a0",
+    "metadata_method_index": 65379,
+    "token": "0x600ff64"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "OnBeingCalculateDamage",
+    "address": "0x18066ef20",
+    "metadata_method_index": 65401,
+    "token": "0x600ff7a"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "OnTakeDamage",
+    "address": "0x1806795e0",
+    "metadata_method_index": 65388,
+    "token": "0x600ff6d"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "OnBeforeTrySetHpZero",
+    "address": "0x18066eb40",
+    "metadata_method_index": 65428,
+    "token": "0x600ff95"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "OnOwnerBeforeDead",
+    "address": "0x1806751d0",
+    "metadata_method_index": 65451,
+    "token": "0x600ffac"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "OnOwnerDying",
+    "address": "0x180675b40",
+    "metadata_method_index": 65375,
+    "token": "0x600ff60"
+  },
+  {
+    "type": "BuffContainer",
+    "method": "OnOwnerHpFull",
+    "address": "0x180676010",
+    "metadata_method_index": 65452,
+    "token": "0x600ffad"
+  },
+  {
+    "type": "Torappu.Battle.Modifier",
+    "method": "NewTrySetHpZero",
+    "address": "0x1808b2840",
+    "metadata_method_index": 71014,
+    "token": "0x6011567"
+  },
+  {
+    "type": "Torappu.Battle.Modifier",
+    "method": "get_isCancelled",
+    "address": "0x1808b4060",
+    "metadata_method_index": 70957,
+    "token": "0x601152e"
+  },
+  {
+    "type": "Torappu.Battle.Modifier",
+    "method": "get_isDamage",
+    "address": "0x1808b4310",
+    "metadata_method_index": 70959,
+    "token": "0x6011530"
+  },
+  {
+    "type": "Torappu.Battle.Modifier",
+    "method": "get_cancelReason",
+    "address": "0x1808b3ae0",
+    "metadata_method_index": 70969,
+    "token": "0x601153a"
+  },
+  {
+    "type": "Torappu.Battle.Modifier",
+    "method": "Cancel",
+    "address": "0x1808b0a70",
+    "metadata_method_index": 70984,
+    "token": "0x6011549"
+  },
+  {
+    "type": "Torappu.Battle.Modifier",
+    "method": ".ctor",
+    "address": "0x1808b3660",
+    "metadata_method_index": 71000,
+    "token": "0x6011559"
+  },
+  {
+    "type": "Torappu.Battle.Modifier",
+    "method": ".ctor",
+    "address": "0x1808b34e0",
+    "metadata_method_index": 71001,
+    "token": "0x601155a"
+  },
+  {
+    "type": "DeadState",
+    "method": "OnEnter",
+    "address": "0x180a8b390",
+    "metadata_method_index": 76666,
+    "token": "0x6012b7b",
+    "exact_declaring_owner": "Torappu.Battle.Enemy.States.DeadState",
+    "type_definition_index": 11360
+  },
+  {
+    "type": "DeadState",
+    "method": "OnExit",
+    "address": "0x180a8b5c0",
+    "metadata_method_index": 76667,
+    "token": "0x6012b7c",
+    "exact_declaring_owner": "Torappu.Battle.Enemy.States.DeadState",
+    "type_definition_index": 11360
+  },
+  {
+    "type": "DeadState",
+    "method": "_PlayAnimation",
+    "address": "0x180a8b6a0",
+    "metadata_method_index": 76669,
+    "token": "0x6012b7e",
+    "exact_declaring_owner": "Torappu.Battle.Enemy.States.DeadState",
+    "type_definition_index": 11360
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "type": "UnityEngine.PhysicsScene2D",
+    "method": "OverlapAreaToBoxArray_Internal",
+    "metadata_method_index": 318483,
+    "token": "0x6000015",
+    "address": "0x186bc59b0",
+    "reason": "Exact area-to-box query conversion and injected overlap target"
+  },
+  {
+    "type": "UnityEngine.ContactFilter2D",
+    "method": "CreateLegacyFilter",
+    "metadata_method_index": 318525,
+    "token": "0x600003f",
+    "address": "0x186bc32d0",
+    "reason": "Legacy filter triggers/layer/depth flag construction"
+  },
+  {
+    "type": "UnityEngine.Transform",
+    "method": "TransformVector",
+    "metadata_method_index": 283325,
+    "token": "0x6000bd0",
+    "address": "0x186b744a0",
+    "reason": "TransformVector wrapper used by actual Circle GetWorldRadius"
+  },
+  {
+    "type": "UnityEngine.CircleCollider2D",
+    "method": "get_radius",
+    "metadata_method_index": 318579,
+    "token": "0x6000075",
+    "address": "0x186bc2840",
+    "reason": "Circle radius engine wrapper"
+  }
+]

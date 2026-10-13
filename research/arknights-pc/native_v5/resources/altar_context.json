@@ -1,0 +1,418 @@
+{
+  "format": "native_v5_altar_context_v1",
+  "sources": [
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\prefab_inputs.json",
+      "bytes": 729354,
+      "sha256": "86b14581d13012c3c7f4974ce83263350fdcdb8552986173882d2aa66c2db32c"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v4\\resources\\ore_buff_templates.json",
+      "bytes": 5645,
+      "sha256": "004bbfecb59b014d2905ffbc315852a73457e3cf26ca487c8ae05eb2ddd34736"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\range_table.json",
+      "bytes": 53368,
+      "sha256": "4d974598394630a1ad465b954321254397f514c7fb26cba944d320ac18b874d0"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v5\\resources\\range_provenance.json",
+      "bytes": 2465,
+      "sha256": "3fe726d558258c7586522e44cfd239bb21abc1ec354f1989d49090cc51332b9d"
+    }
+  ],
+  "altar_predefine": {
+    "position": {
+      "row": 5,
+      "col": 6
+    },
+    "direction": "UP",
+    "hidden": false,
+    "alias": "trap_011_ore#1",
+    "showSpIllust": false,
+    "inst": {
+      "characterKey": "trap_011_ore",
+      "level": 1,
+      "phase": "PHASE_0",
+      "favorPoint": 0,
+      "potentialRank": 0
+    },
+    "skillIndex": 0,
+    "mainSkillLvl": 1,
+    "skinId": ""
+  },
+  "sp_data": {
+    "spType": "INCREASE_WITH_TIME",
+    "maxChargeTime": 1,
+    "spCost": 7,
+    "initSp": 0,
+    "increment": 1.0
+  },
+  "skill_type": "AUTO",
+  "blackboard": [
+    {
+      "key": "value",
+      "value": 500.0
+    }
+  ],
+  "range": {
+    "id": "x-1",
+    "direction": 1,
+    "grids": [
+      {
+        "row": 2,
+        "col": 0
+      },
+      {
+        "row": 1,
+        "col": -1
+      },
+      {
+        "row": 1,
+        "col": 0
+      },
+      {
+        "row": 1,
+        "col": 1
+      },
+      {
+        "row": 0,
+        "col": -2
+      },
+      {
+        "row": 0,
+        "col": -1
+      },
+      {
+        "row": 0,
+        "col": 0
+      },
+      {
+        "row": 0,
+        "col": 1
+      },
+      {
+        "row": 0,
+        "col": 2
+      },
+      {
+        "row": -1,
+        "col": -1
+      },
+      {
+        "row": -1,
+        "col": 0
+      },
+      {
+        "row": -1,
+        "col": 1
+      },
+      {
+        "row": -2,
+        "col": 0
+      }
+    ]
+  },
+  "ability": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": -3160115902604019952
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": 2165892974539515790
+    },
+    "m_Name": "",
+    "_selector": {
+      "m_FileID": 0,
+      "m_PathID": 5133488200763406096
+    },
+    "_metadata": {
+      "namedAsAlias": "",
+      "blackboardPrefix": ""
+    },
+    "_overrideSignalId": "",
+    "_interruptAbilityOnDetach": 0,
+    "_attachPassiveBuffsOnDummy": 1,
+    "_ignoreIfOwnerDead": 0,
+    "_forceAsDmgOrHealAbility": 0,
+    "_waitForAttackEvent": 0,
+    "_interuptIfTargetDead": 0,
+    "_resetCdStrategy": 1,
+    "_selectTargetSource": 1,
+    "_selectTargetTiming": 0,
+    "_timeMode": 2,
+    "_alwaysIncludeTarget": 0,
+    "_allowNoTarget": 1,
+    "_animKey": "",
+    "_endAnimKey": "",
+    "_downAnimKey": "",
+    "_downEndAnimKey": "",
+    "_upAnimKey": "",
+    "_upEndAnimKey": "",
+    "_cooldown": 1.0,
+    "_cooldownKey": "duration",
+    "_preDelay": 0.6000000238418579,
+    "_escapeTime": 0.0,
+    "_faceToTarget": 1,
+    "_faceToDefault": 0,
+    "_faceToFront": 0,
+    "_faceToFirstCastTarget": 0,
+    "_checkFaceToFirstCastTargetDownAttack": 0,
+    "_forceFaceToDirection": 0,
+    "_activeBuffs": [
+      {
+        "attributes": {
+          "abnormalFlags": [],
+          "abnormalImmunes": [],
+          "abnormalAntis": [],
+          "abnormalCombos": [],
+          "abnormalComboImmunes": [],
+          "attributeModifiers": []
+        },
+        "buffKey": "ore_s",
+        "loadFromDB": 0,
+        "isDurableBuff": 0,
+        "isDamageMissable": 0,
+        "isSilenceable": 0,
+        "isStunnable": 0,
+        "isFreezable": 0,
+        "isLevitatable": 0,
+        "isGroundBoundable": 0,
+        "statusResistable": 2,
+        "templateKey": "ore_s",
+        "disableOverride": 0,
+        "overrideKey": "",
+        "overrideType": 0,
+        "maxStackCnt": 1,
+        "refreshRemainingTimeWhenStackMax": 0,
+        "clearAllStackCntWhenTimeUp": 0,
+        "maxValidStackCnt": -1,
+        "independentCharacterSource": 0,
+        "overrideEffectKey": "",
+        "overrideOnEventPriority": 0,
+        "onEventPriority": 0,
+        "audioSignal": "",
+        "lifeTimeType": 0,
+        "takeSnapshotWhenExtend": 0,
+        "durationKey": "",
+        "remainingTimeKey": "",
+        "lifeTime": 0.0,
+        "triggerLifeType": 0,
+        "triggerCnt": 0,
+        "triggerInterval": -1.0,
+        "waitFirstTriggerInterval": 1,
+        "firstTriggerInterval": -1.0,
+        "priority": -1,
+        "priorityBBKeys": [],
+        "stripBlackboardParamsWithBuffKey": 0,
+        "blackboard": [],
+        "enableInitDirectionFromSource": 0
+      },
+      {
+        "attributes": {
+          "abnormalFlags": [],
+          "abnormalImmunes": [],
+          "abnormalAntis": [],
+          "abnormalCombos": [],
+          "abnormalComboImmunes": [],
+          "attributeModifiers": []
+        },
+        "buffKey": "ore_buff",
+        "loadFromDB": 0,
+        "isDurableBuff": 0,
+        "isDamageMissable": 0,
+        "isSilenceable": 0,
+        "isStunnable": 0,
+        "isFreezable": 0,
+        "isLevitatable": 0,
+        "isGroundBoundable": 0,
+        "statusResistable": 2,
+        "templateKey": "ore_buff",
+        "disableOverride": 0,
+        "overrideKey": "",
+        "overrideType": 0,
+        "maxStackCnt": 1,
+        "refreshRemainingTimeWhenStackMax": 0,
+        "clearAllStackCntWhenTimeUp": 0,
+        "maxValidStackCnt": -1,
+        "independentCharacterSource": 0,
+        "overrideEffectKey": "",
+        "overrideOnEventPriority": 0,
+        "onEventPriority": 0,
+        "audioSignal": "",
+        "lifeTimeType": 0,
+        "takeSnapshotWhenExtend": 0,
+        "durationKey": "",
+        "remainingTimeKey": "",
+        "lifeTime": 0.0,
+        "triggerLifeType": 0,
+        "triggerCnt": 0,
+        "triggerInterval": -1.0,
+        "waitFirstTriggerInterval": 1,
+        "firstTriggerInterval": -1.0,
+        "priority": -1,
+        "priorityBBKeys": [],
+        "stripBlackboardParamsWithBuffKey": 0,
+        "blackboard": [
+          {
+            "key": "mode",
+            "value": 1.0,
+            "valueStr": ""
+          }
+        ],
+        "enableInitDirectionFromSource": 0
+      }
+    ],
+    "_maxAnimScale": -1.0,
+    "_onlyPlayEndAnimWhenIsLastAbility": 0,
+    "_ignorePalsyInterrupt": 0,
+    "_affectedBySlowDown": 0,
+    "_actions": {
+      "SerializedState": "[]",
+      "SerializedObjectReferences": []
+    },
+    "_attackType": 1,
+    "_useDynamicAttackType": 0
+  },
+  "selector": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": -2023210780827093232
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": 7080728813803358465
+    },
+    "m_Name": "",
+    "_targetSide": 3,
+    "_targetMotion": 3,
+    "_targetCategory": 1,
+    "_postFilter": 0,
+    "_ignoreTargetFree": 1,
+    "_onlyIgnoreSomeOfTargetFreeCase": 0,
+    "_abnormalFlag": 46,
+    "_abnormalCombo": 3,
+    "_ignoreAllyTargetFree": 0,
+    "_ignoreHealFree": 0,
+    "_ignoreMotionMode": 0,
+    "_forceIgnoreCamouflage": 0,
+    "_needProfessionMask": 0,
+    "_professionMask": 0,
+    "_excludeSomeAbnormalFlags": 0,
+    "_excludeAbnormalFlag": 46,
+    "_limitTargetNum": 0,
+    "_maxTargetKey": "max_target",
+    "_maxNum": 1,
+    "_excludeOwner": 0,
+    "_sortByTauntAtLast": 0,
+    "_ignoreHitRange": 0,
+    "_checkUnitType": 0,
+    "_unitTypeMask": 0,
+    "_abilityInputTargetAsSortSource": 0
+  },
+  "cast_skill": {
+    "m_GameObject": {
+      "m_FileID": 0,
+      "m_PathID": -3160115902604019952
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+      "m_FileID": 1,
+      "m_PathID": 6851783972288338031
+    },
+    "m_Name": "",
+    "_maxTriggerTime": -1,
+    "_allowSpRecoveryWhenAffecting": 0,
+    "_limitGlobalTriggerTime": 0,
+    "_hidden": 0,
+    "_showSpBarEvenHidden": 0,
+    "_showSpAsBulletMode": 0,
+    "_showSpRatioAsProgress": 0,
+    "_playCharWordVoice": 1,
+    "_playCharWordWithPassiveType": 0,
+    "_earlyVoice": 0,
+    "_canCastWithNoSp": 0,
+    "_canSilenced": 0,
+    "_canUseInAbnormalState": 0,
+    "_defaultModeIndex": -1,
+    "_attackBlackboardModeIndex": -1,
+    "_extraAttackBlackboardModeIndices": [],
+    "_rangeIdModeIndex": -1,
+    "_extraRangeIdModeIndices": [],
+    "_rangeIdUsageType": 7,
+    "_writeDurationToAttackBlackboard": 0,
+    "_attachSignalIds": 0,
+    "_extraAbilities": [],
+    "_useEscapeTime": 0,
+    "_earlySkillFinishAtAttackFinished": 0,
+    "_stopAffectOnInterrupt": 0,
+    "_showProgressToNext": 0,
+    "_hideSkillStackCount": 0,
+    "_hideHudSkillStackCount": 0,
+    "_playSkillBeginAnim": 0,
+    "_beginAnim": "",
+    "_beginAnimDown": "",
+    "_beginEffect": [],
+    "_useFaceVector": 0,
+    "_beginAnimValidator": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "_availableValidator": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "_trigger": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "_switchToState": 1,
+    "_uninterruptibleOnAbilityPredelay": 0,
+    "_canSwitchDuringBorn": 1,
+    "_canCastDuringBorn": 1,
+    "_checkHasTargetBeforeDoCast": 0,
+    "_useTriggerInManualMode": 0,
+    "_allowNoTarget": 1,
+    "_shouldCastLikeAttack": 0,
+    "_isRemoteControlled": 0,
+    "_hideRangeToShow": 0,
+    "_forceToShowRange": 0,
+    "_forceUseBaseShowRange": 0,
+    "_rangeToShow": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    "_recoverSpIfNoTarget": 0,
+    "_resetAbilityCooldownWhenCastEnd": 0,
+    "_onlyAvailableWhenTokenValid": 0,
+    "_hasUniStackColor": 0,
+    "_skipSpCheckInSkillState": 0
+  },
+  "tile_rewrite": {
+    "rewrite_tile_options": true,
+    "rewrite_height_type_on_mode": false,
+    "rewrite_height_type_on_mode_by_self": false,
+    "ignore_block_any_routes": false,
+    "keep_current_passable_mask": false,
+    "keep_current_buildable_type": false,
+    "tile_options": {
+      "buildableType": 0,
+      "passableMask": 2,
+      "overrideObstacleLikeMoveCost": 0,
+      "advancedBuildMask": 0,
+      "heightType": 0,
+      "forceSetHeightType": 0
+    },
+    "rewrite_tile_height": true,
+    "rewrite_height_float32": 0.4000000059604645,
+    "rewrite_tile_advanced_build_mask": false
+  },
+  "limits": [
+    "Verified source declaration inputs. Runtime activation, mode rewrite, selector geometry and fixed update integration use separate native evidence.",
+    "No live target, hotfix interpreter or runtime overrides observed."
+  ]
+}

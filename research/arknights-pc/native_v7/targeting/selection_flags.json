@@ -1,0 +1,18 @@
+[
+  {
+    "type": "Torappu.Battle.Attributes",
+    "method": "GetAbnormalFlag",
+    "address": "0x180649280",
+    "metadata_method_index": 64279,
+    "token": "0x600fb18",
+    "reason": "Entity normal isAllyTargetFree(flag15), isHealFree(flag7), isCamouflage(flag17) aggregate short active/disabled counts plus base flags; close logical input from attribute state instead of external getter Boolean. Getters round2 inline much of this body, direct entry needed exact return/fallback."
+  },
+  {
+    "type": "Torappu.Battle.Attributes",
+    "method": "CheckAbnormalImmune",
+    "address": "0x1806488d0",
+    "metadata_method_index": 64292,
+    "token": "0x600fb25",
+    "reason": "Camouflage getter(flag17 && !CheckAbnormalImmune9), requires exact immune count/base bits semantics; damage agent confirms its old external status Booleans do not close this."
+  }
+]

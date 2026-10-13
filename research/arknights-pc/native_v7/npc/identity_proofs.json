@@ -1,0 +1,603 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "iterator": {
+    "factory": "0x1809163b0",
+    "typeinfo_usage_va": "0x188899458",
+    "file_offset": 143225432,
+    "raw_word": "0x200342f1",
+    "usage_kind": 1,
+    "native_type_index": 106872,
+    "native_record": {
+      "address": "0x188aaba50",
+      "file_offset": 145397840,
+      "raw_bytes12": "762a00000000000000001200",
+      "data": 10870,
+      "bits": "0x120000",
+      "attrs": 0,
+      "type_tag": "0x12",
+      "byref": false,
+      "valuetype_bit": false,
+      "definition_index": 10870,
+      "name": "Torappu.Battle.Scheduler.<SpawnSummonedEnemyTrackedInGameMode>d__129",
+      "is_value_type": false,
+      "is_enum": false,
+      "type_index": 106872,
+      "pointer_record_file_offset": 131432864
+    },
+    "definition_index": 10870,
+    "name": "Torappu.Battle.Scheduler.<SpawnSummonedEnemyTrackedInGameMode>d__129",
+    "MoveNext": {
+      "name": "MoveNext",
+      "metadata_method_index": 72266,
+      "metadata_record_file_offset": 13252320,
+      "token": "0x6011a4b",
+      "flags": "0x1e1",
+      "iflags": "0x0",
+      "virtual_slot": 6,
+      "return_type": {
+        "address": "0x188a2c480",
+        "file_offset": 144876160,
+        "raw_bytes12": "cb9f00000000000000000280",
+        "data": 40907,
+        "bits": "0x80020000",
+        "attrs": 0,
+        "type_tag": "0x2",
+        "byref": false,
+        "valuetype_bit": true,
+        "name": "Boolean",
+        "type_index": 44789,
+        "pointer_record_file_offset": 130936200
+      },
+      "parameters": [],
+      "native_candidate": {
+        "type": "<SpawnSummonedEnemyTrackedInGameMode>d__129",
+        "method": "MoveNext",
+        "token": "0x6011a4b",
+        "metadata_method_index": 72266,
+        "table_entry_file_offset": 140910544,
+        "candidate_va": "0x18094fb90",
+        "candidate_file_offset": 9760656,
+        "section": "il2cpp",
+        "first_16_bytes": "4056415641574881ecb0000000803dce",
+        "pointer_and_first16_currently_verified": true
+      }
+    }
+  },
+  "action_target_jump_table": {
+    "start": "0x180fcf100",
+    "bytes": "24effc0033effc0041effc0061effc0081effc00abeffc00d5effc00e7effc000df0fc005ff0fc00a9f0fc00",
+    "source_file_offset": 16573696,
+    "source_sha256": "eec0b054fed97fa43f57bf5b7eb11610ae0b5da30b39560dbf57e5d6e1f9f397",
+    "entry_format": "11 little-endian UInt32 image-relative code RVAs; these bytes are data, not Capstone instructions",
+    "case_targets": [
+      {
+        "ordinal": 0,
+        "name": "TARGET",
+        "branch_va": "0x180fcef24"
+      },
+      {
+        "ordinal": 1,
+        "name": "SOURCE",
+        "branch_va": "0x180fcef33"
+      },
+      {
+        "ordinal": 2,
+        "name": "BUFF_SOURCE",
+        "branch_va": "0x180fcef41"
+      },
+      {
+        "ordinal": 3,
+        "name": "BUFF_OWNER",
+        "branch_va": "0x180fcef61"
+      },
+      {
+        "ordinal": 4,
+        "name": "MODIFIER_TARGET",
+        "branch_va": "0x180fcef81"
+      },
+      {
+        "ordinal": 5,
+        "name": "MODIFIER_SOURCE",
+        "branch_va": "0x180fcefab"
+      },
+      {
+        "ordinal": 6,
+        "name": "MAIN_TARGET",
+        "branch_va": "0x180fcefd5"
+      },
+      {
+        "ordinal": 7,
+        "name": "MAINBUFF_SOURCE",
+        "branch_va": "0x180fcefe7"
+      },
+      {
+        "ordinal": 8,
+        "name": "PROJECTILE_SOURCE",
+        "branch_va": "0x180fcf00d"
+      },
+      {
+        "ordinal": 9,
+        "name": "PROJECTILE_TRACETARGET",
+        "branch_va": "0x180fcf05f"
+      },
+      {
+        "ordinal": 10,
+        "name": "ABILITY_OWNER",
+        "branch_va": "0x180fcf0a9"
+      }
+    ]
+  },
+  "action_node_condition_slot": {
+    "native_vtable_offset": "0x190",
+    "virtual_slot": 5,
+    "base_getter": {
+      "name": "get_executeCondition",
+      "metadata_method_index": 95115,
+      "metadata_record_file_offset": 13983488,
+      "token": "0x601738c",
+      "flags": "0x9c6",
+      "iflags": "0x0",
+      "virtual_slot": 5,
+      "return_type": {
+        "address": "0x188a2dea0",
+        "file_offset": 144882848,
+        "raw_bytes12": "ef3400000000000000001180",
+        "data": 13551,
+        "bits": "0x80110000",
+        "attrs": 0,
+        "type_tag": "0x11",
+        "byref": false,
+        "valuetype_bit": true,
+        "definition_index": 13551,
+        "name": "Torappu.Battle.Action.ActionNode.ExecuteCondition",
+        "is_value_type": true,
+        "is_enum": true,
+        "type_index": 89066,
+        "pointer_record_file_offset": 131290416
+      },
+      "parameters": [],
+      "native_candidate": {
+        "type": "Torappu.Battle.Action.ActionNode",
+        "method": "get_executeCondition",
+        "token": "0x601738c",
+        "metadata_method_index": 95115,
+        "table_entry_file_offset": 141093336,
+        "candidate_va": "0x180fcc600",
+        "candidate_file_offset": 16562688,
+        "section": "il2cpp",
+        "first_16_bytes": "40534883ec20803d5d99cc0700488bd9",
+        "pointer_and_first16_currently_verified": true
+      }
+    },
+    "no_override_proofs": [
+      {
+        "type": "Torappu.Battle.Action.Nodes.AssignValueToBB",
+        "definition_index": 13799,
+        "inheritance": [
+          13552
+        ],
+        "declared_method_records": [
+          {
+            "name": "get_allowedSource",
+            "metadata_method_index": 95883,
+            "metadata_record_file_offset": 14008064,
+            "token": "0x601768c",
+            "flags": "0x8c6",
+            "iflags": "0x0",
+            "virtual_slot": 4,
+            "return_type": {
+              "address": "0x188aab9d0",
+              "file_offset": 145397712,
+              "raw_bytes12": "ee3400000000000000001180",
+              "data": 13550,
+              "bits": "0x80110000",
+              "attrs": 0,
+              "type_tag": "0x11",
+              "byref": false,
+              "valuetype_bit": true,
+              "definition_index": 13550,
+              "name": "Torappu.Battle.Action.ActionNode.SourceType",
+              "is_value_type": true,
+              "is_enum": true,
+              "type_index": 89069,
+              "pointer_record_file_offset": 131290440
+            },
+            "parameters": [],
+            "native_candidate": {
+              "type": "AssignValueToBB",
+              "method": "get_allowedSource",
+              "token": "0x601768c",
+              "metadata_method_index": 95883,
+              "table_entry_file_offset": 141099480,
+              "candidate_va": "0x1810161a0",
+              "candidate_file_offset": 16864672,
+              "section": "il2cpp",
+              "first_16_bytes": "40534883ec20803da101c80700488bd9",
+              "pointer_and_first16_currently_verified": true
+            }
+          },
+          {
+            "name": "Execute",
+            "metadata_method_index": 95884,
+            "metadata_record_file_offset": 14008096,
+            "token": "0x601768d",
+            "flags": "0xc6",
+            "iflags": "0x0",
+            "virtual_slot": 6,
+            "return_type": {
+              "address": "0x188a2c480",
+              "file_offset": 144876160,
+              "raw_bytes12": "cb9f00000000000000000280",
+              "data": 40907,
+              "bits": "0x80020000",
+              "attrs": 0,
+              "type_tag": "0x2",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Boolean",
+              "type_index": 44789,
+              "pointer_record_file_offset": 130936200
+            },
+            "parameters": [
+              {
+                "name": "blackboard",
+                "type": {
+                  "address": "0x188a54b10",
+                  "file_offset": 145041680,
+                  "raw_bytes12": "2a1000000000000000001200",
+                  "data": 4138,
+                  "bits": "0x120000",
+                  "attrs": 0,
+                  "type_tag": "0x12",
+                  "byref": false,
+                  "valuetype_bit": false,
+                  "definition_index": 4138,
+                  "name": "Torappu.Blackboard",
+                  "is_value_type": false,
+                  "is_enum": false,
+                  "type_index": 44675,
+                  "pointer_record_file_offset": 130935288
+                }
+              },
+              {
+                "name": "sourceType",
+                "type": {
+                  "address": "0x188aab9d0",
+                  "file_offset": 145397712,
+                  "raw_bytes12": "ee3400000000000000001180",
+                  "data": 13550,
+                  "bits": "0x80110000",
+                  "attrs": 0,
+                  "type_tag": "0x11",
+                  "byref": false,
+                  "valuetype_bit": true,
+                  "definition_index": 13550,
+                  "name": "Torappu.Battle.Action.ActionNode.SourceType",
+                  "is_value_type": true,
+                  "is_enum": true,
+                  "type_index": 89069,
+                  "pointer_record_file_offset": 131290440
+                }
+              },
+              {
+                "name": "snapshot",
+                "type": {
+                  "address": "0x188b73d60",
+                  "file_offset": 146217824,
+                  "raw_bytes12": "812700000000000000001120",
+                  "data": 10113,
+                  "bits": "0x20110000",
+                  "attrs": 0,
+                  "type_tag": "0x11",
+                  "byref": true,
+                  "valuetype_bit": false,
+                  "definition_index": 10113,
+                  "name": "Torappu.Battle.Context.Snapshot",
+                  "is_value_type": true,
+                  "is_enum": false,
+                  "type_index": 31896,
+                  "pointer_record_file_offset": 130833056
+                }
+              }
+            ],
+            "native_candidate": {
+              "type": "AssignValueToBB",
+              "method": "Execute",
+              "token": "0x601768d",
+              "metadata_method_index": 95884,
+              "table_entry_file_offset": 141099488,
+              "candidate_va": "0x181015fd0",
+              "candidate_file_offset": 16864208,
+              "section": "il2cpp",
+              "first_16_bytes": "48895c240848896c2410488974241857",
+              "pointer_and_first16_currently_verified": true
+            }
+          },
+          {
+            "name": ".ctor",
+            "metadata_method_index": 95885,
+            "metadata_record_file_offset": 14008128,
+            "token": "0x601768e",
+            "flags": "0x1886",
+            "iflags": "0x0",
+            "virtual_slot": 65535,
+            "return_type": {
+              "address": "0x188a2d860",
+              "file_offset": 144881248,
+              "raw_bytes12": "65a000000000000000000180",
+              "data": 41061,
+              "bits": "0x80010000",
+              "attrs": 0,
+              "type_tag": "0x1",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Void",
+              "type_index": 83059,
+              "pointer_record_file_offset": 131242360
+            },
+            "parameters": [],
+            "native_candidate": {
+              "type": "AssignValueToBB",
+              "method": ".ctor",
+              "token": "0x601768e",
+              "metadata_method_index": 95885,
+              "table_entry_file_offset": 141099496,
+              "candidate_va": "0x181016140",
+              "candidate_file_offset": 16864576,
+              "section": "il2cpp",
+              "first_16_bytes": "40534883ec20803d0302c80700488bd9",
+              "pointer_and_first16_currently_verified": true
+            }
+          }
+        ]
+      },
+      {
+        "type": "Torappu.Battle.Action.Nodes.ClearAllBuffs",
+        "definition_index": 13917,
+        "inheritance": [
+          13552
+        ],
+        "declared_method_records": [
+          {
+            "name": "get_allowedSource",
+            "metadata_method_index": 96269,
+            "metadata_record_file_offset": 14020416,
+            "token": "0x601780e",
+            "flags": "0x8c6",
+            "iflags": "0x0",
+            "virtual_slot": 4,
+            "return_type": {
+              "address": "0x188aab9d0",
+              "file_offset": 145397712,
+              "raw_bytes12": "ee3400000000000000001180",
+              "data": 13550,
+              "bits": "0x80110000",
+              "attrs": 0,
+              "type_tag": "0x11",
+              "byref": false,
+              "valuetype_bit": true,
+              "definition_index": 13550,
+              "name": "Torappu.Battle.Action.ActionNode.SourceType",
+              "is_value_type": true,
+              "is_enum": true,
+              "type_index": 89069,
+              "pointer_record_file_offset": 131290440
+            },
+            "parameters": [],
+            "native_candidate": {
+              "type": "ClearAllBuffs",
+              "method": "get_allowedSource",
+              "token": "0x601780e",
+              "metadata_method_index": 96269,
+              "table_entry_file_offset": 141102568,
+              "candidate_va": "0x18101d250",
+              "candidate_file_offset": 16893520,
+              "section": "il2cpp",
+              "first_16_bytes": "40534883ec20803d6992c70700488bd9",
+              "pointer_and_first16_currently_verified": true
+            }
+          },
+          {
+            "name": "Execute",
+            "metadata_method_index": 96270,
+            "metadata_record_file_offset": 14020448,
+            "token": "0x601780f",
+            "flags": "0xc6",
+            "iflags": "0x0",
+            "virtual_slot": 6,
+            "return_type": {
+              "address": "0x188a2c480",
+              "file_offset": 144876160,
+              "raw_bytes12": "cb9f00000000000000000280",
+              "data": 40907,
+              "bits": "0x80020000",
+              "attrs": 0,
+              "type_tag": "0x2",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Boolean",
+              "type_index": 44789,
+              "pointer_record_file_offset": 130936200
+            },
+            "parameters": [
+              {
+                "name": "blackboard",
+                "type": {
+                  "address": "0x188a54b10",
+                  "file_offset": 145041680,
+                  "raw_bytes12": "2a1000000000000000001200",
+                  "data": 4138,
+                  "bits": "0x120000",
+                  "attrs": 0,
+                  "type_tag": "0x12",
+                  "byref": false,
+                  "valuetype_bit": false,
+                  "definition_index": 4138,
+                  "name": "Torappu.Blackboard",
+                  "is_value_type": false,
+                  "is_enum": false,
+                  "type_index": 44675,
+                  "pointer_record_file_offset": 130935288
+                }
+              },
+              {
+                "name": "sourceType",
+                "type": {
+                  "address": "0x188aab9d0",
+                  "file_offset": 145397712,
+                  "raw_bytes12": "ee3400000000000000001180",
+                  "data": 13550,
+                  "bits": "0x80110000",
+                  "attrs": 0,
+                  "type_tag": "0x11",
+                  "byref": false,
+                  "valuetype_bit": true,
+                  "definition_index": 13550,
+                  "name": "Torappu.Battle.Action.ActionNode.SourceType",
+                  "is_value_type": true,
+                  "is_enum": true,
+                  "type_index": 89069,
+                  "pointer_record_file_offset": 131290440
+                }
+              },
+              {
+                "name": "snapshot",
+                "type": {
+                  "address": "0x188b73d60",
+                  "file_offset": 146217824,
+                  "raw_bytes12": "812700000000000000001120",
+                  "data": 10113,
+                  "bits": "0x20110000",
+                  "attrs": 0,
+                  "type_tag": "0x11",
+                  "byref": true,
+                  "valuetype_bit": false,
+                  "definition_index": 10113,
+                  "name": "Torappu.Battle.Context.Snapshot",
+                  "is_value_type": true,
+                  "is_enum": false,
+                  "type_index": 31896,
+                  "pointer_record_file_offset": 130833056
+                }
+              }
+            ],
+            "native_candidate": {
+              "type": "ClearAllBuffs",
+              "method": "Execute",
+              "token": "0x601780f",
+              "metadata_method_index": 96270,
+              "table_entry_file_offset": 141102576,
+              "candidate_va": "0x18101d020",
+              "candidate_file_offset": 16892960,
+              "section": "il2cpp",
+              "first_16_bytes": "48895c240848896c2410488974241857",
+              "pointer_and_first16_currently_verified": true
+            }
+          },
+          {
+            "name": ".ctor",
+            "metadata_method_index": 96271,
+            "metadata_record_file_offset": 14020480,
+            "token": "0x6017810",
+            "flags": "0x1886",
+            "iflags": "0x0",
+            "virtual_slot": 65535,
+            "return_type": {
+              "address": "0x188a2d860",
+              "file_offset": 144881248,
+              "raw_bytes12": "65a000000000000000000180",
+              "data": 41061,
+              "bits": "0x80010000",
+              "attrs": 0,
+              "type_tag": "0x1",
+              "byref": false,
+              "valuetype_bit": true,
+              "name": "Void",
+              "type_index": 83059,
+              "pointer_record_file_offset": 131242360
+            },
+            "parameters": [],
+            "native_candidate": {
+              "type": "ClearAllBuffs",
+              "method": ".ctor",
+              "token": "0x6017810",
+              "metadata_method_index": 96271,
+              "table_entry_file_offset": 141102584,
+              "candidate_va": "0x18101d190",
+              "candidate_file_offset": 16893328,
+              "section": "il2cpp",
+              "first_16_bytes": "48895c2408574883ec20803d2793c707",
+              "pointer_and_first16_currently_verified": true
+            }
+          }
+        ]
+      }
+    ],
+    "base_condition_normal_return": 1,
+    "CheckExecute_semantics": {
+      "0": "true",
+      "1": "previousResult",
+      "2": "not previousResult",
+      "other": "false"
+    },
+    "normal_loop": "previousResult starts true; check allowedSource and CheckExecute before each Execute; false CheckExecute returns from the entire list; Execute result becomes previousResult",
+    "InstantKill_false_consequence": "AssignValueToBB inherits condition1. Normal finishing returns alive=false, so lock and subsequent ClearAllBuffs do not execute."
+  },
+  "field_errata": {
+    "BObject.isDisappeared": {
+      "name": "<isDisappeared>k__BackingField",
+      "index": 70820,
+      "token": "0x40114a5",
+      "metadata_file_offset": 31645176,
+      "offset": 38,
+      "offset_hex": "0x26",
+      "offset_record_file_offset": 116606704,
+      "native_type": {
+        "address": "0x1889e3820",
+        "file_offset": 144578080,
+        "raw_bytes12": "cb9f00000000000001000280",
+        "data": 40907,
+        "bits": "0x80020001",
+        "attrs": 1,
+        "type_tag": "0x2",
+        "byref": false,
+        "valuetype_bit": true,
+        "name": "Boolean",
+        "type_index": 44790,
+        "pointer_record_file_offset": 130936208
+      },
+      "static": false,
+      "literal": false,
+      "readonly": false,
+      "layout_space": "instance including object/boxed header"
+    },
+    "Enemy.Options.unharmful": {
+      "name": "unharmful",
+      "index": 86464,
+      "token": "0x40151c1",
+      "metadata_file_offset": 31832904,
+      "offset": 16,
+      "offset_hex": "0x10",
+      "offset_record_file_offset": 116555728,
+      "native_type": {
+        "address": "0x1889e4070",
+        "file_offset": 144580208,
+        "raw_bytes12": "cb9f00000000000006000280",
+        "data": 40907,
+        "bits": "0x80020006",
+        "attrs": 6,
+        "type_tag": "0x2",
+        "byref": false,
+        "valuetype_bit": true,
+        "name": "Boolean",
+        "type_index": 44794,
+        "pointer_record_file_offset": 130936240
+      },
+      "static": false,
+      "literal": false,
+      "readonly": false,
+      "layout_space": "instance including object/boxed header"
+    },
+    "note": "Separate storage and semantics. Entity+0x26 is disappeared. Options unharmful does not prove skip-damage-hooks."
+  }
+}

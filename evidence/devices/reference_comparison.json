@@ -1,0 +1,442 @@
+{
+  "healthy": true,
+  "checks": [
+    {
+      "input": "T|4294967296|-8589934592|0",
+      "csharp": "3|4294967296",
+      "python": "3|4294967296",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|-8589934592|143165440",
+      "csharp": "3|4151801856",
+      "python": "3|4151801856",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|-4294967296|0",
+      "csharp": "2|4294967296",
+      "python": "2|4294967296",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|-4294967296|143165440",
+      "csharp": "2|4151801856",
+      "python": "2|4151801856",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|-1|0",
+      "csharp": "1|4294967295",
+      "python": "1|4294967295",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|-1|143165440",
+      "csharp": "1|4151801855",
+      "python": "1|4151801855",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|0|0",
+      "csharp": "1|4294967296",
+      "python": "1|4294967296",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|0|143165440",
+      "csharp": "1|4151801856",
+      "python": "1|4151801856",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|42949|0",
+      "csharp": "1|4295010245",
+      "python": "1|4295010245",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|42949|143165440",
+      "csharp": "1|4151844805",
+      "python": "1|4151844805",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|42950|0",
+      "csharp": "0|42950",
+      "python": "0|42950",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|42950|143165440",
+      "csharp": "1|4151844806",
+      "python": "1|4151844806",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|4294967296|0",
+      "csharp": "0|4294967296",
+      "python": "0|4294967296",
+      "match": true
+    },
+    {
+      "input": "T|4294967296|4294967296|143165440",
+      "csharp": "0|4151801856",
+      "python": "0|4151801856",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|-4294967296|0",
+      "csharp": "3|2147483648",
+      "python": "3|2147483648",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|-4294967296|143165440",
+      "csharp": "3|2004318208",
+      "python": "3|2004318208",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|-2147483648|0",
+      "csharp": "2|2147483648",
+      "python": "2|2147483648",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|-2147483648|143165440",
+      "csharp": "2|2004318208",
+      "python": "2|2004318208",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|-1|0",
+      "csharp": "1|2147483647",
+      "python": "1|2147483647",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|-1|143165440",
+      "csharp": "1|2004318207",
+      "python": "1|2004318207",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|0|0",
+      "csharp": "1|2147483648",
+      "python": "1|2147483648",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|0|143165440",
+      "csharp": "1|2004318208",
+      "python": "1|2004318208",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|42949|0",
+      "csharp": "1|2147526597",
+      "python": "1|2147526597",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|42949|143165440",
+      "csharp": "1|2004361157",
+      "python": "1|2004361157",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|42950|0",
+      "csharp": "0|42950",
+      "python": "0|42950",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|42950|143165440",
+      "csharp": "1|2004361158",
+      "python": "1|2004361158",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|2147483648|0",
+      "csharp": "0|2147483648",
+      "python": "0|2147483648",
+      "match": true
+    },
+    {
+      "input": "T|2147483648|2147483648|143165440",
+      "csharp": "0|2004318208",
+      "python": "0|2004318208",
+      "match": true
+    },
+    {
+      "input": "T|143165440|-286330880|0",
+      "csharp": "3|143165440",
+      "python": "3|143165440",
+      "match": true
+    },
+    {
+      "input": "T|143165440|-286330880|143165440",
+      "csharp": "4|143165440",
+      "python": "4|143165440",
+      "match": true
+    },
+    {
+      "input": "T|143165440|-143165440|0",
+      "csharp": "2|143165440",
+      "python": "2|143165440",
+      "match": true
+    },
+    {
+      "input": "T|143165440|-143165440|143165440",
+      "csharp": "3|143165440",
+      "python": "3|143165440",
+      "match": true
+    },
+    {
+      "input": "T|143165440|-1|0",
+      "csharp": "1|143165439",
+      "python": "1|143165439",
+      "match": true
+    },
+    {
+      "input": "T|143165440|-1|143165440",
+      "csharp": "2|143165439",
+      "python": "2|143165439",
+      "match": true
+    },
+    {
+      "input": "T|143165440|0|0",
+      "csharp": "1|143165440",
+      "python": "1|143165440",
+      "match": true
+    },
+    {
+      "input": "T|143165440|0|143165440",
+      "csharp": "2|143165440",
+      "python": "2|143165440",
+      "match": true
+    },
+    {
+      "input": "T|143165440|42949|0",
+      "csharp": "1|143208389",
+      "python": "1|143208389",
+      "match": true
+    },
+    {
+      "input": "T|143165440|42949|143165440",
+      "csharp": "1|42949",
+      "python": "1|42949",
+      "match": true
+    },
+    {
+      "input": "T|143165440|42950|0",
+      "csharp": "0|42950",
+      "python": "0|42950",
+      "match": true
+    },
+    {
+      "input": "T|143165440|42950|143165440",
+      "csharp": "1|42950",
+      "python": "1|42950",
+      "match": true
+    },
+    {
+      "input": "T|143165440|143165440|0",
+      "csharp": "0|143165440",
+      "python": "0|143165440",
+      "match": true
+    },
+    {
+      "input": "T|143165440|143165440|143165440",
+      "csharp": "1|143165440",
+      "python": "1|143165440",
+      "match": true
+    },
+    {
+      "input": "W|0|1",
+      "csharp": "1|1",
+      "python": "1|1",
+      "match": true
+    },
+    {
+      "input": "W|-1|1",
+      "csharp": "1|1",
+      "python": "1|1",
+      "match": true
+    },
+    {
+      "input": "W|0.6|0.03333330154418945",
+      "csharp": "18|18",
+      "python": "18|18",
+      "match": true
+    },
+    {
+      "input": "W|2.5|1",
+      "csharp": "2|2",
+      "python": "2|2",
+      "match": true
+    },
+    {
+      "input": "W|3.5|1",
+      "csharp": "4|4",
+      "python": "4|4",
+      "match": true
+    },
+    {
+      "input": "W|0.5|1",
+      "csharp": "1|1",
+      "python": "1|1",
+      "match": true
+    },
+    {
+      "input": "W|1.5|1",
+      "csharp": "2|2",
+      "python": "2|2",
+      "match": true
+    },
+    {
+      "input": "W|5.5|1",
+      "csharp": "6|6",
+      "python": "6|6",
+      "match": true
+    },
+    {
+      "input": "B|-42950|0|0",
+      "csharp": "0",
+      "python": "0",
+      "match": true
+    },
+    {
+      "input": "B|-42950|0|1",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|-42950|1|0",
+      "csharp": "0",
+      "python": "0",
+      "match": true
+    },
+    {
+      "input": "B|-42950|1|1",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|-42949|0|0",
+      "csharp": "0",
+      "python": "0",
+      "match": true
+    },
+    {
+      "input": "B|-42949|0|1",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|-42949|1|0",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|-42949|1|1",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|0|0|0",
+      "csharp": "0",
+      "python": "0",
+      "match": true
+    },
+    {
+      "input": "B|0|0|1",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|0|1|0",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|0|1|1",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|42949|0|0",
+      "csharp": "0",
+      "python": "0",
+      "match": true
+    },
+    {
+      "input": "B|42949|0|1",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|42949|1|0",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|42949|1|1",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|42950|0|0",
+      "csharp": "0",
+      "python": "0",
+      "match": true
+    },
+    {
+      "input": "B|42950|0|1",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "B|42950|1|0",
+      "csharp": "0",
+      "python": "0",
+      "match": true
+    },
+    {
+      "input": "B|42950|1|1",
+      "csharp": "1",
+      "python": "1",
+      "match": true
+    },
+    {
+      "input": "S|361",
+      "csharp": "30,60,90,120,150,180,210,240,270,300,331,361",
+      "python": "30,60,90,120,150,180,210,240,270,300,331,361",
+      "match": true
+    }
+  ],
+  "count": 71,
+  "client_runtime_compared": false,
+  "hotfix_runtime_compared": false,
+  "reference_kind": "Authored bounded C# implementation check; not a client/runtime oracle",
+  "limits": [
+    "C# Divide uses rational BigInteger rounding on small bounded fixtures. Native saturation, NaN/sentinels and overflow outside this reference scope are not certified.",
+    "Wait checks use specified deterministic simulator start; no Unity coroutine branch executed."
+  ],
+  "source_sha256": "75f12fa623aca30dc9833f72f10b79ed24aa341d382cbea0033c925099d01655",
+  "compiler_path": "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\csc.exe",
+  "compiler_stdout": ""
+}

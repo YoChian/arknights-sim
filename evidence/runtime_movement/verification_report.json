@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-13",
+  "scope": "Reviewed static movement sources and translated numeric regression; no game execution/client trace",
+  "manifest_sha256": "8963ac1e19fe862ce33aec94e8d188222bae1a5d5901bf15caea34ebba81ddc7",
+  "pin_verification": {
+    "command": "python -X utf8 evidence\\runtime_movement\\verify_evidence.py",
+    "files_verified": 46,
+    "passed": true
+  },
+  "test_verification": {
+    "command": "python -X utf8 -m unittest tests.test_runtime_movement tests.test_runtime_movement_reference tests.test_movement tests.test_movement_reference -q",
+    "tests": 44,
+    "new_component_tests": 21,
+    "new_reference_tests": 3,
+    "previous_stage_tests": 20,
+    "passed": true
+  },
+  "reference_counts": {
+    "rounding_cases": 320,
+    "avoidance_cases": 80,
+    "controller_cases": 80,
+    "controller_frames": 2400
+  },
+  "reference_scope": "Independent reconstructed C#, not a native/client oracle; exact Single bits plus timer and still state",
+  "reference_runtime": "Framework64 v4.0.30319.42000 independent x64 executable; no GameAssembly reference",
+  "live_runtime_validated": false,
+  "hotfix_runtime_validated": false,
+  "battle_ready": false
+}

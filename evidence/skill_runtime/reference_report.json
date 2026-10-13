@@ -1,0 +1,71 @@
+{
+  "format": "skill_cycle_cross_language_check_v1",
+  "source": "self-authored C# bounded rational/tick-phase reference; not real client oracle",
+  "cases": [
+    {
+      "name": "normal",
+      "frames": 1000,
+      "delay": 2576980480,
+      "duration": 4294967296,
+      "cooldown": 4294967296
+    },
+    {
+      "name": "zero",
+      "frames": 800,
+      "delay": 0,
+      "duration": 0,
+      "cooldown": 0
+    },
+    {
+      "name": "short",
+      "frames": 850,
+      "delay": 429496736,
+      "duration": 1073741824,
+      "cooldown": 1073741824
+    },
+    {
+      "name": "long",
+      "frames": 900,
+      "delay": 6442450944,
+      "duration": 4294967296,
+      "cooldown": 4294967296
+    },
+    {
+      "name": "duration_cd_different",
+      "frames": 1000,
+      "delay": 2576980480,
+      "duration": 4294967296,
+      "cooldown": 8589934592
+    },
+    {
+      "name": "zero_pre_long_duration",
+      "frames": 1000,
+      "delay": 0,
+      "duration": 8589934592,
+      "cooldown": 8589934592
+    }
+  ],
+  "frames_total": 5550,
+  "event_rows": 263,
+  "all_equal": true,
+  "client_runtime_compared": false,
+  "hotfix_runtime_compared": false,
+  "files": [
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\skill_runtime\\SkillCycleReference.cs",
+      "sha256": "6609a6ccf4ce60ee29d3d8a5d606de39b3505fc28dac8093a19a37e500226d17"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\skill_runtime\\reference_input.tsv",
+      "sha256": "354ce8ed4db15f27679607b36f785f0819cc54fd4d2db52d3f7b9ab59230fb69"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\skill_runtime\\reference_output.tsv",
+      "sha256": "dfdb579a32d3a48325498c54caf3d79732d4234d97a5bcb7aff4d21e8740ccba"
+    },
+    {
+      "path": "D:\\Repo\\arknights-sim\\evidence\\skill_runtime\\python_output.tsv",
+      "sha256": "dfdb579a32d3a48325498c54caf3d79732d4234d97a5bcb7aff4d21e8740ccba"
+    }
+  ]
+}

@@ -1,0 +1,811 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "analysis_mode": "explicit selected PE function ranges; default whole-image analysis disabled",
+  "symbol_provenance": "Local metadata/native pointer-table candidate names; each entry corroborated by exact PE unwind start. Static analysis, no game execution.",
+  "functions": [
+    {
+      "name": "Torappu_Battle_Scheduler__DoSpawnEnemyInternal_0x60119bb",
+      "display_name": "Torappu.Battle.Scheduler._DoSpawnEnemyInternal",
+      "candidate_map_type": "Torappu.Battle.Scheduler",
+      "address": "0x18091b310",
+      "end_address": "0x18091b56c",
+      "ranges": [
+        {
+          "start": "0x18091b310",
+          "end": "0x18091b3d5",
+          "unwind_rva": "0x7fae8a8",
+          "chained": false,
+          "source_sha256": "3a0368b5e2ee99d272916a44c54564f5252f0b1d22f5296546f4c21912acac3f",
+          "source_file_offset": 9545488
+        },
+        {
+          "start": "0x18091b3d6",
+          "end": "0x18091b503",
+          "unwind_rva": "0x7fae8c0",
+          "chained": true,
+          "source_sha256": "5e35d1dc7b6dfda928f9c14310d4751beaf65be0d25a71cecda333cf06107586",
+          "source_file_offset": 9545686
+        },
+        {
+          "start": "0x18091b504",
+          "end": "0x18091b566",
+          "unwind_rva": "0x7fae8d4",
+          "chained": true,
+          "source_sha256": "36f326435b85925b96768deea4e17dbee2c5fdd45b6eaa9f76e386368e2c35b2",
+          "source_file_offset": 9545988
+        },
+        {
+          "start": "0x18091b567",
+          "end": "0x18091b56c",
+          "unwind_rva": "0x7fae8e4",
+          "chained": true,
+          "source_sha256": "4e8ccb88f7d78a82d6fb201fba27d08cf4d675583fd0d3414e905d7200bd0625",
+          "source_file_offset": 9546087
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 9545488,
+      "token": "0x60119bb",
+      "metadata_method_index": 72122,
+      "imported_range_checks": [
+        {
+          "start": "0x18091b310",
+          "bytes": 198,
+          "imported_sha256": "3a0368b5e2ee99d272916a44c54564f5252f0b1d22f5296546f4c21912acac3f",
+          "match": true
+        },
+        {
+          "start": "0x18091b3d6",
+          "bytes": 302,
+          "imported_sha256": "5e35d1dc7b6dfda928f9c14310d4751beaf65be0d25a71cecda333cf06107586",
+          "match": true
+        },
+        {
+          "start": "0x18091b504",
+          "bytes": 99,
+          "imported_sha256": "36f326435b85925b96768deea4e17dbee2c5fdd45b6eaa9f76e386368e2c35b2",
+          "match": true
+        },
+        {
+          "start": "0x18091b567",
+          "bytes": 6,
+          "imported_sha256": "4e8ccb88f7d78a82d6fb201fba27d08cf4d675583fd0d3414e905d7200bd0625",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 128,
+      "direct_calls": [
+        {
+          "source": "18091b33c",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18091b348",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18091b354",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18091b360",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18091b3f6",
+          "target": "0x185879190",
+          "candidate_name": null
+        },
+        {
+          "source": "18091b40a",
+          "target": "0x185337c50",
+          "candidate_name": null
+        },
+        {
+          "source": "18091b43f",
+          "target": "0x180918050",
+          "candidate_name": "Torappu_Battle_Scheduler_TakeSnapshot_0x601199c"
+        },
+        {
+          "source": "18091b4bd",
+          "target": "0x180621070",
+          "candidate_name": "Torappu_Battle_BattleController_CreateEnemy_0x600fcbf"
+        },
+        {
+          "source": "18091b4d5",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18091b4e2",
+          "target": "0x186b638d0",
+          "candidate_name": null
+        },
+        {
+          "source": "18091b4f4",
+          "target": "0x1809195c0",
+          "candidate_name": "Torappu_Battle_Scheduler__AlertSpawnError_0x60119bc"
+        },
+        {
+          "source": "18091b560",
+          "target": "0x1833840f0",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp3534_0x600182e"
+        },
+        {
+          "source": "18091b567",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nundefined8\r\nTorappu_Battle_Scheduler__DoSpawnEnemyInternal_0x60119bb\r\n          (longlong param_1,undefined8 param_2,undefined8 param_3,undefined8 *param_4)\r\n\r\n{\r\n  code *pcVar1;\r\n  char cVar2;\r\n  longlong lVar3;\r\n  undefined8 *puVar4;\r\n  undefined8 uVar5;\r\n  undefined8 uStack_b8;\r\n  undefined8 uStack_b0;\r\n  undefined8 uStack_a8;\r\n  undefined8 uStack_98;\r\n  undefined8 uStack_90;\r\n  undefined8 uStack_88;\r\n  undefined8 uStack_78;\r\n  undefined8 uStack_70;\r\n  undefined8 uStack_68;\r\n  undefined8 uStack_60;\r\n  undefined8 uStack_58;\r\n  undefined8 uStack_50;\r\n  undefined8 uStack_48;\r\n  undefined8 uStack_40;\r\n  undefined1 auStack_38 [32];\r\n  \r\n  if (DAT_188c91a57 == '\\0') {\r\n    FUN_18048bf00(&DAT_1888cb668);\r\n    FUN_18048bf00(&DAT_188932ce8);\r\n    FUN_18048bf00(&DAT_18891b6c0);\r\n    FUN_18048bf00(&DAT_1888d3908);\r\n    DAT_188c91a57 = '\\x01';\r\n  }\r\n  uStack_a8 = 0;\r\n  uStack_b8 = 0;\r\n  uStack_b0 = 0;\r\n  lVar3 = *(longlong *)(*(longlong *)(_DAT_18891b6c0 + 0xb8) + 0x278);\r\n  if (lVar3 == 0) {\r\n    if (*(char *)(param_1 + 0x110) == '\\0') {\r\n      uStack_68 = param_4[2];\r\n      uStack_60 = param_4[3];\r\n      uStack_58 = param_4[4];\r\n      uStack_50 = param_4[5];\r\n      if (*(char *)(param_4 + 1) != '\\0') {\r\n        return 0;\r\n      }\r\n    }\r\n    uVar5 = 0;\r\n    if (*(longlong *)(param_1 + 0xa8) == 0) {\r\nLAB_18091b567:\r\n      FUN_18048c0b0();\r\n      pcVar1 = (code *)swi(3);\r\n      uVar5 = (*pcVar1)();\r\n      return uVar5;\r\n    }\r\n    cVar2 = FUN_185879190(*(longlong *)(param_1 + 0xa8),param_2,&uStack_b8,_DAT_1888cb668);\r\n    if (cVar2 != '\\0') {\r\n      lVar3 = FUN_185337c50(_DAT_1888d3908);\r\n      uStack_48 = uStack_b8;\r\n      uStack_40 = uStack_b0;\r\n      uStack_88 = uStack_a8;\r\n      puVar4 = (undefined8 *)Torappu_Battle_Scheduler_TakeSnapshot_0x601199c(auStack_38,param_1,0);\r\n      if (lVar3 == 0) goto LAB_18091b567;\r\n      uStack_68 = param_4[2];\r\n      uStack_60 = param_4[3];\r\n      uStack_78 = *param_4;\r\n      uStack_70 = param_4[1];\r\n      uStack_98 = *puVar4;\r\n      uStack_90 = puVar4[1];\r\n      uStack_58 = param_4[4];\r\n      uStack_50 = param_4[5];\r\n      uStack_88 = puVar4[2];\r\n      uVar5 = Torappu_Battle_BattleController_CreateEnemy_0x600fcbf\r\n                        (lVar3,uStack_48,uStack_40,&uStack_98,param_3,&uStack_78,0);\r\n    }\r\n    if (*(int *)(_DAT_188932ce8 + 0xe0) == 0) {\r\n      func_0x00018048c140();\r\n    }\r\n    cVar2 = FUN_186b638d0(uVar5,0,0);\r\n    if (cVar2 != '\\0') {\r\n      Torappu_Battle_Scheduler__AlertSpawnError_0x60119bc(param_1,param_2,0);\r\n    }\r\n  }\r\n  else {\r\n    uStack_78 = *param_4;\r\n    uStack_70 = param_4[1];\r\n    uStack_68 = param_4[2];\r\n    uStack_60 = param_4[3];\r\n    uStack_58 = param_4[4];\r\n    uStack_50 = param_4[5];\r\n    uVar5 = XLua_DelegateBridge___Gen_Delegate_Imp3534_0x600182e\r\n                      (lVar3,param_1,param_2,param_3,&uStack_78,0);\r\n  }\r\n  return uVar5;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_RouteData_Duplicate_0x6007b13",
+      "display_name": "Torappu.RouteData.Duplicate",
+      "candidate_map_type": "Torappu.RouteData",
+      "address": "0x18242d930",
+      "end_address": "0x18242dbf5",
+      "ranges": [
+        {
+          "start": "0x18242d930",
+          "end": "0x18242d97a",
+          "unwind_rva": "0x81012e4",
+          "chained": false,
+          "source_sha256": "307c92b084d57537a210647fa54ada023e4c824245aae7adb772a0283bf1ac03",
+          "source_file_offset": 37932336
+        },
+        {
+          "start": "0x18242d97b",
+          "end": "0x18242dbcd",
+          "unwind_rva": "0x8192ac0",
+          "chained": true,
+          "source_sha256": "1cab2ab37d3964c9f8a3d9a169b42690c4c52ac4a1f1807811cfc1f8e93cc292",
+          "source_file_offset": 37932411
+        },
+        {
+          "start": "0x18242dbce",
+          "end": "0x18242dbd3",
+          "unwind_rva": "0x8192ae8",
+          "chained": true,
+          "source_sha256": "cba2777736abaa643ad6ee9a8a04c41a0b8b4c519fe5d6154e9f6770a7bfe239",
+          "source_file_offset": 37933006
+        },
+        {
+          "start": "0x18242dbd4",
+          "end": "0x18242dbf5",
+          "unwind_rva": "0x8192af8",
+          "chained": true,
+          "source_sha256": "fd6be1f3109ffb20d78f3c4e90561ce52e4b552f232926cbbd12c987e229c9b5",
+          "source_file_offset": 37933012
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 37932336,
+      "token": "0x6007b13",
+      "metadata_method_index": 31506,
+      "imported_range_checks": [
+        {
+          "start": "0x18242d930",
+          "bytes": 75,
+          "imported_sha256": "307c92b084d57537a210647fa54ada023e4c824245aae7adb772a0283bf1ac03",
+          "match": true
+        },
+        {
+          "start": "0x18242d97b",
+          "bytes": 595,
+          "imported_sha256": "1cab2ab37d3964c9f8a3d9a169b42690c4c52ac4a1f1807811cfc1f8e93cc292",
+          "match": true
+        },
+        {
+          "start": "0x18242dbce",
+          "bytes": 6,
+          "imported_sha256": "cba2777736abaa643ad6ee9a8a04c41a0b8b4c519fe5d6154e9f6770a7bfe239",
+          "match": true
+        },
+        {
+          "start": "0x18242dbd4",
+          "bytes": 34,
+          "imported_sha256": "fd6be1f3109ffb20d78f3c4e90561ce52e4b552f232926cbbd12c987e229c9b5",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 169,
+      "direct_calls": [
+        {
+          "source": "18242d94b",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18242d957",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18242d96a",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "18242d9a2",
+          "target": "0x18050cf60",
+          "candidate_name": "BattleTimer_EventOnEntryClick_0x6000062"
+        },
+        {
+          "source": "18242d9cd",
+          "target": "0x180518de0",
+          "candidate_name": "Antilog__ctor_0x600534c"
+        },
+        {
+          "source": "18242d9f9",
+          "target": "0x180518de0",
+          "candidate_name": "Antilog__ctor_0x600534c"
+        },
+        {
+          "source": "18242da6e",
+          "target": "0x18048ba50",
+          "candidate_name": null
+        },
+        {
+          "source": "18242da7e",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18242dae0",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18242daf3",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "18242db09",
+          "target": "0x18050cf60",
+          "candidate_name": "BattleTimer_EventOnEntryClick_0x6000062"
+        },
+        {
+          "source": "18242db2e",
+          "target": "0x180518de0",
+          "candidate_name": "Antilog__ctor_0x600534c"
+        },
+        {
+          "source": "18242db68",
+          "target": "0x18048b9f0",
+          "candidate_name": null
+        },
+        {
+          "source": "18242db89",
+          "target": "0x18048b9e0",
+          "candidate_name": null
+        },
+        {
+          "source": "18242dbce",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "18242dbd4",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "18242dbda",
+          "target": "0x18048bc50",
+          "candidate_name": null
+        },
+        {
+          "source": "18242dbe4",
+          "target": "0x18048c070",
+          "candidate_name": null
+        },
+        {
+          "source": "18242dbea",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        },
+        {
+          "source": "18242dbf0",
+          "target": "0x18048c0a0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nlonglong Torappu_RouteData_Duplicate_0x6007b13(longlong param_1)\r\n\r\n{\r\n  undefined4 uVar1;\r\n  longlong *plVar2;\r\n  code *pcVar3;\r\n  longlong lVar4;\r\n  undefined8 uVar5;\r\n  longlong lVar6;\r\n  longlong lVar7;\r\n  uint uVar8;\r\n  longlong lVar9;\r\n  undefined8 uStackX_18;\r\n  undefined8 uStackX_20;\r\n  undefined8 auStack_48 [2];\r\n  \r\n  if (DAT_188ca5be5 == '\\0') {\r\n    FUN_18048bf00(&DAT_188952c50);\r\n    FUN_18048bf00(&DAT_18881ea78);\r\n    DAT_188ca5be5 = '\\x01';\r\n  }\r\n  lVar4 = func_0x00018045cfe0(_DAT_18881ea78);\r\n  if (lVar4 == 0) {\r\n    FUN_18048c0b0();\r\n    pcVar3 = (code *)swi(3);\r\n    lVar4 = (*pcVar3)();\r\n    return lVar4;\r\n  }\r\n  *(undefined1 *)(lVar4 + 0x40) = 1;\r\n  func_0x00018050cf60(lVar4,0);\r\n  uVar8 = 0;\r\n  *(undefined4 *)(lVar4 + 0x10) = *(undefined4 *)(param_1 + 0x10);\r\n  uStackX_18 = 0;\r\n  func_0x000180518de0(&uStackX_18,*(undefined4 *)(param_1 + 0x14),*(undefined4 *)(param_1 + 0x18),0)\r\n  ;\r\n  *(undefined8 *)(lVar4 + 0x14) = uStackX_18;\r\n  uStackX_20 = 0;\r\n  func_0x000180518de0(&uStackX_20,*(undefined4 *)(param_1 + 0x1c),*(undefined4 *)(param_1 + 0x20),0)\r\n  ;\r\n  *(undefined8 *)(lVar4 + 0x1c) = uStackX_20;\r\n  uVar1 = *(undefined4 *)(param_1 + 0x24);\r\n  *(undefined4 *)(lVar4 + 0x28) = *(undefined4 *)(param_1 + 0x28);\r\n  *(undefined4 *)(lVar4 + 0x24) = uVar1;\r\n  uVar1 = *(undefined4 *)(param_1 + 0x2c);\r\n  *(undefined4 *)(lVar4 + 0x30) = *(undefined4 *)(param_1 + 0x30);\r\n  *(undefined4 *)(lVar4 + 0x2c) = uVar1;\r\n  *(undefined1 *)(lVar4 + 0x40) = *(undefined1 *)(param_1 + 0x40);\r\n  *(undefined1 *)(lVar4 + 0x41) = *(undefined1 *)(param_1 + 0x41);\r\n  *(undefined1 *)(lVar4 + 0x42) = *(undefined1 *)(param_1 + 0x42);\r\n  *(undefined1 *)(lVar4 + 0x43) = *(undefined1 *)(param_1 + 0x43);\r\n  if (*(longlong *)(param_1 + 0x38) == 0) {\r\n    return lVar4;\r\n  }\r\n  uVar5 = func_0x00018048ba50(_DAT_188952c50,*(undefined4 *)(*(longlong *)(param_1 + 0x38) + 0x18));\r\n  *(undefined8 *)(lVar4 + 0x38) = uVar5;\r\n  func_0x00018048b9e0(lVar4 + 0x38,uVar5);\r\n  lVar7 = *(longlong *)(param_1 + 0x38);\r\n  if (lVar7 != 0) {\r\n    lVar9 = 0x20;\r\n    do {\r\n      if (*(int *)(lVar7 + 0x18) <= (int)uVar8) {\r\n        return lVar4;\r\n      }\r\n      lVar7 = *(longlong *)(param_1 + 0x38);\r\n      plVar2 = *(longlong **)(lVar4 + 0x38);\r\n      if (lVar7 == 0) break;\r\n      if (*(uint *)(lVar7 + 0x18) <= uVar8) {\r\nLAB_18242dbf0:\r\n        FUN_18048c0a0();\r\n        pcVar3 = (code *)swi(3);\r\n        lVar4 = (*pcVar3)();\r\n        return lVar4;\r\n      }\r\n      lVar7 = *(longlong *)(lVar9 + lVar7);\r\n      if (lVar7 == 0) break;\r\n      if (DAT_188ca5be6 == '\\0') {\r\n        FUN_18048bf00(&DAT_188824b48);\r\n        DAT_188ca5be6 = '\\x01';\r\n      }\r\n      lVar6 = func_0x00018045cfe0(_DAT_188824b48);\r\n      if (lVar6 == 0) {\r\n        FUN_18048c0b0();\r\n        pcVar3 = (code *)swi(3);\r\n        lVar4 = (*pcVar3)();\r\n        return lVar4;\r\n      }\r\n      func_0x00018050cf60(lVar6,0);\r\n      *(undefined4 *)(lVar6 + 0x10) = *(undefined4 *)(lVar7 + 0x10);\r\n      *(undefined4 *)(lVar6 + 0x14) = *(undefined4 *)(lVar7 + 0x14);\r\n      auStack_48[0] = 0;\r\n      func_0x000180518de0(auStack_48,*(undefined4 *)(lVar7 + 0x18),*(undefined4 *)(lVar7 + 0x1c),0);\r\n      *(undefined8 *)(lVar6 + 0x18) = auStack_48[0];\r\n      uVar1 = *(undefined4 *)(lVar7 + 0x20);\r\n      *(undefined4 *)(lVar6 + 0x24) = *(undefined4 *)(lVar7 + 0x24);\r\n      *(undefined4 *)(lVar6 + 0x20) = uVar1;\r\n      *(undefined1 *)(lVar6 + 0x28) = *(undefined1 *)(lVar7 + 0x28);\r\n      *(undefined4 *)(lVar6 + 0x2c) = *(undefined4 *)(lVar7 + 0x2c);\r\n      if (plVar2 == (longlong *)0x0) break;\r\n      lVar7 = func_0x00018048b9f0(lVar6,*(undefined8 *)(*plVar2 + 0x40));\r\n      if (lVar7 == 0) {\r\n        uVar5 = func_0x00018048bc50();\r\n        FUN_18048c070(uVar5,0);\r\n        pcVar3 = (code *)swi(3);\r\n        lVar4 = (*pcVar3)();\r\n        return lVar4;\r\n      }\r\n      if (*(uint *)(plVar2 + 3) <= uVar8) goto LAB_18242dbf0;\r\n      *(longlong *)(lVar9 + (longlong)plVar2) = lVar6;\r\n      func_0x00018048b9e0(plVar2 + (longlong)(int)uVar8 + 4);\r\n      lVar7 = *(longlong *)(param_1 + 0x38);\r\n      uVar8 = uVar8 + 1;\r\n      lVar9 = lVar9 + 8;\r\n    } while (lVar7 != 0);\r\n  }\r\n  FUN_18048c0b0();\r\n  pcVar3 = (code *)swi(3);\r\n  lVar4 = (*pcVar3)();\r\n  return lVar4;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Battle_Map_GenerateRuntimeRoute_0x601119c",
+      "display_name": "Torappu.Battle.Map.GenerateRuntimeRoute",
+      "candidate_map_type": "Torappu.Battle.Map",
+      "address": "0x18087b800",
+      "end_address": "0x18087b9bf",
+      "ranges": [
+        {
+          "start": "0x18087b800",
+          "end": "0x18087b898",
+          "unwind_rva": "0x7f65604",
+          "chained": false,
+          "source_sha256": "a94860fdfdb6d66e4b95257699880a7f28db365b473b27d264f0cbc79755c855",
+          "source_file_offset": 8891392
+        },
+        {
+          "start": "0x18087b899",
+          "end": "0x18087b949",
+          "unwind_rva": "0x7fa4624",
+          "chained": true,
+          "source_sha256": "7dc6cd393623fb21c82fc0be02985b6a9dc98552f53eda21472e851c3f4f286d",
+          "source_file_offset": 8891545
+        },
+        {
+          "start": "0x18087b94a",
+          "end": "0x18087b992",
+          "unwind_rva": "0x7fa463c",
+          "chained": true,
+          "source_sha256": "7919e80ad53b68ab5685cca282dba60ce5701fa57d071ccec6b103f2bebd1f90",
+          "source_file_offset": 8891722
+        },
+        {
+          "start": "0x18087b993",
+          "end": "0x18087b9b9",
+          "unwind_rva": "0x7fa4654",
+          "chained": true,
+          "source_sha256": "638f9fb21050abd8c4df788f02cc33f48f6f22e0e2bc32f8ffabf642ff28c207",
+          "source_file_offset": 8891795
+        },
+        {
+          "start": "0x18087b9ba",
+          "end": "0x18087b9bf",
+          "unwind_rva": "0x7fa463c",
+          "chained": true,
+          "source_sha256": "5af3f88e3cfdb501d57bb13c871a53d38b1d9758efed05760368591dc67c067c",
+          "source_file_offset": 8891834
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 8891392,
+      "token": "0x601119c",
+      "metadata_method_index": 70043,
+      "imported_range_checks": [
+        {
+          "start": "0x18087b800",
+          "bytes": 153,
+          "imported_sha256": "a94860fdfdb6d66e4b95257699880a7f28db365b473b27d264f0cbc79755c855",
+          "match": true
+        },
+        {
+          "start": "0x18087b899",
+          "bytes": 177,
+          "imported_sha256": "7dc6cd393623fb21c82fc0be02985b6a9dc98552f53eda21472e851c3f4f286d",
+          "match": true
+        },
+        {
+          "start": "0x18087b94a",
+          "bytes": 73,
+          "imported_sha256": "7919e80ad53b68ab5685cca282dba60ce5701fa57d071ccec6b103f2bebd1f90",
+          "match": true
+        },
+        {
+          "start": "0x18087b993",
+          "bytes": 39,
+          "imported_sha256": "638f9fb21050abd8c4df788f02cc33f48f6f22e0e2bc32f8ffabf642ff28c207",
+          "match": true
+        },
+        {
+          "start": "0x18087b9ba",
+          "bytes": 6,
+          "imported_sha256": "5af3f88e3cfdb501d57bb13c871a53d38b1d9758efed05760368591dc67c067c",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 101,
+      "direct_calls": [
+        {
+          "source": "18087b827",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b833",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b83f",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b84b",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b857",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b876",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b8bc",
+          "target": "0x184a84370",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b8d7",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b8fd",
+          "target": "0x1808a4280",
+          "candidate_name": "Torappu_Battle_Route__ctor_0x60112d5"
+        },
+        {
+          "source": "18087b907",
+          "target": "0x1808a2d60",
+          "candidate_name": "Torappu_Battle_Route_ReconstructNextMap_0x60112db"
+        },
+        {
+          "source": "18087b928",
+          "target": "0x184a81fb0",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b95f",
+          "target": "0x184a8da30",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b972",
+          "target": "0x1808a3060",
+          "candidate_name": "Torappu_Battle_Route_ReconstructRoute_0x60112d6"
+        },
+        {
+          "source": "18087b98c",
+          "target": "0x184a8da30",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b9a5",
+          "target": "0x18335ea50",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp3305_0x6001749"
+        },
+        {
+          "source": "18087b9ba",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nlonglong Torappu_Battle_Map_GenerateRuntimeRoute_0x601119c\r\n                   (longlong param_1,undefined4 param_2,undefined8 param_3)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  code *pcVar2;\r\n  char cVar3;\r\n  longlong lVar4;\r\n  \r\n  if (DAT_188c9145c == '\\0') {\r\n    FUN_18048bf00(&DAT_188803328);\r\n    FUN_18048bf00(&DAT_188803568);\r\n    FUN_18048bf00(&DAT_1888039e8);\r\n    FUN_18048bf00(&DAT_1888bca40);\r\n    FUN_18048bf00(&DAT_18881e838);\r\n    DAT_188c9145c = '\\x01';\r\n  }\r\n  if (*(int *)(_DAT_1888bca40 + 0xe0) == 0) {\r\n    func_0x00018048c140(_DAT_1888bca40);\r\n  }\r\n  lVar4 = *(longlong *)(*(longlong *)(_DAT_1888bca40 + 0xb8) + 0x2a0);\r\n  if (lVar4 == 0) {\r\n    if (*(longlong *)(param_1 + 0x80) != 0) {\r\n      cVar3 = FUN_184a84370(*(longlong *)(param_1 + 0x80),param_2,_DAT_188803568);\r\n      if (cVar3 == '\\0') {\r\n        uVar1 = *(undefined8 *)(param_1 + 0xb0);\r\n        lVar4 = func_0x00018045cfe0(_DAT_18881e838);\r\n        if (lVar4 != 0) {\r\n          Torappu_Battle_Route__ctor_0x60112d5(lVar4,param_3,param_1,uVar1,0);\r\n          Torappu_Battle_Route_ReconstructNextMap_0x60112db(lVar4,0);\r\n          if (*(longlong *)(param_1 + 0x80) != 0) {\r\n            FUN_184a81fb0(*(longlong *)(param_1 + 0x80),param_2,lVar4,_DAT_188803328);\r\n            return lVar4;\r\n          }\r\n        }\r\n      }\r\n      else if ((*(longlong *)(param_1 + 0x80) != 0) &&\r\n              (lVar4 = FUN_184a8da30(*(longlong *)(param_1 + 0x80),param_2,_DAT_1888039e8),\r\n              lVar4 != 0)) {\r\n        Torappu_Battle_Route_ReconstructRoute_0x60112d6(lVar4,param_3,0);\r\n        if (*(longlong *)(param_1 + 0x80) != 0) {\r\n          lVar4 = FUN_184a8da30(*(longlong *)(param_1 + 0x80),param_2,_DAT_1888039e8);\r\n          return lVar4;\r\n        }\r\n      }\r\n    }\r\n    FUN_18048c0b0();\r\n    pcVar2 = (code *)swi(3);\r\n    lVar4 = (*pcVar2)();\r\n    return lVar4;\r\n  }\r\n  lVar4 = XLua_DelegateBridge___Gen_Delegate_Imp3305_0x6001749(lVar4,param_1,param_2,param_3,0);\r\n  return lVar4;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Battle_Map_GenerateRuntimeRoute_0x601119d",
+      "display_name": "Torappu.Battle.Map.GenerateRuntimeRoute",
+      "candidate_map_type": "Torappu.Battle.Map",
+      "address": "0x18087b9c0",
+      "end_address": "0x18087baa8",
+      "ranges": [
+        {
+          "start": "0x18087b9c0",
+          "end": "0x18087ba29",
+          "unwind_rva": "0x7f6be2c",
+          "chained": false,
+          "source_sha256": "25ce9fd8b436918ea0cbc5aac6834f61511c937dcc03bf2b335477aff68d4572",
+          "source_file_offset": 8891840
+        },
+        {
+          "start": "0x18087ba2a",
+          "end": "0x18087ba8a",
+          "unwind_rva": "0x7fa3584",
+          "chained": true,
+          "source_sha256": "96addb8438b2cf58fcddc774ee3ccaae9aacc8bf0a1a21f871bc71522bcd65b0",
+          "source_file_offset": 8891946
+        },
+        {
+          "start": "0x18087ba8b",
+          "end": "0x18087baa2",
+          "unwind_rva": "0x7fa359c",
+          "chained": true,
+          "source_sha256": "1878b0064ee34a7c1a1c5ff74402567cb812e3ce8113ca422fe9d5ff4fda974b",
+          "source_file_offset": 8892043
+        },
+        {
+          "start": "0x18087baa3",
+          "end": "0x18087baa8",
+          "unwind_rva": "0x7fa35ac",
+          "chained": true,
+          "source_sha256": "4520a6c0e860194c866be941cd0900b74073c89d9cebbe3a6c8f48738a694e9a",
+          "source_file_offset": 8892067
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 8891840,
+      "token": "0x601119d",
+      "metadata_method_index": 70044,
+      "imported_range_checks": [
+        {
+          "start": "0x18087b9c0",
+          "bytes": 106,
+          "imported_sha256": "25ce9fd8b436918ea0cbc5aac6834f61511c937dcc03bf2b335477aff68d4572",
+          "match": true
+        },
+        {
+          "start": "0x18087ba2a",
+          "bytes": 97,
+          "imported_sha256": "96addb8438b2cf58fcddc774ee3ccaae9aacc8bf0a1a21f871bc71522bcd65b0",
+          "match": true
+        },
+        {
+          "start": "0x18087ba8b",
+          "bytes": 24,
+          "imported_sha256": "1878b0064ee34a7c1a1c5ff74402567cb812e3ce8113ca422fe9d5ff4fda974b",
+          "match": true
+        },
+        {
+          "start": "0x18087baa3",
+          "bytes": 6,
+          "imported_sha256": "4520a6c0e860194c866be941cd0900b74073c89d9cebbe3a6c8f48738a694e9a",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 55,
+      "direct_calls": [
+        {
+          "source": "18087b9e0",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b9ec",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18087ba0b",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18087ba42",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "18087ba64",
+          "target": "0x1808a4280",
+          "candidate_name": "Torappu_Battle_Route__ctor_0x60112d5"
+        },
+        {
+          "source": "18087ba6e",
+          "target": "0x1808a2d60",
+          "candidate_name": "Torappu_Battle_Route_ReconstructNextMap_0x60112db"
+        },
+        {
+          "source": "18087baa3",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Removing unreachable block (ram,0x00018335eeec) */\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nlonglong * Torappu_Battle_Map_GenerateRuntimeRoute_0x601119d(longlong param_1,undefined8 param_2)\r\n\r\n{\r\n  undefined8 uVar1;\r\n  longlong lVar2;\r\n  code *pcVar3;\r\n  char cVar4;\r\n  int iVar5;\r\n  int iVar6;\r\n  longlong *plVar7;\r\n  undefined8 uVar8;\r\n  longlong lVar9;\r\n  longlong *unaff_RSI;\r\n  bool bVar10;\r\n  undefined8 uStack_58;\r\n  undefined8 uStack_50;\r\n  undefined8 uStack_40;\r\n  undefined1 *puStack_38;\r\n  undefined8 *puStack_30;\r\n  \r\n  if (DAT_188c9145d == '\\0') {\r\n    uStack_40 = 0x18087b9e5;\r\n    FUN_18048bf00(&DAT_1888bca40);\r\n    uStack_40 = 0x18087b9f1;\r\n    FUN_18048bf00(&DAT_18881e838);\r\n    DAT_188c9145d = '\\x01';\r\n  }\r\n  if (*(int *)(_DAT_1888bca40 + 0xe0) == 0) {\r\n    uStack_40 = 0x18087ba10;\r\n    func_0x00018048c140(_DAT_1888bca40);\r\n  }\r\n  lVar9 = *(longlong *)(*(longlong *)(_DAT_1888bca40 + 0xb8) + 0x2a8);\r\n  if (lVar9 == 0) {\r\n    uVar1 = *(undefined8 *)(param_1 + 0xb0);\r\n    uStack_40 = 0x18087ba47;\r\n    plVar7 = (longlong *)func_0x00018045cfe0(_DAT_18881e838);\r\n    if (plVar7 != (longlong *)0x0) {\r\n      uStack_40 = 0x18087ba69;\r\n      Torappu_Battle_Route__ctor_0x60112d5(plVar7,param_2,param_1,uVar1);\r\n      uStack_40 = 0x18087ba73;\r\n      Torappu_Battle_Route_ReconstructNextMap_0x60112db(plVar7,0);\r\n      return plVar7;\r\n    }\r\n    uStack_40 = 0x18087baa8;\r\n    FUN_18048c0b0();\r\n    pcVar3 = (code *)swi(3);\r\n    plVar7 = (longlong *)(*pcVar3)();\r\n    return plVar7;\r\n  }\r\n  if (cRam0000000188cafdf2 == '\\0') {\r\n    FUN_18048bf00(0x18888b4f8,param_1,param_2,0);\r\n    FUN_18048bf00(&DAT_18881e838);\r\n    FUN_18048bf00(0x188906850);\r\n    cRam0000000188cafdf2 = '\\x01';\r\n  }\r\n  uStack_50 = 0;\r\n  if (*(longlong *)(lVar9 + 0x18) == 0) {\r\n    FUN_18048c0b0();\r\ncode_r0x00018335ef42:\r\n    FUN_18048c0b0();\r\ncode_r0x00018335ef48:\r\n    FUN_18048ba10(unaff_RSI,lVar9);\r\ncode_r0x00018335ef53:\r\n    FUN_18048c0b0();\r\n  }\r\n  else {\r\n    uStack_58 = *(undefined8 *)(*(longlong *)(lVar9 + 0x18) + 0x30);\r\n    uStack_40 = 0;\r\n    puStack_38 = &stack0x00000008;\r\n    puStack_30 = &uStack_58;\r\n    FUN_185ca7f50(uStack_58,&stack0x00000008,0);\r\n    if (*(longlong *)(lVar9 + 0x18) == 0) goto code_r0x00018335ef5d;\r\n    uVar1 = *(undefined8 *)(*(longlong *)(lVar9 + 0x18) + 0x10);\r\n    iVar5 = FUN_183f23b70(uVar1,*(undefined4 *)(lVar9 + 0x38),*(undefined4 *)(lVar9 + 0x14),0);\r\n    if (*(longlong *)(lVar9 + 0x18) != 0) {\r\n      unaff_RSI = *(longlong **)(*(longlong *)(lVar9 + 0x18) + 0x20);\r\n      if (unaff_RSI != (longlong *)0x0) {\r\n        FUN_183cf8c20(unaff_RSI,uVar1,param_1,0);\r\n        FUN_183cf8c20(unaff_RSI,uVar1,param_2,0);\r\n        bVar10 = true;\r\n        iVar6 = FUN_183f22380(uVar1,2,1,iVar5,0);\r\n        if (iVar6 != 0) {\r\n          if (*(longlong *)(lVar9 + 0x18) == 0) goto code_r0x00018335ef42;\r\n          FUN_183e0d130(*(longlong *)(lVar9 + 0x18),iVar5 + -1,0);\r\n        }\r\n        uVar8 = uRam000000018888b4f8;\r\n        if (*(int *)(lRam0000000188906850 + 0xe0) == 0) {\r\n          func_0x00018048c140();\r\n        }\r\n        uVar8 = FUN_185eded20(uVar8,0);\r\n        unaff_RSI = (longlong *)FUN_183cf3ce0(unaff_RSI,uVar1,iVar5 + 1,uVar8,0);\r\n        FUN_183f22fd0(uVar1,iVar5 + -1,0);\r\n        lVar9 = _DAT_18881e838;\r\n        if (unaff_RSI == (longlong *)0x0) {\r\n          return (longlong *)0x0;\r\n        }\r\n        lVar2 = *unaff_RSI;\r\n        if (DAT_188ccc7f0 == '\\0') {\r\n          if ((*(byte *)(lVar2 + 0x130) < *(byte *)(_DAT_18881e838 + 0x130)) ||\r\n             (*(longlong *)\r\n               (*(longlong *)(lVar2 + 200) + -8 + (ulonglong)*(byte *)(_DAT_18881e838 + 0x130) * 8)\r\n              != _DAT_18881e838)) {\r\n            bVar10 = false;\r\n          }\r\n          bVar10 = !bVar10;\r\n        }\r\n        else {\r\n          cVar4 = func_0x0001804463e0(lVar2,_DAT_18881e838);\r\n          bVar10 = cVar4 == '\\0';\r\n        }\r\n        plVar7 = (longlong *)0x0;\r\n        if (!bVar10) {\r\n          plVar7 = unaff_RSI;\r\n        }\r\n        if (plVar7 != (longlong *)0x0) {\r\n          return plVar7;\r\n        }\r\n        goto code_r0x00018335ef48;\r\n      }\r\n      goto code_r0x00018335ef53;\r\n    }\r\n  }\r\n  FUN_18048c0b0();\r\ncode_r0x00018335ef5d:\r\n  FUN_18048c0b0();\r\n  FUN_180472d50();\r\n  pcVar3 = (code *)swi(3);\r\n  plVar7 = (longlong *)(*pcVar3)();\r\n  return plVar7;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "Torappu_Battle_Map_GenerateRuntimeRoute_0x601119e",
+      "display_name": "Torappu.Battle.Map.GenerateRuntimeRoute",
+      "candidate_map_type": "Torappu.Battle.Map",
+      "address": "0x18087b700",
+      "end_address": "0x18087b7f3",
+      "ranges": [
+        {
+          "start": "0x18087b700",
+          "end": "0x18087b771",
+          "unwind_rva": "0x7f64388",
+          "chained": false,
+          "source_sha256": "793271bf4bf6dcf0fde439a61078dcfa81193f5bdbe1ee771ea67c9e1e3b19e9",
+          "source_file_offset": 8891136
+        },
+        {
+          "start": "0x18087b772",
+          "end": "0x18087b7c6",
+          "unwind_rva": "0x7fa4664",
+          "chained": true,
+          "source_sha256": "197d9ad4fdc0b3a65e197ec41ba4751925c3694cec412e9c621e071f749c7ca4",
+          "source_file_offset": 8891250
+        },
+        {
+          "start": "0x18087b7c7",
+          "end": "0x18087b7ed",
+          "unwind_rva": "0x7fa4678",
+          "chained": true,
+          "source_sha256": "c423f4c528058751f09f3be34032eebbad6de0431ef4983b616ae0ed60d1ff20",
+          "source_file_offset": 8891335
+        },
+        {
+          "start": "0x18087b7ee",
+          "end": "0x18087b7f3",
+          "unwind_rva": "0x7fa4688",
+          "chained": true,
+          "source_sha256": "d729de6acee9902e1e99b4bd3d046adf7547e969b8a92ce1ba7eea99739355df",
+          "source_file_offset": 8891374
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 8891136,
+      "token": "0x601119e",
+      "metadata_method_index": 70045,
+      "imported_range_checks": [
+        {
+          "start": "0x18087b700",
+          "bytes": 114,
+          "imported_sha256": "793271bf4bf6dcf0fde439a61078dcfa81193f5bdbe1ee771ea67c9e1e3b19e9",
+          "match": true
+        },
+        {
+          "start": "0x18087b772",
+          "bytes": 85,
+          "imported_sha256": "197d9ad4fdc0b3a65e197ec41ba4751925c3694cec412e9c621e071f749c7ca4",
+          "match": true
+        },
+        {
+          "start": "0x18087b7c7",
+          "bytes": 39,
+          "imported_sha256": "c423f4c528058751f09f3be34032eebbad6de0431ef4983b616ae0ed60d1ff20",
+          "match": true
+        },
+        {
+          "start": "0x18087b7ee",
+          "bytes": 6,
+          "imported_sha256": "d729de6acee9902e1e99b4bd3d046adf7547e969b8a92ce1ba7eea99739355df",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 58,
+      "direct_calls": [
+        {
+          "source": "18087b728",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b734",
+          "target": "0x18048bf00",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b753",
+          "target": "0x18048c140",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b77e",
+          "target": "0x18045cfe0",
+          "candidate_name": null
+        },
+        {
+          "source": "18087b7a0",
+          "target": "0x1808a4280",
+          "candidate_name": "Torappu_Battle_Route__ctor_0x60112d5"
+        },
+        {
+          "source": "18087b7aa",
+          "target": "0x1808a2d60",
+          "candidate_name": "Torappu_Battle_Route_ReconstructNextMap_0x60112db"
+        },
+        {
+          "source": "18087b7d9",
+          "target": "0x18335ef70",
+          "candidate_name": "XLua_DelegateBridge___Gen_Delegate_Imp3307_0x600174b"
+        },
+        {
+          "source": "18087b7ee",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nlonglong Torappu_Battle_Map_GenerateRuntimeRoute_0x601119e\r\n                   (undefined8 param_1,undefined8 param_2,undefined8 param_3)\r\n\r\n{\r\n  code *pcVar1;\r\n  longlong lVar2;\r\n  \r\n  if (DAT_188c9145e == '\\0') {\r\n    FUN_18048bf00(&DAT_1888bca40);\r\n    FUN_18048bf00(&DAT_18881e838);\r\n    DAT_188c9145e = '\\x01';\r\n  }\r\n  if (*(int *)(_DAT_1888bca40 + 0xe0) == 0) {\r\n    func_0x00018048c140(_DAT_1888bca40);\r\n  }\r\n  lVar2 = *(longlong *)(*(longlong *)(_DAT_1888bca40 + 0xb8) + 0x2b0);\r\n  if (lVar2 == 0) {\r\n    lVar2 = func_0x00018045cfe0(_DAT_18881e838);\r\n    if (lVar2 != 0) {\r\n      Torappu_Battle_Route__ctor_0x60112d5(lVar2,param_2,param_1,param_3,0);\r\n      Torappu_Battle_Route_ReconstructNextMap_0x60112db(lVar2,0);\r\n      return lVar2;\r\n    }\r\n    FUN_18048c0b0();\r\n    pcVar1 = (code *)swi(3);\r\n    lVar2 = (*pcVar1)();\r\n    return lVar2;\r\n  }\r\n  lVar2 = XLua_DelegateBridge___Gen_Delegate_Imp3307_0x600174b(lVar2,param_1,param_2,param_3,0);\r\n  return lVar2;\r\n}\r\n\r\n"
+    },
+    {
+      "name": "raw_summon_spawned_mode_dispatch_call_target",
+      "display_name": "raw.summon.spawned_mode_dispatch",
+      "candidate_map_type": "raw.summon",
+      "address": "0x1808fdfc0",
+      "end_address": "0x1808fe112",
+      "ranges": [
+        {
+          "start": "0x1808fdfc0",
+          "end": "0x1808fe04c",
+          "unwind_rva": "0x7f789a4",
+          "chained": false,
+          "source_sha256": "78dd7a4acbcd9c800241ed5b921a4b3c1fd883ac5992829db0039c58cd325c44",
+          "source_file_offset": 9425856
+        },
+        {
+          "start": "0x1808fe04d",
+          "end": "0x1808fe0d1",
+          "unwind_rva": "0x7fad2e0",
+          "chained": true,
+          "source_sha256": "fe8eb403f729272ea48321e196b2cd4e6b09a101f524a3a5dac0cbd653b76afa",
+          "source_file_offset": 9425997
+        },
+        {
+          "start": "0x1808fe0d2",
+          "end": "0x1808fe112",
+          "unwind_rva": "0x7fad2f8",
+          "chained": true,
+          "source_sha256": "f7d597efc49d7bf9f8bf5f5d9039fa6d0ae0f91586f937bd1174e1a6119e32a1",
+          "source_file_offset": 9426130
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 9425856,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x1808fdfc0",
+          "bytes": 141,
+          "imported_sha256": "78dd7a4acbcd9c800241ed5b921a4b3c1fd883ac5992829db0039c58cd325c44",
+          "match": true
+        },
+        {
+          "start": "0x1808fe04d",
+          "bytes": 133,
+          "imported_sha256": "fe8eb403f729272ea48321e196b2cd4e6b09a101f524a3a5dac0cbd653b76afa",
+          "match": true
+        },
+        {
+          "start": "0x1808fe0d2",
+          "bytes": 65,
+          "imported_sha256": "f7d597efc49d7bf9f8bf5f5d9039fa6d0ae0f91586f937bd1174e1a6119e32a1",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 63,
+      "direct_calls": [
+        {
+          "source": "1808fe066",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "1808fe0a0",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\n/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */\r\n\r\nvoid raw_summon_spawned_mode_dispatch_call_target\r\n               (longlong *param_1,undefined8 param_2,undefined8 param_3)\r\n\r\n{\r\n  longlong lVar1;\r\n  longlong *plVar2;\r\n  undefined8 *puVar3;\r\n  longlong lVar4;\r\n  undefined8 uVar5;\r\n  ushort uVar6;\r\n  \r\n  lVar4 = _DAT_188961dd0;\r\n  switch(*(undefined4 *)(*param_1 + 0x11c)) {\r\n  case 0x9b7:\r\n  case 0x9b8:\r\n  case 0x9b9:\r\n  case 0x9ba:\r\n  case 0x9bb:\r\n  case 0x9bc:\r\n  case 0x9be:\r\n  case 0x9bf:\r\n  case 0x9c0:\r\n  case 0x9c1:\r\n  case 0x9c2:\r\n  case 0x9c3:\r\n  case 0x9c4:\r\n  case 0x9c5:\r\n  case 0x9c6:\r\n  case 0x9c7:\r\n  case 0x9c8:\r\n  case 0x9c9:\r\n  case 0x9ca:\r\n  case 0x9cb:\r\n  case 0x9cc:\r\n  case 0x9cd:\r\n  case 0x9ce:\r\n  case 0x9cf:\r\n  case 0x9d0:\r\n  case 0x9d1:\r\n    if (cRam0000000188c939f9 == '\\0') {\r\n      FUN_18048bf00(0x1888a8d10,param_2,param_3,0);\r\n      cRam0000000188c939f9 = '\\x01';\r\n    }\r\n    lVar4 = *(longlong *)(*(longlong *)(lRam00000001888a8d10 + 0xb8) + 0x298);\r\n    if (lVar4 != 0) {\r\n      XLua_DelegateBridge___Gen_Delegate_Imp36_0x6000a84(lVar4,param_1,param_2,param_3,0);\r\n    }\r\n    return;\r\n  case 0x9bd:\r\n    break;\r\n  default:\r\n    lVar1 = *param_1;\r\n    if (DAT_188ccc7f0 != '\\0') {\r\n      func_0x000180446d00();\r\n    }\r\n    uVar6 = 0;\r\n    if (*(ushort *)(lVar1 + 0x12e) != 0) {\r\n      do {\r\n        if (*(longlong *)(*(longlong *)(lVar1 + 0xb0) + (ulonglong)uVar6 * 0x10) == lVar4) {\r\n          puVar3 = (undefined8 *)\r\n                   (((longlong)\r\n                     (*(int *)(*(longlong *)(lVar1 + 0xb0) + 8 + (ulonglong)uVar6 * 0x10) + 0x50) +\r\n                    0x14) * 0x10 + lVar1);\r\n          goto LAB_1808fe0a5;\r\n        }\r\n        uVar6 = uVar6 + 1;\r\n      } while (uVar6 < *(ushort *)(lVar1 + 0x12e));\r\n    }\r\n    puVar3 = (undefined8 *)FUN_180445cc0(param_1,lVar4,0x50);\r\nLAB_1808fe0a5:\r\n                    /* WARNING: Could not recover jumptable at 0x0001808fe0cf. Too many branches */\r\n                    /* WARNING: Treating indirect jump as call */\r\n    (*(code *)*puVar3)(param_1,param_2,param_3,puVar3[1]);\r\n    return;\r\n  }\r\n  if (cRam0000000188c9366b == '\\0') {\r\n    FUN_18048bf00(0x1888a81f0,param_2,param_3,0);\r\n    FUN_18048bf00(&DAT_18881b6b0);\r\n    FUN_18048bf00(0x1888f8868);\r\n    FUN_18048bf00(0x1888c6538);\r\n    cRam0000000188c9366b = '\\x01';\r\n  }\r\n  lVar4 = *(longlong *)(*(longlong *)(lRam00000001888a81f0 + 0xb8) + 0xb8);\r\n  if (lVar4 != 0) {\r\n    XLua_DelegateBridge___Gen_Delegate_Imp36_0x6000a84(lVar4,param_1,param_2,param_3,0);\r\n    return;\r\n  }\r\n  if (*(int *)(lRam00000001888c6538 + 0xe0) == 0) {\r\n    func_0x00018048c140();\r\n  }\r\n  lVar4 = FUN_185338d50(uRam00000001888f8868);\r\n  if ((lVar4 != 0) && (plVar2 = *(longlong **)(lVar4 + 0x80), plVar2 != (longlong *)0x0)) {\r\n    uVar5 = FUN_1800057a0(param_2,_DAT_18881b6b0);\r\n    lVar1 = lRam00000001889330a0;\r\n    lVar4 = *plVar2;\r\n    if (*(int *)(lVar4 + 0x11c) == 0x9af) {\r\n      FUN_180bc6030(plVar2,uVar5,param_3,0);\r\n    }\r\n    else {\r\n      if (DAT_188ccc7f0 != '\\0') {\r\n        func_0x000180446d00();\r\n      }\r\n      uVar6 = 0;\r\n      if (*(ushort *)(lVar4 + 0x12e) != 0) {\r\n        do {\r\n          if (*(longlong *)(*(longlong *)(lVar4 + 0xb0) + (ulonglong)uVar6 * 0x10) == lVar1) {\r\n            puVar3 = (undefined8 *)\r\n                     (((longlong)\r\n                       (*(int *)(*(longlong *)(lVar4 + 0xb0) + 8 + (ulonglong)uVar6 * 0x10) + 7) +\r\n                      0x14) * 0x10 + lVar4);\r\n            goto code_r0x000180bd90a5;\r\n          }\r\n          uVar6 = uVar6 + 1;\r\n        } while (uVar6 < *(ushort *)(lVar4 + 0x12e));\r\n      }\r\n      puVar3 = (undefined8 *)FUN_180445cc0(plVar2,lVar1,7);\r\ncode_r0x000180bd90a5:\r\n      (*(code *)*puVar3)(plVar2,uVar5,param_3,puVar3[1]);\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+    }
+  ]
+}

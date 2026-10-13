@@ -1,0 +1,11 @@
+{
+  "rejected_entries": [
+    {
+      "address": "0x182648530",
+      "label": "ObservedSkillCallTarget.ObservedStateSwitchAdapter",
+      "reason": "Interior bytes of PE unwind function0x1826484b0..0x18264853f, not a valid independent entry; decode began inside an instruction. Raw source and imported checks pass but do not prove entry identity. Excluded from behavior evidence and module implementation."
+    }
+  ],
+  "correction": "prepare.py now rejects interior unwind addresses before leaf bounding. Original round3 input/results/raw retained as negative evidence.",
+  "client_runtime_compared": false
+}

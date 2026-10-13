@@ -1,0 +1,109 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "decoded_type_slot": {
+    "va": "0x1888ba140",
+    "initial_encoded_value": "0x2001ac4b",
+    "type_index": 54821,
+    "type_def_index": 38137,
+    "name": "Torappu.GlobalConsts",
+    "static_offset0x40": "FIXED_DELTA_TIME_FP"
+  },
+  "default_construction": "FP.from_float32(UnityEngine.Time.fixedDeltaTime)",
+  "cctor": {
+    "va": "0x1866e20d0",
+    "metadata_method_index": 219998,
+    "token": "0x6000128",
+    "bytes": 866,
+    "chain_components": 3,
+    "native_bytes_sha256": "eb9ba07884a29608309546e7d7970a7dc76fbbcd84901c7e2a0e036985996b88"
+  },
+  "serialized_TimeManager_default": {
+    "source_sha256": "4b722650a29264488701bb438a8f6e310461f9dc4d14245a25fae0b6c0a64ac4",
+    "file_offset": 788712,
+    "bits": "0x3d088880",
+    "float32": 0.03333330154418945,
+    "fp_raw": 143165440,
+    "half_fp_raw": 71582720,
+    "origin": "versioned UnityPy TPK class5 schema, four float slots fully consume raw16 bytes"
+  },
+  "time_setter_direct_call_scan": {
+    "accessor_va": "0x186b712d0",
+    "all_validated_accessors": 32,
+    "direct_setter_calls": 1,
+    "direct_setter_owner": "XLua.CSObjectWrap.UnityEngineTimeWrap._s_set_fixedDeltaTime"
+  },
+  "field_map": {
+    "types": 46,
+    "own_fields": 1166,
+    "contains": [
+      "Scheduler",
+      "ActionData",
+      "FragmentData",
+      "WaveData",
+      "CoroutineSimulator",
+      "RuntimeHandler",
+      "BattleController",
+      "GlobalConsts",
+      "RoguelikeInput",
+      "BattleRoguelikeMeta"
+    ]
+  },
+  "client_runtime_compared": false,
+  "limitations": [
+    "asset default condition not live runtime value",
+    "indirect/native icall/Lua/hotfix setter paths not excluded",
+    "inherited fields not copied into child maps"
+  ],
+  "files": [
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\inspect_clock_fields.py",
+      "bytes": 7546,
+      "sha256": "91af46111eb7f1fae2403d2d793fee47aaa789d5f174cd9365b562efc0f51a14"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\clock_fields.json",
+      "bytes": 1307646,
+      "sha256": "b5ce57d420de80b40a693dcedd7ceaff0d3d0f7c3d25c6d87e6a0b49b0088db5"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\scheduler_field_offsets.json",
+      "bytes": 279278,
+      "sha256": "1c7f7afcdc8811410eba9eff2b6daa26f4a75038e295a71787fe34c1fbae6ad0"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\inspect_delta_ctor.py",
+      "bytes": 2904,
+      "sha256": "bbe97affca51a230bc56eca4be41ff1279b546ccd8e58194c47fa6540ad48e58"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\delta_ctor_disassembly.json",
+      "bytes": 43786,
+      "sha256": "fb8c9083e4fe7e1fca2ac13e4aef9659cdd10ceb881b09b55e5924c3ed1c3a1f"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\inspect_time_manager.py",
+      "bytes": 2827,
+      "sha256": "7864e28d896f3ae8462c130d3c1cb5a8e46907f6b70395f231920e9bdb5889cc"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\time_manager_default.json",
+      "bytes": 3826,
+      "sha256": "7eb67bbd4377028bbbaeb51617c63208ac719aacd20bda89f412ec19d46594cd"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\inspect_time_accessors.py",
+      "bytes": 3046,
+      "sha256": "427a186656cfc83b5d4612c112c4bac5220f8f22b39ed445cdc85c535b6e4c5a"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\time_accessor_calls.json",
+      "bytes": 92980,
+      "sha256": "28de0e53ce107da1c3d10e981ee10b31395b8a5108afac7e361bd5542dfcaeaa"
+    },
+    {
+      "path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v3\\fixedpoint\\CLOCK_REPORT.md",
+      "bytes": 7772,
+      "sha256": "861f5517c62f288dcd08ef4a8216d7409b1bfe83138e0d6ecae4e20b10522b2e"
+    }
+  ]
+}

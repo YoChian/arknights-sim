@@ -1,0 +1,2515 @@
+{
+  "scope": "51 selected unique addresses, including two preexisting parent BObject entries",
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "records": [
+    {
+      "request": {
+        "type": "Torappu.Battle.BObject",
+        "method": "CompareTo",
+        "address": "0x180662560",
+        "metadata_method_index": 65023,
+        "token": "0x600fe00",
+        "reason": "Inherited BObject comparison object overload"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.BObject.CompareTo",
+      "metadata_method_index": 65023,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x180662560",
+          "end": "0x1806625ee",
+          "unwind_rva": "0x7f63a3c",
+          "chained": false,
+          "source_sha256": "4b603143dd3d6c85747856c0e2bed880286b13ba195f6fa4a3e7acdbd5349427",
+          "source_file_offset": 6691168
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x180662560",
+          "bytes": 143,
+          "imported_sha256": "4b603143dd3d6c85747856c0e2bed880286b13ba195f6fa4a3e7acdbd5349427",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.BObject",
+        "method": "CompareTo",
+        "address": "0x1806625f0",
+        "metadata_method_index": 65024,
+        "token": "0x600fe01",
+        "reason": "Inherited BObject comparison exact generic overload"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.BObject.CompareTo",
+      "metadata_method_index": 65024,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1806625f0",
+          "end": "0x180662703",
+          "unwind_rva": "0x7f7e238",
+          "chained": false,
+          "source_sha256": "5b0a2ed08f5eda45b25e6103080cc06f87e9d4c4bbc3763a230997f9ab61fc2b",
+          "source_file_offset": 6691312
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1806625f0",
+          "bytes": 276,
+          "imported_sha256": "5b0a2ed08f5eda45b25e6103080cc06f87e9d4c4bbc3763a230997f9ab61fc2b",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.AutoLoadBoxRange",
+        "method": "FetchColliders",
+        "address": "0x1809a5170",
+        "metadata_method_index": 73930,
+        "token": "0x60120cb",
+        "reason": "AutoLoad fetch selects real rangeId"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.AutoLoadBoxRange.FetchColliders",
+      "metadata_method_index": 73930,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809a5170",
+          "end": "0x1809a522f",
+          "unwind_rva": "0x7f65008",
+          "chained": false,
+          "source_sha256": "c79bab4cc4d2298c9da3ebe4c87402fffb8ede62f45aa5a21419d7be0c894a92",
+          "source_file_offset": 10110320
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809a5170",
+          "bytes": 192,
+          "imported_sha256": "c79bab4cc4d2298c9da3ebe4c87402fffb8ede62f45aa5a21419d7be0c894a92",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.AutoLoadBoxRange",
+        "method": "InitCollidersIfNot",
+        "address": "0x1809a5430",
+        "metadata_method_index": 73931,
+        "token": "0x60120cc",
+        "reason": "AutoLoad lazy initialization branch"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.AutoLoadBoxRange.InitCollidersIfNot",
+      "metadata_method_index": 73931,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809a5430",
+          "end": "0x1809a54ef",
+          "unwind_rva": "0x7f65008",
+          "chained": false,
+          "source_sha256": "cfa881a5655216d1c6a066fe0c8ae22a0bba6908e421ac43130a88d70425aa12",
+          "source_file_offset": 10111024
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809a5430",
+          "bytes": 192,
+          "imported_sha256": "cfa881a5655216d1c6a066fe0c8ae22a0bba6908e421ac43130a88d70425aa12",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.AutoLoadBoxRange",
+        "method": "FetchCollidersByRangeId",
+        "address": "0x1809a4d60",
+        "metadata_method_index": 73932,
+        "token": "0x60120cd",
+        "reason": "RangeData boxes to actual collider geometry"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.AutoLoadBoxRange.FetchCollidersByRangeId",
+      "metadata_method_index": 73932,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809a4d60",
+          "end": "0x1809a4e58",
+          "unwind_rva": "0x7fb88a4",
+          "chained": false,
+          "source_sha256": "6abbed92080b1968f2bbf25c0608b36568346cf562a9fc922c56a2f4596545e2",
+          "source_file_offset": 10109280
+        },
+        {
+          "start": "0x1809a4e59",
+          "end": "0x1809a4f34",
+          "unwind_rva": "0x7fb88bc",
+          "chained": true,
+          "source_sha256": "f12b0d2f04fa9a00550aafe366b331d344674b7ac864705324ef0d116eb853af",
+          "source_file_offset": 10109529
+        },
+        {
+          "start": "0x1809a4f35",
+          "end": "0x1809a4f4c",
+          "unwind_rva": "0x7fb88d0",
+          "chained": true,
+          "source_sha256": "f0e968f4bb5798f6b93d171c76767f8aeccc39ff266d0158afeff5b62eadcf69",
+          "source_file_offset": 10109749
+        },
+        {
+          "start": "0x1809a4f4d",
+          "end": "0x1809a512b",
+          "unwind_rva": "0x7fb88e0",
+          "chained": true,
+          "source_sha256": "2491244cb1a805768034f81c9d23ccc1cd1ff3175dba64ad327657fbc328d542",
+          "source_file_offset": 10109773
+        },
+        {
+          "start": "0x1809a512c",
+          "end": "0x1809a5161",
+          "unwind_rva": "0x7fb88d0",
+          "chained": true,
+          "source_sha256": "4472457c336037afe998a54af77151118342a9068bd566742893fbad8e6c60b1",
+          "source_file_offset": 10110252
+        },
+        {
+          "start": "0x1809a5162",
+          "end": "0x1809a5167",
+          "unwind_rva": "0x7fb88e0",
+          "chained": true,
+          "source_sha256": "8326683613afb0147358355e68044b94840c6ce76c8ad0b1163f18b1e24dc97e",
+          "source_file_offset": 10110306
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809a4d60",
+          "bytes": 249,
+          "imported_sha256": "6abbed92080b1968f2bbf25c0608b36568346cf562a9fc922c56a2f4596545e2",
+          "match": true
+        },
+        {
+          "start": "0x1809a4e59",
+          "bytes": 220,
+          "imported_sha256": "f12b0d2f04fa9a00550aafe366b331d344674b7ac864705324ef0d116eb853af",
+          "match": true
+        },
+        {
+          "start": "0x1809a4f35",
+          "bytes": 24,
+          "imported_sha256": "f0e968f4bb5798f6b93d171c76767f8aeccc39ff266d0158afeff5b62eadcf69",
+          "match": true
+        },
+        {
+          "start": "0x1809a4f4d",
+          "bytes": 479,
+          "imported_sha256": "2491244cb1a805768034f81c9d23ccc1cd1ff3175dba64ad327657fbc328d542",
+          "match": true
+        },
+        {
+          "start": "0x1809a512c",
+          "bytes": 54,
+          "imported_sha256": "4472457c336037afe998a54af77151118342a9068bd566742893fbad8e6c60b1",
+          "match": true
+        },
+        {
+          "start": "0x1809a5162",
+          "bytes": 6,
+          "imported_sha256": "8326683613afb0147358355e68044b94840c6ce76c8ad0b1163f18b1e24dc97e",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.AutoLoadBoxRange",
+        "method": "InitColliderIfNotByRangeId",
+        "address": "0x1809a5230",
+        "metadata_method_index": 73933,
+        "token": "0x60120ce",
+        "reason": "Collider lazy rebuild by rangeId"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.AutoLoadBoxRange.InitColliderIfNotByRangeId",
+      "metadata_method_index": 73933,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809a5230",
+          "end": "0x1809a52c6",
+          "unwind_rva": "0x7fb88f4",
+          "chained": false,
+          "source_sha256": "a47934c930716094f234365f6fbdf352bd0a5bcddfe83f5e6433702d81c7b052",
+          "source_file_offset": 10110512
+        },
+        {
+          "start": "0x1809a52c7",
+          "end": "0x1809a5380",
+          "unwind_rva": "0x7fb8904",
+          "chained": true,
+          "source_sha256": "0d41fd54cf41a2f100717dedd55e698f4a118654e3e713f5489aad307d1c74f3",
+          "source_file_offset": 10110663
+        },
+        {
+          "start": "0x1809a5381",
+          "end": "0x1809a5420",
+          "unwind_rva": "0x7fb891c",
+          "chained": true,
+          "source_sha256": "415882697f3be1ebb2baabe44d15a0506ad6933a5cf49a3d8eb89b10f0004838",
+          "source_file_offset": 10110849
+        },
+        {
+          "start": "0x1809a5421",
+          "end": "0x1809a542c",
+          "unwind_rva": "0x7fb892c",
+          "chained": true,
+          "source_sha256": "d606ba9837825cc31ae6df6878d6a3991087395b835751ae2119779f09ec0d0c",
+          "source_file_offset": 10111009
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809a5230",
+          "bytes": 151,
+          "imported_sha256": "a47934c930716094f234365f6fbdf352bd0a5bcddfe83f5e6433702d81c7b052",
+          "match": true
+        },
+        {
+          "start": "0x1809a52c7",
+          "bytes": 186,
+          "imported_sha256": "0d41fd54cf41a2f100717dedd55e698f4a118654e3e713f5489aad307d1c74f3",
+          "match": true
+        },
+        {
+          "start": "0x1809a5381",
+          "bytes": 160,
+          "imported_sha256": "415882697f3be1ebb2baabe44d15a0506ad6933a5cf49a3d8eb89b10f0004838",
+          "match": true
+        },
+        {
+          "start": "0x1809a5421",
+          "bytes": 12,
+          "imported_sha256": "d606ba9837825cc31ae6df6878d6a3991087395b835751ae2119779f09ec0d0c",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.PhysicsRange",
+        "method": "OnInit",
+        "address": "0x1809b7180",
+        "metadata_method_index": 74134,
+        "token": "0x6012197",
+        "reason": "PhysicsRange OnInit allocation/default collider cache"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.PhysicsRange.OnInit",
+      "metadata_method_index": 74134,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809b7180",
+          "end": "0x1809b74b4",
+          "unwind_rva": "0x7fb8abc",
+          "chained": false,
+          "source_sha256": "e0b47d234f0f9ff25c6e1086dfc5f8887173ef3814fe79b74a17d9bbeee8a29b",
+          "source_file_offset": 10184064
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809b7180",
+          "bytes": 821,
+          "imported_sha256": "e0b47d234f0f9ff25c6e1086dfc5f8887173ef3814fe79b74a17d9bbeee8a29b",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.PhysicsRange",
+        "method": "UpdateColliders",
+        "address": "0x1809b7550",
+        "metadata_method_index": 74136,
+        "token": "0x6012199",
+        "reason": "Collider cache composition/order"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.PhysicsRange.UpdateColliders",
+      "metadata_method_index": 74136,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809b7550",
+          "end": "0x1809b75ef",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "984478aa21f11387b44fd053cc4c33de034d462b6ab10b6d59bd917687f37e51",
+          "source_file_offset": 10185040
+        },
+        {
+          "start": "0x1809b75f0",
+          "end": "0x1809b76d2",
+          "unwind_rva": "0x7fb93b4",
+          "chained": true,
+          "source_sha256": "849478e95c3644b7e45b157c705c4fc76c4f8b9a6d4298db8b7550d5c3102dad",
+          "source_file_offset": 10185200
+        },
+        {
+          "start": "0x1809b76d3",
+          "end": "0x1809b76f8",
+          "unwind_rva": "0x7fb93c8",
+          "chained": true,
+          "source_sha256": "79e5c00bd0f06288f6901d0c06578eea82efb108e33bd5f35dd4bfea5993a60f",
+          "source_file_offset": 10185427
+        },
+        {
+          "start": "0x1809b76f9",
+          "end": "0x1809b76fe",
+          "unwind_rva": "0x7fb93d8",
+          "chained": true,
+          "source_sha256": "2279e74f040e214855dbaa02e1c5d5a971d7460ce98abfba74ecc25a71cc1d10",
+          "source_file_offset": 10185465
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809b7550",
+          "bytes": 160,
+          "imported_sha256": "984478aa21f11387b44fd053cc4c33de034d462b6ab10b6d59bd917687f37e51",
+          "match": true
+        },
+        {
+          "start": "0x1809b75f0",
+          "bytes": 227,
+          "imported_sha256": "849478e95c3644b7e45b157c705c4fc76c4f8b9a6d4298db8b7550d5c3102dad",
+          "match": true
+        },
+        {
+          "start": "0x1809b76d3",
+          "bytes": 38,
+          "imported_sha256": "79e5c00bd0f06288f6901d0c06578eea82efb108e33bd5f35dd4bfea5993a60f",
+          "match": true
+        },
+        {
+          "start": "0x1809b76f9",
+          "bytes": 6,
+          "imported_sha256": "2279e74f040e214855dbaa02e1c5d5a971d7460ce98abfba74ecc25a71cc1d10",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.PhysicsRange",
+        "method": "UpdateExtend",
+        "address": "0x1809b7700",
+        "metadata_method_index": 74137,
+        "token": "0x601219a",
+        "reason": "Collider extension arithmetic"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.PhysicsRange.UpdateExtend",
+      "metadata_method_index": 74137,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809b7700",
+          "end": "0x1809b77e4",
+          "unwind_rva": "0x7fb8a50",
+          "chained": false,
+          "source_sha256": "ec72647e1550011ec851d1d080979e09df8c4b4fbc46e02565b2121e08d1b692",
+          "source_file_offset": 10185472
+        },
+        {
+          "start": "0x1809b77e5",
+          "end": "0x1809b79a5",
+          "unwind_rva": "0x7fb8a5c",
+          "chained": true,
+          "source_sha256": "019b4d6b1a51ffe36c94b0fdbd1f8f87817307e17934b50443dcfdccfc45c0c7",
+          "source_file_offset": 10185701
+        },
+        {
+          "start": "0x1809b79a6",
+          "end": "0x1809b79cd",
+          "unwind_rva": "0x7fb8a84",
+          "chained": true,
+          "source_sha256": "8d746a4ccb3d6f8413afd9f4e16ad6f6736e0b4f72ba6054c5651409f0b1584d",
+          "source_file_offset": 10186150
+        },
+        {
+          "start": "0x1809b79ce",
+          "end": "0x1809b79d9",
+          "unwind_rva": "0x7fb8a94",
+          "chained": true,
+          "source_sha256": "bf77480f37a0ee1940821a814034c5bdfef46a55c0a035d839a6d1febc33ed2c",
+          "source_file_offset": 10186190
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809b7700",
+          "bytes": 229,
+          "imported_sha256": "ec72647e1550011ec851d1d080979e09df8c4b4fbc46e02565b2121e08d1b692",
+          "match": true
+        },
+        {
+          "start": "0x1809b77e5",
+          "bytes": 449,
+          "imported_sha256": "019b4d6b1a51ffe36c94b0fdbd1f8f87817307e17934b50443dcfdccfc45c0c7",
+          "match": true
+        },
+        {
+          "start": "0x1809b79a6",
+          "bytes": 40,
+          "imported_sha256": "8d746a4ccb3d6f8413afd9f4e16ad6f6736e0b4f72ba6054c5651409f0b1584d",
+          "match": true
+        },
+        {
+          "start": "0x1809b79ce",
+          "bytes": 12,
+          "imported_sha256": "bf77480f37a0ee1940821a814034c5bdfef46a55c0a035d839a6d1febc33ed2c",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.PhysicsRange",
+        "method": "DoFindTargets_DISPOSE",
+        "address": "0x1809b6a30",
+        "metadata_method_index": 74138,
+        "token": "0x601219b",
+        "reason": "Actual continuous-range deterministic discovery branch"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.PhysicsRange.DoFindTargets_DISPOSE",
+      "metadata_method_index": 74138,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809b6a30",
+          "end": "0x1809b6ad6",
+          "unwind_rva": "0x7fb87e0",
+          "chained": false,
+          "source_sha256": "a66f581a233501c7bdf6cbe28e7e951974cb0008407011531e61d8d166377764",
+          "source_file_offset": 10182192
+        },
+        {
+          "start": "0x1809b6ad7",
+          "end": "0x1809b6c30",
+          "unwind_rva": "0x7fb87f8",
+          "chained": true,
+          "source_sha256": "ae98e497636b5f712547bf1fe5bbfcbf445a363ab1731c6d6e247880c8f36c09",
+          "source_file_offset": 10182359
+        },
+        {
+          "start": "0x1809b6c31",
+          "end": "0x1809b6ccb",
+          "unwind_rva": "0x7fb8814",
+          "chained": true,
+          "source_sha256": "7b39ff074edeaa8617fdb96f1e743cbeb8594a5b55b4874fec3ac7994c8cdd4b",
+          "source_file_offset": 10182705
+        },
+        {
+          "start": "0x1809b6ccc",
+          "end": "0x1809b6cd7",
+          "unwind_rva": "0x7fb8824",
+          "chained": true,
+          "source_sha256": "7dd2c745f252f778eb83d95da815c050a4c1176040a6f59eba3c528cb0a98b24",
+          "source_file_offset": 10182860
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809b6a30",
+          "bytes": 167,
+          "imported_sha256": "a66f581a233501c7bdf6cbe28e7e951974cb0008407011531e61d8d166377764",
+          "match": true
+        },
+        {
+          "start": "0x1809b6ad7",
+          "bytes": 346,
+          "imported_sha256": "ae98e497636b5f712547bf1fe5bbfcbf445a363ab1731c6d6e247880c8f36c09",
+          "match": true
+        },
+        {
+          "start": "0x1809b6c31",
+          "bytes": 155,
+          "imported_sha256": "7b39ff074edeaa8617fdb96f1e743cbeb8594a5b55b4874fec3ac7994c8cdd4b",
+          "match": true
+        },
+        {
+          "start": "0x1809b6ccc",
+          "bytes": 12,
+          "imported_sha256": "7dd2c745f252f778eb83d95da815c050a4c1176040a6f59eba3c528cb0a98b24",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.PhysicsRange",
+        "method": "CheckTargetIn",
+        "address": "0x1809b66b0",
+        "metadata_method_index": 74140,
+        "token": "0x601219d",
+        "reason": "Actual target inclusion geometry dispatch"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.PhysicsRange.CheckTargetIn",
+      "metadata_method_index": 74140,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809b66b0",
+          "end": "0x1809b673e",
+          "unwind_rva": "0x7fb8b20",
+          "chained": false,
+          "source_sha256": "913b51f08eaf0bb836e673c13e7c5adbb929461bcbd5ee8f3f141ecf1b17eb4a",
+          "source_file_offset": 10181296
+        },
+        {
+          "start": "0x1809b673f",
+          "end": "0x1809b69fe",
+          "unwind_rva": "0x7fb8b2c",
+          "chained": true,
+          "source_sha256": "bc58691542e4bcbf28f7b4b51061e088849c28c3b1a26ef77ae0eb85509cba01",
+          "source_file_offset": 10181439
+        },
+        {
+          "start": "0x1809b69ff",
+          "end": "0x1809b6a02",
+          "unwind_rva": "0x7fb8b60",
+          "chained": true,
+          "source_sha256": "bfe80ab07ac7ccaa8dad3577b0eb5fe43b6f8e86e8545dc4068b787f6c341fc8",
+          "source_file_offset": 10182143
+        },
+        {
+          "start": "0x1809b6a03",
+          "end": "0x1809b6a19",
+          "unwind_rva": "0x7fb8b94",
+          "chained": true,
+          "source_sha256": "fd22c758145912969e44b1949cca63213504562129a2b3824544116353a85b1e",
+          "source_file_offset": 10182147
+        },
+        {
+          "start": "0x1809b6a1a",
+          "end": "0x1809b6a25",
+          "unwind_rva": "0x7fb8b60",
+          "chained": true,
+          "source_sha256": "cbe027dc190b0f986fb05a70b7e167bd73cdf6c01380c8fc2af4f35b4f5bd6b5",
+          "source_file_offset": 10182170
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809b66b0",
+          "bytes": 143,
+          "imported_sha256": "913b51f08eaf0bb836e673c13e7c5adbb929461bcbd5ee8f3f141ecf1b17eb4a",
+          "match": true
+        },
+        {
+          "start": "0x1809b673f",
+          "bytes": 704,
+          "imported_sha256": "bc58691542e4bcbf28f7b4b51061e088849c28c3b1a26ef77ae0eb85509cba01",
+          "match": true
+        },
+        {
+          "start": "0x1809b69ff",
+          "bytes": 4,
+          "imported_sha256": "bfe80ab07ac7ccaa8dad3577b0eb5fe43b6f8e86e8545dc4068b787f6c341fc8",
+          "match": true
+        },
+        {
+          "start": "0x1809b6a03",
+          "bytes": 23,
+          "imported_sha256": "fd22c758145912969e44b1949cca63213504562129a2b3824544116353a85b1e",
+          "match": true
+        },
+        {
+          "start": "0x1809b6a1a",
+          "bytes": 12,
+          "imported_sha256": "cbe027dc190b0f986fb05a70b7e167bd73cdf6c01380c8fc2af4f35b4f5bd6b5",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.PhysicsRange",
+        "method": "CheckTargetInOriginRange",
+        "address": "0x1809b6330",
+        "metadata_method_index": 74141,
+        "token": "0x601219e",
+        "reason": "Origin geometry inclusion"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.PhysicsRange.CheckTargetInOriginRange",
+      "metadata_method_index": 74141,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809b6330",
+          "end": "0x1809b63be",
+          "unwind_rva": "0x7fb8b20",
+          "chained": false,
+          "source_sha256": "67117fbd263164c448b274469dd91997ce37a7d199f86d506b4b4bf466ada375",
+          "source_file_offset": 10180400
+        },
+        {
+          "start": "0x1809b63bf",
+          "end": "0x1809b667e",
+          "unwind_rva": "0x7fba62c",
+          "chained": true,
+          "source_sha256": "4fb57bf4844568527456877a3669becab277b131e7737c601521ae6407c1be36",
+          "source_file_offset": 10180543
+        },
+        {
+          "start": "0x1809b667f",
+          "end": "0x1809b6682",
+          "unwind_rva": "0x7fba660",
+          "chained": true,
+          "source_sha256": "bfe80ab07ac7ccaa8dad3577b0eb5fe43b6f8e86e8545dc4068b787f6c341fc8",
+          "source_file_offset": 10181247
+        },
+        {
+          "start": "0x1809b6683",
+          "end": "0x1809b6699",
+          "unwind_rva": "0x7fba694",
+          "chained": true,
+          "source_sha256": "f6dc3b88a918d36735e93d6a84626cadfe9a48ff4d2b83802593bb6895c108f8",
+          "source_file_offset": 10181251
+        },
+        {
+          "start": "0x1809b669a",
+          "end": "0x1809b66a5",
+          "unwind_rva": "0x7fba660",
+          "chained": true,
+          "source_sha256": "ec7d606916fa4af0befd726d86844265845f498b2a9731110b23aa2169ec3a07",
+          "source_file_offset": 10181274
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809b6330",
+          "bytes": 143,
+          "imported_sha256": "67117fbd263164c448b274469dd91997ce37a7d199f86d506b4b4bf466ada375",
+          "match": true
+        },
+        {
+          "start": "0x1809b63bf",
+          "bytes": 704,
+          "imported_sha256": "4fb57bf4844568527456877a3669becab277b131e7737c601521ae6407c1be36",
+          "match": true
+        },
+        {
+          "start": "0x1809b667f",
+          "bytes": 4,
+          "imported_sha256": "bfe80ab07ac7ccaa8dad3577b0eb5fe43b6f8e86e8545dc4068b787f6c341fc8",
+          "match": true
+        },
+        {
+          "start": "0x1809b6683",
+          "bytes": 23,
+          "imported_sha256": "f6dc3b88a918d36735e93d6a84626cadfe9a48ff4d2b83802593bb6895c108f8",
+          "match": true
+        },
+        {
+          "start": "0x1809b669a",
+          "bytes": 12,
+          "imported_sha256": "ec7d606916fa4af0befd726d86844265845f498b2a9731110b23aa2169ec3a07",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.PhysicsRange",
+        "method": "UpdateRangeByOptions",
+        "address": "0x1809b7a60",
+        "metadata_method_index": 74144,
+        "token": "0x60121a1",
+        "reason": "PhysicsRange runtime options update"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.PhysicsRange.UpdateRangeByOptions",
+      "metadata_method_index": 74144,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809b7a60",
+          "end": "0x1809b7b8e",
+          "unwind_rva": "0x7f65008",
+          "chained": false,
+          "source_sha256": "6a11c95abce1817647b2899c0dfed923bc40e0bb9c4bcbc478fc2d772657d553",
+          "source_file_offset": 10186336
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809b7a60",
+          "bytes": 303,
+          "imported_sha256": "6a11c95abce1817647b2899c0dfed923bc40e0bb9c4bcbc478fc2d772657d553",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.Box2dPhysicsUtil",
+        "method": "FindTargets_DISPOSE",
+        "address": "0x1809a5850",
+        "metadata_method_index": 73944,
+        "token": "0x60120d9",
+        "reason": "Box2d target enumeration and dedup/order"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.Box2dPhysicsUtil.FindTargets_DISPOSE",
+      "metadata_method_index": 73944,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809a5850",
+          "end": "0x1809a598d",
+          "unwind_rva": "0x7fb8a24",
+          "chained": false,
+          "source_sha256": "32cbcb0c365a1a7fe40381fbdc0ce3d0846316ea14ca88111a1b7327f40c81f7",
+          "source_file_offset": 10112080
+        },
+        {
+          "start": "0x1809a598e",
+          "end": "0x1809a5dd4",
+          "unwind_rva": "0x7fb8a34",
+          "chained": true,
+          "source_sha256": "53015317cae2ba2a949aa75678e091908d70f40c3db8d43fce94a03a52490d94",
+          "source_file_offset": 10112398
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809a5850",
+          "bytes": 318,
+          "imported_sha256": "32cbcb0c365a1a7fe40381fbdc0ce3d0846316ea14ca88111a1b7327f40c81f7",
+          "match": true
+        },
+        {
+          "start": "0x1809a598e",
+          "bytes": 1095,
+          "imported_sha256": "53015317cae2ba2a949aa75678e091908d70f40c3db8d43fce94a03a52490d94",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.Box2dPhysicsUtil",
+        "method": "_OverlapCollider",
+        "address": "0x1809a6560",
+        "metadata_method_index": 73947,
+        "token": "0x60120dc",
+        "reason": "Overlap collector/query branch"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.Box2dPhysicsUtil._OverlapCollider",
+      "metadata_method_index": 73947,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809a6560",
+          "end": "0x1809a6662",
+          "unwind_rva": "0x7fb89a0",
+          "chained": false,
+          "source_sha256": "1db80fece95fbeebdcde4ce87c4f01b26525a77c0ee7d79e926c63379297f51b",
+          "source_file_offset": 10115424
+        },
+        {
+          "start": "0x1809a6663",
+          "end": "0x1809a675e",
+          "unwind_rva": "0x7fb89c4",
+          "chained": true,
+          "source_sha256": "57dc4cba3809d79564e7daa57fcb64bd47ccfb7730edd2639c15f7449613124c",
+          "source_file_offset": 10115683
+        },
+        {
+          "start": "0x1809a675f",
+          "end": "0x1809a67d9",
+          "unwind_rva": "0x7fb89d8",
+          "chained": true,
+          "source_sha256": "b403b8a9abf4f7de321276926ce70e14b2a0757e4fcb428efb19f5bccb32dd99",
+          "source_file_offset": 10115935
+        },
+        {
+          "start": "0x1809a67da",
+          "end": "0x1809a6828",
+          "unwind_rva": "0x7fb89e8",
+          "chained": true,
+          "source_sha256": "f03d633e14f1c309cced0cc09db8f1bf6fe9ac02728477383c1a9893ca2ca6fe",
+          "source_file_offset": 10116058
+        },
+        {
+          "start": "0x1809a6829",
+          "end": "0x1809a698c",
+          "unwind_rva": "0x7fb89fc",
+          "chained": true,
+          "source_sha256": "bb4a43146de1b3f49c18e103bb8fd5c2b5f55476a6180dc7767a7db5b3ec9954",
+          "source_file_offset": 10116137
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809a6560",
+          "bytes": 259,
+          "imported_sha256": "1db80fece95fbeebdcde4ce87c4f01b26525a77c0ee7d79e926c63379297f51b",
+          "match": true
+        },
+        {
+          "start": "0x1809a6663",
+          "bytes": 252,
+          "imported_sha256": "57dc4cba3809d79564e7daa57fcb64bd47ccfb7730edd2639c15f7449613124c",
+          "match": true
+        },
+        {
+          "start": "0x1809a675f",
+          "bytes": 123,
+          "imported_sha256": "b403b8a9abf4f7de321276926ce70e14b2a0757e4fcb428efb19f5bccb32dd99",
+          "match": true
+        },
+        {
+          "start": "0x1809a67da",
+          "bytes": 79,
+          "imported_sha256": "f03d633e14f1c309cced0cc09db8f1bf6fe9ac02728477383c1a9893ca2ca6fe",
+          "match": true
+        },
+        {
+          "start": "0x1809a6829",
+          "bytes": 356,
+          "imported_sha256": "bb4a43146de1b3f49c18e103bb8fd5c2b5f55476a6180dc7767a7db5b3ec9954",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.Box2dPhysicsUtil",
+        "method": "CheckOverlap",
+        "address": "0x1809a55f0",
+        "metadata_method_index": 73948,
+        "token": "0x60120dd",
+        "reason": "Native CheckOverlap geometry"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.Box2dPhysicsUtil.CheckOverlap",
+      "metadata_method_index": 73948,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809a55f0",
+          "end": "0x1809a56e0",
+          "unwind_rva": "0x7fb8a0c",
+          "chained": false,
+          "source_sha256": "a76a7fd4750baebf523c8c5909bb0e48b3c0b20bfb0fac1e5a4915279389f482",
+          "source_file_offset": 10111472
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809a55f0",
+          "bytes": 241,
+          "imported_sha256": "a76a7fd4750baebf523c8c5909bb0e48b3c0b20bfb0fac1e5a4915279389f482",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.AdvancedSelector",
+        "method": "Reset",
+        "address": "0x1809c3820",
+        "metadata_method_index": 74235,
+        "token": "0x60121fc",
+        "reason": "AdvancedSelector reset and exclusion context"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.AdvancedSelector.Reset",
+      "metadata_method_index": 74235,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809c3820",
+          "end": "0x1809c395f",
+          "unwind_rva": "0x7f63d6c",
+          "chained": false,
+          "source_sha256": "7d2806a0d0e8bea64463bc60847e8fe9a402c06b16f15bbfaf9edff5d133bd2a",
+          "source_file_offset": 10234912
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809c3820",
+          "bytes": 320,
+          "imported_sha256": "7d2806a0d0e8bea64463bc60847e8fe9a402c06b16f15bbfaf9edff5d133bd2a",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.AdvancedSelector",
+        "method": "OnPostFilter",
+        "address": "0x1809c34f0",
+        "metadata_method_index": 74238,
+        "token": "0x60121ff",
+        "reason": "Actual prefab post-filter/cap/order"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.AdvancedSelector.OnPostFilter",
+      "metadata_method_index": 74238,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809c34f0",
+          "end": "0x1809c35ff",
+          "unwind_rva": "0x7f84cac",
+          "chained": false,
+          "source_sha256": "3c4404e6bb1f1dfe29dbbaf0e6fd4bdd2205c2eb3d6f654bb92203db425dbe5f",
+          "source_file_offset": 10234096
+        },
+        {
+          "start": "0x1809c3600",
+          "end": "0x1809c3707",
+          "unwind_rva": "0x7fba9bc",
+          "chained": true,
+          "source_sha256": "8f2f41b6c16797090d20ef103aa977af206e0829627c0dcd62f6306db6105063",
+          "source_file_offset": 10234368
+        },
+        {
+          "start": "0x1809c3708",
+          "end": "0x1809c3776",
+          "unwind_rva": "0x7fba9d0",
+          "chained": true,
+          "source_sha256": "76010395ab790d9670b2d0f15c031bf3b73ba924e8068a2ef61d138904eabc13",
+          "source_file_offset": 10234632
+        },
+        {
+          "start": "0x1809c3777",
+          "end": "0x1809c37f3",
+          "unwind_rva": "0x7fba9e4",
+          "chained": true,
+          "source_sha256": "b8a4bfc91291c79288023708d05ffdbc9cb284417377a04df5704b4aec2d5d32",
+          "source_file_offset": 10234743
+        },
+        {
+          "start": "0x1809c37f4",
+          "end": "0x1809c3812",
+          "unwind_rva": "0x7fbaa00",
+          "chained": true,
+          "source_sha256": "e8e59279cb3497571dbfe1ce83e41d987de5acd770f8030367a9a18fb8735218",
+          "source_file_offset": 10234868
+        },
+        {
+          "start": "0x1809c3813",
+          "end": "0x1809c3818",
+          "unwind_rva": "0x7fbaa10",
+          "chained": true,
+          "source_sha256": "0276c7248aaf159002496019acd697a54596d945d517a8c4be1c744bc3ac030f",
+          "source_file_offset": 10234899
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809c34f0",
+          "bytes": 272,
+          "imported_sha256": "3c4404e6bb1f1dfe29dbbaf0e6fd4bdd2205c2eb3d6f654bb92203db425dbe5f",
+          "match": true
+        },
+        {
+          "start": "0x1809c3600",
+          "bytes": 264,
+          "imported_sha256": "8f2f41b6c16797090d20ef103aa977af206e0829627c0dcd62f6306db6105063",
+          "match": true
+        },
+        {
+          "start": "0x1809c3708",
+          "bytes": 111,
+          "imported_sha256": "76010395ab790d9670b2d0f15c031bf3b73ba924e8068a2ef61d138904eabc13",
+          "match": true
+        },
+        {
+          "start": "0x1809c3777",
+          "bytes": 125,
+          "imported_sha256": "b8a4bfc91291c79288023708d05ffdbc9cb284417377a04df5704b4aec2d5d32",
+          "match": true
+        },
+        {
+          "start": "0x1809c37f4",
+          "bytes": 31,
+          "imported_sha256": "e8e59279cb3497571dbfe1ce83e41d987de5acd770f8030367a9a18fb8735218",
+          "match": true
+        },
+        {
+          "start": "0x1809c3813",
+          "bytes": 6,
+          "imported_sha256": "0276c7248aaf159002496019acd697a54596d945d517a8c4be1c744bc3ac030f",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.AdvancedSelector",
+        "method": "Awake",
+        "address": "0x1809c3330",
+        "metadata_method_index": 74240,
+        "token": "0x6012201",
+        "reason": "Selector binding/default options setup"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.AdvancedSelector.Awake",
+      "metadata_method_index": 74240,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809c3330",
+          "end": "0x1809c33cc",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "cc4236d3748de6aa05255b88fe670efed8b58174520b18e121ddc9c12692f40e",
+          "source_file_offset": 10233648
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809c3330",
+          "bytes": 157,
+          "imported_sha256": "cc4236d3748de6aa05255b88fe670efed8b58174520b18e121ddc9c12692f40e",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.RangeSelector",
+        "method": "Reset",
+        "address": "0x1809e9200",
+        "metadata_method_index": 74891,
+        "token": "0x601248c",
+        "reason": "Source side/motion/options and real Range.Reset setup"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.RangeSelector.Reset",
+      "metadata_method_index": 74891,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809e9200",
+          "end": "0x1809e92a0",
+          "unwind_rva": "0x7fbc72c",
+          "chained": false,
+          "source_sha256": "a8c0169192e692a6f78f5b83bde698a692d08bc52ac34e439229f1d2b9026aad",
+          "source_file_offset": 10388992
+        },
+        {
+          "start": "0x1809e92a1",
+          "end": "0x1809e93b9",
+          "unwind_rva": "0x7fbc744",
+          "chained": true,
+          "source_sha256": "baef0fa8ae481c2c072ee60e91549f1f3aea7a29b5e4d0cd2b5fe1d54c67a242",
+          "source_file_offset": 10389153
+        },
+        {
+          "start": "0x1809e93ba",
+          "end": "0x1809e971c",
+          "unwind_rva": "0x7fbc764",
+          "chained": true,
+          "source_sha256": "821986edc99bebeb71c8756211dc9f24c77241b576d8927e26a038670bfe0f5f",
+          "source_file_offset": 10389434
+        },
+        {
+          "start": "0x1809e971d",
+          "end": "0x1809e988e",
+          "unwind_rva": "0x7fbc778",
+          "chained": true,
+          "source_sha256": "9d5c02fabfa0f439ac4ac57e30da878e7a967432a62af8aad9a8fd585639360b",
+          "source_file_offset": 10390301
+        },
+        {
+          "start": "0x1809e988f",
+          "end": "0x1809e98bf",
+          "unwind_rva": "0x7fbc788",
+          "chained": true,
+          "source_sha256": "0742247ddd19a8d9ce6ccf04a59126d1f2b638cd961c2a1cde3455c134074121",
+          "source_file_offset": 10390671
+        },
+        {
+          "start": "0x1809e98c0",
+          "end": "0x1809e98c5",
+          "unwind_rva": "0x7fbc798",
+          "chained": true,
+          "source_sha256": "b120d7d0cf68eb0e6b134ff7cc94649a2a4f8c50e1875b71b85c11784900373c",
+          "source_file_offset": 10390720
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809e9200",
+          "bytes": 161,
+          "imported_sha256": "a8c0169192e692a6f78f5b83bde698a692d08bc52ac34e439229f1d2b9026aad",
+          "match": true
+        },
+        {
+          "start": "0x1809e92a1",
+          "bytes": 281,
+          "imported_sha256": "baef0fa8ae481c2c072ee60e91549f1f3aea7a29b5e4d0cd2b5fe1d54c67a242",
+          "match": true
+        },
+        {
+          "start": "0x1809e93ba",
+          "bytes": 867,
+          "imported_sha256": "821986edc99bebeb71c8756211dc9f24c77241b576d8927e26a038670bfe0f5f",
+          "match": true
+        },
+        {
+          "start": "0x1809e971d",
+          "bytes": 370,
+          "imported_sha256": "9d5c02fabfa0f439ac4ac57e30da878e7a967432a62af8aad9a8fd585639360b",
+          "match": true
+        },
+        {
+          "start": "0x1809e988f",
+          "bytes": 49,
+          "imported_sha256": "0742247ddd19a8d9ce6ccf04a59126d1f2b638cd961c2a1cde3455c134074121",
+          "match": true
+        },
+        {
+          "start": "0x1809e98c0",
+          "bytes": 6,
+          "imported_sha256": "b120d7d0cf68eb0e6b134ff7cc94649a2a4f8c50e1875b71b85c11784900373c",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.RangeSelector",
+        "method": "Awake",
+        "address": "0x1809e8c00",
+        "metadata_method_index": 74900,
+        "token": "0x6012495",
+        "reason": "Selector range component binding"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.RangeSelector.Awake",
+      "metadata_method_index": 74900,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809e8c00",
+          "end": "0x1809e8c7e",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "dd720789eec5d38beb0e3853902cf07a06a149d3d5be703cb87852938addbafe",
+          "source_file_offset": 10387456
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809e8c00",
+          "bytes": 127,
+          "imported_sha256": "dd720789eec5d38beb0e3853902cf07a06a149d3d5be703cb87852938addbafe",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.TargetOptions",
+        "method": "Init",
+        "address": "0x1809fa4d0",
+        "metadata_method_index": 75068,
+        "token": "0x601253d",
+        "reason": "TargetOptions relative target-side mask initialization"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.TargetOptions.Init",
+      "metadata_method_index": 75068,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809fa4d0",
+          "end": "0x1809fa5d9",
+          "unwind_rva": "0x7f93f70",
+          "chained": false,
+          "source_sha256": "a2f7c953ee6b1c66ba4f9473f891b21900f697bb20799d73d05b7fffa880ad0c",
+          "source_file_offset": 10459344
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809fa4d0",
+          "bytes": 266,
+          "imported_sha256": "a2f7c953ee6b1c66ba4f9473f891b21900f697bb20799d73d05b7fffa880ad0c",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.TargetOptions",
+        "method": "_TryGetSourceMotionMode",
+        "address": "0x1809fa900",
+        "metadata_method_index": 75075,
+        "token": "0x6012544",
+        "reason": "SourceSnapshot motion identity/value fallback"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.TargetOptions._TryGetSourceMotionMode",
+      "metadata_method_index": 75075,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809fa900",
+          "end": "0x1809fa9f2",
+          "unwind_rva": "0x7f63d28",
+          "chained": false,
+          "source_sha256": "5038c831bc639f236067acf6a67e9f4784d22b6994a7c7dbadccb157fd85e185",
+          "source_file_offset": 10460416
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809fa900",
+          "bytes": 243,
+          "imported_sha256": "5038c831bc639f236067acf6a67e9f4784d22b6994a7c7dbadccb157fd85e185",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.TargetSelector",
+        "method": "Reset",
+        "address": "0x1809fbff0",
+        "metadata_method_index": 75091,
+        "token": "0x6012554",
+        "reason": "TargetSelector binding/validator state"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.TargetSelector.Reset",
+      "metadata_method_index": 75091,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809fbff0",
+          "end": "0x1809fc0e5",
+          "unwind_rva": "0x7f63d6c",
+          "chained": false,
+          "source_sha256": "be7e84af837138469235bd603d4c9295a2e4714f996db1beeb36097977c2c9eb",
+          "source_file_offset": 10466288
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809fbff0",
+          "bytes": 246,
+          "imported_sha256": "be7e84af837138469235bd603d4c9295a2e4714f996db1beeb36097977c2c9eb",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.TargetSelector",
+        "method": "VerifyTarget",
+        "address": "0x1809fc650",
+        "metadata_method_index": 75099,
+        "token": "0x601255c",
+        "reason": "Candidate-list verification in place"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.TargetSelector.VerifyTarget",
+      "metadata_method_index": 75099,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809fc650",
+          "end": "0x1809fc739",
+          "unwind_rva": "0x7f63a3c",
+          "chained": false,
+          "source_sha256": "739b327d630a76f45fa86e40ba04a68ee5becf0baa31c85fe8920a1fb1425461",
+          "source_file_offset": 10467920
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809fc650",
+          "bytes": 234,
+          "imported_sha256": "739b327d630a76f45fa86e40ba04a68ee5becf0baa31c85fe8920a1fb1425461",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.TargetSelector",
+        "method": "VerifyTarget",
+        "address": "0x1809fc5b0",
+        "metadata_method_index": 75100,
+        "token": "0x601255d",
+        "reason": "Single candidate selector verification"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.TargetSelector.VerifyTarget",
+      "metadata_method_index": 75100,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809fc5b0",
+          "end": "0x1809fc641",
+          "unwind_rva": "0x7f63a3c",
+          "chained": false,
+          "source_sha256": "2c526cf42723815b165a2db7ed687944ffa82045bd86a20c0938de30d07e4a91",
+          "source_file_offset": 10467760
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809fc5b0",
+          "bytes": 146,
+          "imported_sha256": "2c526cf42723815b165a2db7ed687944ffa82045bd86a20c0938de30d07e4a91",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.BattleUtil",
+        "method": "VerifyTarget",
+        "address": "0x180ae2b70",
+        "metadata_method_index": 78233,
+        "token": "0x601319a",
+        "reason": "Motion/category/base validity admission"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.BattleUtil.VerifyTarget",
+      "metadata_method_index": 78233,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x180ae2b70",
+          "end": "0x180ae2c4b",
+          "unwind_rva": "0x7f63d6c",
+          "chained": false,
+          "source_sha256": "cab2f1ff2c16921e07449478770c337ba19973a20f3c5c0cc26b4ed86398ca3e",
+          "source_file_offset": 11411312
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x180ae2b70",
+          "bytes": 220,
+          "imported_sha256": "cab2f1ff2c16921e07449478770c337ba19973a20f3c5c0cc26b4ed86398ca3e",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.BattleUtil",
+        "method": "VerifyTargetWithPlayerSide",
+        "address": "0x180ae2a70",
+        "metadata_method_index": 78234,
+        "token": "0x601319b",
+        "reason": "Player-side target admission branch"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.BattleUtil.VerifyTargetWithPlayerSide",
+      "metadata_method_index": 78234,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x180ae2a70",
+          "end": "0x180ae2b62",
+          "unwind_rva": "0x7f63d6c",
+          "chained": false,
+          "source_sha256": "c49e29e15e9695992ab3645b5649193c0cd9f255b396ed476b0578b8876de4ab",
+          "source_file_offset": 11411056
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x180ae2a70",
+          "bytes": 243,
+          "imported_sha256": "c49e29e15e9695992ab3645b5649193c0cd9f255b396ed476b0578b8876de4ab",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.RangeData",
+        "method": "_TryFindBoundingBox",
+        "address": "0x182427070",
+        "metadata_method_index": 31686,
+        "token": "0x6007bc7",
+        "reason": "Native RangeData partition rectangle construction"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.RangeData._TryFindBoundingBox",
+      "metadata_method_index": 31686,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x182427070",
+          "end": "0x18242718d",
+          "unwind_rva": "0x81928a8",
+          "chained": false,
+          "source_sha256": "0b33dca598dcb456242a46d7cff7c7ed8e8093b6598b6bd884ddaf5a0e372d97",
+          "source_file_offset": 37905520
+        },
+        {
+          "start": "0x18242718e",
+          "end": "0x1824272a3",
+          "unwind_rva": "0x81928c0",
+          "chained": true,
+          "source_sha256": "32de1e768774ab97689476e11882c0d1b0e8e722ed8a06069092ed53768c57dd",
+          "source_file_offset": 37905806
+        },
+        {
+          "start": "0x1824272a4",
+          "end": "0x1824273b0",
+          "unwind_rva": "0x81928e0",
+          "chained": true,
+          "source_sha256": "5a25779f98bff9c6a3d3713c4632e6e7742aa5f45a35bed2bd5e5607afd93dfb",
+          "source_file_offset": 37906084
+        },
+        {
+          "start": "0x1824273b1",
+          "end": "0x1824273fa",
+          "unwind_rva": "0x81928f8",
+          "chained": true,
+          "source_sha256": "4a0459aa0844da9fe8eeec8df7d82952b3a954594ed5eea8014b307c7c0a2548",
+          "source_file_offset": 37906353
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x182427070",
+          "bytes": 286,
+          "imported_sha256": "0b33dca598dcb456242a46d7cff7c7ed8e8093b6598b6bd884ddaf5a0e372d97",
+          "match": true
+        },
+        {
+          "start": "0x18242718e",
+          "bytes": 278,
+          "imported_sha256": "32de1e768774ab97689476e11882c0d1b0e8e722ed8a06069092ed53768c57dd",
+          "match": true
+        },
+        {
+          "start": "0x1824272a4",
+          "bytes": 269,
+          "imported_sha256": "5a25779f98bff9c6a3d3713c4632e6e7742aa5f45a35bed2bd5e5607afd93dfb",
+          "match": true
+        },
+        {
+          "start": "0x1824273b1",
+          "bytes": 74,
+          "imported_sha256": "4a0459aa0844da9fe8eeec8df7d82952b3a954594ed5eea8014b307c7c0a2548",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.ObscuredRect",
+        "method": ".ctor",
+        "address": "0x18241e2f0",
+        "metadata_method_index": 31698,
+        "token": "0x6007bd3",
+        "reason": "Bounding rect origin/size storage"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.ObscuredRect..ctor",
+      "metadata_method_index": 31698,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x18241e2f0",
+          "end": "0x18241e3c8",
+          "unwind_rva": "0x7f63f68",
+          "chained": false,
+          "source_sha256": "1f0b8e6ddb0f37c0af895e8f1e780c6242f88e1a69c46227f1927143492bd99a",
+          "source_file_offset": 37869296
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x18241e2f0",
+          "bytes": 217,
+          "imported_sha256": "1f0b8e6ddb0f37c0af895e8f1e780c6242f88e1a69c46227f1927143492bd99a",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.ObscuredRect",
+        "method": "get_center",
+        "address": "0x18241e4d0",
+        "metadata_method_index": 31692,
+        "token": "0x6007bcd",
+        "reason": "Bounding rect center arithmetic"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.ObscuredRect.get_center",
+      "metadata_method_index": 31692,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x18241e4d0",
+          "end": "0x18241e5ee",
+          "unwind_rva": "0x8192930",
+          "chained": false,
+          "source_sha256": "2bbd7ee94592ccadc3ae280b5f09660e32a532238b596918141833603016c76c",
+          "source_file_offset": 37869776
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x18241e4d0",
+          "bytes": 287,
+          "imported_sha256": "2bbd7ee94592ccadc3ae280b5f09660e32a532238b596918141833603016c76c",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.ObscuredRect",
+        "method": "get_size",
+        "address": "0x18241e610",
+        "metadata_method_index": 31693,
+        "token": "0x6007bce",
+        "reason": "Bounding rect size arithmetic"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.ObscuredRect.get_size",
+      "metadata_method_index": 31693,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x18241e610",
+          "end": "0x18241e6ae",
+          "unwind_rva": "0x8192948",
+          "chained": false,
+          "source_sha256": "5ed0a426f8db10548d525b01972a6a9c85310685ea6bb780df404dc6acf37512",
+          "source_file_offset": 37870096
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x18241e610",
+          "bytes": 159,
+          "imported_sha256": "5ed0a426f8db10548d525b01972a6a9c85310685ea6bb780df404dc6acf37512",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.Range",
+        "method": "Reset",
+        "address": "0x1809b9d20",
+        "metadata_method_index": 74173,
+        "token": "0x60121be",
+        "reason": "Range.Reset init/options/extend call order"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.Range.Reset",
+      "metadata_method_index": 74173,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809b9d20",
+          "end": "0x1809b9da3",
+          "unwind_rva": "0x7fb720c",
+          "chained": false,
+          "source_sha256": "71435fca3604c9f61257ee19841895d3919b9f367c28df1272a7ce002feaf517",
+          "source_file_offset": 10195232
+        },
+        {
+          "start": "0x1809b9da4",
+          "end": "0x1809b9eb3",
+          "unwind_rva": "0x7fba74c",
+          "chained": true,
+          "source_sha256": "199778fec0f687540e03d921ec83efb9c0374a12edd059009e3ffbfca4ed691d",
+          "source_file_offset": 10195364
+        },
+        {
+          "start": "0x1809b9eb4",
+          "end": "0x1809b9f49",
+          "unwind_rva": "0x7fba768",
+          "chained": true,
+          "source_sha256": "ead776a95eefb60c961939690927c3dc7c8931a5d4c248eab8c1d9414757a301",
+          "source_file_offset": 10195636
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809b9d20",
+          "bytes": 132,
+          "imported_sha256": "71435fca3604c9f61257ee19841895d3919b9f367c28df1272a7ce002feaf517",
+          "match": true
+        },
+        {
+          "start": "0x1809b9da4",
+          "bytes": 272,
+          "imported_sha256": "199778fec0f687540e03d921ec83efb9c0374a12edd059009e3ffbfca4ed691d",
+          "match": true
+        },
+        {
+          "start": "0x1809b9eb4",
+          "bytes": 150,
+          "imported_sha256": "ead776a95eefb60c961939690927c3dc7c8931a5d4c248eab8c1d9414757a301",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.Range",
+        "method": "get_ability",
+        "address": "0x1809ba080",
+        "metadata_method_index": 74172,
+        "token": "0x60121bd",
+        "reason": "Range ability ownership lookup"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.Range.get_ability",
+      "metadata_method_index": 74172,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809ba080",
+          "end": "0x1809ba0d2",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "d994dea7c36d9ca3b19f6f1370ab99e246d2ab6c3d0e13e91df2b2d2d2a3b488",
+          "source_file_offset": 10196096
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809ba080",
+          "bytes": 83,
+          "imported_sha256": "d994dea7c36d9ca3b19f6f1370ab99e246d2ab6c3d0e13e91df2b2d2d2a3b488",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.FilterUtil",
+        "method": "Filter",
+        "address": "0x1809d8270",
+        "metadata_method_index": 74633,
+        "token": "0x601238a",
+        "reason": "Actual ALL post-filter dispatch"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.FilterUtil.Filter",
+      "metadata_method_index": 74633,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809d8270",
+          "end": "0x1809d8657",
+          "unwind_rva": "0x7f6a488",
+          "chained": false,
+          "source_sha256": "4916d1ca8f46bc3a9471564c465a1d7a7379cfe8e6416c9c88eca2a7900cf3ac",
+          "source_file_offset": 10319472
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809d8270",
+          "bytes": 1000,
+          "imported_sha256": "4916d1ca8f46bc3a9471564c465a1d7a7379cfe8e6416c9c88eca2a7900cf3ac",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.FilterUtil",
+        "method": "_Filter_All",
+        "address": "0x1809da080",
+        "metadata_method_index": 74639,
+        "token": "0x6012390",
+        "reason": "ALL filter preserves/dedup/limit behavior"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round1.json",
+      "native_display_name": "Torappu.Battle.FilterUtil._Filter_All",
+      "metadata_method_index": 74639,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809da080",
+          "end": "0x1809da152",
+          "unwind_rva": "0x7f63cf8",
+          "chained": false,
+          "source_sha256": "1331bd1f2f6951dc62e040e9e7ab299f5b13b5546fac7811cd5324cdf17671c3",
+          "source_file_offset": 10327168
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809da080",
+          "bytes": 211,
+          "imported_sha256": "1331bd1f2f6951dc62e040e9e7ab299f5b13b5546fac7811cd5324cdf17671c3",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.Entity",
+        "method": "IsInHitRange",
+        "address": "0x1806f5d10",
+        "metadata_method_index": 66720,
+        "token": "0x60104a1",
+        "reason": "TargetSelector.ValidateTarget target virtualslot135 geometry/provider gate"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round2.json",
+      "native_display_name": "Torappu.Battle.Entity.IsInHitRange",
+      "metadata_method_index": 66720,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1806f5d10",
+          "end": "0x1806f5e2f",
+          "unwind_rva": "0x7f67e28",
+          "chained": false,
+          "source_sha256": "41a8326662d901fe27ab22ae9f8f96da956959ee52ae2dd9ee898fd89350d544",
+          "source_file_offset": 7295248
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1806f5d10",
+          "bytes": 288,
+          "imported_sha256": "41a8326662d901fe27ab22ae9f8f96da956959ee52ae2dd9ee898fd89350d544",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.BattleUtil",
+        "method": "ConvertSideType",
+        "address": "0x180ae0690",
+        "metadata_method_index": 78221,
+        "token": "0x601318e",
+        "reason": "Relative source-side to absolute target-side mask helper"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round2.json",
+      "native_display_name": "Torappu.Battle.BattleUtil.ConvertSideType",
+      "metadata_method_index": 78221,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x180ae0690",
+          "end": "0x180ae0794",
+          "unwind_rva": "0x7f63a3c",
+          "chained": false,
+          "source_sha256": "0c46998f4e1931a0a24e9195a2108f78ccd9f92d86fab74fc7d44cd2c31b2386",
+          "source_file_offset": 11401872
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x180ae0690",
+          "bytes": 261,
+          "imported_sha256": "0c46998f4e1931a0a24e9195a2108f78ccd9f92d86fab74fc7d44cd2c31b2386",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.BattleUtil",
+        "method": "GetOppositeSideMask",
+        "address": "0x180ae17a0",
+        "metadata_method_index": 78219,
+        "token": "0x601318c",
+        "reason": "Opposite source side mask conversion"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round2.json",
+      "native_display_name": "Torappu.Battle.BattleUtil.GetOppositeSideMask",
+      "metadata_method_index": 78219,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x180ae17a0",
+          "end": "0x180ae17e5",
+          "unwind_rva": "0x7f64420",
+          "chained": false,
+          "source_sha256": "982b47ed04309253daaec4f164ca212f9f3803e7130dc139e36bd252fc6ecd2b",
+          "source_file_offset": 11406240
+        },
+        {
+          "start": "0x180ae17e6",
+          "end": "0x180ae1813",
+          "unwind_rva": "0x7fcf0c8",
+          "chained": true,
+          "source_sha256": "3fff7b4c8e45f3a78eb0be32c8702754a97a6a9a22d0b44dc7681467bcd25da5",
+          "source_file_offset": 11406310
+        },
+        {
+          "start": "0x180ae1814",
+          "end": "0x180ae1856",
+          "unwind_rva": "0x7fcf0dc",
+          "chained": true,
+          "source_sha256": "9821d006589790ccc39f774ef9694bc0ad5e4da6ccc9acfca13616d9b56f39f1",
+          "source_file_offset": 11406356
+        },
+        {
+          "start": "0x180ae1857",
+          "end": "0x180ae1865",
+          "unwind_rva": "0x7fcf0f0",
+          "chained": true,
+          "source_sha256": "5bceac40eb395b14857548da6f9fbe9915759ac5da82bb00034f7f905901c041",
+          "source_file_offset": 11406423
+        },
+        {
+          "start": "0x180ae1866",
+          "end": "0x180ae1871",
+          "unwind_rva": "0x7fcf0dc",
+          "chained": true,
+          "source_sha256": "61926e3c63b2d2e8482d4785dc682f125f3586b2dba38a22b3e54056f172874e",
+          "source_file_offset": 11406438
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x180ae17a0",
+          "bytes": 70,
+          "imported_sha256": "982b47ed04309253daaec4f164ca212f9f3803e7130dc139e36bd252fc6ecd2b",
+          "match": true
+        },
+        {
+          "start": "0x180ae17e6",
+          "bytes": 46,
+          "imported_sha256": "3fff7b4c8e45f3a78eb0be32c8702754a97a6a9a22d0b44dc7681467bcd25da5",
+          "match": true
+        },
+        {
+          "start": "0x180ae1814",
+          "bytes": 67,
+          "imported_sha256": "9821d006589790ccc39f774ef9694bc0ad5e4da6ccc9acfca13616d9b56f39f1",
+          "match": true
+        },
+        {
+          "start": "0x180ae1857",
+          "bytes": 15,
+          "imported_sha256": "5bceac40eb395b14857548da6f9fbe9915759ac5da82bb00034f7f905901c041",
+          "match": true
+        },
+        {
+          "start": "0x180ae1866",
+          "bytes": 12,
+          "imported_sha256": "61926e3c63b2d2e8482d4785dc682f125f3586b2dba38a22b3e54056f172874e",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.BattleUtil",
+        "method": "GetSameSideMask",
+        "address": "0x180ae1880",
+        "metadata_method_index": 78220,
+        "token": "0x601318d",
+        "reason": "Same source side mask conversion"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round2.json",
+      "native_display_name": "Torappu.Battle.BattleUtil.GetSameSideMask",
+      "metadata_method_index": 78220,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x180ae1880",
+          "end": "0x180ae18c6",
+          "unwind_rva": "0x7f64420",
+          "chained": false,
+          "source_sha256": "fbd3efa7d8d86c41d592ac4e5b26c0c027ce1b16bca11efeb06998738bcaa072",
+          "source_file_offset": 11406464
+        },
+        {
+          "start": "0x180ae18c7",
+          "end": "0x180ae18f3",
+          "unwind_rva": "0x7fcf100",
+          "chained": true,
+          "source_sha256": "a921d633912534be9a51ebe80224fc8a6ffef2d4b8fdeb4c47a17621a9bd2261",
+          "source_file_offset": 11406535
+        },
+        {
+          "start": "0x180ae18f4",
+          "end": "0x180ae1936",
+          "unwind_rva": "0x7fcf114",
+          "chained": true,
+          "source_sha256": "91d6793e84ce01a4d64a45e8d0754fff5f4865b164d4ee743f885bbce568b35e",
+          "source_file_offset": 11406580
+        },
+        {
+          "start": "0x180ae1937",
+          "end": "0x180ae1945",
+          "unwind_rva": "0x7fcf128",
+          "chained": true,
+          "source_sha256": "65d630ca9983ee96fe4cb62d214e4cd46db60f13b9e8b243472eda1d8854a459",
+          "source_file_offset": 11406647
+        },
+        {
+          "start": "0x180ae1946",
+          "end": "0x180ae1951",
+          "unwind_rva": "0x7fcf114",
+          "chained": true,
+          "source_sha256": "6858de2b21162586f10f94f8553abdd85c529e940427d8f0aefa034ef3c4a7e8",
+          "source_file_offset": 11406662
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x180ae1880",
+          "bytes": 71,
+          "imported_sha256": "fbd3efa7d8d86c41d592ac4e5b26c0c027ce1b16bca11efeb06998738bcaa072",
+          "match": true
+        },
+        {
+          "start": "0x180ae18c7",
+          "bytes": 45,
+          "imported_sha256": "a921d633912534be9a51ebe80224fc8a6ffef2d4b8fdeb4c47a17621a9bd2261",
+          "match": true
+        },
+        {
+          "start": "0x180ae18f4",
+          "bytes": 67,
+          "imported_sha256": "91d6793e84ce01a4d64a45e8d0754fff5f4865b164d4ee743f885bbce568b35e",
+          "match": true
+        },
+        {
+          "start": "0x180ae1937",
+          "bytes": 15,
+          "imported_sha256": "65d630ca9983ee96fe4cb62d214e4cd46db60f13b9e8b243472eda1d8854a459",
+          "match": true
+        },
+        {
+          "start": "0x180ae1946",
+          "bytes": 12,
+          "imported_sha256": "6858de2b21162586f10f94f8553abdd85c529e940427d8f0aefa034ef3c4a7e8",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.GridPosition",
+        "method": "RotateVector",
+        "address": "0x182103a90",
+        "metadata_method_index": 28061,
+        "token": "0x6006d9e",
+        "reason": "RangeData.ConstructBoundingBoxes RotateVector current direction to UP0; correct axis/order"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round2.json",
+      "native_display_name": "Torappu.GridPosition.RotateVector",
+      "metadata_method_index": 28061,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x182103a90",
+          "end": "0x182103b65",
+          "unwind_rva": "0x815c530",
+          "chained": false,
+          "source_sha256": "2dc3dd49580b2e48134b7489f54de13f083854d6e5b8006cf55cf266f121ff5a",
+          "source_file_offset": 34614928
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x182103a90",
+          "bytes": 214,
+          "imported_sha256": "2dc3dd49580b2e48134b7489f54de13f083854d6e5b8006cf55cf266f121ff5a",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.RangeData.<>c",
+        "method": "<ConstructBoundingBoxes>b__9_0",
+        "address": "0x18242fbd0",
+        "metadata_method_index": 31691,
+        "token": "0x6007bcc",
+        "reason": "ConstructBoundingBoxes input sorted-order lambda; exact nested parent4762 proven by raw metadata"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round2.json",
+      "native_display_name": "Torappu.RangeData.<>c.<ConstructBoundingBoxes>b__9_0",
+      "metadata_method_index": 31691,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x18242fbd0",
+          "end": "0x18242fbe2",
+          "leaf_boundary": "straight-line RET/tail JMP or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "d6eba5e0416e3a4c80bb241bf9d3813338b4506e28e8441d22bf825ff606b8e4",
+          "source_file_offset": 37941200
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x18242fbd0",
+          "bytes": 19,
+          "imported_sha256": "d6eba5e0416e3a4c80bb241bf9d3813338b4506e28e8441d22bf825ff606b8e4",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.Box2dPhysicsUtil",
+        "method": "SafeBounds",
+        "address": "0x1809a60e0",
+        "metadata_method_index": 73943,
+        "token": "0x60120d8",
+        "reason": "Box SafeBounds float edge epsilon and transform space"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+      "native_display_name": "Torappu.Battle.Box2dPhysicsUtil.SafeBounds",
+      "metadata_method_index": 73943,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809a60e0",
+          "end": "0x1809a62cd",
+          "unwind_rva": "0x7fb905c",
+          "chained": false,
+          "source_sha256": "1e27f52ac02c01a7fe762b0d8a9a2375ac9408205fc67195779b85676fe944df",
+          "source_file_offset": 10114272
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809a60e0",
+          "bytes": 494,
+          "imported_sha256": "1e27f52ac02c01a7fe762b0d8a9a2375ac9408205fc67195779b85676fe944df",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.MapUtil",
+        "method": "InBounds",
+        "address": "0x180b00a90",
+        "metadata_method_index": 78322,
+        "token": "0x60131f3",
+        "reason": "Point-in-native-bounds actual inequality/math"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+      "native_display_name": "Torappu.Battle.MapUtil.InBounds",
+      "metadata_method_index": 78322,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x180b00a90",
+          "end": "0x180b00b22",
+          "unwind_rva": "0x7fd1558",
+          "chained": false,
+          "source_sha256": "4723cc38ba1506104d07030a0245bd770715985673be564e52a5b2c4dfafb0cc",
+          "source_file_offset": 11533968
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x180b00a90",
+          "bytes": 147,
+          "imported_sha256": "4723cc38ba1506104d07030a0245bd770715985673be564e52a5b2c4dfafb0cc",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.TargetOptions",
+        "method": "GetLayerMask",
+        "address": "0x1809fa470",
+        "metadata_method_index": 75071,
+        "token": "0x6012540",
+        "reason": "Overlap Physics2D layer mask from target side"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+      "native_display_name": "Torappu.Battle.TargetOptions.GetLayerMask",
+      "metadata_method_index": 75071,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809fa470",
+          "end": "0x1809fa479",
+          "leaf_boundary": "straight-line RET/tail JMP or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "cf74756a499ee6955ea5a25be7de2b5ba9a90544892433ce7402f34474bf6ce6",
+          "source_file_offset": 10459248
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809fa470",
+          "bytes": 10,
+          "imported_sha256": "cf74756a499ee6955ea5a25be7de2b5ba9a90544892433ce7402f34474bf6ce6",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.Entity",
+        "method": "CompareTo",
+        "address": "0x1806f1750",
+        "metadata_method_index": 66718,
+        "token": "0x601049f",
+        "reason": "Deterministic Entity.CompareTo used by default List.Sort"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+      "native_display_name": "Torappu.Battle.Entity.CompareTo",
+      "metadata_method_index": 66718,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1806f1750",
+          "end": "0x1806f17f3",
+          "unwind_rva": "0x7f63a3c",
+          "chained": false,
+          "source_sha256": "9358f801c443aa1052a4578daa1551fed93594cf586d65fd894b5be987d18878",
+          "source_file_offset": 7277392
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1806f1750",
+          "bytes": 164,
+          "imported_sha256": "9358f801c443aa1052a4578daa1551fed93594cf586d65fd894b5be987d18878",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.BObject",
+        "method": "get_isValid",
+        "address": "0x180663060",
+        "metadata_method_index": 65018,
+        "token": "0x600fdfb",
+        "reason": "Box2d target candidate isValid gate exact native getter"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+      "native_display_name": "Torappu.Battle.BObject.get_isValid",
+      "metadata_method_index": 65018,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x180663060",
+          "end": "0x180663067",
+          "leaf_boundary": "straight-line RET/tail JMP or decoded INT3 alignment with RET/JMP; does not cross next metadata candidate",
+          "source_sha256": "d3bb7b6918b3947b410aa2cf0f1e65ab16d13c6f93c2e94e4ee1b092c86f4253",
+          "source_file_offset": 6693984
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x180663060",
+          "bytes": 8,
+          "imported_sha256": "d3bb7b6918b3947b410aa2cf0f1e65ab16d13c6f93c2e94e4ee1b092c86f4253",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "UnresolvedCall",
+        "method": "List_Entity_Sort",
+        "address": "0x184d14820",
+        "metadata_method_index": null,
+        "token": null,
+        "reason": "Box2dPhysicsUtil.FindTargets tail explicit methodInfo slot188938418 encodedc0084945 kind6/spec271522; exact instantiated generic identity pending, do not guess from shared address",
+        "raw_call_target": true
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+      "native_display_name": "UnresolvedCall.List_Entity_Sort",
+      "metadata_method_index": null,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x184d14820",
+          "end": "0x184d14904",
+          "unwind_rva": "0x7f63cf8",
+          "chained": false,
+          "source_sha256": "33eaf0908c66af064618fabd84e82e09b86b232531e00e82be375c98ca49ef4d",
+          "source_file_offset": 80821280
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x184d14820",
+          "bytes": 229,
+          "imported_sha256": "33eaf0908c66af064618fabd84e82e09b86b232531e00e82be375c98ca49ef4d",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "UnresolvedCall",
+        "method": "Filter_Entity_Weight",
+        "address": "0x1844f9140",
+        "metadata_method_index": null,
+        "token": null,
+        "raw_call_target": true,
+        "reason": "FilterUtil.Filter ALL default weighted helper methodInfo188904ab8; createdTime FP weight + comparison scope"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+      "native_display_name": "UnresolvedCall.Filter_Entity_Weight",
+      "metadata_method_index": null,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1844f9140",
+          "end": "0x1844f9271",
+          "unwind_rva": "0x8364050",
+          "chained": false,
+          "source_sha256": "2d88d849c9735d9537ec0bee08f78a1d617a815694394a6f8c89a6b2e8a21c55",
+          "source_file_offset": 72320320
+        },
+        {
+          "start": "0x1844f9272",
+          "end": "0x1844f9666",
+          "unwind_rva": "0x8364064",
+          "chained": true,
+          "source_sha256": "7671888e754913f378f0aa02c2824ef9fa96a52d9afab9f8a3c58ddaeb7a22d0",
+          "source_file_offset": 72320626
+        },
+        {
+          "start": "0x1844f9667",
+          "end": "0x1844f9718",
+          "unwind_rva": "0x836407c",
+          "chained": true,
+          "source_sha256": "a1277aca31ddfa3fe0b31f02bd5a522f1c967a1d0e4ee47fee2e5ee398e4e0ce",
+          "source_file_offset": 72321639
+        },
+        {
+          "start": "0x1844f9719",
+          "end": "0x1844f9730",
+          "unwind_rva": "0x836408c",
+          "chained": true,
+          "source_sha256": "2f7efaaa7dce64186164c61d4d8bdcdaf4adfd3a024bd33be6b7ddb82ec58480",
+          "source_file_offset": 72321817
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1844f9140",
+          "bytes": 306,
+          "imported_sha256": "2d88d849c9735d9537ec0bee08f78a1d617a815694394a6f8c89a6b2e8a21c55",
+          "match": true
+        },
+        {
+          "start": "0x1844f9272",
+          "bytes": 1013,
+          "imported_sha256": "7671888e754913f378f0aa02c2824ef9fa96a52d9afab9f8a3c58ddaeb7a22d0",
+          "match": true
+        },
+        {
+          "start": "0x1844f9667",
+          "bytes": 178,
+          "imported_sha256": "a1277aca31ddfa3fe0b31f02bd5a522f1c967a1d0e4ee47fee2e5ee398e4e0ce",
+          "match": true
+        },
+        {
+          "start": "0x1844f9719",
+          "bytes": 24,
+          "imported_sha256": "2f7efaaa7dce64186164c61d4d8bdcdaf4adfd3a024bd33be6b7ddb82ec58480",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "UnresolvedCall",
+        "method": "Filter_Entity_PriorWeight",
+        "address": "0x1844f9740",
+        "metadata_method_index": null,
+        "token": null,
+        "raw_call_target": true,
+        "reason": "Alternate weighted helper reached by Filter dictionary fallback methodInfo188904cf8; identify true ALL branch"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+      "native_display_name": "UnresolvedCall.Filter_Entity_PriorWeight",
+      "metadata_method_index": null,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1844f9740",
+          "end": "0x1844f9884",
+          "unwind_rva": "0x83640a4",
+          "chained": false,
+          "source_sha256": "653aa8e5bdfbb0a9858e17afbbe59e5d6bd7acf85344126365928cc1c238e29a",
+          "source_file_offset": 72321856
+        },
+        {
+          "start": "0x1844f9885",
+          "end": "0x1844f9c8f",
+          "unwind_rva": "0x83640bc",
+          "chained": true,
+          "source_sha256": "cf7c0d0d20394416e324833e5cc56b73c922612becd9da4d265a7ab9b34ca97e",
+          "source_file_offset": 72322181
+        },
+        {
+          "start": "0x1844f9c90",
+          "end": "0x1844f9d47",
+          "unwind_rva": "0x83640d0",
+          "chained": true,
+          "source_sha256": "56acaa7584000cc9533b349ae0e7158f58978cb430828bf8edd87a4d86203f7e",
+          "source_file_offset": 72323216
+        },
+        {
+          "start": "0x1844f9d48",
+          "end": "0x1844f9d5f",
+          "unwind_rva": "0x83640e0",
+          "chained": true,
+          "source_sha256": "f3444a8db954ac9f206a499e0e93661a748c350d1a4330e5b1c4c064ccaf3af5",
+          "source_file_offset": 72323400
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1844f9740",
+          "bytes": 325,
+          "imported_sha256": "653aa8e5bdfbb0a9858e17afbbe59e5d6bd7acf85344126365928cc1c238e29a",
+          "match": true
+        },
+        {
+          "start": "0x1844f9885",
+          "bytes": 1035,
+          "imported_sha256": "cf7c0d0d20394416e324833e5cc56b73c922612becd9da4d265a7ab9b34ca97e",
+          "match": true
+        },
+        {
+          "start": "0x1844f9c90",
+          "bytes": 184,
+          "imported_sha256": "56acaa7584000cc9533b349ae0e7158f58978cb430828bf8edd87a4d86203f7e",
+          "match": true
+        },
+        {
+          "start": "0x1844f9d48",
+          "bytes": 24,
+          "imported_sha256": "f3444a8db954ac9f206a499e0e93661a748c350d1a4330e5b1c4c064ccaf3af5",
+          "match": true
+        }
+      ]
+    },
+    {
+      "request": {
+        "type": "Torappu.Battle.FilterUtil",
+        "method": ".cctor",
+        "address": "0x1809e1dc0",
+        "metadata_method_index": 74719,
+        "token": "0x60123e0",
+        "reason": "FilterUtil static comparison at+10 for ALL0/createdTime sorting; bind dictionary and comparator defaults"
+      },
+      "report_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v6\\core\\results_round3.json",
+      "native_display_name": "Torappu.Battle.FilterUtil..cctor",
+      "metadata_method_index": 74719,
+      "decompile_completed": true,
+      "all_imported_ranges_match": true,
+      "ranges": [
+        {
+          "start": "0x1809e1dc0",
+          "end": "0x1809e2074",
+          "unwind_rva": "0x7f63a34",
+          "chained": false,
+          "source_sha256": "9423bbc3f60c5aceac3e4e53ecf4237a3750a4d539f67c1f4c38fd8630a7cdef",
+          "source_file_offset": 10359232
+        }
+      ],
+      "imported_range_checks": [
+        {
+          "start": "0x1809e1dc0",
+          "bytes": 693,
+          "imported_sha256": "9423bbc3f60c5aceac3e4e53ecf4237a3750a4d539f67c1f4c38fd8630a7cdef",
+          "match": true
+        }
+      ]
+    }
+  ]
+}

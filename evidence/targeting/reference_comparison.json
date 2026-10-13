@@ -1,0 +1,24 @@
+{
+  "scope": "independent source-owned C# vs Python, not native/client oracle",
+  "all_tested_cases_passed": true,
+  "counts": {
+    "component_tests": 23,
+    "reference_tests": 2,
+    "geometry_cases": 148,
+    "box_bit_patterns": 4562,
+    "collector_cases": 112,
+    "collector_decisions": 10722,
+    "admitted_collector_uids": 1660,
+    "targeting_selected_addresses": 51,
+    "short_raw_helpers": 6
+  },
+  "tests": "python -X utf8 -m unittest tests.test_targeting tests.test_targeting_reference -q",
+  "external_inputs": [
+    "physics result and order",
+    "frozen owner/status/provider context",
+    "ALL reversal permutation fixture"
+  ],
+  "runtime_battle_validated": false,
+  "physics_overlap_generated": false,
+  "native_all_order_generated": false
+}

@@ -1,0 +1,143 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "analysis_mode": "explicit selected PE function ranges; default whole-image analysis disabled",
+  "symbol_provenance": "Local metadata/native pointer-table candidate names; each entry corroborated by exact PE unwind start. Static analysis, no game execution.",
+  "functions": [
+    {
+      "name": "UnresolvedCall_GenericQueueSort_call_target",
+      "display_name": "UnresolvedCall.GenericQueueSort",
+      "address": "0x184547860",
+      "end_address": "0x184547c84",
+      "ranges": [
+        {
+          "start": "0x184547860",
+          "end": "0x184547c84",
+          "unwind_rva": "0x8368dec",
+          "chained": false,
+          "source_sha256": "7ceb2c4945dd9b1ad05fe9b99336c414c74d1004301ae11475b9488719e7472d",
+          "source_file_offset": 72641632
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 72641632,
+      "token": "call_target",
+      "metadata_method_index": null,
+      "imported_range_checks": [
+        {
+          "start": "0x184547860",
+          "bytes": 1061,
+          "imported_sha256": "7ceb2c4945dd9b1ad05fe9b99336c414c74d1004301ae11475b9488719e7472d",
+          "match": true
+        }
+      ],
+      "imported_memory_matches_source": true,
+      "disassembled": true,
+      "instruction_count": 279,
+      "direct_calls": [
+        {
+          "source": "1845478aa",
+          "target": "0x180446470",
+          "candidate_name": null
+        },
+        {
+          "source": "1845478e7",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "1845478fd",
+          "target": "0x1800133a0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547921",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547938",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "18454797d",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547a23",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547a3a",
+          "target": "0x180446d00",
+          "candidate_name": null
+        },
+        {
+          "source": "184547a81",
+          "target": "0x180445cc0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547b06",
+          "target": "0x180446470",
+          "candidate_name": null
+        },
+        {
+          "source": "184547b1e",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547b38",
+          "target": "0x1800133a0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547b53",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547b6c",
+          "target": "0x1800133a0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547b8c",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547ba9",
+          "target": "0x1800c95f0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547bc7",
+          "target": "0x1804463f0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547be4",
+          "target": "0x1800c95f0",
+          "candidate_name": null
+        },
+        {
+          "source": "184547c33",
+          "target": "0x184547860",
+          "candidate_name": null
+        },
+        {
+          "source": "184547c7f",
+          "target": "0x18048c0b0",
+          "candidate_name": null
+        }
+      ],
+      "decompile_completed": true,
+      "decompiler_message": "",
+      "pseudocode": "\r\nvoid UnresolvedCall_GenericQueueSort_call_target\r\n               (longlong *param_1,int param_2,int param_3,longlong param_4,longlong param_5)\r\n\r\n{\r\n  code *pcVar1;\r\n  undefined8 uVar2;\r\n  undefined8 uVar3;\r\n  undefined8 uVar4;\r\n  int iVar5;\r\n  longlong lVar6;\r\n  undefined8 *puVar7;\r\n  longlong lVar8;\r\n  ushort uVar9;\r\n  int iVar10;\r\n  int iVar11;\r\n  undefined8 *in_stack_ffffffffffffff38;\r\n  undefined4 uVar13;\r\n  undefined8 uVar12;\r\n  undefined8 uStack_b8;\r\n  undefined8 uStack_b0;\r\n  undefined8 uStack_a8;\r\n  undefined8 uStack_a0;\r\n  undefined1 auStack_98 [16];\r\n  undefined1 auStack_88 [16];\r\n  undefined1 auStack_78 [16];\r\n  undefined1 auStack_68 [16];\r\n  undefined1 auStack_58 [48];\r\n  \r\n  do {\r\n    uVar13 \u003d (undefined4)((ulonglong)in_stack_ffffffffffffff38 \u003e\u003e 0x20);\r\n    if (*(longlong *)(param_5 + 0x38) \u003d\u003d 0) {\r\n      FUN_180446470(param_5);\r\n    }\r\n    if (param_3 \u003c\u003d param_2) {\r\n      return;\r\n    }\r\n    if (param_1 \u003d\u003d (longlong *)0x0) {\r\nLAB_184547c7f:\r\n      FUN_18048c0b0();\r\n      pcVar1 \u003d (code *)swi(3);\r\n      (*pcVar1)();\r\n      return;\r\n    }\r\n    lVar6 \u003d **(longlong **)(param_5 + 0x38);\r\n    if ((*(byte *)(lVar6 + 0x136) \u0026 1) \u003d\u003d 0) {\r\n      lVar6 \u003d FUN_1804463f0(lVar6);\r\n    }\r\n    in_stack_ffffffffffffff38 \u003d (undefined8 *)CONCAT44(uVar13,(param_3 - param_2) / 2 + param_2);\r\n    puVar7 \u003d (undefined8 *)FUN_1800133a0(auStack_98,0,lVar6,param_1,in_stack_ffffffffffffff38);\r\n    uVar2 \u003d *puVar7;\r\n    uVar3 \u003d puVar7[1];\r\n    iVar10 \u003d param_3;\r\n    iVar11 \u003d param_2;\r\nLAB_184547905:\r\n    for (; iVar11 \u003c param_3; iVar11 \u003d iVar11 + 1) {\r\n      lVar6 \u003d **(longlong **)(param_5 + 0x38);\r\n      if ((*(byte *)(lVar6 + 0x136) \u0026 1) \u003d\u003d 0) {\r\n        lVar6 \u003d FUN_1804463f0(lVar6);\r\n      }\r\n      lVar8 \u003d *param_1;\r\n      if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n        func_0x000180446d00(lVar8);\r\n      }\r\n      uVar9 \u003d 0;\r\n      if (*(ushort *)(lVar8 + 0x12e) !\u003d 0) {\r\n        do {\r\n          if (*(longlong *)(*(longlong *)(lVar8 + 0xb0) + (ulonglong)uVar9 * 0x10) \u003d\u003d lVar6) {\r\n            puVar7 \u003d (undefined8 *)\r\n                     (((longlong)*(int *)(*(longlong *)(lVar8 + 0xb0) + 8 + (ulonglong)uVar9 * 0x10)\r\n                      + 0x14) * 0x10 + lVar8);\r\n            goto LAB_184547982;\r\n          }\r\n          uVar9 \u003d uVar9 + 1;\r\n        } while (uVar9 \u003c *(ushort *)(lVar8 + 0x12e));\r\n      }\r\n      puVar7 \u003d (undefined8 *)FUN_180445cc0(param_1,lVar6,0);\r\nLAB_184547982:\r\n      puVar7 \u003d (undefined8 *)(*(code *)*puVar7)(auStack_88,param_1,iVar11,puVar7[1]);\r\n      uVar12 \u003d *puVar7;\r\n      uVar4 \u003d puVar7[1];\r\n      if (param_4 \u003d\u003d 0) goto LAB_184547c7f;\r\n      puVar7 \u003d *(undefined8 **)(*(longlong *)(param_5 + 0x38) + 0x18);\r\n      if (puVar7[4] \u003d\u003d 0) {\r\n        (*(code *)*puVar7)();\r\n      }\r\n      uStack_b8 \u003d uVar2;\r\n      uStack_b0 \u003d uVar3;\r\n      uStack_a8 \u003d uVar12;\r\n      uStack_a0 \u003d uVar4;\r\n      iVar5 \u003d (**(code **)(param_4 + 0x18))\r\n                        (*(undefined8 *)(param_4 + 0x40),\u0026uStack_a8,\u0026uStack_b8,\r\n                         *(undefined8 *)(param_4 + 0x28));\r\n      if (-1 \u003c iVar5) break;\r\n    }\r\n    for (; param_2 \u003c iVar10; iVar10 \u003d iVar10 + -1) {\r\n      lVar6 \u003d **(longlong **)(param_5 + 0x38);\r\n      if ((*(byte *)(lVar6 + 0x136) \u0026 1) \u003d\u003d 0) {\r\n        lVar6 \u003d FUN_1804463f0(lVar6);\r\n      }\r\n      lVar8 \u003d *param_1;\r\n      if (DAT_188ccc7f0 !\u003d \u0027\\0\u0027) {\r\n        func_0x000180446d00(lVar8);\r\n      }\r\n      uVar9 \u003d 0;\r\n      if (*(ushort *)(lVar8 + 0x12e) !\u003d 0) {\r\n        do {\r\n          if (*(longlong *)(*(longlong *)(lVar8 + 0xb0) + (ulonglong)uVar9 * 0x10) \u003d\u003d lVar6) {\r\n            puVar7 \u003d (undefined8 *)\r\n                     (((longlong)*(int *)(*(longlong *)(lVar8 + 0xb0) + 8 + (ulonglong)uVar9 * 0x10)\r\n                      + 0x14) * 0x10 + lVar8);\r\n            goto LAB_184547a86;\r\n          }\r\n          uVar9 \u003d uVar9 + 1;\r\n        } while (uVar9 \u003c *(ushort *)(lVar8 + 0x12e));\r\n      }\r\n      puVar7 \u003d (undefined8 *)FUN_180445cc0(param_1,lVar6,0);\r\nLAB_184547a86:\r\n      puVar7 \u003d (undefined8 *)(*(code *)*puVar7)(auStack_78,param_1,iVar10,puVar7[1]);\r\n      uVar12 \u003d *puVar7;\r\n      uVar4 \u003d puVar7[1];\r\n      if (param_4 \u003d\u003d 0) goto LAB_184547c7f;\r\n      puVar7 \u003d *(undefined8 **)(*(longlong *)(param_5 + 0x38) + 0x18);\r\n      if (puVar7[4] \u003d\u003d 0) {\r\n        (*(code *)*puVar7)();\r\n      }\r\n      uStack_b8 \u003d uVar2;\r\n      uStack_b0 \u003d uVar3;\r\n      uStack_a8 \u003d uVar12;\r\n      uStack_a0 \u003d uVar4;\r\n      iVar5 \u003d (**(code **)(param_4 + 0x18))\r\n                        (*(undefined8 *)(param_4 + 0x40),\u0026uStack_b8,\u0026uStack_a8,\r\n                         *(undefined8 *)(param_4 + 0x28));\r\n      if (-1 \u003c iVar5) break;\r\n    }\r\n    uVar13 \u003d (undefined4)((ulonglong)in_stack_ffffffffffffff38 \u003e\u003e 0x20);\r\n    if (iVar11 \u003c\u003d iVar10) {\r\n      lVar6 \u003d *(longlong *)(*(longlong *)(param_5 + 0x38) + 0x20);\r\n      if (*(longlong *)(lVar6 + 0x38) \u003d\u003d 0) {\r\n        FUN_180446470(lVar6);\r\n      }\r\n      lVar8 \u003d **(longlong **)(lVar6 + 0x38);\r\n      if ((*(byte *)(lVar8 + 0x136) \u0026 1) \u003d\u003d 0) {\r\n        lVar8 \u003d FUN_1804463f0(lVar8);\r\n      }\r\n      uVar12 \u003d CONCAT44(uVar13,iVar11);\r\n      puVar7 \u003d (undefined8 *)FUN_1800133a0(auStack_68,0,lVar8,param_1,uVar12);\r\n      uVar13 \u003d (undefined4)((ulonglong)uVar12 \u003e\u003e 0x20);\r\n      uVar12 \u003d *puVar7;\r\n      uVar4 \u003d puVar7[1];\r\n      lVar8 \u003d **(longlong **)(lVar6 + 0x38);\r\n      if ((*(byte *)(lVar8 + 0x136) \u0026 1) \u003d\u003d 0) {\r\n        lVar8 \u003d FUN_1804463f0(lVar8);\r\n      }\r\n      puVar7 \u003d (undefined8 *)FUN_1800133a0(auStack_58,0,lVar8,param_1,CONCAT44(uVar13,iVar10));\r\n      uStack_a8 \u003d *puVar7;\r\n      uStack_a0 \u003d puVar7[1];\r\n      lVar8 \u003d **(longlong **)(lVar6 + 0x38);\r\n      if ((*(byte *)(lVar8 + 0x136) \u0026 1) \u003d\u003d 0) {\r\n        lVar8 \u003d FUN_1804463f0(lVar8);\r\n      }\r\n      FUN_1800c95f0(1,lVar8,param_1,iVar11,\u0026uStack_a8);\r\n      lVar6 \u003d **(longlong **)(lVar6 + 0x38);\r\n      uStack_a8 \u003d uVar12;\r\n      uStack_a0 \u003d uVar4;\r\n      if ((*(byte *)(lVar6 + 0x136) \u0026 1) \u003d\u003d 0) {\r\n        lVar6 \u003d FUN_1804463f0(lVar6);\r\n      }\r\n      in_stack_ffffffffffffff38 \u003d \u0026uStack_a8;\r\n      FUN_1800c95f0(1,lVar6,param_1,iVar10,in_stack_ffffffffffffff38);\r\n      iVar11 \u003d iVar11 + 1;\r\n      iVar10 \u003d iVar10 + -1;\r\n      goto LAB_184547905;\r\n    }\r\n    if (param_2 \u003c iVar10) {\r\n      in_stack_ffffffffffffff38 \u003d *(undefined8 **)(*(longlong *)(param_5 + 0x38) + 0x28);\r\n      UnresolvedCall_GenericQueueSort_call_target\r\n                (param_1,param_2,iVar10,param_4,in_stack_ffffffffffffff38);\r\n    }\r\n    if (param_3 \u003c\u003d iVar11) {\r\n      return;\r\n    }\r\n    param_5 \u003d *(longlong *)(*(longlong *)(param_5 + 0x38) + 0x28);\r\n    param_2 \u003d iVar11;\r\n  } while( true );\r\n}\r\n\r\n"
+    }
+  ]
+}

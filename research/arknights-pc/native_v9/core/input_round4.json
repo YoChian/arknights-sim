@@ -1,0 +1,84 @@
+{
+  "target_sha256": "583b04ff4d1b1a4b35eaf09d77d936408c25447c9e345ef0463d814b6a123fc5",
+  "image_base": "0x180000000",
+  "targets": [
+    {
+      "name": "Torappu_Battle_Buff__UpdateIsEnabledIfNotFinished_0x600fef4",
+      "display_name": "Torappu.Battle.Buff._UpdateIsEnabledIfNotFinished",
+      "candidate_map_type": "Torappu.Battle.Buff",
+      "address": "0x18068dc50",
+      "end_address": "0x18068e05a",
+      "ranges": [
+        {
+          "start": "0x18068dc50",
+          "end": "0x18068dcb9",
+          "unwind_rva": "0x7f7d4cc",
+          "chained": false,
+          "source_sha256": "9f6ced3d9ba42fd4a75c4af89cb69b11f14c5f50c500cb9c9d2adf290b0f9e1a",
+          "source_file_offset": 6869072
+        },
+        {
+          "start": "0x18068dcba",
+          "end": "0x18068df57",
+          "unwind_rva": "0x7f7d4d8",
+          "chained": true,
+          "source_sha256": "b73f4954825094923ea1f51aacfca7c193d380e43899bed03654b21da082d626",
+          "source_file_offset": 6869178
+        },
+        {
+          "start": "0x18068df58",
+          "end": "0x18068df60",
+          "unwind_rva": "0x7f7d4f0",
+          "chained": true,
+          "source_sha256": "d843cc5c7c80b22ea1c50dd07e6825135ef55a6d50f17bcbe83e113673c7f998",
+          "source_file_offset": 6869848
+        },
+        {
+          "start": "0x18068df61",
+          "end": "0x18068e041",
+          "unwind_rva": "0x7f7d500",
+          "chained": true,
+          "source_sha256": "a13089ad6a2dd9026ec9eef0d8382652ca56a5b834767eb311317440e7f1e8b8",
+          "source_file_offset": 6869857
+        },
+        {
+          "start": "0x18068e042",
+          "end": "0x18068e054",
+          "unwind_rva": "0x7f7d4f0",
+          "chained": true,
+          "source_sha256": "4a323295a98a5784835aa5ec6c7e0244cb5f2ec6e70d4d69442e6a28813f90b5",
+          "source_file_offset": 6870082
+        },
+        {
+          "start": "0x18068e055",
+          "end": "0x18068e05a",
+          "unwind_rva": "0x7f7d500",
+          "chained": true,
+          "source_sha256": "3ca5cdfe91925d8e049922754b685dcf99b030d0731cea878f74b8681d2ede14",
+          "source_file_offset": 6870101
+        }
+      ],
+      "range_provenance": "All exact recursive UNW_FLAG_CHAININFO sibling ranges, not an assumed contiguous span",
+      "file_offset": 6869072,
+      "token": "0x600fef4",
+      "metadata_method_index": 65267
+    }
+  ],
+  "seed_labels": {
+    "0x18068f400": "Torappu_Battle_Buff_get_owner_0x600fe27",
+    "0x180706710": "Torappu_Battle_Entity_get_isSilenced_0x60103da",
+    "0x180706a00": "Torappu_Battle_Entity_get_isStunned_0x60103b7",
+    "0x180705b50": "Torappu_Battle_Entity_get_isFrozen_0x60103b9",
+    "0x180705320": "Torappu_Battle_Entity_get_isActuallyLevitate_0x60103be",
+    "0x180705270": "Torappu_Battle_Entity_get_isActuallyGroundBound_0x60103bd",
+    "0x180701e20": "Torappu_Battle_Entity_get_attributes_0x6010337",
+    "0x18064a270": "Torappu_Battle_Attributes_RemoveModifier_0x600fb13",
+    "0x18064a1d0": "Torappu_Battle_Attributes_RemoveAbnormalResistanceModifier_0x600fb1d",
+    "0x18068d4b0": "Torappu_Battle_Buff__RunActions_0x600fee4",
+    "0x180648650": "Torappu_Battle_Attributes_AddModifier_0x600fb12",
+    "0x1806484d0": "Torappu_Battle_Attributes_AddAbnormalResistanceModifier_0x600fb1c",
+    "0x183310010": "XLua_DelegateBridge___Gen_Delegate_Imp27_0x6000a7b"
+  },
+  "labels_path": "D:\\Repo\\.rea-tools\\arknights-pc\\native_v2\\labels.tsv",
+  "provenance": "Local metadata/native pointer-table candidate names; each entry corroborated by exact PE unwind start. Static analysis, no game execution."
+}
